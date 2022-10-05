@@ -2,6 +2,7 @@
 
 1.  : LSTM 기반
 2. bert2.ipynb : KoBert 기반
+3. CNN_intent_colab : CNN 기반
 
 ## 그외
 
