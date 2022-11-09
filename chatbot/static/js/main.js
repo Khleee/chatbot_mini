@@ -1,7 +1,7 @@
 function sendMessage(text, type) {
     $('.write_msg').val('');
     if (type == 'bot'){
-        $('.msg_history').append('<div class="incoming_msg"><div class="incoming_msg_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div> <div class="received_msg"><div class="received_withd_msg"><p>'+text+'</p></div></div></div>')
+        $('.msg_history').append('<div class="incoming_msg"><div class="incoming_msg_img"><img src="static/img/user-profile.png" alt="sunil"></div> <div class="received_msg"><div class="received_withd_msg"><p>'+text+'</p></div></div></div>')
     }
     else if(type == 'user'){
         $('.msg_history').append('<div class="outgoing_msg"><div class="sent_msg"><p>'+text+'</p></div></div>')
@@ -76,9 +76,10 @@ function onSendButtonClicked() {
         button_text_list = []
         if (button_length >= 2){
             button_obj.each(function(index, item){
-                button_text_list.push(item.textContent)
+                button_text_list.push(item.textContent.replace('\n',''))
             })
             find_idx = button_text_list.indexOf(messageText)
+            console.log('button_text_list', button_text_list)
             if (find_idx==-1){
                 // 버튼에 들어있는 값이 아닐때
                 okay = 0
@@ -86,7 +87,14 @@ function onSendButtonClicked() {
             } 
             else {
                 // 버튼에 들어있는 값일때
-                requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+                if (condition=='YNO'){
+                    requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+                } else if (condition=='ABCD'){
+                    let alphabet = find_idx + 65
+                    let ABCD = String.fromCharCode(alphabet)
+                    requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+                }
+                
             }
         } else{
             requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
