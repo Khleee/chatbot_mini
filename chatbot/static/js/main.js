@@ -1,10 +1,10 @@
 function sendMessage(text, type) {
     $('.write_msg').val('');
     if (type == 'bot'){
-        $('.msg_history').append('<div class="incoming_msg"><div class="incoming_msg_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div> <div class="received_msg"><div class="received_withd_msg"><p>'+text+'</p><span class="time_date">11:01 AM    |    June 9</span></div></div></div>')
+        $('.msg_history').append('<div class="incoming_msg"><div class="incoming_msg_img"><img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"></div> <div class="received_msg"><div class="received_withd_msg"><p>'+text+'</p></div></div></div>')
     }
     else if(type == 'user'){
-        $('.msg_history').append('<div class="outgoing_msg"><div class="sent_msg"><p>'+text+'</p><span class="time_date">11:01 AM    |    June 9</span></div></div>')
+        $('.msg_history').append('<div class="outgoing_msg"><div class="sent_msg"><p>'+text+'</p></div></div>')
     }
     $('.msg_history').scrollTop(9999);
 }
@@ -71,7 +71,27 @@ function onSendButtonClicked() {
     let condition = $('.condition').val();
     if (messageText.length!=0)
         sendMessage(messageText, 'user');
-        requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+        button_obj = $('.msg_history').children('.incoming_msg').last().find('button')
+        button_length = $('.msg_history').children('.incoming_msg').last().find('button').length
+        button_text_list = []
+        if (button_length >= 2){
+            button_obj.each(function(index, item){
+                button_text_list.push(item.textContent)
+            })
+            find_idx = button_text_list.indexOf(messageText)
+            if (find_idx==-1){
+                // 버튼에 들어있는 값이 아닐때
+                okay = 0
+                requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+            } 
+            else {
+                // 버튼에 들어있는 값일때
+                requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+            }
+        } else{
+            requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+        }
+        
 }
 
 function onClickAsEnter(e) {
@@ -82,27 +102,27 @@ function onClickAsEnter(e) {
 
 $(document).on('click', 'button', function(e){
     let okay = $('.okay').val();
-    let start = $('.start').val();
     let dialog_node = $('.dialog_node').val();
     let node_detail = $('.node_detail').val();
     let parent = $('.parent').val();
     let condition = $('.condition').val();
     
-    messageText = e.target.textContent
-    sendMessage(messageText, 'user');
-    
     if (condition=='YNO'){
+        messageText = e.target.textContent
+        sendMessage(messageText, 'user');
         if ($(this).index()==1){
             let YNO = '네'
-            requestChat(YNO, okay, start, dialog_node, node_detail, parent, condition, 'request_chat');
+            requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
         } else{
             let YNO = '아니오'
-            requestChat(YNO, okay, start, dialog_node, node_detail, parent, condition, 'request_chat');
+            requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
         }
         
     } else if (condition=='ABCD'){
         let alphabet = $(this).index() + 64
         let ABCD = String.fromCharCode(alphabet)
-        requestChat(ABCD, okay, start, dialog_node, node_detail, parent, condition, 'request_chat');
+        messageText = e.target.textContent
+        sendMessage(messageText, 'user');
+        requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
     }
 })
