@@ -11,7 +11,7 @@ function sendMessage(text, type) {
 
 function requestChat(messageText, okay, dialog_node, node_detail, parent, condition, url_pattern) {
     $.ajax({
-        url: "http://172.30.1.218:8080/" + url_pattern,
+        url: "http://59.10.188.211:8080/" + url_pattern,
         type: "POST",
         dataType: "json",
         data: {
@@ -25,7 +25,6 @@ function requestChat(messageText, okay, dialog_node, node_detail, parent, condit
         success: function (data) {
             if (data['type']=='bot'){
                 if (Object.keys(data).includes('ending')){
-                    console.log(data)
                     ending_len = data['ending'].length
                     $.each(data['ending'], function(index, item){
                         setTimeout(function(){sendMessage(item['text'], 'bot')}, 1000*index)
@@ -37,15 +36,15 @@ function requestChat(messageText, okay, dialog_node, node_detail, parent, condit
                         }
                     })
                 } else{
-                    sendMessage(data['text'], 'bot');     
+                    sendMessage(data['text'], 'bot');
+                    $('.condition').attr('value', data['condition'])
                 }
 
                 if ($('.condition').val()=='YNO' || $('.condition').val()=='ABCD'){
                     $('.okay').attr('value', 1)
                 } else if ($('.condition').val()=='END' || $('.condition').val()=='BACK'){
                     $('.okay').attr('value', 0)
-                }
-                $('.start').attr('value', data['start'])                
+                }           
             }
         },
 
@@ -79,7 +78,6 @@ function onSendButtonClicked() {
                 button_text_list.push(item.textContent.replace('\n',''))
             })
             find_idx = button_text_list.indexOf(messageText)
-            console.log('button_text_list', button_text_list)
             if (find_idx==-1){
                 // 버튼에 들어있는 값이 아닐때
                 okay = 0
@@ -88,6 +86,11 @@ function onSendButtonClicked() {
             else {
                 // 버튼에 들어있는 값일때
                 if (condition=='YNO'){
+                    if (find_idx==0){
+                        messageText = '네'
+                    } else {
+                        messageText = '아니오'
+                    }
                     requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
                 } else if (condition=='ABCD'){
                     let alphabet = find_idx + 65
@@ -97,7 +100,20 @@ function onSendButtonClicked() {
                 
             }
         } else{
-            requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+            if (condition=='YNO'){
+                yno_list = ['네', '아니오']
+                find_idx = yno_list.indexOf(messageText)
+                if (find_idx==-1){
+                    okay = 0
+                    requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');    
+                } else {
+                    requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+                }
+                
+            } else {
+                requestChat(messageText, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+            }
+            
         }
         
 }
@@ -118,16 +134,16 @@ $(document).on('click', 'button', function(e){
     if (condition=='YNO'){
         messageText = e.target.textContent
         sendMessage(messageText, 'user');
-        if ($(this).index()==1){
+        if ($(this).index()==0){
             let YNO = '네'
             requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
-        } else{
+        } else {
             let YNO = '아니오'
             requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
         }
         
     } else if (condition=='ABCD'){
-        let alphabet = $(this).index() + 64
+        let alphabet = $(this).index() + 65
         let ABCD = String.fromCharCode(alphabet)
         messageText = e.target.textContent
         sendMessage(messageText, 'user');
