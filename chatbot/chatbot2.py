@@ -35,8 +35,7 @@ else:
     device = torch.device("cpu")
 
 ## 파일 불러오기
-dialog_df = pd.read_csv("data/dialog2.csv")
-del dialog_df["intent"]
+dialog_df = pd.read_csv("data/dialog2.csv", encoding='cp949')
 
 B = pd.read_csv("data/title_node.csv")
 intent_list = list(B["title"])
@@ -108,16 +107,19 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             print('아니오')
             node_detail = node_detail+'-N'            
             first_msg_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            selected_first_msg = first_msg_df.iloc[0]
-            response_list.append({'dialog_node':int(selected_first_msg['dialog_node']), 
-                          'node_detail':selected_first_msg['node_detail'], 
-                          'text':selected_first_msg['text'], 
-                          'parent':selected_first_msg['parent'], 
-                          'condition':selected_first_msg['condition']})
-            if selected_first_msg.loc['condition']=='seq':
-                seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                filter_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
-                response_list = response_list + filter_df.to_dict('records')
+            if len(first_msg_df)==0:
+                pass
+            else:
+                selected_first_msg = first_msg_df.iloc[0]
+                response_list.append({'dialog_node':int(selected_first_msg['dialog_node']), 
+                            'node_detail':selected_first_msg['node_detail'], 
+                            'text':selected_first_msg['text'], 
+                            'parent':selected_first_msg['parent'], 
+                            'condition':selected_first_msg['condition']})
+                if selected_first_msg.loc['condition']=='seq':
+                    seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
+                    filter_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                    response_list = response_list + filter_df.to_dict('records')
         else:
             print('몰라')
             node_detail = node_detail+'-O'            
@@ -131,7 +133,8 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
         abcd_filter_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
         print('abcd_filter_df', abcd_filter_df)
         abcd_list = abcd_filter_df['node_detail'].map(lambda x: x.split('-')[-1]).tolist()
-        
+        print('abcd_list', abcd_list)
+        print('messageText', messageText)
         for abcd in abcd_list:
             if messageText == abcd:
                 node_detail = node_detail + '-' + messageText
@@ -157,7 +160,9 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
     elif condition=='seq':
         pass
     else:
-        pass    
+        pass
+    if len(response_list)==0:
+            response_list = response_list + [{'text':"답변 데이터가 없습니다. 처음으로 돌아갑니다.", 'type':'bot', 'okay':0, 'condition':'END'}]
     return response_list           
                 
 @app.route('/', methods=['GET'])
@@ -240,7 +245,7 @@ def request_chat(): # enter치면
         if ending == None:
             return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
         else:
-            return jsonify({'ending':ending, 'start':messageText, 'type':'bot'})
+            return jsonify({'ending':ending, 'type':'bot'})
     
     elif okay==1:
         ending = DIA2(messageText, dialog_node, node_detail, parent, condition)
@@ -248,7 +253,7 @@ def request_chat(): # enter치면
         if ending == None:
             return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
         else:
-            return jsonify({'ending':ending, 'start':messageText, 'type':'bot'})
+            return jsonify({'ending':ending, 'type':'bot'})
     
 if __name__=='__main__':
     app.run(host='0.0.0.0', debug=True, port=8080)
