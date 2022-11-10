@@ -11,7 +11,7 @@ function sendMessage(text, type) {
 
 function requestChat(messageText, okay, dialog_node, node_detail, parent, condition, url_pattern) {
     $.ajax({
-        url: "http://59.10.188.211:8080/" + url_pattern,
+        url: "http://172.30.1.218:8080/" + url_pattern,
         type: "POST",
         dataType: "json",
         data: {
@@ -131,22 +131,26 @@ $(document).on('click', 'button', function(e){
     let parent = $('.parent').val();
     let condition = $('.condition').val();
     
-    if (condition=='YNO'){
-        messageText = e.target.textContent
-        sendMessage(messageText, 'user');
-        if ($(this).index()==0){
-            let YNO = '네'
-            requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
-        } else {
-            let YNO = '아니오'
-            requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+    button_length = $('.msg_history').children('.incoming_msg').last().find('button').length
+    if (button_length >= 2){
+        if (condition=='YNO'){
+            messageText = e.target.textContent
+            sendMessage(messageText, 'user');
+            if ($(this).index()==0){
+                let YNO = '네'
+                requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+            } else {
+                let YNO = '아니오'
+                requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+            }
+            
+        } else if (condition=='ABCD'){
+            let alphabet = $(this).index() + 65
+            let ABCD = String.fromCharCode(alphabet)
+            messageText = e.target.textContent
+            sendMessage(messageText, 'user');
+            requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
         }
-        
-    } else if (condition=='ABCD'){
-        let alphabet = $(this).index() + 65
-        let ABCD = String.fromCharCode(alphabet)
-        messageText = e.target.textContent
-        sendMessage(messageText, 'user');
-        requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
     }
+    
 })
