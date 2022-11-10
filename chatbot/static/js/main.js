@@ -47,7 +47,6 @@ function requestChat(messageText, okay, dialog_node, node_detail, parent, condit
                 }           
             }
         },
-
         error: function (request, status, error) {
             console.log(error);
             return sendMessage('죄송합니다. 서버 연결에 실패했습니다.', 'bot');
@@ -115,7 +114,6 @@ function onSendButtonClicked() {
             }
             
         }
-        
 }
 
 function onClickAsEnter(e) {
@@ -130,27 +128,33 @@ $(document).on('click', 'button', function(e){
     let node_detail = $('.node_detail').val();
     let parent = $('.parent').val();
     let condition = $('.condition').val();
-    
-    button_length = $('.msg_history').children('.incoming_msg').last().find('button').length
-    if (button_length >= 2){
+    const nodes = [...e.target.parentElement.children];
+    btn_list = []
+    $.each(nodes, function(index, item){
+        if (item.tagName=='BUTTON'){
+            btn_list.push(item)
+        }
+    })
+    const index = btn_list.indexOf(e.target);
+    if (e.target.onclick){
+        // 웹페이지 이동
+    } else {
         if (condition=='YNO'){
             messageText = e.target.textContent
             sendMessage(messageText, 'user');
-            if ($(this).index()==0){
+            if (index==0){
                 let YNO = '네'
                 requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
             } else {
                 let YNO = '아니오'
                 requestChat(YNO, okay, dialog_node, node_detail, parent, condition, 'request_chat');
             }
-            
         } else if (condition=='ABCD'){
-            let alphabet = $(this).index() + 65
+            let alphabet = index + 65
             let ABCD = String.fromCharCode(alphabet)
             messageText = e.target.textContent
             sendMessage(messageText, 'user');
             requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
-        }
-    }
-    
+        }  
+    }   
 })

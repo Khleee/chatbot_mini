@@ -62,7 +62,7 @@ dialog_node,node_detail,text,parent,condition
 22,0-N-Y,,,END
 22,0-N-N,알겠습니다~,default,END
 22,0-O,"네, 아니오가 아닌 다른 답변을 주셨네요! <br>다른 도움이 필요하신가요? 질문해주세요!",default,BACK
-23,0,"동원몰 ID를 잊으셨나요? <br>아이디 찾기를 이용하시거나 고객센터 1588-3745로 문의주시면 도와드리겠습니다. <br>아이디 찾기 이용 시 휴대폰 본인인증을 통해 웹에서 바로 회원 ID를 확인하실 수 있습니다. <br>아래의 버튼을 클릭하시면 아이디 찾기 페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(http://www.dongwonmall.com/secure/findId.do')"">아이디 찾기</button>",default,END
+23,0,"동원몰 ID를 잊으셨나요? <br>아이디 찾기를 이용하시거나 고객센터 1588-3745로 문의주시면 도와드리겠습니다. <br>아이디 찾기 이용 시 휴대폰 본인인증을 통해 웹에서 바로 회원 ID를 확인하실 수 있습니다. <br>아래의 버튼을 클릭하시면 아이디 찾기 페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/secure/findId.do')"">아이디 찾기</button>",default,END
 24,0,"동원몰 비밀번호를 잊으셨나요? <br>비밀번호 찾기를 이용하시거나 고객센터 1588-3745로 문의주시면 도와드리겠습니다. <br>비밀번호 찾기 이용 시 휴대폰 본인인증을 통해 찾으실 수 있습니다.<br><br>아래의 버튼을 클릭하시면 비밀번호 찾기 페이지로 이동합니다.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/secure/findPw.do')"">비밀번호 찾기</button>",default,END
 25,0,"고객님 회원 가입이 안되신다구요?<br> 그렇다면 이미 동원몰 회원이신 경우입니다. <br>먼저 온라인으로 본인의 ID 와 비밀번호를 조회하신 후 회원 가입 여부를 확인해 주세요. <br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/secure/findId.do')"">아이디 찾기</button>
 <button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/secure/findPw.do')"">비밀번호 찾기</button>",default,seq
@@ -222,7 +222,7 @@ dialog_node,node_detail,text,parent,condition
 114,0,"특가 상품을 찾으시나요?<br>동원몰 빅세일 코너에서는 유통기간이 정상이면서도 초특가 행사상품을 만나실 수 있습니다.<br>달려라 할인 코너에서는 월, 수, 금 오전 10시마다 놀라운 가격의 상품들이 업데이트됩니다.",default,seq
 114,0_0,"아래 버튼을 클릭하시면 해당 페이지로 이동합니다!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/bigsale.do')"">빅세일에서 쇼핑하기</button><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/todayMainNew.do')"">달려라 할인에서 쇼핑하기</button>",default,END
 115,0,"고객님 GNC 상품 추천을 원하시나요?<br>죄송하지만 아직 추천 서비스 제공이 어렵습니다.<br>고객님과 찰떡궁합인 상품을 추천하기 위해, 저 푸디 공부하러 다녀오겠습니다!<br>더욱 더 똑똑한 AI가 되어 상품 추천을 더 잘 하고 싶어요!",default,seq
-115,0_0,"아래 버튼을 클릭하시면 GNC 베스트 상품, 현재 할인되고 있는 초특가 상품을 확인하실 수 있는 페이지로 이동합니다!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(http://www.dongwonmall.com/category/main.do?cate_id=01110040')"">GNC 전문관 보러가기</button>",default,END
+115,0_0,"아래 버튼을 클릭하시면 GNC 베스트 상품, 현재 할인되고 있는 초특가 상품을 확인하실 수 있는 페이지로 이동합니다!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/category/main.do?cate_id=01110040')"">GNC 전문관 보러가기</button>",default,END
 116,0,"고객님 천지인 상품 추천을 원하시나요?<br>죄송하지만 아직 추천 서비스 제공이 어렵습니다.<br>고객님과 찰떡궁합인 상품을 추천하기 위해, 저 푸디 공부하러 다녀오겠습니다!<br>더욱 더 똑똑한 AI가 되어 상품 추천을 더 잘 하고 싶어요!",default,seq
 116,0_0,"아래 버튼을 클릭하시면 천지인 MD 추천 상품, 현재 할인되고 있는 초특가 상품을 확인하실 수 있는 페이지로 이동합니다!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/category/main.do?cate_id=01110043')"">천지인 브랜드관 보러가기</button>",default,END
 117,0,"고객님 동원몰 럭키딜 코너는 매일 한정된 시간에 한해 제품을 좀 더 저렴하게 구매하실 수 있는 코너입니다.<br>다양한 제품이 매일 럭키한 할인가로 준비되며, 고객님의 취향에 따라 옵션 상품을 선택하실 수 있습니다. 매일 오전 10시마다 새로운 상품을 만나보실 수 있습니다.<br>월요일부터 일요일까지 매일매일 득템! 행운을 잡으세요~",default,seq
@@ -533,18 +533,18 @@ dialog_node,node_detail,text,parent,condition
 235,0,"고객님 <font style=""color:gold"">골드</font> 등급은<br> 최근 3개월 기준<br> 구매금액 3만원 이상 10만원 미만이신 고객님들이 해당됩니다.",default,END
 236,0,"고객님 <font style=""color:blue"">VIP</font> 등급은<br> 최근 3개월 기준<br> 구매금액 10만원 이상 30만원 미만이신 고객님들이 해당됩니다.",default,seq
 236,0_0,"<font style=\""color:blue\"">VIP</font> 등급 회원님만을 위한 혜택으로<br>1) 밴드/쿨밴드 장바구니 2천원 할인쿠폰 2장<br>2) 동원제품 장바구니 15% 할인쿠폰 1장<br>총 3장의 쿠폰 혜택을 매월 드립니다♡",default,seq
-236,0_0,"더욱 자세한 사항을 원하시면 아래의 버튼을 클릭하세요!<br> 동원몰 회원혜택에 대한 상세 안내페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(http://www.dongwonmall.com/benefit/member.do')"">등급별 회원혜택 보러가기</button>",default,END
+236,0_0,"더욱 자세한 사항을 원하시면 아래의 버튼을 클릭하세요!<br> 동원몰 회원혜택에 대한 상세 안내페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">등급별 회원혜택 보러가기</button>",default,END
 237,0,"고객님 <font style=""color:black"">패밀리</font> 등급은<br> 최근 3개월 기준<br> 구매금액 3만원 미만이신 고객님들이 해당됩니다.",default,END
 238,0,고객님 대량구매 원하시나요?<br> 천지인 선물세트 대량구매 상담은<br> 02-589-3944 로 문의해주세요<br> 감사합니다!,default,END
 239,0,동원몰 회원가입 어렵지 않아요~,default,seq
-239,0_0,"① 홈페이지 상단의 회원가입을 클릭하시거나 아래의 버튼을 클릭하세요!<br> 회원가입 페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,seq
+239,0_0,"① 홈페이지 상단의 회원가입을 클릭하시거나 아래의 버튼을 클릭하세요!<br> 회원가입 페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,seq
 239,0_1,"② 본인인증이 필요합니다.<br>본인 명의의 휴대폰 인증을 해주세요.<br>※ 14세 이상 19세 미만의 청소년은 동원몰 회원에 가입할 수 있으나, 상거래 활동과 혜택을 받을 수 없습니다. 단, 14세 미만의 아동은 동원몰에 가입할 수 없습니다.<br><br>③ 연락처, 메일, 주소 등 정보를 입력해주세요. 동원몰에서 쇼핑하실 때 꼭 필요한 정보이니 정확하게 입력 부탁드립니다.<br><br>④ 정보 입력을 마치셨으면 약관과 선택항목에 동의해주세요.<br><br>⑤ 가입완료!!!<br>어떠세요? 정말 간단하죠~<br>이렇게 회원가입을 마치시면 고객님도 동원몰 가족♡",default,seq
 239,0_2,"지금 바로 가입하시겠어요?<br><button class=\""dial_btn f\"">네</button><button class=\""dial_btn\"">아니오</button>",default,YNO
-239,0_2-Y,"역시 현명한 선택!<br> 맛있고 건강한 동원몰과 오래오래 함께해요~<br> 아래의 버튼을 클릭하시면 회원가입 페이지로 연결됩니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,END
+239,0_2-Y,"역시 현명한 선택!<br> 맛있고 건강한 동원몰과 오래오래 함께해요~<br> 아래의 버튼을 클릭하시면 회원가입 페이지로 연결됩니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,END
 239,0_2-A,회원이시군요! 감사합니다.<br>앞으로도 동원몰 많이 사랑해주세요~,default,END
 239,0_2-B,"정말요? 동원몰 회원님들께 드리는 혜택이 정말 많은데! 아쉽네요...<br>신규회원님께는 쇼핑지원금 2천원 + 동원상품 10% 할인쿠폰을 드리구요~ <br>첫 구매하시면 10% 할인 슈퍼쿠폰을 또 드려요~ <br>다시 한 번 생각해보시면 어떨까요? ^_^<br><button class=\""dial_btn f\"">가입할래요</button><button class=\""dial_btn\"">가입 안할래요</button>",default,YNO
 239,0_2-B-Y,,default,seq
-239,0_2-B-Y_0,"역시 현명한 선택!<br> 맛있고 건강한 동원몰과 오래오래 함께해요~<br> 아래의 버튼을 클릭하시면 회원가입 페이지로 연결됩니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,END
+239,0_2-B-Y_0,"역시 현명한 선택!<br> 맛있고 건강한 동원몰과 오래오래 함께해요~<br> 아래의 버튼을 클릭하시면 회원가입 페이지로 연결됩니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,END
 239,0_2-B-N,아쉽지만 알겠습니다.<br>다른 도움이 필요하시다면 저에게 말씀해주세요~,default,END
 239,0_2-B-O,다른 도움이 필요하신가요? 저에게 질문해주세요!,default,BACK
 239,0_2-O,다른 도움이 필요하신가요? 저에게 질문해주세요!,default,BACK
