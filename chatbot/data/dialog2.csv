@@ -138,7 +138,7 @@ dialog_node,node_detail,text,parent,condition
 68,0,임직원이신가요?<br>먼저 로그인을 해주세요!<br><br>로그인하신 후 PC 화면 우측을 보시면 파란색 '임직원mall' 아이콘이 보이실거에요.<br>클릭하시면 임직원몰로 이동합니다!,default,seq
 68,0_0,"모바일의 경우, 로그인하시면 화면 상단 스크롤 메뉴바에 '임직원몰'이 보입니다.<br>스크롤을 움직여 보세요!",default,END
 69,0,동원 임직원 고객님께 드리는 혜택!<br>1. 최대 25% 동원몰 평생할인 혜택을 드립니다. (일부상품 제외)<br>2. 매 분기마다 지급되는 임직원 복지포인트를 동원몰에서 현금처럼 사용하실 수 있습니다.<br>3. 동원 제품의 경우 임직원 할인포인트로 10% 추가할인해드립니다. (임직원몰 내 동원제품 구매 시 판매가의 10% 이하로 사용 가능),default,seq
-69,0_0,"임직원 복지포인트와 임직원 할인포인트에 대해 더 알고 싶으신가요?<br>아래 버튼을 누르시면 임직원 포인트에 대해 안내해드릴게요!<button class=\""dial_btn f\"">임직원 포인트\n 안내</button>",default,END
+69,0_0,"임직원 복지포인트와 임직원 할인포인트에 대해 더 알고 싶으신가요?<br>아래 버튼을 누르시면 임직원 포인트에 대해 안내해드릴게요!<button class=\""dial_btn f\"">임직원 포인트 안내</button>",default,END
 70,0,"동원 임직원 여러분께 드리는 포인트 혜택으로 임직원 복지포인트와 임직원 할인포인트가 있습니다.<br>궁금하신 내용을 선택해주세요!<button class=""dial_btn f"">임직원 복지포인트
  안내</button><button class=""dial_btn"">임직원 할인포인트 안내</button>",default,ABCD
 70,0-A,"임직원 복지포인트는 매 분기(1, 4, 7, 10월) 마다 50,000 포인트씩 지급되며, 법정 생일(주민등록번호 앞자리)이 있는 분기에 50,000 포인트를 추가 지급하여 연간 총 250,000 포인트가 지급됩니다.<br>※ 소속 계열사 정책에 따라 상이할 수 있습니다.",default,seq
@@ -299,7 +299,7 @@ dialog_node,node_detail,text,parent,condition
 160,0,"고객님 상품은 현재의 상품가치로 인한 시세의 영향으로 인하여 시중에서처럼 가격변동이 일어날 수 있으며, 혹은 일정기간 이벤트나 기획전을 통해 기간 내에만 판매가격이 변동되어질 수 있습니다.<br>이 점 고객님의 양해 부탁드리며, 더욱 좋은 가격으로 고객님을 찾아뵐 수 있도록 노력하겠습니다!<br><br>추가 문의사항이 있으실 경우 동원몰 고객센터 1588-3745 또는 1:1 맞춤상담에 문의하시면 맞춤 답변을 받으실 수 있습니다.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">고객센터 - 1:1 맞춤상담</button>",default,END
 161,0,고객님 주문취소를 원하실 경우에는 우선 'MY동원몰'에서 '주문현황'을 확인해주세요.<br>취소가 가능할 경우 '주문현황'란에 [주문취소] 버튼이 활성화됩니다.<br>[주문취소] 버튼 클릭 시 뜨는 알림창의 [확인] 버튼까지 누르시면 주문취소가 완료됩니다.,default,seq
 161,0_0,"혹시 [주문취소] 버튼이 보이지 않으시나요?<button class=\""dial_btn f\"">네, 안보여요</button><button class=\""dial_btn\"">아니오, 보입니다</button>",default,YNO
-161,0_0-Y,"고객님 ‘주문현황’란에 뭐라고 적혀있나요?<button class=\""dial_btn f\"">주문접수</button>\n<button class=\""dial_btn\"">결제완료</button>\n<button class=\""dial_btn\"">발송지연</button>\n<button class=\""dial_btn\"">발송준비</button>\n<button class=\""dial_btn\"">발송완료</button>\n<button class=\""dial_btn\"">배송중</button><button class=\""dial_btn\"">배송완료</button>",default,ABCD
+161,0_0-Y,"고객님 ‘주문현황’란에 뭐라고 적혀있나요?<br><br><button class=\""dial_btn f\"">주문접수</button><button class=\""dial_btn\"">결제완료</button><button class=\""dial_btn\"">발송지연</button><br><button class=\""dial_btn\"">발송준비</button><button class=\""dial_btn\"">발송완료</button><button class=\""dial_btn\"">배송중</button><button class=\""dial_btn\"">배송완료</button>",default,ABCD
 161,0_0-Y-A,"고객님 현 상태에서는 주문하신 제품의 발송을 위해 고객님의 주문 및 배송 정보가 발송업체, 물류센터, 택배사로 이관된 상태입니다.<br>배송상태가 ‘발송준비’, ‘발송완료’인 상태에서는 취소가 불가하므로 반품으로 처리하게 됩니다.<br><br>고객님 반품하시겠어요? 네 아니오로 말씀해주세요~",default,YNO
 161,0_0-Y-A-Y,고객님 반품하려 하시나요? <br>죄송하지만 인공지능인 제가 바로 반품처리 하는 것은 아직 조금 어려워요~ <br>대신 저희 동원몰 전문상담사들이 도와드리겠습니다. <br>고객센터 1588-3745로 연락주시면 빠르게 처리해드릴게요~,default,seq
 161,0_0-Y-A-Y_0,"필요하시면, 반품 절차에 대해 간단히 안내드릴까요? <br> 네 아니오로 말씀해주세요~",default,YNO
@@ -352,12 +352,12 @@ dialog_node,node_detail,text,parent,condition
 178,0,"고객님 씨앗은 동원몰에서 제공하는 포인트 서비스입니다. <br>상품 구매시 사용할 수 있는 배송비 할인쿠폰으로 교환이 가능하며, 씨앗을 이용한 다양한 이벤트도 제공됩니다. <br> 교환하신 배송비 할인쿠폰은 교환일로부터 30일이내 사용가능합니다.",default,seq
 178,0_0,"고객님 씨앗은 동원몰의 전용 포인트로, 적립금과 달리 결제에는 사용하실 수 없습니다. <br> 하지만 누적된 씨앗으로 배송비 할인쿠폰 교환, 이벤트 참여 등 다양한 서비스를 이용하실 수 있습니다. <br>※ 단, 체험단 배송비 결제는 불가합니다.",default,END
 179,0,"고객님 씨앗은 동원몰의 전용 포인트로, 적립금과 달리 결제에는 사용하실 수 없습니다. <br> 하지만 누적된 씨앗으로 배송비 할인쿠폰 교환, 이벤트 참여 등 다양한 서비스를 이용하실 수 있습니다. <br>※ 단, 체험단 배송비 결제는 불가합니다.",default,seq
-179,0_0,"지금 바로 씨앗 적립하러 가시겠어요?<br><button class=\""dial_btn f\"">네</button>\n<button class=\""dial_btn\"">아니오</button>",default,YNO
+179,0_0,"지금 바로 씨앗 적립하러 가시겠어요?<br><button class=\""dial_btn f\"">네</button><button class=\""dial_btn\"">아니오</button>",default,YNO
 179,0_0-Y,"다양한 방법으로 씨앗을 적립하실 수 있어요!<br>아래의 버튼을 클릭하시면 씨앗 적립 방법에 대해 소개해드리는 페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/seed.do')"">씨앗 가이드</button>",default,END
 179,0_0-N,알겠습니다. <br> 쇼핑의 즐거움을 2배로~ 만들어주는 동원몰 씨앗 포인트 서비스 꼭 한 번 이용해보세요!,default,END
 179,0_0-O,다른 도움이 필요하신가요? 저에게 질문해주세요!,default,BACK
 180,0,"고객님 씨앗의 유효기간은 적립일로부터 180일입니다. 180일 안에 사용하지 않은 씨앗은 180일 이후 자동소멸 됩니다.<br>※ 씨앗의 지급, 사용 및 유효기간 등 씨앗정책과 관련된 모든 사항은 당사의 사정에 의해 변경될 수 있습니다.",default,seq
-180,0_0,"소멸예정 씨앗 확인하러 가시겠어요?<br><button class=\""dial_btn f\"">네</button>\n<button class=\""dial_btn\"">아니오</button>",default,YNO
+180,0_0,"소멸예정 씨앗 확인하러 가시겠어요?<br><button class=\""dial_btn f\"">네</button><button class=\""dial_btn\"">아니오</button>",default,YNO
 180,0_0-Y,"아래 버튼을 클릭하시면 사용 가능한 씨앗과 당월 미사용시 소멸예정인 씨앗을 확인하실 수 있는 페이지로 이동합니다!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/mypage/benefit/mySeed.do')"">씨앗 확인하기</button>",default,END
 180,0_0-N,알겠습니다~,default,END
 180,0_0-O,다른 도움이 필요하신가요? 저에게 질문해주세요!,default,BACK
@@ -476,7 +476,7 @@ dialog_node,node_detail,text,parent,condition
 205,0-B,"고객님 단순 고객변심에 의한 교환/반품인 경우 고객님께서 반품관련 왕복배송비를 부담하셔야 합니다. <br>고객변심에 의해 반품시 배송비를 보내지 않으시면 환불이 불가능 하오니,<br>반드시 사전에 고객센터 접수 후 배송비를 부담해주셔야 해요~# 반품 접수 절차 없이 임의로 반송할 경우, 반품내용을 확인할 수 없으므로 환불이 지연되거나 환불이 되지 않을 수 있습니다. <br>그러므로 반드시 동원몰 고객센터 1588-3745로 접수하시거나<br> 홈페이지 상단의 ‘MY 동원몰’의 ‘주문/배송확인’에서 ‘반품신청’을 하시고, 반품절차에 따라 반품하여주세요!",default,END
 205,0-O,"상품하자, 고객변심이 아닌 다른 답변을 주셨네요! <br>다른 도움이 필요하신가요? 질문해주세요!",default,BACK
 206,0,"1. 동원몰 배송정책<br>(1) 동원몰의 배송은 동원몰 물류센터 배송상품과 각 입점업체별 배송제품에 따라 별도 적용됩니다.<br>동원몰 물류센터 배송상품은 3만원 이상 구매시 무료배송, 입점업체 상품은 각 업체별 배송정책에 따라 적용을 원칙으로 하고 있습니다.<br>일부 도서, 산간 지역은 배송불가하거나 배송기간이 길어질 수 있으며, 추가 배송비가 발생할 수 있습니다.<br>자세한 사항은 상품 개별페이지를 확인하시기 바랍니다.<br><br>(2) 배송 포장 유형이 개별배송인 상품의 경우 상품을 한번에 같이 주문하셔도 따로 배송될 수 있습니다.<br>배송지연 등에 따른 소비자 피해에 대해서는 소비자 피해 보상규정(제정경제부 고시)을 적용합니다.",default,seq
-206,0_0,"2. 동원몰 배송 포장 유형<br>동원몰에서는 안전하고 신선한 배송을 위하여 포장유형별 배송을 실시하고 있으며, 상품 개별페이지에서 배송아이콘으로 확인이 가능합니다.<br><br>- 밴드배송 : 상온 보관되는 상품들로 박스포장되어 배송됩니다.<br>\n- 쿨밴드배송 : 냉장/ 냉동 보관되는 상품들로 아이스박스 포장되어 주문한 제품 모두 합배송됩니다.<br>\n- 부분합배송 : 개별로 주문인 경우 제조공장에서 직접 배송, 다른 제품과 함께 주문시 합배송됩니다.<br>\n- 업체배송 : 업체에서 배송되는 제품들로 입점업체에서 직접 배송됩니다. (업체별 택배사가 다를 수 있습니다.)<br> \n- 개별배송 : 제조공장에서 직접 배송되는 제품들로 개별로 배송됩니다.\n<br><br>추가 문의사항이 있으실 경우 동원몰 고객센터 1588-3745 또는 1:1 맞춤상담에 문의하시면 맞춤 답변을 받으실 수 있습니다.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">고객센터 - 1:1 맞춤상담</button>",default,END
+206,0_0,"2. 동원몰 배송 포장 유형<br>동원몰에서는 안전하고 신선한 배송을 위하여 포장유형별 배송을 실시하고 있으며, 상품 개별페이지에서 배송아이콘으로 확인이 가능합니다.<br><br>- 밴드배송 : 상온 보관되는 상품들로 박스포장되어 배송됩니다.<br>- 쿨밴드배송 : 냉장/ 냉동 보관되는 상품들로 아이스박스 포장되어 주문한 제품 모두 합배송됩니다.<br>- 부분합배송 : 개별로 주문인 경우 제조공장에서 직접 배송, 다른 제품과 함께 주문시 합배송됩니다.<br>- 업체배송 : 업체에서 배송되는 제품들로 입점업체에서 직접 배송됩니다. (업체별 택배사가 다를 수 있습니다.)<br> - 개별배송 : 제조공장에서 직접 배송되는 제품들로 개별로 배송됩니다.<br><br>추가 문의사항이 있으실 경우 동원몰 고객센터 1588-3745 또는 1:1 맞춤상담에 문의하시면 맞춤 답변을 받으실 수 있습니다.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">고객센터 - 1:1 맞춤상담</button>",default,END
 207,0,"고객님 일부 도서, 산간 지역은 배송불가하거나 배송기간이 길어질 수 있으며 추가 배송비가 발생할 수 있습니다.<br>도서산간 지역의 경우, 배송지연으로 인한 클레임 처리가 불가할 수 있습니다.",default,seq
 207,0_0,"저의 답변에 만족하셨나요?<br>추가 문의사항이 있으실 경우 동원몰 고객센터 1588-3745 또는 1:1 맞춤상담에 문의하시면 맞춤 답변을 받으실 수 있습니다.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">고객센터 - 1:1 맞춤상담</button>",default,END
 208,0,"고객님 동원몰에서 비회원으로 주문하시더라도 주문번호를 알고 계시는 경우 홈페이지 상단의 주문배송조회를 클릭하시거나 아래의 버튼을 클릭하시면 배송확인이 가능합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/secure/findOrder.do')"">비회원 주문/배송 조회하기</button>",default,seq
@@ -539,10 +539,10 @@ dialog_node,node_detail,text,parent,condition
 239,0,동원몰 회원가입 어렵지 않아요~,default,seq
 239,0_0,"① 홈페이지 상단의 회원가입을 클릭하시거나 아래의 버튼을 클릭하세요!<br> 회원가입 페이지로 이동합니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,seq
 239,0_1,"② 본인인증이 필요합니다.<br>본인 명의의 휴대폰 인증을 해주세요.<br>※ 14세 이상 19세 미만의 청소년은 동원몰 회원에 가입할 수 있으나, 상거래 활동과 혜택을 받을 수 없습니다. 단, 14세 미만의 아동은 동원몰에 가입할 수 없습니다.<br><br>③ 연락처, 메일, 주소 등 정보를 입력해주세요. 동원몰에서 쇼핑하실 때 꼭 필요한 정보이니 정확하게 입력 부탁드립니다.<br><br>④ 정보 입력을 마치셨으면 약관과 선택항목에 동의해주세요.<br><br>⑤ 가입완료!!!<br>어떠세요? 정말 간단하죠~<br>이렇게 회원가입을 마치시면 고객님도 동원몰 가족♡",default,seq
-239,0_2,"지금 바로 가입하시겠어요?<br><button class=\""dial_btn f\"">네</button>\n<button class=\""dial_btn\"">아니오</button>",default,YNO
+239,0_2,"지금 바로 가입하시겠어요?<br><button class=\""dial_btn f\"">네</button><button class=\""dial_btn\"">아니오</button>",default,YNO
 239,0_2-Y,"역시 현명한 선택!<br> 맛있고 건강한 동원몰과 오래오래 함께해요~<br> 아래의 버튼을 클릭하시면 회원가입 페이지로 연결됩니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,END
 239,0_2-A,회원이시군요! 감사합니다.<br>앞으로도 동원몰 많이 사랑해주세요~,default,END
-239,0_2-B,"정말요? 동원몰 회원님들께 드리는 혜택이 정말 많은데! 아쉽네요...<br>신규회원님께는 쇼핑지원금 2천원 + 동원상품 10% 할인쿠폰을 드리구요~ <br>첫 구매하시면 10% 할인 슈퍼쿠폰을 또 드려요~ <br>다시 한 번 생각해보시면 어떨까요? ^_^<br><button class=\""dial_btn f\"">가입할래요</button>\n<button class=\""dial_btn\"">가입 안할래요</button>",default,YNO
+239,0_2-B,"정말요? 동원몰 회원님들께 드리는 혜택이 정말 많은데! 아쉽네요...<br>신규회원님께는 쇼핑지원금 2천원 + 동원상품 10% 할인쿠폰을 드리구요~ <br>첫 구매하시면 10% 할인 슈퍼쿠폰을 또 드려요~ <br>다시 한 번 생각해보시면 어떨까요? ^_^<br><button class=\""dial_btn f\"">가입할래요</button><button class=\""dial_btn\"">가입 안할래요</button>",default,YNO
 239,0_2-B-Y,,default,seq
 239,0_2-B-Y_0,"역시 현명한 선택!<br> 맛있고 건강한 동원몰과 오래오래 함께해요~<br> 아래의 버튼을 클릭하시면 회원가입 페이지로 연결됩니다.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">동원몰 회원가입 하러가기</button>",default,END
 239,0_2-B-N,아쉽지만 알겠습니다.<br>다른 도움이 필요하시다면 저에게 말씀해주세요~,default,END
