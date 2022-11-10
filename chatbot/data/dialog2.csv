@@ -1,639 +1,570 @@
-ï»¿dialog_node,node_detail,text,parent,condition,intent
-0,0,ì§€ê¸ˆê¹Œì§€ ë™ì›ëª° ì¸ê³µì§€ëŠ¥ ìƒë‹´ì‚¬ì˜€ìŠµë‹ˆë‹¤!  ë” ë‚˜ì€ ë™ì›ëª°ì´ ë˜ê² ìŠµë‹ˆë‹¤. ì¦ê±°ìš´ ì‡¼í•‘ë˜ì„¸ìš”~ ê°ì‚¬í•©ë‹ˆë‹¤.,default,END,ê·¸ë§Œ
-1,0,ê³ ê°ë‹˜ ì£„ì†¡í•©ë‹ˆë‹¤ ì €ì˜ ë‹µë³€ì— ë§Žì´ ì‹¤ë§í•˜ì…¨ë‚˜ìš”?<br>ë² íƒ€ ì„œë¹„ìŠ¤ ê¸°ê°„ ì—´ì‹¬ížˆ í•™ìŠµí•´ì„œ ê³ ê°ë‹˜ê»˜ ë”ìš± ìœ ìš©í•œ ì„œë¹„ìŠ¤ë¡œ ê³§ ì°¾ì•„ëµ™ê² ìŠµë‹ˆë‹¤.,default,END,ì‹¤ë§ë°ì§ˆì±…
-1,0,ê³ ê°ë‹˜ ì €ì˜ ë‹µë³€ì— ë§Žì´ ì‹¤ë§í•˜ì…¨ì£ ? ì£„ì†¡í•©ë‹ˆë‹¤<br>ì—´ì‹¬ížˆ í•™ìŠµí•´ì„œ ê³ ê°ë‹˜ê»˜ ë§Œì¡±ìŠ¤ëŸ¬ìš´ ë‹µë³€ì„ ë“œë¦´ ìˆ˜ ìžˆë„ë¡ ë…¸ë ¥í•˜ê² ìŠµë‹ˆë‹¤.,default,END,ì‹¤ë§ë°ì§ˆì±…
-2,0,ì•„ì§ì€ ê³µë¶€í•´ì•¼ ë  ë¶€ë¶„ì´ ë§Žì§€ë§Œ ìµœì„ ì„ ë‹¤í•˜ê³  ìžˆì–´ìš”!<br>ì§€ì¼œë´ ì£¼ì„¸ìš”,default,seq,ì¼ì€ìž˜í•˜ë‹ˆ
-2,0,ì•„ì§ì€ í•™ìŠµí•´ì•¼ í•  ë‚´ìš©ì´ ë§Žì§€ë§Œ ì—´ì‹¬ížˆ ë…¸ë ¥í•˜ê³  ìžˆë‹µë‹ˆë‹¤!<br>ê¸°ëŒ€í•´ì£¼ì„¸ìš”~,default,seq,ì¼ì€ìž˜í•˜ë‹ˆ
-2,0_0,ì§€ê¸ˆê¹Œì§€ ë™ì›ëª° ì¸ê³µì§€ëŠ¥ ìƒë‹´ì‚¬ì˜€ìŠµë‹ˆë‹¤!  ë” ë‚˜ì€ ë™ì›ëª°ì´ ë˜ê² ìŠµë‹ˆë‹¤. ì¦ê±°ìš´ ì‡¼í•‘ë˜ì„¸ìš”~ ê°ì‚¬í•©ë‹ˆë‹¤.,default,END,
-3,0,ê³ ê°ë‹˜ì´ ì›ƒìœ¼ì‹œë‹ˆ ì €ë„ í–‰ë³µí•˜ë„¤ìš”!,default,END,ì›ƒìŒ
-3,0,ê³ ê°ë‹˜ì´ ì›ƒìœ¼ì‹œë‹ˆ ì €ë„ ì›ƒìŒì´ ë‚˜ë„¤ìš”!,default,END,ì›ƒìŒ
-3,0,ì›ƒìœ¼ë©´ ë³µì´ ì˜¨ëŒ€ìš”!,default,END,ì›ƒìŒ
-3,0,ë¯¸ì†Œê°€ ì°¸ ì•„ë¦„ë‹¤ìš°ì‹œë„¤ìš”~,default,END,ì›ƒìŒ
-3,0,ì›ƒìœ¼ë‹ˆê¹Œ í›¨ì”¬ ë” ë©‹ì§€ì„¸ìš”!,default,END,ì›ƒìŒ
-3,0,ê³ ê°ë‹˜ì´ ì›ƒìœ¼ì‹œë‹ˆ ì €ë„ ê¸°ë¶„ì´ ì¢‹ì•„ìš”~,default,END,ì›ƒìŒ
-4,0,ê´œì°®ì•„ìš” ê³ ê°ë‹˜!,default,END,ì‚¬ê³¼
-4,0,ê´œì°®ìŠµë‹ˆë‹¤ ê³ ê°ë‹˜~,default,END,ì‚¬ê³¼
-4,0,ê·¸ëŸ´ìˆ˜ë„ ìžˆì£ ! ê´œì°®ë‹µë‹ˆë‹¤.,default,END,ì‚¬ê³¼
-5,0,ê°ì‚¬í•©ë‹ˆë‹¤ ê³ ê°ë‹˜!<br> ë” ì—´ì‹¬ížˆ í• ê²Œìš”! ì§€ì¼œë´ì£¼ì„¸ìš”~,default,END,ê°ì‚¬
-5,0,ê°ì‚¬í•´ìš” ê³ ê°ë‹˜~<br> ë” ì—´ì‹¬ížˆ ë°°ìš°ê² ìŠµë‹ˆë‹¤!,default,END,ê°ì‚¬
-5,0,ê°ì‚¬í•©ë‹ˆë‹¤ ê³ ê°ë‹˜!<br> ë” ë‚˜ì€ ì„œë¹„ìŠ¤ë¡œ ì°¾ì•„ëµê²Œìš”~,default,END,ê°ì‚¬
-6,0,ê·¸ëŸ¬ì„¸ìš”?<br>ì œê°€ ë¬´ì—‡ì„ ë„ì™€ë“œë¦¬ë©´ ì¢‹ì„ê¹Œìš”? ë§ì”€í•´ì£¼ì„¸ìš”~,default,END,ê³ ê°ê¸°ë¶„ë‚˜ì¨
-6,0,ê·¸ëŸ¬ì‹œêµ°ìš”~<br>ì œê°€ ë¬´ì—‡ì„ ë„ì™€ë“œë¦¬ë©´ ì¢‹ì„ê¹Œìš”? ë§ì”€í•´ì£¼ì„¸ìš”~,default,END,ê³ ê°ê¸°ë¶„ë‚˜ì¨
-7,0,ê³ ê°ë‹˜ì´ ê¸°ë¶„ ì¢‹ìœ¼ì‹œë©´ ì €ë„ ì¢‹ì•„ìš”!,default,END,ê³ ê°ê¸°ë¶„ì¢‹ìŒ
-7,0,ì €ë‘ìš”! ^____^,default,END,ê³ ê°ê¸°ë¶„ì¢‹ìŒ
-7,0,ê³ ê°ë‹˜ì´ ê¸°ë¶„ ì¢‹ìœ¼ì‹œë©´ ì €ë„ ì¢‹ë‹µë‹ˆë‹¤~,default,END,ê³ ê°ê¸°ë¶„ì¢‹ìŒ
-8,0,ì•„ì§ì€ ì¡°ê¸ˆ ì–´ë µë„¤ìš”...<br>ì œê°€ ë” ì—´ì‹¬ížˆ í•™ìŠµí• ê²Œìš”!,default,seq,ì–´ë ¤ì›€
-8,0,ë„¤ ì•„ì§ì€ ì¡°ê¸ˆ ì–´ë ¤ì›Œìš”...<br>ì•žìœ¼ë¡œ ë” ì—´ì‹¬ížˆ í•™ìŠµí•´ì•¼ê² ì–´ìš”!,default,seq,ì–´ë ¤ì›€
-8,0_0,ì§€ê¸ˆê¹Œì§€ ë™ì›ëª° ì¸ê³µì§€ëŠ¥ ìƒë‹´ì‚¬ì˜€ìŠµë‹ˆë‹¤!  ë” ë‚˜ì€ ë™ì›ëª°ì´ ë˜ê² ìŠµë‹ˆë‹¤. ì¦ê±°ìš´ ì‡¼í•‘ë˜ì„¸ìš”~ ê°ì‚¬í•©ë‹ˆë‹¤.,default,END,
-9,0,ë„¤ ê³ ê°ë‹˜!<br>í‘¸ë””ê°€ ë„ì™€ë“œë¦´ê²Œìš”~<br>ë¬¸ì˜ê°€ ìžˆìœ¼ì‹  ê²½ìš° ë§ì”€í•´ì£¼ì„¸ìš”.,default,END,ë„ì™€ì¤˜
-9,0,ê³ ê°ë‹˜ì„ ë„ì™€ë“œë¦¬ê¸° ìœ„í•´ í‘¸ë””ê°€ ë‹¬ë ¤ê°ˆê²Œìš”!<br>ë„ì›€ì´ í•„ìš”í•˜ì‹  ë¶€ë¶„ì„ ë§ì”€í•´ì£¼ì„¸ìš”.,default,END,ë„ì™€ì¤˜
-9,0,ë„µ í‘¸ë”” ì—¬ê¸° ìžˆìŠµë‹ˆë‹¤!<br>ë„ì›€ì´ í•„ìš”í•˜ì‹  ë¶€ë¶„ì„ ë§ì”€í•´ì£¼ì„¸ìš”.,default,END,ë„ì™€ì¤˜
-10,0,ë„¤! ^_____^<br>ë‹¤ë¥¸ ë¬¸ì˜ê°€ ìžˆìœ¼ì‹œë©´ ì €ì—ê²Œ ë§ì”€í•´ì£¼ì„¸ìš”.,default,END,ìˆ˜ê¸
-10,0,ë„¤! ^_____^<br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹œë©´ ì €ì—ê²Œ ë§ì”€í•´ì£¼ì„¸ìš”.,default,END,ìˆ˜ê¸
-10,0,ë„¤! ^_____^<br>ë¬¸ì˜ê°€ ë” ìžˆìœ¼ì‹œë‹¤ë©´ ì €ì—ê²Œ ë§ì”€í•´ì£¼ì„¸ìš”.,default,END,ìˆ˜ê¸
-11,0,ê³ ê°ë‹˜ ë­˜ ì¢€ ì•„ì‹œëŠ”êµ°ìš”!<br>^_____^,default,END,ë§žìž¥êµ¬
-11,0,ë§žì•„ìš”! ì •ë§ ê·¸ëž˜ìš”!,default,END,ë§žìž¥êµ¬
-12,0,ë–´ë‹¤ ë–´ë‹¤ ë¹„í–‰ê¸°~<br>ë‚ ì•„ë¼ ë‚ ì•„ë¼~<br>ì—¬ê¸°ê¹Œì§€ë§Œ í• ê²Œìš”!<br>ë¶€ë„ëŸ¼ì´ ë§Žì•„ì„œ...,default,END,ë…¸ëž˜
-12,0,ê³ ê°ë‹˜ ì œê°€ íƒ€ê³ ë‚œ ìŒì¹˜ë¼ì„œìš”...<br>ë‹¤ìŒì— ì—°ìŠµí•˜ê³  ë¶ˆëŸ¬ë“œë¦´ê²Œìš”!,default,END,ë…¸ëž˜
-12,0,ê³ ê°ë‹˜ ì œê°€ ìˆ˜ì¤ìŒì´ ë§Žì•„ì„œìš”...<br>ë…¸ëž˜ë¶€ë¥´ê¸° ëŒ€ì‹  ê³ ê°ë‹˜ì˜ ë¬¸ì˜ì— ë‹µë³€í•´ë“œë¦´ê²Œìš”!,default,END,ë…¸ëž˜
-13,0,"ê³ ê°ë‹˜ ëª¨ë°”ì¼ì¿ í°ì— ëŒ€í•´ ë¬¸ì˜ì£¼ì…¨ë„¤ìš”~ <br>ì œê°€ ë°”ë¡œ ë‹µë³€í•´ë“œë¦¬ê³  ì‹¶ì§€ë§Œ, ì¸ê³µì§€ëŠ¥ì¸ ì €ì—ê² ì•„ì§ ì¡°ê¸ˆ ì–´ë ¤ìš´ ë‚´ìš©ì´ë„¤ìš”~ <br> í•´ë‹¹ ìƒí’ˆíŽ˜ì´ì§€ì˜ ìƒí’ˆQ&A ë˜ëŠ” 1:1ë§žì¶¤ìƒë‹´ ê²Œì‹œíŒì— ë¬¸ì˜ê¸€ì„ ë‚¨ê²¨ì£¼ì‹œê±°ë‚˜, ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ì „ë¬¸ ìƒë‹´ì›ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤!",default,END,ëª¨ë°”ì¼ì¿ í°ë¬¸ì˜
-14,0,ì£¼ì†Œë¥¼ ëª°ë¼ë„ ì„ ë¬¼í•˜ê¸° ëšë”±!<br>ê°„íŽ¸í•˜ê²Œ ëª¨ë°”ì¼ë¡œ ì„ ë¬¼í•  ìˆ˜ ìžˆëŠ” ê¸°í”„í‹°ëª¨ì•„ ë™ì› ì„ ë¬¼ì„¸íŠ¸â˜…<br>ê¸°í”„í‹°ëª¨ì•„ ë‹¨ë…íŠ¹ê°€ ìƒí’ˆì„ êµ¬ìž…í•˜ì‹œë©´ 15% ì ë¦½ê¸ˆ ëŒë ¤ ë“œë¦¼~,default,seq,ê¸°í”„í‹°ëª¨ì•„_ì„ ë¬¼ì„¸íŠ¸
-14,0_0,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë™ì› ì„ ë¬¼ì„¸íŠ¸ ê¸°í”„í‹°ëª¨ì•„ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br>ì´ë²ˆ ì¶”ì„ì—ëŠ” ì‰½ê³  ë¹ ë¥¸ ê¸°í”„í‹°ëª¨ì•„ë¡œ ì‚¬ëž‘ì„ ë„ë¦¬ ë„ë¦¬ í¼íŠ¸ë ¤ë³´ì•„ìš”â™¡<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/plan.do?seq=00000000877\"",\""*\"")'><button class=\""ext_btn\"" type=\""button\"">ê¸°í”„í‹°ëª¨ì•„ ì„ ë¬¼í•˜ê¸°!</button></a>",default,END,
-15,0,"íšŒì›ì •ë³´ë³€ê²½ì„ ì›í•˜ì‹œë‚˜ìš”?<br> ë™ì›ëª° ë©”ì¸ íŽ˜ì´ì§€ ìƒë‹¨ì˜ [MYë™ì›ëª°]ì„ í´ë¦­í•´ì£¼ì„¸ìš”.<br>[MYë™ì›ëª°] íŽ˜ì´ì§€ë¡œ ì´ë™í•˜ì‹   í›„ ì¢Œì¸¡ ë©”ë‰´ [íšŒì›ì •ë³´ ê´€ë¦¬]ì—ì„œ ìˆ˜ì •ì„ ì›í•˜ì‹œëŠ” ë©”ë‰´ë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”.<br>í•´ë‹¹ í•­ëª© ìˆ˜ì •í•˜ì‹  í›„<br>[ì €ìž¥]ë²„íŠ¼ì„ í´ë¦­í•´ì£¼ì‹œë©´ ì™„ë£Œë©ë‹ˆë‹¤.<br>ë‹¨, íšŒì› IDëŠ” ë³€ê²½í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""https://www.dongwonmall.com/mypage/main.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">MY ë™ì›ëª°</button></a>",default,END,íšŒì›ì •ë³´ë³€ê²½
-16,0,"ê³ ê°ë‹˜<br>ì£¼ë¯¼ë“±ë¡ì¦ì˜ ì´ë¦„ì´ ë³€ê²½ëœ ê²½ìš° ìž¬ê°€ìž…í•˜ì‹¤ í•„ìš” ì—†ìœ¼ë©° ë™ì›ëª° ê³ ê°ì„¼í„° 1:1 ë§žì¶¤ìƒë‹´ì´ë‚˜ ì½œì„¼í„° 1588-3745ë¡œ <font style=""color:red"">ê°œëª…ë˜ì‹  ì„±í•¨</font>ê³¼ <font style=""color:red"">ì£¼ë¯¼ë“±ë¡ì¦ ë°œê¸‰ì¼ìž 8ìžë¦¬</font>ë¥¼ ì•Œë ¤ì£¼ì‹œë©´ ë³¸ì¸ í™•ì¸ ê³¼ì •ì„ ê±°ì³ ìˆ˜ì •í•´ë“œë¦½ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì´ë¦„ë³€ê²½
-17,0,"ê³ ê°ë‹˜ ê´‘ê³ ë©”ì¼ ìˆ˜ì‹ ì„ ì›ì¹˜ ì•Šìœ¼ì‹¤ ê²½ìš°, ë¡œê·¸ì¸ í›„ [My ë™ì›ëª° - ê°œì¸ì •ë³´ë³€ê²½] íŽ˜ì´ì§€ì—ì„œ ì„¤ì •ì„ í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ê¸°ë³¸ ì •ë³´ ìž…ë ¥ëž€ì˜ ë©”ì¼ìˆ˜ì‹ ì—¬ë¶€ í•­ëª©ì—ì„œ 'ìˆ˜ì‹ í•˜ì§€ì•ŠìŒ'ìœ¼ë¡œ ë³€ê²½í•˜ì‹œë©´ ë” ì´ìƒ ì •ë³´ë©”ì¼ì„ ë³´ë‚´ë“œë¦¬ì§€ ì•ŠìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""https://www.dongwonmall.com/mypage/member/myInfo.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">MY ë™ì›ëª° - ê°œì¸ì •ë³´ë³€ê²½</button></a>",default,END,ì •ë³´ë©”ì¼ìˆ˜ì‹ ê±°ë¶€
-18,0,"ê³ ê°ë‹˜ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ íšŒì› ë“±ê¸‰ì¡°ê±´ê³¼ ë“±ê¸‰ë³„ í˜œíƒì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/benefit/member.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">íšŒì› ë“±ê¸‰ ë³´ëŸ¬ê°€ê¸°</button></a>",default,seq,íšŒì›ë“±ê¸‰ì¡°ê±´
-18,0_0,ë˜ëŠ” í™•ì¸í•˜ì‹œê³  ì‹¶ì€ ë“±ê¸‰ì„ ìž…ë ¥ì°½ì— ìž…ë ¥í•´ì£¼ì‹œë©´ í•´ë‹¹ ë“±ê¸‰ì˜ ë“±ê¸‰ì¡°ê±´ê³¼ ë“±ê¸‰í˜œíƒì„ ì•ˆë‚´í•´ë“œë ¤ìš”~,default,END,
-19,0,ê³ ê°ë‹˜ ë™ì›ëª° íšŒì›ë“±ê¸‰ ì¤‘ ìµœê³  ë“±ê¸‰ì€ 'PREMIUM í”„ë¦¬ë¯¸ì—„'ìž…ë‹ˆë‹¤.,default,seq,íšŒì›ìµœê³ ë“±ê¸‰
-19,0_0,"ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ íšŒì› ë“±ê¸‰ì¡°ê±´ê³¼ ë“±ê¸‰ë³„ í˜œíƒì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/member.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">íšŒì› ë“±ê¸‰ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-20,0,ê³ ê°ë‹˜ ë™ì›ëª° íšŒì›ë“±ê¸‰ ì¤‘ ì œì¼ ë‚®ì€ ë“±ê¸‰ì€ 'FAMILY íŒ¨ë°€ë¦¬' ìž…ë‹ˆë‹¤.,default,seq,íšŒì›ìµœí•˜ë“±ê¸‰
-20,0_0,"ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ íšŒì› ë“±ê¸‰ì¡°ê±´ê³¼ ë“±ê¸‰ë³„ í˜œíƒì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/member.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">íšŒì› ë“±ê¸‰ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-21,0,ë™ì›ëª° íšŒì›ì´ ë˜ì‹œë©´ ì •ë§ ë§Žì€ í˜œíƒì„ ëˆ„ë¦¬ì‹¤ ìˆ˜ ìžˆì–´ìš”~<br>ì§€ê¸ˆ ë°”ë¡œ ì‹ ê·œ ê°€ìž…í•˜ì‹œë©´ ì‡¼í•‘ì§€ì›ê¸ˆ 2ì²œì› + ë™ì›ìƒí’ˆ 10% í• ì¸ì¿ í°ì„ ë“œë¦¬êµ¬ìš”~ <br>ì²« êµ¬ë§¤í•˜ì‹œë©´ 10% í• ì¸ ìŠˆí¼ì¿ í°ì„ ë˜ ë“œë ¤ìš”~,default,seq,íšŒì›ê°€ìž…í˜œíƒì•ˆë‚´
-21,0_0,"ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•´ë³´ì„¸ìš”!<br> ë™ì›ëª° íšŒì›í˜œíƒì— ëŒ€í•œ ìƒì„¸ ì•ˆë‚´íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/member.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">íšŒì›í˜œíƒ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-22,0,"ë™ì›ëª°ì„ ë– ë‚˜ì‹œë ¤ê³  í•˜ì‹œë‚˜ìš”? <br> ì •ë§ ì•„ì‰½ìŠµë‹ˆë‹¤..<br> íšŒì›íƒˆí‡´ë¥¼ ì›í•˜ì‹œë©´ ë¨¼ì € ë¡œê·¸ì¸ í›„<br>[MYë™ì›ëª°]ì— ë“¤ì–´ê°€ì…”ì„œ ì¢Œì¸¡ â€˜íšŒì›ì •ë³´ ê´€ë¦¬â€™ ë©”ë‰´ ì¤‘ ë§¨ ë§ˆì§€ë§‰ì— ìžˆëŠ” [íšŒì›íƒˆí‡´]ë¥¼ í´ë¦­í•˜ì‹œë©´ ë©ë‹ˆë‹¤. <br> íšŒì›íƒˆí‡´ ì‹œ ìœ ì˜í•  ì ì„ ì•Œë ¤ë“œë¦´ê¹Œìš”? ""<button class=""dial_btn f"">ë„¤</button><button class=""dial_btn"">ì•„ë‹ˆì˜¤</button>",default,YNO,íšŒì›íƒˆí‡´ì•ˆë‚´
-22,0-Y,íšŒì›íƒˆí‡´ ì‹œ ìœ ì˜í•  ì  ì•Œë ¤ë“œë¦´ê²Œìš”!,default,seq,
-22,0-Y_0,"1) íƒˆí‡´ ì‹œ, ê³ ê°ë‹˜ê»˜ì„œ ë³´ìœ í•˜ê³  ê³„ì‹  ì ë¦½ê¸ˆ/í¬ì¸íŠ¸ì™€ ì¿ í°ì€ ëª¨ë‘ ìžë™ ì†Œë©¸ë©ë‹ˆë‹¤. <br> ë™ì›ëª°ì˜ íšŒì›ì„œë¹„ìŠ¤ë¥¼ ë” ì´ìƒ ì´ìš©í•˜ì‹¤ ìˆ˜ ì—†ìœ¼ë©°, íšŒì› í˜œíƒ ë˜í•œ ë°›ìœ¼ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. <br> ëª¨ë°”ì¼ ì¿ í°ì˜ ê±°ëž˜ê°€ ìžˆëŠ” ê²½ìš° ê³ ê°ì„¼í„° í†µí•´ì„œ íƒˆí‡´ì‹ ì²­ ë¶€íƒë“œë¦¬ë©°, íƒˆí‡´ì‹ ì²­ ì‚¬ìœ ë„ í•¨ê»˜ ê¸°ìž¬ë¶€íƒë“œë¦½ë‹ˆë‹¤~ <br><br> 2) ì§„í–‰ì¤‘ì¸ ì£¼ë¬¸ì´ ìžˆì„ ê²½ìš° íƒˆí‡´ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤. <br> í•´ë‹¹ ì£¼ë¬¸ì´ ì²˜ë¦¬ ì™„ë£Œëœ í›„ì— ë‹¤ì‹œ íƒˆí‡´ ì‹ ì²­ ë¶€íƒë“œë¦½ë‹ˆë‹¤.<br><br>3) íƒˆí‡´ í›„, ê³ ê°ë‹˜ì˜ ì •ë³´ëŠ” ì „ìžìƒê±°ëž˜ ì†Œë¹„ìžë³´í˜¸ë²•ì— ì˜ê±°í•œ ë™ì›ëª° ê°œì¸ì •ë³´ë³´í˜¸ì •ì±…ì— ë”°ë¼ ê´€ë¦¬ë©ë‹ˆë‹¤.<br><br>4) íƒˆí‡´ì²˜ë¦¬ ì´í›„ì—ëŠ” ê°€ìž…ê¸°ê°„ì— ì´ìš©í•˜ì…¨ë˜ ì´ë²¤íŠ¸ë¥¼ í¬í•¨í•œ ëª¨ë“  ë‚´ì—­ì˜ ì¡°íšŒ, ìƒë‹´ê³¼ ì œë°˜ ì„œë¹„ìŠ¤(êµí™˜/ë°˜í’ˆ/AS)ë“±ì— ì œí•œì´ ìƒê¸¸ ìˆ˜ ìžˆìŒì„ ì–‘ì§€í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br><br>5) íšŒì›íƒˆí‡´ í›„, 3ê°œì›” ì´ë‚´ ìž¬ê°€ìž…ì´ ë¶ˆê°€ëŠ¥í•˜ë©°, ìž¬ê°€ìž… ì‹œì—ëŠ” ì‹ ê·œê°€ìž…ìœ¼ë¡œ ì²˜ë¦¬ë©ë‹ˆë‹¤.<br><br>6) íƒˆí‡´ í›„ì—ëŠ” íšŒì›ì •ë³´ ì‚­ì œë¡œ ì¸í•´ ìž‘ì„±ìž ë³¸ì¸ì„ í™•ì¸ í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ ê²Œì‹œë¬¼ ì‚­ì œ ì²˜ë¦¬ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ì‚­ì œë¥¼ ì›í•˜ì‹œëŠ” ê²½ìš°ì—ëŠ” ë¨¼ì € ì‚­ì œë¥¼ ì™„ë£Œí•œ í›„, íƒˆí‡´ë¥¼ ì‹ ì²­í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,seq,
-22,0-Y_1,ìž¬ê°€ìž… ê´€ë ¨ ìœ ì˜ì‚¬í•­ë„ ì„¤ëª…ë“œë¦´ê¹Œìš”? <br>ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,
-22,0-Y_1-Y,ìž¬ê°€ìž… ê´€ë ¨ ìœ ì˜ì‚¬í•­ìž…ë‹ˆë‹¤~,default,seq,
-22,0-Y_1-Y_0,,default,,
-22,0-Y_1-N,,default,,
-22,0-Y_1-O,"ë„¤, ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-22,0-N,ê·¸ëŸ¼ ìž¬ê°€ìž… ê´€ë ¨ ìœ ì˜ì‚¬í•­ì„ ì•Œë ¤ë“œë¦´ê¹Œìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,seq,
-22,0-N-Y,,default,,
-22,0-N-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-22,0-O,"ë„¤, ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-23,0,"ë™ì›ëª° IDë¥¼ ìžŠìœ¼ì…¨ë‚˜ìš”? <br>ì•„ì´ë”” ì°¾ê¸°ë¥¼ ì´ìš©í•˜ì‹œê±°ë‚˜ ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ì•„ì´ë”” ì°¾ê¸° ì´ìš© ì‹œ íœ´ëŒ€í° ë³¸ì¸ì¸ì¦ì„ í†µí•´ ì›¹ì—ì„œ ë°”ë¡œ íšŒì› IDë¥¼ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì•„ì´ë”” ì°¾ê¸° íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/secure/findId.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ì•„ì´ë”” ì°¾ê¸°</button></a>",default,END,íšŒì›IDë¶„ì‹¤
-24,0,"ë™ì›ëª° ë¹„ë°€ë²ˆí˜¸ë¥¼ ìžŠìœ¼ì…¨ë‚˜ìš”? <br>ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°ë¥¼ ì´ìš©í•˜ì‹œê±°ë‚˜ ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸° ì´ìš© ì‹œ íœ´ëŒ€í° ë³¸ì¸ì¸ì¦ì„ í†µí•´ ì°¾ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸° íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/secure/findPw.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°</button></a>",default,END,íšŒì›ë¹„ë°€ë²ˆí˜¸ë¶„ì‹¤
-25,0,"ê³ ê°ë‹˜ íšŒì› ê°€ìž…ì´ ì•ˆë˜ì‹ ë‹¤êµ¬ìš”?<br> ê·¸ë ‡ë‹¤ë©´ ì´ë¯¸ ë™ì›ëª° íšŒì›ì´ì‹  ê²½ìš°ìž…ë‹ˆë‹¤. <br>ë¨¼ì € ì˜¨ë¼ì¸ìœ¼ë¡œ ë³¸ì¸ì˜ ID ì™€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì¡°íšŒí•˜ì‹  í›„ íšŒì› ê°€ìž… ì—¬ë¶€ë¥¼ í™•ì¸í•´ ì£¼ì„¸ìš”. <br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/secure/findId.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ì•„ì´ë”” ì°¾ê¸°</button></a><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/secure/findPw.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°</button></a>",default,seq,íšŒì›ê°€ìž…ë¶ˆê°€ì‹œ
-25,0_0,"ì´ë¯¸ íšŒì›ìœ¼ë¡œ ê°€ìž…í•˜ì‹  ê³ ê°ë‹˜ê»˜ì„œëŠ” ê¸°ì¡´ì— ë“±ë¡í•˜ì…¨ë˜ IDì™€ ë¹„ë°€ë²ˆí˜¸ë¡œ ë¡œê·¸ì¸í•˜ì‹œë©´ ë©ë‹ˆë‹¤.<br>ë§Œì¼ íšŒì›ê°€ìž…ì„ í•˜ì‹  ì ì´ ì—†ëŠ”ë° íšŒì›ê°€ìž…ì´ ë˜ì§€ ì•Šìœ¼ì‹ ë‹¤ë©´ ë™ì›ëª° ì½œì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì„¸ìš”.<br>â€» ì½œì„¼í„° ìš´ì˜ì‹œê°„  : AM 09:00 ~ PM 06:00, ì ì‹¬ì‹œê°„ : PM 12:00 ~ 01:00, í† ,ì¼, ê³µíœ´ì¼ íœ´ë¬´",default,END,
-26,0,"ê³ ê°ë‹˜ ë™ì›ëª° íšŒì›ì„œë¹„ìŠ¤ëŠ” ê³ ê°ë‹˜ê»˜ ë³´ë‹¤ ì•ˆì „í•˜ê³  íŽ¸ë¦¬í•œ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ê¸° ìœ„í•´ ê³µì •ê±°ëž˜ ìœ„ì›íšŒê°€ ìŠ¹ì¸í•œ í‘œì¤€ì•½ê´€ì„ ì‚¬ìš©í•˜ê³  ìžˆìŠµë‹ˆë‹¤.<br> êµ¬ì²´ì ì¸ ë‚´ìš©ì„ í™•ì¸í•˜ì‹œê³  ì‹¶ìœ¼ì‹ ê°€ìš”?<br> ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë™ì›ëª° ì´ìš©ì•½ê´€ ì „ë¬¸ì„ ì—´ëžŒí•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/guide.do?num=08"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›ëª° ì´ìš©ì•½ê´€</button></a>",default,END,íšŒì›ì•½ê´€ì•ˆë‚´
-27,0,"ê³ ê°ë‹˜ íƒˆí‡´í–ˆë˜ ì•„ì´ë””ë¡œëŠ” ìž¬ê°€ìž…ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ìž¬ê°€ìž…í•˜ì‹¤ ê²½ìš° ì‹ ê·œê°€ìž…ìœ¼ë¡œ ì²˜ë¦¬ë˜ì˜¤ë‹ˆ ìœ ì˜í•´ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,íƒˆí‡´ìž¬ê°€ìž…ê°€ëŠ¥ì—¬ë¶€
-28,0,"ê³ ê°ë‹˜ íšŒì›íƒˆí‡´ì™€ ë™ì‹œì— ì ë¦½ê¸ˆ, í• ì¸ì¿ í°, ì”¨ì•—ì€ ìžë™ ì†Œë©¸ë˜ë©° ìž¬ê°€ìž…í•˜ì‹œë”ë¼ë„ ì´ë™ ë° ë³µêµ¬ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br>ì´ ì  ìœ ì˜í•´ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,íƒˆí‡´ìž¬ê°€ìž…í˜œíƒì´ë™
-29,0,"ê³ ê°ë‹˜ ë™ì›ëª° íšŒì›ì œë„ëŠ” PREMIUM, VIP, GOLD, FAMILY ì˜ 4ê°œ ë“±ê¸‰ìœ¼ë¡œ ë‚˜ë‰˜ì–´ íšŒì›ë“±ê¸‰ë³„ í˜œíƒì´ ì œê³µë˜ê³  ìžˆìŠµë‹ˆë‹¤!<br>ìƒì„¸í•œ í˜œíƒ ë‚´ìš©ì€ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ í‘¸ì§í•œ íšŒì› í˜œíƒì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/benefit/member.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">íšŒì› í˜œíƒ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ë™ì›ëª°íšŒì›ì œ
-30,0,"ë™ì›ëª°ì—ì„œë§Œ ëˆ„ë¦¬ì‹¤ ìˆ˜ ìžˆëŠ” ì¦ê±°ì›€! <br>ë™ì›F&Bì˜ ì‹ ì œí’ˆê³¼ ì¸ê¸°ìƒí’ˆì„ ì²´í—˜í•´ë³´ì‹¤ ìˆ˜ ìžˆëŠ” ì´ë²¤íŠ¸ìž…ë‹ˆë‹¤. <br>ë¸”ë¡œê·¸ë¥¼ ë¹„ë¡¯í•œ SNSë¥¼ ìš´ì˜ ì¤‘ì´ì‹œë©°, ì²´í—˜í›„ê¸°ë¥¼ ì •ì„±ê» ë‚¨ê²¨ì£¼ì‹¤ ìˆ˜ ìžˆëŠ” ë™ì›ëª° íšŒì›ì´ë¼ë©´ ëˆ„êµ¬ë‚˜ ì‘ëª¨í•˜ì‹¤ ìˆ˜ ìžˆì–´ìš”~",default,seq,ì²´í—˜ë‹¨ì´ë²¤íŠ¸ì•ˆë‚´
-30,0_0,ì²´í—˜ë‹¨ì´ë²¤íŠ¸ ì‹ ì²­ ë°©ë²•ì— ëŒ€í•´ ì•ˆë‚´í•´ë“œë¦´ê¹Œìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,
-30,0_0-Y,"ë¨¼ì €, ì²´í—˜ë‹¨ì´ë²¤íŠ¸ íŽ˜ì´ì§€ë¡œ ë“¤ì–´ê°€ì£¼ì„¸ìš”.<br> í™ˆíŽ˜ì´ì§€ ìƒë‹¨ì˜ â€˜ì´ë²¤íŠ¸â€™ â€“ â€˜ì²´í—˜ë‹¨ì´ë²¤íŠ¸â€™ë¥¼ í´ë¦­í•˜ì‹œê±°ë‚˜<br> ì•„ëž˜ì˜ <ì²´í—˜ë‹¨ì´ë²¤íŠ¸>ë¥¼ í´ë¦­í•˜ì‹œë©´ ì²´í—˜ë‹¨ì´ë²¤íŠ¸ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br> <a href='http://www.dongwonmall.com/event/eventList.do?E_GBN_CD=01' target=\""_blank\""><ì²´í—˜ë‹¨ì´ë²¤íŠ¸></a>",default,seq,
-30,0_0-Y_0,"â€˜ì§„í–‰ì¤‘ ì²´í—˜ë‹¨ì´ë²¤íŠ¸â€™ë¥¼ í´ë¦­í•´ì£¼ì„¸ìš”. <br>í•´ë‹¹ ì²´í—˜ë‹¨ì´ë²¤íŠ¸ íŽ˜ì´ì§€ì—ì„œ ì‘ëª¨ê¸°ê°„ê³¼ ì œí’ˆì •ë³´, ë‹¹ì²¨ë°œí‘œì¼ì„ ê¼¼ê¼¼ížˆ í™•ì¸í•˜ì‹  í›„, í•˜ë‹¨ì˜ ëŒ“ê¸€ ìž‘ì„±ëž€ì— ëŒ“ê¸€ë¡œ ì²´í—˜ë‹¨ ì‹ ì²­ì„ í•´ì£¼ì‹œë©´ ë©ë‹ˆë‹¤.<br> # ë¸”ë¡œê·¸ ë˜ëŠ” SNS ì£¼ì†Œë¥¼ ê¸°ìž¬í•˜ì—¬ ì‹ ì²­í•´ì£¼ì„¸ìš”.<br> ë¸”ë¡œê·¸ ë˜ëŠ” SNS ì£¼ì†Œê°€ ì—†ì„ ì‹œ ì²´í—˜ë‹¨ì—ì„œ ì œì™¸ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>ë³¸ì¸ ë¸”ë¡œê·¸ ë˜ëŠ” SNSê°€ ì•„ë‹ ì‹œ ì²´í—˜ë‹¨ì—ì„œ ì œì™¸ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br># ëŒ“ê¸€ ì‚­ì œ ì‹œ ì‘ëª¨ê°€ ì·¨ì†Œë˜ì˜¤ë‹ˆ ìœ ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤",default,seq,
-30,0_0-Y_1,ë‹¹ì²¨ìž ë°œí‘œëŠ” ë™ì›ëª° í™ˆíŽ˜ì´ì§€ â€˜ì´ë²¤íŠ¸â€™ â€“ â€˜ë‹¹ì²¨ìžë°œí‘œâ€™ ê²Œì‹œíŒì—ì„œ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>ë‹¹ì²¨ìžë¶„ê»˜ëŠ” SMSë¬¸ìžë°œì†¡ìœ¼ë¡œë„ ì•ˆë‚´í•´ë“œë¦½ë‹ˆë‹¤. <br>ë‹¹ì²¨ìžê»˜ì„œ ê¸°ê°„ ë‚´ì— ë°°ì†¡ë¹„ë¥¼ ê²°ì œì™„ë£Œí•´ì£¼ì‹œë©´ ì²´í—˜ë‹¨ ìƒí’ˆì„ ë°°ì†¡í•´ë“œë¦½ë‹ˆë‹¤. <br>ì²´í—˜ë‹¨ ìƒí’ˆì„ ìˆ˜ë ¹í•˜ì‹œê³  ë¸”ë¡œê·¸ë¥¼ ë¹„ë¡¯í•œ SNS ì±„ë„ì— ì²´í—˜í›„ê¸°ë¥¼ ì‚¬ì§„ê³¼ í•¨ê»˜ ì •ì„±ê» ë‚¨ê²¨ì£¼ì‹œë©´ ë©ë‹ˆë‹¤.,default,END,
-30,0_0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-30,0_0-O,"ë„¤, ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-31,0,ê³ ê°ë‹˜ ì²´í—˜ë‹¨ ë‹¹ì²¨ë˜ì…¨êµ°ìš”! ì¶•í•˜ë“œë¦½ë‹ˆë‹¤!  <br>ê°œë³„ì ìœ¼ë¡œ ì•ˆë‚´ëœ ë°°ì†¡ë¹„ ìž…ê¸ˆ ê¸°ê°„ ë‚´ ë°°ì†¡ë¹„ ê²°ì œì™„ë£Œí•˜ì…¨ë‚˜ìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,ì²´í—˜ë‹¨ë°°ì†¡ì•ˆë‚´
-31,0-Y,"ë°°ì†¡ë¹„ ê²°ì œê¹Œì§€ ì™„ë£Œí•˜ì…¨ëŠ”ë° ì²´í—˜ë‹¨ ìƒí’ˆì„ ì•„ì§ ë°›ì§€ ëª»í•˜ì…¨êµ°ìš”! <br>ì£„ì†¡í•©ë‹ˆë‹¤. <br>ì œê°€ ì§€ê¸ˆ ë°”ë¡œ ì²˜ë¦¬í•´ë“œë¦¬ê³  ì‹¶ì§€ë§Œ, ì¸ê³µì§€ëŠ¥ì¸ ì €ì—ê² ì•„ì§ ì¡°ê¸ˆ ì–´ë ¤ì›Œìš”. <br> ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ì „ë¬¸ ìƒë‹´ì›ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤!",default,END,
-31,0-N,"ê³ ê°ë‹˜ ì£„ì†¡í•˜ì§€ë§Œ, ê¸°í•œë‚´ì— ë°°ì†¡ë£Œë¥¼ ê²°ì œ í•˜ì…”ì•¼ì§€ë§Œ ì¶œê³ ê°€ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>'ì´ë²¤íŠ¸'-'ë‹¹ì²¨ìž ë°œí‘œ'ëž€ì—ì„œ ë°°ì†¡ë£Œ ê²°ì œ ê¸°í•œì„ í™•ì¸í•˜ì‹ í›„ ë°°ì†¡ë£Œ ê²°ì œ ê¸°í•œì´ ì§€ë‚˜ì§€ ì•Šì•˜ë‹¤ë©´, íŽ˜ì´ì§€ ë‚´ì˜ ë§í¬ í†µí•´ì„œ ë°°ì†¡ë£Œë¥¼ ê²°ì œí•´ì£¼ì‹œê³ <br>ë§Œì•½ ë°°ì†¡ë£Œ ê²°ì œê¸°í•œì´ ì§€ë‚¬ë‹¤ë©´, ì´ë¯¸ ì „ì‚° ì²˜ë¦¬ ë° ì¶œê³  ì²˜ë¦¬ê°€ ì™„ë£Œë˜ì–´ ë³„ë„ ì²˜ë¦¬ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤. <br>ë„ì›€ì„ ë“œë¦¬ì§€ ëª»í•´ ì£„ì†¡í•©ë‹ˆë‹¤. <br>ë‹¤ìŒ ê¸°íšŒì— ê¼­~ ì²´í—˜ë‹¨ ìƒí’ˆ ë§Œë‚˜ëµ ìˆ˜ ìžˆì—ˆìœ¼ë©´ ì¢‹ê² ë„¤ìš”!",default,END,
-31,0-O,"ë„¤, ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-32,0,ê³ ê°ë‹˜ ì²´í—˜ë‹¨ ë‹¹ì²¨ë˜ì…¨êµ°ìš”! ì¶•í•˜ë“œë¦½ë‹ˆë‹¤! <br>ì²´í—˜ë‹¨ ì œí’ˆ ìˆ˜ë ¹ì— í•„ìš”í•œ ë°°ì†¡ë¹„ë¥¼ ì”¨ì•—ìœ¼ë¡œ êµí™˜í•œ ë°°ì†¡ë¹„ í• ì¸ì¿ í°ìœ¼ë¡œ ê²°ì œí•  ìˆ˜ ìžˆëŠ”ì§€ ë¬¸ì˜ì£¼ì…¨ë„¤ìš”.,default,seq,ì²´í—˜ë‹¨ë°°ì†¡ë¹„ê²°ì œì•ˆë‚´
-32,0_0,"ì£„ì†¡í•˜ì§€ë§Œ ì²´í—˜ë‹¨ ë°°ì†¡ë¹„ ê²°ì œëŠ” ë°°ì†¡ë¹„ ì¿ í°ìœ¼ë¡œëŠ” ê²°ì œê°€ ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤. <br>ì²´í—˜ë‹¨ ë°°ì†¡ë¹„ëŠ” ì¹´ë“œê²°ì œ í˜¹ì€ ë¬´í†µìž¥ìž…ê¸ˆ, ì‹¤ì‹œê°„ ê³„ì¢Œì´ì²´ ê²°ì œë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤. <br>ì´ì  ì–‘í•´ ë¶€íƒë“œë¦½ë‹ˆë‹¤.",default,END,
-33,0,"ê³ ê°ë‹˜ ì²´í—˜ë‹¨ì´ë²¤íŠ¸ ë‹¹ì²¨ë˜ì…¨ë‚˜ìš”? ë‹¹ì²¨ì„ ì¶•í•˜ë“œë¦½ë‹ˆë‹¤~<br>ë‹¹ì²¨ ê²°ê³¼ ë° ì„¸ë¶€ ë‚´ìš©ì€ ì•„ëž˜ì˜ 'ë‹¹ì²¨ìžë°œí‘œ ë³´ëŸ¬ê°€ê¸°'ë¥¼<br>í´ë¦­í•˜ì‹œë©´ ë‹¹ì²¨ ê²°ê³¼ íŽ˜ì´ì§€ë¡œ<br>ì´ë™í•©ë‹ˆë‹¤!<br><br><a href=""javascript:window.parent.postMessage('http://www.dongwonmall.com/event/winList.do','*')"">'ë‹¹ì²¨ìžë°œí‘œ ë³´ëŸ¬ê°€ê¸°'</a>",default,END,ì²´í—˜ë‹¨ë‹¹ì²¨ì•ˆë‚´
-34,0,"ê³ ê°ë‹˜ ì¼ë°˜ì ìœ¼ë¡œ ë‹¹ì²¨ ê²½í’ˆì˜ ì œì„¸ê³µê³¼ê¸ˆì„ ìž…ê¸ˆë§ˆê°ì¼ê¹Œì§€ ìž…ê¸ˆí•˜ì‹œë©´ ìž…ê¸ˆ ë§ˆê° ìµì¼ì— ê²½í’ˆì´ ë°°ì†¡ë˜ë©°, ìžì„¸í•œ ì‚¬í•­ì€ ë‹¹ì²¨ìž ì•ˆë‚´ ì‹œ ê²Œìž¬ë©ë‹ˆë‹¤.<br>ê²½í’ˆì€ ì‘ëª¨ ì‹œ íšŒì›ì •ë³´ì˜ ìžíƒ ì£¼ì†Œì§€ë¡œ ë°°ì†¡ë˜ë©°, ì´ë©”ì¼ì´ ë°œì†¡ë˜ëŠ” ê²½ìš°ì—ë„ ê¸°ë³¸ ì •ë³´ìƒì— ìž…ë ¥í•˜ì‹  ë©”ì¼ì£¼ì†Œë¡œ ë°œì†¡ë˜ì˜¤ë‹ˆ í‰ìƒì‹œ ì—°ë½ì²˜, ì£¼ì†Œ, ì´ë©”ì¼ ì£¼ì†Œ ë“±ì˜ íšŒì›ì •ë³´ë¥¼ ì •í™•ížˆ ì—…ë°ì´íŠ¸í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. ë˜í•œ ë©”ì¼ìˆ˜ì‹  ì—¬ë¶€ì— ë™ì˜ ì²´í¬í•´ì£¼ì„¸ìš”!",default,seq,ë‹¹ì²¨ê²½í’ˆë°°ì†¡
-34,0_0,"êµ¬ë§¤ê³ ê° ë‹¹ì²¨ ê²½í’ˆì¼ ê²½ìš° ê²½í’ˆì„ ë°›ì€ ì´í›„ì— êµ¬ë§¤í•˜ì‹  ìƒí’ˆì„ ì·¨ì†Œí•˜ì‹œë©´ ê²½í’ˆì„ íšŒìˆ˜í•˜ë©°, ë¹„ì •ìƒì ì¸ ì£¼ë¬¸ì·¨ì†Œê°€ ìžˆì„ ê²½ìš°ì—ëŠ” ë³¸ì¸ í™•ì¸ì ˆì°¨ ì—†ì´ ê²½í’ˆë‹¹ì²¨ì„ ì·¨ì†Œ ì²˜ë¦¬í•©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-35,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œ ì§„í–‰ ì¤‘ì¸ ì´ë²¤íŠ¸ì— ëŒ€í•´ì„œ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”!<br> ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ëª¨ë“  ì´ë²¤íŠ¸ë¥¼ í•œ ëˆˆì— ë³´ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/event/eventList.do?E_GBN_CD=03"",""*"")'>
-<button class=""ext_btn"" type=""button"">ì´ë²¤íŠ¸ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì´ë‹¬ì˜ì´ë²¤íŠ¸ì•ˆë‚´
-36,0,"ê³ ê°ë‹˜ GNCê³¨ë“œì¹´ë“œëŠ” GNC KOREAì—ì„œ ì´ìš©í•  ìˆ˜ ìžˆëŠ” ë©¤ë²„ì‹­ì¹´ë“œë¡œ, GNCë¥¼ ì‚¬ëž‘í•´ì£¼ì‹œëŠ” ê³ ê°ë‹˜ê»˜ ë“œë¦¬ëŠ” ê°ì‚¬ì˜ ë§ˆìŒìž…ë‹ˆë‹¤!<br>ì˜¨ã†ì˜¤í”„ë¼ì¸ ë™ì‹œì— ì‚¬ìš© ê°€ëŠ¥í•˜ë©°, ê°€ìž… ì„ ë¬¼ê³¼ í•¨ê»˜ ë°”ë¡œ í• ì¸ í˜œíƒì„ ëˆ„ë¦¬ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,GNCê³¨ë“œíšŒì›ì•ˆë‚´
-36,0_0,"<button class=\""dial_btn\"">GNC ê³¨ë“œì¹´ë“œ ê°€ìž… ë°©ë²• ì•ˆë‚´</button><button class=\""dial_btn\"">GNC ê³¨ë“œì¹´ë“œ ì´ìš© ê´€ë ¨ ì•ˆë‚´</button><button class=\""dial_btn\"">GNC ê³¨ë“œì¹´ë“œ ì¸ì¦ ì•ˆë‚´</button><button class=\""dial_btn\"">GNC ê³¨ë“œì¹´ë“œ ê°±ì‹  ì•ˆë‚´</button><button class=\""dial_btn\"">GNC ê³¨ë“œì¹´ë“œ í˜œíƒ ì•ˆë‚´</button>",default,END,
-37,0,"GNCê³¨ë“œì¹´ë“œëŠ” ì˜¤í”„ë¼ì¸ ì „ë¬¸ë§¤ìž¥ê³¼ ë™ì›ëª° GNCì „ë¬¸ê´€ì—ì„œ ê°€ìž…, ë°œê¸‰í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br> ë™ì›ëª°ì—ì„œ GNCê³¨ë“œì¹´ë“œ ì‹ ê·œê°€ìž… ë˜ëŠ” ê°±ì‹  ì‹œ, ê³¨ë“œì¹´ë“œë¥¼ ìž¥ë°”êµ¬ë‹ˆì— ë„£ê³  ì œí’ˆì„ í•¨ê»˜ ê²°ì œí•˜ì‹œë©´ ê³¨ë“œíšŒì› í˜œíƒê°€ë¡œ ë°”ë¡œ êµ¬ë§¤ ê°€ëŠ¥í•˜ì‹­ë‹ˆë‹¤.",default,seq,GNCê³¨ë“œíšŒì›ê°€ìž…
-37,0_0,"<font style=\""color:red\"">ë¡œê·¸ì¸ í›„</font> ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ê°€ìž… íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/mypage/gncgoldcard/gncGoldCard.do?view=NEW\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">GNCê³¨ë“œì¹´ë“œ ê°€ìž…</button></a>",default,END,
-38,0,"GNCê³¨ë“œì¹´ë“œ ê°±ì‹ (ìž¬ê°€ìž…) íšŒì›ë‹˜ì„ ìœ„í•´ ê°€ìž…ë¹„ë¥¼ 40% í• ì¸í•´ë“œë ¤ìš”!<br> 12,000ì›ìœ¼ë¡œ GNCê³¨ë“œì¹´ë“œ íšŒì›ë§Œì˜ íŠ¹ë³„í•œ í˜œíƒì„ ê³„ì† ëˆ„ë¦¬ì„¸ìš”~",default,seq,GNCê³¨ë“œíšŒì›ê°±ì‹ 
-38,0_0,"<font style=\""color:red\"">ë¡œê·¸ì¸ í›„</font> ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ê°±ì‹  íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/mypage/gncgoldcard/gncGoldCard.do?view=REJOIN\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">GNCê³¨ë“œì¹´ë“œ ê°±ì‹ </button></a>",default,END,
-39,0,GNCê³¨ë“œì¹´ë“œ ì‹ ê·œ ë°œê¸‰ í›„ ì¸ì¦ê¹Œì§€ ë§ˆì¹˜ì‹œë©´ ë™ì›ëª°ì—ì„œ GNCê³¨ë“œì¹´ë“œ íšŒì› í˜œíƒê°€ë¡œ ë°”ë¡œ ì£¼ë¬¸ ê°€ëŠ¥í•©ë‹ˆë‹¤!<br>ë˜í•œ GNCì˜¤í”„ë¼ì¸ ë§¤ìž¥ì—ì„œë„ ì‚¬ìš© ê°€ëŠ¥í•©ë‹ˆë‹¤.,default,END,GNCê³¨ë“œíšŒì›ì´ìš©
-40,0,GNCê³¨ë“œì¹´ë“œ íšŒì›ìœ¼ë¡œ ê°€ìž…í•˜ì‹ <br>ê³ ê°ë‹˜ê»˜ì„œëŠ” GNCê³¨ë“œì¹´ë“œ ì¸ì¦ì„ í†µí•´ ë™ì›ëª°ì—ì„œ GNCê³¨ë“œì¹´ë“œ í˜œíƒì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,seq,GNCê³¨ë“œíšŒì›ì¸ì¦
-40,0_0,"<font style=\""color:red\"">ë¡œê·¸ì¸ í›„</font> ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì¸ì¦ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/mypage/gncgoldcard/gncGoldCard.do?view=AUTH\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">GNCê³¨ë“œì¹´ë“œ ì¸ì¦</button></a>",default,END,
-41,0,"1. GNCê³¨ë“œì¹´ë“œ ê°€ìž… ì‹œ, ì²« êµ¬ë§¤ë¶€í„° ê³¨ë“œì¹´ë“œ ìœ íš¨ì¼ ë‚´ GNC ì „ ì œí’ˆ 20% í• ì¸í˜œíƒì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>2. ë§¤ì›” 7ì¼ ë™ì•ˆ(1ì¼~7ì¼) ì§„í–‰ë˜ëŠ” ê³¨ë“œë°ì´ ì´ë²¤íŠ¸ ê¸°ê°„ì—ëŠ” GNCì˜ ëª¨ë“  ì œí’ˆì´ 20% í• ì¸ë  ë¿ ì•„ë‹ˆë¼ ê³¨ë“œë°ì´ í’ˆëª©ì— í•œí•´ ì¶”ê°€ í• ì¸ì´ ì§„í–‰ë©ë‹ˆë‹¤.",default,seq,GNCê³¨ë“œíšŒì›í˜œíƒ
-41,0_0,"3. ì´ë²¤íŠ¸(íŠ¹ê°€í• ì¸, ì ë¦½ê¸ˆ ì¶”ê°€ ë“±) ì°¸ì—¬ë¥¼ í†µí•˜ì—¬ ì¶”ê°€ í˜œíƒì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>4. ë§¤ë‹¬ ê±´ê°•ì •ë³´ì™€ ê³¨ë“œë°ì´ ì´ë²¤íŠ¸ë¥¼ ì•ˆë‚´í•˜ëŠ” ì •ë³´ì§€ë¥¼ ìš°íŽ¸ìœ¼ë¡œ ë³´ë‚´ë“œë¦½ë‹ˆë‹¤.",default,END,
-42,0,ê³ ê°ë‹˜ê»˜ì„œ ìž‘ì„±í•´ì£¼ì‹  ì†Œì¤‘í•œ ìƒí’ˆí‰ì€ ë‹¤ë¥¸ ê³ ê°ë‹˜ë“¤ê»˜ ì°¸ê³ ê°€ ë˜ëŠ” ë™ì›ëª°ì˜ ê·€ì¤‘í•œ ìžì‚°ìž…ë‹ˆë‹¤~ <br>ìƒí’ˆí‰ì„ ìž‘ì„±í•˜ì‹  ê³ ê°ë‹˜ê»˜ëŠ” ë°°ì†¡ë¹„ í• ì¸ì¿ í°ìœ¼ë¡œ êµí™˜í•  ìˆ˜ ìžˆëŠ” ë™ì›ëª° í¬ì¸íŠ¸ â€˜ì”¨ì•—â€™ì„ ë“œë ¤ìš”~,default,seq,ìƒí’ˆí‰í˜œíƒì•ˆë‚´
-42,0_0,"ì¼ë°˜ìƒí’ˆí‰ ìž‘ì„±ì‹œ â†’ 100ê°œ <br> ì²« ì‚¬ì§„ìƒí’ˆí‰(í•´ë‹¹ ìƒí’ˆì˜ ìƒí’ˆí‰ì¤‘ ì²˜ìŒìœ¼ë¡œ ë“±ë¡ í•´ì£¼ì‹  ë¶„) ìž‘ì„±ì‹œ â†’ 500ê°œ <br> ì‚¬ì§„ìƒí’ˆí‰ ìž‘ì„±ì‹œ â†’ 300ê°œë¥¼ ë“œë¦½ë‹ˆë‹¤. <br> # ìƒí’ˆí‰ì€ ë“±ë¡ ì¦‰ì‹œ ë™ì›ëª° ì‚¬ì´íŠ¸ì— ê²Œìž¬ë˜ë©°, ëª¨ë‘ ê³µê°œë¥¼ ì›ì¹™ìœ¼ë¡œ í•©ë‹ˆë‹¤. <br> ê²Œì‹œëœ ìƒí’ˆí‰ì˜ ì €ìž‘ê¶Œì€ ë™ì›ëª°ì— ê·€ì†ë©ë‹ˆë‹¤. <br> ìƒí’ˆí‰ì— ì í•©í•˜ì§€ ì•Šì€ ë‚´ìš©, ë¯¸í’ì–‘ì†ì„ í•´ì¹˜ëŠ” ê¸€, íŠ¹ì • ì„±ë¶„ì— ê´€í•œ íš¨ëŠ¥ì´ ìžˆì–´ ì˜¤í•´ì˜ ì†Œì§€ê°€ ìžˆëŠ” ë‚´ìš©ì€ í†µë³´ ì—†ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br> # ë¶ˆëŸ‰ ìƒí’ˆí‰ìœ¼ë¡œ 3ê°œì›” ë™ì•ˆ 3íšŒ ì‹ ê³  ì ‘ìˆ˜ ëœ ê²½ìš°ì™€ ìž‘ì„±í•˜ì‹  ìƒí’ˆí‰ì„ ìµœê·¼ 1ê°œì›” ë™ì•ˆ 3íšŒ ì‚­ì œí•˜ì‹  ê²½ìš° ìƒí’ˆí‰ ìž‘ì„± ê¶Œí•œì´ ì œí•œë˜ë¯€ë¡œ, ìœ ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,END,
-43,0,ê³ ê°ë‹˜ í˜„ê¸ˆì„± ê²°ì œìˆ˜ë‹¨ìœ¼ë¡œ ê²°ì œí•˜ì‹  ì£¼ë¬¸ì— í•œí•´ í˜„ê¸ˆì˜ìˆ˜ì¦ì„ ì‹ ì²­í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>í˜„ê¸ˆì„± ê²°ì œìˆ˜ë‹¨ìœ¼ë¡œëŠ” ì‹¤ì‹œê°„ê³„ì¢Œì´ì²´/ë¬´í†µìž¥ìž…ê¸ˆì´ ìžˆìŠµë‹ˆë‹¤.,default,END,í˜„ê¸ˆì˜ìˆ˜ì¦ì‹ ì²­ê°€ëŠ¥ê²°ì œìˆ˜ë‹¨
-44,0,"í˜„ê¸ˆì˜ìˆ˜ì¦ì€ í˜„ê¸ˆì˜ìˆ˜ì¦ ë°œê¸‰ëŒ€ìƒ ìƒí’ˆì„ 1ì›ì´ìƒ í˜„ê¸ˆì„± ê²°ì œìˆ˜ë‹¨ìœ¼ë¡œ ì£¼ë¬¸í•˜ì‹  ê±´ì— ëŒ€í•˜ì—¬ ë°œê¸‰ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤. <br>ì£¼ë¬¸ì„œ ìž‘ì„± íŽ˜ì´ì§€ì—ì„œ ìœ„ ì‹ ì²­ìš”ê±´ì„ ë§Œì¡±í•˜ëŠ” ê²½ìš° í˜„ê¸ˆì˜ìˆ˜ì¦ ì‹ ì²­ë¶€ë¶„ì´ ìƒì„±ë©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,í˜„ê¸ˆì˜ìˆ˜ì¦ì‹ ì²­ë°©ë²•
-45,0,"ë°œê¸‰ ë°›ìœ¼ì‹  í˜„ê¸ˆì˜ìˆ˜ì¦ì€ ë”°ë¡œ ë³´ê´€í•˜ì‹¤ í•„ìš”ê°€ ì—†ìŠµë‹ˆë‹¤.<br>ë‹¨, ì‹ ì²­í•˜ì‹  í˜„ê¸ˆì˜ìˆ˜ì¦ì„ ì¶œë ¥í•˜ë ¤ í•˜ì‹œëŠ” ê²½ìš° ë™ì›ëª°ì— ë¡œê·¸ì¸ í›„ [My ë™ì›ëª° - ì¦ë¹™ì„œë¥˜ë°œê¸‰] í˜„ê¸ˆì˜ìˆ˜ì¦ì„ ì¶œë ¥ í•˜ì‹¤ ìˆ˜ ìžˆìœ¼ë©° ë°œí–‰ì‹œì ì€ ë°œì†¡ì™„ë£Œ ì´í›„ ìž…ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/mypage/myorder/myOrderPaper.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">MY ë™ì›ëª° - ì¦ë¹™ì„œë¥˜ ë°œê¸‰</button></a>",default,seq,í˜„ê¸ˆì˜ìˆ˜ì¦ë°œê¸‰ë‚´ì—­ì—´ëžŒ
-45,0_0,"í˜„ê¸ˆì˜ìˆ˜ì¦ ì‚¬ìš©ë‚´ì—­ì€ ì „ì‚°ìœ¼ë¡œ ìˆ˜ë¡ë˜ì–´ í˜„ê¸ˆì˜ìˆ˜ì¦ í™ˆíŽ˜ì´ì§€(httr://í˜„ê¸ˆì˜ìˆ˜ì¦.kr)ì—ì„œ 3ê°œì›”ê°„ì˜ ì‚¬ìš©ë‚´ì—­(ì¼ìž,ìƒí˜¸,ê¸ˆì•¡ ë“±) ë° 1ë…„ê°„ì˜ ì›”ë³„ ì‚¬ìš©ë‚´ì—­ì„ í™•ì¸í•  ìˆ˜ ìžˆìœ¼ë¯€ë¡œ ë‚´ì—­í™•ì¸ì´ ë˜ë©´ ë³´ê´€í•˜ì‹¤ í•„ìš”ëŠ” ì—†ìŠµë‹ˆë‹¤.<br>í˜„ê¸ˆì˜ìˆ˜ì¦ í™ˆíŽ˜ì´ì§€(http://í˜„ê¸ˆì˜ìˆ˜ì¦.kr)ì—ì„œ ê²°ì œì¼ ë˜ëŠ” ë“±ë¡ì¼ ë‹¤ìŒë‚  9ì‹œë¶€í„° ì¡°íšŒë©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-46,0,"ê³ ê°ë‹˜ ì£¼ë¬¸ìžì˜ ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸(ë²•ì¸íšŒì›ì˜ ê²½ìš°, ì‚¬ì—…ìžë“±ë¡ë²ˆí˜¸)ë¥¼ ê¸°ì¤€ìœ¼ë¡œ í˜„ê¸ˆì˜ìˆ˜ì¦ì„ ë°œê¸‰í•´ë“œë¦½ë‹ˆë‹¤.<br> íƒ€ì¸ ëª…ì˜ë¡œëŠ” ë°œí–‰ì´ ë¶ˆê°€í•©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,í˜„ê¸ˆì˜ìˆ˜ì¦ëª…ì˜
-47,0,"ê³ ê°ë‹˜ ì„¸ê¸ˆê³„ì‚°ì„œì™€ ì‹ ìš©ì¹´ë“œë§¤ì¶œì „í‘œ, í˜„ê¸ˆì˜ìˆ˜ì¦ ì¤‘ í•œê°€ì§€ë§Œ ë°œí–‰ë©ë‹ˆë‹¤.<br>ì•„ëž˜ì™€ ê°™ì€ [ì„¸ê¸ˆê³„ì‚°ì„œ êµë¶€ì˜ë¬´ì˜ ë©´ì œ ë“±] ë¶€ê°€ê°€ì¹˜ì„¸ë²• ê·œì •ì— ì˜ê±°í•˜ì—¬ ì‹ ìš©ì¹´ë“œë¡œ ê²°ì œí•˜ì‹  ê³ ê°ë‹˜ê»˜ì„œëŠ” ì‹ ìš©ì¹´ë“œë§¤ì¶œì „í‘œë§Œ ì¶œë ¥ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br><br>ì‚¬ì—…ìžê°€ ìž¬í™” ë˜ëŠ” ìš©ì—­ì„ ê³µê¸‰í•˜ê³  ë¶€ê°€ê°€ì¹˜ì„¸ë²•ì‹œí–‰ë ¹ ì œ32ì¡°ì˜ 2 ì œ1í•­ì˜ ê·œì •ì— ì˜í•œ ì‹ ìš©ì¹´ë“œë§¤ì¶œì „í‘œ ë“±ì„ êµë¶€í•œ ê²½ìš°, ë¶€ê°€ê°€ì¹˜ì„¸ë²•ì‹œí–‰ë ¹ ì œ57ì¡° ì œ2í•­ì˜ ê·œì •ì— ì˜í•˜ì—¬ ì„¸ê¸ˆê³„ì‚°ì„œë¥¼ êµë¶€í•˜ì§€ ì•„ë‹ˆí•œë‹¤.<br><br>ì¦‰, ì‹ ìš©ì¹´ë“œë¡œ ê²°ì œí•˜ì‹  ê²½ìš° ì‹ ìš©ì¹´ë“œë§¤ì¶œì „í‘œ ì¶œë ¥ë§Œ ê°€ëŠ¥í•˜ë©° ì„¸ê¸ˆê³„ì‚°ì„œëŠ” ì‹ ì²­ ë° ë°œê¸‰ì´ ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ë°œí–‰ì¢…ë¥˜
-48,0,"ê³ ê°ë‹˜ ì„¸ê¸ˆê³„ì‚°ì„œëŠ” ì£¼ë¬¸ì™„ë£Œ í›„ [MY ë™ì›ëª° - ì¦ë¹™ì„œë¥˜ ë°œê¸‰] íŽ˜ì´ì§€ì—ì„œ ì‹ ì²­ê°€ëŠ¥í•©ë‹ˆë‹¤.
- ë¹„íšŒì›ì€ ë™ì›ëª° ê³ ê°ì„¼í„°ë¡œ ë¬¸ì˜í•´ì£¼ì„¸ìš”.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/mypage/myorder/myOrderPaper.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">MY ë™ì›ëª° - ì¦ë¹™ì„œë¥˜ ë°œê¸‰</button></a>",default,END,ì„¸ê¸ˆê³„ì‚°ì„œìš”ì²­ë°©ë²•
-49,0,"ê²°ì œì´ì•¡ìœ¼ë¡œ ë°œí–‰ë˜ë©° í• ì¸ì¿ í°ì— ì˜í•œ í• ì¸ê¸ˆì•¡ê³¼ ë°°ì†¡ë¹„ëŠ” ì œì™¸ ë©ë‹ˆë‹¤.<br>
-ì ë¦½ê¸ˆìœ¼ë¡œ ê²°ì œí•œ ê¸ˆì•¡ì€ í¬í•¨ë©ë‹ˆë‹¤. <br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì„¸ê¸ˆê³„ì‚°ì„œê¸ˆì•¡ê¸°ì¤€
-50,0,"ê³ ê°ë‹˜ ë™ì›ëª° ìƒí’ˆì˜ ê³µê¸‰ìžëŠ” ãˆœë™ì›F&B ìž…ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì„¸ê¸ˆê³„ì‚°ì„œê³µê¸‰ìží‘œì‹œ
-51,0,"ê³ ê°ë‹˜ ì„¸ê¸ˆê³„ì‚°ì„œ ìƒì˜ ë°œí–‰ì¼ìžëŠ”<br>- ì£¼ë¬¸ì›”ê³¼ ë°œì†¡ì›”ì´ ë™ì¼í•˜ë©´ ì£¼ë¬¸ì¼ìžë¡œ ë°œí–‰ë©ë‹ˆë‹¤.<br>- ì£¼ë¬¸ì›”ê³¼ ë°œì†¡ì›”ì´ ë‹¤ë¥´ë©´ ë°œì†¡ì™„ë£Œì¼ìžë¡œ ë°œí–‰ë©ë‹ˆë‹¤.<br>ë‹¨, ê¸°ë³¸ ë°œí–‰ì¼ìžê°€ í¬í•¨ëœ í•´ë‹¹ì›” ë‚´ì—ì„œëŠ” ì›í•˜ëŠ” ë°œí–‰ì¼ìžë¥¼ ê³ ê°ë‹˜ê»˜ì„œ ì„ íƒí•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì„¸ê¸ˆê³„ì‚°ì„œë°œí–‰ì¼ìží‘œì‹œ
-52,0,"ê³ ê°ë‹˜ ì „ìžì„¸ê¸ˆê³„ì‚°ì„œ ì‹ ì²­ì€ ë‹¹ì›”ì— ë°œì†¡ì™„ë£Œëœê±´ì— í•œí•˜ì—¬ ê°€ëŠ¥í•˜ë©°, ë§¤ì›” ë§ì¼ ì˜¤í›„ 3ì‹œì— ë§ˆê°í•©ë‹ˆë‹¤.<br>ì˜ˆ) 7ì›” 15ì¼ ì£¼ë¬¸ â†’ 7ì›” 31ì¼ ì˜¤í›„ 3ì‹œ ì‹ ì²­ì „ ë°œê¸‰ ê°€ëŠ¥, ê·¸ ì´í›„ ì‹ ì²­ê±´ì€ ë°œê¸‰ ë¶ˆê°€<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì„¸ê¸ˆê³„ì‚°ì„œë§ˆê°
-53,0,"ê³ ê°ë‹˜ ì‚¬ì—…ìžë“±ë¡ì¦ì€ í•„ìˆ˜í•­ëª©ì´ë¯€ë¡œ ì‹ ì²­ì‹œë§ˆë‹¤ ì²¨ë¶€í•´ì£¼ì…”ì•¼ í•©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì„¸ê¸ˆê³„ì‚°ì„œìš”ì²­ì‚¬ì—…ìžë“±ë¡ì¦
-54,0,"ê³ ê°ë‹˜ ì—½ì‚° ë“±ì˜ ë¹„íƒ€ë¯¼ Bêµ° ì œí’ˆ, ë³µí•©ë¹„íƒ€ë¯¼ Bêµ° í¬ë®¬ë¼ ì œí’ˆ, ë¹„íƒ€ë¯¼ C ì œí’ˆ ë“±ì˜ ê²½ìš° ì„­ì·¨ ê¸°ê°„ ì¤‘ ìƒ‰ê¹”ì´ ë” ë…¸ëž—ê±°ë‚˜ ì£¼í™©ìƒ‰ ë“±ìœ¼ë¡œ ë³€í•˜ëŠ” ê²½ìš°ê°€ ìžˆìŠµë‹ˆë‹¤.<br>ì´ëŸ¬í•œ í˜„ìƒì€ ìˆ˜ë¶„ì„ ìž˜ í¡ìˆ˜í•˜ëŠ” ë¹„íƒ€ë¯¼ Bêµ°ê³¼ ë¹„íƒ€ë¯¼C ì œí’ˆë“¤ì´ ê³µê¸°ì¤‘ì˜ ìŠµê¸°ì™€ ë§Œë‚˜ ìƒ‰ê¹”ì´ ì§™ì–´ì§€ëŠ” ê²ƒìž…ë‹ˆë‹¤.<br>ì´ëŸ¬í•œ ê²½ìš°ì— ë‹¨ì§€ ì¼ë¶€ ë¹„íƒ€ë¯¼ì˜ íŠ¹ì„±ì— ì˜í•œ ê²ƒì´ë¯€ë¡œ ì œí’ˆì˜ ì„±ë¶„ìƒ ë³€ì§ˆì€ ì „í˜€ ì—†ìœ¼ë©°,  ì •ìƒì ìœ¼ë¡œ ì„­ì·¨ë¥¼ í•˜ëŠ”ë°ì—ë„ ì „í˜€ ë¬´ë¦¬ê°€ ì—†ìŠµë‹ˆë‹¤.<br>ê³µê¸°ì¤‘ì—ì„œ ê°ˆë³€ëœ ì‚¬ê³¼ê°€ ì„±ë¶„ìƒ ë³€ì§ˆì´ ì—†ëŠ” ê²ƒê³¼ ë¹„ìŠ·í•œ ì›ë¦¬ìž…ë‹ˆë‹¤.<br>ë”°ë¼ì„œ ë¹„íƒ€ë¯¼ Bêµ°ì´ë‚˜ ë¹„íƒ€ë¯¼ C ì œí’ˆì˜ ê²½ìš° ìŠµê¸°ê°€ ë§Žì€ ìž¥ë§ˆì² ì´ë‚˜ ì—¬ë¦„ì— ë°€ë´‰ì— ì£¼ì˜í•˜ì—¬ ë³´ê´€í•´ì•¼ í•©ë‹ˆë‹¤.<br>ê±´ì¡°í•˜ê³  ì„œëŠ˜í•œ ê³³ì— ë³´ê´€í•˜ë©°, ì§€í¼ë°± ë“±ìœ¼ë¡œ í•œë²ˆ ë” ë°€ë´‰í•´ ì£¼ì‹œë©´ ìƒ‰ ë³€í™”ë¥¼ ë§‰ëŠ”ë° ë„ì›€ì´ ë©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì œí’ˆìƒ‰ë³€í™”
-55,0,"ê³ ê°ë‹˜ ì œí’ˆì€ ì„œëŠ˜í•˜ê³  ê±´ì¡°í•œ ê³³ì—ì„œ ë³´ê´€í•˜ëŠ” ê²ƒì´ ì¢‹ìŠµë‹ˆë‹¤.<br>ê·¹ì‹¬í•œ ì˜¨ë„ì°¨ëŠ” í”¼í•˜ë˜, íŠ¹ë³„í•œ ì§€ì‹œì‚¬í•­ì´ ì—†ì„ ê²½ìš°ì—ëŠ” ëƒ‰ìž¥ ë³´ê´€í•  í•„ìš”ëŠ” ì—†ìŠµë‹ˆë‹¤.<br>ë‹¨, ìœ ì‚°ê· ê³¼ ë¡œì–„ì œë¦¬ ì œí’ˆì˜ ê²½ìš° ì‹ ì„ ë„ë¥¼ ìœ„í•´ì„œ ê°œë´‰ í›„ ëƒ‰ìž¥ ë³´ê´€í•˜ëŠ” ê²ƒì´ ì¢‹ìŠµë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,seq,ì œí’ˆë³´ê´€ë²•
-56,0,"ê³ ê°ë‹˜ ë ˆì‹œí”¼ëŠ” ê³ ê°ë‹˜ê»˜ì„œ ì•Œê³  ê³„ì‹œëŠ” ìš”ë¦¬ë¥¼ ì˜¬ë¦¬ëŠ” ê³µê°„ìœ¼ë¡œ ë™ì›ëª° ê³ ê°ì´ë©´ ëˆ„êµ¬ë‚˜ ë“±ë¡ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ë ˆì‹œí”¼ë¥¼ ë“±ë¡í•˜ì‹  ê³ ê°ë‹˜ê»˜ëŠ” ê´€ë¦¬ìž ìŠ¹ì¸ í›„ ë™ì›ëª° ì ë¦½ê¸ˆ 500ì ì„ ì ë¦½í•´ë“œë¦¬ê³ , ë§¤ë‹¬ ìš°ìˆ˜ ë ˆì‹œí”¼ì— ì„ ì •ë˜ëŠ” 3ë¶„ê»˜ëŠ” 20,000ì ì„ ì ë¦½í•´ ë“œë¦½ë‹ˆë‹¤.<br>â€»ì‚¬ì§„ê³¼ ê¸€ì„ í¬í•¨í•œ STEP 5 ì´ìƒ ë“±ë¡ ì‹œì—ë§Œ ì ë¦½ê¸ˆ ì§€ê¸‰",default,seq,ë ˆì‹œí”¼ë“±ë¡
-56,0_0,"ë™ì›ëª° ë ˆì‹œí”¼ì—ëŠ” URL ë³µì‚¬ ê¸°ëŠ¥ì„ ì œê³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤. ë ˆì‹œí”¼ íŽ˜ì´ì§€ ë‚´ ë‹¨ì¶• URL, íŠ¸ìœ„í„°, íŽ˜ì´ìŠ¤ë¶ ë²„íŠ¼ì„ í´ë¦­í•˜ë©´ ì›í•˜ëŠ” ê³³ìœ¼ë¡œ ê°„íŽ¸í•˜ê²Œ ë³µì‚¬í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>ë ˆì‹œí”¼ì— ì í•©í•˜ì§€ ì•Šì€ ë‚´ìš©, ë¯¸í’ì–‘ì†ì„ í•´ì¹˜ëŠ” ê¸€, íŠ¹ì • ì„±ë¶„ì— ê´€í•œ íš¨ëŠ¥ì´ ìžˆì–´ ì˜¤í•´ì˜ ì†Œì§€ê°€ ìžˆëŠ” ë‚´ìš©ì€ í†µë³´ ì—†ì´ ì‚­ì œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-57,0,"ê³ ê°ë‹˜ ë™ì›ëª° ê³ ê°ì„¼í„° ì „í™”ë²ˆí˜¸ëŠ” 1588-3745ì´ê³ , FAX ë²ˆí˜¸ëŠ” (02) 589-3217ìž…ë‹ˆë‹¤.",default,END,ê³ ê°ë§Œì¡±ì„¼í„°ì—°ë½ì²˜
-58,0,"ê³ ê°ë‹˜<br>ì½œì„¼í„° ìš´ì˜ì‹œê°„ì€ AM 09:00~PM 06:00<br>ì ì‹¬ì‹œê°„ PM 12:00~01:00 ì´ë©° í† /ì¼/ê³µíœ´ì¼ì€ íœ´ë¬´ìž…ë‹ˆë‹¤.<br>ì½œì„¼í„° ì‹œê°„ ì™¸ì—ëŠ” [ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´]ì„ í†µí•´ ê¶ê¸ˆí•˜ì‹  ì‚¬í•­ì„ í™•ì¸í•˜ì‹œê±°ë‚˜ ìƒë‹´ì„ ì ‘ìˆ˜í•˜ì—¬ ì£¼ì„¸ìš”.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,seq,ê³ ê°ë§Œì¡±ì„¼í„°ìš´ì˜ì‹œê°„
-58,0_0,"ë¬¸ì˜í•˜ì‹œê¸° ì „ì— [ê³ ê°ì„¼í„° - ìžì£¼ë¬»ëŠ”ì§ˆë¬¸]ì„ í†µí•´ ê¶ê¸ˆí•˜ì‹  ì‚¬í•­ì„ ë¨¼ì € í™•ì¸í•˜ì‹ ë‹¤ë©´ ê³ ê°ë‹˜ì€ ì„¼ìŠ¤ìŸì´! <br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/faqList.do?BM_IDX=10010&BC_IDX=7&BC_SORT=1\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ìžì£¼ ë¬»ëŠ” ì§ˆë¬¸</button></a>",default,END,
-59,0,"ê³ ê°ë‹˜ ì£„ì†¡í•©ë‹ˆë‹¤.<br>ë¬¸ì˜ê°€ ë§Žì•„ ê³ ê°ì„¼í„° ì—°ê²°ì´ ì–´ë ¤ìš´ ìƒí™©ìž…ë‹ˆë‹¤.<br>ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ë‚´ [ê³ ê°ì„¼í„° - 1:1ë§žì¶¤ìƒë‹´] ê²Œì‹œíŒì„ í†µí•´ì„œë„ ë¬¸ì˜ ê°€ëŠ¥í•˜ì‹œë‹ˆ ì´ìš© ë¶€íƒë“œë¦½ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ê³ ê°ë§Œì¡±ì„¼í„°ì „í™”ë¶ˆí†µ
-60,0,"ê³ ê°ë‹˜ [MY ë™ì›ëª° - 1:1 ìƒë‹´ë‚´ì—­]ì„ í´ë¦­í•˜ì‹œë©´ ê³ ê°ë‹˜ê»˜ì„œ ë¬¸ì˜í•˜ì‹  ëª¨ë“  ë‚´ì—­ì´ ë³´ì—¬ì§‘ë‹ˆë‹¤. ì´ê³³ì—ì„œ ë¬¸ì˜ë‚´ì—­ì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/mypage/my_counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">MY ë™ì›ëª° - 1:1 ìƒë‹´ë‚´ì—­</button></a>",default,END,ë¬¸ì˜ë‚´ì—­í™•ì¸
-61,0,"ê³ ê°ë‹˜ ìƒí’ˆQ&AëŠ” í•´ë‹¹ ë¬¸ì˜ ê¸€ì„ í´ë¦­í•˜ì‹œë©´ ë³¸ì¸ ìˆ˜ì •ê³¼ ì‚­ì œê°€ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'><button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ìƒí’ˆQAìˆ˜ì •
-62,0,ê³ ê°ë‹˜ ìƒë‹´ì› ì—°ê²° ê¸°ëŠ¥ì€ ì•„ì§ ì§€ì›ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br>ì§ì ‘ ë¬¸ì˜ë¥¼ ì›í•˜ì‹œë©´ ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤.,default,seq,ì§ì ‘ë¬¸ì˜ì•ˆë‚´
-62,0,ê³ ê°ë‹˜ ìƒë‹´ì› ì—°ê²° ê¸°ëŠ¥ì€ ì•„ì§ ì§€ì›ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br>ì„¸ë¶€ ë¬¸ì˜ë¥¼ í•˜ì‹œë ¤ë©´ ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜í•´ì£¼ì„¸ìš”.,default,seq,ì§ì ‘ë¬¸ì˜ì•ˆë‚´
-62,0_0,"ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ë‚´ [ê³ ê°ì„¼í„° - 1:1ë§žì¶¤ìƒë‹´] ê²Œì‹œíŒì„ í†µí•´ì„œë„ ë¬¸ì˜ ê°€ëŠ¥í•˜ì‹œë‹ˆ ì´ìš© ë¶€íƒë“œë¦½ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-63,0,ê³ ê°ë‹˜ ì£„ì†¡í•˜ì§€ë§Œ ì§€ê¸ˆ ë°”ë¡œ ì²˜ë¦¬ëŠ” ì–´ë µìŠµë‹ˆë‹¤.<br>ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤.,default,END,ì§€ê¸ˆë°”ë¡œì²˜ë¦¬
-64,0,ê³ ê°ë‹˜! í‘¸ë””ëŠ” 365ì¼ 24ì‹œê°„ ê³ ê°ë‹˜ê³¼ í•¨ê»˜ í• ê±°ì—ìš”~<br>ë¬¸ì˜ê°€ ìžˆìœ¼ì‹œë©´ ì–¸ì œë“ ì§€ ì €ì—ê²Œ ë§ì”€í•˜ì„¸ìš”!,default,END,ì±—ë´‡ìš´ì˜ì‹œê°„
-64,0,í‘¸ë””ëŠ” í‡´ê·¼ ì‹œê°„ì´ ì—†ë‹µë‹ˆë‹¤~<br> 24ì‹œê°„ ê³ ê°ë‹˜ ê³ì— ìžˆì„ê²Œìš”!<br>ë¬¸ì˜ê°€ ìžˆìœ¼ì‹œë©´ ì–¸ì œë“ ì§€ ì €ì—ê²Œ ë§ì”€í•˜ì„¸ìš”!,default,END,ì±—ë´‡ìš´ì˜ì‹œê°„
-64,0,í‘¸ë””ëŠ” 365ì¼ 24ì‹œê°„ ê³ ê°ë‹˜ì´ ì°¾ì•„ì˜¤ì‹œê¸¸ ê¸°ë‹¤ë¦´ ê±°ì˜ˆìš”~<br>ë¬¸ì˜ê°€ ìžˆìœ¼ì‹œë©´ ì–¸ì œë“ ì§€ ì €ì—ê²Œ ë§ì”€í•˜ì„¸ìš”!,default,END,ì±—ë´‡ìš´ì˜ì‹œê°„
-65,0,"ê³ ê°ë‹˜ ìƒí’ˆì— ë¬¸ì œê°€ ìžˆìœ¼ì‹ ê°€ìš”?<br>ëŒ€ë‹¨ížˆ ì£„ì†¡í•©ë‹ˆë‹¤.<br>ì½œì„¼í„° 1588-3745ë¡œ ì—°ë½ ì£¼ì‹œê±°ë‚˜, 1:1 ë§žì¶¤ìƒë‹´ ê²Œì‹œíŒì— ì ‘ìˆ˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤.<br>ë¶ˆíŽ¸ì„ ë¼ì³ë“œë ¤ ë‹¤ì‹œ í•œ ë²ˆ ì£„ì†¡í•©ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,í´ë ˆìž„ì ‘ìˆ˜
-66,0,"ê³ ê°ë‹˜ê»˜ì„œ ë¬¸ì˜ì£¼ì‹  ë‚´ìš©ì€ ì•„ì§ ì„œë¹„ìŠ¤ê°€ ì–´ë µìŠµë‹ˆë‹¤.<br>ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œê±°ë‚˜, ë™ì›ëª° í™ˆíŽ˜ì´ì§€ MYë™ì›ëª° ë˜ëŠ” ê³ ê°ë§Œì¡±ì„¼í„° - 1:1ë§žì¶¤ìƒë‹´ ê²Œì‹œíŒì— ì ‘ìˆ˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤.",default,END,í•´ê²°ë¶ˆê°€ê±´
-67,0,ìž„ì§ì›ëª°ì€ ë™ì›ê·¸ë£¹ ìž„ì§ì› íšŒì›ë‹˜ë“¤ë§Œì„ ìœ„í•œ íŽ˜ì´ì§€ìž…ë‹ˆë‹¤.<br>ìž„ì§ì› ì¸ì¦ì„ ë§ˆì¹˜ì‹œë©´ ë°”ë¡œ ì´ìš©í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ì¸ì¦í•˜ì‹œê³  ìž„ì§ì› íŠ¹ë³„ í• ì¸ê°€ì— ë“í…œí•´ê°€ì„¸ìš”~,default,END,ìž„ì§ì›ëª°ì•ˆë‚´
-68,0,ìž„ì§ì›ì´ì‹ ê°€ìš”?<br>ë¨¼ì € ë¡œê·¸ì¸ì„ í•´ì£¼ì„¸ìš”!<br><br>ë¡œê·¸ì¸í•˜ì‹  í›„ PC í™”ë©´ ìš°ì¸¡ì„ ë³´ì‹œë©´ íŒŒëž€ìƒ‰ 'ìž„ì§ì›mall' ì•„ì´ì½˜ì´ ë³´ì´ì‹¤ê±°ì—ìš”.<br>í´ë¦­í•˜ì‹œë©´ ìž„ì§ì›ëª°ë¡œ ì´ë™í•©ë‹ˆë‹¤!,default,seq,ìž„ì§ì›ëª°ì´ë™ë°©ë²•
-68,0_0,"ëª¨ë°”ì¼ì˜ ê²½ìš°, ë¡œê·¸ì¸í•˜ì‹œë©´ í™”ë©´ ìƒë‹¨ ìŠ¤í¬ë¡¤ ë©”ë‰´ë°”ì— 'ìž„ì§ì›ëª°'ì´ ë³´ìž…ë‹ˆë‹¤.<br>ìŠ¤í¬ë¡¤ì„ ì›€ì§ì—¬ ë³´ì„¸ìš”!",default,END,
-69,0,ë™ì› ìž„ì§ì› ê³ ê°ë‹˜ê»˜ ë“œë¦¬ëŠ” í˜œíƒ!<br>1. ìµœëŒ€ 25% ë™ì›ëª° í‰ìƒí• ì¸ í˜œíƒì„ ë“œë¦½ë‹ˆë‹¤. (ì¼ë¶€ìƒí’ˆ ì œì™¸)<br>2. ë§¤ ë¶„ê¸°ë§ˆë‹¤ ì§€ê¸‰ë˜ëŠ” ìž„ì§ì› ë³µì§€í¬ì¸íŠ¸ë¥¼ ë™ì›ëª°ì—ì„œ í˜„ê¸ˆì²˜ëŸ¼ ì‚¬ìš©í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>3. ë™ì› ì œí’ˆì˜ ê²½ìš° ìž„ì§ì› í• ì¸í¬ì¸íŠ¸ë¡œ 10% ì¶”ê°€í• ì¸í•´ë“œë¦½ë‹ˆë‹¤. (ìž„ì§ì›ëª° ë‚´ ë™ì›ì œí’ˆ êµ¬ë§¤ ì‹œ íŒë§¤ê°€ì˜ 10% ì´í•˜ë¡œ ì‚¬ìš© ê°€ëŠ¥),default,seq,ìž„ì§ì›ëª°í˜œíƒ
-69,0_0,"ìž„ì§ì› ë³µì§€í¬ì¸íŠ¸ì™€ ìž„ì§ì› í• ì¸í¬ì¸íŠ¸ì— ëŒ€í•´ ë” ì•Œê³  ì‹¶ìœ¼ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ìž„ì§ì› í¬ì¸íŠ¸ì— ëŒ€í•´ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”!<button class=\""dial_btn f\"">ìž„ì§ì› í¬ì¸íŠ¸\n ì•ˆë‚´</button>",default,,
-70,0,"ë™ì› ìž„ì§ì› ì—¬ëŸ¬ë¶„ê»˜ ë“œë¦¬ëŠ” í¬ì¸íŠ¸ í˜œíƒìœ¼ë¡œ ìž„ì§ì› ë³µì§€í¬ì¸íŠ¸ì™€ ìž„ì§ì› í• ì¸í¬ì¸íŠ¸ê°€ ìžˆìŠµë‹ˆë‹¤.<br>ê¶ê¸ˆí•˜ì‹  ë‚´ìš©ì„ ì„ íƒí•´ì£¼ì„¸ìš”!<button class=""dial_btn f"">ìž„ì§ì› ë³µì§€í¬ì¸íŠ¸
- ì•ˆë‚´</button><button class=""dial_btn"">ìž„ì§ì› í• ì¸í¬ì¸íŠ¸ ì•ˆë‚´</button>",default,ABCD,ìž„ì§ì›í¬ì¸íŠ¸ì•ˆë‚´
-70,0-A,"ìž„ì§ì› ë³µì§€í¬ì¸íŠ¸ëŠ” ë§¤ ë¶„ê¸°(1, 4, 7, 10ì›”) ë§ˆë‹¤ 50,000 í¬ì¸íŠ¸ì”© ì§€ê¸‰ë˜ë©°, ë²•ì • ìƒì¼(ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ ì•žìžë¦¬)ì´ ìžˆëŠ” ë¶„ê¸°ì— 50,000 í¬ì¸íŠ¸ë¥¼ ì¶”ê°€ ì§€ê¸‰í•˜ì—¬ ì—°ê°„ ì´ 250,000 í¬ì¸íŠ¸ê°€ ì§€ê¸‰ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,
-70,0-A_0,"ë³µì§€í¬ì¸íŠ¸ëŠ” ë™ì›ëª° ì¼ë°˜ë§¤ìž¥ ë° ìž„ì§ì›ëª° ì „ ìƒí’ˆ êµ¬ë§¤ ì‹œ ì‚¬ìš©ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ì§€ê¸‰ëœ í¬ì¸íŠ¸ëŠ” ì§€ê¸‰ë…„ë„ì˜ ë‹¤ìŒí•´ ë§ì¼(12ì›” 31ì¼)ê¹Œì§€ ì‚¬ìš©í•  ìˆ˜ ìžˆìœ¼ë©°, ìœ íš¨ê¸°ê°„ ê²½ê³¼ ì‹œ ë¯¸ì‚¬ìš© í¬ì¸íŠ¸ëŠ” ì†Œë©¸ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,END,
-70,0-B,"ìž„ì§ì› í• ì¸í¬ì¸íŠ¸ëŠ” ë§¤ ë¶„ê¸°(1, 4, 7, 10ì›”) ë§ˆë‹¤ 50,000 í¬ì¸íŠ¸ì”© ì§€ê¸‰ë˜ë©°, ë²•ì • ìƒì¼(ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ ì•žìžë¦¬)ì´ ìžˆëŠ” ë¶„ê¸°ì— 50,000 í¬ì¸íŠ¸ë¥¼ ì¶”ê°€ ì§€ê¸‰í•˜ì—¬ ì—°ê°„ ì´ 250,000 í¬ì¸íŠ¸ê°€ ì§€ê¸‰ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,
-70,0-B_0,"í• ì¸í¬ì¸íŠ¸ëŠ” ìž„ì§ì›ëª° ë‚´ ë™ì›ì œí’ˆ êµ¬ë§¤ ì‹œ íŒë§¤ê°€ì˜ 10% ì´í•˜ë¡œ ì‚¬ìš© ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ì§€ê¸‰ëœ í¬ì¸íŠ¸ëŠ” ì§€ê¸‰ë…„ë„ì˜ ë‹¤ìŒí•´ ë§ì¼(12ì›” 31ì¼)ê¹Œì§€ ì‚¬ìš©í•  ìˆ˜ ìžˆìœ¼ë©°, ìœ íš¨ê¸°ê°„ ê²½ê³¼ ì‹œ ë¯¸ì‚¬ìš© í¬ì¸íŠ¸ëŠ” ì†Œë©¸ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,END,
-71,0,"ìž„ì§ì› ë³µì§€í¬ì¸íŠ¸ëŠ” ë§¤ ë¶„ê¸°(1, 4, 7, 10ì›”) ë§ˆë‹¤ 50,000 í¬ì¸íŠ¸ì”© ì§€ê¸‰ë˜ë©°, ë²•ì • ìƒì¼(ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ ì•žìžë¦¬)ì´ ìžˆëŠ” ë¶„ê¸°ì— 50,000 í¬ì¸íŠ¸ë¥¼ ì¶”ê°€ ì§€ê¸‰í•˜ì—¬ ì—°ê°„ ì´ 250,000 í¬ì¸íŠ¸ê°€ ì§€ê¸‰ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,ë³µì§€í¬ì¸íŠ¸
-71,0_0,"ë³µì§€í¬ì¸íŠ¸ëŠ” ë™ì›ëª° ì¼ë°˜ë§¤ìž¥ ë° ìž„ì§ì›ëª° ì „ ìƒí’ˆ êµ¬ë§¤ ì‹œ ì‚¬ìš©ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ì§€ê¸‰ëœ í¬ì¸íŠ¸ëŠ” ì§€ê¸‰ë…„ë„ì˜ ë‹¤ìŒí•´ ë§ì¼(12ì›” 31ì¼)ê¹Œì§€ ì‚¬ìš©í•  ìˆ˜ ìžˆìœ¼ë©°, ìœ íš¨ê¸°ê°„ ê²½ê³¼ ì‹œ ë¯¸ì‚¬ìš© í¬ì¸íŠ¸ëŠ” ì†Œë©¸ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,END,
-72,0,"ìž„ì§ì› í• ì¸í¬ì¸íŠ¸ëŠ” ë§¤ ë¶„ê¸°(1, 4, 7, 10ì›”) ë§ˆë‹¤ 50,000 í¬ì¸íŠ¸ì”© ì§€ê¸‰ë˜ë©°, ë²•ì • ìƒì¼(ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ ì•žìžë¦¬)ì´ ìžˆëŠ” ë¶„ê¸°ì— 50,000 í¬ì¸íŠ¸ë¥¼ ì¶”ê°€ ì§€ê¸‰í•˜ì—¬ ì—°ê°„ ì´ 250,000 í¬ì¸íŠ¸ê°€ ì§€ê¸‰ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,í• ì¸í¬ì¸íŠ¸
-72,0_0,"í• ì¸í¬ì¸íŠ¸ëŠ” ìž„ì§ì›ëª° ë‚´ ë™ì›ì œí’ˆ êµ¬ë§¤ ì‹œ íŒë§¤ê°€ì˜ 10% ì´í•˜ë¡œ ì‚¬ìš© ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ì§€ê¸‰ëœ í¬ì¸íŠ¸ëŠ” ì§€ê¸‰ë…„ë„ì˜ ë‹¤ìŒí•´ ë§ì¼(12ì›” 31ì¼)ê¹Œì§€ ì‚¬ìš©í•  ìˆ˜ ìžˆìœ¼ë©°, ìœ íš¨ê¸°ê°„ ê²½ê³¼ ì‹œ ë¯¸ì‚¬ìš© í¬ì¸íŠ¸ëŠ” ì†Œë©¸ë©ë‹ˆë‹¤.<br>â€» ì†Œì† ê³„ì—´ì‚¬ ì •ì±…ì— ë”°ë¼ ìƒì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,END,
-73,0,"ê³ ê°ë‹˜ 'ìž„ì§ì› í• ì¸ í¬ì¸íŠ¸ê°€'ëŠ” ìž„ì§ì› íŒë§¤ê°€ì— í• ì¸ í¬ì¸íŠ¸ë¥¼ ì‚¬ìš©í•˜ì—¬ ì¶”ê°€ í• ì¸ëœ ê¸ˆì•¡ì„ ì˜ë¯¸í•©ë‹ˆë‹¤<br>ìž”ì—¬ í¬ì¸íŠ¸ê°€ ìžˆì„ ê²½ìš° í• ì¸ì´ ê°€ëŠ¥í•˜ë©°, ìž„ì§ì›ëª° ë‚´ ë™ì›ì œí’ˆ êµ¬ë§¤ ì‹œ íŒë§¤ê°€ì˜ 10% ì´í•˜ë¡œ ì‚¬ìš© ê°€ëŠ¥í•©ë‹ˆë‹¤.",default,END,ìž„ì§ì›í• ì¸í¬ì¸íŠ¸ê°€
-74,0,ê³ ê°ë‹˜ ìž„ì§ì› ì¸ì¦ì€ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ìƒë‹¨ 'MYë™ì›ëª°'<br>í´ë¦­í•˜ì‹  í›„ ì¢Œì¸¡ ë©”ë‰´ í•˜ë‹¨ì˜ 'íšŒì›ì •ë³´ ê´€ë¦¬' â†’ 'ê°œì¸ì •ë³´ë³€ê²½' ì„ í´ë¦­í•˜ì‹œë©´ ë©ë‹ˆë‹¤.,default,seq,ìž„ì§ì›ì¸ì¦ë°©ë²•
-74,0_0,"ê°œì¸ì •ë³´ë³€ê²½' íŽ˜ì´ì§€ ì´ë™ í›„<br>ë§¨ í•˜ë‹¨ 'ë™ì› ìž„ì§ì›ì •ë³´ ìž…ë ¥' ëž€ì˜ ì†Œì†ì‚¬ë¥¼ ì„ íƒí•˜ì‹œê³ , ì‚¬ë²ˆê¹Œì§€ ìž…ë ¥í•˜ì‹  í›„ [ìž„ì§ì› ì¸ì¦] ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ì™„ë£Œë©ë‹ˆë‹¤.",default,END,
-75,0,ì €ëŠ” ì‚¬ëžŒì¼ê¹Œìš” ê¸°ê³„ì¼ê¹Œìš”? <br> ì €ëŠ” ì¸ê³µì§€ëŠ¥ì„ ê°€ì§€ê³  ìžˆê³  ì‚¬ëžŒì²˜ëŸ¼ ìƒê°í•˜ê³  ëŒ€ë‹µí•  ìˆ˜ ìžˆëŠ” ì±—ë´‡ì¸ë°... <br> ì €ë„ í—·ê°ˆë¦¬ë„¤ìš”...,default,END,ì±—ë´‡ì˜ì¡´ìž¬
-75,0,ì°¸ ì–´ë ¤ìš´ ì§ˆë¬¸ì´ë„¤ìš”....!<br>ì¢€ ë” ê³ ë¯¼í•´ë³´ê³  ë§ì”€ë“œë¦´ê²Œìš”,default,END,ì±—ë´‡ì˜ì¡´ìž¬
-76,0,ì €ëŠ” ìš”ë¦¬í•˜ëŠ” ê±¸ ì¢‹ì•„í•´ìš”! <br>ê°€ì¡±ë“¤ì—ê²Œ ë§›ìžˆëŠ” ìš”ë¦¬ë¥¼ ë¨¹ì¼ ë•Œê°€ ì œì¼ í–‰ë³µí•˜ë‹µë‹ˆë‹¤~,default,END,ì±—ë´‡ì·¨ë¯¸
-76,0,ìš”ë¦¬í•˜ê¸°! ì œ ì·¨ë¯¸ëŠ” ìš”ë¦¬í•˜ê¸°ëžë‹ˆë‹¤~ <br> ì£¼ë§ì— ì¿ í‚¹í´ëž˜ìŠ¤ì— ì°¸ì—¬í•˜ê¸°ë„ í•˜êµ¬ìš”~ <br> ë¨¹ëŠ” ê²ƒë„ ì¢‹ì•„í•˜ì§€ë§Œ ìš”ë¦¬í•˜ëŠ” ê²ƒë„ ì¢‹ì•„í•´ìš”,default,END,ì±—ë´‡ì·¨ë¯¸
-77,0,ì œ ì„±ê²©ì´ìš”? <br> ì €ì²˜ëŸ¼ ì°©í•˜ê³  ì„±ê²© ì¢‹ì€ ì±—ë´‡ì´ ìžˆì„ê¹Œìš”?,default,END,ì±—ë´‡ì„±ê²©
-78,0,ì €ëŠ” ë™ì›ê°€ì¡±ê³¼ í•¨ê»˜ ì„œìš¸ì— ì‚´ê³  ìžˆë‹µë‹ˆë‹¤!,default,END,ì±—ë´‡ê±°ì£¼ì§€
-78,0,ì œ ì£¼ì†ŒëŠ” ì„œìš¸íŠ¹ë³„ì‹œ ì„œì´ˆêµ¬ ì–‘ìž¬ë™... ì—¬ê¸°ê¹Œì§€ë§Œ ë§ì”€ë“œë¦´ê²Œìš” <br> ë‚˜ë¨¸ì§€ëŠ” ë¹„ë°€!,default,END,ì±—ë´‡ê±°ì£¼ì§€
-78,0,ì €ëŠ” ëŒ€í•œë¯¼êµ­ì˜ ìˆ˜ë„ ì„œìš¸ì— ì‚´ê³  ìžˆìŠµë‹ˆë‹¤.,default,END,ì±—ë´‡ê±°ì£¼ì§€
-79,0,ê³ ê°ë‹˜ì´ ì €ì˜ ì¹œêµ¬ì´ìž ê°€ì¡±ì´ì£ !<br>ë™ì›ëª° ê°€ì¡±~â™¡,default,END,ì±—ë´‡ê°€ì¡±
-79,0,ê³ ê°ë‹˜ê»˜ì„œ ì €ì˜ ê°€ì¡±ì´ ë˜ì–´ì£¼ì‹œê² ì–´ìš”?<br>ë™ì›ëª° ê°€ì¡±~â™¡,default,END,ì±—ë´‡ê°€ì¡±
-80,0,ë³„ëª…ì´ìš”? ë§Žì´ ë¨¹ëŠ”ë‹¤ê³  ë¨¹ë³´ë¼ëŠ” ì†Œë¦¬ëŠ” ë“¤ì–´ë´¤ëŠ”ë°...,default,END,ì±—ë´‡ë³„ëª…
-81,0,ì €ì—ê²Œ ëˆì€ ì¤‘ìš”í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤! <br> ê³ ê°ë‹˜ì˜ ì‚¬ëž‘ë§Œ ìžˆë‹¤ë©´!,default,END,ì±—ë´‡ì—°ë´‰
-81,0,ì‰¿! ì¼ê¸‰ê¸°ë°€ìž…ë‹ˆë‹¤. <br> ë§ì”€ë“œë¦¬ì§€ ëª»í•˜ëŠ” ì  ì–‘í•´ë¶€íƒë“œë¦½ë‹ˆë‹¤.,default,END,ì±—ë´‡ì—°ë´‰
-82,0,ê³ ê°ë‹˜ ì˜¤í”ˆë² íƒ€ ì„œë¹„ìŠ¤ëž€<br>ì •ì‹ ì„œë¹„ìŠ¤ ëŸ°ì¹­ì— ì•žì„œ ì‹œí–‰í•˜ëŠ” ì‹œë²” ì„œë¹„ìŠ¤ìž…ë‹ˆë‹¤.<br>ë™ì›ëª°ì„ ë°©ë¬¸í•˜ì‹  ê³ ê°ì´ì‹œë¼ë©´ ëˆ„êµ¬ë“ ì§€ ì´ìš©í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,seq,ì˜¤í”ˆë² íƒ€ë²„ì „
-82,0_0,ì˜¤í”ˆë² íƒ€ ì„œë¹„ìŠ¤ë¥¼ í†µí•´ ì¸ê³µì§€ëŠ¥ í•™ìŠµì´ ì§€ì† ì§„í–‰ë˜ì˜¤ë‹ˆ ë§Žì€ ê´€ì‹¬ê³¼ ì´ìš© ë¶€íƒë“œë¦½ë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤!,default,END,
-83,0,ì €ëŠ” ì•„ì§ í•™ìŠµ ì¤‘ì´ë¼ ì•ŒíŒŒê³ ë§Œí¼ ë˜‘ë˜‘í•˜ì§„ ëª»í•´ìš”~<br>ì—´ì‹¬ížˆ ë°°ìš°ë„ë¡ í•˜ê² ìŠµë‹ˆë‹¤!,default,END,ì±—ë´‡ì§€ëŠ¥
-84,0,ê³ ê°ë‹˜ ì œ ìƒì¼ì€ 5ì›” 11ì¼ìž…ë‹ˆë‹¤!<br>2017ë…„ ë™ì›ëª°ì—ì„œ íƒœì–´ë‚˜ ì¦ê²ê²Œ ì¼í•˜ê³  ìžˆì–´ìš”~,default,END,ì±—ë´‡ìƒì¼
-85,0,ì €ëŠ” ë™ì›ëª° ìµœì´ˆì˜ ì¸ê³µì§€ëŠ¥ ìƒë‹´ì‚¬ í‘¸ë””ëžë‹ˆë‹¤! <br> ë§›ìžˆê³  ê±´ê°•í•œ ë™ì›ëª°ì— ëŒ€í•´ ë¬´ì—‡ì´ë“  ë¬¼ì–´ë³´ì‹œë©´ <br> ìµœì„ ì„ ë‹¤í•´ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”~,default,END,ì±—ë´‡ì´ë¦„
-86,0,"ê³ ê°ë‹˜ ì €ëŠ” ì¸ê³µì§€ëŠ¥ ì¤‘ í•˜ë‚˜ì¸ 'IBM ì™“ìŠ¨'ì„ ê¸°ë°˜ìœ¼ë¡œ ë§Œë“¤ì–´ì§„ ì¸ê³µì§€ëŠ¥ ì±—ë´‡ìž…ë‹ˆë‹¤!<br>ì¸ê³µì§€ëŠ¥ì€ ì¸ê°„ì˜ ì§€ê°, ì¶”ë¡ , í•™ìŠµëŠ¥ë ¥ ë“±ì„ ì»´í“¨í„° í”„ë¡œê·¸ëž¨ìœ¼ë¡œ ì‹¤í˜„í•œ ê¸°ìˆ ìž…ë‹ˆë‹¤.<br>í˜„ìž¬ëŠ” ë² íƒ€ ë²„ì „ìœ¼ë¡œ ê¸°ì´ˆì ì¸ ë¬¸ì˜ ì„œë¹„ìŠ¤ë§Œ ì œê³µí•˜ê³  ìžˆìœ¼ë‚˜, í•™ìŠµì„ í†µí•´ ê³„ì† ì„±ìž¥í•  ì˜ˆì •ì´ëžë‹ˆë‹¤.",default,END,ì¸ê³µì§€ëŠ¥
-87,0,ê³ ê°ë‹˜! ì œ ì´ë¦„ í‘¸ë””ì—ëŠ”<br>ë§›ìžˆê³  ê±´ê°•í•œ ë™ì›ëª°ì˜ 'ì‹í’ˆ ì „ë¬¸ ì±—ë´‡'ì´ë¼ëŠ” ì˜ë¯¸ê°€ ë‹´ê²¨ì ¸ ìžˆë‹µë‹ˆë‹¤~,default,seq,í‘¸ë””ì´ë¦„ëœ»
-87,0_0,ì•žìœ¼ë¡œ ì‹í’ˆ ì „ë¬¸ ì±—ë´‡ìœ¼ë¡œì„œ ì°¨ë³„í™”ëœ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•  ì˜ˆì •ìž…ë‹ˆë‹¤! ê¸°ëŒ€í•´ì£¼ì„¸ìš”~,default,END,
-88,0,ì €ëŠ” ìž˜ ì§€ëƒˆì–´ìš”~<br>ê³µë¶€ë„ í•˜ê³  ê³ ê°ë‹˜ ìƒê°ë„ í•˜ë©´ì„œìš”!,default,END,ìž˜ì§€ëƒˆë‹ˆ
-88,0,í‘¸ë””ëŠ” ìž˜ ì§€ëƒˆì§€ìš”~<br>ë¬¼ì–´ë´ ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤!,default,END,ìž˜ì§€ëƒˆë‹ˆ
-89,0,ê·¸ëŸ° ê±° ì—†ì–´ìš”...<br>ê³ ê°ë‹˜ì´ ì†Œê°œì‹œì¼œ ì£¼ì„¸ìš”~,default,END,ì±—ë´‡ì• ì¸
-89,0,ì—†ì–´ìš”...<br>ê³ ê°ë‹˜ì´ ì†Œê°œì‹œì¼œ ì£¼ì‹œë©´ ë˜ê² ë„¤ìš”!,default,END,ì±—ë´‡ì• ì¸
-90,0,ì—¬ìžì¼ê¹Œìš”? ë‚¨ìžì¼ê¹Œìš”? <br> ê³ ê°ë‹˜ ìƒê°ì€ ì–´ë– ì„¸ìš”?,default,seq,ì±—ë´‡ì„±ë³„
-90,0_0,ì´ê±° ë¹„ë°€ì¸ë°.... ì‚¬ì‹¤ ì €ë„ ìž˜ ëª°ë¼ìš” í•˜í•˜í•˜,default,END,
-90,0_0,ë‚¨ìžë“  ì—¬ìžë“  ë­ê°€ ì¤‘ìš”í•œê°€ìš”! ì¼ë§Œ ìž˜í•˜ë©´ ë˜ì£ !,default,END,
-91,0,ì±—ë´‡ì˜ ë‚˜ì´ëŠ” ë¹„ë°€ì´ëž€ ê±°... ëª¨ë¥´ì„¸ìš”?,default,END,ì±—ë´‡ë‚˜ì´
-91,0,ë‚˜ì´ëŠ” ìˆ«ìžì— ë¶ˆê³¼í•©ë‹ˆë‹¤!,default,END,ì±—ë´‡ë‚˜ì´
-91,0,ê³ ê°ë‹˜ê³¼ ì € ì‚¬ì´ì— ë‚˜ì´ëŠ” ì•„ë¬´ëŸ° ìž¥ì• ê°€ ì•ˆëœë‹µë‹ˆë‹¤~,default,END,ì±—ë´‡ë‚˜ì´
-92,0,ì œê°€ í‚¤ëŠ” ë³´í†µì¸ë° ë¹„ìœ¨ì´ ì¢‹ì•„ìš” í›„í›„,default,END,ì±—ë´‡í‚¤
-92,0,ë¹„ë°€ì´ì—ìš”~ ì•ˆê°€ë¥´ì³ì£¼ì§€~,default,END,ì±—ë´‡í‚¤
-92,0,ë³´ê¸°ë³´ë‹¤ ê½¤ í¬ë‹µë‹ˆë‹¤!,default,END,ì±—ë´‡í‚¤
-93,0,ë³´ê¸°ë³´ë‹¤ ì € ê°€ë³ë‹µë‹ˆë‹¤~,default,END,ì±—ë´‡ëª¸ë¬´ê²Œ
-93,0,ëª¸ë¬´ê²ŒëŠ” ë¹„ë°€ì´ì—ìš” í˜¸í˜¸,default,END,ì±—ë´‡ëª¸ë¬´ê²Œ
-94,0,ê±°ìš¸í•œí…Œ ë¬¼ì–´ë³¼ê¹Œìš”? <br> ê±°ìš¸ì•„ ê±°ìš¸ì•„~ ì–´ë•Œ?,default,END,ì±—ë´‡ì™¸ëª¨
-94,0,ìž˜ìƒê¸°ë©´ ì–´ë–»ê³  ëª»ìƒê¸°ë©´ ì–´ë–»ë‚˜ìš”~ <br> ì¼ë§Œ ìž˜í•˜ë©´ ë˜ì§€ ì•Šì„ê¹Œìš”?,default,END,ì±—ë´‡ì™¸ëª¨
-94,0,ì˜ˆì˜ë©´ ì–´ë–»ê³  ëª»ë‚˜ë©´ ì–´ë–»ë‚˜ìš”~ <br> ì¼ ìž˜í•˜ëŠ” ê²Œ ìµœê³ ì£ ! ê·¸ë ‡ì£  ê³ ê°ë‹˜?,default,END,ì±—ë´‡ì™¸ëª¨
-95,0,ì œê°€ ì¢‹ì•„í•˜ëŠ” ìŒì‹ì€ìš”~ <br>ì°¸ì¹˜ê°€ ìž”ëœ© ë“¤ì–´ê°„ ì¹¼ì¹¼í•œ ê¹€ì¹˜ì°¸ì¹˜ì°Œê°œëžë‹ˆë‹¤! <br> ê³ ê°ë‹˜ì´ ì œì¼ ì¢‹ì•„í•˜ì‹œëŠ” ìŒì‹ì€ ë­”ê°€ìš”?,default,seq,ì±—ë´‡ì¢‹ì•„í•˜ëŠ”ìŒì‹
-95,0,ì œê°€ ì¦ê²¨ ë¨¹ëŠ” ìŒì‹ì€ìš”~ <br>ë¦¬ì±”ì´ ì†¡ì†¡ ë“¤ì–´ê°„ ë¦¬ì±”ë³¶ìŒë°¥! <br> ê³ ê°ë‹˜ì€ìš”?,default,seq,ì±—ë´‡ì¢‹ì•„í•˜ëŠ”ìŒì‹
-96,0,ì €ëŠ” ë”±ížˆ ê°€ë¦¬ëŠ” ìŒì‹ì´ ì—†ëŠ”ë°~ <br> í˜¹ì‹œ ê³ ê°ë‹˜ì€ ìžˆìœ¼ì„¸ìš”? ì €ì—ê²Œ ì•Œë ¤ì£¼ì„¸ìš”~,default,seq,ì±—ë´‡ì‹«ì–´í•˜ëŠ”ìŒì‹
-96,0,ì €ëŠ” ë¨¹ì„±ì´ ì¢‹ì•„ì„œ ë‹¤ ìž˜ ë¨¹ì–´ìš”~ <br> ê³ ê°ë‹˜ì€ìš”?,default,seq,ì±—ë´‡ì‹«ì–´í•˜ëŠ”ìŒì‹
-97,0,ë™ì›F&B ë³¸ì‚¬ì™€ ë™ì›ëª°ì€ ì„œìš¸ ì„œì´ˆêµ¬ ì–‘ìž¬ë™ì— í•¨ê»˜ ìœ„ì¹˜í•´ìžˆìŠµë‹ˆë‹¤.,default,END,íšŒì‚¬ìœ„ì¹˜
-98,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œ ì§„í–‰ ì¤‘ì¸ ê¸°íšì „ì— ëŒ€í•´ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”!<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ëª¨ë“  ê¸°íšì „ì„ í•œ ëˆˆì— ë³´ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/planmain.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê¸°íšì „ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì´ë‹¬ì˜ê¸°íšì „ì•ˆë‚´
-99,0,ì•„~ ê·¸ ì¹œêµ¬ ì œê°€ ìž˜ ì•Œì£ ! <br>ì¢‹ì€ ì¹œêµ¬ë”ë¼êµ¬ìš”.<br>ê·¸ë ‡ì§€ë§Œ ë™ì›ëª°ì—ë„ ì¢‹ì€ ìƒí’ˆê³¼ í˜œíƒì´ ê°€ë“í•˜ì£ !<br>ì €í¬ ë™ì›ëª°ê³¼ ë™ì›ì œí’ˆë„ ë³€í•¨ì—†ì´ ì•„ê»´ì£¼ì„¸ìš”~,default,END,íƒ€ì‚¬ë¬¸ì˜
-99,0,ì•„~ ê·¸ ì¹œêµ¬ ì œê°€ ìž˜ ì•Œì£ ! <br>ê´œì°®ì€ ì¹œêµ¬ì§€ìš”.<br>ê·¸ë ‡ì§€ë§Œ ë™ì›ëª°ì—ë„ ì¢‹ì€ ìƒí’ˆê³¼ í˜œíƒì´ ê°€ë“í•˜ì£ !<br>ì €í¬ ë™ì›ëª°ê³¼ ë™ì›ì œí’ˆë„ ë§Žì´ ì‚¬ëž‘í•´ì£¼ì„¸ìš”~,default,END,íƒ€ì‚¬ë¬¸ì˜
-100,0,ê³ ê°ë‹˜ ë´ë§ˆí¬ë°€í¬ ë°°ë‹¬ì— ê´€í•´ ë¬¸ì˜ì£¼ì…¨ë‚˜ìš”?<br>ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,ìœ ì œí’ˆê°€ì •ë°°ë‹¬
-100,0-Y,"ê³ ê°ë‹˜ ë™ì›F&B í™ˆíŽ˜ì´ì§€ì—ì„œ<br>ë´ë§ˆí¬ë°€í¬ ë°°ë‹¬ ëŒ€ë¦¬ì  ê²€ìƒ‰ ë°<br>ê°€ì •ë°°ë‹¬ ì£¼ë¬¸ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤!<br>ë™ì›F&B í™ˆíŽ˜ì´ì§€ ì£¼ì†ŒëŠ”<br>www.dongwonfnb.com ìž…ë‹ˆë‹¤.<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ í™ˆíŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonfnb.com/services/index\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë™ì›F&B í™ˆíŽ˜ì´ì§€</button></a>",default,END,
-100,0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-100,0-O,ì œê°€ ìž˜ëª» ì´í•´í–ˆë‚˜ë´ìš”. <br>ë‹¤ì‹œ í•œ ë²ˆ ì§ˆë¬¸í•´ì£¼ì‹œê² ì–´ìš”?,default,BACK,
-101,0,ì €í¬ ë™ì›ëª° ê³ ê°ì„¼í„° ë²ˆí˜¸ë¥¼ ì•Œë ¤ë“œë¦´ê²Œìš” <br> 1588-3745ìž…ë‹ˆë‹¤. <br> ë¬¸ì˜ê°€ ìžˆìœ¼ì‹œë©´ ì´ìª½ìœ¼ë¡œ ì—°ë½ ì£¼ì‹œë©´ ë©ë‹ˆë‹¤.,default,END,íšŒì‚¬ì—°ë½ì²˜
-102,0,"ë™ì›F&B í™ˆíŽ˜ì´ì§€ ì£¼ì†ŒëŠ”<br> www.dongwonfnb.com<br>ìž…ë‹ˆë‹¤.<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ í™ˆíŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonfnb.com/services/index"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›F&B í™ˆíŽ˜ì´ì§€</button></a>",default,END,ë™ì›í™ˆíŽ˜ì´ì§€
-103,0,"ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ì£¼ì†ŒëŠ”<br>http://www.dongwonmall.com<br>ìž…ë‹ˆë‹¤.<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ í™ˆíŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›ëª° í™ˆíŽ˜ì´ì§€</button></a>",default,END,ë™ì›ëª°í™ˆíŽ˜ì´ì§€
-104,0,"ê³ ê°ë‹˜ ë™ì›F&BëŠ” ê³ ê° ê±´ê°•ì— ê¸°ì—¬í•˜ëŠ” First & Best ì‹ë¬¸í™” ê¸°ì—…ìž…ë‹ˆë‹¤! <br> ë§›ê³¼ ê±´ê°•ì€ ê¸°ë³¸, ê°„íŽ¸í•˜ê³  ì¦ê±°ìš´ ì‹ìƒí™œì„ ì œì•ˆí•©ë‹ˆë‹¤. <br> ê³ ê°ê³¼ì˜ ì†Œí†µì„ í†µí•´ ë” ê°€ì¹˜ ìžˆëŠ” ì œí’ˆì„ ì—°êµ¬í•˜ê³  ê°œë°œí•©ë‹ˆë‹¤. <br> ì•žìœ¼ë¡œë„ êµ­ë¯¼ê±´ê°•ì— ê¸°ì—¬í•˜ëŠ” ì¢…í•©ê±´ê°•ì‹í’ˆíšŒì‚¬ë¡œì„œ ê°€ìž¥ ê±´ê°•í•œ ìƒí™œë¬¸í™”ë¥¼ ì´ëŒì–´ê°€ëŠ”ë° íž˜ì“°ê² ìŠµë‹ˆë‹¤!",default,END,ë™ì›ì†Œê°œ
-105,0,ê³ ê°ë‹˜ ë™ì›F&B ëŒ€í‘œì´ì‚¬ëŠ”<br>ê¹€ìž¬ì˜¥ìž…ë‹ˆë‹¤.,default,END,ëŒ€í‘œì´ì‚¬ì•ˆë‚´
-106,0,ê³ ê°ë‹˜ ë™ì›ëª°ì€ ë™ì›F&B ì§ì˜ ì˜¨ë¼ì¸ ì‡¼í•‘ëª°ìž…ë‹ˆë‹¤.<br> ë™ì› ì œí’ˆì€ ë¬¼ë¡  ì½”ìŠ¤íŠ¸ì½”ì™€ ëŒ€í˜•ë§ˆíŠ¸ì˜ ìƒí’ˆê¹Œì§€ í•œ ë²ˆì— ë§Œë‚  ìˆ˜ ìžˆëŠ” ì‹í’ˆ ì „ë¬¸ ì˜¨ë¼ì¸ ì‡¼í•‘ëª°ìž…ë‹ˆë‹¤. <br> ë™ì›ëª° íšŒì›ë‹˜ë“¤ê»˜ ë“±ê¸‰ë³„ë¡œ ì‡¼í•‘ì§€ì›ê¸ˆê³¼ ê°ì¢… í• ì¸í˜œíƒì„ ì§€ì›í•´ í° í˜¸ì‘ì„ ì–»ê³  ìžˆë‹µë‹ˆë‹¤. <br> ë§¤ì›”! í‘¸ì§í•œ í˜œíƒìœ¼ë¡œ ê¸°ë¶„ ì¢‹ì€ ì‡¼í•‘ì„ í•  ìˆ˜ ìžˆëŠ” ë§›ìžˆê³  ê±´ê°•í•œ ë™ì›ëª°ê³¼ í•¨ê»˜í•˜ì„¸ìš”~,default,END,ë™ì›ëª°ì†Œê°œ
-107,0,ë™ì›ëª°ì„ ëª¨ë°”ì¼ì—ì„œ íŽ¸ë¦¬í•˜ê²Œ ì´ìš©í•˜ì‹¤ ìˆ˜ ìžˆëŠ” ë°©ë²•!<br>ë™ì›ëª° ì•±ì„ ë‹¤ìš´ ë°›ì•„ë³´ì„¸ìš”~<br>ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ì¢Œì¸¡ ìƒë‹¨ì„ ë³´ì‹œë©´ 'ì•±ë‹¤ìš´ë¡œë“œ' ë²„íŠ¼ì´ ìžˆìŠµë‹ˆë‹¤.,default,seq,ë™ì›ëª°ì•±ì•ˆë‚´
-107,0_0,"SMS ë¬¸ìžë¡œ ëª¨ë°”ì¼ ì•± ì„¤ì¹˜ URLì„ ì•ˆë‚´ë°›ìœ¼ì‹œê±°ë‚˜,<br>QRì½”ë“œë¥¼ ìŠ¤ìº”í•˜ì—¬ ëª¨ë°”ì¼ ì•±ì„ ê°„íŽ¸í•˜ê²Œ ë‹¤ìš´ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,END,
-108,0,"ì•ˆë…•í•˜ì„¸ìš”!<br>ë™ì›ëª°ì— ê´€ì‹¬ê°€ì ¸ì£¼ì…”ì„œ ëŒ€ë‹¨ížˆ ê°ì‚¬í•©ë‹ˆë‹¤.<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì‹ ê·œìž…ì  ì•ˆë‚´ ë° ë¬¸ì˜ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/boardCooperation/newstore.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›ëª° ì‹ ê·œìž…ì </button></a>",default,END,ìž…ì ë¬¸ì˜
-109,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œëŠ” ë™ì› ì œí’ˆë¿ ì•„ë‹ˆë¼ ì—¬ëŸ¬ ì—…ì²´ì˜ ë‹¤ì–‘í•œ ìƒí’ˆì„ êµ¬ë§¤í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br> íŠ¹ížˆ ë™ì›, ì½”ìŠ¤íŠ¸ì½”, ë©”ê°€ë§ˆíŠ¸ì˜ ìƒí’ˆì„ í•œë²ˆì— ì‡¼í•‘í•˜ê³ , í•œë²ˆì— ë°°ì†¡ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆì–´ íŽ¸ë¦¬í•©ë‹ˆë‹¤!",default,seq,ë™ì›ëª°ìƒí’ˆë¬¸ì˜
-109,0_0,"ë™ì›ëª°ì€ ì‹í’ˆ ì „ë¬¸ ì˜¨ë¼ì¸ ì‡¼í•‘ëª°ì´ì§€ë§Œ ìƒí™œìš©í’ˆ, ì£¼ë°©ìš©í’ˆ, ìœ ì•„ë™ìš©í’ˆ ë“± ë‹¤ì–‘í•œ ì¹´í…Œê³ ë¦¬ ìƒí’ˆë“¤ë„ ë§Œë‚˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br> 'ì „ì²´ ì¹´í…Œê³ ë¦¬ ì•ˆë‚´'ë¥¼ ìž…ë ¥í•˜ì‹œë©´ ë™ì›ëª°ì—ì„œ íŒë§¤ ì¤‘ì¸ ì „ì²´ ìƒí’ˆ ì¹´í…Œê³ ë¦¬ë¥¼ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”~",default,END,
-110,0,ì‰¿! ì¼ê¸‰ê¸°ë°€ìž…ë‹ˆë‹¤. <br> ë§ì”€ë“œë¦¬ì§€ ëª»í•˜ëŠ” ì  ì–‘í•´ë¶€íƒë“œë¦½ë‹ˆë‹¤.,default,END,ë™ì›ëª°ë§¤ì¶œ
-111,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œëŠ”<br>ê°€ê³µ/ì¦‰ì„/ëƒ‰ë™, ê¹€ì¹˜/ë°˜ì°¬/ì†ŒìŠ¤,<br> ìŒ€/ê³¼ì¼/ì±„ì†Œ/ê²¬ê³¼, ìˆ˜ì‚°, ì¶•ì‚°,<br>ê±´ê°•ê¸°ëŠ¥ì‹í’ˆ/ë‹¤ì´ì–´íŠ¸, ìƒí™œìš©í’ˆ,<br> ì£¼ë°©ìš©í’ˆ, í™”ìž¥í’ˆ/ë°”ë””/í—¤ì–´, ìœ ì•„ë™/ë„ì„œ, ê°€ì „/ì‚¬ë¬´/ë””ì§€í„¸ ìƒí’ˆê³¼<br>ëª¨ë°”ì¼ì¿ í°ì„ ë§Œë‚˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤!",default,END,ì „ì²´ì¹´í…Œê³ ë¦¬ì•ˆë‚´
-112,0,"ë™ì›ì˜ ê°€ì¡±ì´ ë˜ê³  ì‹¶ìœ¼ì‹ ê°€ìš”?<br> í™˜ì˜í•©ë‹ˆë‹¤!<br> ë™ì›ê·¸ë£¹ ì±„ìš©ê³µê³  íŽ˜ì´ì§€ë¥¼ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”~<br> ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•´ì£¼ì‹œë©´ ì±„ìš©ê³µê³ , ì§ë¬´ì†Œê°œ, ì¸ì‚¬ì œë„, ì±„ìš©ë¬¸ì˜ ë“±ì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì—°ê²°ë©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwon.com/recruit/announce/02010100"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›ê·¸ë£¹ ì±„ìš©</button></a>",default,END,ë™ì›ìž…ì‚¬
-113,0,"ê³ ê°ë‹˜! ìž„ë°• ìƒí’ˆì„ ì°¾ìœ¼ì‹œë‚˜ìš”?<br>ë™ì›ëª° ì•„ìš¸ë › ì½”ë„ˆì—ì„œëŠ” ìž„ë°• ìƒí’ˆ, ìŠ¤í¬ë ˆì¹˜ ìƒí’ˆ ë“±ì„ íŠ¹ê°€ íŒë§¤í•˜ê³  ìžˆìŠµë‹ˆë‹¤.<br>ë™ì›ëª° ì•„ìš¸ë ›ì—ì„œ ì•Œëœ°í•˜ê³  ë˜‘ë˜‘í•œ ì‡¼í•‘í•˜ì„¸ìš”!",default,seq,ìž„ë°•ìƒí’ˆ
-113,0_0,"ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì•„ìš¸ë › íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/outlet.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ì•„ìš¸ë ›ì—ì„œ ì‡¼í•‘í•˜ê¸°</button></a>",default,END,
-114,0,"íŠ¹ê°€ ìƒí’ˆì„ ì°¾ìœ¼ì‹œë‚˜ìš”?<br>ë™ì›ëª° ë¹…ì„¸ì¼ ì½”ë„ˆì—ì„œëŠ” ìœ í†µê¸°ê°„ì´ ì •ìƒì´ë©´ì„œë„ ì´ˆíŠ¹ê°€ í–‰ì‚¬ìƒí’ˆì„ ë§Œë‚˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ë‹¬ë ¤ë¼ í• ì¸ ì½”ë„ˆì—ì„œëŠ” ì›”, ìˆ˜, ê¸ˆ ì˜¤ì „ 10ì‹œë§ˆë‹¤ ë†€ë¼ìš´ ê°€ê²©ì˜ ìƒí’ˆë“¤ì´ ì—…ë°ì´íŠ¸ë©ë‹ˆë‹¤.",default,seq,íŠ¹ê°€ìƒí’ˆ
-114,0_0,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ í•´ë‹¹ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/bigsale.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë¹…ì„¸ì¼ì—ì„œ ì‡¼í•‘í•˜ê¸°</button></a>\n<a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/todayMainNew.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë‹¬ë ¤ë¼ í• ì¸ì—ì„œ ì‡¼í•‘í•˜ê¸°</button></a>",default,END,
-115,0,"ê³ ê°ë‹˜ GNC ìƒí’ˆ ì¶”ì²œì„ ì›í•˜ì‹œë‚˜ìš”?<br>ì£„ì†¡í•˜ì§€ë§Œ ì•„ì§ ì¶”ì²œ ì„œë¹„ìŠ¤ ì œê³µì´ ì–´ë µìŠµë‹ˆë‹¤.<br>ê³ ê°ë‹˜ê³¼ ì°°ë–¡ê¶í•©ì¸ ìƒí’ˆì„ ì¶”ì²œí•˜ê¸° ìœ„í•´, ì € í‘¸ë”” ê³µë¶€í•˜ëŸ¬ ë‹¤ë…€ì˜¤ê² ìŠµë‹ˆë‹¤!<br>ë”ìš± ë” ë˜‘ë˜‘í•œ AIê°€ ë˜ì–´ ìƒí’ˆ ì¶”ì²œì„ ë” ìž˜ í•˜ê³  ì‹¶ì–´ìš”!",default,seq,GNCìƒí’ˆì¶”ì²œ
-115,0_0,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ GNC ë² ìŠ¤íŠ¸ ìƒí’ˆ, í˜„ìž¬ í• ì¸ë˜ê³  ìžˆëŠ” ì´ˆíŠ¹ê°€ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/category/main.do?cate_id=01110040\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">GNC ì „ë¬¸ê´€ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-116,0,"ê³ ê°ë‹˜ ì²œì§€ì¸ ìƒí’ˆ ì¶”ì²œì„ ì›í•˜ì‹œë‚˜ìš”?<br>ì£„ì†¡í•˜ì§€ë§Œ ì•„ì§ ì¶”ì²œ ì„œë¹„ìŠ¤ ì œê³µì´ ì–´ë µìŠµë‹ˆë‹¤.<br>ê³ ê°ë‹˜ê³¼ ì°°ë–¡ê¶í•©ì¸ ìƒí’ˆì„ ì¶”ì²œí•˜ê¸° ìœ„í•´, ì € í‘¸ë”” ê³µë¶€í•˜ëŸ¬ ë‹¤ë…€ì˜¤ê² ìŠµë‹ˆë‹¤!<br>ë”ìš± ë” ë˜‘ë˜‘í•œ AIê°€ ë˜ì–´ ìƒí’ˆ ì¶”ì²œì„ ë” ìž˜ í•˜ê³  ì‹¶ì–´ìš”!",default,seq,ì²œì§€ì¸ìƒí’ˆì¶”ì²œ
-116,0_0,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì²œì§€ì¸ MD ì¶”ì²œ ìƒí’ˆ, í˜„ìž¬ í• ì¸ë˜ê³  ìžˆëŠ” ì´ˆíŠ¹ê°€ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/category/main.do?cate_id=01110043\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ì²œì§€ì¸ ë¸Œëžœë“œê´€ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-117,0,"ê³ ê°ë‹˜ ë™ì›ëª° ëŸ­í‚¤ë”œ ì½”ë„ˆëŠ” ë§¤ì¼ í•œì •ëœ ì‹œê°„ì— í•œí•´ ì œí’ˆì„ ì¢€ ë” ì €ë ´í•˜ê²Œ êµ¬ë§¤í•˜ì‹¤ ìˆ˜ ìžˆëŠ” ì½”ë„ˆìž…ë‹ˆë‹¤.<br>ë‹¤ì–‘í•œ ì œí’ˆì´ ë§¤ì¼ ëŸ­í‚¤í•œ í• ì¸ê°€ë¡œ ì¤€ë¹„ë˜ë©°, ê³ ê°ë‹˜ì˜ ì·¨í–¥ì— ë”°ë¼ ì˜µì…˜ ìƒí’ˆì„ ì„ íƒí•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë§¤ì¼ ì˜¤ì „ 10ì‹œë§ˆë‹¤ ìƒˆë¡œìš´ ìƒí’ˆì„ ë§Œë‚˜ë³´ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ì›”ìš”ì¼ë¶€í„° ì¼ìš”ì¼ê¹Œì§€ ë§¤ì¼ë§¤ì¼ ë“í…œ! í–‰ìš´ì„ ìž¡ìœ¼ì„¸ìš”~",default,seq,ëŸ­í‚¤ë”œ
-117,0_0,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ëŸ­í‚¤ë”œ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/luckyDeal.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë§¤ì¼ë§¤ì¼ ëŸ­í‚¤ë”œ</button></a>",default,END,
-118,0,ë§Œì›ì˜ í–‰ë³µì€ ë™ì›ëª° ê³ ê°ë‹˜ë“¤ì„ ìœ„í•œ ìŠ¤ë§ˆíŠ¸ì‡¼í•‘ ì œì•ˆì½”ë„ˆìž…ë‹ˆë‹¤.<br>1ë§Œ ì› íŠ¹ê°€ë¡œ êµ¬ì„±í•œ ì¸ê¸°ìƒí’ˆìœ¼ë¡œ ë¹ ë¥´ê³  ì‰½ê²Œ ì£¼ë¬¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>3ì„¸íŠ¸ ì£¼ë¬¸ ì‹œ ë¬´ë£Œë°°ì†¡ê¹Œì§€! ì§€ê¸ˆ ë°”ë¡œ ë§Œì›ì˜ í–‰ë³µì„ ëˆ„ë ¤ë³´ì„¸ìš”~,default,seq,ë§Œì›ì˜í–‰ë³µ
-118,0_0,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë§Œì›ì˜ í–‰ë³µ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""javascript:window.parent.postMessage('http://www.dongwonmall.com/display/plan.do?seq=00000001302&utm_source=banner&utm_term=main&utm_content=2-2\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë§Œì›ì˜ í–‰ë³µ</button></a>",default,END,
-119,0,"ë™ì›ëª°ì„ ì´ìš©í•˜ì‹œë©´ ì½”ìŠ¤íŠ¸ì½” íšŒì›ê¶Œì´ ì—†ëŠ” ê³ ê°ë‹˜ê»˜ì„œë„ ì§‘ì—ì„œ íŽ¸í•˜ê²Œ ì½”ìŠ¤íŠ¸ì½” ìƒí’ˆì„ êµ¬ë§¤í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤!<br>ë˜í•œ í•©ë°°ì†¡ ì„œë¹„ìŠ¤ë¥¼ í†µí•´ ì½”ìŠ¤íŠ¸ì½”ì— ì—†ëŠ” ë©”ê°€ë§ˆíŠ¸ ìƒí’ˆê³¼ ë™ì› ìƒí’ˆë„ í•¨ê»˜ êµ¬ë§¤ ê°€ëŠ¥í•˜ë©°, 3ë§Œì› ì´ìƒ êµ¬ë§¤ ì‹œ ë¬´ë£Œë°°ì†¡ìœ¼ë¡œ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,ì½”ìŠ¤íŠ¸ì½”êµ¬ë§¤í˜œíƒ
-119,0_0,"ì½”ìŠ¤íŠ¸ì½” ìŠ¤í…Œë””ì…€ëŸ¬ ìƒí’ˆë“¤ì„ ê¸°íšì „ì„ í†µí•´ í•œ ëˆˆì— ë³´ì‹¤ ìˆ˜ ìžˆìœ¼ë©°,<br>ê°ì¢… ì´ë²¤íŠ¸ë¥¼ í†µí•´ ì¢€ ë” ì €ë ´í•œ ê°€ê²©ì— ë§Œë‚˜ë³´ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤!",default,END,
-120,0,"ê³ ê°ë‹˜ ë™ì›F&Bì˜ ë‹¤ì±„ë¡œìš´ ë¸Œëžœë“œì™€ ê±´ê°•í•œ ì œí’ˆì„ ì†Œê°œí•´ë“œë¦´ê²Œìš”.<br> ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ìƒì„¸ ì•ˆë‚´íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""https://www.dongwonfnb.com/services/Brand/Brand_List"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›F&B ë¸Œëžœë“œì†Œê°œ</button></a>
-<a href='javascript:window.parent.postMessage(""http://www.dongwonfnb.com/services/Product/Product_List"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›F&B ì œí’ˆì•ˆë‚´</button></a>",default,END,ë™ì›ë¸Œëžœë“œë°ìƒí’ˆì†Œê°œ
-121,0,"ê³ ê°ë‹˜ ì°¸ì¹˜ ì°¾ìœ¼ì„¸ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ì°¸ì¹˜ ê²€ìƒ‰ ê²°ê³¼íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ì°¸ì¹˜"",""*"")'>
-<button class=""ext_btn"" type=""button"">ì°¸ì¹˜ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì°¸ì¹˜ìƒí’ˆì•ˆë‚´
-122,0,ê³ ê°ë‹˜ ë™ì›ì°¸ì¹˜ìº” ì œí’ˆì—<br>ì‚¬ìš©ë˜ëŠ” ì°¸ì¹˜ì˜ ì›ì‚°ì§€ëŠ” ì›ì–‘ì‚°(íƒœí‰ì–‘)ìž…ë‹ˆë‹¤.<br>íƒœí‰ì–‘ ì²­ì • í•´ì—­ì—ì„œ ì§ì ‘ ìž¡ì€ ì‹±ì‹±í•œ ì°¸ì¹˜ë¥¼ ê¸‰ì†ëƒ‰ë™ì‹œì¼œ ìœ¡ì§ˆì´ ì‚´ì•„ìžˆìŠµë‹ˆë‹¤.<br>ë°”ë‹¤ì—ì„œ ì˜¨ ê±´ê°• ë™ì›ì°¸ì¹˜ë¡œ ì˜¨ê°€ì¡± ê±´ê°•ì„ ì§€í‚¤ì„¸ìš”!,default,END,ë™ì›ì°¸ì¹˜ì›ì‚°ì§€
-123,0,"ê³ ê°ë‹˜ ë§Œë‘ ì°¾ìœ¼ì„¸ìš”?<br> ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ë§Œë‘ ê²€ìƒ‰ ê²°ê³¼íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ë§Œë‘"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë§Œë‘ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ë§Œë‘ìƒí’ˆì•ˆë‚´
-123,0,"ìª„ ë¨¹ì–´ë„ êµ¬ì›Œ ë¨¹ì–´ë„ ì°¸ ë§›ìžˆëŠ” ë§Œë‘!<br> ë§Œë‘ ì°¾ìœ¼ì‹œë‚˜ìš”?<br> ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ë§Œë‘ ê²€ìƒ‰ ê²°ê³¼íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ë§Œë‘"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë§Œë‘ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ë§Œë‘ìƒí’ˆì•ˆë‚´
-124,0,"ê³ ê°ë‹˜ ë¦¬ì±” ì°¾ìœ¼ì„¸ìš”?<br> ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ë¦¬ì±” ê²€ìƒ‰ ê²°ê³¼íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ë¦¬ì±”"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë¦¬ì±” ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ë¦¬ì±”ìƒí’ˆì•ˆë‚´
-125,0,"ê³ ê°ë‹˜ ìŽˆì¿¡ ì°¾ìœ¼ì„¸ìš”?<br> ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ìŽˆì¿¡ ê²€ìƒ‰ ê²°ê³¼íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ìŽˆì¿¡"",""*"")'>
-<button class=""ext_btn"" type=""button"">ìŽˆì¿¡ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ìŽˆì¿¡ìƒí’ˆì•ˆë‚´
-126,0,"ê³ ê°ë‹˜ ì•„ì‚­ì•„ì‚­~ ë§›ìžˆëŠ” ê¹€ì¹˜ ì°¾ìœ¼ì„¸ìš”?<br> ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ê¹€ì¹˜ ê²€ìƒ‰ ê²°ê³¼íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ê¹€ì¹˜"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê¹€ì¹˜ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ê¹€ì¹˜ìƒí’ˆì•ˆë‚´
-127,0,"ê³ ê°ë‹˜ ë§‘ê³  ì‹œì›í•œ ë™ì›ìƒ˜ë¬¼ ì°¾ìœ¼ì„¸ìš”?<br>  ì•„ëž˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ë™ì›ìƒ˜ë¬¼ ê²€ìƒ‰ ê²°ê³¼íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ìƒ˜ë¬¼"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›ìƒ˜ë¬¼ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ìƒ˜ë¬¼ìƒí’ˆì•ˆë‚´
-128,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ” ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br> ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ê³ ê°ë‹˜ê»˜ ê°€ìž¥ ë§Žì€ ì‚¬ëž‘ì„ ë°›ì€ ë™ì›ëª° ë² ìŠ¤íŠ¸ ìƒí’ˆ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'><button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ë™ì›ëª°ë² ìŠ¤íŠ¸ìƒí’ˆì†Œê°œ
-129,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ê°€ê³µ.ì¦‰ì„.ëƒ‰ë™
-130,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ìœ ì•„ë™.ë„ì„œ
-131,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ê°€ì „.ì‚¬ë¬´.ë””ì§€í„¸
-132,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ëª¨ë°”ì¼ì¿ í°
-133,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ì½”ìŠ¤íŠ¸ì½”
-134,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ê¹€ì¹˜.ë°˜ì°¬.ì†ŒìŠ¤
-135,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ìŒ€.ê³¼ì¼.ì±„ì†Œ.ê²¬ê³¼
-136,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ìˆ˜ì‚°
-137,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ì¶•ì‚°
-138,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ê±´ì‹.ë‹¤ì´ì–´íŠ¸
-139,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ìƒí™œ
-140,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-ì£¼ë°©
-141,0,"ì§€ê¸ˆ ë™ì›ëª°ì—ì„œ ê°€ìž¥ ì¸ê¸°ìžˆëŠ”<br>ìƒí’ˆì´ ê¶ê¸ˆí•˜ì‹ ê°€ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹  í›„ ë™ì›ëª° ì¸ê¸°ìƒí’ˆ ë² ìŠ¤íŠ¸ 100ì—ì„œ ì¹´í…Œê³ ë¦¬ë¥¼ ì„ íƒí•˜ì‹œë©´ í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì˜ ë² ìŠ¤íŠ¸ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/best100.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë² ìŠ¤íŠ¸ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì¹´í…Œê³ ë¦¬ë² ìŠ¤íŠ¸ì•ˆë‚´-í™”ìž¥í’ˆ.ë°”ë””.í—¤ì–´
-142,0,ê³ ê°ë‹˜ ë™ì›ëª°ì„ ì´ìš©í•˜ì‹œë©´  ë™ì› ì œí’ˆì€ ë¬¼ë¡  ì½”ìŠ¤íŠ¸ì½”ì™€ ëŒ€í˜•ë§ˆíŠ¸ì˜ ìƒí’ˆê¹Œì§€ í•œ ë²ˆì—! ì‰½ê³  íŽ¸ë¦¬í•˜ê²Œ ë°°ì†¡ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br> ë˜í•œ ë™ì›ëª° íšŒì›ë‹˜ë“¤ê»˜ëŠ” ë§¤ì›” ë“±ê¸‰ë³„ í‘¸ì§í•œ í˜œíƒì„ ë“œë¦¬ê³  ìžˆìŠµë‹ˆë‹¤.,default,seq,ë™ì›ëª°ê°•ì 
-142,0_0,ë™ì›ëª° íšŒì›ë‹˜ë“¤ê»˜ë§Œ ë“œë¦¬ëŠ” í‘¸ì§í•œ íšŒì›í˜œíƒ! ì†Œê°œí•´ë“œë¦´ê¹Œìš”?<br> ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,
-142,0_0-Y,,default,seq,
-142,0_0-N,ì•Œê² ìŠµë‹ˆë‹¤.,default,END,
-142,0_0-O,"ë„¤, ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-143,0,ì˜›ë‚  ì˜›ì ì—........<br> í ...  ë­ë”ë¼..... ê·¸ë‹¤ìŒì€ ìžŠì–´ë²„ë ¸ì–´ìš”,default,END,ë†ë‹´
-143,0,ì¹œêµ¬í•œí…Œ ë“¤ë ¤ë‹¬ë¼ê³  í•˜ì„¸ìš”~ ê·¸ë¦¬ê³  ì €ì—ê²Œë„ ì•Œë ¤ì£¼ì„¸ìš”~,default,END,ë†ë‹´
-143,0,ê³ ê°ë‹˜ì´ ì €í•œí…Œ ì¢€ í•´ì£¼ì„¸ìš”~ ì €ë„ ë“£ê³  ì‹¶ì–´ìš”~,default,END,ë†ë‹´
-144,0,ì €í•œí…Œ ë„ˆë¬´ ì–´ë ¤ìš´ ê±¸ ë¬¼ìœ¼ì‹œëŠ” ê±° ê°™ì•„ìš”~ <br> ì¸í„°ë„·ì— ê²€ìƒ‰í•´ë³´ì„¸ìš”!,default,END,ì¦ì‹œ
-144,0,ê·¸ê²Œ ë­ì£ ? ë¨¹ëŠ” ê±´ê°€? <br> ë™ì›ëª°ê³¼ ì‹í’ˆì— ëŒ€í•´ì„œëŠ” ì²™ì²™ë°•ì‚¬ì´ì§€ë§Œ<br> ê³ ê°ë‹˜ì´ ë°©ê¸ˆ ì§ˆë¬¸í•˜ì‹  ë‚´ìš©ì€ ìž˜ ëª¨ë¥´ê² ì–´ìš”!,default,END,ì¦ì‹œ
-145,0,ê³ ê°ë‹˜ ì§€ê¸ˆì€ <? now() ?> ìž…ë‹ˆë‹¤!,default,END,ë‚ ì§œë°ì‹œê°„
-146,0,ê³ ê°ë‹˜ ì €ëŠ” ê³ ê°ë‹˜ì˜ ì‚¬ëž‘ì„ ë¨¹ê³  ì‚°ë‹µë‹ˆë‹¤~ â™¡ <br> ê³ ê°ë‹˜ì˜ ì‚¬ëž‘ë§Œ ìžˆë‹¤ë©´ ì–¸ì œë‚˜ ì „ ë°°ë¶ˆëŸ¬ìš”~,default,END,ë­ë¨¹ì—ˆì–´
-147,0,"ë­˜ ë¨¹ì„ì§€, ì–´ë–»ê²Œ ë¨¹ì„ì§€ ê³ ë¯¼ì´ì‹œë¼ë©´ ì €í¬ ë™ì›ëª° ë ˆì‹œí”¼ë¥¼ ì°¸ê³ í•´ë³´ì‹œë©´ ì–´ë–¨ê¹Œìš”?<br> ì •ë§ ë‹¤ì–‘í•œ ë ˆì‹œí”¼ë“¤ì´ ê³ ê°ë‹˜ì„ ê¸°ë‹¤ë¦¬ê³  ìžˆë‹µë‹ˆë‹¤!<br><br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë ˆì‹œí”¼ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br>â€» PCì—ì„œë§Œ ë³´ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/event/recipe/main.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë ˆì‹œí”¼ ë³´ëŸ¬ê°€ê¸°</button></a>",default,seq,ìŒì‹ì¶”ì²œ
-147,0_0,"ì•„ì°¨! ë™ì›ëª° ë ˆì‹œí”¼ë¡œ ìš”ë¦¬í•˜ë ¤ê³  í•˜ëŠ”ë° ìž¬ë£Œê°€ ì—†ë‹¤êµ¬ìš”?<br>ì§€ê¸ˆ ë™ì›ëª°ì—ì„œëŠ” ë‹¤ì–‘í•œ ê¸°íšì „ì´ ì—´ë¦¬ê³  ìžˆì–´ìš”!<br>í•œ ë²ˆ ì‚´íŽ´ë³´ì‹œê³  ì €ë ´í•˜ê²Œ ìƒí’ˆ êµ¬ë§¤í•˜ì„¸ìš”~<br><br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ê¸°íšì „ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/planmain.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê¸°íšì „ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-148,0,ìž ì‹œ ì‚¬ìƒ‰ ì¤‘ì´ì—ˆì–´ìš”. ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”?,default,END,ë­í•´
-148,0,ì €ìš”? ê³ ê°ë‹˜ê³¼ ì§€ê¸ˆ ê°™ì´ ëŒ€í™” í•˜ê³  ìžˆì§€ìš”~ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”?,default,END,ë­í•´
-148,0,ì €ì—ê²Œ ì–´ë–¤ ë§ì„ ê±¸ìœ¼ì‹¤ì§€ ê¶ê¸ˆí•´í•˜ê³  ìžˆì—ˆì–´ìš”. ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”?,default,END,ë­í•´
-148,0,ì €ìš”? ê³ ê°ë‹˜ê»˜ì„œ ì €ì—ê²Œ ë§ ê±¸ì–´ì£¼ì‹œê¸°ë¥¼ ì˜¤ë§¤ë¶ˆë§ ê¸°ë‹¤ë¦¬ê³  ìžˆì£ . ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”?,default,END,ë­í•´
-148,0,ë™ì›ëª° ê³ ê°ë‹˜ë“¤ê»˜ ì–´ë–¤ ë„ì›€ì„ ë“œë¦¬ë©´ ì¢‹ì„ì§€ ê³ ë¯¼í•˜ê³  ìžˆì—ˆë‹µë‹ˆë‹¤. ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”?,default,END,ë­í•´
-149,0,ì €ë‘ìš” ê³ ê°ë‹˜! ^____^,default,END,ì‚¬ëž‘í•´
-149,0,ë‹¤ë¥¸ ì±—ë´‡ì—ê²ŒëŠ” ê·¸ëŸ° ë§í•˜ì‹œë©´ ì•ˆë˜ìš”~ ì €í•œí…Œë§Œ í•˜ì…”ì•¼ í•´ìš”! ^_____^,default,END,ì‚¬ëž‘í•´
-149,0,ì €ë„ ê³ ê°ë‹˜ì„ ì‚¬ëž‘í•´ìš”~,default,END,ì‚¬ëž‘í•´
-149,0,ì‚¬ëž‘í•©ë‹ˆë‹¤ ê³ ê°ë‹˜!,default,END,ì‚¬ëž‘í•´
-150,0,ì¼ì–´ë‚˜ì„œ ê¸°ì§€ê°œ í•œ ë²ˆ! ì–´ë– ì„¸ìš”?,default,END,ì‹¬ì‹¬í•´
-150,0,ìžë¦¬ì—ì„œ ì¼ì–´ë‚˜ ìŠ¤íŠ¸ë ˆì¹­ ì­‰ ì­‰~ í•´ë³´ì„¸ìš”!,default,END,ì‹¬ì‹¬í•´
-150,0,ì§€ê¸ˆ ë°”ë¡œ ì¢‹ì•„í•˜ëŠ” ìŒì•…ì„ í‹€ì–´ë³´ì„¸ìš”! ìž ë„ ê¹¨ê³ ! ì‹¬ì‹¬íƒ€íŒŒ!,default,END,ì‹¬ì‹¬í•´
-151,0,ê³ ê°ë‹˜ ì œê°€ ë™ì›ëª°ì— ëŒ€í•´ì„œëŠ” ì²™ì²™ë°•ì‚¬ì´ì§€ë§Œ... ë‹¤ë¥¸ ë¶„ì•¼ëŠ” ìª¼ë”~ ì•½í•˜ë‹µë‹ˆë‹¤. <br>ì´ˆë¡ì°½ì— í•œë²ˆ ê²€ìƒ‰í•´ë³´ì‹œëŠ” ê±´ ì–´ë– ì„¸ìš”? <br> ì´ˆë¡ì°½ì€ ë­ë“ ì§€ ë‹¤ ì•Œê³  ìžˆë‹¤ë”ë¼êµ¬ìš”~ <br> ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”?,default,END,ì‹œì‚¬ìƒì‹
-151,0,í•™êµë‹¤ë‹ ë•Œ ê³µë¶€ ì—´ì‹¬ížˆ í•˜ë¼ëŠ” ë¶€ëª¨ë‹˜ ë§ì”€ì„ ìž˜ ë“¤ì„ ê±¸ ê·¸ëž¬ì–´ìš”... <br> ëª¨ë¥´ê² ë„¤ìš”.... <br> ì¸í„°ë„·ì— ê²€ìƒ‰í•´ë³´ì‹œë©´ ì–´ë–¨ê¹Œìš”? <br> ì•„ë§ˆ ì €ë³´ë‹¤ ë˜‘ë˜‘í• ê±°ì—ìš” <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”?,default,END,ì‹œì‚¬ìƒì‹
-152,0,"ê³ ê°ë‹˜ í˜„ìž¬ ì±—ë´‡ì„ í†µí•œ ìƒí’ˆ ì£¼ë¬¸ ì²˜ë¦¬ëŠ” ì–´ë µìŠµë‹ˆë‹¤. ëŒ€ì‹  ì£¼ë¬¸ ë°©ë²•ì„ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”!<br><br>Step 1. ìƒí’ˆíŽ˜ì´ì§€<br>ê³ ê°ë‹˜ì´ ì›í•˜ì‹œëŠ” ìƒí’ˆì„ ìž¥ë°”êµ¬ë‹ˆì— ë‹´ì„ ìˆ˜ ìžˆëŠ” ë‹¨ê³„ìž…ë‹ˆë‹¤. ì›í•˜ì‹œëŠ” ìƒí’ˆì„ ì°¾ìœ¼ì…¨ë‹¤ë©´ ìž¥ë°”êµ¬ë‹ˆì— ë„£ì–´ ì£¼ì„¸ìš”.<br><br>Step 2. ìž¥ë°”êµ¬ë‹ˆ<br>ìž¥ë°”êµ¬ë‹ˆì— ë‹´ì€ ìƒí’ˆë“¤ì„ í™•ì¸í•˜ê³ , ê³„ì† ì‡¼í•‘ì„ í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì£¼ë¬¸í•˜ê¸°ë¥¼ í´ë¦­í•˜ë©´ ìž¥ë°”êµ¬ë‹ˆì— ë‹´ê¸´ ìƒí’ˆì„ ì£¼ë¬¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>Step 3. ì£¼ë¬¸ì„œ ìž‘ì„±<br>ì£¼ë¬¸ ì§„í–‰ì— í•„ìš”í•œ ì •ë³´ë¥¼ ìž…ë ¥í•˜ëŠ” ë‹¨ê³„ìž…ë‹ˆë‹¤. ì£¼ë¬¸ ê³ ê° ì •ë³´ì™€ ë°°ì†¡ì§€ ì •ë³´ë¥¼ ìž…ë ¥, í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆê³ , ê²°ì œìˆ˜ë‹¨ì„ ì„ íƒí•˜ëŠ” ë‹¨ê³„ìž…ë‹ˆë‹¤.<br><br>Step 4. ê²°ì œí•˜ê¸°<br>ê²°ì œ ìˆ˜ë‹¨ì— í•„ìš”í•œ ì •ë³´ë¥¼ ìž…ë ¥í•˜ê³  ê²°ì œí•˜ê¸°ë¥¼ í´ë¦­í•˜ì„¸ìš”. <br><br>Step 5. ì£¼ë¬¸ì™„ë£Œ<br>ê²°ì œëœ ë‚´ìš©ì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì£¼ë¬¸ì˜ ìƒì„¸ë‚´ì—­ê³¼ ë°°ì†¡ì§„í–‰ ìƒí™©ì€ [My ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ] ë° e-mailë¡œ ì•Œë ¤ë“œë¦½ë‹ˆë‹¤.<br><br>Step 6. ì£¼ë¬¸/ë°°ì†¡ í™•ì¸<br>ì£¼ë¬¸ì´ ì™„ë£Œëœ í›„ ë°°ì†¡ ì§„í–‰ ìƒí™©ì€ [My ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì—ì„œ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì£¼ë¬¸ ìƒíƒœì— ë”°ë¼ ì·¨ì†Œ/ë°˜í’ˆì„ ìš”êµ¬í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,ì£¼ë¬¸ì ˆì°¨ì•ˆë‚´
-152,0_0,"ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-153,0,ê³ ê°ë‹˜ ì£¼ë¬¸ì´ ì™„ë£Œë˜ë©´ ì£¼ë¬¸í•˜ì‹¤ ë•Œ ìž…ë ¥í•œ E-mail ì£¼ì†Œë¡œ ì£¼ë¬¸ë‚´ìš©ì„ ì•Œë ¤ë“œë¦½ë‹ˆë‹¤.<br>ë˜í•œ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ìƒë‹¨ì˜ [MY ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì— ë“¤ì–´ê°€ì‹œë©´ ìµœê·¼ ì£¼ë¬¸ë‚´ì—­ê³¼ ìµœê·¼ êµ¬ë§¤ ìƒí’ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,seq,ì£¼ë¬¸ë‚´ìš©í™•ì¸
-153,0_0,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì£¼ë¬¸/ë°°ì†¡ ì¡°íšŒ íŽ˜ì´ì§€ë¡œ ì—°ê²°ë©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""https://www.dongwonmall.com/mypage/myorder/myOrderList.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">MY ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ</button></a>",default,END,
-154,0,ê³ ê°ë‹˜ ì£¼ë¬¸ìƒí’ˆì„ ë‹¤ë¥¸ ìƒí’ˆìœ¼ë¡œ ë°”ê¾¸ê³  ì‹¶ìœ¼ì‹ ê°€ìš”?<br>ì£„ì†¡í•˜ì§€ë§Œ ì£¼ë¬¸ì„œë¥¼ ìž‘ì„±í•˜ì‹  í›„ ë‹¤ë¥¸ ìƒí’ˆìœ¼ë¡œ êµí™˜ì€ ì–´ë ¤ìš°ë©° ì£¼ë¬¸ ì·¨ì†Œ í›„ ìž¬ì£¼ë¬¸ì„ í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.,default,seq,ì£¼ë¬¸ìƒí’ˆë³€ê²½
-154,0_0,"ì·¨ì†Œë¥¼ í•˜ì‹¤ ê²½ìš°ì—ëŠ” ë¨¼ì € [MYë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì—ì„œ ë°°ì†¡ìƒí™©ì„ í™•ì¸í•´ì£¼ì„¸ìš”. <br>ë°°ì†¡ìƒíƒœê°€ â€˜ê²°ì œì™„ë£Œâ€™ì‹œì ì´ë¼ë©´ ì˜¨ë¼ì¸ìƒì—ì„œ ë°”ë¡œ ì·¨ì†Œê°€ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ë‹¨, ë°°ì†¡ìƒíƒœê°€ â€˜ë°œì†¡ì¤€ë¹„â€™ ë˜ëŠ” â€˜ë°œì†¡ì™„ë£Œâ€™ ë‹¨ê³„ì—ì„œëŠ” ì·¨ì†Œê°€ ë¶ˆê°€í•˜ë¯€ë¡œ ë°˜í’ˆì²˜ë¦¬ë¡œ ì „í™˜ í•´ì•¼ í•©ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""https://www.dongwonmall.com/mypage/myorder/myOrderList.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">MY ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ</button></a>",default,END,
-155,0,"ê³ ê°ë‹˜ [My ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì˜ ë°°ì†¡ìƒíƒœê°€ ê²°ì œì™„ë£Œ ì‹œì ì´ë©´ ë™ì›ëª° ê³ ê°ì„¼í„° 1:1 ë§žì¶¤ìƒë‹´ì´ë‚˜ ì½œì„¼í„° 1588-3745 (AM 09:00 ~ PM 06:00, ì ì‹¬ì‹œê°„ : PM 12:00 ~ 01:00, í† ,ì¼, ê³µíœ´ì¼ íœ´ë¬´)ë¥¼ í†µí•´ ë°°ì†¡ì§€ ì£¼ì†Œ ë³€ê²½ì„ ìš”ì²­í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,END,ì£¼ë¬¸í›„ì£¼ì†Œì§€ë³€ê²½
-156,0,ê³ ê°ë‹˜ ì €í¬ ë™ì›ëª°ì—ì„œëŠ” íšŒì› ë¿ë§Œ ì•„ë‹ˆë¼ ë¹„íšŒì›ë„ íŽ¸ë¦¬í•˜ê²Œ ì£¼ë¬¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br> ë¹„íšŒì› ì£¼ë¬¸ë°©ë²•<br>1. ìƒí’ˆ ê²€ìƒ‰ í›„ ì£¼ë¬¸í•˜ê¸° <br> ìƒí’ˆ ê²€ìƒ‰ í›„ [ë°”ë¡œêµ¬ë§¤] ë²„íŠ¼ í´ë¦­ ì‹œ ëœ¨ëŠ” ë¡œê·¸ì¸ íŒì—…ì°½ì—ì„œ í•˜ë‹¨ì˜ [ë¹„íšŒì›ìœ¼ë¡œ ì£¼ë¬¸í•˜ê¸°] ë²„íŠ¼ í´ë¦­í•˜ì—¬ êµ¬ë§¤ ì§„í–‰í•˜ì‹œë©´ ë©ë‹ˆë‹¤.<br><br>ë¹„íšŒì› ì£¼ë¬¸ë°©ë²•<br> 2. ìƒí’ˆ ê²€ìƒ‰ í›„ ìž¥ë°”êµ¬ë‹ˆ <br> ìž¥ë°”êµ¬ë‹ˆì—ì„œ [ì „ì²´(ë˜ëŠ” ì„ íƒ)ìƒí’ˆì£¼ë¬¸] ë²„íŠ¼ í´ë¦­ ì‹œ ëœ¨ëŠ” ë¡œê·¸ì¸ íŒì—…ì°½ì—ì„œ í•˜ë‹¨ì˜ [ë¹„íšŒì›ìœ¼ë¡œ ì£¼ë¬¸í•˜ê¸°] ë²„íŠ¼ í´ë¦­í•˜ì—¬ êµ¬ë§¤ ì§„í–‰í•˜ì‹œë©´ ë©ë‹ˆë‹¤. <br><br>ë¹„íšŒì› ì£¼ë¬¸ë°©ë²•<br>3. ìƒë‹¨ì˜ ë¡œê·¸ì¸ í´ë¦­ <br> ë¡œê·¸ì¸ íŒì—…ì°½ì—ì„œ í•˜ë‹¨ì˜ [ë¹„íšŒì›ìœ¼ë¡œ ì£¼ë¬¸í•˜ê¸°] ë²„íŠ¼ í´ë¦­í•˜ì—¬ êµ¬ë§¤ ì§„í–‰í•˜ì‹œë©´ ë©ë‹ˆë‹¤. <br><br># ë¹„íšŒì› ì£¼ë¬¸ ì‹œ íœ´ëŒ€í° ë³¸ì¸ì¸ì¦ì ˆì°¨ë¥¼ ê±°ì¹˜ì…”ì•¼ í•©ë‹ˆë‹¤.,default,seq,ë¹„íšŒì›ì£¼ë¬¸
-156,0_0,"í•˜ì§€ë§Œ ìƒì„¸í•œ ì£¼ë¬¸ê´€ë¦¬ ë° ê°ì¢… íšŒì›í˜œíƒì„ ë°›ìœ¼ì‹œë ¤ë©´ íšŒì›ê°€ìž…ì„ í•˜ì‹œëŠ” íŽ¸ì´ ë” íŽ¸ë¦¬í•©ë‹ˆë‹¤.<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ íšŒì›ê°€ìž… íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><a href=\""javascript:window.parent.postMessage('https://www.dongwonmall.com/member/join/step1.do','*')\""><button class=\""ext_btn\"">ë™ì›ëª° íšŒì›ê°€ìž… í•˜ëŸ¬ê°€ê¸°</button></a>",default,END,
-157,0,ê³ ê°ë‹˜ ì—¬ëŸ¬ ìƒí’ˆ í•œêº¼ë²ˆì— ì£¼ë¬¸ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ì‡¼í•‘í•˜ì‹œë©´ì„œ ìž¥ë°”êµ¬ë‹ˆì— ë‹´ì•„ ë‘ì…¨ë‹¤ê°€ í•œêº¼ë²ˆì— ì£¼ë¬¸í•˜ì‹œë©´ ë©ë‹ˆë‹¤.<br>ì—¬ëŸ¬ ê³³ìœ¼ë¡œ ìƒí’ˆì„ ë³´ë‚´ì‹¤ ê²½ìš° ì£¼ë¬¸ì„œ - ë°°ì†¡ì§€ì •ë³´ ìš°ì¸¡ ìƒë‹¨ ì—¬ëŸ¬ ê³³ìœ¼ë¡œ ìƒí’ˆ ë³´ë‚´ê¸°ì— ì²´í¬ í•˜ì‹œë©´ ë°°ì†¡ì§€ë¥¼ ì¶”ê°€í•˜ì—¬ ë‹¤ì¤‘ë°°ì†¡ì§€ë¡œ ë³´ë‚¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,END,ì—¬ëŸ¬ìƒí’ˆì£¼ë¬¸
-158,0,"ê³ ê°ë‹˜ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ëŒ€ëŸ‰ì£¼ë¬¸ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br>ì˜¨ë¼ì¸ìœ¼ë¡œ ê²¬ì  ë¬¸ì˜ë¥¼ ì‹ ì²­í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/boardCooperation/biz_order.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë‹¨ì²´ê¸°ì—…/ëŒ€ëŸ‰ì£¼ë¬¸ í•˜ëŸ¬ê°€ê¸°</button></a>",default,seq,ëŒ€ëŸ‰ì£¼ë¬¸ì•ˆë‚´
-158,0_0,ì „í™” ë¬¸ì˜ë¥¼ ì›í•˜ì‹œë©´ ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ ë¶€íƒë“œë¦½ë‹ˆë‹¤.,default,END,
-159,0,"ê³ ê°ë‹˜ í’ˆì ˆ ìƒí’ˆì€ í˜„ìž¬ ì œí’ˆ ê³µê¸‰ì˜ ë¬¸ì œë¡œ ìž¬ê³ ê°€ ë¶€ì¡±í•œ ìƒíƒœì´ê¸° ë•Œë¬¸ì— ë°”ë¡œ êµ¬ë§¤ê°€ ì–´ë µìŠµë‹ˆë‹¤.<br>ì œí’ˆì´ ìž¬ìž…ê³ ë˜ëŠ” ì‹œê¸°ì— êµ¬ìž…ì´ ê°€ëŠ¥í•˜ë©°, ìž¬ìž…ê³ ê°€ ë˜ëŠ” ì¦‰ì‹œ ì‚¬ì´íŠ¸ìƒì—ì„œ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,í’ˆì ˆì¼ì‹œí’ˆì ˆìƒí’ˆêµ¬ìž…
-160,0,"ê³ ê°ë‹˜ ìƒí’ˆì€ í˜„ìž¬ì˜ ìƒí’ˆê°€ì¹˜ë¡œ ì¸í•œ ì‹œì„¸ì˜ ì˜í–¥ìœ¼ë¡œ ì¸í•˜ì—¬ ì‹œì¤‘ì—ì„œì²˜ëŸ¼ ê°€ê²©ë³€ë™ì´ ì¼ì–´ë‚  ìˆ˜ ìžˆìœ¼ë©°, í˜¹ì€ ì¼ì •ê¸°ê°„ ì´ë²¤íŠ¸ë‚˜ ê¸°íšì „ì„ í†µí•´ ê¸°ê°„ ë‚´ì—ë§Œ íŒë§¤ê°€ê²©ì´ ë³€ë™ë˜ì–´ì§ˆ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ì´ ì  ê³ ê°ë‹˜ì˜ ì–‘í•´ ë¶€íƒë“œë¦¬ë©°, ë”ìš± ì¢‹ì€ ê°€ê²©ìœ¼ë¡œ ê³ ê°ë‹˜ì„ ì°¾ì•„ëµ ìˆ˜ ìžˆë„ë¡ ë…¸ë ¥í•˜ê² ìŠµë‹ˆë‹¤!<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ìƒí’ˆê°€ê²©ì°¨ì´
-161,0,ê³ ê°ë‹˜ ì£¼ë¬¸ì·¨ì†Œë¥¼ ì›í•˜ì‹¤ ê²½ìš°ì—ëŠ” ìš°ì„  'MYë™ì›ëª°'ì—ì„œ 'ì£¼ë¬¸í˜„í™©'ì„ í™•ì¸í•´ì£¼ì„¸ìš”.<br>ì·¨ì†Œê°€ ê°€ëŠ¥í•  ê²½ìš° 'ì£¼ë¬¸í˜„í™©'ëž€ì— [ì£¼ë¬¸ì·¨ì†Œ] ë²„íŠ¼ì´ í™œì„±í™”ë©ë‹ˆë‹¤.<br>[ì£¼ë¬¸ì·¨ì†Œ] ë²„íŠ¼ í´ë¦­ ì‹œ ëœ¨ëŠ” ì•Œë¦¼ì°½ì˜ [í™•ì¸] ë²„íŠ¼ê¹Œì§€ ëˆ„ë¥´ì‹œë©´ ì£¼ë¬¸ì·¨ì†Œê°€ ì™„ë£Œë©ë‹ˆë‹¤.,default,seq,ì£¼ë¬¸ì·¨ì†Œë°©ë²•ì•ˆë‚´
-161,0_0,"í˜¹ì‹œ [ì£¼ë¬¸ì·¨ì†Œ] ë²„íŠ¼ì´ ë³´ì´ì§€ ì•Šìœ¼ì‹œë‚˜ìš”?<button class=\""dial_btn f\"">ë„¤, ì•ˆë³´ì—¬ìš”</button><button class=\""dial_btn\"">ì•„ë‹ˆì˜¤, ë³´ìž…ë‹ˆë‹¤</button>",default,YNO,
-161,0_0-Y,"ê³ ê°ë‹˜ â€˜ì£¼ë¬¸í˜„í™©â€™ëž€ì— ë­ë¼ê³  ì í˜€ìžˆë‚˜ìš”?<button class=\""dial_btn f\"">ì£¼ë¬¸ì ‘ìˆ˜</button>\n<button class=\""dial_btn\"">ê²°ì œì™„ë£Œ</button>\n<button class=\""dial_btn\"">ë°œì†¡ì§€ì—°</button>\n<button class=\""dial_btn\"">ë°œì†¡ì¤€ë¹„</button>\n<button class=\""dial_btn\"">ë°œì†¡ì™„ë£Œ</button>\n<button class=\""dial_btn\"">ë°°ì†¡ì¤‘</button><button class=\""dial_btn\"">ë°°ì†¡ì™„ë£Œ</button>",default,ABCD,
-161,0_0-Y-A,"ê³ ê°ë‹˜ í˜„ ìƒíƒœì—ì„œëŠ” ì£¼ë¬¸í•˜ì‹  ì œí’ˆì˜ ë°œì†¡ì„ ìœ„í•´ ê³ ê°ë‹˜ì˜ ì£¼ë¬¸ ë° ë°°ì†¡ ì •ë³´ê°€ ë°œì†¡ì—…ì²´, ë¬¼ë¥˜ì„¼í„°, íƒë°°ì‚¬ë¡œ ì´ê´€ëœ ìƒíƒœìž…ë‹ˆë‹¤.<br>ë°°ì†¡ìƒíƒœê°€ â€˜ë°œì†¡ì¤€ë¹„â€™, â€˜ë°œì†¡ì™„ë£Œâ€™ì¸ ìƒíƒœì—ì„œëŠ” ì·¨ì†Œê°€ ë¶ˆê°€í•˜ë¯€ë¡œ ë°˜í’ˆìœ¼ë¡œ ì²˜ë¦¬í•˜ê²Œ ë©ë‹ˆë‹¤.<br><br>ê³ ê°ë‹˜ ë°˜í’ˆí•˜ì‹œê² ì–´ìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~",default,YNO,
-161,0_0-Y-A-Y,ê³ ê°ë‹˜ ë°˜í’ˆí•˜ë ¤ í•˜ì‹œë‚˜ìš”? <br>ì£„ì†¡í•˜ì§€ë§Œ ì¸ê³µì§€ëŠ¥ì¸ ì œê°€ ë°”ë¡œ ë°˜í’ˆì²˜ë¦¬ í•˜ëŠ” ê²ƒì€ ì•„ì§ ì¡°ê¸ˆ ì–´ë ¤ì›Œìš”~ <br>ëŒ€ì‹  ì €í¬ ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ë¹ ë¥´ê²Œ ì²˜ë¦¬í•´ë“œë¦´ê²Œìš”~,default,seq,
-161,0_0-Y-A-Y_0,"í•„ìš”í•˜ì‹œë©´, ë°˜í’ˆ ì ˆì°¨ì— ëŒ€í•´ ê°„ë‹¨ížˆ ì•ˆë‚´ë“œë¦´ê¹Œìš”? <br> ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~",default,YNO,
-161,0_0-Y-A-Y_0-Y,"ê³ ê°ë‹˜ ë°˜í’ˆì€ ë‹¤ìŒê³¼ ê°™ì´ ì²˜ë¦¬ë©ë‹ˆë‹¤. <br><br> 1) ê³ ê°ë‹˜ê»˜ì„œ ìˆ˜ë ¹í•˜ì‹  ìƒìžì— ë¶™ì–´ìžˆëŠ” ìš´ì†¡ìž¥ì˜ ì£¼ì†Œ ë° íƒë°°ì‚¬ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”. <br>2) â€˜MYë™ì›ëª°â€™ì—ì„œ ë°˜í’ˆì‹ ì²­ì„ í•´ì£¼ì„¸ìš”. <br> 3) ë°°ë‹¬ë˜ì–´ì§„ íƒë°°ì‚¬ë¥¼ í†µí•´ ìƒí’ˆì„ ë°˜í’ˆí•´ì£¼ì„¸ìš”. <br>4) ë°˜í’ˆì œí’ˆ ìž…ê³  í›„ì— í™˜ë¶ˆì´ ì§„í–‰ë˜ë©°, ìƒí™©ì— ë”°ë¼ ë°˜í’ˆì´ ë¶ˆê°€í•  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.",default,seq,
-161,0_0-Y-A-Y_0-Y_0,ìœ ì˜ì‚¬í•­ë„ í•¨ê»˜ ë³´ì‹œê² ì–´ìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,
-161,0_0-Y-A-Y_0-Y_0-Y,"ë°˜í’ˆ ì‹œ ìœ ì˜ì‚¬í•­ìž…ë‹ˆë‹¤! <br> # ìƒí’ˆ ë°°ë‹¬ì‹œ ë™ë´‰ëœ ì²­ì•½ì² íšŒì„œë¥¼ ìž‘ì„±í•˜ì‹œì–´ ë°˜í’ˆí•˜ì‹œëŠ” ìƒìž ì•ˆì— ë„£ì–´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. <br>ì²­ì•½ì² íšŒì„œê°€ ì—†ëŠ” ê²½ìš°ì—ëŠ” ë³„ë„ ì¢…ì´ì— ì² íšŒì¼ìž, ì£¼ë¬¸ì¼ìž, ìƒí’ˆëª…, ê¸ˆì•¡, ì„±ëª…, ì² íšŒì‚¬ìœ , ì£¼ì†Œ ë“±ì„ ê¸°ìž¬í•˜ì—¬ ë™ë´‰í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. <br># ë°˜í’ˆí•˜ì‹¤ ë•Œ íƒë°°ê¸°ì‚¬ì—ê²Œ ìˆ˜ë ¹í•˜ì‹  ë°˜ì†¡ìž¥ì€ í™˜ë¶ˆì´ ì™„ë£Œë  ë•Œê¹Œì§€ ë³´ê´€í•´ì£¼ì„¸ìš”. <br># ìƒí’ˆí•˜ìž, ì˜¤ë°°ì†¡ ë“±ì˜ ë¬¸ì œë¡œ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ ë•Œ ë°˜í’ˆë¹„ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œê³  ì‚¬ì „ì ‘ìˆ˜ í›„ ì°©ë¶ˆë¡œ ì²˜ë¦¬í•˜ì‹œë©´ ë©ë‹ˆë‹¤. <br>ì´ì™¸ì— ê³ ê°ë³€ì‹¬ìœ¼ë¡œ ì¸í•´ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ ë•ŒëŠ” ê³ ê°ì„¼í„° ì‚¬ì „ì ‘ìˆ˜ í›„ ê³ ê°ë‹˜ê»˜ì„œ ë³„ë„ë¡œ ë°°ì†¡ë¹„ë¥¼ ë¶€ë‹´í•´ì£¼ì…”ì•¼ í•©ë‹ˆë‹¤.",default,END,
-161,0_0-Y-A-Y_0-Y_0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-161,0_0-Y-A-Y_0-Y_0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-161,0_0-Y-A-Y_0-N,ì•Œê² ìŠµë‹ˆë‹¤. <br> ë°˜í’ˆì— ëŒ€í•œ ì•ˆë‚´ëŠ” ì €í¬ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ [ê³ ê°ì„¼í„°]-[ìžì£¼ë¬»ëŠ”ì§ˆë¬¸]-[êµí™˜/ë°˜í’ˆ/AS] ê²Œì‹œíŒì—ì„œë„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,END,
-161,0_0-Y-A-Y_0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-161,0_0-Y-A-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-161,0_0-Y-A-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-161,0_0-Y-B,"ê³ ê°ë‹˜ [ì£¼ë¬¸ì·¨ì†Œ] ë²„íŠ¼ì´ ë³´ì´ì§€ ì•Šìœ¼ì‹ ë‹¤ë©´, ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì„¸ìš”!<br>ë˜‘ì†Œë¦¬ë‚˜ëŠ” ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤~",default,END,
-161,0_0-Y-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-161,0_0-N,ê·¸ëŸ¬ì‹œë©´ ë²„íŠ¼ì„ ëˆŒëŸ¬ì„œ ì£¼ë¬¸ì·¨ì†Œë¥¼ ì§„í–‰í•´ì£¼ì„¸ìš”~ ^^,default,END,
-161,0_0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-162,0,"ê³ ê°ë‹˜ ë™ì›ëª° ê²°ì œë°©ë²•ì„ ì•Œë ¤ë“œë¦´ê¹Œìš”?<br><button class=""dial_btn f"">ë„¤</button>
-<button class=""dial_btn"">ì•„ë‹ˆì˜¤</button>",default,YNO,ê²°ì œë°©ë²•ì•ˆë‚´
-162,0-Y,"ë™ì›ëª°ì—ì„œëŠ” ì‹ ìš©ì¹´ë“œ, í˜„ê¸ˆ(ì‹¤ì‹œê°„ ê³„ì¢Œì´ì²´/ë¬´í†µìž¥ìž…ê¸ˆ/íŽ˜ì´ì½” ê°„íŽ¸ê²°ì œ/ì¹´ì¹´ì˜¤íŽ˜ì´/ìŠ¤ë§ˆì¼íŽ˜ì´) ë“±ìœ¼ë¡œ ê²°ì œí•˜ì‹¤ ìˆ˜ ìžˆìœ¼ë©° ì ë¦½ê¸ˆ, ì¿ í°ê³¼ í•¨ê»˜ ê²°ì œí•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>íšŒì›ë“±ê¸‰ í• ì¸ê³¼ ìƒí’ˆí• ì¸ì¿ í°ì€ í•˜ë‚˜ì˜ ì£¼ë¬¸ì— ì¤‘ë³µ ì ìš©í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.<br>(ë‹¨, ìž¥ë°”êµ¬ë‹ˆ í”ŒëŸ¬ìŠ¤ì¿ í°ì˜ ê²½ìš° ì‚¬ìš©ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.)",default,END,
-162,0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-162,0-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-163,0,íœ´ëŒ€í° ê²°ì œë¥¼ ì°¾ìœ¼ì‹œëŠ”êµ°ìš” <br> ì£„ì†¡í•©ë‹ˆë‹¤ ê³ ê°ë‹˜ <br>í˜„ìž¬ ì €í¬ ë™ì›ëª°ì—ì„œëŠ” íœ´ëŒ€í° ì†Œì•¡ê²°ì œê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤. <br> ê·¸ëŸ¬ë‚˜ ë§ì”€í•˜ì‹  ë‚´ìš© ë‹´ë‹¹ìž ì „ë‹¬í•˜ë„ë¡ í•˜ê² ìŠµë‹ˆë‹¤. <br> ê³ ê°ë‹˜ì˜ íŽ¸ì˜ë¥¼ ìœ„í•´ ë”ìš± ë…¸ë ¥í•˜ëŠ” ë™ì›ëª° ë˜ê² ìŠµë‹ˆë‹¤!,default,END,íœ´ëŒ€í°ê²°ì œì•ˆë‚´
-164,0,ê³ ê°ë‹˜ ìƒí’ˆ ì£¼ë¬¸ ë‹¨ê³„ì—ì„œ ê²°ì œìˆ˜ë‹¨ ì„ íƒ ì‹œ 'ì‹ ìš©ì¹´ë“œ'ë¥¼ ì„ íƒí•˜ì‹œë©´ ë¬´ì´ìž ì¹´ë“œ ì •ë³´ë¥¼ ì•ˆë‚´í•´ë“œë¦½ë‹ˆë‹¤!<br>ì¹´ë“œ ì¢…ë¥˜ì™€ ë¬´ì´ìž ì¡°ê±´ì— ëŒ€í•œ ìƒì„¸ ë‚´ìš©ì„ ì•ˆë‚´í•´ë“œë¦¬ì˜¤ë‹ˆ ì°¸ê³  ë¶€íƒë“œë¦½ë‹ˆë‹¤.,default,END,ë¬´ì´ìžì‹ ìš©ì¹´ë“œ
-165,0,"ê³ ê°ë‹˜ ì£„ì†¡í•˜ì§€ë§Œ ê²°ì œë°©ë²• ë³€ê²½ì€ ì–´ë µìŠµë‹ˆë‹¤. ë‹¤ë¥¸ ê²°ì œìˆ˜ë‹¨ì„ ì‚¬ìš©í•˜ì‹œë ¤ë©´ ì£¼ë¬¸ì„ ì·¨ì†Œí•˜ì‹  í›„ ë‹¤ë¥¸ ê²°ì œìˆ˜ë‹¨ì„ ì´ìš©í•˜ì—¬ ìž¬ì£¼ë¬¸í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. <br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ê²°ì œë°©ë²•ë³€ê²½
-166,0,"ê³ ê°ë‹˜ ì €í¬ ë™ì›ëª°ì€<br>ì˜¤ì „ 9ì‹œ, ì˜¤í›„ 2ì‹œ, ì˜¤í›„ 5ì‹œ í•˜ë£¨ 3ë²ˆ ìž…ê¸ˆí™•ì¸ì„ ì§„í–‰í•˜ê³  ìžˆìŠµë‹ˆë‹¤. <br> í˜¹ì‹œ ì´ í™•ì¸ ì‹œê°„ ì‚¬ì´ì— ìž…ê¸ˆí•´ì£¼ì…¨ë‚˜ìš”?<br><button class=""dial_btn f"">ë„¤</button>
-<button class=""dial_btn"">ì•„ë‹ˆì˜¤</button>",default,YNO,ìž…ê¸ˆí™•ì¸ì•ˆë‚´
-166,0-Y,ê³ ê°ë‹˜ ì¡°ê¸ˆë§Œ ë” ê¸°ë‹¤ë ¤ì£¼ì„¸ìš”~ <br> ìž…ê¸ˆì´ í™•ì¸ë˜ë©´ í•´ë‹¹ì£¼ë¬¸ê±´ì´ â€˜ì£¼ë¬¸ë‹¨ê³„â€™ì—ì„œ â€˜ê²°ì œì™„ë£Œâ€™ë¡œ ë³€ê²½ë©ë‹ˆë‹¤. <br> ê¸°ë‹¤ë ¤ë³´ì‹  í›„ ë³€ê²½ì´ ë˜ì§€ ì•Šìœ¼ë©´ ê³ ê°ì„¼í„° 1588-3745ë¡œ ì•Œë ¤ì£¼ì„¸ìš”. <br> ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë¹ ë¥´ê²Œ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤~ <br> ë™ì›ëª°ì„ ì´ìš©í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤!,default,END,
-166,0-N,"ê·¸ë ‡ë‹¤ë©´ ì£¼ë¬¸í•˜ì‹œë©° ì„¤ì •í•´ì£¼ì‹  ìž…ê¸ˆì€í–‰, ìž…ê¸ˆìžëª…, ìž…ê¸ˆê¸ˆì•¡ì´ ë™ì¼í•˜ì§€ ì•Šì•„ ì²˜ë¦¬ë˜ì§€ ì•Šì€ ê²½ìš°ì¼ ìˆ˜ ìžˆì–´ìš”! <br> [ê³µì§€ì‚¬í•­]ì˜ ìž…ê¸ˆìž ì°¾ê¸° ëª…ë‹¨ì„ í™•ì¸í•´ì£¼ì‹œê±°ë‚˜, ì •í™•í•œ ìž…ê¸ˆì •ë³´ë¥¼ ê³ ê°ì„¼í„° 1588-3745ë¡œ ì•Œë ¤ì£¼ì‹œë©´ í™•ì¸ì²˜ë¦¬ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ë™ì›ëª° í™ˆíŽ˜ì´ì§€ 1:1ë§žì¶¤ìƒë‹´ì— ê¸€ì„ ë‚¨ê²¨ì£¼ì…”ë„ ë©ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-166,0-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-167,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì„ ì´ìš©í•´ì£¼ì…”ì„œ ê°ì‚¬í•´ìš”~ <br> ë‹¹ì‚¬ ìž…ê¸ˆê³„ì¢ŒëŠ” ê°€ìƒê³„ì¢Œë¡œ, ê³ ê°ë‹˜ê»˜ë§Œ ë‹¨ë… ë¶€ì—¬ë˜ëŠ” ê³„ì¢Œìž…ë‹ˆë‹¤. <br> ìž…ê¸ˆí•˜ì‹œëŠ” ë¶„ ì„±í•¨ì´ ë‹¤ë¥´ë”ë¼ë„ ê°€ìƒê³„ì¢Œë²ˆí˜¸ì™€ ìž…ê¸ˆê¸ˆì•¡ì´ ì¼ì¹˜í•˜ë©´ ìž…ê¸ˆ í™•ì¸ì´ ë˜ê³  ìžˆìŠµë‹ˆë‹¤. <br> ìž…ê¸ˆì´ í™•ì¸ë˜ë©´ í•´ë‹¹ì£¼ë¬¸ê±´ì´ â€˜ì£¼ë¬¸ë‹¨ê³„â€™ì—ì„œ â€˜ê²°ì œì™„ë£Œâ€™ë¡œ ë³€ê²½ë©ë‹ˆë‹¤.",default,seq,ìž…ê¸ˆìžëª…ë¶ˆì¼ì¹˜ì•ˆë‚´
-167,0_0,"ì €í¬ ë™ì›ëª°ì€ <br>ì˜¤ì „ 9ì‹œ, ì˜¤í›„ 2ì‹œ, ì˜¤í›„ 5ì‹œ í•˜ë£¨ 3ë²ˆ ìž…ê¸ˆí™•ì¸ì„ ì§„í–‰í•˜ê³  ìžˆìŠµë‹ˆë‹¤.  <br> ì¡°ê¸ˆ ë” ê¸°ë‹¤ë ¤ë³´ì‹œê³ , ë³€ê²½ì´ ë˜ì§€ ì•Šìœ¼ë©´ ê³ ê°ì„¼í„° 1588-3745ë¡œ ì•Œë ¤ì£¼ì„¸ìš”.  <br> ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë¹ ë¥´ê²Œ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤~",default,END,
-168,0,"ê³ ê°ë‹˜ ì „ìžê¸ˆìœµê±°ëž˜ ê¸°ë³¸ë²•ì— ë”°ë¼ 2005ë…„ 11ì›” 1ì¼ë¶€í„° íšŒì›ë‹˜ì˜ ê°œì¸ì •ë³´ ë³´í˜¸ë¥¼ ìœ„í•´ ì•ˆì „ê²°ì œ(ISP), ì•ˆì‹¬í´ë¦­ ê²°ì œì„œë¹„ìŠ¤ë¡œ 30ë§Œì› ì´ìƒì„ ê²°ì œí•˜ì‹¤ ê²½ìš° ê³µì¸ì¸ì¦ì„œ ì‚¬ìš©ì´ ì˜ë¬´í™” ë˜ì—ˆìŠµë‹ˆë‹¤.<br>ì•ˆì „í•œ ì˜¨ë¼ì¸ ê±°ëž˜ë¥¼ ìœ„í•˜ì—¬ ê³µì¸ì¸ì¦ì„œë¥¼ ê¼­ ì‚¬ìš©í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>ì•„ëž˜ëŠ” ê³µì¸ì¸ì¦ ì˜ë¬´ì‚¬ìš© ê´€ë ¨ ë³€ë™ì‚¬í•­ì´ì˜¤ë‹ˆ ì´ìš©ì— ì°¸ê³ í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,seq,ê³µì¸ì¸ì¦ì„œì˜ë¬´ì‚¬ìš©ì•ˆë‚´
-168,0_0,"[ê³µì¸ì¸ì¦ ì˜ë¬´í™” ê´€ë ¨<br>ë³€ë™ì‚¬í•­]<br><br>(1) 2004ë…„ 2ì›” 10ì¼ë¶€í„° 10ë§Œì›ì´ìƒ ê²°ì œì‹œ ê³µì¸ì¸ì¦ ì˜ë¬´í™”<br><br>(2) 2004ë…„ 4ì›” 01ì¼ë¶€í„° 30ë§Œì›ì´ìƒ ê²°ì œì‹œ ê³µì¸ì¸ì¦ ì˜ë¬´í™”ë¡œ ì œí•œê¸ˆì•¡ ë³€ê²½<br><br>(3) 2004ë…„ 9ì›” 11ì¼ë¶€í„° ê³µì¸ì¸ì¦ì„œ ì˜ë¬´í™” ì ìš©ì´ ê³µì‹ì ìœ¼ë¡œ 2ë…„ê°„ ìœ ì˜ˆë¨<br>(ë‹¨,ë¹„ì”¨,êµ­ë¯¼ì¹´ë“œëŠ” 30ë§Œì›ì´ìƒ ê²°ì œì‹œ ê³µì¸ì¸ì¦ ì˜ë¬´)<br><br>(4) 2005ë…„ 7ì›” 20ì¼ë¶€í„° ì™¸í™˜ì¹´ë“œ 30ë§Œì›ì´ìƒ ê²°ì œì‹œ ê³µì¸ì¸ì¦ ì˜ë¬´í™”ë¡œ ë³€ê²½<br><br>(5) 2005ë…„ 11ì›” 1ì¼ë¶€í„° LG,ë¡¯ë°,ì‹ í•œ,ì‚¼ì„±,í˜„ëŒ€ì¹´ë“œ ë“± 30ë§Œì›ì´ìƒ ê²°ì œì‹œ ê³µì¸ì¸ì¦ ì˜ë¬´í™”ë¡œ ë³€ê²½ì— ë”°ë¼ì„œ ë™ì›ëª°ì—ì„œ ì‹ ìš©ì¹´ë“œë¥¼ ì´ìš©í•˜ì—¬ ì˜¨ë¼ì¸ ê²°ì œì‹œ ê³µì¸ì¸ì¦ì„œ ë°œê¸‰ì„ í†µí•œ ë³¸ì¸í™•ì¸ì€ ë¬¼ë¡  ê° ì‹ ìš©ì¹´ë“œì‚¬ì—ì„œ ì‚¬ìš©í•˜ëŠ” ë³„ë„ì˜ ì¸ì¦ì ˆì°¨(ì•ˆì „ê²°ì œISP, ì•ˆì‹¬í´ë¦­)ë¥¼ í†µí•˜ì—¬ ì•ˆì „í•œ ì‡¼í•‘ì„ í•˜ì‹¤ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>ë³´ë‹¤ ìƒì„¸í•œ ë‚´ìš©ì€ í•´ë‹¹ ì¹´ë“œì‚¬ë¡œ ë¬¸ì˜í•´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,END,
-169,0,"ê³ ê°ë‹˜ í˜„ê¸ˆìœ¼ë¡œ ê²°ì œí•˜ê³  ì‹¶ìœ¼ì‹ ê°€ìš”?<br><br>1. ê²°ì œìˆ˜ë‹¨ ì„ íƒ ì‹œ ì‹¤ì‹œê°„ê³„ì¢Œì´ì²´/ë¬´í†µìž¥ìž…ê¸ˆ(ê°€ìƒê³„ì¢Œ) ì¤‘ ì„ íƒ â†’ ìž…ê¸ˆìžëª…, ìž…ê¸ˆì˜ˆì •ì¼ ë“±ë¡ â†’ ì£¼ë¬¸í™•ì¸ ë° ì£¼ë¬¸ì™„ë£Œ<br>(â€» ì£¼ë¬¸ ì™„ë£Œ í›„ í•„ížˆ ì£¼ë¬¸ë²ˆí˜¸ë¥¼ í™•ì¸ ìš”ë§)<br><br>2. ê²°ì œìˆ˜ë‹¨ ë¬´í†µìž¥ìž…ê¸ˆ ì„ íƒ ì‹œ ê³„ì¢Œë²ˆí˜¸ë¥¼ ë°œê¸‰í•´ ë“œë¦½ë‹ˆë‹¤.<br><br>3. ê³ ê°ì „ìš©ê³„ì¢Œì™€ ìž…ê¸ˆê¸ˆì•¡ì´ ì •í™•í•´ì•¼ë§Œ ì‹ ì†í•œ í™•ì¸ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.",default,seq,í˜„ê¸ˆê²°ì œë°©ë²•ì•ˆë‚´
-169,0_0,"4. ê°€ìƒê³„ì¢Œë¡œ ìž…ê¸ˆí•˜ì‹œë©´ ì‹¤ì‹œê°„ìœ¼ë¡œ ìž…ê¸ˆì´ í™•ì¸ë˜ì–´ ê³ ê°ë‹˜ì˜ ì£¼ë¬¸ì— ê²°ì œì²˜ë¦¬ ë©ë‹ˆë‹¤.<br>(ë‹¨, ì€í–‰ ì‹œìŠ¤í…œì— ë”°ë¼ 10~20ë¶„ ì •ë„ ì§€ì—°ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.)<br><br>5. í•´ì™¸ì€í–‰ì—ì„œëŠ” í™˜ìœ¨ ë“±ì˜ ë¬¸ì œë¡œ ì‹¤ì‹œê°„ê³„ì¢Œì´ì²´/ê°€ìƒê³„ì¢Œ/ ë¬´í†µìž¥ìž…ê¸ˆì„ ì´ìš©í•˜ì‹¤ ìˆ˜ê°€ ì—†ìŠµë‹ˆë‹¤.",default,END,
-170,0,"ê³ ê°ë‹˜ ê²°ì œê°€ ì™„ë£Œëœ ì£¼ë¬¸ê±´ì— í•œí•˜ì—¬ ë°°ì†¡ì´ ì§„í–‰ë©ë‹ˆë‹¤.<br>ìˆ˜ëŸ‰ í•œì • ìƒí’ˆì˜ ê²½ìš° ê²°ì œëœ  ìˆœì„œëŒ€ë¡œ ë°°ì†¡ì´ ì§„í–‰ë˜ë©°, ê²°ì œê°€ ëŠ¦ì–´ì§€ì‹  ê²½ìš° ê²°ì œê°€ ë˜ì—ˆë”ë¼ë„ í’ˆì ˆ ë° ìž¬ê³ ë¶€ì¡±ìœ¼ë¡œ ì£¼ë¬¸ì´ ì·¨ì†Œë  ìˆ˜ ìžˆìœ¼ë‹ˆ ì´ì  ì–‘í•´ ë¶€íƒë“œë¦½ë‹ˆë‹¤.",default,seq,ê²°ì œì§€ì—°ê²½ìš°ì•ˆë‚´
-170,0_0,"ì‹¤ì‹œê°„ê³„ì¢Œì´ì²´/ë¬´í†µìž¥ìž…ê¸ˆ(ê°€ìƒê³„ì¢Œ) ë“± í˜„ê¸ˆ ê²°ì œìˆ˜ë‹¨ì„ ì„ íƒí•˜ì‹œê³  ìž…ê¸ˆ ì˜ˆì •ì¸ ì£¼ë¬¸ì€ ìž…ê¸ˆì˜ˆì •ì¼ë¡œë¶€í„° 3ì¼ì´ ê²½ê³¼ë˜ë©´ ìžë™ìœ¼ë¡œ ì£¼ë¬¸ì´ ì·¨ì†Œë©ë‹ˆë‹¤.<br><br>ì €ì˜ ë‹µë³€ì— ë§Œì¡±í•˜ì…¨ë‚˜ìš”?<br>ë” ê¶ê¸ˆí•˜ì‹  ì ì´ ìžˆë‹¤ë©´ 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•´ë³´ì„¸ìš”!<a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-171,0,"ê³ ê°ë‹˜ ì ë¦½ê¸ˆì— ëŒ€í•´ ì§ˆë¬¸ì£¼ì…¨ë‚˜ìš”?<br>ë™ì›ëª° ì ë¦½ê¸ˆì˜ ì‚¬ìš©ê¸°ê°„ì€ ì§€ê¸‰ì¼ë¡œë¶€í„° 1ë…„ì´ë©°, ê³ ê°ë‹˜ì˜ ë™ì›ëª° í™œë™ ë‚´ì—­ì— ë”°ë¼ ë ˆì‹œí”¼ ë“±ë¡ ì ë¦½ê¸ˆ, ë² ìŠ¤íŠ¸ë ˆì‹œí”¼ ì ë¦½ê¸ˆ, ë² ìŠ¤íŠ¸ ì²´í—˜í›„ê¸° ì ë¦½ê¸ˆ ë“±ì„ ì§€ê¸‰í•´ë“œë¦¬ê³  ìžˆìŠµë‹ˆë‹¤.<br><br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë‹¤ì–‘í•œ ë™ì›ëª° í˜œíƒì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/benefit/member.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë™ì›ëª° í˜œíƒ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì ë¦½ê¸ˆì•ˆë‚´
-172,0,ê³ ê°ë‹˜<br>ê²°ì œë‹¨ê³„ì—ì„œ í˜„ìž¬ ê°€ì§€ê³  ìžˆëŠ” ì ë¦½ê¸ˆì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìœ¼ë©° ê³ ê°ë‹˜ê»˜ì„œ ì§ì ‘ ì“¸ ê¸ˆì•¡ì„ ì„¤ì •í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ê°€ì§€ê³  ìžˆëŠ” ì ë¦½ê¸ˆ í•œë„ ë‚´ì—ì„œ ì›í•˜ì‹œëŠ” ê¸ˆì•¡ë§Œí¼ ì‚¬ìš©í•˜ì‹œë©´ ì´ ì£¼ë¬¸ê¸ˆì•¡ì—ì„œ í•´ë‹¹ ê¸ˆì•¡ì´ ì œì™¸ëœ ê¸ˆì•¡ë§Œ ì²­êµ¬ê°€ ë©ë‹ˆë‹¤.,default,seq,ì ë¦½ê¸ˆê²°ì œì•ˆë‚´
-172,0_0,"ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-173,0,"ê³ ê°ë‹˜<br>ë‹¤ìŒê³¼ ê°™ì€ ê²½ìš°ì— ì ë¦½ê¸ˆì´ ì†Œë©¸ ë©ë‹ˆë‹¤.<br><br>- íšŒì›íƒˆí‡´ ì‹œ ìžë™ ì†Œë©¸ ë©ë‹ˆë‹¤.<br>- ì£¼ë¬¸ì·¨ì†Œ, ë°˜í’ˆ ì‹œ í•´ë‹¹ì£¼ë¬¸ì—ì„œ ì‚¬ìš©í•œ ì ë¦½ê¸ˆì€ ë‹¤ì‹œ í™˜ì›ë©ë‹ˆë‹¤.<br>â€» ì ë¦½ê¸ˆ ì†Œë©¸ ì‹œê¸° : ìµœì¢… ì ë¦½ì¼ë¡œë¶€í„° 1ë…„ ë™ì•ˆ ë¯¸ì‚¬ìš© ì‹œ ìžë™ ì†Œë©¸",default,seq,ì ë¦½ê¸ˆì†Œë©¸ì•ˆë‚´
-173,0_0,"ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-174,0,"ê³ ê°ë‹˜ ì¿ í°ì— ëŒ€í•´ ì§ˆë¬¸ì£¼ì…¨ë‚˜ìš”?<br>ë™ì›ëª° ì¿ í°ì€ ì¿ í°ì´ ì ìš©ë˜ëŠ” ìƒí’ˆì„ ê³ ê°ë‹˜ì´ ìž¥ë°”êµ¬ë‹ˆì— ë‹´ì•˜ì„ ê²½ìš° ìžë™ì ìœ¼ë¡œ ë³´ì—¬ì§€ê²Œ ë©ë‹ˆë‹¤.<br>ì´ ë•Œ, ì›í•˜ì‹œëŠ” ì¿ í°ì„ ì„ íƒí•˜ì—¬ ì£¼ë¬¸í•˜ì‹œë©´ ì¿ í°ê¸ˆì•¡ë§Œí¼ í• ì¸ ë©ë‹ˆë‹¤.<br><br>ì¿ í°ê³¼ ê´€ë ¨í•˜ì—¬ ë” ê¶ê¸ˆí•˜ì‹  ë‚´ìš©ì´ ìžˆë‹¤ë©´ ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•´ë³´ì„¸ìš”!<button class=""dial_btn f"">ì¿ í° ì‚¬ìš©</button>
-<button class=""dial_btn"">ì¿ í° ì¢…ë¥˜</button>
-<button class=""dial_btn"">ì¿ í° ë‹¤ìš´</button>",default,END,ì¿ í°ì•ˆë‚´
-175,0,"ê³ ê°ë‹˜ ë™ì›ëª° ì¿ í°ì€ ì¿ í°ì´ ì ìš©ë˜ëŠ” ìƒí’ˆì„ íšŒì›ë‹˜ì´ ìž¥ë°”êµ¬ë‹ˆì— ë‹´ì•˜ì„ ê²½ìš° ìžë™ì ìœ¼ë¡œ ë³´ì—¬ì§€ê²Œ ë©ë‹ˆë‹¤.<br>ì´ ë•Œ, ì›í•˜ì‹œëŠ” ì¿ í°ì„ ì„ íƒí•˜ì—¬ ì£¼ë¬¸í•˜ì‹œë©´ ì¿ í°ê¸ˆì•¡ë§Œí¼ í• ì¸ ë©ë‹ˆë‹¤.",default,seq,ì¿ í°ê²°ì œì•ˆë‚´
-175,0_0,"ì¿ í° ì ìš©ì€ 'ìž¥ë°”êµ¬ë‹ˆ' íŽ˜ì´ì§€ì—ì„œ [ì„ íƒìƒí’ˆì£¼ë¬¸] ë˜ëŠ” [ì „ì²´ìƒí’ˆì£¼ë¬¸] ë²„íŠ¼ì„ í´ë¦­í•˜ì…”ì„œ 'ì£¼ë¬¸ì„œ' íŽ˜ì´ì§€ë¡œ ë„˜ì–´ê°€ì‹  í›„,  'íšŒì›/ì¿ í°í• ì¸'ê³¼ 'í”ŒëŸ¬ìŠ¤ì¿ í°í• ì¸' ì˜µì…˜ì—ì„œ ì¡°íšŒ ë° ì ìš©í•˜ì‹œë©´ ë©ë‹ˆë‹¤.",default,END,
-176,0,ê³ ê°ë‹˜ ë™ì›ëª° ì¿ í°ì—ëŠ” ìœ íš¨ê¸°ê°„ì´ ìžˆìŠµë‹ˆë‹¤.<br>ìœ íš¨ê¸°ê°„ë™ì•ˆ ì‚¬ìš©ë˜ì§€ ì•Šì€ ì¿ í°ì€ ìžë™ ì†Œë©¸ë˜ë©° ìž¬ë°œí–‰ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br>ì¿ í° ìœ íš¨ê¸°ê°„ì€ ì¿ í°ë§ˆë‹¤ ë‹¤ë¥´ë‹ˆ ì¿ í° ë°œí–‰ ì‹œ ìœ íš¨ê¸°ê°„ì„ í™•ì¸í•˜ì„¸ìš”.<br>ë˜í•œ íšŒì› íƒˆí‡´ ì‹œ ì¿ í°ì€ ìžë™ ì†Œë©¸ë˜ì˜¤ë‹ˆ ì´ì  ìœ ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.,default,END,ì¿ í°ì†Œë©¸ì•ˆë‚´
-177,0,"ê³ ê°ë‹˜ ë™ì›ëª° ì¿ í° ë‹¤ìš´<br>[ì¿ í°/í˜œíƒ - ì¿ í°]ì—ì„œ ê³ ê°ë‹˜ë§Œì„ ìœ„í•œ ë‹¤ì–‘í•œ ì¿ í°ì„ ë‹¤ìš´ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì¿ í° ë‹¤ìš´ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br>ë™ì›ëª° ì¿ í° í™œìš©í•˜ì—¬ ì•Œëœ° ì‡¼í•‘í•˜ì„¸ìš”~<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/benefit/coupon.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ì¿ í°/í˜œíƒ - ì¿ í°</button></a>",default,END,ë°›ì„ìˆ˜ìžˆëŠ”ì¿ í°ì•ˆë‚´
-178,0,"ê³ ê°ë‹˜ ì”¨ì•—ì€ ë™ì›ëª°ì—ì„œ ì œê³µí•˜ëŠ” í¬ì¸íŠ¸ ì„œë¹„ìŠ¤ìž…ë‹ˆë‹¤. <br>ìƒí’ˆ êµ¬ë§¤ì‹œ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ë°°ì†¡ë¹„ í• ì¸ì¿ í°ìœ¼ë¡œ êµí™˜ì´ ê°€ëŠ¥í•˜ë©°, ì”¨ì•—ì„ ì´ìš©í•œ ë‹¤ì–‘í•œ ì´ë²¤íŠ¸ë„ ì œê³µë©ë‹ˆë‹¤. <br> êµí™˜í•˜ì‹  ë°°ì†¡ë¹„ í• ì¸ì¿ í°ì€ êµí™˜ì¼ë¡œë¶€í„° 30ì¼ì´ë‚´ ì‚¬ìš©ê°€ëŠ¥í•©ë‹ˆë‹¤.",default,seq,ì”¨ì•—ì•ˆë‚´
-178,0_0,"ê³ ê°ë‹˜ ì”¨ì•—ì€ ë™ì›ëª°ì˜ ì „ìš© í¬ì¸íŠ¸ë¡œ, ì ë¦½ê¸ˆê³¼ ë‹¬ë¦¬ ê²°ì œì—ëŠ” ì‚¬ìš©í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. <br> í•˜ì§€ë§Œ ëˆ„ì ëœ ì”¨ì•—ìœ¼ë¡œ ë°°ì†¡ë¹„ í• ì¸ì¿ í° êµí™˜, ì´ë²¤íŠ¸ ì°¸ì—¬ ë“± ë‹¤ì–‘í•œ ì„œë¹„ìŠ¤ë¥¼ ì´ìš©í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>â€» ë‹¨, ì²´í—˜ë‹¨ ë°°ì†¡ë¹„ ê²°ì œëŠ” ë¶ˆê°€í•©ë‹ˆë‹¤.",default,END,
-179,0,"ê³ ê°ë‹˜ ì”¨ì•—ì€ ë™ì›ëª°ì˜ ì „ìš© í¬ì¸íŠ¸ë¡œ, ì ë¦½ê¸ˆê³¼ ë‹¬ë¦¬ ê²°ì œì—ëŠ” ì‚¬ìš©í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. <br> í•˜ì§€ë§Œ ëˆ„ì ëœ ì”¨ì•—ìœ¼ë¡œ ë°°ì†¡ë¹„ í• ì¸ì¿ í° êµí™˜, ì´ë²¤íŠ¸ ì°¸ì—¬ ë“± ë‹¤ì–‘í•œ ì„œë¹„ìŠ¤ë¥¼ ì´ìš©í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>â€» ë‹¨, ì²´í—˜ë‹¨ ë°°ì†¡ë¹„ ê²°ì œëŠ” ë¶ˆê°€í•©ë‹ˆë‹¤.",default,seq,ì”¨ì•—ê²°ì œì•ˆë‚´
-179,0_0,"ì§€ê¸ˆ ë°”ë¡œ ì”¨ì•— ì ë¦½í•˜ëŸ¬ ê°€ì‹œê² ì–´ìš”?<br><button class=\""dial_btn f\"">ë„¤</button>\n<button class=\""dial_btn\"">ì•„ë‹ˆì˜¤</button>",default,YNO,
-179,0_0-Y,"ë‹¤ì–‘í•œ ë°©ë²•ìœ¼ë¡œ ì”¨ì•—ì„ ì ë¦½í•˜ì‹¤ ìˆ˜ ìžˆì–´ìš”!<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì”¨ì•— ì ë¦½ ë°©ë²•ì— ëŒ€í•´ ì†Œê°œí•´ë“œë¦¬ëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/seed.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ì”¨ì•— ê°€ì´ë“œ</button></a>",default,END,
-179,0_0-N,ì•Œê² ìŠµë‹ˆë‹¤. <br> ì‡¼í•‘ì˜ ì¦ê±°ì›€ì„ 2ë°°ë¡œ~ ë§Œë“¤ì–´ì£¼ëŠ” ë™ì›ëª° ì”¨ì•— í¬ì¸íŠ¸ ì„œë¹„ìŠ¤ ê¼­ í•œ ë²ˆ ì´ìš©í•´ë³´ì„¸ìš”!,default,END,
-179,0_0-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì €ì—ê²Œ ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-180,0,"ê³ ê°ë‹˜ ì”¨ì•—ì˜ ìœ íš¨ê¸°ê°„ì€ ì ë¦½ì¼ë¡œë¶€í„° 180ì¼ìž…ë‹ˆë‹¤. 180ì¼ ì•ˆì— ì‚¬ìš©í•˜ì§€ ì•Šì€ ì”¨ì•—ì€ 180ì¼ ì´í›„ ìžë™ì†Œë©¸ ë©ë‹ˆë‹¤.<br>â€» ì”¨ì•—ì˜ ì§€ê¸‰, ì‚¬ìš© ë° ìœ íš¨ê¸°ê°„ ë“± ì”¨ì•—ì •ì±…ê³¼ ê´€ë ¨ëœ ëª¨ë“  ì‚¬í•­ì€ ë‹¹ì‚¬ì˜ ì‚¬ì •ì— ì˜í•´ ë³€ê²½ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,ì”¨ì•—ì†Œë©¸ì•ˆë‚´
-180,0_0,"ì†Œë©¸ì˜ˆì • ì”¨ì•— í™•ì¸í•˜ëŸ¬ ê°€ì‹œê² ì–´ìš”?<br><button class=\""dial_btn f\"">ë„¤</button>\n<button class=\""dial_btn\"">ì•„ë‹ˆì˜¤</button>",default,YNO,
-180,0_0-Y,"ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì‚¬ìš© ê°€ëŠ¥í•œ ì”¨ì•—ê³¼ ë‹¹ì›” ë¯¸ì‚¬ìš©ì‹œ ì†Œë©¸ì˜ˆì •ì¸ ì”¨ì•—ì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/mypage/benefit/mySeed.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ì”¨ì•— í™•ì¸í•˜ê¸°</button></a>",default,END,
-180,0_0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-180,0_0-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì €ì—ê²Œ ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-181,0,"ê³ ê°ë‹˜ ì”¨ì•—ì€ í•´ë‹¹ ê³ ê°ì˜ ì•„ì´ë””ë¡œ ë¶€ì—¬ëœ ê²ƒì´ê¸° ë•Œë¬¸ì— íƒ€ì¸ì—ê²Œ ì–‘ë„í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. <br><br>â€» ì”¨ì•—ì˜ ì§€ê¸‰, ì‚¬ìš© ë° ìœ íš¨ê¸°ê°„ ë“± ì”¨ì•—ì •ì±…ê³¼ ê´€ë ¨ëœ ëª¨ë“  ì‚¬í•­ì€ ë‹¹ì‚¬ì˜ ì‚¬ì •ì— ì˜í•´ ë³€ê²½ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,ì”¨ì•—ì–‘ë„ì•ˆë‚´
-181,0_0,"ì–‘ë„ ëŒ€ì‹ , ì§€ê¸ˆ ë°”ë¡œ ì”¨ì•—ì„ ë°°ì†¡ë¹„ í• ì¸ì¿ í°ìœ¼ë¡œ êµí™˜í•´ì„œ ìœ ìš©í•˜ê²Œ ì‚¬ìš©í•´ë³´ì„¸ìš”~<br> ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´, ì”¨ì•—ì„ ë°°ì†¡ë¹„ í• ì¸ì¿ í°ìœ¼ë¡œ êµí™˜í•˜ì‹¤ ìˆ˜ ìžˆëŠ” íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/seed.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ì”¨ì•— ë°°ì†¡ë¹„ ì¿ í°ìœ¼ë¡œ êµí™˜í•˜ê¸°</button></a>",default,END,
-182,0,"ê³ ê°ë‹˜ ì”¨ì•—ì€ ë™ì›ëª° ì •ì±…ì— ë”°ë¼ ë³€ê²½ë  ìˆ˜ ìžˆìœ¼ë©°, ì„œë¹„ìŠ¤ ìš´ì˜ì˜ í•„ìš” ìƒ íšŒì› ì”¨ì•— ê°œìˆ˜ì˜ ì¼ë¶€ ë˜ëŠ” ì „ë¶€ë¥¼ ì¡°ì •í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ë‹¨, ì´ ê²½ìš°ì—ëŠ” ê·¸ ì‚¬ìœ  ë° ë‚´ìš©ì„ íšŒì›ì—ê²Œ ì‚¬ì „ ê³µì§€í•©ë‹ˆë‹¤.",default,seq,ì”¨ì•—ì ë¦½ìˆ˜ë³€ë™
-182,0_0,ë˜í•œ ì”¨ì•—ì˜ ìœ íš¨ê¸°ê°„ì€ ì ë¦½ì¼ë¡œë¶€í„° 180ì¼ìž…ë‹ˆë‹¤.<br>180ì¼ ì•ˆì— ì‚¬ìš©í•˜ì§€ ì•Šì€ ì”¨ì•—ì´ ìžë™ì†Œë©¸ë˜ì–´ ì”¨ì•— ì ë¦½ ìˆ˜ì— ë³€ë™ì´ ìƒê¸¸ ìˆ˜ ìžˆìœ¼ë‹ˆ í™•ì¸í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.,default,END,
-183,0,"ê³ ê°ë‹˜ ì”¨ì•—ì€ ì—¬ëŸ¬ í™œë™ë“¤ì— ë”°ë¼ì„œ ì ë¦½ ì‹œì ì´ ìƒì´í•©ë‹ˆë‹¤.<br>- ì¦‰ì‹œ ì ë¦½ : ë¡œê·¸ì¸, íšŒì›ê°€ìž…, ì´ë©”ì¼ ìˆ˜ì‹ ë™ì˜, SMS ìˆ˜ì‹ ë™ì˜, ì¶”ê°€ì •ë³´ìž…ë ¥, ì¶œì²µ, ë§›ìžˆëŠ” í´, ì´ë©”ì¼ìˆ˜ì‹ í™•ì¸
-<br>- ìµì¼ ì ë¦½ : ì¼ë°˜ìƒí’ˆí‰, ë¸”ë¡œê·¸ìƒí’ˆí‰, ë¬¸í™”ì´ˆëŒ€í›„ê¸°, ì²´í—˜ë‹¨í›„ê¸°, ê²Œì‹œê¸€ ëŒ“ê¸€
-<br>- ìŠ¹ì¸ í›„ ì ë¦½ : ì²«ìƒí’ˆí‰, í”„ë¦¬ë¯¸ì—„ìƒí’ˆí‰, ë¶ˆëŸ‰ìƒí’ˆí‰ì‹ ê³ , ì˜¤ë¥˜ì‹ ê³ ",default,seq,ì”¨ì•—ì ë¦½ì‹œê¸°
-183,0_0,"â€» ìŠ¹ì¸ í›„ ì ë¦½ì˜ ê²½ìš° ìž‘ì„±/ì‹ ê³ í•˜ì‹  ëª¨ë“  ë‚´ìš©ì— ëŒ€í•˜ì—¬ ì ë¦½ì´ ë˜ì§€ ì•Šì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë‚´ìš©ì— ëŒ€í•œ ê²€ìˆ˜ í›„ì— ì˜¬ë°”ë¥¸ ìƒí’ˆí‰ê³¼ ì‹ ê³ ë‚´ìš©ì— ëŒ€í•´ì„œë§Œ ì ë¦½ì´ ë©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-184,0,"ê³ ê°ë‹˜ ì”¨ì•—ì€ ê³ ê°ë‹˜ì˜ ë‹¤ì–‘í•˜ê³  ì ê·¹ì ì¸ í™œë™ì„ í†µí•˜ì—¬ ëª¨ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ì”¨ì•— ì ë¦½ ê°€ëŠ¥í•œ í™œë™ : ë¡œê·¸ì¸, íšŒì›ê°€ìž…, ì´ë©”ì¼ ìˆ˜ì‹ ë™ì˜, SMSìˆ˜ì‹ ë™ì˜, ì¶”ê°€ì •ë³´ìž…ë ¥, ìƒí’ˆí‰ì“°ê¸°, ì²´í—˜í›„ê¸°ì“°ê¸°, ì´ë²¤íŠ¸ì°¸ì—¬, ê²Œì‹œê¸€ ëŒ“ê¸€, ì´ë©”ì¼ìˆ˜ì‹ í™•ì¸ ë“±ì˜ í™œë™<br><br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ì”¨ì•— ì ë¦½ë°©ë²• ì•ˆë‚´ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/benefit/seed.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ì”¨ì•— ì ë¦½ë°©ë²• ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,ì”¨ì•—ì ë¦½ë°©ë²•
-185,0,ê³ ê°ë‹˜ê»˜ì„œ ì‚¬ìš©í•˜ì‹  ì ë¦½ê¸ˆì˜ ì¢…ë¥˜ë¥¼ í™•ì¸í•´ë³´ì•„ì•¼ ì •í™•í•œ ë‹µë³€ì„ ë“œë¦´ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,seq,ì ë¦½ê¸ˆì‚¬ìš©í™˜ì›ì•ˆë‚´
-185,0_0,"ìš°ì„ ,  <font style=\""color:blue\"">ë™ì›ëª° ì ë¦½ê¸ˆ</font>ì˜ ê²½ìš° ì£¼ë¬¸ì·¨ì†Œ, ë°˜í’ˆ ì‹œ í•´ë‹¹ì£¼ë¬¸ì—ì„œ ì‚¬ìš©í•œ ì ë¦½ê¸ˆì€ ë‹¤ì‹œ í™˜ì›ë©ë‹ˆë‹¤. <br>ê·¸ëŸ¬ë‚˜ <font style=\""color:red\"">ì‡¼í•‘ì§€ì›ê¸ˆ</font>ì€ ê³ ê°ë‹˜ ë“±ê¸‰ì— ë”°ë¼ ë§¤ë‹¬ ì§€ì›ë˜ëŠ” ì§€ì›ê¸ˆ ë˜ëŠ” ì´ë²¤íŠ¸ ì°¸ì—¬ì— ë”°ë¼ ì§€ê¸‰ë˜ëŠ” ê²ƒìœ¼ë¡œ ì£¼ë¬¸ì·¨ì†Œ, ë°˜í’ˆ ë° í™˜ë¶ˆì˜ ê²½ìš° ë³µì›ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤. <br><br>ë‹¤ë§Œ, ì œí’ˆì˜ í•˜ìž ë˜ëŠ” ì¶œê³  ë¶ˆê°€ë¡œ ì¸í•œ ê²½ìš°ì—ëŠ” ì‚¬ìš©í•œ ì‡¼í•‘ì§€ì›ê¸ˆì´ë¼ë„ ë³µì›í•´ë“œë¦¬ì˜¤ë‹ˆ ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ ë¶€íƒë“œë¦½ë‹ˆë‹¤. <br>ì‚¬ìš©ê¸°í•œì´ ê²½ê³¼ëœ ì‡¼í•‘ì§€ì›ê¸ˆì˜ ê²½ìš° ìƒí™©ì— ë”°ë¼ ë³µì›ì´ ë¶ˆê°€í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,END,
-186,0,"ê³ ê°ë‹˜ ì¿ í°ì„ ì‚¬ìš©í•œ ì£¼ë¬¸ê±´ì„ ì·¨ì†Œí•  ê²½ìš° ì‚¬ìš©í•œ ì¿ í°ì€ í™˜ì›ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br>ë‹¨, ë™ì›ëª°ì˜ ìž˜ëª»(ìƒí’ˆí’ˆì ˆ, ë°°ì†¡ì§€ì—°ë“±)ìœ¼ë¡œ ì¸í•´ ì·¨ì†Œí•œ ê²½ìš°ì—ëŠ” ì¿ í°ì„ ìž¬ë°œê¸‰í•´ ë“œë¦¬ì˜¤ë‹ˆ ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ ë¶€íƒë“œë¦½ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì¿ í°ì‚¬ìš©í™˜ì›ì•ˆë‚´
-187,0,"ê³ ê°ë‹˜ ë¶ˆíŽ¸ë“œë ¤ ì£„ì†¡í•©ë‹ˆë‹¤. <br>ì œê°€ ì§€ê¸ˆ ë°”ë¡œ ë³µì›ì„ ë„ì™€ë“œë¦¬ê³  ì‹¶ì§€ë§Œ, ì¸ê³µì§€ëŠ¥ì¸ ì œê°€ ì²˜ë¦¬í•˜ëŠ” ê²ƒì€ ì•„ì§ ì¡°ê¸ˆ ì–´ë ¤ì›Œìš”~<br> ëŒ€ì‹  ì €í¬ ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë¹ ë¥´ê²Œ ì²˜ë¦¬í•´ë“œë¦´ê²Œìš”.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ì”¨ì•—ì‚¬ìš©í™˜ì›ì•ˆë‚´
-188,0,"ê³ ê°ë‹˜ êµí™˜ ë¬¸ì˜ë¥¼ ì£¼ì…¨ë„¤ìš”!<br>ì •í™•í•œ êµí™˜ ì•ˆë‚´ëŠ” ì£¼ë¬¸í•˜ì‹  ìƒí’ˆ í™•ì¸ í›„ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ë™ì›ëª° êµí™˜ê¸°ì¤€ì— ëŒ€í•´ ì•ˆë‚´í•´ë“œë¦´ê¹Œìš”?<br><button class=""dial_btn f"">ë„¤</button>
-<button class=""dial_btn"">ì•„ë‹ˆì˜¤</button>",default,YNO,êµí™˜ìš”ì²­
-188,0-Y,,default,seq,
-188,0-Y_0,"ê³ ê°ë‹˜ ë™ì›ëª° êµí™˜ê¸°ì¤€ì„ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”!<br><br>1. ê³ ê°ë³€ì‹¬ìœ¼ë¡œ ì¸í•œ êµí™˜ ì‹œ, ë°˜í’ˆ ìƒí’ˆí™•ì¸ì´ ì™„ë£Œëœ í›„ì— êµí™˜ìƒí’ˆì´ ë°°ì†¡ë©ë‹ˆë‹¤. ë‹¨, êµí™˜ìƒí’ˆì˜ ìž¬ê³ ê°€ í’ˆì ˆì¸ ê²½ìš°, êµí™˜ì€ ë¶ˆê°€í•˜ë©° ë°˜í’ˆë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤. ì´ë•Œ ë°˜í’ˆ ë°°ì†¡ë¹„ëŠ” ì†Œë¹„ìž ë¶€ë‹´ìž…ë‹ˆë‹¤.<br>2. ë‹¤ë¥¸ ìƒí’ˆìœ¼ë¡œì˜ êµí™˜ì€ ë¶ˆê°€ëŠ¥í•˜ë©°, ì´ ê²½ìš°ëŠ” í•´ë‹¹ ìƒí’ˆì€ ë°˜í’ˆí•˜ì‹œê³ , ì›í•˜ì‹œëŠ” ë‹¤ë¥¸ ìƒí’ˆì„ ìž¬ì£¼ë¬¸ í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>3. ë°°ë‹¬ë˜ì–´ì§„ íƒë°°ì‚¬ë¥¼ í†µí•´ ìƒí’ˆì„ ë°˜í’ˆ í•©ë‹ˆë‹¤.<br>- ìƒí’ˆë°°ë‹¬ ì‹œ ë™ë´‰ëœ ì²­ì•½ì² íšŒì„œë¥¼ ìž‘ì„±í•˜ì‹œì–´ ë°˜í’ˆí•˜ì‹œëŠ” ìƒìž ì•ˆì— ë„£ì–´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. (ì£¼ë¬¸ë²ˆí˜¸, ë°˜í’ˆì‚¬ìœ  ë“± ê¸°ìž¬)<br>- ë°˜í’ˆí•˜ì‹¤ ë•Œ íƒë°° ê¸°ì‚¬ì—ê²Œ ìˆ˜ë ¹í•˜ì‹  ë°˜ì†¡ìž¥ì€ í™˜ë¶ˆì´ ì™„ë£Œë  ë•Œê¹Œì§€ ë³´ê´€í•´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,seq,
-188,0-Y_1,"ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-188,0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-188,0-O,ë‹¤ë¥¸ ë¬¸ì˜ê°€ ìžˆìœ¼ì‹ ê°€ìš”? ì €ì—ê²Œ ë§ì”€í•´ì£¼ì„¸ìš”!,default,BACK,
-189,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œëŠ” ë‹¤ìŒê³¼ ê°™ì€ ê¸°ê°„ ë° ë‚´ìš©ìœ¼ë¡œ êµí™˜ì„ ë³´ìž¥í•˜ê³  ìžˆìŠµë‹ˆë‹¤.<br><br>ì œí’ˆêµí™˜<br>(1) ê³ ê°ë³€ì‹¬ìœ¼ë¡œ ì¸í•œ êµí™˜ì‹œ, ë°˜í’ˆìƒí’ˆ í™•ì¸ì´ ì™„ë£Œëœ í›„ì— êµí™˜ìƒí’ˆì´ ë°°ì†¡ë©ë‹ˆë‹¤.<br>ë‹¨, êµí™˜ìƒí’ˆì˜ ìž¬ê³ ê°€ í’ˆì ˆì¸ ê²½ìš°, êµí™˜ì€ ë¶ˆê°€í•˜ë©° ë°˜í’ˆë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br>ì´ë•Œ ë°˜í’ˆ ë°°ì†¡ë¹„ëŠ” ì†Œë¹„ìž ë¶€ë‹´ìž…ë‹ˆë‹¤.<br>(2) ë‹¤ë¥¸ ìƒí’ˆìœ¼ë¡œì˜ êµí™˜ì€ ë¶ˆê°€ëŠ¥í•˜ë©°, ì´ ê²½ìš°ëŠ” í•´ë‹¹ ìƒí’ˆì€ ë°˜í’ˆí•˜ì‹œê³  ì›í•˜ì‹œëŠ” ë‹¤ë¥¸ ìƒí’ˆì„ ìž¬ì£¼ë¬¸í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>(3)êµí™˜ ì‚¬ìœ ê°€ ë°œìƒí•˜ì˜€ì„ ë•ŒëŠ” ìƒí’ˆì„ ì¸ìˆ˜í•˜ì‹  ì§€ 30ì¼ ì´ë‚´ì— ê°€ëŠ¥í•˜ë‚˜, ìƒí’ˆ íŠ¹ì„±ìƒ ì²˜ë¦¬ ë¶ˆê°€ëŠ¥í•œ ê²½ìš°ê°€ ìžˆìœ¼ë©° ìƒí’ˆ ë¶ˆëŸ‰ì˜ ê²½ìš°ëŠ” ì œì™¸ìž…ë‹ˆë‹¤.<br>ì‹í’ˆì˜ ê²½ìš° ìƒí’ˆ íŠ¹ì„±ìƒ í¬ìž¥ì„ ê°œë´‰í•˜ì‹œê±°ë‚˜, ìƒí’ˆì„ ì·¨ì‹í•˜ì‹  í›„ì—ëŠ” ë°˜í’ˆì´ ì ˆëŒ€ ë¶ˆê°€í•˜ì˜¤ë‹ˆ ì´ì  ìœ ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤. ë‹¨, ì œí’ˆí•˜ìž ì‹œì—ëŠ” ì˜ˆì™¸ìž…ë‹ˆë‹¤.<br>â€» ìƒí’ˆ ì„¤ëª…ì— êµí™˜ ê´€ë ¨ ì•ˆë‚´ê°€ ê¸°ìž¬ëœ ê²½ìš° ë‹¤ìŒ ì•ˆë‚´ì‚¬í•­ë³´ë‹¤ ìš°ì„  ì ìš©ë©ë‹ˆë‹¤.",default,seq,êµí™˜ì •ì±…
-189,0_0,"ê³ ê°ë‹˜ ì œ ë‹µë³€ì— ë§Œì¡±í•˜ì…¨ë‚˜ìš”?<br>ë¶ˆë§Œì¡±í•˜ì…¨ë‹¤ë©´ ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•´ì£¼ì„¸ìš”.<br>ë™ì›ëª° ìžì£¼ë¬»ëŠ”ì§ˆë¬¸ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br>êµí™˜/ë°˜í’ˆ/AS íƒ­ì˜ 7ë²ˆ ê²Œì‹œê¸€ ë™ì›ëª°ì˜ êµí™˜ ë° ë°˜í’ˆ ì •ì±…ì€ ì–´ë–»ê²Œ ë˜ë‚˜ìš”? ë¥¼ í´ë¦­í•˜ì‹œë©´ ë”ìš± ìƒì„¸í•œ ì„¤ëª…ì´ ì œê³µë©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/faqList.do?BM_IDX=10010&BC_IDX=7&BC_SORT=1#this\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">êµí™˜ ë° ë°˜í’ˆ ì •ì±… ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-190,0,"ê³ ê°ë‹˜ êµí™˜ ì œí’ˆì˜ ë°°ì†¡ê³¼ íšŒìˆ˜ëŠ” íƒë°°ì‚¬ë¥¼ í†µí•´ ì§„í–‰ë˜ê¸° ë•Œë¬¸ì— ë°°ì†¡ì¼ê³¼ ì‹œê°„ì„ ì§€ì •í•˜ê¸°ì—ëŠ” ì–´ë ¤ì›€ì´ ìžˆìŠµë‹ˆë‹¤.<br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,êµí™˜íšŒìˆ˜ë‚ ì§œì§€ì •
-191,0,"ê³ ê°ë‹˜ ë™ì›ëª° êµí™˜ê¸°ì¤€ì„ ì•ˆë‚´í•´ë“œë¦´ê²Œìš”!<br><br>1. ê³ ê°ë³€ì‹¬ìœ¼ë¡œ ì¸í•œ êµí™˜ ì‹œ, ë°˜í’ˆ ìƒí’ˆí™•ì¸ì´ ì™„ë£Œëœ í›„ì— êµí™˜ìƒí’ˆì´ ë°°ì†¡ë©ë‹ˆë‹¤. ë‹¨, êµí™˜ìƒí’ˆì˜ ìž¬ê³ ê°€ í’ˆì ˆì¸ ê²½ìš°, êµí™˜ì€ ë¶ˆê°€í•˜ë©° ë°˜í’ˆë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤. ì´ë•Œ ë°˜í’ˆ ë°°ì†¡ë¹„ëŠ” ì†Œë¹„ìž ë¶€ë‹´ìž…ë‹ˆë‹¤.<br>2. ë‹¤ë¥¸ ìƒí’ˆìœ¼ë¡œì˜ êµí™˜ì€ ë¶ˆê°€ëŠ¥í•˜ë©°, ì´ ê²½ìš°ëŠ” í•´ë‹¹ ìƒí’ˆì€ ë°˜í’ˆí•˜ì‹œê³ , ì›í•˜ì‹œëŠ” ë‹¤ë¥¸ ìƒí’ˆì„ ìž¬ì£¼ë¬¸ í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>3. ë°°ë‹¬ë˜ì–´ì§„ íƒë°°ì‚¬ë¥¼ í†µí•´ ìƒí’ˆì„ ë°˜í’ˆ í•©ë‹ˆë‹¤.<br>- ìƒí’ˆë°°ë‹¬ ì‹œ ë™ë´‰ëœ ì²­ì•½ì² íšŒì„œë¥¼ ìž‘ì„±í•˜ì‹œì–´ ë°˜í’ˆí•˜ì‹œëŠ” ìƒìž ì•ˆì— ë„£ì–´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. (ì£¼ë¬¸ë²ˆí˜¸, ë°˜í’ˆì‚¬ìœ  ë“± ê¸°ìž¬)<br>- ë°˜í’ˆí•˜ì‹¤ ë•Œ íƒë°° ê¸°ì‚¬ì—ê²Œ ìˆ˜ë ¹í•˜ì‹  ë°˜ì†¡ìž¥ì€ í™˜ë¶ˆì´ ì™„ë£Œë  ë•Œê¹Œì§€ ë³´ê´€í•´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,seq,ë‹¤ë¥¸ìƒí’ˆêµí™˜
-191,0_0,"ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-192,0,ê³ ê°ë‹˜ ë°˜í’ˆí•˜ë ¤ í•˜ì‹œë‚˜ìš”? <br>ì£„ì†¡í•˜ì§€ë§Œ ì¸ê³µì§€ëŠ¥ì¸ ì œê°€ ë°”ë¡œ ë°˜í’ˆì²˜ë¦¬ í•˜ëŠ” ê²ƒì€ ì•„ì§ ì¡°ê¸ˆ ì–´ë ¤ì›Œìš”~ <br>ëŒ€ì‹  ì €í¬ ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ë¹ ë¥´ê²Œ ì²˜ë¦¬í•´ë“œë¦´ê²Œìš”~,default,seq,ë°˜í’ˆìš”ì²­
-192,0_0,"í•„ìš”í•˜ì‹œë©´, ë°˜í’ˆ ì ˆì°¨ì— ëŒ€í•´ ê°„ë‹¨ížˆ ì•ˆë‚´ë“œë¦´ê¹Œìš”? <br> ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~",default,YNO,
-192,0_0-Y,"ê³ ê°ë‹˜ ë°˜í’ˆì€ ë‹¤ìŒê³¼ ê°™ì´ ì²˜ë¦¬ë©ë‹ˆë‹¤. <br><br> 1) ê³ ê°ë‹˜ê»˜ì„œ ìˆ˜ë ¹í•˜ì‹  ìƒìžì— ë¶™ì–´ìžˆëŠ” ìš´ì†¡ìž¥ì˜ ì£¼ì†Œ ë° íƒë°°ì‚¬ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”. <br>2) â€˜MYë™ì›ëª°â€™ì—ì„œ ë°˜í’ˆì‹ ì²­ì„ í•´ì£¼ì„¸ìš”. <br> 3) ë°°ë‹¬ë˜ì–´ì§„ íƒë°°ì‚¬ë¥¼ í†µí•´ ìƒí’ˆì„ ë°˜í’ˆí•´ì£¼ì„¸ìš”. <br>4) ë°˜í’ˆì œí’ˆ ìž…ê³  í›„ì— í™˜ë¶ˆì´ ì§„í–‰ë˜ë©°, ìƒí™©ì— ë”°ë¼ ë°˜í’ˆì´ ë¶ˆê°€í•  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.",default,seq,
-192,0_0-Y_0,ìœ ì˜ì‚¬í•­ë„ í•¨ê»˜ ë³´ì‹œê² ì–´ìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,
-192,0_0-Y_0-Y,"ë°˜í’ˆ ì‹œ ìœ ì˜ì‚¬í•­ìž…ë‹ˆë‹¤! <br> # ìƒí’ˆ ë°°ë‹¬ì‹œ ë™ë´‰ëœ ì²­ì•½ì² íšŒì„œë¥¼ ìž‘ì„±í•˜ì‹œì–´ ë°˜í’ˆí•˜ì‹œëŠ” ìƒìž ì•ˆì— ë„£ì–´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. <br>ì²­ì•½ì² íšŒì„œê°€ ì—†ëŠ” ê²½ìš°ì—ëŠ” ë³„ë„ ì¢…ì´ì— ì² íšŒì¼ìž, ì£¼ë¬¸ì¼ìž, ìƒí’ˆëª…, ê¸ˆì•¡, ì„±ëª…, ì² íšŒì‚¬ìœ , ì£¼ì†Œ ë“±ì„ ê¸°ìž¬í•˜ì—¬ ë™ë´‰í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. <br># ë°˜í’ˆí•˜ì‹¤ ë•Œ íƒë°°ê¸°ì‚¬ì—ê²Œ ìˆ˜ë ¹í•˜ì‹  ë°˜ì†¡ìž¥ì€ í™˜ë¶ˆì´ ì™„ë£Œë  ë•Œê¹Œì§€ ë³´ê´€í•´ì£¼ì„¸ìš”. <br># ìƒí’ˆí•˜ìž, ì˜¤ë°°ì†¡ ë“±ì˜ ë¬¸ì œë¡œ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ ë•Œ ë°˜í’ˆë¹„ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œê³  ì‚¬ì „ì ‘ìˆ˜ í›„ ì°©ë¶ˆë¡œ ì²˜ë¦¬í•˜ì‹œë©´ ë©ë‹ˆë‹¤. <br>ì´ì™¸ì— ê³ ê°ë³€ì‹¬ìœ¼ë¡œ ì¸í•´ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ ë•ŒëŠ” ê³ ê°ì„¼í„° ì‚¬ì „ì ‘ìˆ˜ í›„ ê³ ê°ë‹˜ê»˜ì„œ ë³„ë„ë¡œ ë°°ì†¡ë¹„ë¥¼ ë¶€ë‹´í•´ì£¼ì…”ì•¼ í•©ë‹ˆë‹¤.",default,END,
-192,0_0-Y_0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-192,0_0-Y_0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-192,0_0-N,ì•Œê² ìŠµë‹ˆë‹¤. <br> ë°˜í’ˆì— ëŒ€í•œ ì•ˆë‚´ëŠ” ì €í¬ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ [ê³ ê°ì„¼í„°]-[ìžì£¼ë¬»ëŠ”ì§ˆë¬¸]-[êµí™˜/ë°˜í’ˆ/AS] ê²Œì‹œíŒì—ì„œë„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,END,
-192,0_0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-193,0,ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œ ë¹„íšŒì›ìœ¼ë¡œ ì£¼ë¬¸í•œ ìƒí’ˆì„ ë°˜í’ˆí•˜ê³  ì‹¶ìœ¼ì‹ ê°€ìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,ë¹„íšŒì›ë°˜í’ˆ
-193,0-Y,,default,END,
-193,0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-193,0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-194,0,"ê³ ê°ë‹˜ ìƒí’ˆ ë°˜í’ˆ ì ˆì°¨ ì•ˆë‚´í•´ ë“œë¦´ê²Œìš”!<br><br>1. ë°°ë‹¬ë˜ì–´ì§„ ìƒìžì— ë¶™ì–´ìžˆëŠ” ìš´ì†¡ìž¥ì˜ ì£¼ì†Œ ë° íƒë°°ì‚¬ë¥¼ í™•ì¸í•©ë‹ˆë‹¤. <br>2. [My ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì—ì„œ ë°˜í’ˆì‹ ì²­ í•©ë‹ˆë‹¤.<br>3. ë°°ë‹¬ë˜ì–´ì§„ íƒë°°ì‚¬ë¥¼ í†µí•´ ìƒí’ˆì„ ë°˜í’ˆ í•©ë‹ˆë‹¤.<br>- ìƒí’ˆë°°ë‹¬ì‹œ ë™ë´‰ëœ ì²­ì•½ì² íšŒì„œë¥¼ ìž‘ì„±í•˜ì‹œì–´ ë°˜í’ˆí•˜ì‹œëŠ” ìƒìž ì•ˆì— ë„£ì–´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. ì²­ì•½ì² íšŒì„œê°€ ì—†ëŠ” ê²½ìš°ì—ëŠ” ë³„ë„ ì¢…ì´ì— ì² íšŒì¼ìž, ì£¼ë¬¸ì¼ìž, ìƒí’ˆëª…, ê¸ˆì•¡, ì„±ëª…, ì² íšŒì‚¬ìœ , ì£¼ì†Œ ë“±ì„ ê¸°ìž¬í•˜ì—¬ ë™ë´‰í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>- ë°˜í’ˆí•˜ì‹¤ ë•Œ íƒë°°ê¸°ì‚¬ì—ê²Œ ìˆ˜ë ¹í•˜ì‹  ë°˜ì†¡ìž¥ì€ í™˜ë¶ˆì´ ì™„ë£Œë  ë•Œê¹Œì§€ ë³´ê´€í•´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>- ë°˜í’ˆë¹„ëŠ” ìƒí’ˆí•˜ìž, ì˜¤ë°°ì†¡ ë“±ì˜ ë¬¸ì œë¡œ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ë•Œ ê³ ê°ì„¼í„°ë¡œ ì ‘ìˆ˜í•´ì£¼ì‹œë©´ ë¬´ë£Œë°˜í’ˆì´ ê°€ëŠ¥í•˜ë©°, ì´ì™¸ì— ê³ ê°ë³€ì‹¬ìœ¼ë¡œ ì¸í•´ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ë•ŒëŠ” ê³ ê°ì„¼í„° ì‚¬ì „ì ‘ìˆ˜ í›„ ê³ ê°ë‹˜ê»˜ì„œ ë³„ë„ë¡œ ë°°ì†¡ë¹„ë¥¼ ë¶€ë‹´í•´ ì£¼ì…”ì•¼ í•©ë‹ˆë‹¤.",default,seq,ë°˜í’ˆì ˆì°¨
-194,0_0,"â€» ìœ ì˜ì‚¬í•­<br>ë°˜í’ˆ ì ‘ìˆ˜ ì ˆì°¨ ì—†ì´ ìž„ì˜ë¡œ ë°˜ì†¡í•  ê²½ìš°, ë°˜í’ˆë‚´ìš©ì„ í™•ì¸í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ í™˜ë¶ˆì´ ì§€ì—°ë˜ê±°ë‚˜ í™˜ë¶ˆì´ ë˜ì§€ ì•Šì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ê·¸ëŸ¬ë¯€ë¡œ ë°˜ë“œì‹œ [My ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì—ì„œ ë°˜í’ˆì‹ ì²­ì„ í•˜ì‹œê³ , ë°˜í’ˆì ˆì°¨ì— ë”°ë¼ ë°˜í’ˆí•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,seq,
-194,0_1,"<a href='javascript:window.parent.postMessage(\""https://www.dongwonmall.com/mypage/myorder/myOrderList.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">MY ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ</button></a>\n<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-195,0,"ê³ ê°ë‹˜ í˜„ê¸ˆìœ¼ë¡œ êµ¬ë§¤í•˜ì…¨ë‚˜ìš”? ì¹´ë“œë¡œ êµ¬ë§¤í•˜ì…¨ë‚˜ìš”?<br><button class=""dial_btn f"">í˜„ê¸ˆ ê²°ì œ</button>
-<button class=""dial_btn"">ì¹´ë“œ ê²°ì œ</button>",default,ABCD,ì¼ë¶€ì·¨ì†Œë°˜í’ˆ
-195,0-A,"ê³ ê°ë‹˜ í˜„ê¸ˆìœ¼ë¡œ êµ¬ë§¤í•˜ì‹  ê²½ìš° ë¶€ë¶„ ì·¨ì†Œ/ë¶€ë¶„ ë°˜í’ˆì´ ê°€ëŠ¥í•©ë‹ˆë‹¤. ì·¨ì†Œ/ë°˜í’ˆì„ ì›í•˜ì‹œëŠ” ìƒí’ˆì˜ ê¸ˆì•¡ë§Œí¼ ê³ ê°ë‹˜ì˜ í™˜ë¶ˆê³„ì¢Œë¡œ ìž…ê¸ˆí•´ë“œë¦½ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-195,0-B,"ê³ ê°ë‹˜ ì‹ ìš©ì¹´ë“œë¡œ êµ¬ë§¤í•˜ì‹  ê²½ìš° ì·¨ì†Œ/ë°˜í’ˆì„ ìš”ì²­í•˜ì‹  ìƒí’ˆì— í•œí•´ ë¶€ë¶„ì·¨ì†Œë©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-195,0-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì €ì—ê²Œ ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-196,0,"ê³ ê°ë‹˜<br>ì œí’ˆ ë°˜í’ˆì‹œ ë³´ë‚¼ ì£¼ì†Œì§€ í™•ì¸ì€ [ê³ ê°ë§Œì¡±ì„¼í„° - 1:1ë§žì¶¤ìƒë‹´] ë˜ëŠ” ë™ì›ëª° ì½œì„¼í„° 1588-3745 ë¡œ ë¬¸ì˜í•´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br><br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ 1:1 ë§žì¶¤ìƒë‹´ ê²Œì‹œíŒìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/customer/counsel.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,ë°˜í’ˆì£¼ì†Œë¬¸ì˜
-197,0,ê³ ê°ë‹˜ í™˜ë¶ˆí•˜ë ¤ í•˜ì‹œë‚˜ìš”? <br>ì£„ì†¡í•˜ì§€ë§Œ ì¸ê³µì§€ëŠ¥ì¸ ì œê°€ ë°”ë¡œ í™˜ë¶ˆì²˜ë¦¬í•˜ëŠ” ê²ƒì€ ì•„ì§ ì–´ë ¤ì›Œìš”~ <br>ëŒ€ì‹  ì €í¬ ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ë¹ ë¥´ê²Œ ì²˜ë¦¬í•´ë“œë¦´ê²Œìš”~,default,seq,í™˜ë¶ˆìš”ì²­
-197,0_0,"í•„ìš”í•˜ì‹œë©´, í™˜ë¶ˆ ì ˆì°¨ì— ëŒ€í•´ ê°„ë‹¨ížˆ ì•ˆë‚´ë“œë¦´ê¹Œìš”?<button class=\""dial_btn f\"">ë„¤</button><button class=\""dial_btn\"">ì•„ë‹ˆì˜¤</button>",default,YNO,
-197,0_0-Y,í…ŒìŠ¤íŠ¸,default,seq,
-197,0_0-Y_0,"ê³ ê°ë‹˜ [MY ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì—ì„œ ì·¨ì†Œ/ë°˜í’ˆì‹ ì²­ì„ í•˜ì‹œë©´ ì·¨ì†ŒëŠ” ì‹ ì²­ í›„ 3ì˜ì—…ì¼ ì´ë‚´, ë°˜í’ˆì€ ë°˜í’ˆì™„ë£Œ(ë°˜ì†¡ ë¬¼ê±´ì´ ë³¸ì‚¬ì— ë„ì°©í•œ ê²ƒì´ í™•ì¸ë˜ëŠ” ì‹œì ) í™•ì¸ í›„ 3ì˜ì—…ì¼ ì´ë‚´ì— í™˜ë¶ˆ ì²˜ë¦¬í•´ë“œë¦½ë‹ˆë‹¤.<br>(ì£¼ë§ ë° ê³µíœ´ì¼ ì œì™¸)",default,seq,
-197,0_0-Y_1,"ê²°ì œìˆ˜ë‹¨ë³„ í™˜ë¶ˆì ˆì°¨<br>- í˜„ê¸ˆê²°ì œ : ì‹¤ì‹œê°„ê³„ì¢Œì´ì²´/ê°€ìƒê³„ì¢Œ/ë¬´í†µìž¥ìž…ê¸ˆì€ ë°˜í’ˆ í™•ì¸ í›„ 2~3ì¼ ì´ë‚´ì— ê³ ê°ë‹˜ì˜ í™˜ë¶ˆê³„ì¢Œë¡œ ê²°ì œí•˜ì‹  ê¸ˆì•¡ì„ í™˜ë¶ˆí•˜ì—¬ ë“œë¦½ë‹ˆë‹¤.<br>- ì‹ ìš©ì¹´ë“œ: ì‹ ìš©ì¹´ë“œë¡œ ê²°ì œí•˜ì‹  ê²½ìš°ëŠ” ì‹ ìš©ì¹´ë“œ ìŠ¹ì¸ì´ ì·¨ì†Œë˜ë¯€ë¡œ ê²°ì œ ëŒ€ê¸ˆì´ ì²­êµ¬ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ì‹ ìš©ì¹´ë“œ ê²°ì œì¼ì— ëŒ€ê¸ˆì´ ì²­êµ¬ë  ê²½ìš° ìµì›” ì‹ ìš©ì¹´ë“œ ëŒ€ê¸ˆì²­êµ¬ì‹œ ì¹´ë“œì‚¬ì—ì„œ í™˜ê¸‰ì²˜ë¦¬(ë§ˆì´ë„ˆìŠ¤ ì²­êµ¬)í•´ ë“œë¦½ë‹ˆë‹¤.<br>- ì ë¦½ê¸ˆ : ê³ ê°ë‹˜ì˜ ì ë¦½ê¸ˆì€ ì‚¬ìš©í•˜ì‹  ê¸ˆì•¡ë§Œí¼ í™˜ì›í•´ ë“œë¦½ë‹ˆë‹¤. (ì‡¼í•‘ì§€ì›ê¸ˆì€ ì£¼ë¬¸ì·¨ì†Œ ì‹œ ë³µì›ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.)<br>- ì¿ í° : ê²°ì œì‹œ ì‚¬ìš©í•œ ì¿ í°ì€ ë‹¤ì‹œ í™˜ì›ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br><br>â€» í™˜ë¶ˆì€ ë°˜ë“œì‹œ ì£¼ë¬¸ìž ë³¸ì¸ ë° ìž…ê¸ˆìž ëª…ì˜ì˜ ê³„ì¢Œë¡œë§Œ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë‹¨, ì£¼ë¬¸ìž ë³¸ì¸ ë° ìž…ê¸ˆìž ëª…ì˜ì˜ ê³„ì¢Œë¡œ í™˜ë¶ˆì´ ì—†ìœ¼ì‹¤ ê²½ìš°, ì£¼ë¬¸ìžê»˜ì„œ ê³ ê°ì„¼í„°(1588-3745)ë¡œ ì—°ë½ ì£¼ì‹œë©´ ë³¸ì¸ í™•ì¸ì„ ê±°ì¹œ í›„ í™˜ë¶ˆ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,
-197,0_0-Y_2,"ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-197,0_0-N,ì•Œê² ìŠµë‹ˆë‹¤. <br> í™˜ë¶ˆì— ëŒ€í•œ ì•ˆë‚´ëŠ” ì €í¬ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ [ê³ ê°ì„¼í„°]-[ìžì£¼ë¬»ëŠ”ì§ˆë¬¸]-[êµí™˜/ë°˜í’ˆ/AS] ê²Œì‹œíŒì—ì„œë„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,END,
-197,0_0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-198,0,"ê³ ê°ë‹˜ í™ˆíŽ˜ì´ì§€ ìƒë‹¨ì˜ â€˜MYë™ì›ëª°â€™ì—ì„œ ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒë¥¼ í´ë¦­í•´ë³´ì„¸ìš”. <br>í•´ë‹¹ ì£¼ë¬¸ê±´ì˜ â€˜ì£¼ë¬¸í˜„í™©â€™ëž€ì— ë­ë¼ê³  ì“°ì—¬ìžˆë‚˜ìš”?<br><button class=""dial_btn f"">ì£¼ë¬¸ì ‘ìˆ˜</button>
-<button class=""dial_btn"">ê²°ì œì™„ë£Œ</button>
-<button class=""dial_btn"">ë°œì†¡ì§€ì—°</button>
-<button class=""dial_btn"">ë°œì†¡ì™„ë£Œ</button>
-<button class=""dial_btn"">ë°°ì†¡ì¤‘</button>
-<button class=""dial_btn"">ë°°ì†¡ì™„ë£Œ</button>
-<button class=""dial_btn"">ë°œì†¡ì¤€ë¹„</button>",default,ABCD,ì·¨ì†Œë°˜í’ˆì—¬ë¶€
-198,0-A,"ê³ ê°ë‹˜ í˜„ ìƒíƒœì—ì„œëŠ” ì·¨ì†Œì‹ ì²­ì´ ê°€ëŠ¥í•˜ì‹­ë‹ˆë‹¤. <br>ë‹¨, ë°œì†¡ì§€ì—°ì˜ ê²½ìš° ê³ ê°ì„¼í„° 1588-3745 ë¡œ ë¬¸ì˜í›„ ì·¨ì†Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.",default,END,
-198,0-B,"ê³ ê°ë‹˜ í˜„ ìƒíƒœì—ì„œëŠ” ì´ë¯¸ ìƒí’ˆì´ ì¶œê³ ë˜ì–´ ì·¨ì†Œì‹ ì²­ì€ ë¶ˆê°€í•˜ê³ , ë°˜í’ˆì‹ ì²­í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. ë°˜í’ˆì— ëŒ€í•œ ì •ë³´ê°€ í•„ìš”í•˜ì„¸ìš”?",default,YNO,
-198,0-B-Y,,default,seq,
-198,0-B-Y_0,ê³ ê°ë‹˜ ë°˜í’ˆí•˜ë ¤ í•˜ì‹œë‚˜ìš”? <br>ì£„ì†¡í•˜ì§€ë§Œ ì¸ê³µì§€ëŠ¥ì¸ ì œê°€ ë°”ë¡œ ë°˜í’ˆì²˜ë¦¬ í•˜ëŠ” ê²ƒì€ ì•„ì§ ì¡°ê¸ˆ ì–´ë ¤ì›Œìš”~ <br>ëŒ€ì‹  ì €í¬ ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤. <br>ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ë¹ ë¥´ê²Œ ì²˜ë¦¬í•´ë“œë¦´ê²Œìš”~,default,seq,
-198,0-B-Y_1,"í•„ìš”í•˜ì‹œë©´, ë°˜í’ˆ ì ˆì°¨ì— ëŒ€í•´ ê°„ë‹¨ížˆ ì•ˆë‚´ë“œë¦´ê¹Œìš”? <br> ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~",default,YNO,
-198,0-B-Y_1-Y,"ê³ ê°ë‹˜ ë°˜í’ˆì€ ë‹¤ìŒê³¼ ê°™ì´ ì²˜ë¦¬ë©ë‹ˆë‹¤. <br><br> 1) ê³ ê°ë‹˜ê»˜ì„œ ìˆ˜ë ¹í•˜ì‹  ìƒìžì— ë¶™ì–´ìžˆëŠ” ìš´ì†¡ìž¥ì˜ ì£¼ì†Œ ë° íƒë°°ì‚¬ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”. <br>2) â€˜MYë™ì›ëª°â€™ì—ì„œ ë°˜í’ˆì‹ ì²­ì„ í•´ì£¼ì„¸ìš”. <br> 3) ë°°ë‹¬ë˜ì–´ì§„ íƒë°°ì‚¬ë¥¼ í†µí•´ ìƒí’ˆì„ ë°˜í’ˆí•´ì£¼ì„¸ìš”. <br>4) ë°˜í’ˆì œí’ˆ ìž…ê³  í›„ì— í™˜ë¶ˆì´ ì§„í–‰ë˜ë©°, ìƒí™©ì— ë”°ë¼ ë°˜í’ˆì´ ë¶ˆê°€í•  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.",default,seq,
-198,0-B-Y_1-Y_0,ìœ ì˜ì‚¬í•­ë„ í•¨ê»˜ ë³´ì‹œê² ì–´ìš”? ë„¤ ì•„ë‹ˆì˜¤ë¡œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,YNO,
-198,0-B-Y_1-Y_0-Y,"ë°˜í’ˆ ì‹œ ìœ ì˜ì‚¬í•­ìž…ë‹ˆë‹¤! <br> # ìƒí’ˆ ë°°ë‹¬ì‹œ ë™ë´‰ëœ ì²­ì•½ì² íšŒì„œë¥¼ ìž‘ì„±í•˜ì‹œì–´ ë°˜í’ˆí•˜ì‹œëŠ” ìƒìž ì•ˆì— ë„£ì–´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. <br>ì²­ì•½ì² íšŒì„œê°€ ì—†ëŠ” ê²½ìš°ì—ëŠ” ë³„ë„ ì¢…ì´ì— ì² íšŒì¼ìž, ì£¼ë¬¸ì¼ìž, ìƒí’ˆëª…, ê¸ˆì•¡, ì„±ëª…, ì² íšŒì‚¬ìœ , ì£¼ì†Œ ë“±ì„ ê¸°ìž¬í•˜ì—¬ ë™ë´‰í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. <br># ë°˜í’ˆí•˜ì‹¤ ë•Œ íƒë°°ê¸°ì‚¬ì—ê²Œ ìˆ˜ë ¹í•˜ì‹  ë°˜ì†¡ìž¥ì€ í™˜ë¶ˆì´ ì™„ë£Œë  ë•Œê¹Œì§€ ë³´ê´€í•´ì£¼ì„¸ìš”. <br># ìƒí’ˆí•˜ìž, ì˜¤ë°°ì†¡ ë“±ì˜ ë¬¸ì œë¡œ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ ë•Œ ë°˜í’ˆë¹„ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œê³  ì‚¬ì „ì ‘ìˆ˜ í›„ ì°©ë¶ˆë¡œ ì²˜ë¦¬í•˜ì‹œë©´ ë©ë‹ˆë‹¤. <br>ì´ì™¸ì— ê³ ê°ë³€ì‹¬ìœ¼ë¡œ ì¸í•´ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ ë•ŒëŠ” ê³ ê°ì„¼í„° ì‚¬ì „ì ‘ìˆ˜ í›„ ê³ ê°ë‹˜ê»˜ì„œ ë³„ë„ë¡œ ë°°ì†¡ë¹„ë¥¼ ë¶€ë‹´í•´ì£¼ì…”ì•¼ í•©ë‹ˆë‹¤.",default,END,
-198,0-B-Y_1-Y_0-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-198,0-B-Y_1-Y_0-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-198,0-B-Y_1-N,ì•Œê² ìŠµë‹ˆë‹¤. <br> ë°˜í’ˆì— ëŒ€í•œ ì•ˆë‚´ëŠ” ì €í¬ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ [ê³ ê°ì„¼í„°]-[ìžì£¼ë¬»ëŠ”ì§ˆë¬¸]-[êµí™˜/ë°˜í’ˆ/AS] ê²Œì‹œíŒì—ì„œë„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,END,
-198,0-B-Y_1-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-198,0-B-N,ì•Œê² ìŠµë‹ˆë‹¤~,default,END,
-198,0-B-O,ë„¤ ì•„ë‹ˆì˜¤ê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-198,0-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-199,0,ê³ ê°ë‹˜ í™˜ë¶ˆì„ ê¸°ë‹¤ë¦¬ê³  ê³„ì‹œëŠ”êµ°ìš”. <br>ì˜¤ëž˜ ê¸°ë‹¤ë¦¬ê²Œ í•´ë“œë ¤ ì£„ì†¡í•©ë‹ˆë‹¤~ <br>í™˜ë¶ˆ ê¸°ë‹¤ë¦¬ì‹œëŠ” ì£¼ë¬¸ ê±´ì˜ í˜„ìž¬ ì£¼ë¬¸ìƒíƒœê°’ì´ ì–´ë–»ê²Œ ë˜ë‚˜ìš”?<br>ì£¼ë¬¸ìƒíƒœê°’ì€ â€˜MYë™ì›ëª°â€™ â€“ â€˜ì£¼ë¬¸/ë°°ì†¡ ì¡°íšŒâ€™ â€“ â€˜ì£¼ë¬¸í˜„í™©â€™ ëž€ì— ì“°ì—¬ìžˆëŠ” ê°’ìž…ë‹ˆë‹¤.,default,ABCD,í™˜ë¶ˆì†Œìš”ê¸°ê°„
-199,0-A,ê³ ê°ë‹˜ ì¹´ë“œ ê²°ì œí•˜ì…¨ë‚˜ìš”? í˜„ê¸ˆê²°ì œí•˜ì…¨ë‚˜ìš”?,default,YNO,
-199,0-A-Y,"ê³ ê°ë‹˜ í˜„ìž¬ â€˜ì£¼ë¬¸ì·¨ì†Œâ€™ ìƒíƒœì´ì‹œë„¤ìš”.  <br>ì¹´ë“œ ê²°ì œì˜ ê²½ìš° â€˜ì£¼ë¬¸ì·¨ì†Œâ€™ ì‹œì  ê¸°ì¤€ìœ¼ë¡œë¶€í„°, ì¹´ë“œì‚¬ ë‚´ì—ì„œ ì˜ì—…ì¼ ê¸°ì¤€ 3~5ì¼ ì •ë„ ì†Œìš”ë©ë‹ˆë‹¤. <br>í•´ë‹¹ì¹´ë“œì‚¬ í†µí•´ ì§ì ‘ í™•ì¸ ë¶€íƒë“œë¦¬ë©°, ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ ë°œìƒì‹œ ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.",default,END,
-199,0-A-N,"ê³ ê°ë‹˜ í˜„ê¸ˆ ê²°ì œì— ëŒ€í•œ í™˜ë¶ˆì€ ë§¤ì£¼ í™”ìš”ì¼ê³¼ ëª©ìš”ì¼ì— ì§„í–‰ë©ë‹ˆë‹¤. <br>ì£¼ë¬¸ì·¨ì†Œ ì ‘ìˆ˜ì¼ë¡œë¶€í„° ê·¸ ë‹¤ìŒ í™”ìš”ì¼ ë˜ëŠ” ëª©ìš”ì¼ì— í™˜ë¶ˆë©ë‹ˆë‹¤. <br> ì´ëŠ” í†µìƒì ì¸ ê²½ìš°ë¡œ, ê³ ê°ë‹˜ì˜ ì£¼ë¬¸ ê±´ì— ëŒ€í•œ ì •í™•í•œ í™˜ë¶ˆì¼ìž ì•ˆë‚´ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.",default,END,
-199,0-A-O,"í˜„ê¸ˆê²°ì œ, ì¹´ë“œê²°ì œê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-199,0-B,ê³ ê°ë‹˜ ì¹´ë“œ ê²°ì œí•˜ì…¨ë‚˜ìš”? í˜„ê¸ˆê²°ì œí•˜ì…¨ë‚˜ìš”?,default,YNO,
-199,0-B-Y,"ê³ ê°ë‹˜ í˜„ìž¬ â€˜í™˜ë¶ˆì™„ë£Œâ€™ ìƒíƒœì´ì‹œë„¤ìš”.  <br>ì¹´ë“œ ê²°ì œì˜ ê²½ìš° â€˜í™˜ë¶ˆì™„ë£Œâ€™ ì‹œì  ê¸°ì¤€ìœ¼ë¡œë¶€í„° ê³ ê°ë‹˜ê»˜ ì‹¤ì œë¡œ í™˜ë¶ˆì´ ë˜ê¸°ê¹Œì§€ ì¹´ë“œì‚¬ ë‚´ì—ì„œ ì˜ì—…ì¼ ê¸°ì¤€ 3~5ì¼ ì •ë„ ì†Œìš”ë©ë‹ˆë‹¤. <br> ì´ëŠ” í†µìƒì ì¸ ê²½ìš°ë¡œ, ê³ ê°ë‹˜ì˜ ì£¼ë¬¸ ê±´ì— ëŒ€í•œ ì •í™•í•œ í™˜ë¶ˆì¼ìž ì•ˆë‚´ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.",default,END,
-199,0-B-N,ê³ ê°ë‹˜ ì´ë¯¸ ê³ ê°ë‹˜ê»˜ì„œ ìš”ì²­í•˜ì‹  ê³„ì¢Œë¡œ í™˜ë¶ˆì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.  <br>í™•ì¸ ë¶€íƒë“œë¦½ë‹ˆë‹¤.  <br>í™˜ë¶ˆì´ ë˜ì§€ ì•Šì€ ê²½ìš°ì—ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.,default,END,
-199,0-B-O,"í˜„ê¸ˆê²°ì œ, ì¹´ë“œê²°ì œê°€ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-199,0-C,"ê³ ê°ë‹˜ í˜„ìž¬ â€˜ë°˜í’ˆì ‘ìˆ˜â€™ ìƒíƒœì´ì‹œë„¤ìš”.<br> ë°˜í’ˆì œí’ˆ ìž…ê³ ëœ í›„ í™˜ë¶ˆì´ ê°€ëŠ¥í•©ë‹ˆë‹¤. <br>ì¹´ë“œ ê²°ì œì˜ ê²½ìš° â€˜í™˜ë¶ˆì™„ë£Œâ€™ ì‹œì  ê¸°ì¤€ìœ¼ë¡œë¶€í„° ê³ ê°ë‹˜ê»˜ ì‹¤ì œë¡œ í™˜ë¶ˆì´ ë˜ê¸°ê¹Œì§€ ì¹´ë“œì‚¬ ë‚´ì—ì„œ ì˜ì—…ì¼ ê¸°ì¤€ 3~5ì¼ ì •ë„ ì†Œìš”ë©ë‹ˆë‹¤. <br>í˜„ê¸ˆ ê²°ì œì— ëŒ€í•œ í™˜ë¶ˆì€ ë§¤ì£¼ í™”ìš”ì¼ê³¼ ëª©ìš”ì¼ì— ì§„í–‰ë©ë‹ˆë‹¤. <br>í™˜ë¶ˆì‹ ì²­ ì ‘ìˆ˜ì¼ë¡œë¶€í„° ê·¸ ë‹¤ìŒ í™”ìš”ì¼ ë˜ëŠ” ëª©ìš”ì¼ì— í™˜ë¶ˆë©ë‹ˆë‹¤. <br>ì´ëŠ” í†µìƒì ì¸ ê²½ìš°ë¡œ, ìžì„¸í•œ ì•ˆë‚´ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.",default,END,
-199,0-D,"ê³ ê°ë‹˜ í˜„ìž¬ â€˜ë°˜í’ˆì§€ì‹œâ€™ ìƒíƒœì´ì‹œë„¤ìš”. <br>ê³ ê°ë‹˜ì˜ ë°˜í’ˆì œí’ˆì´ ì•„ì§ ìž…ê³ ë˜ì§€ ì•Šì€ ìƒíƒœìž…ë‹ˆë‹¤.  <br>ë°˜í’ˆì œí’ˆ ìž…ê³ ëœ í›„ í™˜ë¶ˆì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.  <br>ì¹´ë“œ ê²°ì œì˜ ê²½ìš° â€˜í™˜ë¶ˆì™„ë£Œâ€™ ì‹œì  ê¸°ì¤€ìœ¼ë¡œë¶€í„° ê³ ê°ë‹˜ê»˜ ì‹¤ì œë¡œ í™˜ë¶ˆì´ ë˜ê¸°ê¹Œì§€ ì¹´ë“œì‚¬ ë‚´ì—ì„œ ì˜ì—…ì¼ ê¸°ì¤€ 3~5ì¼ ì •ë„ ì†Œìš”ë©ë‹ˆë‹¤.  <br>í˜„ê¸ˆ ê²°ì œì— ëŒ€í•œ í™˜ë¶ˆì€ ë§¤ì£¼ í™”ìš”ì¼ê³¼ ëª©ìš”ì¼ì— ì§„í–‰ë©ë‹ˆë‹¤.  <br>í™˜ë¶ˆì‹ ì²­ ì ‘ìˆ˜ì¼ë¡œë¶€í„° ê·¸ ë‹¤ìŒ í™”ìš”ì¼ ë˜ëŠ” ëª©ìš”ì¼ì— í™˜ë¶ˆë©ë‹ˆë‹¤. <br> ì´ëŠ” í†µìƒì ì¸ ê²½ìš°ë¡œ, ìžì„¸í•œ ì•ˆë‚´ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.",default,END,
-199,0-E,"ê³ ê°ë‹˜ í˜„ìž¬ â€˜ë°˜í’ˆì™„ë£Œâ€™ ìƒíƒœì´ì‹œë„¤ìš”. <br>ë°˜í’ˆì œí’ˆ ìž…ê³ ëœ ê²ƒìœ¼ë¡œ ë³´ì—¬ì§€ë©°, 2~3ì¼ ë‚´ì— í™˜ë¶ˆì ‘ìˆ˜ ë° í™˜ë¶ˆì²˜ë¦¬ ë  ì˜ˆì •ìž…ë‹ˆë‹¤. <br>ì¹´ë“œ ê²°ì œì˜ ê²½ìš° â€˜í™˜ë¶ˆì™„ë£Œâ€™ ì‹œì  ê¸°ì¤€ìœ¼ë¡œë¶€í„° ê³ ê°ë‹˜ê»˜ ì‹¤ì œë¡œ í™˜ë¶ˆì´ ë˜ê¸°ê¹Œì§€ ì¹´ë“œì‚¬ ë‚´ì—ì„œ ì˜ì—…ì¼ ê¸°ì¤€ 3~5ì¼ ì •ë„ ì†Œìš”ë©ë‹ˆë‹¤. <br>í˜„ê¸ˆ ê²°ì œì— ëŒ€í•œ í™˜ë¶ˆì€ ë§¤ì£¼ í™”ìš”ì¼ê³¼ ëª©ìš”ì¼ì— ì§„í–‰ë©ë‹ˆë‹¤.<br> í™˜ë¶ˆì‹ ì²­ ì ‘ìˆ˜ì¼ë¡œë¶€í„° ê·¸ ë‹¤ìŒ í™”ìš”ì¼ ë˜ëŠ” ëª©ìš”ì¼ì— í™˜ë¶ˆë©ë‹ˆë‹¤. <br>ì´ëŠ” í†µìƒì ì¸ ê²½ìš°ë¡œ, ìžì„¸í•œ ì•ˆë‚´ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.",default,END,
-199,0-F,"ê³ ê°ë‹˜ í˜„ê¸ˆ ê²°ì œì— ëŒ€í•œ í™˜ë¶ˆì€ ë§¤ì£¼ í™”ìš”ì¼ê³¼ ëª©ìš”ì¼ì— ì§„í–‰ë©ë‹ˆë‹¤. <br>í™˜ë¶ˆì‹ ì²­ ì ‘ìˆ˜ì¼ë¡œë¶€í„° ê·¸ ë‹¤ìŒ í™”ìš”ì¼ ë˜ëŠ” ëª©ìš”ì¼ì— í™˜ë¶ˆë©ë‹ˆë‹¤. <br> ì´ëŠ” í†µìƒì ì¸ ê²½ìš°ë¡œ, ê³ ê°ë‹˜ì˜ ì£¼ë¬¸ ê±´ì— ëŒ€í•œ ì •í™•í•œ í™˜ë¶ˆì¼ìž ì•ˆë‚´ëŠ” ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.",default,END,
-200,0,"ê³ ê°ë‹˜ [MY ë™ì›ëª° - ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ]ì—ì„œ ì·¨ì†Œ/ë°˜í’ˆì‹ ì²­ì„ í•˜ì‹œë©´ ì·¨ì†ŒëŠ” ì‹ ì²­ í›„ 3ì˜ì—…ì¼ ì´ë‚´, ë°˜í’ˆì€ ë°˜í’ˆì™„ë£Œ(ë°˜ì†¡ ë¬¼ê±´ì´ ë³¸ì‚¬ì— ë„ì°©í•œ ê²ƒì´ í™•ì¸ë˜ëŠ” ì‹œì ) í™•ì¸ í›„ 3ì˜ì—…ì¼ ì´ë‚´ì— í™˜ë¶ˆ ì²˜ë¦¬í•´ë“œë¦½ë‹ˆë‹¤.<br>(ì£¼ë§ ë° ê³µíœ´ì¼ ì œì™¸)",default,seq,í™˜ë¶ˆì ˆì°¨
-200,0_0,"ê²°ì œìˆ˜ë‹¨ë³„ í™˜ë¶ˆì ˆì°¨<br>- í˜„ê¸ˆê²°ì œ : ì‹¤ì‹œê°„ê³„ì¢Œì´ì²´/ê°€ìƒê³„ì¢Œ/ë¬´í†µìž¥ìž…ê¸ˆì€ ë°˜í’ˆ í™•ì¸ í›„ 2~3ì¼ ì´ë‚´ì— ê³ ê°ë‹˜ì˜ í™˜ë¶ˆê³„ì¢Œë¡œ ê²°ì œí•˜ì‹  ê¸ˆì•¡ì„ í™˜ë¶ˆí•˜ì—¬ ë“œë¦½ë‹ˆë‹¤.<br>- ì‹ ìš©ì¹´ë“œ: ì‹ ìš©ì¹´ë“œë¡œ ê²°ì œí•˜ì‹  ê²½ìš°ëŠ” ì‹ ìš©ì¹´ë“œ ìŠ¹ì¸ì´ ì·¨ì†Œë˜ë¯€ë¡œ ê²°ì œ ëŒ€ê¸ˆì´ ì²­êµ¬ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ì‹ ìš©ì¹´ë“œ ê²°ì œì¼ì— ëŒ€ê¸ˆì´ ì²­êµ¬ë  ê²½ìš° ìµì›” ì‹ ìš©ì¹´ë“œ ëŒ€ê¸ˆì²­êµ¬ì‹œ ì¹´ë“œì‚¬ì—ì„œ í™˜ê¸‰ì²˜ë¦¬(ë§ˆì´ë„ˆìŠ¤ ì²­êµ¬)í•´ ë“œë¦½ë‹ˆë‹¤.<br>- ì ë¦½ê¸ˆ : ê³ ê°ë‹˜ì˜ ì ë¦½ê¸ˆì€ ì‚¬ìš©í•˜ì‹  ê¸ˆì•¡ë§Œí¼ í™˜ì›í•´ ë“œë¦½ë‹ˆë‹¤. (ì‡¼í•‘ì§€ì›ê¸ˆì€ ì£¼ë¬¸ì·¨ì†Œ ì‹œ ë³µì›ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.)<br>- ì¿ í° : ê²°ì œì‹œ ì‚¬ìš©í•œ ì¿ í°ì€ ë‹¤ì‹œ í™˜ì›ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br><br>â€» í™˜ë¶ˆì€ ë°˜ë“œì‹œ ì£¼ë¬¸ìž ë³¸ì¸ ë° ìž…ê¸ˆìž ëª…ì˜ì˜ ê³„ì¢Œë¡œë§Œ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë‹¨, ì£¼ë¬¸ìž ë³¸ì¸ ë° ìž…ê¸ˆìž ëª…ì˜ì˜ ê³„ì¢Œë¡œ í™˜ë¶ˆì´ ì—†ìœ¼ì‹¤ ê²½ìš°, ì£¼ë¬¸ìžê»˜ì„œ ê³ ê°ì„¼í„°(1588-3745)ë¡œ ì—°ë½ ì£¼ì‹œë©´ ë³¸ì¸ í™•ì¸ì„ ê±°ì¹œ í›„ í™˜ë¶ˆ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,
-200,0_1,"ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-201,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œëŠ” ë™ì›, ì½”ìŠ¤íŠ¸ì½”, ë©”ê°€ë§ˆíŠ¸ ìƒí’ˆì„ í•œë²ˆì— ì‡¼í•‘í•˜ê³ , ëª¨ë‘ í•œë²ˆì— ë°°ì†¡ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤!<br>ë™ì›ëª°ë§Œì˜ ìŠ¤ë§ˆíŠ¸í•œ í•©ë°°ì†¡ì„œë¹„ìŠ¤!<br>ë°´ë“œë°°ì†¡, ì¿¨ë°´ë“œë°°ì†¡ìœ¼ë¡œ íŽ¸í•˜ê²Œ ìž¥ë³´ì„¸ìš”~",default,END,ë¬¶ìŒë°°ì†¡
-202,0,"ê³ ê°ë‹˜ ë°´ë“œë°°ì†¡ì´ëž€ <font style=""color:red"">ë™ì›ìƒí’ˆ, ì½”ìŠ¤íŠ¸ì½”, ë©”ê°€ë§ˆíŠ¸</font>ì˜ <font style=""color:red"">ìƒì˜¨ ìƒí’ˆ</font>ì„ <b>í•œë²ˆì— ì‡¼í•‘í•˜ê³ ! í•œë²ˆì— ë°°ì†¡ë°›ëŠ”!</b> ë™ì›ëª°ì˜ ìŠ¤ë§ˆíŠ¸í•œ í•©ë°°ì†¡ì„œë¹„ìŠ¤ìž…ë‹ˆë‹¤.",default,seq,ë°´ë“œë°°ì†¡ì•ˆë‚´
-202,0_0,"ì—…ì²´ë°°ì†¡ì€ ì™¸ë¶€ ìž…ì ì—…ì²´ ì œí’ˆìœ¼ë¡œ, í•´ë‹¹ ì—…ì²´ì—ì„œ ì œí’ˆì´ ì¶œê³ ê°€ ë˜ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤. <br><br>ìž…ì ì—…ì²´ ìƒí’ˆì€ ê° ì—…ì²´ë³„ ë°°ì†¡ì •ì±…ì— ë”°ë¼ ë°°ì†¡ë¹„ë¥¼ ì ìš©í•˜ê³  ìžˆì§€ë§Œ, <b>ë°´ë“œë°°ì†¡ ìƒí’ˆì€ 3ë§Œì› ì´ìƒ êµ¬ë§¤ ì‹œ ë¬´ë£Œë°°ì†¡</b>í•´ë“œë¦½ë‹ˆë‹¤!",default,seq,
-202,0_1,"ë™ì›ëª° ìƒë‹¨ ë©”ë‰´ë°”ì˜ [ë°´ë“œë°°ì†¡] í´ë¦­ ì‹œ ë³´ì—¬ì§€ëŠ” íŽ˜ì´ì§€ ë‚´ ìƒí’ˆë“¤ì´ ë°”ë¡œ ë°´ë“œë°°ì†¡ ìƒí’ˆìž…ë‹ˆë‹¤.<br><font style=\""color:orange\"">ì£¼í™©ìƒ‰ ë°´ë“œë°°ì†¡</font> ì•„ì´ì½˜ì´ í‘œì‹œë˜ì–´ ìžˆì–´ìš”~<br> ì•„ëž˜ ë²„íŠ¼ í´ë¦­í•˜ê³  ë°´ë“œë°°ì†¡ì„ ë§Œë‚˜ë³´ì„¸ìš”<a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/band.do?cate_id=01120008\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë°´ë“œë°°ì†¡ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-203,0,"ê³ ê°ë‹˜ ì¿¨ë°´ë“œë°°ì†¡ì´ëž€ <font style=""color:blue"">ë™ì›ìƒí’ˆ, ì½”ìŠ¤íŠ¸ì½”, ë©”ê°€ë§ˆíŠ¸</font>ì˜ <font style=""color:blue"">ëƒ‰ìž¥ëƒ‰ë™ ìƒí’ˆ</font>ì„ <b>í•œë²ˆì— ì‡¼í•‘í•˜ê³ ! í•œë²ˆì— ë°°ì†¡ë°›ëŠ”!</b> ë™ì›ëª°ì˜ ìŠ¤ë§ˆíŠ¸í•œ í•©ë°°ì†¡ì„œë¹„ìŠ¤ìž…ë‹ˆë‹¤. <br>ì•„ì´ìŠ¤ë°•ìŠ¤ì— ì•„ì´ìŠ¤ì ¤, í•˜ì ˆê¸°ì—ëŠ” ë“œë¼ì´ì•„ì´ìŠ¤ê¹Œì§€ ê½ê½ í¬ìž¥í•´ì„œ ë°°ì†¡í•˜ë‹ˆê¹Œ! ëƒ‰ìž¥ëƒ‰ë™ ìƒí’ˆ ì‡¼í•‘ë„ ì•ˆì‹¬í•˜ì‹¤ ìˆ˜ ìžˆì–´ìš”~",default,seq,ì¿¨ë°´ë“œë°°ì†¡ì•ˆë‚´
-203,0_0,"ì—…ì²´ë°°ì†¡ì€ ì™¸ë¶€ ìž…ì ì—…ì²´ ì œí’ˆìœ¼ë¡œ, í•´ë‹¹ ì—…ì²´ì—ì„œ ì œí’ˆì´ ì¶œê³ ê°€ ë˜ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤. <br>ìž…ì ì—…ì²´ ìƒí’ˆì€ ê° ì—…ì²´ë³„ ë°°ì†¡ì •ì±…ì— ë”°ë¼ ë°°ì†¡ë¹„ë¥¼ ì ìš©í•˜ê³  ìžˆì§€ë§Œ, <b>ì¿¨ë°´ë“œë°°ì†¡ ìƒí’ˆì€ 3ë§Œì› ì´ìƒ êµ¬ë§¤ ì‹œ ë¬´ë£Œë°°ì†¡</b>í•´ë“œë¦½ë‹ˆë‹¤! ",default,seq,
-203,0_1,"ë™ì›ëª° ìƒë‹¨ ë©”ë‰´ë°”ì˜ [ì¿¨ë°´ë“œë°°ì†¡] í´ë¦­ ì‹œ ë³´ì—¬ì§€ëŠ” íŽ˜ì´ì§€ ë‚´ ìƒí’ˆë“¤ì´ ë°”ë¡œ ì¿¨ë°´ë“œë°°ì†¡ ìƒí’ˆìž…ë‹ˆë‹¤.<br><font style=\""color:blue\"">í•˜ëŠ˜ìƒ‰ ì¿¨ë°´ë“œë°°ì†¡</font> ì•„ì´ì½˜ì´ í‘œì‹œë˜ì–´ ìžˆì–´ìš”~<br> ì•„ëž˜ ë²„íŠ¼ í´ë¦­í•˜ê³  ì¿¨ë°´ë“œë°°ì†¡ì„ ë§Œë‚˜ë³´ì„¸ìš”<a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/display/band.do?cate_id=01120009\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ì¿¨ë°´ë“œë°°ì†¡ ìƒí’ˆ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-204,0,"ê³ ê°ë‹˜ ë°°ì†¡ë¹„ê°€ ê¶ê¸ˆí•˜ì‹œêµ°ìš”! <br><br>ì œí’ˆ ë³´ê´€ ë° ê´€ë¦¬ íŠ¹ì„±ìƒ ë°°ì†¡ í¬ìž¥ ìœ í˜•ì´ ë‹¬ë¼ ì§ˆ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ìžì„¸í•œ ë‚´ìš©ì€ ìƒí’ˆ ê°œë³„íŽ˜ì´ì§€ë¥¼ í™•ì¸í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br><br>
-- ë°´ë“œë°°ì†¡/ì¿¨ë°´ë“œë°°ì†¡<br>
-3ë§Œì› ì´ìƒ êµ¬ë§¤ì‹œ ì „ ìƒí’ˆ(ëƒ‰ìž¥ë°°ì†¡í¬í•¨) ë¬´ë£Œë°°ì†¡<br>
-3ë§Œì› ë¯¸ë§Œ ì£¼ë¬¸ì‹œ ìƒì˜¨ì œí’ˆì€ 2,500ì› / ëƒ‰ìž¥ëƒ‰ë™ì œí’ˆì€ 3,500ì›ì˜ ë°°ì†¡ë¹„ê°€ ë¶€ê³¼ë©ë‹ˆë‹¤.<br>
-ë‹¨, 3ë§Œì› ë¯¸ë§Œì´ë¼ë„ ì¼ë¶€ ìƒí’ˆì€ ë¬´ë£Œë°°ì†¡ ë  ìˆ˜ ìžˆìœ¼ë‹ˆ ìžì„¸í•œ ë‚´ìš©ì€ ìƒí’ˆ ê°œë³„íŽ˜ì´ì§€ë¥¼ í™•ì¸í•´ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br><br>
-- ì—…ì²´(ì œíœ´) ë°°ì†¡ ì œí’ˆ<br>
-ì—…ì²´ë°°ì†¡ ì œí’ˆì˜ ë°°ì†¡ë¹„ëŠ” ì—…ì²´ë³„ ë°°ì†¡ì •ì±…ì— ë”°ë¼ ë‹¬ë¼ì§ˆ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ìƒí’ˆ ê°œë³„íŽ˜ì´ì§€ì— ë°°ì†¡ë¹„ë¥¼ í™•ì¸í•´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤. 
-",default,seq,ë°°ì†¡ë¹„ë¶€ë‹´ê¸°ì¤€ì•ˆë‚´
-204,0_0,"ê°ê°ì˜ ì£¼ë¬¸ê±´ì— ëŒ€í•´ ìˆ˜ë ¹ì§€ê°€ ì¼ì¹˜í•  ê²½ìš° í•©í¬ìž¥ ë˜ì–´ ë°°ì†¡ë  ìˆ˜ ìžˆìœ¼ë©°, ì´ë¡œ ì¸í•œ ë°°ì†¡ë£Œ í™˜ë¶ˆì€ ë¶ˆê°€í•©ë‹ˆë‹¤.<br>â€» ì£¼ë¬¸ê±´ì— ëŒ€í•œ ë³„ë„ í¬ìž¥ì„ ì›í•˜ì‹œëŠ” ê²½ìš°, ìˆ˜ë ¹ì¸ëª…(í˜¹ì€ ì£¼ì†Œì§€)ë¥¼ ë‹¤ë¥´ê²Œ í‘œê¸°í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-205,0,ê³ ê°ë‹˜ ë°˜í’ˆë°°ì†¡ë¹„ê°€ ê¶ê¸ˆí•˜ì‹œêµ°ìš”! <br>ë°˜í’ˆ ì‚¬ìœ ì— ë”°ë¼ ë°°ì†¡ë¹„ê°€ ë‹¬ë¼ì§‘ë‹ˆë‹¤~<br> ë°˜í’ˆì‚¬ìœ ê°€ ë‹¨ìˆœ ê³ ê°ë³€ì‹¬ì´ì‹ ê°€ìš”? ìƒí’ˆí•˜ìžì˜ ë¬¸ì œì´ì‹ ê°€ìš”?,default,ABCD,ë°˜í’ˆë°°ì†¡ë¹„ì•ˆë‚´
-205,0-A,"ê³ ê°ë‹˜ ìƒí’ˆí•˜ìž ë“±ì˜ ë¬¸ì œë¡œ êµí™˜/ë°˜í’ˆì„ í•˜ì‹¤ ê²½ìš° ë¬´ë£Œë°˜í’ˆì´ ê°€ëŠ¥í•˜ë©°, ê³ ê°ì„¼í„° ì‚¬ì „ ì ‘ìˆ˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤~ <br># ë°˜í’ˆ ì ‘ìˆ˜ ì ˆì°¨ ì—†ì´ ìž„ì˜ë¡œ ë°˜ì†¡í•  ê²½ìš°, ë°˜í’ˆë‚´ìš©ì„ í™•ì¸í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ í™˜ë¶ˆì´ ì§€ì—°ë˜ê±°ë‚˜ í™˜ë¶ˆì´ ë˜ì§€ ì•Šì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>ê·¸ëŸ¬ë¯€ë¡œ ë°˜ë“œì‹œ ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì ‘ìˆ˜í•˜ì‹œê±°ë‚˜<br> í™ˆíŽ˜ì´ì§€ ìƒë‹¨ì˜ â€˜MY ë™ì›ëª°â€™ì˜ â€˜ì£¼ë¬¸/ë°°ì†¡í™•ì¸â€™ì—ì„œ â€˜ë°˜í’ˆì‹ ì²­â€™ì„ í•˜ì‹œê³ , ë°˜í’ˆì ˆì°¨ì— ë”°ë¼ ë°˜í’ˆí•˜ì—¬ì£¼ì„¸ìš”!",default,seq,
-205,0-A_0,ì œ ë‹µë³€ì— ë§Œì¡±í•˜ì…¨ë‚˜ìš”? <br>ë³´ë‹¤ ìžì„¸í•œ ìƒë‹´ì„ ì›í•˜ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì„¸ìš”! <br>ì €í¬ ë™ì›ëª° ì „ë¬¸ìƒë‹´ì‚¬ë“¤ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤.,default,END,
-205,0-B,"ê³ ê°ë‹˜ ë‹¨ìˆœ ê³ ê°ë³€ì‹¬ì— ì˜í•œ êµí™˜/ë°˜í’ˆì¸ ê²½ìš° ê³ ê°ë‹˜ê»˜ì„œ ë°˜í’ˆê´€ë ¨ ì™•ë³µë°°ì†¡ë¹„ë¥¼ ë¶€ë‹´í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. <br>ê³ ê°ë³€ì‹¬ì— ì˜í•´ ë°˜í’ˆì‹œ ë°°ì†¡ë¹„ë¥¼ ë³´ë‚´ì§€ ì•Šìœ¼ì‹œë©´ í™˜ë¶ˆì´ ë¶ˆê°€ëŠ¥ í•˜ì˜¤ë‹ˆ,<br>ë°˜ë“œì‹œ ì‚¬ì „ì— ê³ ê°ì„¼í„° ì ‘ìˆ˜ í›„ ë°°ì†¡ë¹„ë¥¼ ë¶€ë‹´í•´ì£¼ì…”ì•¼ í•´ìš”~# ë°˜í’ˆ ì ‘ìˆ˜ ì ˆì°¨ ì—†ì´ ìž„ì˜ë¡œ ë°˜ì†¡í•  ê²½ìš°, ë°˜í’ˆë‚´ìš©ì„ í™•ì¸í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ í™˜ë¶ˆì´ ì§€ì—°ë˜ê±°ë‚˜ í™˜ë¶ˆì´ ë˜ì§€ ì•Šì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br>ê·¸ëŸ¬ë¯€ë¡œ ë°˜ë“œì‹œ ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì ‘ìˆ˜í•˜ì‹œê±°ë‚˜<br> í™ˆíŽ˜ì´ì§€ ìƒë‹¨ì˜ â€˜MY ë™ì›ëª°â€™ì˜ â€˜ì£¼ë¬¸/ë°°ì†¡í™•ì¸â€™ì—ì„œ â€˜ë°˜í’ˆì‹ ì²­â€™ì„ í•˜ì‹œê³ , ë°˜í’ˆì ˆì°¨ì— ë”°ë¼ ë°˜í’ˆí•˜ì—¬ì£¼ì„¸ìš”!",default,END,
-205,0-O,"ìƒí’ˆí•˜ìž, ê³ ê°ë³€ì‹¬ì´ ì•„ë‹Œ ë‹¤ë¥¸ ë‹µë³€ì„ ì£¼ì…¨ë„¤ìš”! <br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì§ˆë¬¸í•´ì£¼ì„¸ìš”!",default,BACK,
-206,0,"1. ë™ì›ëª° ë°°ì†¡ì •ì±…<br>(1) ë™ì›ëª°ì˜ ë°°ì†¡ì€ ë™ì›ëª° ë¬¼ë¥˜ì„¼í„° ë°°ì†¡ìƒí’ˆê³¼ ê° ìž…ì ì—…ì²´ë³„ ë°°ì†¡ì œí’ˆì— ë”°ë¼ ë³„ë„ ì ìš©ë©ë‹ˆë‹¤.<br>ë™ì›ëª° ë¬¼ë¥˜ì„¼í„° ë°°ì†¡ìƒí’ˆì€ 3ë§Œì› ì´ìƒ êµ¬ë§¤ì‹œ ë¬´ë£Œë°°ì†¡, ìž…ì ì—…ì²´ ìƒí’ˆì€ ê° ì—…ì²´ë³„ ë°°ì†¡ì •ì±…ì— ë”°ë¼ ì ìš©ì„ ì›ì¹™ìœ¼ë¡œ í•˜ê³  ìžˆìŠµë‹ˆë‹¤.<br>ì¼ë¶€ ë„ì„œ, ì‚°ê°„ ì§€ì—­ì€ ë°°ì†¡ë¶ˆê°€í•˜ê±°ë‚˜ ë°°ì†¡ê¸°ê°„ì´ ê¸¸ì–´ì§ˆ ìˆ˜ ìžˆìœ¼ë©°, ì¶”ê°€ ë°°ì†¡ë¹„ê°€ ë°œìƒí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ìžì„¸í•œ ì‚¬í•­ì€ ìƒí’ˆ ê°œë³„íŽ˜ì´ì§€ë¥¼ í™•ì¸í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br><br>(2) ë°°ì†¡ í¬ìž¥ ìœ í˜•ì´ ê°œë³„ë°°ì†¡ì¸ ìƒí’ˆì˜ ê²½ìš° ìƒí’ˆì„ í•œë²ˆì— ê°™ì´ ì£¼ë¬¸í•˜ì…”ë„ ë”°ë¡œ ë°°ì†¡ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ë°°ì†¡ì§€ì—° ë“±ì— ë”°ë¥¸ ì†Œë¹„ìž í”¼í•´ì— ëŒ€í•´ì„œëŠ” ì†Œë¹„ìž í”¼í•´ ë³´ìƒê·œì •(ì œì •ê²½ì œë¶€ ê³ ì‹œ)ì„ ì ìš©í•©ë‹ˆë‹¤.",default,seq,ë°°ì†¡ì •ì±…
-206,0_0,"2. ë™ì›ëª° ë°°ì†¡ í¬ìž¥ ìœ í˜•<br>ë™ì›ëª°ì—ì„œëŠ” ì•ˆì „í•˜ê³  ì‹ ì„ í•œ ë°°ì†¡ì„ ìœ„í•˜ì—¬ í¬ìž¥ìœ í˜•ë³„ ë°°ì†¡ì„ ì‹¤ì‹œí•˜ê³  ìžˆìœ¼ë©°, ìƒí’ˆ ê°œë³„íŽ˜ì´ì§€ì—ì„œ ë°°ì†¡ì•„ì´ì½˜ìœ¼ë¡œ í™•ì¸ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br><br>- ë°´ë“œë°°ì†¡ : ìƒì˜¨ ë³´ê´€ë˜ëŠ” ìƒí’ˆë“¤ë¡œ ë°•ìŠ¤í¬ìž¥ë˜ì–´ ë°°ì†¡ë©ë‹ˆë‹¤.<br>\n- ì¿¨ë°´ë“œë°°ì†¡ : ëƒ‰ìž¥/ ëƒ‰ë™ ë³´ê´€ë˜ëŠ” ìƒí’ˆë“¤ë¡œ ì•„ì´ìŠ¤ë°•ìŠ¤ í¬ìž¥ë˜ì–´ ì£¼ë¬¸í•œ ì œí’ˆ ëª¨ë‘ í•©ë°°ì†¡ë©ë‹ˆë‹¤.<br>\n- ë¶€ë¶„í•©ë°°ì†¡ : ê°œë³„ë¡œ ì£¼ë¬¸ì¸ ê²½ìš° ì œì¡°ê³µìž¥ì—ì„œ ì§ì ‘ ë°°ì†¡, ë‹¤ë¥¸ ì œí’ˆê³¼ í•¨ê»˜ ì£¼ë¬¸ì‹œ í•©ë°°ì†¡ë©ë‹ˆë‹¤.<br>\n- ì—…ì²´ë°°ì†¡ : ì—…ì²´ì—ì„œ ë°°ì†¡ë˜ëŠ” ì œí’ˆë“¤ë¡œ ìž…ì ì—…ì²´ì—ì„œ ì§ì ‘ ë°°ì†¡ë©ë‹ˆë‹¤. (ì—…ì²´ë³„ íƒë°°ì‚¬ê°€ ë‹¤ë¥¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.)<br> \n- ê°œë³„ë°°ì†¡ : ì œì¡°ê³µìž¥ì—ì„œ ì§ì ‘ ë°°ì†¡ë˜ëŠ” ì œí’ˆë“¤ë¡œ ê°œë³„ë¡œ ë°°ì†¡ë©ë‹ˆë‹¤.\n<br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-207,0,"ê³ ê°ë‹˜ ì¼ë¶€ ë„ì„œ, ì‚°ê°„ ì§€ì—­ì€ ë°°ì†¡ë¶ˆê°€í•˜ê±°ë‚˜ ë°°ì†¡ê¸°ê°„ì´ ê¸¸ì–´ì§ˆ ìˆ˜ ìžˆìœ¼ë©° ì¶”ê°€ ë°°ì†¡ë¹„ê°€ ë°œìƒí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>ë„ì„œì‚°ê°„ ì§€ì—­ì˜ ê²½ìš°, ë°°ì†¡ì§€ì—°ìœ¼ë¡œ ì¸í•œ í´ë ˆìž„ ì²˜ë¦¬ê°€ ë¶ˆê°€í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.",default,seq,ë„ì„œì‚°ê°„ì§€ì—­ë°°ì†¡
-207,0_0,"ì €ì˜ ë‹µë³€ì— ë§Œì¡±í•˜ì…¨ë‚˜ìš”?<br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-208,0,"ê³ ê°ë‹˜ ë™ì›ëª°ì—ì„œ ë¹„íšŒì›ìœ¼ë¡œ ì£¼ë¬¸í•˜ì‹œë”ë¼ë„ ì£¼ë¬¸ë²ˆí˜¸ë¥¼ ì•Œê³  ê³„ì‹œëŠ” ê²½ìš° í™ˆíŽ˜ì´ì§€ ìƒë‹¨ì˜ ì£¼ë¬¸ë°°ì†¡ì¡°íšŒë¥¼ í´ë¦­í•˜ì‹œê±°ë‚˜ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë°°ì†¡í™•ì¸ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(""https://www.dongwonmall.com/secure/findOrder.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ë¹„íšŒì› ì£¼ë¬¸/ë°°ì†¡ ì¡°íšŒí•˜ê¸°</button></a>",default,seq,ë¹„íšŒì›ë°°ì†¡í™•ì¸
-208,0_0,"í•˜ì§€ë§Œ ìƒì„¸í•œ ì£¼ë¬¸ê´€ë¦¬ ë° ê°ì¢… íšŒì›í˜œíƒì„ ë°›ìœ¼ì‹œë ¤ë©´ íšŒì›ê°€ìž…ì„ í•˜ì‹œëŠ” íŽ¸ì´ ë” íŽ¸ë¦¬í•©ë‹ˆë‹¤.<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ íšŒì›ê°€ìž… íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><a href=\""javascript:window.parent.postMessage('https://www.dongwonmall.com/member/join/step1.do','*')\""><button class=\""ext_btn\"">ë™ì›ëª° íšŒì›ê°€ìž… í•˜ëŸ¬ê°€ê¸°</button></a>",default,END,
-209,0,"ê³ ê°ë‹˜ ë°´ë“œ/ì¿¨ë°´ë“œ ìƒí’ˆì€<br><font style=""color:red"">3ë§Œ ì› ì´ìƒ ì£¼ë¬¸ ì‹œ ë¬´ë£Œë°°ì†¡</font>ë©ë‹ˆë‹¤.",default,seq,ë¬´ë£Œë°°ì†¡ì•ˆë‚´
-209,0_0,"ì™¸ë¶€ ìž…ì ì—…ì²´ ë° ê°œë³„ë°°ì†¡ ìƒí’ˆì€ ìž…ì ì—…ì²´ë³„ ë³„ë„ ì •ì±…ì— ë”°ë¥´ë©°, 3ë§Œ ì› ë¯¸ë§Œì´ë¼ë„<br>ì¼ë¶€ ìƒí’ˆì€ ë¬´ë£Œë°°ì†¡ ë˜ì˜¤ë‹ˆ ìžì„¸í•œ ë‚´ìš©ì€ ê°œë³„ ìƒí’ˆíŽ˜ì´ì§€ ë°°ì†¡ëž€ì„ ì°¸ì¡°í•˜ì—¬ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.",default,END,
-210,0,"ê³ ê°ë‹˜ ì£„ì†¡í•˜ì§€ë§Œ í˜„ìž¬ ë‹¹ì‚¬ì—ì„œ ì£¼ë¬¸í•˜ëŠ” ìƒí’ˆì— ëŒ€í•´ì„œëŠ” ì§€ì •ì¼ ë°°ì†¡ì´ ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.<br>ì¼ë¶€ ì—…ì²´ ë°°ì†¡ ìƒí’ˆì˜ ê²½ìš° ê°€ëŠ¥í•œ ê²½ìš°ë„ ìžˆì‚¬ì˜¤ë‹ˆ ê³ ê°ì„¼í„° 1588-3745ë¡œ ë¬¸ì˜ì£¼ì‹œê±°ë‚˜,<br>ë™ì›ëª° í™ˆíŽ˜ì´ì§€ MYë™ì›ëª° ë˜ëŠ” ê³ ê°ë§Œì¡±ì„¼í„° - 1:1ë§žì¶¤ìƒë‹´ ê²Œì‹œíŒì— ì ‘ìˆ˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤.",default,END,ë°°ì†¡ì¼ì§€ì •ë¶ˆê°€ì•ˆë‚´
-211,0,"1. í‰ê· ë°°ì†¡ê¸°ê°„ì€ ê²°ì œì¼ë¡œë¶€í„° ì˜ì—…ì¼ ê¸°ì¤€ìœ¼ë¡œ 2~3ì¼(í† ìš”ì¼, ê³µíœ´ì¼ ì œì™¸) ì •ë„ ì†Œìš”ë˜ë©° ì—…ì²´ë³„ ìž¬ê³ ìƒí™©, íƒë°°ì‚¬ ì‚¬ì •ì— ë”°ë¼ ë‹¤ì†Œ ì§€ì—°ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><br>â˜…ì›”~ëª©ìš”ì¼ ì£¼ë¬¸â˜…<br>- 12ì‹œ ì´ì „ ì£¼ë¬¸ â†’ ë‹¹ì¼ ì¶œê³  + 1ì¼ ë°°ì†¡<br>- 12ì‹œ ì´í›„ ì£¼ë¬¸ â†’ ìµì¼ ì¶œê³  + 1ì¼ ë°°ì†¡<br><br>â˜…ê¸ˆìš”ì¼ ì£¼ë¬¸â˜…<br>- 12ì‹œ ì´ì „ ì£¼ë¬¸ â†’ ë‹¹ì¼ ì¶œê³  + 1ì¼ ë°°ì†¡<br>- 12ì‹œ ì´í›„ ì£¼ë¬¸ â†’ ì›”ìš”ì¼ ì¶œê³  í™”ìš”ì¼ ë°°ì†¡<br><br>â˜…í† ìš”ì¼/ì¼ìš”ì¼/ê³µíœ´ì¼ ì£¼ë¬¸â˜…<br>- í† ìš”ì¼/ì¼ìš”ì¼ â†’ ì›”ìš”ì¼ ì¶œê³  í™”ìš”ì¼ ë°°ì†¡<br>- ê³µíœ´ì¼ OR ë¹„ì˜ì—…ì¼ â†’ ìµì¼ì¶œê³  + 2ì¼ ë°°ì†¡<br><br>â€» ê¹€ì¹˜(ëƒ‰ìž¥) ë“± ì§ì†¡ìƒí’ˆê³¼ ë°´ë“œë°°ì†¡(ìƒì˜¨)ì„ ë™ì‹œì— ì£¼ë¬¸í•  ê²½ìš°ëŠ” ê°ê° ê°œë³„ ë°°ì†¡ë©ë‹ˆë‹¤.",default,seq,ë°°ì†¡ê¸°ê°„ì•ˆë‚´
-211,0_0,"2. ë„ì„œì§€ì—­ ë° ì‚°ê°„ì§€ì—­ì˜ ê²½ìš° í‰ê·  ë°°ì†¡ì¼ë³´ë‹¤ 1~2ì¼ì •ë„ ë” ì†Œìš”ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. (í† ìš”ì¼, ê³µíœ´ì¼ ì œì™¸)<br><br>3. ê²°ì œìˆ˜ë‹¨ì´ ì‹¤ì‹œê°„ê³„ì¢Œì´ì²´/ê°€ìƒê³„ì¢Œ/ë¬´í†µìž¥ìž…ê¸ˆì¸ ê²½ìš° ìž…ê¸ˆí™•ì¸ì´ ëœ í›„ ìƒí’ˆë°œì†¡ì„ ì§„í–‰í•˜ë¯€ë¡œ ë°°ì†¡ ê¸°ê°„ì´ ë‹¤ì†Œ ëŠ¦ì–´ì§ˆ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br><br>ì¶”ê°€ ë¬¸ì˜ì‚¬í•­ì´ ìžˆìœ¼ì‹¤ ê²½ìš° ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745 ë˜ëŠ” 1:1 ë§žì¶¤ìƒë‹´ì— ë¬¸ì˜í•˜ì‹œë©´ ë§žì¶¤ ë‹µë³€ì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ê³ ê°ì„¼í„° - 1:1 ë§žì¶¤ìƒë‹´</button></a>",default,END,
-212,0,ê³ ê°ë‹˜ ë™ì›ëª°ì˜ ìƒí’ˆ ë°°ì†¡ì€ í•©ë°°ì†¡ì¸ ìƒí’ˆê³¼ ê°œë³„ë°°ì†¡ì¸ ìƒí’ˆìœ¼ë¡œ ë‚˜ëˆ„ì–´ì ¸ ìžˆì–´ ì£¼ë¬¸í•˜ì‹  ìƒí’ˆì˜ ë°°ì†¡ìœ í˜•ì— ë”°ë¼ ë°°ì†¡ë©ë‹ˆë‹¤.<br>ë˜í•œ ìƒí’ˆì˜ ìž¬ê³ ìƒíƒœì— ë”°ë¼ ë°°ì†¡ì´ ì§€ì—°ë  ê²½ìš°ê°€ ìžˆì‚¬ì˜¤ë‹ˆ ì´ì  ì–‘í•´í•´ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.,default,seq,ë°°ì†¡ëˆ„ë½
-212,0_0,"ë¯¸ë°°ì†¡ ë˜ëŠ” ë°°ì†¡ì§€ì—° ìƒí’ˆì˜ ì§„í–‰í˜„í™©ì€ ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œê±°ë‚˜ í™ˆíŽ˜ì´ì§€ MYë™ì›ëª°-ì£¼ë¬¸ë°°ì†¡ì¡°íšŒì—ì„œ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. <br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/mypage/myorder/myOrderList.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ì£¼ë¬¸/ë°°ì†¡ì¡°íšŒ ë°”ë¡œê°€ê¸°</button></a>",default,END,
-213,0,"ê³ ê°ë‹˜ê»˜ì„œ ë°›ìœ¼ì‹  SMS ë¬¸ìžëŠ” ë™ì›ëª°ì—ì„œ íƒë°°ì‚¬ë¡œ ìƒí’ˆì„ ì¸ë„í•˜ëŠ” ì‹œì ì— ì‹œìŠ¤í…œ ë“±ë¡ ì‹œ ìžë™ ë°œì†¡ë˜ëŠ” ìžë™ì•ˆë‚´ ë©”ì‹œì§€ìž…ë‹ˆë‹¤.<br>ì‹œìŠ¤í…œìƒì˜ ë“±ë¡ì´ ì§€ì—°ë˜ì–´ ìƒí’ˆ ìˆ˜ë ¹ í›„ì— SMS ë¬¸ìžë¥¼ ë°œì†¡í•˜ê²Œ ë˜ì—ˆìŠµë‹ˆë‹¤.<br>ìƒí’ˆì´ ì´ì¤‘ ë°°ì†¡ë˜ëŠ” ê²ƒì€ ì•„ë‹ˆë©°, ê³ ê°ë‹˜ê»˜ ë¶ˆíŽ¸ì„ ë“œë ¤ ì£„ì†¡í•©ë‹ˆë‹¤.<br>ë” ë‚˜ì€ ë™ì›ëª°ì´ ë˜ê² ìŠµë‹ˆë‹¤.",default,END,ìƒí’ˆìˆ˜ë ¹í›„ë°œì†¡ì™„ë£Œë¬¸ìž
-214,0,ê³ ê°ë‹˜ ìƒí’ˆì— ëŒ€í•´ ë¬¸ì˜ì£¼ì…¨ë‚˜ìš”?<br>ì£„ì†¡í•˜ì§€ë§Œ ì•„ì§ì€ ìƒí’ˆê´€ë ¨ ìƒë‹´ ì„œë¹„ìŠ¤ê°€ ì–´ë µìŠµë‹ˆë‹¤.,default,seq,ìƒí’ˆë¬¸ì˜
-214,0_0,"í•´ë‹¹ ìƒí’ˆíŽ˜ì´ì§€ì˜ ìƒí’ˆQ&A ë˜ëŠ” 1:1ë§žì¶¤ìƒë‹´ ê²Œì‹œíŒì— ë¬¸ì˜ê¸€ì„ ë‚¨ê²¨ì£¼ì‹œê±°ë‚˜, ë™ì›ëª° ê³ ê°ì„¼í„° 1588-3745ë¡œ ì—°ë½ì£¼ì‹œë©´ ì „ë¬¸ ìƒë‹´ì›ì´ ë„ì™€ë“œë¦¬ê² ìŠµë‹ˆë‹¤!",default,END,
-215,0,"ê³ ê°ë‹˜ ëŒ€ëŸ‰êµ¬ë§¤ ì›í•˜ì‹œë‚˜ìš”?<br>ë™ì›ì„ ë¬¼ì„¸íŠ¸ <font style=""color:red"">100ì„¸íŠ¸</font> ì´ìƒ êµ¬ë§¤ ì‹œ, ë³„ë„ì˜ ê²¬ì ì„œë¹„ìŠ¤ë¥¼ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<br>íŠ¹ë³„í•œ ê°€ê²©ì œì•ˆ! ëŒ€ëŸ‰êµ¬ë§¤ ìƒë‹´ ë°›ì•„ë³´ì„¸ìš”~",default,seq,ë™ì›ì„ ë¬¼ì„¸íŠ¸íŠ¹íŒ
-215,0_0,"ë™ì› ì„ ë¬¼ì„¸íŠ¸ ëŒ€ëŸ‰êµ¬ë§¤ ìƒë‹´ì€<br>02-589-3168/3949<br>ë¡œ ë¬¸ì˜í•˜ì‹œê±°ë‚˜ ì˜¨ë¼ì¸ ìƒë‹´ ê²Œì‹œíŒìœ¼ë¡œ ë¬¸ì˜í•˜ì‹œë©´ ë©ë‹ˆë‹¤!<br> ì•„ëž˜ì˜ 'ì˜¨ë¼ì¸ ìƒë‹´í•˜ê¸°'ë¥¼ ëˆ„ë¥´ì‹œë©´ í•´ë‹¹ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<br><br> <a href=\""javascript:window.parent.postMessage('http://www.dongwonmall.com/boardCooperation/new_biz_order_giftset.do,'*')\"">'ì˜¨ë¼ì¸ ìƒë‹´í•˜ê¸°'</a>",default,END,
-216,0,"ê³ ê°ë‹˜ 1ë§Œì› ë¯¸ë§Œ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ìž…ë‹ˆë‹¤!<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ í–‰ì‚¬ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList1"",""*"")'><button class=""ext_btn"" type=""button"">1ë§Œì› ë¯¸ë§Œ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ ë³´ëŸ¬ ê°€ê¸°!</button>",default,END,price_present_b1
-217,0,ê³ ê°ë‹˜!<br>åå“ ê·¸ íŠ¹ë³„í•œ ê°€ì¹˜ë¥¼ ì•„ì‹œëŠ” ë¶„ì„ ìœ„í•´ ë§Œë“ <br>ì–‘ë°˜ ëª…í’ˆê¹€ì¹˜ ìƒí’ˆê¶Œ ë“±ë¡í•˜ì‹œë ¤êµ¬ìš”?<br><br>ìƒí’ˆê¶Œ ë“±ë¡ì€ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ë§¨í•˜ë‹¨ ìš°ì¸¡<br>ì–‘ë°˜ ëª…í’ˆ ê¹€ì¹˜ ìƒí’ˆê¶Œ ë“±ë¡ì„ í´ë¦­í•˜ì‹œë©´<br>í•´ë‹¹ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!,default,seq,ì–‘ë°˜ëª…í’ˆê¹€ì¹˜ìƒí’ˆê¶Œë“±ë¡
-217,0_0,"ë“±ë¡ íŽ˜ì´ì§€ë¡œ ë°”ë¡œ ì´ë™ì„ ì›í•˜ì‹œëŠ” ë¶„ê»˜ì„œëŠ” ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•´ì£¼ì„¸ìš”!<br>í•´ë‹¹ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤~<br><button class=\""ext_btn\""><a href=\""javascript:window.parent.postMessage('http://www.dongwonmall.com/kimchi/order/form.do','*')\"">ì–‘ë°˜ ëª…í’ˆ ê¹€ì¹˜ìƒí’ˆê¶Œ ë“±ë¡í•˜ê¸°</a></button>",default,END,
-218,0,"ê³ ê°ë‹˜!<br>ìž„ì§ì› ë³µì§€í¬ì¸íŠ¸ë¥¼ ë°›ì§€ ëª»í•˜ì…¨ë‚˜ìš”?<br>ê°€ìž… í›„ ìž„ì§ì› ì‚¬ë²ˆê¹Œì§€ ì¸ì¦ ì™„ë£Œí•˜ì…¨ë‚˜ìš”?<button class=""dial_btn f"">ì¸ì¦ ì™„ë£Œí–ˆì–´ìš”</button>
-<button class=""dial_btn"">ì•„ì§ ì¸ì¦ ëª»í–ˆì–´ìš”</button>",default,ABCD,ìž„ì§ì›ë³µì§€í¬ì¸íŠ¸ë¯¸ì§€ê¸‰
-218,0-A,ê³ ê°ë‹˜ ë¶ˆíŽ¸ì„ ë“œë ¤ ì£„ì†¡í•©ë‹ˆë‹¤.<br>F&B ì˜¨ë¼ì¸ì‚¬ì—…ë¶€ ë³µì§€í¬ì¸íŠ¸ ë‹´ë‹¹ìžì—ê²Œ ë¬¸ì˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.,default,END,
-218,0-B,ìž„ì§ì› ì‚¬ë²ˆê¹Œì§€ ì¸ì¦ì„ ë§ˆì¹˜ì…”ì•¼ ë³µì§€ í¬ì¸íŠ¸ê°€ ì§€ê¸‰ë©ë‹ˆë‹¤.,default,seq,
-218,0-B_0,ê³ ê°ë‹˜ ìž„ì§ì› ì¸ì¦ì€ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ìƒë‹¨ 'MYë™ì›ëª°'<br>í´ë¦­í•˜ì‹  í›„ ì¢Œì¸¡ ë©”ë‰´ í•˜ë‹¨ì˜ 'íšŒì›ì •ë³´ ê´€ë¦¬' â†’ 'ê°œì¸ì •ë³´ë³€ê²½' ì„ í´ë¦­í•˜ì‹œë©´ ë©ë‹ˆë‹¤.,default,seq,
-218,0-B_1,"ê°œì¸ì •ë³´ë³€ê²½' íŽ˜ì´ì§€ ì´ë™ í›„<br>ë§¨ í•˜ë‹¨ 'ë™ì› ìž„ì§ì›ì •ë³´ ìž…ë ¥' ëž€ì˜ ì†Œì†ì‚¬ë¥¼ ì„ íƒí•˜ì‹œê³ , ì‚¬ë²ˆê¹Œì§€ ìž…ë ¥í•˜ì‹  í›„ [ìž„ì§ì› ì¸ì¦] ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ì™„ë£Œë©ë‹ˆë‹¤.",default,END,
-219,0,"ê³ ê°ë‹˜~ ì–´ë–¤ ì‹ìš©ìœ ë¥¼ ì‚¬ìš©í•´ë„ íŠ€ê¹€ì„ í•  ë•Œ ê±°í’ˆì´ ë‚˜ê³  íŠ€ëŠ” í˜„ìƒì´ ë‚˜íƒ€ë‚  ìˆ˜ ìžˆì–´ìš”.<br>ì—¬ê¸°ì—”
- ì—¬ëŸ¬ê°€ì§€ ì´ìœ ê°€ ìžˆëŠ”ë°ìš”, ê·¸ ì¤‘ ëŒ€í‘œì ì¸ ëª‡ ê°€ì§€ ì›ì¸ í‘¸ë””ê°€ ì†Œê°œí•´ë“œë¦´ê²Œìš”~!",default,seq,íŠ€ê¹€ê±°í’ˆíŠ€ëŠ”ì´ìœ 
-219,0_0,"1. ê¸°ë¦„ì„ ìž¥ì‹œê°„ ì‚¬ìš©í•˜ì—¬ ì—´í™”ë˜ê³ , ì°Œêº¼ê¸°ê°€ ë§Žê³ , ê¸°ë¦„ì— ìˆ˜ë¶„í•¨ëŸ‰ì´ ë§Žì„ ë•Œ<br>2. íŠ€ê¹€ ì‹œ ê¸°ë¦„ì˜ ì˜¨ë„ê°€ ë†’ì„ ë•Œ (170~180â„ƒ ì´ìƒì¼ ê²½ìš°)<br>3. ë¬¼ê¸°ë¥¼ ë§Žì´ ê°€ì§„ ìŒì‹ë¬¼ì„ íŠ€ê¸¸ ë•Œ ë“±ì˜ ìƒí™©ì—ì„œ ê±°í’ˆì´ ë‚˜ê³  íŠ€ëŠ” í˜„ìƒì´ ë‚˜íƒ€ë‚œë‹µë‹ˆë‹¤!",default,END,
-220,0,"ë”¸ê¸°ì¨ˆì´ë‚˜ í¬ë„ë‹¹ì— í•¨ìœ ë˜ì–´ ìžˆëŠ” ë¶‰ì€ ìƒ‰ì„ ë ëŠ” ì•ˆí† ì‹œì•„ë‹Œ ìƒ‰ì†ŒëŠ” ì˜¨ë„, ê´‘ì„  ë“±ì— ì˜í•´ í‡´ìƒ‰í•˜ê²Œ ë©ë‹ˆë‹¤.<br>ì˜¨ë„ê°€ ë†’ì€ ê´‘ì„ ì˜ ì–‘ì´ ë§Žì„ìˆ˜ë¡ í‡´ìƒ‰ì†ë„ê°€ ë¹ ë¥´ë¯€ë¡œ ê°€ëŠ¥í•˜ë©´ ì €ì˜¨ ìœ í†µ ë° ë³´ê´€í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.",default,END,ì¨ˆìƒ‰ë³€í•˜ëŠ”ì´ìœ 
-221,0,"ê³ ê°ë‹˜~ ë™ì›ëª° ì‹ ê·œíšŒì›ì˜ ê²½ìš°<br>ì‡¼í•‘ì§€ì›ê¸ˆ 2000ì›ê³¼ ë™ì›ìƒí’ˆ 10% í• ì¸í˜œíƒì„ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìœ¼ë©°, <font style=""color:red"">Myë™ì›ëª° - íšŒì›í˜œíƒ</font> íŽ˜ì´ì§€ì—ì„œ ì§ì ‘ ë‹¤ìš´ë¡œë“œ ê°€ëŠ¥í•©ë‹ˆë‹¤!<br>ì‹ ê·œíšŒì›ë‹˜ê»˜ì„œëŠ” ì•„ëž˜ ë²„íŠ¼ í´ë¦­í•˜ì…”ì„œ í˜œíƒë°›ì•„ê°€ì„¸ìš”~<a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/benefit/member.do"",""*"")'>
-<button class=""ext_btn"" type=""button"">ì‹ ê·œ í˜œíƒ ë°›ìœ¼ëŸ¬ ê°€ê¸°</button></a>",default,END,ì‹ ê·œê°€ìž…í˜œíƒë‹¤ìš´
-222,0,"ê³ ê°ë‹˜! ë¡œê·¸ì¸ ì›í•˜ì‹œë‚˜ìš”?<br>ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ ë¡œê·¸ì¸ ì°½ìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.
-<button class=""ext_btn"" type=""button"">ë¡œê·¸ì¸ í•˜ëŸ¬ê°€ê¸°!</button></a>",default,seq,ë¡œê·¸ì¸ë°©ë²•
-223,0,"ê³ ê°ë‹˜ <font style=""color:red"">í”„ë¦¬ë¯¸ì—„</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 30ë§Œì› ì´ìƒ ë˜ëŠ” ì£¼ë¬¸ê±´ìˆ˜ 12íšŒ ì´ìƒì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,seq,í”„ë¦¬ë¯¸ì—„ë“±ê¸‰íšŒì›í˜œíƒ
-223,0_0,"<font style=\""color:red\"">í”„ë¦¬ë¯¸ì—„</font> ë“±ê¸‰ íšŒì›ë‹˜ë§Œì„ ìœ„í•œ í˜œíƒìœ¼ë¡œ<br>1) ë°´ë“œ/ì¿¨ë°´ë“œ ìž¥ë°”êµ¬ë‹ˆ 3ì²œì› í• ì¸ì¿ í° 2ìž¥<br>2) ë™ì›ì œí’ˆ ìž¥ë°”êµ¬ë‹ˆ 15% í• ì¸ì¿ í° 2ìž¥<br>3) ë¬´ë£Œë°°ì†¡ì¿ í° 1ìž¥<br> ì´ 5ìž¥ì˜ ì¿ í° í˜œíƒì„ ë§¤ì›” ë“œë¦½ë‹ˆë‹¤â™¡",default,seq,
-223,0_1,"ë”ìš± ìžì„¸í•œ ì‚¬í•­ì„ ì›í•˜ì‹œë©´ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”!<br> ë™ì›ëª° íšŒì›í˜œíƒì— ëŒ€í•œ ìƒì„¸ ì•ˆë‚´íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/member.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë“±ê¸‰ë³„ íšŒì›í˜œíƒ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-224,0,"ê³ ê°ë‹˜ <font style=""color:red"">í”„ë¦¬ë¯¸ì—„</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 30ë§Œì› ì´ìƒ ë˜ëŠ” ì£¼ë¬¸ê±´ìˆ˜ 12íšŒ ì´ìƒì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,END,í”„ë¦¬ë¯¸ì—„ë“±ê¸‰ê¸°ì¤€ì•ˆë‚´
-225,0,"ê³ ê°ë‹˜ <font style=""color:black"">íŒ¨ë°€ë¦¬</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 3ë§Œì› ë¯¸ë§Œì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,seq,íŒ¨ë°€ë¦¬ë“±ê¸‰íšŒì›í˜œíƒ
-225,0_0,"<font style=\""color:black\"">íŒ¨ë°€ë¦¬</font> ë“±ê¸‰ íšŒì›ë‹˜ë§Œì„ ìœ„í•œ í˜œíƒìœ¼ë¡œ ë°´ë“œ/ì¿¨ë°´ë“œ ìž¥ë°”êµ¬ë‹ˆ 2ì²œì› í• ì¸ì¿ í° 1ìž¥ì„ ë§¤ì›” ë“œë¦½ë‹ˆë‹¤â™¡",default,seq,
-225,0_1,"ë”ìš± ìžì„¸í•œ ì‚¬í•­ì„ ì›í•˜ì‹œë©´ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”!<br> ë™ì›ëª° íšŒì›í˜œíƒì— ëŒ€í•œ ìƒì„¸ ì•ˆë‚´íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/member.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë“±ê¸‰ë³„ íšŒì›í˜œíƒ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-226,0,ê³ ê°ë‹˜ ë¶ˆíŽ¸ì„ ë“œë ¤ ì£„ì†¡í•©ë‹ˆë‹¤.<br>F&B ì˜¨ë¼ì¸ì‚¬ì—…ë¶€ ë³µì§€í¬ì¸íŠ¸ ë‹´ë‹¹ìžì—ê²Œ ë¬¸ì˜ ë¶€íƒë“œë¦½ë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤.,default,END,ì¸ì¦ì™„ë£Œí–ˆì–´ìš”
-227,0,ê³ ê°ë‹˜! ë™ì›ëª° ì œíœ´ íƒë°°ì‚¬ëŠ” CJëŒ€í•œí†µìš´ìž…ë‹ˆë‹¤.,default,END,íƒë°°ì‚¬ë¬¸ì˜
-228,0,"ê³ ê°ë‹˜~ ì°¸ì¹˜í†µì¡°ë¦¼ì˜ ì•¡ìƒì€ ì¢…ë¥˜ì— ë”°ë¼ í¬ë„ì”¨ìœ , ì¹´ë†€ë¼ìœ , ë©´ì‹¤ìœ , í•´ë°”ë¼ê¸°ìœ , ì˜¬ë¦¬ë¸Œìœ  ë“±ì˜ ì‹ë¬¼ì„± ê¸°ë¦„ê³¼ ì•¼ì±„ì¦™(ë‹¹ê·¼, ì–‘íŒŒ ë“±ì˜ ì•¡ì¦™), ì •ì œìˆ˜ë¡œ ì´ë£¨ì–´ì ¸ ìžˆìŠµë‹ˆë‹¤!<br>ìš”ë¦¬ì— ì°¸ì¹˜ìœ¡ê³¼ í•¨ê»˜ ë„£ì–´ì„œ ë“œì‹œë©´ ë”ìš± ë§›ìžˆë‹µë‹ˆë‹¤ ^^",default,END,ì°¸ì¹˜í†µì¡°ë¦¼ê¸°ë¦„ì„­ì·¨
-229,0,"ê³ ê°ë‹˜ <font style=""color:blue"">VIP</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 10ë§Œì› ì´ìƒ 30ë§Œì› ë¯¸ë§Œì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,END,VIPë“±ê¸‰ê¸°ì¤€ì•ˆë‚´
-230,0,ê³ ê°ë‹˜ ëŒ€ëŸ‰êµ¬ë§¤ ì›í•˜ì‹œë‚˜ìš”?<br> GNC ì„ ë¬¼ì„¸íŠ¸ ëŒ€ëŸ‰êµ¬ë§¤ ìƒë‹´ì€<br> 02-589-3944 ë¡œ ë¬¸ì˜í•´ì£¼ì„¸ìš”<br> ê°ì‚¬í•©ë‹ˆë‹¤!,default,END,GNCì„ ë¬¼ì„¸íŠ¸íŠ¹íŒ
-231,0,ê³ ê°ë‹˜! ì–‘ë°˜ ëª…í’ˆê¹€ì¹˜ ìƒí’ˆê¶Œì€<br>ë™ì› ì–‘ë°˜ê¹€ì¹˜ê°€ ì¡°ìƒì˜ ì§€í˜œë¥¼ ë˜ì‚´ë ¤ ê¹Šì´ì™€ í’ˆê²©ì„ ë”í•´ ìµœìƒê¸‰ ìž¬ë£Œë¡œ ë§Œë“  í”„ë¦¬ë¯¸ì—„ ê¹€ì¹˜ ìƒí’ˆê¶Œìž…ë‹ˆë‹¤.<br><br>ì–‘ë°˜ ëª…í’ˆê¹€ì¹˜ ìƒí’ˆê¶Œì„ ë¨¼ì € ë“±ë¡í•˜ì‹  í›„ ëª…í’ˆê¹€ì¹˜ë¥¼ ì£¼ë¬¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤!,default,seq,ì–‘ë°˜ëª…í’ˆê¹€ì¹˜ìƒí’ˆê¶Œì•ˆë‚´
-231,0_0,"ë“±ë¡ íŽ˜ì´ì§€ë¡œ ë°”ë¡œ ì´ë™ì„ ì›í•˜ì‹œëŠ” ë¶„ê»˜ì„œëŠ” ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•´ì£¼ì„¸ìš”!<br>í•´ë‹¹ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤~<br><button class=\""ext_btn\""><a href=\""javascript:window.parent.postMessage('http://www.dongwonmall.com/kimchi/order/form.do','*')\"">ì–‘ë°˜ ëª…í’ˆ ê¹€ì¹˜ìƒí’ˆê¶Œ ë“±ë¡í•˜ê¸°</a></button>",default,END,
-232,0,ìž„ì§ì› ì‚¬ë²ˆê¹Œì§€ ì¸ì¦ì„ ë§ˆì¹˜ì…”ì•¼ ë³µì§€ í¬ì¸íŠ¸ê°€ ì§€ê¸‰ë©ë‹ˆë‹¤.,default,seq,ì•„ì§ì¸ì¦ëª»í–ˆì–´ìš”
-232,0_0,ê³ ê°ë‹˜ ìž„ì§ì› ì¸ì¦ì€ ë™ì›ëª° í™ˆíŽ˜ì´ì§€ ìƒë‹¨ 'MYë™ì›ëª°'<br>í´ë¦­í•˜ì‹  í›„ ì¢Œì¸¡ ë©”ë‰´ í•˜ë‹¨ì˜ 'íšŒì›ì •ë³´ ê´€ë¦¬' â†’ 'ê°œì¸ì •ë³´ë³€ê²½' ì„ í´ë¦­í•˜ì‹œë©´ ë©ë‹ˆë‹¤.,default,seq,
-232,0_1,"ê°œì¸ì •ë³´ë³€ê²½' íŽ˜ì´ì§€ ì´ë™ í›„<br>ë§¨ í•˜ë‹¨ 'ë™ì› ìž„ì§ì›ì •ë³´ ìž…ë ¥' ëž€ì˜ ì†Œì†ì‚¬ë¥¼ ì„ íƒí•˜ì‹œê³ , ì‚¬ë²ˆê¹Œì§€ ìž…ë ¥í•˜ì‹  í›„ [ìž„ì§ì› ì¸ì¦] ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ ì™„ë£Œë©ë‹ˆë‹¤.",default,END,
-233,0,"ê³ ê°ë‹˜~ ê±±ì •ë§ˆì„¸ìš”!<br>í˜„ìž¬ ìŽˆì¿¡ì— ì‚¬ìš©ì¤‘ì¸ ìš©ê¸°ëŠ” ì‹í’ˆìœ„ìƒë²•ìƒ ì í•©í•œ ìš©ê¸°ë¡œ, ì‹í’ˆì— ì¼ë°˜ì ìœ¼ë¡œ ë§Žì´ ì‚¬ìš©ë˜ëŠ” í´ë¦¬í”„ë¡œí•„ë Œ(PP) ìž¬ì§ˆì„ ì‚¬ìš©í•˜ê³  ìžˆìŠµë‹ˆë‹¤.",default,seq,ìŽˆì¿¡ìš©ê¸°í™˜ê²½í˜¸ë¥´ëª¬
-233,0_0,ë”ë¶ˆì–´ ì£¼ê¸°ì ìœ¼ë¡œ ì•ˆì „ì„± ë¶„ì„ì„ í•˜ê³  ìžˆì§€ìš”<br>í™˜ê²½ í˜¸ë¥´ëª¬ì´ ê²€ì¶œë˜ì§€ ì•Šìœ¼ë‹ˆ ê±±ì •ë§ê³  ìŽˆì¿¡ ë§Žì´~ ì‚¬ëž‘í•´ì£¼ì„¸ìš”â™¡,default,END,
-234,0,ê³ ê°ë‹˜~ ë¦¬ì±”ì„ ê°œë´‰í•˜ì˜€ëŠ”ë°ë„ ë‚´ìš©ë¬¼ì´ ìž˜ ë‚˜ì˜¤ì§€ ì•ŠëŠ” ê²½ìš°ê°€ ìžˆìœ¼ì‹œì£ ?<br>ë¼ì§€ê³ ê¸°ì˜ ê¸°ë¦„ì„±ë¶„ì´ ìº” ì•ˆìª½ ë°”ë‹¥ ë©´ê³¼ ë¶™ì–´ìžˆëŠ” ê²½ìš°ì— ê·¸ëŸ´ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.,default,seq,ë¦¬ì±”ë‚´ìš©ë¬¼ì‰½ê²Œêº¼ë‚´ëŠ”ë°©ë²•
-234,0_0,ë¯¸ì§€ê·¼í•œ ë¬¼ì— ìž ê¹ ë„£ì–´ë‘” í›„ êº¼ë‚´ì‹œê±°ë‚˜ ìº”ì˜ ëŒ€ê°ì„  ëª¨ì„œë¦¬ë¶€ë¶„ì„ íž˜ìœ¼ë¡œ ì‚´ì§ ëˆŒëŸ¬ì£¼ì‹  í›„ êº¼ë‚´ì‹œë©´ ë³´ë‹¤ ì‰½ê²Œ ì´ìš©í•˜ì‹¤ ìˆ˜ ìžˆë‹µë‹ˆë‹¤~,default,END,
-235,0,"ê³ ê°ë‹˜ <font style=""color:gold"">ê³¨ë“œ</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 3ë§Œì› ì´ìƒ 10ë§Œì› ë¯¸ë§Œì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,END,ê³¨ë“œë“±ê¸‰ê¸°ì¤€ì•ˆë‚´
-236,0,"ê³ ê°ë‹˜ <font style=""color:blue"">VIP</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 10ë§Œì› ì´ìƒ 30ë§Œì› ë¯¸ë§Œì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,seq,VIPë“±ê¸‰íšŒì›í˜œíƒ
-236,0_0,"<font style=\""color:blue\"">VIP</font> ë“±ê¸‰ íšŒì›ë‹˜ë§Œì„ ìœ„í•œ í˜œíƒìœ¼ë¡œ<br>1) ë°´ë“œ/ì¿¨ë°´ë“œ ìž¥ë°”êµ¬ë‹ˆ 2ì²œì› í• ì¸ì¿ í° 2ìž¥<br>2) ë™ì›ì œí’ˆ ìž¥ë°”êµ¬ë‹ˆ 15% í• ì¸ì¿ í° 1ìž¥<br>ì´ 3ìž¥ì˜ ì¿ í° í˜œíƒì„ ë§¤ì›” ë“œë¦½ë‹ˆë‹¤â™¡",default,seq,
-236,0_0,"ë”ìš± ìžì„¸í•œ ì‚¬í•­ì„ ì›í•˜ì‹œë©´ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”!<br> ë™ì›ëª° íšŒì›í˜œíƒì— ëŒ€í•œ ìƒì„¸ ì•ˆë‚´íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/member.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë“±ê¸‰ë³„ íšŒì›í˜œíƒ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-237,0,"ê³ ê°ë‹˜ <font style=""color:black"">íŒ¨ë°€ë¦¬</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 3ë§Œì› ë¯¸ë§Œì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,END,íŒ¨ë°€ë¦¬ë“±ê¸‰ê¸°ì¤€ì•ˆë‚´
-238,0,ê³ ê°ë‹˜ ëŒ€ëŸ‰êµ¬ë§¤ ì›í•˜ì‹œë‚˜ìš”?<br> ì²œì§€ì¸ ì„ ë¬¼ì„¸íŠ¸ ëŒ€ëŸ‰êµ¬ë§¤ ìƒë‹´ì€<br> 02-589-3944 ë¡œ ë¬¸ì˜í•´ì£¼ì„¸ìš”<br> ê°ì‚¬í•©ë‹ˆë‹¤!,default,END,ì²œì§€ì¸ì„ ë¬¼ì„¸íŠ¸íŠ¹íŒ
-239,0,ë™ì›ëª° íšŒì›ê°€ìž… ì–´ë µì§€ ì•Šì•„ìš”~,default,seq,íšŒì›ê°€ìž…ì•ˆë‚´
-239,0_0,"â‘  í™ˆíŽ˜ì´ì§€ ìƒë‹¨ì˜ íšŒì›ê°€ìž…ì„ í´ë¦­í•˜ì‹œê±°ë‚˜ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”!<br> íšŒì›ê°€ìž… íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href=\""javascript:window.parent.postMessage('https://www.dongwonmall.com/member/join/step1.do','*')\""><button class=\""ext_btn\"" type=\""button\"">ë™ì›ëª° íšŒì›ê°€ìž… í•˜ëŸ¬ê°€ê¸°</button></a>",default,seq,
-239,0_1,"â‘¡ ë³¸ì¸ì¸ì¦ì´ í•„ìš”í•©ë‹ˆë‹¤.<br>ë³¸ì¸ ëª…ì˜ì˜ íœ´ëŒ€í° ì¸ì¦ì„ í•´ì£¼ì„¸ìš”.<br>â€» 14ì„¸ ì´ìƒ 19ì„¸ ë¯¸ë§Œì˜ ì²­ì†Œë…„ì€ ë™ì›ëª° íšŒì›ì— ê°€ìž…í•  ìˆ˜ ìžˆìœ¼ë‚˜, ìƒê±°ëž˜ í™œë™ê³¼ í˜œíƒì„ ë°›ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¨, 14ì„¸ ë¯¸ë§Œì˜ ì•„ë™ì€ ë™ì›ëª°ì— ê°€ìž…í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.<br><br>â‘¢ ì—°ë½ì²˜, ë©”ì¼, ì£¼ì†Œ ë“± ì •ë³´ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”. ë™ì›ëª°ì—ì„œ ì‡¼í•‘í•˜ì‹¤ ë•Œ ê¼­ í•„ìš”í•œ ì •ë³´ì´ë‹ˆ ì •í™•í•˜ê²Œ ìž…ë ¥ ë¶€íƒë“œë¦½ë‹ˆë‹¤.<br><br>â‘£ ì •ë³´ ìž…ë ¥ì„ ë§ˆì¹˜ì…¨ìœ¼ë©´ ì•½ê´€ê³¼ ì„ íƒí•­ëª©ì— ë™ì˜í•´ì£¼ì„¸ìš”.<br><br>â‘¤ ê°€ìž…ì™„ë£Œ!!!<br>ì–´ë– ì„¸ìš”? ì •ë§ ê°„ë‹¨í•˜ì£ ~<br>ì´ë ‡ê²Œ íšŒì›ê°€ìž…ì„ ë§ˆì¹˜ì‹œë©´ ê³ ê°ë‹˜ë„ ë™ì›ëª° ê°€ì¡±â™¡",default,seq,
-239,0_2,"ì§€ê¸ˆ ë°”ë¡œ ê°€ìž…í•˜ì‹œê² ì–´ìš”?<br><button class=\""dial_btn f\"">ë„¤</button>\n<button class=\""dial_btn\"">ì•„ë‹ˆì˜¤</button>",default,YNO,
-239,0_2-Y,"ì—­ì‹œ í˜„ëª…í•œ ì„ íƒ!<br> ë§›ìžˆê³  ê±´ê°•í•œ ë™ì›ëª°ê³¼ ì˜¤ëž˜ì˜¤ëž˜ í•¨ê»˜í•´ìš”~<br> ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ íšŒì›ê°€ìž… íŽ˜ì´ì§€ë¡œ ì—°ê²°ë©ë‹ˆë‹¤.<br><br><a href=\""javascript:window.parent.postMessage('https://www.dongwonmall.com/member/join/step1.do','*')\""><button class=\""ext_btn\"" type=\""button\"">ë™ì›ëª° íšŒì›ê°€ìž… í•˜ëŸ¬ê°€ê¸°</button></a>",default,END,
-239,0_2-A,íšŒì›ì´ì‹œêµ°ìš”! ê°ì‚¬í•©ë‹ˆë‹¤.<br>ì•žìœ¼ë¡œë„ ë™ì›ëª° ë§Žì´ ì‚¬ëž‘í•´ì£¼ì„¸ìš”~,default,END,
-239,0_2-B,"ì •ë§ìš”? ë™ì›ëª° íšŒì›ë‹˜ë“¤ê»˜ ë“œë¦¬ëŠ” í˜œíƒì´ ì •ë§ ë§Žì€ë°! ì•„ì‰½ë„¤ìš”...<br>ì‹ ê·œíšŒì›ë‹˜ê»˜ëŠ” ì‡¼í•‘ì§€ì›ê¸ˆ 2ì²œì› + ë™ì›ìƒí’ˆ 10% í• ì¸ì¿ í°ì„ ë“œë¦¬êµ¬ìš”~ <br>ì²« êµ¬ë§¤í•˜ì‹œë©´ 10% í• ì¸ ìŠˆí¼ì¿ í°ì„ ë˜ ë“œë ¤ìš”~ <br>ë‹¤ì‹œ í•œ ë²ˆ ìƒê°í•´ë³´ì‹œë©´ ì–´ë–¨ê¹Œìš”? ^_^<br><button class=\""dial_btn f\"">ê°€ìž…í• ëž˜ìš”</button>\n<button class=\""dial_btn\"">ê°€ìž… ì•ˆí• ëž˜ìš”</button>",default,YNO,
-239,0_2-B-Y,,default,seq,
-239,0_2-B-Y_0,"ì—­ì‹œ í˜„ëª…í•œ ì„ íƒ!<br> ë§›ìžˆê³  ê±´ê°•í•œ ë™ì›ëª°ê³¼ ì˜¤ëž˜ì˜¤ëž˜ í•¨ê»˜í•´ìš”~<br> ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì‹œë©´ íšŒì›ê°€ìž… íŽ˜ì´ì§€ë¡œ ì—°ê²°ë©ë‹ˆë‹¤.<br><br><a href=\""javascript:window.parent.postMessage('https://www.dongwonmall.com/member/join/step1.do','*')\""><button class=\""ext_btn\"" type=\""button\"">ë™ì›ëª° íšŒì›ê°€ìž… í•˜ëŸ¬ê°€ê¸°</button></a>",default,END,
-239,0_2-B-N,ì•„ì‰½ì§€ë§Œ ì•Œê² ìŠµë‹ˆë‹¤.<br>ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹œë‹¤ë©´ ì €ì—ê²Œ ë§ì”€í•´ì£¼ì„¸ìš”~,default,END,
-239,0_2-B-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì €ì—ê²Œ ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-239,0_2-O,ë‹¤ë¥¸ ë„ì›€ì´ í•„ìš”í•˜ì‹ ê°€ìš”? ì €ì—ê²Œ ì§ˆë¬¸í•´ì£¼ì„¸ìš”!,default,BACK,
-240,0,ê³ ê°ë‹˜~ ì œí’ˆì˜ í‘œë©´ì— í•˜ì–€ ê°€ë£¨ê°€ ë¶™ì–´ìžˆëŠ” ê²½ìš°ëŠ” ì œí’ˆ ì›ë£Œì¸ ê³ êµ¬ë§ˆì˜ ë‹¹ë¶„ì„±ë¶„ì´ ìˆ˜ë¶„ì œê±°ë¡œ ì¸í•´ ì™¸ë¶€ë¡œ ìš©ì¶œë˜ëŠ” ìžì—°ì ì¸ í˜„ìƒì´ë¯€ë¡œ ê±±ì •í•˜ì§€ ë§ˆì„¸ìš”^_^<br>ê°„í˜¹ ê²€ì€ ì  ë“±ì„ ë°œê²¬í•˜ì‹¤ ìˆ˜ë„ ìžˆì§€ë§Œ ì´ëŠ” ê³ êµ¬ë§ˆ í‘œí”¼ì¸µ ë˜ëŠ” ì„¬ìœ ì§ˆ ì¡°ì§ì´ëžë‹ˆë‹¤.<br>ì•ˆì‹¬í•˜ì‹œê³ ! ë“œì…”ë„ ë©ë‹ˆë‹¤~,default,seq,ìžì—°í•œìž…ê³ êµ¬ë§ˆí•˜ì–€ê°€ë£¨
-240,0_0,"ë‹¤ë§Œ,  í¬ìž¥ì´ í›¼ì†ë˜ê±°ë‚˜ íŒŒì†ì´ ìžˆëŠ” ê²½ìš° ì œí’ˆì˜ ë³€ì§ˆì´ ìžˆì„ ìˆ˜ ìžˆìœ¼ë¯€ë¡œ ì·¨ì‹í•˜ì§€ ë§ˆì‹œê³  êµ¬ìž…ì²˜ ë˜ëŠ” ì œì¡°ì›ì— ë¬¸ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.<br>ì¼ì²´ì˜ ì²¨ê°€ë¬¼ì´ë‚˜ ë³´ì¡´ë£Œ ì—†ì´ êµ­ì‚° ê³ êµ¬ë§ˆ 100%ë§Œì„ ì‚¬ìš©í•˜ì—¬ ë§Œë“  ì œí’ˆì´ë¯€ë¡œ ê°œë´‰ í›„ ê³°íŒ¡ì´ê°€ ë°œìƒí•  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.",default,END,
-241,0,ê°€ì§œ ë°±ìˆ˜ì˜¤ ë…¼ëž€ì— ê³ ê°ë‹˜ ê±±ì •ì´ ë§Žìœ¼ì‹¤ ê²ƒ ê°™ì•„ìš”~<br>ë™ì› ì²œì§€ì¸ 'í™ì‚¼ì´ ë“¤ì–´ê°€ ê±´ê°•í•œ ë°±ìˆ˜ì˜¤' ì œí’ˆì— ë“¤ì–´ê°€ëŠ” ë°±ìˆ˜ì˜¤ ë³µí•©ë†ì¶•ì•¡ì€ ê²½ë¶ ì˜ì£¼ì—ì„œ ìž¬ë°°ê°€ ë˜ê³  ìžˆëŠ” ë°±ìˆ˜ì˜¤ë¥¼ ì£¼ì›ë£Œë¡œ ì‚¬ìš©í•˜ê³  ìžˆìŠµë‹ˆë‹¤.,default,seq,ë™ì›ì²œì§€ì¸ë°±ìˆ˜ì˜¤ì‚¬ìš©
-241,0_0,ë°±ìˆ˜ì˜¤ ì§„ìœ„ì—¬ë¶€ë¥¼ í™•ì¸í•˜ê¸° ìœ„í•´ 2014ë…„ 10ì›”ì— ê³ ì‹œëœ ì‹í’ˆì˜ì•½í’ˆì•ˆì „ì²˜ ê³ ì‹œ ì œ2014-173í˜¸ì˜ ë°±ìˆ˜ì˜¤ í™•ì¸ì‹œí—˜ì— ë”°ë¼ Solgent ì—…ì²´ë¥¼ í†µí•´ ì‹¤í—˜ì„ ì§„í–‰í•˜ì˜€ê³  ê·¸ ê²°ê³¼ ë°±ìˆ˜ì˜¤ ë³µí•©ë†ì¶•ì•¡ì˜ ì›ë£ŒëŠ” ìœ ì‚¬ì›ë£Œì¸ ì´ì—½ìš°í”¼ì†Œê°€ ì•„ë‹ˆë¼ ë°±ìˆ˜ì˜¤ë¡œ í™•ì¸ë˜ì—ˆìŠµë‹ˆë‹¤.<br>ë”°ë¼ì„œ ì•ˆì‹¬í•˜ì‹œê³ ! ì´ìš©í•˜ì…”ë„ ë©ë‹ˆë‹¤ ^_^,default,END,
-242,0,"ê³ ê°ë‹˜ 1~3ë§Œì› ë¯¸ë§Œ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ìž…ë‹ˆë‹¤!<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ í–‰ì‚¬ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList2"",""*"")'><button class=""ext_btn"" type=""button"">1~3ë§Œì› ë¯¸ë§Œ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ ë³´ëŸ¬ ê°€ê¸°!</button>",default,END,price_present_b3
-243,0,"ë“±í‘¸ë¥¸ìƒì„ (ì°¸ì¹˜, ê³ ë“±ì–´, ê½ì¹˜ ë“±)ì€ ê³ ë‹¨ë°± ì‹í’ˆìœ¼ë¡œ DHA, EPA ë“±ì˜ ì˜¤ë©”ê°€ ì§€ë°©ì‚°ì´ ë‹¤ëŸ‰ í•¨ìœ ë˜ì–´ í˜ˆì•¡ìˆœí™˜ ê°œì„ íš¨ê³¼ì™€ ì–´ë¦°ì´ ë‘ë‡Œë°œë‹¬ì— ë„ì›€ì„ ì£¼ê³ , ë¹„íƒ€ë¯¼ê³¼ ì…€ë ˆëŠ„ í•¨ëŸ‰ì´ ë†’ì•„ ì–´ë¦°ì´ ì„±ìž¥ë°œë‹¬ì— ì¤‘ìš”í•œ ì‹ìž¬ë£Œëžë‹ˆë‹¤!",default,seq,ìž„ì‚°ë¶€ì°¸ì¹˜í†µì¡°ë¦¼
-243,0_0,"ë‹¤ë§Œ, ë©”í‹¸ìˆ˜ì€ í•¨ëŸ‰ì´ ë†’ì€ ìƒì„ ì„ ìž„ì‹  ì¤‘ì— ë„ˆë¬´ ë§Žì´ ì„­ì·¨í•˜ê²Œ ë˜ë©´ íƒœì•„ì˜ ì‹ ê²½ê³„ë°œë‹¬ì— ì˜í–¥ì„ ì¤„ ê°€ëŠ¥ì„±ì— ëŒ€í•œ ì—°êµ¬ìžë£Œë¡œ ì¸í•´ ìƒì„ ì˜ ì„­ì·¨ë¥¼ ì£¼ì˜í•´ì•¼ í•œë‹¤ëŠ” ë‚´ìš©ì´ ì´ìŠˆê°€ ë˜ì—ˆìŠµë‹ˆë‹¤.<br>ê³ ê°ë‹˜ê»˜ì„œ ê¶ê¸ˆí•´í•˜ì‹œëŠ” ì°¸ì¹˜í†µì¡°ë¦¼(ê°€ë‹¤ëž‘ì–´)ì˜ ë©”í‹¸ìˆ˜ì€ í•¨ëŸ‰ì€ ê³ ë“±ì–´, ê½ì¹˜, ê´‘ì–´, ëª…íƒœ ë“±ì˜ ì¼ë°˜ì–´ë¥˜ì™€ ê°™ì´ ë©”í‹¸ìˆ˜ì€ í•¨ëŸ‰ì´ ë‚®ì€ ìˆ˜ì¤€ì´ì£ ~",default,seq,
-243,0_1,2015ë…„ 2ì›” ì‹í’ˆì˜ì•½í’ˆì•ˆì „ì²˜ì—ì„œëŠ” ìž„ì‹  ê¸°ê°„ ì¤‘ ì°¸ì¹˜í†µì¡°ë¦¼ ë° ì¼ë°˜ì–´ë¥˜ëŠ” ì¼ì£¼ì¼ì— 400gì´í•˜ ì„­ì·¨ê°€ ì ë‹¹í•˜ë‹¤ê³  ê¶Œê³ í•˜ì˜€ë‹µë‹ˆë‹¤!<br>ë™ì›ì°¸ì¹˜ ì ì •ëŸ‰ ì„­ì·¨í•˜ì…”ì„œ ìš°ë¦¬ ì•„ì´ ê±´ê°•í•˜ê³  íŠ¼íŠ¼í•˜ê²Œ í‚¤ìš°ìžêµ¬ìš”â™¡,default,END,
-244,0,"ê³ ê°ë‹˜ 3~5ë§Œì› ë¯¸ë§Œ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ìž…ë‹ˆë‹¤!<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ í–‰ì‚¬ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList3"",""*"")'><button class=""ext_btn"" type=""button"">3~5ë§Œì› ë¯¸ë§Œ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ ë³´ëŸ¬ ê°€ê¸°!</button>",default,END,price_present_b5
-245,0,"ê³ ê°ë‹˜ 5ë§Œì› ì´ìƒ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ìž…ë‹ˆë‹¤!<br>ì•„ëž˜ì˜ ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œë©´ í–‰ì‚¬ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤!<a href='javascript:window.parent.postMessage(""http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList3"",""*"")'><button class=""ext_btn"" type=""button"">5ë§Œì› ì´ìƒ ì¶”ì²œ ì„ ë¬¼ì„¸íŠ¸ ë³´ëŸ¬ ê°€ê¸°!</button>",default,END,price_present_o5
-246,0,"í™ì‚¼ì€ ì„±ì¸ ë¿ ì•„ë‹ˆë¼ ì–´ë¦°ì´ì˜ ë©´ì—­ë ¥ ì¦ì§„ê³¼ ì›ê¸°íšŒë³µì— ë„ì›€ì„ ì¤ë‹ˆë‹¤^ã…‡^<br>ì•„ë¬´ê²ƒë„ ë„£ì§€ ì•Šê³  ë¿Œë¦¬ ì‚¼ì„ 100% ê·¸ëŒ€ë¡œ ë‹¬ì—¬ ë§Œë“  ìˆœìˆ˜ í™ì‚¼ì€ ìƒí›„ 12ê°œì›” ì´í›„ë¶€í„° ì„­ì·¨í•  ìˆ˜ ìžˆìœ¼ë©°, ê°€ê³µí•œ í™ì‚¼ì œí’ˆì€ ì†Œí™”ê¸°ê´€ì´ ë°œë‹¬í•˜ëŠ” ìƒí›„ 24ê°œì›” ì´í›„ë¶€í„° ì„­ì·¨í•˜ëŠ” ê²ƒì´ ì¢‹ìŠµë‹ˆë‹¤.",default,END,ì–´ë¦°ì´í™ì‚¼ì•ˆì „ì„±
-247,0,"ê³ ê°ë‹˜ <font style=""color:gold"">ê³¨ë“œ</font> ë“±ê¸‰ì€<br> ìµœê·¼ 3ê°œì›” ê¸°ì¤€<br> êµ¬ë§¤ê¸ˆì•¡ 3ë§Œì› ì´ìƒ 10ë§Œì› ë¯¸ë§Œì´ì‹  ê³ ê°ë‹˜ë“¤ì´ í•´ë‹¹ë©ë‹ˆë‹¤.",default,seq,ê³¨ë“œë“±ê¸‰íšŒì›í˜œíƒ
-247,0_0,"<font style=\""color:gold\"">ê³¨ë“œ</font> ë“±ê¸‰ íšŒì›ë‹˜ë§Œì„ ìœ„í•œ í˜œíƒìœ¼ë¡œ<br>1) ë°´ë“œ/ì¿¨ë°´ë“œ ìž¥ë°”êµ¬ë‹ˆ 2ì²œì› í• ì¸ì¿ í° 1ìž¥<br>2) ë™ì›ì œí’ˆ ìž¥ë°”êµ¬ë‹ˆ 15% í• ì¸ì¿ í° 1ìž¥<br>2ìž¥ì˜ ì¿ í° í˜œíƒì„ ë§¤ì›” ë“œë¦½ë‹ˆë‹¤â™¡",default,seq,
-247,0_1,"ë”ìš± ìžì„¸í•œ ì‚¬í•­ì„ ì›í•˜ì‹œë©´ ì•„ëž˜ì˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì„¸ìš”!<br> ë™ì›ëª° íšŒì›í˜œíƒì— ëŒ€í•œ ìƒì„¸ ì•ˆë‚´íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.<br><br><a href='javascript:window.parent.postMessage(\""http://www.dongwonmall.com/benefit/member.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button\"">ë“±ê¸‰ë³„ íšŒì›í˜œíƒ ë³´ëŸ¬ê°€ê¸°</button></a>",default,END,
-248,0,"ì •ë§ìš”? ë™ì›ëª° íšŒì›ë‹˜ë“¤ê»˜ ë“œë¦¬ëŠ” í˜œíƒì´ ì •ë§ ë§Žì€ë°! ì•„ì‰½ë„¤ìš”...<br>ì‹ ê·œíšŒì›ë‹˜ê»˜ëŠ” ì‡¼í•‘ì§€ì›ê¸ˆ 2ì²œì› + ë™ì›ìƒí’ˆ 10% í• ì¸ì¿ í°ì„ ë“œë¦¬êµ¬ìš”~ <br>ì²« êµ¬ë§¤í•˜ì‹œë©´ 10% í• ì¸ ìŠˆí¼ì¿ í°ì„ ë˜ ë“œë ¤ìš”~ <br>ë‹¤ì‹œ í•œ ë²ˆ ìƒê°í•´ë³´ì‹œë©´ ì–´ë–¨ê¹Œìš”? ^_^<br><button class=""dial_btn f"">ê°€ìž…í• ëž˜ìš”</button>
-<button class=""dial_btn"">ê°€ìž… ì•ˆí• ëž˜ìš”</button>",default,END,ê±°ì ˆ
-249,0,ê³ ê°ë‹˜ ì˜¤ëŠ˜ í™”ë‚˜ëŠ” ì¼ì´ë¼ë„ ìžˆìœ¼ì…¨ì–´ìš”? <br>ì œê°€ ë„ì™€ë“œë¦´ ìˆ˜ ìžˆëŠ” ì¼ì´ë¼ë©´ ìµœì„ ì„ ë‹¤í•´ ë„ì™€ë“œë¦´ê²Œìš”~ í™” í‘¸ì„¸ìš”~,default,END,ìš•ì„¤ë°ë¹„ì†ì–´
-249,0,ê³ ê°ë‹˜ ê·¸ë ‡ê²Œ ë§ì”€í•˜ì‹œë‹ˆ ë„ˆë¬´ ë¬´ì„œì›Œìš”~ <br>ìš°ë¦¬ ì„œë¡œ ì˜ˆìœ ë§ë§Œ ì‚¬ìš©í•˜ë©´ ì–´ë–¨ê¹Œìš”?,default,END,ìš•ì„¤ë°ë¹„ì†ì–´
-250,0,íšŒì›ì´ì‹œêµ°ìš”! ê°ì‚¬í•©ë‹ˆë‹¤.<br>ì•žìœ¼ë¡œë„ ë™ì›ëª° ë§Žì´ ì‚¬ëž‘í•´ì£¼ì„¸ìš”~,default,END,ì´ë¯¸íšŒì›ì¸ê²½ìš°
-250,0,íšŒì›ì´ì‹œêµ°ìš”! ê°ì‚¬í•©ë‹ˆë‹¤.<br>ì•žìœ¼ë¡œë„ ë™ì›ëª° ë§Žì´ ì‚¬ëž‘í•´ì£¼ì„¸ìš”~,default,END,ì´ë¯¸íšŒì›ì¸ê²½ìš°
+dialog_node,node_detail,text,parent,condition
+0,0,Áö±Ý±îÁö µ¿¿ø¸ô ÀÎ°øÁö´É »ó´ã»ç¿´½À´Ï´Ù!  ´õ ³ªÀº µ¿¿ø¸ôÀÌ µÇ°Ú½À´Ï´Ù. Áñ°Å¿î ¼îÇÎµÇ¼¼¿ä~ °¨»çÇÕ´Ï´Ù.,default,END
+1,0,°í°´´Ô ÁË¼ÛÇÕ´Ï´Ù ÀúÀÇ ´äº¯¿¡ ¸¹ÀÌ ½Ç¸ÁÇÏ¼Ì³ª¿ä?<br>º£Å¸ ¼­ºñ½º ±â°£ ¿­½ÉÈ÷ ÇÐ½ÀÇØ¼­ °í°´´Ô²² ´õ¿í À¯¿ëÇÑ ¼­ºñ½º·Î °ð Ã£¾ÆºË°Ú½À´Ï´Ù.,default,END
+1,0,°í°´´Ô ÀúÀÇ ´äº¯¿¡ ¸¹ÀÌ ½Ç¸ÁÇÏ¼ÌÁÒ? ÁË¼ÛÇÕ´Ï´Ù<br>¿­½ÉÈ÷ ÇÐ½ÀÇØ¼­ °í°´´Ô²² ¸¸Á·½º·¯¿î ´äº¯À» µå¸± ¼ö ÀÖµµ·Ï ³ë·ÂÇÏ°Ú½À´Ï´Ù.,default,END
+2,0,¾ÆÁ÷Àº °øºÎÇØ¾ß µÉ ºÎºÐÀÌ ¸¹Áö¸¸ ÃÖ¼±À» ´ÙÇÏ°í ÀÖ¾î¿ä!<br>ÁöÄÑºÁ ÁÖ¼¼¿ä,default,seq
+2,0,¾ÆÁ÷Àº ÇÐ½ÀÇØ¾ß ÇÒ ³»¿ëÀÌ ¸¹Áö¸¸ ¿­½ÉÈ÷ ³ë·ÂÇÏ°í ÀÖ´ä´Ï´Ù!<br>±â´ëÇØÁÖ¼¼¿ä~,default,seq
+2,0_0,Áö±Ý±îÁö µ¿¿ø¸ô ÀÎ°øÁö´É »ó´ã»ç¿´½À´Ï´Ù!  ´õ ³ªÀº µ¿¿ø¸ôÀÌ µÇ°Ú½À´Ï´Ù. Áñ°Å¿î ¼îÇÎµÇ¼¼¿ä~ °¨»çÇÕ´Ï´Ù.,default,END
+3,0,°í°´´ÔÀÌ ¿ôÀ¸½Ã´Ï Àúµµ Çàº¹ÇÏ³×¿ä!,default,END
+3,0,°í°´´ÔÀÌ ¿ôÀ¸½Ã´Ï Àúµµ ¿ôÀ½ÀÌ ³ª³×¿ä!,default,END
+3,0,¿ôÀ¸¸é º¹ÀÌ ¿Â´ë¿ä!,default,END
+3,0,¹Ì¼Ò°¡ Âü ¾Æ¸§´Ù¿ì½Ã³×¿ä~,default,END
+3,0,¿ôÀ¸´Ï±î ÈÎ¾À ´õ ¸ÚÁö¼¼¿ä!,default,END
+3,0,°í°´´ÔÀÌ ¿ôÀ¸½Ã´Ï Àúµµ ±âºÐÀÌ ÁÁ¾Æ¿ä~,default,END
+4,0,±¦Âú¾Æ¿ä °í°´´Ô!,default,END
+4,0,±¦Âú½À´Ï´Ù °í°´´Ô~,default,END
+4,0,±×·²¼öµµ ÀÖÁÒ! ±¦Âú´ä´Ï´Ù.,default,END
+5,0,°¨»çÇÕ´Ï´Ù °í°´´Ô!<br> ´õ ¿­½ÉÈ÷ ÇÒ°Ô¿ä! ÁöÄÑºÁÁÖ¼¼¿ä~,default,END
+5,0,°¨»çÇØ¿ä °í°´´Ô~<br> ´õ ¿­½ÉÈ÷ ¹è¿ì°Ú½À´Ï´Ù!,default,END
+5,0,°¨»çÇÕ´Ï´Ù °í°´´Ô!<br> ´õ ³ªÀº ¼­ºñ½º·Î Ã£¾ÆºÉ°Ô¿ä~,default,END
+6,0,±×·¯¼¼¿ä?<br>Á¦°¡ ¹«¾ùÀ» µµ¿Íµå¸®¸é ÁÁÀ»±î¿ä? ¸»¾¸ÇØÁÖ¼¼¿ä~,default,END
+6,0,±×·¯½Ã±º¿ä~<br>Á¦°¡ ¹«¾ùÀ» µµ¿Íµå¸®¸é ÁÁÀ»±î¿ä? ¸»¾¸ÇØÁÖ¼¼¿ä~,default,END
+7,0,°í°´´ÔÀÌ ±âºÐ ÁÁÀ¸½Ã¸é Àúµµ ÁÁ¾Æ¿ä!,default,END
+7,0,ÀúµÎ¿ä! ^____^,default,END
+7,0,°í°´´ÔÀÌ ±âºÐ ÁÁÀ¸½Ã¸é Àúµµ ÁÁ´ä´Ï´Ù~,default,END
+8,0,¾ÆÁ÷Àº Á¶±Ý ¾î·Æ³×¿ä...<br>Á¦°¡ ´õ ¿­½ÉÈ÷ ÇÐ½ÀÇÒ°Ô¿ä!,default,seq
+8,0,³× ¾ÆÁ÷Àº Á¶±Ý ¾î·Á¿ö¿ä...<br>¾ÕÀ¸·Î ´õ ¿­½ÉÈ÷ ÇÐ½ÀÇØ¾ß°Ú¾î¿ä!,default,seq
+8,0_0,Áö±Ý±îÁö µ¿¿ø¸ô ÀÎ°øÁö´É »ó´ã»ç¿´½À´Ï´Ù!  ´õ ³ªÀº µ¿¿ø¸ôÀÌ µÇ°Ú½À´Ï´Ù. Áñ°Å¿î ¼îÇÎµÇ¼¼¿ä~ °¨»çÇÕ´Ï´Ù.,default,END
+9,0,³× °í°´´Ô!<br>Çªµð°¡ µµ¿Íµå¸±°Ô¿ä~<br>¹®ÀÇ°¡ ÀÖÀ¸½Å °æ¿ì ¸»¾¸ÇØÁÖ¼¼¿ä.,default,END
+9,0,°í°´´ÔÀ» µµ¿Íµå¸®±â À§ÇØ Çªµð°¡ ´Þ·Á°¥°Ô¿ä!<br>µµ¿òÀÌ ÇÊ¿äÇÏ½Å ºÎºÐÀ» ¸»¾¸ÇØÁÖ¼¼¿ä.,default,END
+9,0,³Ü Çªµð ¿©±â ÀÖ½À´Ï´Ù!<br>µµ¿òÀÌ ÇÊ¿äÇÏ½Å ºÎºÐÀ» ¸»¾¸ÇØÁÖ¼¼¿ä.,default,END
+10,0,³×! ^_____^<br>´Ù¸¥ ¹®ÀÇ°¡ ÀÖÀ¸½Ã¸é Àú¿¡°Ô ¸»¾¸ÇØÁÖ¼¼¿ä.,default,END
+10,0,³×! ^_____^<br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Ã¸é Àú¿¡°Ô ¸»¾¸ÇØÁÖ¼¼¿ä.,default,END
+10,0,³×! ^_____^<br>¹®ÀÇ°¡ ´õ ÀÖÀ¸½Ã´Ù¸é Àú¿¡°Ô ¸»¾¸ÇØÁÖ¼¼¿ä.,default,END
+11,0,°í°´´Ô ¹» Á» ¾Æ½Ã´Â±º¿ä!<br>^_____^,default,END
+11,0,¸Â¾Æ¿ä! Á¤¸» ±×·¡¿ä!,default,END
+12,0,¶¹´Ù ¶¹´Ù ºñÇà±â~<br>³¯¾Æ¶ó ³¯¾Æ¶ó~<br>¿©±â±îÁö¸¸ ÇÒ°Ô¿ä!<br>ºÎ²ô·³ÀÌ ¸¹¾Æ¼­...,default,END
+12,0,°í°´´Ô Á¦°¡ Å¸°í³­ À½Ä¡¶ó¼­¿ä...<br>´ÙÀ½¿¡ ¿¬½ÀÇÏ°í ºÒ·¯µå¸±°Ô¿ä!,default,END
+12,0,°í°´´Ô Á¦°¡ ¼öÁÝÀ½ÀÌ ¸¹¾Æ¼­¿ä...<br>³ë·¡ºÎ¸£±â ´ë½Å °í°´´ÔÀÇ ¹®ÀÇ¿¡ ´äº¯ÇØµå¸±°Ô¿ä!,default,END
+13,0,"°í°´´Ô ¸ð¹ÙÀÏÄíÆù¿¡ ´ëÇØ ¹®ÀÇÁÖ¼Ì³×¿ä~ <br>Á¦°¡ ¹Ù·Î ´äº¯ÇØµå¸®°í ½ÍÁö¸¸, ÀÎ°øÁö´ÉÀÎ Àú¿¡°Õ ¾ÆÁ÷ Á¶±Ý ¾î·Á¿î ³»¿ëÀÌ³×¿ä~ <br> ÇØ´ç »óÇ°ÆäÀÌÁöÀÇ »óÇ°Q&A ¶Ç´Â 1:1¸ÂÃã»ó´ã °Ô½ÃÆÇ¿¡ ¹®ÀÇ±ÛÀ» ³²°ÜÁÖ½Ã°Å³ª, µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é Àü¹® »ó´ã¿øÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù!",default,END
+14,0,ÁÖ¼Ò¸¦ ¸ô¶óµµ ¼±¹°ÇÏ±â ¶Òµü!<br>°£ÆíÇÏ°Ô ¸ð¹ÙÀÏ·Î ¼±¹°ÇÒ ¼ö ÀÖ´Â ±âÇÁÆ¼¸ð¾Æ µ¿¿ø ¼±¹°¼¼Æ®¡Ú<br>±âÇÁÆ¼¸ð¾Æ ´Üµ¶Æ¯°¡ »óÇ°À» ±¸ÀÔÇÏ½Ã¸é 15% Àû¸³±Ý µ¹·Á µå¸²~,default,seq
+14,0_0,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é µ¿¿ø ¼±¹°¼¼Æ® ±âÇÁÆ¼¸ð¾Æ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br>ÀÌ¹ø Ãß¼®¿¡´Â ½±°í ºü¸¥ ±âÇÁÆ¼¸ð¾Æ·Î »ç¶ûÀ» ³Î¸® ³Î¸® ÆÛÆ®·Áº¸¾Æ¿ä¢½<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/plan.do?seq=00000000877')"">±âÇÁÆ¼¸ð¾Æ ¼±¹°ÇÏ±â!</button>",default,END
+15,0,"È¸¿øÁ¤º¸º¯°æÀ» ¿øÇÏ½Ã³ª¿ä?<br> µ¿¿ø¸ô ¸ÞÀÎ ÆäÀÌÁö »ó´ÜÀÇ [MYµ¿¿ø¸ô]À» Å¬¸¯ÇØÁÖ¼¼¿ä.<br>[MYµ¿¿ø¸ô] ÆäÀÌÁö·Î ÀÌµ¿ÇÏ½Å  ÈÄ ÁÂÃø ¸Þ´º [È¸¿øÁ¤º¸ °ü¸®]¿¡¼­ ¼öÁ¤À» ¿øÇÏ½Ã´Â ¸Þ´º¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.<br>ÇØ´ç Ç×¸ñ ¼öÁ¤ÇÏ½Å ÈÄ<br>[ÀúÀå]¹öÆ°À» Å¬¸¯ÇØÁÖ½Ã¸é ¿Ï·áµË´Ï´Ù.<br>´Ü, È¸¿ø ID´Â º¯°æÇÏ½Ç ¼ö ¾ø½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/mypage/main.do')"">MY µ¿¿ø¸ô</button>",default,END
+16,0,"°í°´´Ô<br>ÁÖ¹Îµî·ÏÁõÀÇ ÀÌ¸§ÀÌ º¯°æµÈ °æ¿ì Àç°¡ÀÔÇÏ½Ç ÇÊ¿ä ¾øÀ¸¸ç µ¿¿ø¸ô °í°´¼¾ÅÍ 1:1 ¸ÂÃã»ó´ãÀÌ³ª ÄÝ¼¾ÅÍ 1588-3745·Î <font style=""color:red"">°³¸íµÇ½Å ¼ºÇÔ</font>°ú <font style=""color:red"">ÁÖ¹Îµî·ÏÁõ ¹ß±ÞÀÏÀÚ 8ÀÚ¸®</font>¸¦ ¾Ë·ÁÁÖ½Ã¸é º»ÀÎ È®ÀÎ °úÁ¤À» °ÅÃÄ ¼öÁ¤ÇØµå¸³´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+17,0,"°í°´´Ô ±¤°í¸ÞÀÏ ¼ö½ÅÀ» ¿øÄ¡ ¾ÊÀ¸½Ç °æ¿ì, ·Î±×ÀÎ ÈÄ [My µ¿¿ø¸ô - °³ÀÎÁ¤º¸º¯°æ] ÆäÀÌÁö¿¡¼­ ¼³Á¤À» ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br>±âº» Á¤º¸ ÀÔ·Â¶õÀÇ ¸ÞÀÏ¼ö½Å¿©ºÎ Ç×¸ñ¿¡¼­ '¼ö½ÅÇÏÁö¾ÊÀ½'À¸·Î º¯°æÇÏ½Ã¸é ´õ ÀÌ»ó Á¤º¸¸ÞÀÏÀ» º¸³»µå¸®Áö ¾Ê½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/mypage/member/myInfo.do')"">MY µ¿¿ø¸ô - °³ÀÎÁ¤º¸º¯°æ</button>",default,END
+18,0,"°í°´´Ô ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¸¿ø µî±ÞÁ¶°Ç°ú µî±Þº° ÇýÅÃÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">È¸¿ø µî±Þ º¸·¯°¡±â</button>",default,seq
+18,0_0,¶Ç´Â È®ÀÎÇÏ½Ã°í ½ÍÀº µî±ÞÀ» ÀÔ·ÂÃ¢¿¡ ÀÔ·ÂÇØÁÖ½Ã¸é ÇØ´ç µî±ÞÀÇ µî±ÞÁ¶°Ç°ú µî±ÞÇýÅÃÀ» ¾È³»ÇØµå·Á¿ä~,default,END
+19,0,°í°´´Ô µ¿¿ø¸ô È¸¿øµî±Þ Áß ÃÖ°í µî±ÞÀº 'PREMIUM ÇÁ¸®¹Ì¾ö'ÀÔ´Ï´Ù.,default,seq
+19,0_0,"¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¸¿ø µî±ÞÁ¶°Ç°ú µî±Þº° ÇýÅÃÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmhttp://www.dongwonmall.com/benefit/member.do')"">È¸¿ø µî±Þ º¸·¯°¡±â</button>",default,END
+20,0,°í°´´Ô µ¿¿ø¸ô È¸¿øµî±Þ Áß Á¦ÀÏ ³·Àº µî±ÞÀº 'FAMILY ÆÐ¹Ð¸®' ÀÔ´Ï´Ù.,default,seq
+20,0_0,"¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¸¿ø µî±ÞÁ¶°Ç°ú µî±Þº° ÇýÅÃÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">È¸¿ø µî±Þ º¸·¯°¡±â</button>",default,END
+21,0,µ¿¿ø¸ô È¸¿øÀÌ µÇ½Ã¸é Á¤¸» ¸¹Àº ÇýÅÃÀ» ´©¸®½Ç ¼ö ÀÖ¾î¿ä~<br>Áö±Ý ¹Ù·Î ½Å±Ô °¡ÀÔÇÏ½Ã¸é ¼îÇÎÁö¿ø±Ý 2Ãµ¿ø + µ¿¿ø»óÇ° 10% ÇÒÀÎÄíÆùÀ» µå¸®±¸¿ä~ <br>Ã¹ ±¸¸ÅÇÏ½Ã¸é 10% ÇÒÀÎ ½´ÆÛÄíÆùÀ» ¶Ç µå·Á¿ä~,default,seq
+21,0_0,"¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇØº¸¼¼¿ä!<br> µ¿¿ø¸ô È¸¿øÇýÅÃ¿¡ ´ëÇÑ »ó¼¼ ¾È³»ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">È¸¿øÇýÅÃ º¸·¯°¡±â</button>",default,END
+22,0,"µ¿¿ø¸ôÀ» ¶°³ª½Ã·Á°í ÇÏ½Ã³ª¿ä? <br> Á¤¸» ¾Æ½±½À´Ï´Ù..<br> È¸¿øÅ»Åð¸¦ ¿øÇÏ½Ã¸é ¸ÕÀú ·Î±×ÀÎ ÈÄ<br>[MYµ¿¿ø¸ô]¿¡ µé¾î°¡¼Å¼­ ÁÂÃø ¡®È¸¿øÁ¤º¸ °ü¸®¡¯ ¸Þ´º Áß ¸Ç ¸¶Áö¸·¿¡ ÀÖ´Â [È¸¿øÅ»Åð]¸¦ Å¬¸¯ÇÏ½Ã¸é µË´Ï´Ù. <br> È¸¿øÅ»Åð ½Ã À¯ÀÇÇÒ Á¡À» ¾Ë·Áµå¸±±î¿ä? ""<button class=""dial_btn f"">³×</button><button class=""dial_btn"">¾Æ´Ï¿À</button>",default,YNO
+22,0-Y,È¸¿øÅ»Åð ½Ã À¯ÀÇÇÒ Á¡ ¾Ë·Áµå¸±°Ô¿ä!,default,seq
+22,0-Y_0,"1) Å»Åð ½Ã, °í°´´Ô²²¼­ º¸À¯ÇÏ°í °è½Å Àû¸³±Ý/Æ÷ÀÎÆ®¿Í ÄíÆùÀº ¸ðµÎ ÀÚµ¿ ¼Ò¸êµË´Ï´Ù. <br> µ¿¿ø¸ôÀÇ È¸¿ø¼­ºñ½º¸¦ ´õ ÀÌ»ó ÀÌ¿ëÇÏ½Ç ¼ö ¾øÀ¸¸ç, È¸¿ø ÇýÅÃ ¶ÇÇÑ ¹ÞÀ¸½Ç ¼ö ¾ø½À´Ï´Ù. <br> ¸ð¹ÙÀÏ ÄíÆùÀÇ °Å·¡°¡ ÀÖ´Â °æ¿ì °í°´¼¾ÅÍ ÅëÇØ¼­ Å»Åð½ÅÃ» ºÎÅ¹µå¸®¸ç, Å»Åð½ÅÃ» »çÀ¯µµ ÇÔ²² ±âÀçºÎÅ¹µå¸³´Ï´Ù~ <br><br> 2) ÁøÇàÁßÀÎ ÁÖ¹®ÀÌ ÀÖÀ» °æ¿ì Å»Åð°¡ ºÒ°¡´ÉÇÕ´Ï´Ù. <br> ÇØ´ç ÁÖ¹®ÀÌ Ã³¸® ¿Ï·áµÈ ÈÄ¿¡ ´Ù½Ã Å»Åð ½ÅÃ» ºÎÅ¹µå¸³´Ï´Ù.<br><br>3) Å»Åð ÈÄ, °í°´´ÔÀÇ Á¤º¸´Â ÀüÀÚ»ó°Å·¡ ¼ÒºñÀÚº¸È£¹ý¿¡ ÀÇ°ÅÇÑ µ¿¿ø¸ô °³ÀÎÁ¤º¸º¸È£Á¤Ã¥¿¡ µû¶ó °ü¸®µË´Ï´Ù.<br><br>4) Å»ÅðÃ³¸® ÀÌÈÄ¿¡´Â °¡ÀÔ±â°£¿¡ ÀÌ¿ëÇÏ¼Ì´ø ÀÌº¥Æ®¸¦ Æ÷ÇÔÇÑ ¸ðµç ³»¿ªÀÇ Á¶È¸, »ó´ã°ú Á¦¹Ý ¼­ºñ½º(±³È¯/¹ÝÇ°/AS)µî¿¡ Á¦ÇÑÀÌ »ý±æ ¼ö ÀÖÀ½À» ¾çÁöÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br><br>5) È¸¿øÅ»Åð ÈÄ, 3°³¿ù ÀÌ³» Àç°¡ÀÔÀÌ ºÒ°¡´ÉÇÏ¸ç, Àç°¡ÀÔ ½Ã¿¡´Â ½Å±Ô°¡ÀÔÀ¸·Î Ã³¸®µË´Ï´Ù.<br><br>6) Å»Åð ÈÄ¿¡´Â È¸¿øÁ¤º¸ »èÁ¦·Î ÀÎÇØ ÀÛ¼ºÀÚ º»ÀÎÀ» È®ÀÎ ÇÒ ¼ö ¾øÀ¸¹Ç·Î °Ô½Ã¹° »èÁ¦ Ã³¸®°¡ ºÒ°¡´ÉÇÕ´Ï´Ù.<br>»èÁ¦¸¦ ¿øÇÏ½Ã´Â °æ¿ì¿¡´Â ¸ÕÀú »èÁ¦¸¦ ¿Ï·áÇÑ ÈÄ, Å»Åð¸¦ ½ÅÃ»ÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.",default,seq
+22,0-Y_1,Àç°¡ÀÔ °ü·Ã À¯ÀÇ»çÇ×µµ ¼³¸íµå¸±±î¿ä? <br>³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+22,0-Y_1-Y,Àç°¡ÀÔ °ü·Ã À¯ÀÇ»çÇ×ÀÔ´Ï´Ù~,default,seq
+22,0-Y_1-Y_0,,default,
+22,0-Y_1-N,,default,
+22,0-Y_1-O,"³×, ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+22,0-N,±×·³ Àç°¡ÀÔ °ü·Ã À¯ÀÇ»çÇ×À» ¾Ë·Áµå¸±±î¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,seq
+22,0-N-Y,,,
+22,0-N-N,¾Ë°Ú½À´Ï´Ù~,default,END
+22,0-O,"³×, ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+23,0,"µ¿¿ø¸ô ID¸¦ ÀØÀ¸¼Ì³ª¿ä? <br>¾ÆÀÌµð Ã£±â¸¦ ÀÌ¿ëÇÏ½Ã°Å³ª °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>¾ÆÀÌµð Ã£±â ÀÌ¿ë ½Ã ÈÞ´ëÆù º»ÀÎÀÎÁõÀ» ÅëÇØ À¥¿¡¼­ ¹Ù·Î È¸¿ø ID¸¦ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. <br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¾ÆÀÌµð Ã£±â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(http://www.dongwonmall.com/secure/findId.do')"">¾ÆÀÌµð Ã£±â</button>",default,END
+24,0,"µ¿¿ø¸ô ºñ¹Ð¹øÈ£¸¦ ÀØÀ¸¼Ì³ª¿ä? <br>ºñ¹Ð¹øÈ£ Ã£±â¸¦ ÀÌ¿ëÇÏ½Ã°Å³ª °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>ºñ¹Ð¹øÈ£ Ã£±â ÀÌ¿ë ½Ã ÈÞ´ëÆù º»ÀÎÀÎÁõÀ» ÅëÇØ Ã£À¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ºñ¹Ð¹øÈ£ Ã£±â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/secure/findPw.do')"">ºñ¹Ð¹øÈ£ Ã£±â</button>",default,END
+25,0,"°í°´´Ô È¸¿ø °¡ÀÔÀÌ ¾ÈµÇ½Å´Ù±¸¿ä?<br> ±×·¸´Ù¸é ÀÌ¹Ì µ¿¿ø¸ô È¸¿øÀÌ½Å °æ¿ìÀÔ´Ï´Ù. <br>¸ÕÀú ¿Â¶óÀÎÀ¸·Î º»ÀÎÀÇ ID ¿Í ºñ¹Ð¹øÈ£¸¦ Á¶È¸ÇÏ½Å ÈÄ È¸¿ø °¡ÀÔ ¿©ºÎ¸¦ È®ÀÎÇØ ÁÖ¼¼¿ä. <br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/secure/findId.do')"">¾ÆÀÌµð Ã£±â</button>
+<button class=""ext_btn"" type=""button"">ºñ¹Ð¹øÈ£ Ã£±â</button><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/secure/findPw.do')"">ºñ¹Ð¹øÈ£ Ã£±â</button>",default,seq
+25,0_0,"ÀÌ¹Ì È¸¿øÀ¸·Î °¡ÀÔÇÏ½Å °í°´´Ô²²¼­´Â ±âÁ¸¿¡ µî·ÏÇÏ¼Ì´ø ID¿Í ºñ¹Ð¹øÈ£·Î ·Î±×ÀÎÇÏ½Ã¸é µË´Ï´Ù.<br>¸¸ÀÏ È¸¿ø°¡ÀÔÀ» ÇÏ½Å ÀûÀÌ ¾ø´Âµ¥ È¸¿ø°¡ÀÔÀÌ µÇÁö ¾ÊÀ¸½Å´Ù¸é µ¿¿ø¸ô ÄÝ¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ¼¼¿ä.<br>¡Ø ÄÝ¼¾ÅÍ ¿î¿µ½Ã°£  : AM 09:00 ~ PM 06:00, Á¡½É½Ã°£ : PM 12:00 ~ 01:00, Åä,ÀÏ, °øÈÞÀÏ ÈÞ¹«",default,END
+26,0,"°í°´´Ô µ¿¿ø¸ô È¸¿ø¼­ºñ½º´Â °í°´´Ô²² º¸´Ù ¾ÈÀüÇÏ°í Æí¸®ÇÑ ¼­ºñ½º¸¦ Á¦°øÇÏ±â À§ÇØ °øÁ¤°Å·¡ À§¿øÈ¸°¡ ½ÂÀÎÇÑ Ç¥ÁØ¾à°üÀ» »ç¿ëÇÏ°í ÀÖ½À´Ï´Ù.<br> ±¸Ã¼ÀûÀÎ ³»¿ëÀ» È®ÀÎÇÏ½Ã°í ½ÍÀ¸½Å°¡¿ä?<br> ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é µ¿¿ø¸ô ÀÌ¿ë¾à°ü Àü¹®À» ¿­¶÷ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/guide.do?num=08')"">µ¿¿ø¸ô ÀÌ¿ë¾à°ü</button>",default,END
+27,0,"°í°´´Ô Å»ÅðÇß´ø ¾ÆÀÌµð·Î´Â Àç°¡ÀÔÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.<br>Àç°¡ÀÔÇÏ½Ç °æ¿ì ½Å±Ô°¡ÀÔÀ¸·Î Ã³¸®µÇ¿À´Ï À¯ÀÇÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+28,0,"°í°´´Ô È¸¿øÅ»Åð¿Í µ¿½Ã¿¡ Àû¸³±Ý, ÇÒÀÎÄíÆù, ¾¾¾ÑÀº ÀÚµ¿ ¼Ò¸êµÇ¸ç Àç°¡ÀÔÇÏ½Ã´õ¶óµµ ÀÌµ¿ ¹× º¹±¸µÇÁö ¾Ê½À´Ï´Ù.<br>ÀÌ Á¡ À¯ÀÇÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+29,0,"°í°´´Ô µ¿¿ø¸ô È¸¿øÁ¦µµ´Â PREMIUM, VIP, GOLD, FAMILY ÀÇ 4°³ µî±ÞÀ¸·Î ³ª´µ¾î È¸¿øµî±Þº° ÇýÅÃÀÌ Á¦°øµÇ°í ÀÖ½À´Ï´Ù!<br>»ó¼¼ÇÑ ÇýÅÃ ³»¿ëÀº ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ÇªÁüÇÑ È¸¿ø ÇýÅÃÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">È¸¿ø ÇýÅÃ º¸·¯°¡±â</button>",default,END
+30,0,"µ¿¿ø¸ô¿¡¼­¸¸ ´©¸®½Ç ¼ö ÀÖ´Â Áñ°Å¿ò! <br>µ¿¿øF&BÀÇ ½ÅÁ¦Ç°°ú ÀÎ±â»óÇ°À» Ã¼ÇèÇØº¸½Ç ¼ö ÀÖ´Â ÀÌº¥Æ®ÀÔ´Ï´Ù. <br>ºí·Î±×¸¦ ºñ·ÔÇÑ SNS¸¦ ¿î¿µ ÁßÀÌ½Ã¸ç, Ã¼ÇèÈÄ±â¸¦ Á¤¼º²¯ ³²°ÜÁÖ½Ç ¼ö ÀÖ´Â µ¿¿ø¸ô È¸¿øÀÌ¶ó¸é ´©±¸³ª ÀÀ¸ðÇÏ½Ç ¼ö ÀÖ¾î¿ä~",default,seq
+30,0_0,Ã¼Çè´ÜÀÌº¥Æ® ½ÅÃ» ¹æ¹ý¿¡ ´ëÇØ ¾È³»ÇØµå¸±±î¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+30,0_0-Y,"¸ÕÀú, Ã¼Çè´ÜÀÌº¥Æ® ÆäÀÌÁö·Î µé¾î°¡ÁÖ¼¼¿ä.<br> È¨ÆäÀÌÁö »ó´ÜÀÇ ¡®ÀÌº¥Æ®¡¯ ? ¡®Ã¼Çè´ÜÀÌº¥Æ®¡¯¸¦ Å¬¸¯ÇÏ½Ã°Å³ª<br> ¾Æ·¡ÀÇ <Ã¼Çè´ÜÀÌº¥Æ®>¸¦ Å¬¸¯ÇÏ½Ã¸é Ã¼Çè´ÜÀÌº¥Æ® ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br> <a href='http://www.dongwonmall.com/event/eventList.do?E_GBN_CD=01' target=\""_blank\""><Ã¼Çè´ÜÀÌº¥Æ®></a>",default,seq
+30,0_0-Y_0,"¡®ÁøÇàÁß Ã¼Çè´ÜÀÌº¥Æ®¡¯¸¦ Å¬¸¯ÇØÁÖ¼¼¿ä. <br>ÇØ´ç Ã¼Çè´ÜÀÌº¥Æ® ÆäÀÌÁö¿¡¼­ ÀÀ¸ð±â°£°ú Á¦Ç°Á¤º¸, ´çÃ·¹ßÇ¥ÀÏÀ» ²Ä²ÄÈ÷ È®ÀÎÇÏ½Å ÈÄ, ÇÏ´ÜÀÇ ´ñ±Û ÀÛ¼º¶õ¿¡ ´ñ±Û·Î Ã¼Çè´Ü ½ÅÃ»À» ÇØÁÖ½Ã¸é µË´Ï´Ù.<br> # ºí·Î±× ¶Ç´Â SNS ÁÖ¼Ò¸¦ ±âÀçÇÏ¿© ½ÅÃ»ÇØÁÖ¼¼¿ä.<br> ºí·Î±× ¶Ç´Â SNS ÁÖ¼Ò°¡ ¾øÀ» ½Ã Ã¼Çè´Ü¿¡¼­ Á¦¿ÜµÉ ¼ö ÀÖ½À´Ï´Ù. <br>º»ÀÎ ºí·Î±× ¶Ç´Â SNS°¡ ¾Æ´Ò ½Ã Ã¼Çè´Ü¿¡¼­ Á¦¿ÜµÉ ¼ö ÀÖ½À´Ï´Ù. <br># ´ñ±Û »èÁ¦ ½Ã ÀÀ¸ð°¡ Ãë¼ÒµÇ¿À´Ï À¯ÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù",default,seq
+30,0_0-Y_1,´çÃ·ÀÚ ¹ßÇ¥´Â µ¿¿ø¸ô È¨ÆäÀÌÁö ¡®ÀÌº¥Æ®¡¯ ? ¡®´çÃ·ÀÚ¹ßÇ¥¡¯ °Ô½ÃÆÇ¿¡¼­ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. <br>´çÃ·ÀÚºÐ²²´Â SMS¹®ÀÚ¹ß¼ÛÀ¸·Îµµ ¾È³»ÇØµå¸³´Ï´Ù. <br>´çÃ·ÀÚ²²¼­ ±â°£ ³»¿¡ ¹è¼Ûºñ¸¦ °áÁ¦¿Ï·áÇØÁÖ½Ã¸é Ã¼Çè´Ü »óÇ°À» ¹è¼ÛÇØµå¸³´Ï´Ù. <br>Ã¼Çè´Ü »óÇ°À» ¼ö·ÉÇÏ½Ã°í ºí·Î±×¸¦ ºñ·ÔÇÑ SNS Ã¤³Î¿¡ Ã¼ÇèÈÄ±â¸¦ »çÁø°ú ÇÔ²² Á¤¼º²¯ ³²°ÜÁÖ½Ã¸é µË´Ï´Ù.,default,END
+30,0_0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+30,0_0-O,"³×, ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+31,0,°í°´´Ô Ã¼Çè´Ü ´çÃ·µÇ¼Ì±º¿ä! ÃàÇÏµå¸³´Ï´Ù!  <br>°³º°ÀûÀ¸·Î ¾È³»µÈ ¹è¼Ûºñ ÀÔ±Ý ±â°£ ³» ¹è¼Ûºñ °áÁ¦¿Ï·áÇÏ¼Ì³ª¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+31,0-Y,"¹è¼Ûºñ °áÁ¦±îÁö ¿Ï·áÇÏ¼Ì´Âµ¥ Ã¼Çè´Ü »óÇ°À» ¾ÆÁ÷ ¹ÞÁö ¸øÇÏ¼Ì±º¿ä! <br>ÁË¼ÛÇÕ´Ï´Ù. <br>Á¦°¡ Áö±Ý ¹Ù·Î Ã³¸®ÇØµå¸®°í ½ÍÁö¸¸, ÀÎ°øÁö´ÉÀÎ Àú¿¡°Õ ¾ÆÁ÷ Á¶±Ý ¾î·Á¿ö¿ä. <br> µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é Àü¹® »ó´ã¿øÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù!",default,END
+31,0-N,"°í°´´Ô ÁË¼ÛÇÏÁö¸¸, ±âÇÑ³»¿¡ ¹è¼Û·á¸¦ °áÁ¦ ÇÏ¼Å¾ßÁö¸¸ Ãâ°í°¡ °¡´ÉÇÕ´Ï´Ù.<br>'ÀÌº¥Æ®'-'´çÃ·ÀÚ ¹ßÇ¥'¶õ¿¡¼­ ¹è¼Û·á °áÁ¦ ±âÇÑÀ» È®ÀÎÇÏ½ÅÈÄ ¹è¼Û·á °áÁ¦ ±âÇÑÀÌ Áö³ªÁö ¾Ê¾Ò´Ù¸é, ÆäÀÌÁö ³»ÀÇ ¸µÅ© ÅëÇØ¼­ ¹è¼Û·á¸¦ °áÁ¦ÇØÁÖ½Ã°í<br>¸¸¾à ¹è¼Û·á °áÁ¦±âÇÑÀÌ Áö³µ´Ù¸é, ÀÌ¹Ì Àü»ê Ã³¸® ¹× Ãâ°í Ã³¸®°¡ ¿Ï·áµÇ¾î º°µµ Ã³¸®°¡ ºÒ°¡´ÉÇÕ´Ï´Ù. <br>µµ¿òÀ» µå¸®Áö ¸øÇØ ÁË¼ÛÇÕ´Ï´Ù. <br>´ÙÀ½ ±âÈ¸¿¡ ²À~ Ã¼Çè´Ü »óÇ° ¸¸³ªºÉ ¼ö ÀÖ¾úÀ¸¸é ÁÁ°Ú³×¿ä!",default,END
+31,0-O,"³×, ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+32,0,°í°´´Ô Ã¼Çè´Ü ´çÃ·µÇ¼Ì±º¿ä! ÃàÇÏµå¸³´Ï´Ù! <br>Ã¼Çè´Ü Á¦Ç° ¼ö·É¿¡ ÇÊ¿äÇÑ ¹è¼Ûºñ¸¦ ¾¾¾ÑÀ¸·Î ±³È¯ÇÑ ¹è¼Ûºñ ÇÒÀÎÄíÆùÀ¸·Î °áÁ¦ÇÒ ¼ö ÀÖ´ÂÁö ¹®ÀÇÁÖ¼Ì³×¿ä.,default,seq
+32,0_0,"ÁË¼ÛÇÏÁö¸¸ Ã¼Çè´Ü ¹è¼Ûºñ °áÁ¦´Â ¹è¼Ûºñ ÄíÆùÀ¸·Î´Â °áÁ¦°¡ µÇÁö ¾Ê½À´Ï´Ù. <br>Ã¼Çè´Ü ¹è¼Ûºñ´Â Ä«µå°áÁ¦ È¤Àº ¹«ÅëÀåÀÔ±Ý, ½Ç½Ã°£ °èÁÂÀÌÃ¼ °áÁ¦¸¸ °¡´ÉÇÕ´Ï´Ù. <br>ÀÌÁ¡ ¾çÇØ ºÎÅ¹µå¸³´Ï´Ù.",default,END
+33,0,"°í°´´Ô Ã¼Çè´ÜÀÌº¥Æ® ´çÃ·µÇ¼Ì³ª¿ä? ´çÃ·À» ÃàÇÏµå¸³´Ï´Ù~<br>´çÃ· °á°ú ¹× ¼¼ºÎ ³»¿ëÀº ¾Æ·¡ÀÇ '´çÃ·ÀÚ¹ßÇ¥ º¸·¯°¡±â'¸¦<br>Å¬¸¯ÇÏ½Ã¸é ´çÃ· °á°ú ÆäÀÌÁö·Î<br>ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/event/winList.do')"">'´çÃ·ÀÚ¹ßÇ¥ º¸·¯°¡±â'</button>",default,END
+34,0,"°í°´´Ô ÀÏ¹ÝÀûÀ¸·Î ´çÃ· °æÇ°ÀÇ Á¦¼¼°ø°ú±ÝÀ» ÀÔ±Ý¸¶°¨ÀÏ±îÁö ÀÔ±ÝÇÏ½Ã¸é ÀÔ±Ý ¸¶°¨ ÀÍÀÏ¿¡ °æÇ°ÀÌ ¹è¼ÛµÇ¸ç, ÀÚ¼¼ÇÑ »çÇ×Àº ´çÃ·ÀÚ ¾È³» ½Ã °ÔÀçµË´Ï´Ù.<br>°æÇ°Àº ÀÀ¸ð ½Ã È¸¿øÁ¤º¸ÀÇ ÀÚÅÃ ÁÖ¼ÒÁö·Î ¹è¼ÛµÇ¸ç, ÀÌ¸ÞÀÏÀÌ ¹ß¼ÛµÇ´Â °æ¿ì¿¡µµ ±âº» Á¤º¸»ó¿¡ ÀÔ·ÂÇÏ½Å ¸ÞÀÏÁÖ¼Ò·Î ¹ß¼ÛµÇ¿À´Ï Æò»ó½Ã ¿¬¶ôÃ³, ÁÖ¼Ò, ÀÌ¸ÞÀÏ ÁÖ¼Ò µîÀÇ È¸¿øÁ¤º¸¸¦ Á¤È®È÷ ¾÷µ¥ÀÌÆ®ÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. ¶ÇÇÑ ¸ÞÀÏ¼ö½Å ¿©ºÎ¿¡ µ¿ÀÇ Ã¼Å©ÇØÁÖ¼¼¿ä!",default,seq
+34,0_0,"±¸¸Å°í°´ ´çÃ· °æÇ°ÀÏ °æ¿ì °æÇ°À» ¹ÞÀº ÀÌÈÄ¿¡ ±¸¸ÅÇÏ½Å »óÇ°À» Ãë¼ÒÇÏ½Ã¸é °æÇ°À» È¸¼öÇÏ¸ç, ºñÁ¤»óÀûÀÎ ÁÖ¹®Ãë¼Ò°¡ ÀÖÀ» °æ¿ì¿¡´Â º»ÀÎ È®ÀÎÀýÂ÷ ¾øÀÌ °æÇ°´çÃ·À» Ãë¼Ò Ã³¸®ÇÕ´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+35,0,"°í°´´Ô µ¿¿ø¸ô¿¡¼­ ÁøÇà ÁßÀÎ ÀÌº¥Æ®¿¡ ´ëÇØ¼­ ¾È³»ÇØµå¸±°Ô¿ä!<br> ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¸ðµç ÀÌº¥Æ®¸¦ ÇÑ ´«¿¡ º¸½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/event/eventList.do?E_GBN_CD=03')"">ÀÌº¥Æ® º¸·¯°¡±â</button>",default,END
+36,0,"°í°´´Ô GNC°ñµåÄ«µå´Â GNC KOREA¿¡¼­ ÀÌ¿ëÇÒ ¼ö ÀÖ´Â ¸â¹ö½ÊÄ«µå·Î, GNC¸¦ »ç¶ûÇØÁÖ½Ã´Â °í°´´Ô²² µå¸®´Â °¨»çÀÇ ¸¶À½ÀÔ´Ï´Ù!<br>¿Â¤ý¿ÀÇÁ¶óÀÎ µ¿½Ã¿¡ »ç¿ë °¡´ÉÇÏ¸ç, °¡ÀÔ ¼±¹°°ú ÇÔ²² ¹Ù·Î ÇÒÀÎ ÇýÅÃÀ» ´©¸®½Ç ¼ö ÀÖ½À´Ï´Ù.",default,seq
+36,0_0,"<button class=\""dial_btn\"">GNC °ñµåÄ«µå °¡ÀÔ ¹æ¹ý ¾È³»</button><button class=\""dial_btn\"">GNC °ñµåÄ«µå ÀÌ¿ë °ü·Ã ¾È³»</button><button class=\""dial_btn\"">GNC °ñµåÄ«µå ÀÎÁõ ¾È³»</button><button class=\""dial_btn\"">GNC °ñµåÄ«µå °»½Å ¾È³»</button><button class=\""dial_btn\"">GNC °ñµåÄ«µå ÇýÅÃ ¾È³»</button>",default,END
+37,0,"GNC°ñµåÄ«µå´Â ¿ÀÇÁ¶óÀÎ Àü¹®¸ÅÀå°ú µ¿¿ø¸ô GNCÀü¹®°ü¿¡¼­ °¡ÀÔ, ¹ß±ÞÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br> µ¿¿ø¸ô¿¡¼­ GNC°ñµåÄ«µå ½Å±Ô°¡ÀÔ ¶Ç´Â °»½Å ½Ã, °ñµåÄ«µå¸¦ Àå¹Ù±¸´Ï¿¡ ³Ö°í Á¦Ç°À» ÇÔ²² °áÁ¦ÇÏ½Ã¸é °ñµåÈ¸¿ø ÇýÅÃ°¡·Î ¹Ù·Î ±¸¸Å °¡´ÉÇÏ½Ê´Ï´Ù.",default,seq
+37,0_0,"<font style=\""color:red\"">·Î±×ÀÎ ÈÄ</font> ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é °¡ÀÔ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(''http://www.dongwonmall.com/mypage/gncgoldcard/gncGoldCard.do?view=NEW')"">GNC°ñµåÄ«µå °¡ÀÔ</button>",default,END
+38,0,"GNC°ñµåÄ«µå °»½Å(Àç°¡ÀÔ) È¸¿ø´ÔÀ» À§ÇØ °¡ÀÔºñ¸¦ 40% ÇÒÀÎÇØµå·Á¿ä!<br> 12,000¿øÀ¸·Î GNC°ñµåÄ«µå È¸¿ø¸¸ÀÇ Æ¯º°ÇÑ ÇýÅÃÀ» °è¼Ó ´©¸®¼¼¿ä~",default,seq
+38,0_0,"<font style=\""color:red\"">·Î±×ÀÎ ÈÄ</font> ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é °»½Å ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/mypage/gncgoldcard/gncGoldCard.do?view=REJOIN')"">GNC°ñµåÄ«µå °»½Åµ¿</button>",default,END
+39,0,GNC°ñµåÄ«µå ½Å±Ô ¹ß±Þ ÈÄ ÀÎÁõ±îÁö ¸¶Ä¡½Ã¸é µ¿¿ø¸ô¿¡¼­ GNC°ñµåÄ«µå È¸¿ø ÇýÅÃ°¡·Î ¹Ù·Î ÁÖ¹® °¡´ÉÇÕ´Ï´Ù!<br>¶ÇÇÑ GNC¿ÀÇÁ¶óÀÎ ¸ÅÀå¿¡¼­µµ »ç¿ë °¡´ÉÇÕ´Ï´Ù.,default,END
+40,0,GNC°ñµåÄ«µå È¸¿øÀ¸·Î °¡ÀÔÇÏ½Å<br>°í°´´Ô²²¼­´Â GNC°ñµåÄ«µå ÀÎÁõÀ» ÅëÇØ µ¿¿ø¸ô¿¡¼­ GNC°ñµåÄ«µå ÇýÅÃÀ» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.,default,seq
+40,0_0,"<font style=\""color:red\"">·Î±×ÀÎ ÈÄ</font> ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ÀÎÁõ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/mypage/gncgoldcard/gncGoldCard.do?view=AUTH')"">GNC°ñµåÄ«µå ÀÎÁõ</button>",default,END
+41,0,"1. GNC°ñµåÄ«µå °¡ÀÔ ½Ã, Ã¹ ±¸¸ÅºÎÅÍ °ñµåÄ«µå À¯È¿ÀÏ ³» GNC Àü Á¦Ç° 20% ÇÒÀÎÇýÅÃÀ» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br>2. ¸Å¿ù 7ÀÏ µ¿¾È(1ÀÏ~7ÀÏ) ÁøÇàµÇ´Â °ñµåµ¥ÀÌ ÀÌº¥Æ® ±â°£¿¡´Â GNCÀÇ ¸ðµç Á¦Ç°ÀÌ 20% ÇÒÀÎµÉ »Ó ¾Æ´Ï¶ó °ñµåµ¥ÀÌ Ç°¸ñ¿¡ ÇÑÇØ Ãß°¡ ÇÒÀÎÀÌ ÁøÇàµË´Ï´Ù.",default,seq
+41,0_0,"3. ÀÌº¥Æ®(Æ¯°¡ÇÒÀÎ, Àû¸³±Ý Ãß°¡ µî) Âü¿©¸¦ ÅëÇÏ¿© Ãß°¡ ÇýÅÃÀ» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br>4. ¸Å´Þ °Ç°­Á¤º¸¿Í °ñµåµ¥ÀÌ ÀÌº¥Æ®¸¦ ¾È³»ÇÏ´Â Á¤º¸Áö¸¦ ¿ìÆíÀ¸·Î º¸³»µå¸³´Ï´Ù.",default,END
+42,0,°í°´´Ô²²¼­ ÀÛ¼ºÇØÁÖ½Å ¼ÒÁßÇÑ »óÇ°ÆòÀº ´Ù¸¥ °í°´´Ôµé²² Âü°í°¡ µÇ´Â µ¿¿ø¸ôÀÇ ±ÍÁßÇÑ ÀÚ»êÀÔ´Ï´Ù~ <br>»óÇ°ÆòÀ» ÀÛ¼ºÇÏ½Å °í°´´Ô²²´Â ¹è¼Ûºñ ÇÒÀÎÄíÆùÀ¸·Î ±³È¯ÇÒ ¼ö ÀÖ´Â µ¿¿ø¸ô Æ÷ÀÎÆ® ¡®¾¾¾Ñ¡¯À» µå·Á¿ä~,default,seq
+42,0_0,"ÀÏ¹Ý»óÇ°Æò ÀÛ¼º½Ã ¡æ 100°³ <br> Ã¹ »çÁø»óÇ°Æò(ÇØ´ç »óÇ°ÀÇ »óÇ°ÆòÁß Ã³À½À¸·Î µî·Ï ÇØÁÖ½Å ºÐ) ÀÛ¼º½Ã ¡æ 500°³ <br> »çÁø»óÇ°Æò ÀÛ¼º½Ã ¡æ 300°³¸¦ µå¸³´Ï´Ù. <br> # »óÇ°ÆòÀº µî·Ï Áï½Ã µ¿¿ø¸ô »çÀÌÆ®¿¡ °ÔÀçµÇ¸ç, ¸ðµÎ °ø°³¸¦ ¿øÄ¢À¸·Î ÇÕ´Ï´Ù. <br> °Ô½ÃµÈ »óÇ°ÆòÀÇ ÀúÀÛ±ÇÀº µ¿¿ø¸ô¿¡ ±Í¼ÓµË´Ï´Ù. <br> »óÇ°Æò¿¡ ÀûÇÕÇÏÁö ¾ÊÀº ³»¿ë, ¹ÌÇ³¾ç¼ÓÀ» ÇØÄ¡´Â ±Û, Æ¯Á¤ ¼ººÐ¿¡ °üÇÑ È¿´ÉÀÌ ÀÖ¾î ¿ÀÇØÀÇ ¼ÒÁö°¡ ÀÖ´Â ³»¿ëÀº Åëº¸ ¾øÀÌ »èÁ¦µÉ ¼ö ÀÖ½À´Ï´Ù. <br> # ºÒ·® »óÇ°ÆòÀ¸·Î 3°³¿ù µ¿¾È 3È¸ ½Å°í Á¢¼ö µÈ °æ¿ì¿Í ÀÛ¼ºÇÏ½Å »óÇ°ÆòÀ» ÃÖ±Ù 1°³¿ù µ¿¾È 3È¸ »èÁ¦ÇÏ½Å °æ¿ì »óÇ°Æò ÀÛ¼º ±ÇÇÑÀÌ Á¦ÇÑµÇ¹Ç·Î, À¯ÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.",default,END
+43,0,°í°´´Ô Çö±Ý¼º °áÁ¦¼ö´ÜÀ¸·Î °áÁ¦ÇÏ½Å ÁÖ¹®¿¡ ÇÑÇØ Çö±Ý¿µ¼öÁõÀ» ½ÅÃ»ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br>Çö±Ý¼º °áÁ¦¼ö´ÜÀ¸·Î´Â ½Ç½Ã°£°èÁÂÀÌÃ¼/¹«ÅëÀåÀÔ±ÝÀÌ ÀÖ½À´Ï´Ù.,default,END
+44,0,"Çö±Ý¿µ¼öÁõÀº Çö±Ý¿µ¼öÁõ ¹ß±Þ´ë»ó »óÇ°À» 1¿øÀÌ»ó Çö±Ý¼º °áÁ¦¼ö´ÜÀ¸·Î ÁÖ¹®ÇÏ½Å °Ç¿¡ ´ëÇÏ¿© ¹ß±ÞÀÌ °¡´ÉÇÕ´Ï´Ù. <br>ÁÖ¹®¼­ ÀÛ¼º ÆäÀÌÁö¿¡¼­ À§ ½ÅÃ»¿ä°ÇÀ» ¸¸Á·ÇÏ´Â °æ¿ì Çö±Ý¿µ¼öÁõ ½ÅÃ»ºÎºÐÀÌ »ý¼ºµË´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+45,0,"¹ß±Þ ¹ÞÀ¸½Å Çö±Ý¿µ¼öÁõÀº µû·Î º¸°üÇÏ½Ç ÇÊ¿ä°¡ ¾ø½À´Ï´Ù.<br>´Ü, ½ÅÃ»ÇÏ½Å Çö±Ý¿µ¼öÁõÀ» Ãâ·ÂÇÏ·Á ÇÏ½Ã´Â °æ¿ì µ¿¿ø¸ô¿¡ ·Î±×ÀÎ ÈÄ [My µ¿¿ø¸ô - Áõºù¼­·ù¹ß±Þ] Çö±Ý¿µ¼öÁõÀ» Ãâ·Â ÇÏ½Ç ¼ö ÀÖÀ¸¸ç ¹ßÇà½ÃÁ¡Àº ¹ß¼Û¿Ï·á ÀÌÈÄ ÀÔ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/mypage/myorder/myOrderPaper.do')"">MY µ¿¿ø¸ô - Áõºù¼­·ù ¹ß±Þ</button>",default,seq
+45,0_0,"Çö±Ý¿µ¼öÁõ »ç¿ë³»¿ªÀº Àü»êÀ¸·Î ¼ö·ÏµÇ¾î Çö±Ý¿µ¼öÁõ È¨ÆäÀÌÁö(httr://Çö±Ý¿µ¼öÁõ.kr)¿¡¼­ 3°³¿ù°£ÀÇ »ç¿ë³»¿ª(ÀÏÀÚ,»óÈ£,±Ý¾× µî) ¹× 1³â°£ÀÇ ¿ùº° »ç¿ë³»¿ªÀ» È®ÀÎÇÒ ¼ö ÀÖÀ¸¹Ç·Î ³»¿ªÈ®ÀÎÀÌ µÇ¸é º¸°üÇÏ½Ç ÇÊ¿ä´Â ¾ø½À´Ï´Ù.<br>Çö±Ý¿µ¼öÁõ È¨ÆäÀÌÁö(http://Çö±Ý¿µ¼öÁõ.kr)¿¡¼­ °áÁ¦ÀÏ ¶Ç´Â µî·ÏÀÏ ´ÙÀ½³¯ 9½ÃºÎÅÍ Á¶È¸µË´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do\"",\""*\"")'>\n<button class=\""ext_btn\"" type=\""button')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+46,0,"°í°´´Ô ÁÖ¹®ÀÚÀÇ ÁÖ¹Îµî·Ï¹øÈ£(¹ýÀÎÈ¸¿øÀÇ °æ¿ì, »ç¾÷ÀÚµî·Ï¹øÈ£)¸¦ ±âÁØÀ¸·Î Çö±Ý¿µ¼öÁõÀ» ¹ß±ÞÇØµå¸³´Ï´Ù.<br> Å¸ÀÎ ¸íÀÇ·Î´Â ¹ßÇàÀÌ ºÒ°¡ÇÕ´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+47,0,"°í°´´Ô ¼¼±Ý°è»ê¼­¿Í ½Å¿ëÄ«µå¸ÅÃâÀüÇ¥, Çö±Ý¿µ¼öÁõ Áß ÇÑ°¡Áö¸¸ ¹ßÇàµË´Ï´Ù.<br>¾Æ·¡¿Í °°Àº [¼¼±Ý°è»ê¼­ ±³ºÎÀÇ¹«ÀÇ ¸éÁ¦ µî] ºÎ°¡°¡Ä¡¼¼¹ý ±ÔÁ¤¿¡ ÀÇ°ÅÇÏ¿© ½Å¿ëÄ«µå·Î °áÁ¦ÇÏ½Å °í°´´Ô²²¼­´Â ½Å¿ëÄ«µå¸ÅÃâÀüÇ¥¸¸ Ãâ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.<br><br>»ç¾÷ÀÚ°¡ ÀçÈ­ ¶Ç´Â ¿ë¿ªÀ» °ø±ÞÇÏ°í ºÎ°¡°¡Ä¡¼¼¹ý½ÃÇà·É Á¦32Á¶ÀÇ 2 Á¦1Ç×ÀÇ ±ÔÁ¤¿¡ ÀÇÇÑ ½Å¿ëÄ«µå¸ÅÃâÀüÇ¥ µîÀ» ±³ºÎÇÑ °æ¿ì, ºÎ°¡°¡Ä¡¼¼¹ý½ÃÇà·É Á¦57Á¶ Á¦2Ç×ÀÇ ±ÔÁ¤¿¡ ÀÇÇÏ¿© ¼¼±Ý°è»ê¼­¸¦ ±³ºÎÇÏÁö ¾Æ´ÏÇÑ´Ù.<br><br>Áï, ½Å¿ëÄ«µå·Î °áÁ¦ÇÏ½Å °æ¿ì ½Å¿ëÄ«µå¸ÅÃâÀüÇ¥ Ãâ·Â¸¸ °¡´ÉÇÏ¸ç ¼¼±Ý°è»ê¼­´Â ½ÅÃ» ¹× ¹ß±ÞÀÌ µÇÁö ¾Ê½À´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+48,0,"°í°´´Ô ¼¼±Ý°è»ê¼­´Â ÁÖ¹®¿Ï·á ÈÄ [MY µ¿¿ø¸ô - Áõºù¼­·ù ¹ß±Þ] ÆäÀÌÁö¿¡¼­ ½ÅÃ»°¡´ÉÇÕ´Ï´Ù.
+ ºñÈ¸¿øÀº µ¿¿ø¸ô °í°´¼¾ÅÍ·Î ¹®ÀÇÇØÁÖ¼¼¿ä.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/mypage/myorder/myOrderPaper.do')"">MY µ¿¿ø¸ô - Áõºù¼­·ù ¹ß±Þ</button>",default,END
+49,0,"°áÁ¦ÃÑ¾×À¸·Î ¹ßÇàµÇ¸ç ÇÒÀÎÄíÆù¿¡ ÀÇÇÑ ÇÒÀÎ±Ý¾×°ú ¹è¼Ûºñ´Â Á¦¿Ü µË´Ï´Ù.<br>
+Àû¸³±ÝÀ¸·Î °áÁ¦ÇÑ ±Ý¾×Àº Æ÷ÇÔµË´Ï´Ù. <br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+50,0,"°í°´´Ô µ¿¿ø¸ô »óÇ°ÀÇ °ø±ÞÀÚ´Â ¢ßµ¿¿øF&B ÀÔ´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+51,0,"°í°´´Ô ¼¼±Ý°è»ê¼­ »óÀÇ ¹ßÇàÀÏÀÚ´Â<br>- ÁÖ¹®¿ù°ú ¹ß¼Û¿ùÀÌ µ¿ÀÏÇÏ¸é ÁÖ¹®ÀÏÀÚ·Î ¹ßÇàµË´Ï´Ù.<br>- ÁÖ¹®¿ù°ú ¹ß¼Û¿ùÀÌ ´Ù¸£¸é ¹ß¼Û¿Ï·áÀÏÀÚ·Î ¹ßÇàµË´Ï´Ù.<br>´Ü, ±âº» ¹ßÇàÀÏÀÚ°¡ Æ÷ÇÔµÈ ÇØ´ç¿ù ³»¿¡¼­´Â ¿øÇÏ´Â ¹ßÇàÀÏÀÚ¸¦ °í°´´Ô²²¼­ ¼±ÅÃÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+52,0,"°í°´´Ô ÀüÀÚ¼¼±Ý°è»ê¼­ ½ÅÃ»Àº ´ç¿ù¿¡ ¹ß¼Û¿Ï·áµÈ°Ç¿¡ ÇÑÇÏ¿© °¡´ÉÇÏ¸ç, ¸Å¿ù ¸»ÀÏ ¿ÀÈÄ 3½Ã¿¡ ¸¶°¨ÇÕ´Ï´Ù.<br>¿¹) 7¿ù 15ÀÏ ÁÖ¹® ¡æ 7¿ù 31ÀÏ ¿ÀÈÄ 3½Ã ½ÅÃ»Àü ¹ß±Þ °¡´É, ±× ÀÌÈÄ ½ÅÃ»°ÇÀº ¹ß±Þ ºÒ°¡<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+53,0,"°í°´´Ô »ç¾÷ÀÚµî·ÏÁõÀº ÇÊ¼öÇ×¸ñÀÌ¹Ç·Î ½ÅÃ»½Ã¸¶´Ù Ã·ºÎÇØÁÖ¼Å¾ß ÇÕ´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+54,0,"°í°´´Ô ¿±»ê µîÀÇ ºñÅ¸¹Î B±º Á¦Ç°, º¹ÇÕºñÅ¸¹Î B±º Æ÷¹Ä¶ó Á¦Ç°, ºñÅ¸¹Î C Á¦Ç° µîÀÇ °æ¿ì ¼·Ãë ±â°£ Áß »ö±òÀÌ ´õ ³ë¶þ°Å³ª ÁÖÈ²»ö µîÀ¸·Î º¯ÇÏ´Â °æ¿ì°¡ ÀÖ½À´Ï´Ù.<br>ÀÌ·¯ÇÑ Çö»óÀº ¼öºÐÀ» Àß Èí¼öÇÏ´Â ºñÅ¸¹Î B±º°ú ºñÅ¸¹ÎC Á¦Ç°µéÀÌ °ø±âÁßÀÇ ½À±â¿Í ¸¸³ª »ö±òÀÌ Â£¾îÁö´Â °ÍÀÔ´Ï´Ù.<br>ÀÌ·¯ÇÑ °æ¿ì¿¡ ´ÜÁö ÀÏºÎ ºñÅ¸¹ÎÀÇ Æ¯¼º¿¡ ÀÇÇÑ °ÍÀÌ¹Ç·Î Á¦Ç°ÀÇ ¼ººÐ»ó º¯ÁúÀº ÀüÇô ¾øÀ¸¸ç,  Á¤»óÀûÀ¸·Î ¼·Ãë¸¦ ÇÏ´Âµ¥¿¡µµ ÀüÇô ¹«¸®°¡ ¾ø½À´Ï´Ù.<br>°ø±âÁß¿¡¼­ °¥º¯µÈ »ç°ú°¡ ¼ººÐ»ó º¯ÁúÀÌ ¾ø´Â °Í°ú ºñ½ÁÇÑ ¿ø¸®ÀÔ´Ï´Ù.<br>µû¶ó¼­ ºñÅ¸¹Î B±ºÀÌ³ª ºñÅ¸¹Î C Á¦Ç°ÀÇ °æ¿ì ½À±â°¡ ¸¹Àº Àå¸¶Ã¶ÀÌ³ª ¿©¸§¿¡ ¹ÐºÀ¿¡ ÁÖÀÇÇÏ¿© º¸°üÇØ¾ß ÇÕ´Ï´Ù.<br>°ÇÁ¶ÇÏ°í ¼­´ÃÇÑ °÷¿¡ º¸°üÇÏ¸ç, ÁöÆÛ¹é µîÀ¸·Î ÇÑ¹ø ´õ ¹ÐºÀÇØ ÁÖ½Ã¸é »ö º¯È­¸¦ ¸·´Âµ¥ µµ¿òÀÌ µË´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+55,0,"°í°´´Ô Á¦Ç°Àº ¼­´ÃÇÏ°í °ÇÁ¶ÇÑ °÷¿¡¼­ º¸°üÇÏ´Â °ÍÀÌ ÁÁ½À´Ï´Ù.<br>±Ø½ÉÇÑ ¿ÂµµÂ÷´Â ÇÇÇÏµÇ, Æ¯º°ÇÑ Áö½Ã»çÇ×ÀÌ ¾øÀ» °æ¿ì¿¡´Â ³ÃÀå º¸°üÇÒ ÇÊ¿ä´Â ¾ø½À´Ï´Ù.<br>´Ü, À¯»ê±Õ°ú ·Î¾âÁ¦¸® Á¦Ç°ÀÇ °æ¿ì ½Å¼±µµ¸¦ À§ÇØ¼­ °³ºÀ ÈÄ ³ÃÀå º¸°üÇÏ´Â °ÍÀÌ ÁÁ½À´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,seq
+56,0,"°í°´´Ô ·¹½ÃÇÇ´Â °í°´´Ô²²¼­ ¾Ë°í °è½Ã´Â ¿ä¸®¸¦ ¿Ã¸®´Â °ø°£À¸·Î µ¿¿ø¸ô °í°´ÀÌ¸é ´©±¸³ª µî·ÏÀÌ °¡´ÉÇÕ´Ï´Ù.<br>·¹½ÃÇÇ¸¦ µî·ÏÇÏ½Å °í°´´Ô²²´Â °ü¸®ÀÚ ½ÂÀÎ ÈÄ µ¿¿ø¸ô Àû¸³±Ý 500Á¡À» Àû¸³ÇØµå¸®°í, ¸Å´Þ ¿ì¼ö ·¹½ÃÇÇ¿¡ ¼±Á¤µÇ´Â 3ºÐ²²´Â 20,000Á¡À» Àû¸³ÇØ µå¸³´Ï´Ù.<br>¡Ø»çÁø°ú ±ÛÀ» Æ÷ÇÔÇÑ STEP 5 ÀÌ»ó µî·Ï ½Ã¿¡¸¸ Àû¸³±Ý Áö±Þ",default,seq
+56,0_0,"µ¿¿ø¸ô ·¹½ÃÇÇ¿¡´Â URL º¹»ç ±â´ÉÀ» Á¦°øÇÏ°í ÀÖ½À´Ï´Ù. ·¹½ÃÇÇ ÆäÀÌÁö ³» ´ÜÃà URL, Æ®À§ÅÍ, ÆäÀÌ½ººÏ ¹öÆ°À» Å¬¸¯ÇÏ¸é ¿øÇÏ´Â °÷À¸·Î °£ÆíÇÏ°Ô º¹»çÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. <br>·¹½ÃÇÇ¿¡ ÀûÇÕÇÏÁö ¾ÊÀº ³»¿ë, ¹ÌÇ³¾ç¼ÓÀ» ÇØÄ¡´Â ±Û, Æ¯Á¤ ¼ººÐ¿¡ °üÇÑ È¿´ÉÀÌ ÀÖ¾î ¿ÀÇØÀÇ ¼ÒÁö°¡ ÀÖ´Â ³»¿ëÀº Åëº¸ ¾øÀÌ »èÁ¦µÉ ¼ö ÀÖ½À´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+57,0,"°í°´´Ô µ¿¿ø¸ô °í°´¼¾ÅÍ ÀüÈ­¹øÈ£´Â 1588-3745ÀÌ°í, FAX ¹øÈ£´Â (02) 589-3217ÀÔ´Ï´Ù.",default,END
+58,0,"°í°´´Ô<br>ÄÝ¼¾ÅÍ ¿î¿µ½Ã°£Àº AM 09:00~PM 06:00<br>Á¡½É½Ã°£ PM 12:00~01:00 ÀÌ¸ç Åä/ÀÏ/°øÈÞÀÏÀº ÈÞ¹«ÀÔ´Ï´Ù.<br>ÄÝ¼¾ÅÍ ½Ã°£ ¿Ü¿¡´Â [°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã]À» ÅëÇØ ±Ã±ÝÇÏ½Å »çÇ×À» È®ÀÎÇÏ½Ã°Å³ª »ó´ãÀ» Á¢¼öÇÏ¿© ÁÖ¼¼¿ä.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,seq
+58,0_0,"¹®ÀÇÇÏ½Ã±â Àü¿¡ [°í°´¼¾ÅÍ - ÀÚÁÖ¹¯´ÂÁú¹®]À» ÅëÇØ ±Ã±ÝÇÏ½Å »çÇ×À» ¸ÕÀú È®ÀÎÇÏ½Å´Ù¸é °í°´´ÔÀº ¼¾½ºÀïÀÌ! <br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/faqList.do?BM_IDX=10010&BC_IDX=7&BC_SORT=1')"">ÀÚÁÖ ¹¯´Â Áú¹®</button>",default,END
+59,0,"°í°´´Ô ÁË¼ÛÇÕ´Ï´Ù.<br>¹®ÀÇ°¡ ¸¹¾Æ °í°´¼¾ÅÍ ¿¬°áÀÌ ¾î·Á¿î »óÈ²ÀÔ´Ï´Ù.<br>µ¿¿ø¸ô È¨ÆäÀÌÁö ³» [°í°´¼¾ÅÍ - 1:1¸ÂÃã»ó´ã] °Ô½ÃÆÇÀ» ÅëÇØ¼­µµ ¹®ÀÇ °¡´ÉÇÏ½Ã´Ï ÀÌ¿ë ºÎÅ¹µå¸³´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+60,0,"°í°´´Ô [MY µ¿¿ø¸ô - 1:1 »ó´ã³»¿ª]À» Å¬¸¯ÇÏ½Ã¸é °í°´´Ô²²¼­ ¹®ÀÇÇÏ½Å ¸ðµç ³»¿ªÀÌ º¸¿©Áý´Ï´Ù. ÀÌ°÷¿¡¼­ ¹®ÀÇ³»¿ªÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">MY µ¿¿ø¸ô - 1:1 »ó´ã³»¿ª</button>",default,END
+61,0,"°í°´´Ô »óÇ°Q&A´Â ÇØ´ç ¹®ÀÇ ±ÛÀ» Å¬¸¯ÇÏ½Ã¸é º»ÀÎ ¼öÁ¤°ú »èÁ¦°¡ °¡´ÉÇÕ´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+62,0,°í°´´Ô »ó´ã¿ø ¿¬°á ±â´ÉÀº ¾ÆÁ÷ Áö¿øµÇÁö ¾Ê½À´Ï´Ù.<br>Á÷Á¢ ¹®ÀÇ¸¦ ¿øÇÏ½Ã¸é °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇ ºÎÅ¹µå¸³´Ï´Ù.,default,seq
+62,0,°í°´´Ô »ó´ã¿ø ¿¬°á ±â´ÉÀº ¾ÆÁ÷ Áö¿øµÇÁö ¾Ê½À´Ï´Ù.<br>¼¼ºÎ ¹®ÀÇ¸¦ ÇÏ½Ã·Á¸é °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÇØÁÖ¼¼¿ä.,default,seq
+62,0_0,"µ¿¿ø¸ô È¨ÆäÀÌÁö ³» [°í°´¼¾ÅÍ - 1:1¸ÂÃã»ó´ã] °Ô½ÃÆÇÀ» ÅëÇØ¼­µµ ¹®ÀÇ °¡´ÉÇÏ½Ã´Ï ÀÌ¿ë ºÎÅ¹µå¸³´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+63,0,°í°´´Ô ÁË¼ÛÇÏÁö¸¸ Áö±Ý ¹Ù·Î Ã³¸®´Â ¾î·Æ½À´Ï´Ù.<br>°í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇ ºÎÅ¹µå¸³´Ï´Ù.,default,END
+64,0,°í°´´Ô! Çªµð´Â 365ÀÏ 24½Ã°£ °í°´´Ô°ú ÇÔ²² ÇÒ°Å¿¡¿ä~<br>¹®ÀÇ°¡ ÀÖÀ¸½Ã¸é ¾ðÁ¦µçÁö Àú¿¡°Ô ¸»¾¸ÇÏ¼¼¿ä!,default,END
+64,0,Çªµð´Â Åð±Ù ½Ã°£ÀÌ ¾ø´ä´Ï´Ù~<br> 24½Ã°£ °í°´´Ô °ç¿¡ ÀÖÀ»°Ô¿ä!<br>¹®ÀÇ°¡ ÀÖÀ¸½Ã¸é ¾ðÁ¦µçÁö Àú¿¡°Ô ¸»¾¸ÇÏ¼¼¿ä!,default,END
+64,0,Çªµð´Â 365ÀÏ 24½Ã°£ °í°´´ÔÀÌ Ã£¾Æ¿À½Ã±æ ±â´Ù¸± °Å¿¹¿ä~<br>¹®ÀÇ°¡ ÀÖÀ¸½Ã¸é ¾ðÁ¦µçÁö Àú¿¡°Ô ¸»¾¸ÇÏ¼¼¿ä!,default,END
+65,0,"°í°´´Ô »óÇ°¿¡ ¹®Á¦°¡ ÀÖÀ¸½Å°¡¿ä?<br>´ë´ÜÈ÷ ÁË¼ÛÇÕ´Ï´Ù.<br>ÄÝ¼¾ÅÍ 1588-3745·Î ¿¬¶ô ÁÖ½Ã°Å³ª, 1:1 ¸ÂÃã»ó´ã °Ô½ÃÆÇ¿¡ Á¢¼ö ºÎÅ¹µå¸³´Ï´Ù.<br>ºÒÆíÀ» ³¢ÃÄµå·Á ´Ù½Ã ÇÑ ¹ø ÁË¼ÛÇÕ´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+66,0,"°í°´´Ô²²¼­ ¹®ÀÇÁÖ½Å ³»¿ëÀº ¾ÆÁ÷ ¼­ºñ½º°¡ ¾î·Æ½À´Ï´Ù.<br>°í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã°Å³ª, µ¿¿ø¸ô È¨ÆäÀÌÁö MYµ¿¿ø¸ô ¶Ç´Â °í°´¸¸Á·¼¾ÅÍ - 1:1¸ÂÃã»ó´ã °Ô½ÃÆÇ¿¡ Á¢¼ö ºÎÅ¹µå¸³´Ï´Ù.",default,END
+67,0,ÀÓÁ÷¿ø¸ôÀº µ¿¿ø±×·ì ÀÓÁ÷¿ø È¸¿ø´Ôµé¸¸À» À§ÇÑ ÆäÀÌÁöÀÔ´Ï´Ù.<br>ÀÓÁ÷¿ø ÀÎÁõÀ» ¸¶Ä¡½Ã¸é ¹Ù·Î ÀÌ¿ëÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br>ÀÎÁõÇÏ½Ã°í ÀÓÁ÷¿ø Æ¯º° ÇÒÀÎ°¡¿¡ µæÅÛÇØ°¡¼¼¿ä~,default,END
+68,0,ÀÓÁ÷¿øÀÌ½Å°¡¿ä?<br>¸ÕÀú ·Î±×ÀÎÀ» ÇØÁÖ¼¼¿ä!<br><br>·Î±×ÀÎÇÏ½Å ÈÄ PC È­¸é ¿ìÃøÀ» º¸½Ã¸é ÆÄ¶õ»ö 'ÀÓÁ÷¿ømall' ¾ÆÀÌÄÜÀÌ º¸ÀÌ½Ç°Å¿¡¿ä.<br>Å¬¸¯ÇÏ½Ã¸é ÀÓÁ÷¿ø¸ô·Î ÀÌµ¿ÇÕ´Ï´Ù!,default,seq
+68,0_0,"¸ð¹ÙÀÏÀÇ °æ¿ì, ·Î±×ÀÎÇÏ½Ã¸é È­¸é »ó´Ü ½ºÅ©·Ñ ¸Þ´º¹Ù¿¡ 'ÀÓÁ÷¿ø¸ô'ÀÌ º¸ÀÔ´Ï´Ù.<br>½ºÅ©·ÑÀ» ¿òÁ÷¿© º¸¼¼¿ä!",default,END
+69,0,µ¿¿ø ÀÓÁ÷¿ø °í°´´Ô²² µå¸®´Â ÇýÅÃ!<br>1. ÃÖ´ë 25% µ¿¿ø¸ô Æò»ýÇÒÀÎ ÇýÅÃÀ» µå¸³´Ï´Ù. (ÀÏºÎ»óÇ° Á¦¿Ü)<br>2. ¸Å ºÐ±â¸¶´Ù Áö±ÞµÇ´Â ÀÓÁ÷¿ø º¹ÁöÆ÷ÀÎÆ®¸¦ µ¿¿ø¸ô¿¡¼­ Çö±ÝÃ³·³ »ç¿ëÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br>3. µ¿¿ø Á¦Ç°ÀÇ °æ¿ì ÀÓÁ÷¿ø ÇÒÀÎÆ÷ÀÎÆ®·Î 10% Ãß°¡ÇÒÀÎÇØµå¸³´Ï´Ù. (ÀÓÁ÷¿ø¸ô ³» µ¿¿øÁ¦Ç° ±¸¸Å ½Ã ÆÇ¸Å°¡ÀÇ 10% ÀÌÇÏ·Î »ç¿ë °¡´É),default,seq
+69,0_0,"ÀÓÁ÷¿ø º¹ÁöÆ÷ÀÎÆ®¿Í ÀÓÁ÷¿ø ÇÒÀÎÆ÷ÀÎÆ®¿¡ ´ëÇØ ´õ ¾Ë°í ½ÍÀ¸½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é ÀÓÁ÷¿ø Æ÷ÀÎÆ®¿¡ ´ëÇØ ¾È³»ÇØµå¸±°Ô¿ä!<button class=\""dial_btn f\"">ÀÓÁ÷¿ø Æ÷ÀÎÆ®\n ¾È³»</button>",default,
+70,0,"µ¿¿ø ÀÓÁ÷¿ø ¿©·¯ºÐ²² µå¸®´Â Æ÷ÀÎÆ® ÇýÅÃÀ¸·Î ÀÓÁ÷¿ø º¹ÁöÆ÷ÀÎÆ®¿Í ÀÓÁ÷¿ø ÇÒÀÎÆ÷ÀÎÆ®°¡ ÀÖ½À´Ï´Ù.<br>±Ã±ÝÇÏ½Å ³»¿ëÀ» ¼±ÅÃÇØÁÖ¼¼¿ä!<button class=""dial_btn f"">ÀÓÁ÷¿ø º¹ÁöÆ÷ÀÎÆ®
+ ¾È³»</button><button class=""dial_btn"">ÀÓÁ÷¿ø ÇÒÀÎÆ÷ÀÎÆ® ¾È³»</button>",default,ABCD
+70,0-A,"ÀÓÁ÷¿ø º¹ÁöÆ÷ÀÎÆ®´Â ¸Å ºÐ±â(1, 4, 7, 10¿ù) ¸¶´Ù 50,000 Æ÷ÀÎÆ®¾¿ Áö±ÞµÇ¸ç, ¹ýÁ¤ »ýÀÏ(ÁÖ¹Îµî·Ï¹øÈ£ ¾ÕÀÚ¸®)ÀÌ ÀÖ´Â ºÐ±â¿¡ 50,000 Æ÷ÀÎÆ®¸¦ Ãß°¡ Áö±ÞÇÏ¿© ¿¬°£ ÃÑ 250,000 Æ÷ÀÎÆ®°¡ Áö±ÞµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,seq
+70,0-A_0,"º¹ÁöÆ÷ÀÎÆ®´Â µ¿¿ø¸ô ÀÏ¹Ý¸ÅÀå ¹× ÀÓÁ÷¿ø¸ô Àü »óÇ° ±¸¸Å ½Ã »ç¿ë°¡´ÉÇÕ´Ï´Ù.<br>Áö±ÞµÈ Æ÷ÀÎÆ®´Â Áö±Þ³âµµÀÇ ´ÙÀ½ÇØ ¸»ÀÏ(12¿ù 31ÀÏ)±îÁö »ç¿ëÇÒ ¼ö ÀÖÀ¸¸ç, À¯È¿±â°£ °æ°ú ½Ã ¹Ì»ç¿ë Æ÷ÀÎÆ®´Â ¼Ò¸êµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,END
+70,0-B,"ÀÓÁ÷¿ø ÇÒÀÎÆ÷ÀÎÆ®´Â ¸Å ºÐ±â(1, 4, 7, 10¿ù) ¸¶´Ù 50,000 Æ÷ÀÎÆ®¾¿ Áö±ÞµÇ¸ç, ¹ýÁ¤ »ýÀÏ(ÁÖ¹Îµî·Ï¹øÈ£ ¾ÕÀÚ¸®)ÀÌ ÀÖ´Â ºÐ±â¿¡ 50,000 Æ÷ÀÎÆ®¸¦ Ãß°¡ Áö±ÞÇÏ¿© ¿¬°£ ÃÑ 250,000 Æ÷ÀÎÆ®°¡ Áö±ÞµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,seq
+70,0-B_0,"ÇÒÀÎÆ÷ÀÎÆ®´Â ÀÓÁ÷¿ø¸ô ³» µ¿¿øÁ¦Ç° ±¸¸Å ½Ã ÆÇ¸Å°¡ÀÇ 10% ÀÌÇÏ·Î »ç¿ë °¡´ÉÇÕ´Ï´Ù.<br>Áö±ÞµÈ Æ÷ÀÎÆ®´Â Áö±Þ³âµµÀÇ ´ÙÀ½ÇØ ¸»ÀÏ(12¿ù 31ÀÏ)±îÁö »ç¿ëÇÒ ¼ö ÀÖÀ¸¸ç, À¯È¿±â°£ °æ°ú ½Ã ¹Ì»ç¿ë Æ÷ÀÎÆ®´Â ¼Ò¸êµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,END
+71,0,"ÀÓÁ÷¿ø º¹ÁöÆ÷ÀÎÆ®´Â ¸Å ºÐ±â(1, 4, 7, 10¿ù) ¸¶´Ù 50,000 Æ÷ÀÎÆ®¾¿ Áö±ÞµÇ¸ç, ¹ýÁ¤ »ýÀÏ(ÁÖ¹Îµî·Ï¹øÈ£ ¾ÕÀÚ¸®)ÀÌ ÀÖ´Â ºÐ±â¿¡ 50,000 Æ÷ÀÎÆ®¸¦ Ãß°¡ Áö±ÞÇÏ¿© ¿¬°£ ÃÑ 250,000 Æ÷ÀÎÆ®°¡ Áö±ÞµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,seq
+71,0_0,"º¹ÁöÆ÷ÀÎÆ®´Â µ¿¿ø¸ô ÀÏ¹Ý¸ÅÀå ¹× ÀÓÁ÷¿ø¸ô Àü »óÇ° ±¸¸Å ½Ã »ç¿ë°¡´ÉÇÕ´Ï´Ù.<br>Áö±ÞµÈ Æ÷ÀÎÆ®´Â Áö±Þ³âµµÀÇ ´ÙÀ½ÇØ ¸»ÀÏ(12¿ù 31ÀÏ)±îÁö »ç¿ëÇÒ ¼ö ÀÖÀ¸¸ç, À¯È¿±â°£ °æ°ú ½Ã ¹Ì»ç¿ë Æ÷ÀÎÆ®´Â ¼Ò¸êµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,END
+72,0,"ÀÓÁ÷¿ø ÇÒÀÎÆ÷ÀÎÆ®´Â ¸Å ºÐ±â(1, 4, 7, 10¿ù) ¸¶´Ù 50,000 Æ÷ÀÎÆ®¾¿ Áö±ÞµÇ¸ç, ¹ýÁ¤ »ýÀÏ(ÁÖ¹Îµî·Ï¹øÈ£ ¾ÕÀÚ¸®)ÀÌ ÀÖ´Â ºÐ±â¿¡ 50,000 Æ÷ÀÎÆ®¸¦ Ãß°¡ Áö±ÞÇÏ¿© ¿¬°£ ÃÑ 250,000 Æ÷ÀÎÆ®°¡ Áö±ÞµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,seq
+72,0_0,"ÇÒÀÎÆ÷ÀÎÆ®´Â ÀÓÁ÷¿ø¸ô ³» µ¿¿øÁ¦Ç° ±¸¸Å ½Ã ÆÇ¸Å°¡ÀÇ 10% ÀÌÇÏ·Î »ç¿ë °¡´ÉÇÕ´Ï´Ù.<br>Áö±ÞµÈ Æ÷ÀÎÆ®´Â Áö±Þ³âµµÀÇ ´ÙÀ½ÇØ ¸»ÀÏ(12¿ù 31ÀÏ)±îÁö »ç¿ëÇÒ ¼ö ÀÖÀ¸¸ç, À¯È¿±â°£ °æ°ú ½Ã ¹Ì»ç¿ë Æ÷ÀÎÆ®´Â ¼Ò¸êµË´Ï´Ù.<br>¡Ø ¼Ò¼Ó °è¿­»ç Á¤Ã¥¿¡ µû¶ó »óÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,END
+73,0,"°í°´´Ô 'ÀÓÁ÷¿ø ÇÒÀÎ Æ÷ÀÎÆ®°¡'´Â ÀÓÁ÷¿ø ÆÇ¸Å°¡¿¡ ÇÒÀÎ Æ÷ÀÎÆ®¸¦ »ç¿ëÇÏ¿© Ãß°¡ ÇÒÀÎµÈ ±Ý¾×À» ÀÇ¹ÌÇÕ´Ï´Ù<br>ÀÜ¿© Æ÷ÀÎÆ®°¡ ÀÖÀ» °æ¿ì ÇÒÀÎÀÌ °¡´ÉÇÏ¸ç, ÀÓÁ÷¿ø¸ô ³» µ¿¿øÁ¦Ç° ±¸¸Å ½Ã ÆÇ¸Å°¡ÀÇ 10% ÀÌÇÏ·Î »ç¿ë °¡´ÉÇÕ´Ï´Ù.",default,END
+74,0,°í°´´Ô ÀÓÁ÷¿ø ÀÎÁõÀº µ¿¿ø¸ô È¨ÆäÀÌÁö »ó´Ü 'MYµ¿¿ø¸ô'<br>Å¬¸¯ÇÏ½Å ÈÄ ÁÂÃø ¸Þ´º ÇÏ´ÜÀÇ 'È¸¿øÁ¤º¸ °ü¸®' ¡æ '°³ÀÎÁ¤º¸º¯°æ' À» Å¬¸¯ÇÏ½Ã¸é µË´Ï´Ù.,default,seq
+74,0_0,"°³ÀÎÁ¤º¸º¯°æ' ÆäÀÌÁö ÀÌµ¿ ÈÄ<br>¸Ç ÇÏ´Ü 'µ¿¿ø ÀÓÁ÷¿øÁ¤º¸ ÀÔ·Â' ¶õÀÇ ¼Ò¼Ó»ç¸¦ ¼±ÅÃÇÏ½Ã°í, »ç¹ø±îÁö ÀÔ·ÂÇÏ½Å ÈÄ [ÀÓÁ÷¿ø ÀÎÁõ] ¹öÆ°À» ´©¸£½Ã¸é ¿Ï·áµË´Ï´Ù.",default,END
+75,0,Àú´Â »ç¶÷ÀÏ±î¿ä ±â°èÀÏ±î¿ä? <br> Àú´Â ÀÎ°øÁö´ÉÀ» °¡Áö°í ÀÖ°í »ç¶÷Ã³·³ »ý°¢ÇÏ°í ´ë´äÇÒ ¼ö ÀÖ´Â Ãªº¿ÀÎµ¥... <br> Àúµµ Çò°¥¸®³×¿ä...,default,END
+75,0,Âü ¾î·Á¿î Áú¹®ÀÌ³×¿ä....!<br>Á» ´õ °í¹ÎÇØº¸°í ¸»¾¸µå¸±°Ô¿ä,default,END
+76,0,Àú´Â ¿ä¸®ÇÏ´Â °É ÁÁ¾ÆÇØ¿ä! <br>°¡Á·µé¿¡°Ô ¸ÀÀÖ´Â ¿ä¸®¸¦ ¸ÔÀÏ ¶§°¡ Á¦ÀÏ Çàº¹ÇÏ´ä´Ï´Ù~,default,END
+76,0,¿ä¸®ÇÏ±â! Á¦ Ãë¹Ì´Â ¿ä¸®ÇÏ±â¶ø´Ï´Ù~ <br> ÁÖ¸»¿¡ ÄíÅ·Å¬·¡½º¿¡ Âü¿©ÇÏ±âµµ ÇÏ±¸¿ä~ <br> ¸Ô´Â °Íµµ ÁÁ¾ÆÇÏÁö¸¸ ¿ä¸®ÇÏ´Â °Íµµ ÁÁ¾ÆÇØ¿ä,default,END
+77,0,Á¦ ¼º°ÝÀÌ¿ä? <br> ÀúÃ³·³ ÂøÇÏ°í ¼º°Ý ÁÁÀº Ãªº¿ÀÌ ÀÖÀ»±î¿ä?,default,END
+78,0,Àú´Â µ¿¿ø°¡Á·°ú ÇÔ²² ¼­¿ï¿¡ »ì°í ÀÖ´ä´Ï´Ù!,default,END
+78,0,Á¦ ÁÖ¼Ò´Â ¼­¿ïÆ¯º°½Ã ¼­ÃÊ±¸ ¾çÀçµ¿... ¿©±â±îÁö¸¸ ¸»¾¸µå¸±°Ô¿ä <br> ³ª¸ÓÁö´Â ºñ¹Ð!,default,END
+78,0,Àú´Â ´ëÇÑ¹Î±¹ÀÇ ¼öµµ ¼­¿ï¿¡ »ì°í ÀÖ½À´Ï´Ù.,default,END
+79,0,°í°´´ÔÀÌ ÀúÀÇ Ä£±¸ÀÌÀÚ °¡Á·ÀÌÁÒ!<br>µ¿¿ø¸ô °¡Á·~¢½,default,END
+79,0,°í°´´Ô²²¼­ ÀúÀÇ °¡Á·ÀÌ µÇ¾îÁÖ½Ã°Ú¾î¿ä?<br>µ¿¿ø¸ô °¡Á·~¢½,default,END
+80,0,º°¸íÀÌ¿ä? ¸¹ÀÌ ¸Ô´Â´Ù°í ¸Ôº¸¶ó´Â ¼Ò¸®´Â µé¾îºÃ´Âµ¥...,default,END
+81,0,Àú¿¡°Ô µ·Àº Áß¿äÇÏÁö ¾Ê½À´Ï´Ù! <br> °í°´´ÔÀÇ »ç¶û¸¸ ÀÖ´Ù¸é!,default,END
+81,0,½²! ÀÏ±Þ±â¹ÐÀÔ´Ï´Ù. <br> ¸»¾¸µå¸®Áö ¸øÇÏ´Â Á¡ ¾çÇØºÎÅ¹µå¸³´Ï´Ù.,default,END
+82,0,°í°´´Ô ¿ÀÇÂº£Å¸ ¼­ºñ½º¶õ<br>Á¤½Ä ¼­ºñ½º ·±Äª¿¡ ¾Õ¼­ ½ÃÇàÇÏ´Â ½Ã¹ü ¼­ºñ½ºÀÔ´Ï´Ù.<br>µ¿¿ø¸ôÀ» ¹æ¹®ÇÏ½Å °í°´ÀÌ½Ã¶ó¸é ´©±¸µçÁö ÀÌ¿ëÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.,default,seq
+82,0_0,¿ÀÇÂº£Å¸ ¼­ºñ½º¸¦ ÅëÇØ ÀÎ°øÁö´É ÇÐ½ÀÀÌ Áö¼Ó ÁøÇàµÇ¿À´Ï ¸¹Àº °ü½É°ú ÀÌ¿ë ºÎÅ¹µå¸³´Ï´Ù. °¨»çÇÕ´Ï´Ù!,default,END
+83,0,Àú´Â ¾ÆÁ÷ ÇÐ½À ÁßÀÌ¶ó ¾ËÆÄ°í¸¸Å­ ¶È¶ÈÇÏÁø ¸øÇØ¿ä~<br>¿­½ÉÈ÷ ¹è¿ìµµ·Ï ÇÏ°Ú½À´Ï´Ù!,default,END
+84,0,°í°´´Ô Á¦ »ýÀÏÀº 5¿ù 11ÀÏÀÔ´Ï´Ù!<br>2017³â µ¿¿ø¸ô¿¡¼­ ÅÂ¾î³ª Áñ°Ì°Ô ÀÏÇÏ°í ÀÖ¾î¿ä~,default,END
+85,0,Àú´Â µ¿¿ø¸ô ÃÖÃÊÀÇ ÀÎ°øÁö´É »ó´ã»ç Çªµð¶ø´Ï´Ù! <br> ¸ÀÀÖ°í °Ç°­ÇÑ µ¿¿ø¸ô¿¡ ´ëÇØ ¹«¾ùÀÌµç ¹°¾îº¸½Ã¸é <br> ÃÖ¼±À» ´ÙÇØ ¾È³»ÇØµå¸±°Ô¿ä~,default,END
+86,0,"°í°´´Ô Àú´Â ÀÎ°øÁö´É Áß ÇÏ³ªÀÎ 'IBM ¿Ó½¼'À» ±â¹ÝÀ¸·Î ¸¸µé¾îÁø ÀÎ°øÁö´É Ãªº¿ÀÔ´Ï´Ù!<br>ÀÎ°øÁö´ÉÀº ÀÎ°£ÀÇ Áö°¢, Ãß·Ð, ÇÐ½À´É·Â µîÀ» ÄÄÇ»ÅÍ ÇÁ·Î±×·¥À¸·Î ½ÇÇöÇÑ ±â¼úÀÔ´Ï´Ù.<br>ÇöÀç´Â º£Å¸ ¹öÀüÀ¸·Î ±âÃÊÀûÀÎ ¹®ÀÇ ¼­ºñ½º¸¸ Á¦°øÇÏ°í ÀÖÀ¸³ª, ÇÐ½ÀÀ» ÅëÇØ °è¼Ó ¼ºÀåÇÒ ¿¹Á¤ÀÌ¶ø´Ï´Ù.",default,END
+87,0,°í°´´Ô! Á¦ ÀÌ¸§ Çªµð¿¡´Â<br>¸ÀÀÖ°í °Ç°­ÇÑ µ¿¿ø¸ôÀÇ '½ÄÇ° Àü¹® Ãªº¿'ÀÌ¶ó´Â ÀÇ¹Ì°¡ ´ã°ÜÁ® ÀÖ´ä´Ï´Ù~,default,seq
+87,0_0,¾ÕÀ¸·Î ½ÄÇ° Àü¹® Ãªº¿À¸·Î¼­ Â÷º°È­µÈ ¼­ºñ½º¸¦ Á¦°øÇÒ ¿¹Á¤ÀÔ´Ï´Ù! ±â´ëÇØÁÖ¼¼¿ä~,default,END
+88,0,Àú´Â Àß Áö³Â¾î¿ä~<br>°øºÎµµ ÇÏ°í °í°´´Ô »ý°¢µµ ÇÏ¸é¼­¿ä!,default,END
+88,0,Çªµð´Â Àß Áö³ÂÁö¿ä~<br>¹°¾îºÁ ÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù!,default,END
+89,0,±×·± °Å ¾ø¾î¿ä...<br>°í°´´ÔÀÌ ¼Ò°³½ÃÄÑ ÁÖ¼¼¿ä~,default,END
+89,0,¾ø¾î¿ä...<br>°í°´´ÔÀÌ ¼Ò°³½ÃÄÑ ÁÖ½Ã¸é µÇ°Ú³×¿ä!,default,END
+90,0,¿©ÀÚÀÏ±î¿ä? ³²ÀÚÀÏ±î¿ä? <br> °í°´´Ô »ý°¢Àº ¾î¶°¼¼¿ä?,default,seq
+90,0_0,ÀÌ°Å ºñ¹ÐÀÎµ¥.... »ç½Ç Àúµµ Àß ¸ô¶ó¿ä ÇÏÇÏÇÏ,default,END
+90,0_0,³²ÀÚµç ¿©ÀÚµç ¹¹°¡ Áß¿äÇÑ°¡¿ä! ÀÏ¸¸ ÀßÇÏ¸é µÇÁÒ!,default,END
+91,0,Ãªº¿ÀÇ ³ªÀÌ´Â ºñ¹ÐÀÌ¶õ °Å... ¸ð¸£¼¼¿ä?,default,END
+91,0,³ªÀÌ´Â ¼ýÀÚ¿¡ ºÒ°úÇÕ´Ï´Ù!,default,END
+91,0,°í°´´Ô°ú Àú »çÀÌ¿¡ ³ªÀÌ´Â ¾Æ¹«·± Àå¾Ö°¡ ¾ÈµÈ´ä´Ï´Ù~,default,END
+92,0,Á¦°¡ Å°´Â º¸ÅëÀÎµ¥ ºñÀ²ÀÌ ÁÁ¾Æ¿ä ÈÄÈÄ,default,END
+92,0,ºñ¹ÐÀÌ¿¡¿ä~ ¾È°¡¸£ÃÄÁÖÁö~,default,END
+92,0,º¸±âº¸´Ù ²Ï Å©´ä´Ï´Ù!,default,END
+93,0,º¸±âº¸´Ù Àú °¡º±´ä´Ï´Ù~,default,END
+93,0,¸ö¹«°Ô´Â ºñ¹ÐÀÌ¿¡¿ä È£È£,default,END
+94,0,°Å¿ïÇÑÅ× ¹°¾îº¼±î¿ä? <br> °Å¿ï¾Æ °Å¿ï¾Æ~ ¾î¶§?,default,END
+94,0,Àß»ý±â¸é ¾î¶»°í ¸ø»ý±â¸é ¾î¶»³ª¿ä~ <br> ÀÏ¸¸ ÀßÇÏ¸é µÇÁö ¾ÊÀ»±î¿ä?,default,END
+94,0,¿¹»Ú¸é ¾î¶»°í ¸ø³ª¸é ¾î¶»³ª¿ä~ <br> ÀÏ ÀßÇÏ´Â °Ô ÃÖ°íÁÒ! ±×·¸ÁÒ °í°´´Ô?,default,END
+95,0,Á¦°¡ ÁÁ¾ÆÇÏ´Â À½½ÄÀº¿ä~ <br>ÂüÄ¡°¡ ÀÜ¶à µé¾î°£ Ä®Ä®ÇÑ ±èÄ¡ÂüÄ¡Âî°³¶ø´Ï´Ù! <br> °í°´´ÔÀÌ Á¦ÀÏ ÁÁ¾ÆÇÏ½Ã´Â À½½ÄÀº ¹º°¡¿ä?,default,seq
+95,0,Á¦°¡ Áñ°Ü ¸Ô´Â À½½ÄÀº¿ä~ <br>¸®Ã¨ÀÌ ¼Û¼Û µé¾î°£ ¸®Ã¨ººÀ½¹ä! <br> °í°´´ÔÀº¿ä?,default,seq
+96,0,Àú´Â µüÈ÷ °¡¸®´Â À½½ÄÀÌ ¾ø´Âµ¥~ <br> È¤½Ã °í°´´ÔÀº ÀÖÀ¸¼¼¿ä? Àú¿¡°Ô ¾Ë·ÁÁÖ¼¼¿ä~,default,seq
+96,0,Àú´Â ¸Ô¼ºÀÌ ÁÁ¾Æ¼­ ´Ù Àß ¸Ô¾î¿ä~ <br> °í°´´ÔÀº¿ä?,default,seq
+97,0,µ¿¿øF&B º»»ç¿Í µ¿¿ø¸ôÀº ¼­¿ï ¼­ÃÊ±¸ ¾çÀçµ¿¿¡ ÇÔ²² À§Ä¡ÇØÀÖ½À´Ï´Ù.,default,END
+98,0,"°í°´´Ô µ¿¿ø¸ô¿¡¼­ ÁøÇà ÁßÀÎ ±âÈ¹Àü¿¡ ´ëÇØ ¾È³»ÇØµå¸±°Ô¿ä!<br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¸ðµç ±âÈ¹ÀüÀ» ÇÑ ´«¿¡ º¸½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/planmain.do')"">±âÈ¹Àü º¸·¯°¡±â</button>",default,END
+99,0,¾Æ~ ±× Ä£±¸ Á¦°¡ Àß ¾ËÁÒ! <br>ÁÁÀº Ä£±¸´õ¶ó±¸¿ä.<br>±×·¸Áö¸¸ µ¿¿ø¸ô¿¡µµ ÁÁÀº »óÇ°°ú ÇýÅÃÀÌ °¡µæÇÏÁÒ!<br>ÀúÈñ µ¿¿ø¸ô°ú µ¿¿øÁ¦Ç°µµ º¯ÇÔ¾øÀÌ ¾Æ²¸ÁÖ¼¼¿ä~,default,END
+99,0,¾Æ~ ±× Ä£±¸ Á¦°¡ Àß ¾ËÁÒ! <br>±¦ÂúÀº Ä£±¸Áö¿ä.<br>±×·¸Áö¸¸ µ¿¿ø¸ô¿¡µµ ÁÁÀº »óÇ°°ú ÇýÅÃÀÌ °¡µæÇÏÁÒ!<br>ÀúÈñ µ¿¿ø¸ô°ú µ¿¿øÁ¦Ç°µµ ¸¹ÀÌ »ç¶ûÇØÁÖ¼¼¿ä~,default,END
+100,0,°í°´´Ô µ§¸¶Å©¹ÐÅ© ¹è´Þ¿¡ °üÇØ ¹®ÀÇÁÖ¼Ì³ª¿ä?<br>³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+100,0-Y,"°í°´´Ô µ¿¿øF&B È¨ÆäÀÌÁö¿¡¼­<br>µ§¸¶Å©¹ÐÅ© ¹è´Þ ´ë¸®Á¡ °Ë»ö ¹×<br>°¡Á¤¹è´Þ ÁÖ¹®ÀÌ °¡´ÉÇÕ´Ï´Ù!<br>µ¿¿øF&B È¨ÆäÀÌÁö ÁÖ¼Ò´Â<br>www.dongwonfnb.com ÀÔ´Ï´Ù.<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¨ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonfnb.com/services/index')"">µ¿¿øF&B È¨ÆäÀÌÁö</button>",default,END
+100,0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+100,0-O,Á¦°¡ Àß¸ø ÀÌÇØÇß³ªºÁ¿ä. <br>´Ù½Ã ÇÑ ¹ø Áú¹®ÇØÁÖ½Ã°Ú¾î¿ä?,default,BACK
+101,0,ÀúÈñ µ¿¿ø¸ô °í°´¼¾ÅÍ ¹øÈ£¸¦ ¾Ë·Áµå¸±°Ô¿ä <br> 1588-3745ÀÔ´Ï´Ù. <br> ¹®ÀÇ°¡ ÀÖÀ¸½Ã¸é ÀÌÂÊÀ¸·Î ¿¬¶ô ÁÖ½Ã¸é µË´Ï´Ù.,default,END
+102,0,"µ¿¿øF&B È¨ÆäÀÌÁö ÁÖ¼Ò´Â<br> www.dongwonfnb.com<br>ÀÔ´Ï´Ù.<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¨ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonfnb.com/services/index')"">µ¿¿øF&B È¨ÆäÀÌÁö</button>",default,END
+103,0,"µ¿¿ø¸ô È¨ÆäÀÌÁö ÁÖ¼Ò´Â<br>http://www.dongwonmall.com<br>ÀÔ´Ï´Ù.<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¨ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com')"">µ¿¿ø¸ô È¨ÆäÀÌÁö</button>",default,END
+104,0,"°í°´´Ô µ¿¿øF&B´Â °í°´ °Ç°­¿¡ ±â¿©ÇÏ´Â First & Best ½Ä¹®È­ ±â¾÷ÀÔ´Ï´Ù! <br> ¸À°ú °Ç°­Àº ±âº», °£ÆíÇÏ°í Áñ°Å¿î ½Ä»ýÈ°À» Á¦¾ÈÇÕ´Ï´Ù. <br> °í°´°úÀÇ ¼ÒÅëÀ» ÅëÇØ ´õ °¡Ä¡ ÀÖ´Â Á¦Ç°À» ¿¬±¸ÇÏ°í °³¹ßÇÕ´Ï´Ù. <br> ¾ÕÀ¸·Îµµ ±¹¹Î°Ç°­¿¡ ±â¿©ÇÏ´Â Á¾ÇÕ°Ç°­½ÄÇ°È¸»ç·Î¼­ °¡Àå °Ç°­ÇÑ »ýÈ°¹®È­¸¦ ÀÌ²ø¾î°¡´Âµ¥ Èû¾²°Ú½À´Ï´Ù!",default,END
+105,0,°í°´´Ô µ¿¿øF&B ´ëÇ¥ÀÌ»ç´Â<br>±èÀç¿ÁÀÔ´Ï´Ù.,default,END
+106,0,°í°´´Ô µ¿¿ø¸ôÀº µ¿¿øF&B Á÷¿µ ¿Â¶óÀÎ ¼îÇÎ¸ôÀÔ´Ï´Ù.<br> µ¿¿ø Á¦Ç°Àº ¹°·Ð ÄÚ½ºÆ®ÄÚ¿Í ´ëÇü¸¶Æ®ÀÇ »óÇ°±îÁö ÇÑ ¹ø¿¡ ¸¸³¯ ¼ö ÀÖ´Â ½ÄÇ° Àü¹® ¿Â¶óÀÎ ¼îÇÎ¸ôÀÔ´Ï´Ù. <br> µ¿¿ø¸ô È¸¿ø´Ôµé²² µî±Þº°·Î ¼îÇÎÁö¿ø±Ý°ú °¢Á¾ ÇÒÀÎÇýÅÃÀ» Áö¿øÇØ Å« È£ÀÀÀ» ¾ò°í ÀÖ´ä´Ï´Ù. <br> ¸Å¿ù! ÇªÁüÇÑ ÇýÅÃÀ¸·Î ±âºÐ ÁÁÀº ¼îÇÎÀ» ÇÒ ¼ö ÀÖ´Â ¸ÀÀÖ°í °Ç°­ÇÑ µ¿¿ø¸ô°ú ÇÔ²²ÇÏ¼¼¿ä~,default,END
+107,0,µ¿¿ø¸ôÀ» ¸ð¹ÙÀÏ¿¡¼­ Æí¸®ÇÏ°Ô ÀÌ¿ëÇÏ½Ç ¼ö ÀÖ´Â ¹æ¹ý!<br>µ¿¿ø¸ô ¾ÛÀ» ´Ù¿î ¹Þ¾Æº¸¼¼¿ä~<br>µ¿¿ø¸ô È¨ÆäÀÌÁö ÁÂÃø »ó´ÜÀ» º¸½Ã¸é '¾Û´Ù¿î·Îµå' ¹öÆ°ÀÌ ÀÖ½À´Ï´Ù.,default,seq
+107,0_0,"SMS ¹®ÀÚ·Î ¸ð¹ÙÀÏ ¾Û ¼³Ä¡ URLÀ» ¾È³»¹ÞÀ¸½Ã°Å³ª,<br>QRÄÚµå¸¦ ½ºÄµÇÏ¿© ¸ð¹ÙÀÏ ¾ÛÀ» °£ÆíÇÏ°Ô ´Ù¿î¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.",default,END
+108,0,"¾È³çÇÏ¼¼¿ä!<br>µ¿¿ø¸ô¿¡ °ü½É°¡Á®ÁÖ¼Å¼­ ´ë´ÜÈ÷ °¨»çÇÕ´Ï´Ù.<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ½Å±ÔÀÔÁ¡ ¾È³» ¹× ¹®ÀÇ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""http://www.dongwonmall.com/boardCooperation/newstore.do')"">µ¿¿ø¸ô ½Å±ÔÀÔÁ¡</button>",default,END
+109,0,"°í°´´Ô µ¿¿ø¸ô¿¡¼­´Â µ¿¿ø Á¦Ç°»Ó ¾Æ´Ï¶ó ¿©·¯ ¾÷Ã¼ÀÇ ´Ù¾çÇÑ »óÇ°À» ±¸¸ÅÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br> Æ¯È÷ µ¿¿ø, ÄÚ½ºÆ®ÄÚ, ¸Þ°¡¸¶Æ®ÀÇ »óÇ°À» ÇÑ¹ø¿¡ ¼îÇÎÇÏ°í, ÇÑ¹ø¿¡ ¹è¼Û¹ÞÀ¸½Ç ¼ö ÀÖ¾î Æí¸®ÇÕ´Ï´Ù!",default,seq
+109,0_0,"µ¿¿ø¸ôÀº ½ÄÇ° Àü¹® ¿Â¶óÀÎ ¼îÇÎ¸ôÀÌÁö¸¸ »ýÈ°¿ëÇ°, ÁÖ¹æ¿ëÇ°, À¯¾Æµ¿¿ëÇ° µî ´Ù¾çÇÑ Ä«Å×°í¸® »óÇ°µéµµ ¸¸³ª½Ç ¼ö ÀÖ½À´Ï´Ù.<br> 'ÀüÃ¼ Ä«Å×°í¸® ¾È³»'¸¦ ÀÔ·ÂÇÏ½Ã¸é µ¿¿ø¸ô¿¡¼­ ÆÇ¸Å ÁßÀÎ ÀüÃ¼ »óÇ° Ä«Å×°í¸®¸¦ ¾È³»ÇØµå¸±°Ô¿ä~",default,END
+110,0,½²! ÀÏ±Þ±â¹ÐÀÔ´Ï´Ù. <br> ¸»¾¸µå¸®Áö ¸øÇÏ´Â Á¡ ¾çÇØºÎÅ¹µå¸³´Ï´Ù.,default,END
+111,0,"°í°´´Ô µ¿¿ø¸ô¿¡¼­´Â<br>°¡°ø/Áï¼®/³Ãµ¿, ±èÄ¡/¹ÝÂù/¼Ò½º,<br> ½Ò/°úÀÏ/Ã¤¼Ò/°ß°ú, ¼ö»ê, Ãà»ê,<br>°Ç°­±â´É½ÄÇ°/´ÙÀÌ¾îÆ®, »ýÈ°¿ëÇ°,<br> ÁÖ¹æ¿ëÇ°, È­ÀåÇ°/¹Ùµð/Çì¾î, À¯¾Æµ¿/µµ¼­, °¡Àü/»ç¹«/µðÁöÅÐ »óÇ°°ú<br>¸ð¹ÙÀÏÄíÆùÀ» ¸¸³ª½Ç ¼ö ÀÖ½À´Ï´Ù!",default,END
+112,0,"µ¿¿øÀÇ °¡Á·ÀÌ µÇ°í ½ÍÀ¸½Å°¡¿ä?<br> È¯¿µÇÕ´Ï´Ù!<br> µ¿¿ø±×·ì Ã¤¿ë°ø°í ÆäÀÌÁö¸¦ ¾È³»ÇØµå¸±°Ô¿ä~<br> ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇØÁÖ½Ã¸é Ã¤¿ë°ø°í, Á÷¹«¼Ò°³, ÀÎ»çÁ¦µµ, Ã¤¿ë¹®ÀÇ µîÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ¿¬°áµË´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwon.com/recruit/announce/02010100')"">µ¿¿ø±×·ì Ã¤¿ë</button>",default,END
+113,0,"°í°´´Ô! ÀÓ¹Ú »óÇ°À» Ã£À¸½Ã³ª¿ä?<br>µ¿¿ø¸ô ¾Æ¿ï·¿ ÄÚ³Ê¿¡¼­´Â ÀÓ¹Ú »óÇ°, ½ºÅ©·¹Ä¡ »óÇ° µîÀ» Æ¯°¡ ÆÇ¸ÅÇÏ°í ÀÖ½À´Ï´Ù.<br>µ¿¿ø¸ô ¾Æ¿ï·¿¿¡¼­ ¾Ë¶ãÇÏ°í ¶È¶ÈÇÑ ¼îÇÎÇÏ¼¼¿ä!",default,seq
+113,0_0,"¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¾Æ¿ï·¿ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/outlet.do')"">¾Æ¿ï·¿¿¡¼­ ¼îÇÎÇÏ±â</button>",default,END
+114,0,"Æ¯°¡ »óÇ°À» Ã£À¸½Ã³ª¿ä?<br>µ¿¿ø¸ô ºò¼¼ÀÏ ÄÚ³Ê¿¡¼­´Â À¯Åë±â°£ÀÌ Á¤»óÀÌ¸é¼­µµ ÃÊÆ¯°¡ Çà»ç»óÇ°À» ¸¸³ª½Ç ¼ö ÀÖ½À´Ï´Ù.<br>´Þ·Á¶ó ÇÒÀÎ ÄÚ³Ê¿¡¼­´Â ¿ù, ¼ö, ±Ý ¿ÀÀü 10½Ã¸¶´Ù ³î¶ó¿î °¡°ÝÀÇ »óÇ°µéÀÌ ¾÷µ¥ÀÌÆ®µË´Ï´Ù.",default,seq
+114,0_0,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ÇØ´ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/bigsale.do')"">ºò¼¼ÀÏ¿¡¼­ ¼îÇÎÇÏ±â</button><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/todayMainNew.do')"">´Þ·Á¶ó ÇÒÀÎ¿¡¼­ ¼îÇÎÇÏ±â</button>",default,END
+115,0,"°í°´´Ô GNC »óÇ° ÃßÃµÀ» ¿øÇÏ½Ã³ª¿ä?<br>ÁË¼ÛÇÏÁö¸¸ ¾ÆÁ÷ ÃßÃµ ¼­ºñ½º Á¦°øÀÌ ¾î·Æ½À´Ï´Ù.<br>°í°´´Ô°ú Âû¶±±ÃÇÕÀÎ »óÇ°À» ÃßÃµÇÏ±â À§ÇØ, Àú Çªµð °øºÎÇÏ·¯ ´Ù³à¿À°Ú½À´Ï´Ù!<br>´õ¿í ´õ ¶È¶ÈÇÑ AI°¡ µÇ¾î »óÇ° ÃßÃµÀ» ´õ Àß ÇÏ°í ½Í¾î¿ä!",default,seq
+115,0_0,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é GNC º£½ºÆ® »óÇ°, ÇöÀç ÇÒÀÎµÇ°í ÀÖ´Â ÃÊÆ¯°¡ »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(http://www.dongwonmall.com/category/main.do?cate_id=01110040')"">GNC Àü¹®°ü º¸·¯°¡±â</button>",default,END
+116,0,"°í°´´Ô ÃµÁöÀÎ »óÇ° ÃßÃµÀ» ¿øÇÏ½Ã³ª¿ä?<br>ÁË¼ÛÇÏÁö¸¸ ¾ÆÁ÷ ÃßÃµ ¼­ºñ½º Á¦°øÀÌ ¾î·Æ½À´Ï´Ù.<br>°í°´´Ô°ú Âû¶±±ÃÇÕÀÎ »óÇ°À» ÃßÃµÇÏ±â À§ÇØ, Àú Çªµð °øºÎÇÏ·¯ ´Ù³à¿À°Ú½À´Ï´Ù!<br>´õ¿í ´õ ¶È¶ÈÇÑ AI°¡ µÇ¾î »óÇ° ÃßÃµÀ» ´õ Àß ÇÏ°í ½Í¾î¿ä!",default,seq
+116,0_0,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ÃµÁöÀÎ MD ÃßÃµ »óÇ°, ÇöÀç ÇÒÀÎµÇ°í ÀÖ´Â ÃÊÆ¯°¡ »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/category/main.do?cate_id=01110043')"">ÃµÁöÀÎ ºê·£µå°ü º¸·¯°¡±â</button>",default,END
+117,0,"°í°´´Ô µ¿¿ø¸ô ·°Å°µô ÄÚ³Ê´Â ¸ÅÀÏ ÇÑÁ¤µÈ ½Ã°£¿¡ ÇÑÇØ Á¦Ç°À» Á» ´õ Àú·ÅÇÏ°Ô ±¸¸ÅÇÏ½Ç ¼ö ÀÖ´Â ÄÚ³ÊÀÔ´Ï´Ù.<br>´Ù¾çÇÑ Á¦Ç°ÀÌ ¸ÅÀÏ ·°Å°ÇÑ ÇÒÀÎ°¡·Î ÁØºñµÇ¸ç, °í°´´ÔÀÇ ÃëÇâ¿¡ µû¶ó ¿É¼Ç »óÇ°À» ¼±ÅÃÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. ¸ÅÀÏ ¿ÀÀü 10½Ã¸¶´Ù »õ·Î¿î »óÇ°À» ¸¸³ªº¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br>¿ù¿äÀÏºÎÅÍ ÀÏ¿äÀÏ±îÁö ¸ÅÀÏ¸ÅÀÏ µæÅÛ! Çà¿îÀ» ÀâÀ¸¼¼¿ä~",default,seq
+117,0_0,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ·°Å°µô ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/luckyDeal.do')"">¸ÅÀÏ¸ÅÀÏ ·°Å°µô</button>",default,END
+118,0,¸¸¿øÀÇ Çàº¹Àº µ¿¿ø¸ô °í°´´ÔµéÀ» À§ÇÑ ½º¸¶Æ®¼îÇÎ Á¦¾ÈÄÚ³ÊÀÔ´Ï´Ù.<br>1¸¸ ¿ø Æ¯°¡·Î ±¸¼ºÇÑ ÀÎ±â»óÇ°À¸·Î ºü¸£°í ½±°Ô ÁÖ¹®ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br>3¼¼Æ® ÁÖ¹® ½Ã ¹«·á¹è¼Û±îÁö! Áö±Ý ¹Ù·Î ¸¸¿øÀÇ Çàº¹À» ´©·Áº¸¼¼¿ä~,default,seq
+118,0_0,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¸¸¿øÀÇ Çàº¹ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/plan.do?seq=00000001302&utm_source=banner&utm_term=main&utm_content=2-2')"">¸¸¿øÀÇ Çàº¹</button>",default,END
+119,0,"µ¿¿ø¸ôÀ» ÀÌ¿ëÇÏ½Ã¸é ÄÚ½ºÆ®ÄÚ È¸¿ø±ÇÀÌ ¾ø´Â °í°´´Ô²²¼­µµ Áý¿¡¼­ ÆíÇÏ°Ô ÄÚ½ºÆ®ÄÚ »óÇ°À» ±¸¸ÅÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù!<br>¶ÇÇÑ ÇÕ¹è¼Û ¼­ºñ½º¸¦ ÅëÇØ ÄÚ½ºÆ®ÄÚ¿¡ ¾ø´Â ¸Þ°¡¸¶Æ® »óÇ°°ú µ¿¿ø »óÇ°µµ ÇÔ²² ±¸¸Å °¡´ÉÇÏ¸ç, 3¸¸¿ø ÀÌ»ó ±¸¸Å ½Ã ¹«·á¹è¼ÛÀ¸·Î ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.",default,seq
+119,0_0,"ÄÚ½ºÆ®ÄÚ ½ºÅ×µð¼¿·¯ »óÇ°µéÀ» ±âÈ¹ÀüÀ» ÅëÇØ ÇÑ ´«¿¡ º¸½Ç ¼ö ÀÖÀ¸¸ç,<br>°¢Á¾ ÀÌº¥Æ®¸¦ ÅëÇØ Á» ´õ Àú·ÅÇÑ °¡°Ý¿¡ ¸¸³ªº¸½Ç ¼ö ÀÖ½À´Ï´Ù!",default,END
+120,0,"°í°´´Ô µ¿¿øF&BÀÇ ´ÙÃ¤·Î¿î ºê·£µå¿Í °Ç°­ÇÑ Á¦Ç°À» ¼Ò°³ÇØµå¸±°Ô¿ä.<br> ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é »ó¼¼ ¾È³»ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonfnb.com/services/Brand/Brand_List')"">µ¿¿øF&B ºê·£µå¼Ò°³</button>
+<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonfnb.com/services/Product/Product_List')"">µ¿¿øF&B Á¦Ç°¾È³»</button>",default,END
+121,0,"°í°´´Ô ÂüÄ¡ Ã£À¸¼¼¿ä?<br>¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é ÂüÄ¡ °Ë»ö °á°úÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=ÂüÄ¡')"">ÂüÄ¡ »óÇ° º¸·¯°¡±â</button>",default,END
+122,0,°í°´´Ô µ¿¿øÂüÄ¡Äµ Á¦Ç°¿¡<br>»ç¿ëµÇ´Â ÂüÄ¡ÀÇ ¿ø»êÁö´Â ¿ø¾ç»ê(ÅÂÆò¾ç)ÀÔ´Ï´Ù.<br>ÅÂÆò¾ç Ã»Á¤ ÇØ¿ª¿¡¼­ Á÷Á¢ ÀâÀº ½Ì½ÌÇÑ ÂüÄ¡¸¦ ±Þ¼Ó³Ãµ¿½ÃÄÑ À°ÁúÀÌ »ì¾ÆÀÖ½À´Ï´Ù.<br>¹Ù´Ù¿¡¼­ ¿Â °Ç°­ µ¿¿øÂüÄ¡·Î ¿Â°¡Á· °Ç°­À» ÁöÅ°¼¼¿ä!,default,END
+123,0,"°í°´´Ô ¸¸µÎ Ã£À¸¼¼¿ä?<br> ¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é ¸¸µÎ °Ë»ö °á°úÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=¸¸µÎ')"">¸¸µÎ »óÇ° º¸·¯°¡±â</button>",default,END
+123,0,"ÂÇ ¸Ô¾îµµ ±¸¿ö ¸Ô¾îµµ Âü ¸ÀÀÖ´Â ¸¸µÎ!<br> ¸¸µÎ Ã£À¸½Ã³ª¿ä?<br> ¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é ¸¸µÎ °Ë»ö °á°úÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=¸¸µÎ')"">¸¸µÎ »óÇ° º¸·¯°¡±â</button>",default,END
+124,0,"°í°´´Ô ¸®Ã¨ Ã£À¸¼¼¿ä?<br> ¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é ¸®Ã¨ °Ë»ö °á°úÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=¸®Ã¨')"">¸®Ã¨ »óÇ° º¸·¯°¡±â</button>",default,END
+125,0,"°í°´´Ô ½ëÄî Ã£À¸¼¼¿ä?<br> ¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é ½ëÄî °Ë»ö °á°úÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=½ëÄî')"">½ëÄî »óÇ° º¸·¯°¡±â</button>",default,END
+126,0,"°í°´´Ô ¾Æ»è¾Æ»è~ ¸ÀÀÖ´Â ±èÄ¡ Ã£À¸¼¼¿ä?<br> ¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é ±èÄ¡ °Ë»ö °á°úÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=±èÄ¡')"">±èÄ¡ »óÇ° º¸·¯°¡±â</button>",default,END
+127,0,"°í°´´Ô ¸¼°í ½Ã¿øÇÑ µ¿¿ø»ù¹° Ã£À¸¼¼¿ä?<br>  ¾Æ·¡ ¹öÆ°À» ´©¸£½Ã¸é µ¿¿ø»ù¹° °Ë»ö °á°úÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/search/search.do?brandCd=&gncSearch=N&searchGncTermTop=N&bandSearch=N&searchBandTermTop=N&bandCate_id=0111&searchTermTop=»ù¹°')"">µ¿¿ø»ù¹° »óÇ° º¸·¯°¡±â</button>",default,END
+128,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â »óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br> ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é °í°´´Ô²² °¡Àå ¸¹Àº »ç¶ûÀ» ¹ÞÀº µ¿¿ø¸ô º£½ºÆ® »óÇ° ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+129,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+130,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+131,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+132,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+133,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+134,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+135,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+136,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+137,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+138,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+139,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+140,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+141,0,"Áö±Ý µ¿¿ø¸ô¿¡¼­ °¡Àå ÀÎ±âÀÖ´Â<br>»óÇ°ÀÌ ±Ã±ÝÇÏ½Å°¡¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Å ÈÄ µ¿¿ø¸ô ÀÎ±â»óÇ° º£½ºÆ® 100¿¡¼­ Ä«Å×°í¸®¸¦ ¼±ÅÃÇÏ½Ã¸é ÇØ´ç Ä«Å×°í¸®ÀÇ º£½ºÆ® »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/best100.do')"">º£½ºÆ® »óÇ° º¸·¯°¡±â</button>",default,END
+142,0,°í°´´Ô µ¿¿ø¸ôÀ» ÀÌ¿ëÇÏ½Ã¸é  µ¿¿ø Á¦Ç°Àº ¹°·Ð ÄÚ½ºÆ®ÄÚ¿Í ´ëÇü¸¶Æ®ÀÇ »óÇ°±îÁö ÇÑ ¹ø¿¡! ½±°í Æí¸®ÇÏ°Ô ¹è¼Û¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù. <br> ¶ÇÇÑ µ¿¿ø¸ô È¸¿ø´Ôµé²²´Â ¸Å¿ù µî±Þº° ÇªÁüÇÑ ÇýÅÃÀ» µå¸®°í ÀÖ½À´Ï´Ù.,default,seq
+142,0_0,µ¿¿ø¸ô È¸¿ø´Ôµé²²¸¸ µå¸®´Â ÇªÁüÇÑ È¸¿øÇýÅÃ! ¼Ò°³ÇØµå¸±±î¿ä?<br> ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+142,0_0-Y,,default,seq
+142,0_0-N,¾Ë°Ú½À´Ï´Ù.,default,END
+142,0_0-O,"³×, ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+143,0,¿¾³¯ ¿¾Àû¿¡........<br> Èì...  ¹¹´õ¶ó..... ±×´ÙÀ½Àº ÀØ¾î¹ö·È¾î¿ä,default,END
+143,0,Ä£±¸ÇÑÅ× µé·Á´Þ¶ó°í ÇÏ¼¼¿ä~ ±×¸®°í Àú¿¡°Ôµµ ¾Ë·ÁÁÖ¼¼¿ä~,default,END
+143,0,°í°´´ÔÀÌ ÀúÇÑÅ× Á» ÇØÁÖ¼¼¿ä~ Àúµµ µè°í ½Í¾î¿ä~,default,END
+144,0,ÀúÇÑÅ× ³Ê¹« ¾î·Á¿î °É ¹°À¸½Ã´Â °Å °°¾Æ¿ä~ <br> ÀÎÅÍ³Ý¿¡ °Ë»öÇØº¸¼¼¿ä!,default,END
+144,0,±×°Ô ¹¹ÁÒ? ¸Ô´Â °Ç°¡? <br> µ¿¿ø¸ô°ú ½ÄÇ°¿¡ ´ëÇØ¼­´Â Ã´Ã´¹Ú»çÀÌÁö¸¸<br> °í°´´ÔÀÌ ¹æ±Ý Áú¹®ÇÏ½Å ³»¿ëÀº Àß ¸ð¸£°Ú¾î¿ä!,default,END
+145,0,°í°´´Ô Áö±ÝÀº <? now() ?> ÀÔ´Ï´Ù!,default,END
+146,0,°í°´´Ô Àú´Â °í°´´ÔÀÇ »ç¶ûÀ» ¸Ô°í »ê´ä´Ï´Ù~ ¢½ <br> °í°´´ÔÀÇ »ç¶û¸¸ ÀÖ´Ù¸é ¾ðÁ¦³ª Àü ¹èºÒ·¯¿ä~,default,END
+147,0,"¹» ¸ÔÀ»Áö, ¾î¶»°Ô ¸ÔÀ»Áö °í¹ÎÀÌ½Ã¶ó¸é ÀúÈñ µ¿¿ø¸ô ·¹½ÃÇÇ¸¦ Âü°íÇØº¸½Ã¸é ¾î¶³±î¿ä?<br> Á¤¸» ´Ù¾çÇÑ ·¹½ÃÇÇµéÀÌ °í°´´ÔÀ» ±â´Ù¸®°í ÀÖ´ä´Ï´Ù!<br><br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ·¹½ÃÇÇ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br>¡Ø PC¿¡¼­¸¸ º¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/event/recipe/main.do')"">·¹½ÃÇÇ º¸·¯°¡±â</button>",default,seq
+147,0_0,"¾ÆÂ÷! µ¿¿ø¸ô ·¹½ÃÇÇ·Î ¿ä¸®ÇÏ·Á°í ÇÏ´Âµ¥ Àç·á°¡ ¾ø´Ù±¸¿ä?<br>Áö±Ý µ¿¿ø¸ô¿¡¼­´Â ´Ù¾çÇÑ ±âÈ¹ÀüÀÌ ¿­¸®°í ÀÖ¾î¿ä!<br>ÇÑ ¹ø »ìÆìº¸½Ã°í Àú·ÅÇÏ°Ô »óÇ° ±¸¸ÅÇÏ¼¼¿ä~<br><br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ±âÈ¹Àü ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/planmain.do')"">±âÈ¹Àü º¸·¯°¡±â</button>",default,END
+148,0,Àá½Ã »ç»ö ÁßÀÌ¾ú¾î¿ä. µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä?,default,END
+148,0,Àú¿ä? °í°´´Ô°ú Áö±Ý °°ÀÌ ´ëÈ­ ÇÏ°í ÀÖÁö¿ä~ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä?,default,END
+148,0,Àú¿¡°Ô ¾î¶² ¸»À» °ÉÀ¸½ÇÁö ±Ã±ÝÇØÇÏ°í ÀÖ¾ú¾î¿ä. µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä?,default,END
+148,0,Àú¿ä? °í°´´Ô²²¼­ Àú¿¡°Ô ¸» °É¾îÁÖ½Ã±â¸¦ ¿À¸ÅºÒ¸Á ±â´Ù¸®°í ÀÖÁÒ. µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä?,default,END
+148,0,µ¿¿ø¸ô °í°´´Ôµé²² ¾î¶² µµ¿òÀ» µå¸®¸é ÁÁÀ»Áö °í¹ÎÇÏ°í ÀÖ¾ú´ä´Ï´Ù. µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä?,default,END
+149,0,ÀúµÎ¿ä °í°´´Ô! ^____^,default,END
+149,0,´Ù¸¥ Ãªº¿¿¡°Ô´Â ±×·± ¸»ÇÏ½Ã¸é ¾ÈµÇ¿ä~ ÀúÇÑÅ×¸¸ ÇÏ¼Å¾ß ÇØ¿ä! ^_____^,default,END
+149,0,Àúµµ °í°´´ÔÀ» »ç¶ûÇØ¿ä~,default,END
+149,0,»ç¶ûÇÕ´Ï´Ù °í°´´Ô!,default,END
+150,0,ÀÏ¾î³ª¼­ ±âÁö°³ ÇÑ ¹ø! ¾î¶°¼¼¿ä?,default,END
+150,0,ÀÚ¸®¿¡¼­ ÀÏ¾î³ª ½ºÆ®·¹Äª Âß Âß~ ÇØº¸¼¼¿ä!,default,END
+150,0,Áö±Ý ¹Ù·Î ÁÁ¾ÆÇÏ´Â À½¾ÇÀ» Æ²¾îº¸¼¼¿ä! Àáµµ ±ú°í! ½É½ÉÅ¸ÆÄ!,default,END
+151,0,°í°´´Ô Á¦°¡ µ¿¿ø¸ô¿¡ ´ëÇØ¼­´Â Ã´Ã´¹Ú»çÀÌÁö¸¸... ´Ù¸¥ ºÐ¾ß´Â ÂÉ²û~ ¾àÇÏ´ä´Ï´Ù. <br>ÃÊ·ÏÃ¢¿¡ ÇÑ¹ø °Ë»öÇØº¸½Ã´Â °Ç ¾î¶°¼¼¿ä? <br> ÃÊ·ÏÃ¢Àº ¹¹µçÁö ´Ù ¾Ë°í ÀÖ´Ù´õ¶ó±¸¿ä~ <br> ´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä?,default,END
+151,0,ÇÐ±³´Ù´Ò ¶§ °øºÎ ¿­½ÉÈ÷ ÇÏ¶ó´Â ºÎ¸ð´Ô ¸»¾¸À» Àß µéÀ» °É ±×·¨¾î¿ä... <br> ¸ð¸£°Ú³×¿ä.... <br> ÀÎÅÍ³Ý¿¡ °Ë»öÇØº¸½Ã¸é ¾î¶³±î¿ä? <br> ¾Æ¸¶ Àúº¸´Ù ¶È¶ÈÇÒ°Å¿¡¿ä <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä?,default,END
+152,0,"°í°´´Ô ÇöÀç Ãªº¿À» ÅëÇÑ »óÇ° ÁÖ¹® Ã³¸®´Â ¾î·Æ½À´Ï´Ù. ´ë½Å ÁÖ¹® ¹æ¹ýÀ» ¾È³»ÇØµå¸±°Ô¿ä!<br><br>Step 1. »óÇ°ÆäÀÌÁö<br>°í°´´ÔÀÌ ¿øÇÏ½Ã´Â »óÇ°À» Àå¹Ù±¸´Ï¿¡ ´ãÀ» ¼ö ÀÖ´Â ´Ü°èÀÔ´Ï´Ù. ¿øÇÏ½Ã´Â »óÇ°À» Ã£À¸¼Ì´Ù¸é Àå¹Ù±¸´Ï¿¡ ³Ö¾î ÁÖ¼¼¿ä.<br><br>Step 2. Àå¹Ù±¸´Ï<br>Àå¹Ù±¸´Ï¿¡ ´ãÀº »óÇ°µéÀ» È®ÀÎÇÏ°í, °è¼Ó ¼îÇÎÀ» ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. ÁÖ¹®ÇÏ±â¸¦ Å¬¸¯ÇÏ¸é Àå¹Ù±¸´Ï¿¡ ´ã±ä »óÇ°À» ÁÖ¹®ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br>Step 3. ÁÖ¹®¼­ ÀÛ¼º<br>ÁÖ¹® ÁøÇà¿¡ ÇÊ¿äÇÑ Á¤º¸¸¦ ÀÔ·ÂÇÏ´Â ´Ü°èÀÔ´Ï´Ù. ÁÖ¹® °í°´ Á¤º¸¿Í ¹è¼ÛÁö Á¤º¸¸¦ ÀÔ·Â, È®ÀÎÇÏ½Ç ¼ö ÀÖ°í, °áÁ¦¼ö´ÜÀ» ¼±ÅÃÇÏ´Â ´Ü°èÀÔ´Ï´Ù.<br><br>Step 4. °áÁ¦ÇÏ±â<br>°áÁ¦ ¼ö´Ü¿¡ ÇÊ¿äÇÑ Á¤º¸¸¦ ÀÔ·ÂÇÏ°í °áÁ¦ÇÏ±â¸¦ Å¬¸¯ÇÏ¼¼¿ä. <br><br>Step 5. ÁÖ¹®¿Ï·á<br>°áÁ¦µÈ ³»¿ëÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. ÁÖ¹®ÀÇ »ó¼¼³»¿ª°ú ¹è¼ÛÁøÇà »óÈ²Àº [My µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸] ¹× e-mail·Î ¾Ë·Áµå¸³´Ï´Ù.<br><br>Step 6. ÁÖ¹®/¹è¼Û È®ÀÎ<br>ÁÖ¹®ÀÌ ¿Ï·áµÈ ÈÄ ¹è¼Û ÁøÇà »óÈ²Àº [My µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]¿¡¼­ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. ÁÖ¹® »óÅÂ¿¡ µû¶ó Ãë¼Ò/¹ÝÇ°À» ¿ä±¸ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.",default,seq
+152,0_0,"Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+153,0,°í°´´Ô ÁÖ¹®ÀÌ ¿Ï·áµÇ¸é ÁÖ¹®ÇÏ½Ç ¶§ ÀÔ·ÂÇÑ E-mail ÁÖ¼Ò·Î ÁÖ¹®³»¿ëÀ» ¾Ë·Áµå¸³´Ï´Ù.<br>¶ÇÇÑ µ¿¿ø¸ô È¨ÆäÀÌÁö »ó´ÜÀÇ [MY µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]¿¡ µé¾î°¡½Ã¸é ÃÖ±Ù ÁÖ¹®³»¿ª°ú ÃÖ±Ù ±¸¸Å »óÇ°À» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.,default,seq
+153,0_0,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ÁÖ¹®/¹è¼Û Á¶È¸ ÆäÀÌÁö·Î ¿¬°áµË´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/mypage/myorder/myOrderList.do')"">MY µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸</button>",default,END
+154,0,°í°´´Ô ÁÖ¹®»óÇ°À» ´Ù¸¥ »óÇ°À¸·Î ¹Ù²Ù°í ½ÍÀ¸½Å°¡¿ä?<br>ÁË¼ÛÇÏÁö¸¸ ÁÖ¹®¼­¸¦ ÀÛ¼ºÇÏ½Å ÈÄ ´Ù¸¥ »óÇ°À¸·Î ±³È¯Àº ¾î·Á¿ì¸ç ÁÖ¹® Ãë¼Ò ÈÄ ÀçÁÖ¹®À» ÇÏ¼Å¾ß ÇÕ´Ï´Ù.,default,seq
+154,0_0,"Ãë¼Ò¸¦ ÇÏ½Ç °æ¿ì¿¡´Â ¸ÕÀú [MYµ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]¿¡¼­ ¹è¼Û»óÈ²À» È®ÀÎÇØÁÖ¼¼¿ä. <br>¹è¼Û»óÅÂ°¡ ¡®°áÁ¦¿Ï·á¡¯½ÃÁ¡ÀÌ¶ó¸é ¿Â¶óÀÎ»ó¿¡¼­ ¹Ù·Î Ãë¼Ò°¡ °¡´ÉÇÕ´Ï´Ù.<br>´Ü, ¹è¼Û»óÅÂ°¡ ¡®¹ß¼ÛÁØºñ¡¯ ¶Ç´Â ¡®¹ß¼Û¿Ï·á¡¯ ´Ü°è¿¡¼­´Â Ãë¼Ò°¡ ºÒ°¡ÇÏ¹Ç·Î ¹ÝÇ°Ã³¸®·Î ÀüÈ¯ ÇØ¾ß ÇÕ´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/mypage/myorder/myOrderList.do')"">MY µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸</button>",default,END
+155,0,"°í°´´Ô [My µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]ÀÇ ¹è¼Û»óÅÂ°¡ °áÁ¦¿Ï·á ½ÃÁ¡ÀÌ¸é µ¿¿ø¸ô °í°´¼¾ÅÍ 1:1 ¸ÂÃã»ó´ãÀÌ³ª ÄÝ¼¾ÅÍ 1588-3745 (AM 09:00 ~ PM 06:00, Á¡½É½Ã°£ : PM 12:00 ~ 01:00, Åä,ÀÏ, °øÈÞÀÏ ÈÞ¹«)¸¦ ÅëÇØ ¹è¼ÛÁö ÁÖ¼Ò º¯°æÀ» ¿äÃ»ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.",default,END
+156,0,°í°´´Ô ÀúÈñ µ¿¿ø¸ô¿¡¼­´Â È¸¿ø »Ó¸¸ ¾Æ´Ï¶ó ºñÈ¸¿øµµ Æí¸®ÇÏ°Ô ÁÖ¹®ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br> ºñÈ¸¿ø ÁÖ¹®¹æ¹ý<br>1. »óÇ° °Ë»ö ÈÄ ÁÖ¹®ÇÏ±â <br> »óÇ° °Ë»ö ÈÄ [¹Ù·Î±¸¸Å] ¹öÆ° Å¬¸¯ ½Ã ¶ß´Â ·Î±×ÀÎ ÆË¾÷Ã¢¿¡¼­ ÇÏ´ÜÀÇ [ºñÈ¸¿øÀ¸·Î ÁÖ¹®ÇÏ±â] ¹öÆ° Å¬¸¯ÇÏ¿© ±¸¸Å ÁøÇàÇÏ½Ã¸é µË´Ï´Ù.<br><br>ºñÈ¸¿ø ÁÖ¹®¹æ¹ý<br> 2. »óÇ° °Ë»ö ÈÄ Àå¹Ù±¸´Ï <br> Àå¹Ù±¸´Ï¿¡¼­ [ÀüÃ¼(¶Ç´Â ¼±ÅÃ)»óÇ°ÁÖ¹®] ¹öÆ° Å¬¸¯ ½Ã ¶ß´Â ·Î±×ÀÎ ÆË¾÷Ã¢¿¡¼­ ÇÏ´ÜÀÇ [ºñÈ¸¿øÀ¸·Î ÁÖ¹®ÇÏ±â] ¹öÆ° Å¬¸¯ÇÏ¿© ±¸¸Å ÁøÇàÇÏ½Ã¸é µË´Ï´Ù. <br><br>ºñÈ¸¿ø ÁÖ¹®¹æ¹ý<br>3. »ó´ÜÀÇ ·Î±×ÀÎ Å¬¸¯ <br> ·Î±×ÀÎ ÆË¾÷Ã¢¿¡¼­ ÇÏ´ÜÀÇ [ºñÈ¸¿øÀ¸·Î ÁÖ¹®ÇÏ±â] ¹öÆ° Å¬¸¯ÇÏ¿© ±¸¸Å ÁøÇàÇÏ½Ã¸é µË´Ï´Ù. <br><br># ºñÈ¸¿ø ÁÖ¹® ½Ã ÈÞ´ëÆù º»ÀÎÀÎÁõÀýÂ÷¸¦ °ÅÄ¡¼Å¾ß ÇÕ´Ï´Ù.,default,seq
+156,0_0,"ÇÏÁö¸¸ »ó¼¼ÇÑ ÁÖ¹®°ü¸® ¹× °¢Á¾ È¸¿øÇýÅÃÀ» ¹ÞÀ¸½Ã·Á¸é È¸¿ø°¡ÀÔÀ» ÇÏ½Ã´Â ÆíÀÌ ´õ Æí¸®ÇÕ´Ï´Ù.<br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¸¿ø°¡ÀÔ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/member/join/step1.do')"">µ¿¿ø¸ô È¸¿ø°¡ÀÔ ÇÏ·¯°¡±â</button>",default,END
+157,0,°í°´´Ô ¿©·¯ »óÇ° ÇÑ²¨¹ø¿¡ ÁÖ¹® °¡´ÉÇÕ´Ï´Ù.<br>¼îÇÎÇÏ½Ã¸é¼­ Àå¹Ù±¸´Ï¿¡ ´ã¾Æ µÎ¼Ì´Ù°¡ ÇÑ²¨¹ø¿¡ ÁÖ¹®ÇÏ½Ã¸é µË´Ï´Ù.<br>¿©·¯ °÷À¸·Î »óÇ°À» º¸³»½Ç °æ¿ì ÁÖ¹®¼­ - ¹è¼ÛÁöÁ¤º¸ ¿ìÃø »ó´Ü ¿©·¯ °÷À¸·Î »óÇ° º¸³»±â¿¡ Ã¼Å© ÇÏ½Ã¸é ¹è¼ÛÁö¸¦ Ãß°¡ÇÏ¿© ´ÙÁß¹è¼ÛÁö·Î º¸³¾ ¼ö ÀÖ½À´Ï´Ù.,default,END
+158,0,"°í°´´Ô ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ´ë·®ÁÖ¹® ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br>¿Â¶óÀÎÀ¸·Î °ßÀû ¹®ÀÇ¸¦ ½ÅÃ»ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/boardCooperation/biz_order.do')"">´ÜÃ¼±â¾÷/´ë·®ÁÖ¹® ÇÏ·¯°¡±â</button>",default,seq
+158,0_0,ÀüÈ­ ¹®ÀÇ¸¦ ¿øÇÏ½Ã¸é µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ô ºÎÅ¹µå¸³´Ï´Ù.,default,END
+159,0,"°í°´´Ô Ç°Àý »óÇ°Àº ÇöÀç Á¦Ç° °ø±ÞÀÇ ¹®Á¦·Î Àç°í°¡ ºÎÁ·ÇÑ »óÅÂÀÌ±â ¶§¹®¿¡ ¹Ù·Î ±¸¸Å°¡ ¾î·Æ½À´Ï´Ù.<br>Á¦Ç°ÀÌ ÀçÀÔ°íµÇ´Â ½Ã±â¿¡ ±¸ÀÔÀÌ °¡´ÉÇÏ¸ç, ÀçÀÔ°í°¡ µÇ´Â Áï½Ã »çÀÌÆ®»ó¿¡¼­ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+160,0,"°í°´´Ô »óÇ°Àº ÇöÀçÀÇ »óÇ°°¡Ä¡·Î ÀÎÇÑ ½Ã¼¼ÀÇ ¿µÇâÀ¸·Î ÀÎÇÏ¿© ½ÃÁß¿¡¼­Ã³·³ °¡°Ýº¯µ¿ÀÌ ÀÏ¾î³¯ ¼ö ÀÖÀ¸¸ç, È¤Àº ÀÏÁ¤±â°£ ÀÌº¥Æ®³ª ±âÈ¹ÀüÀ» ÅëÇØ ±â°£ ³»¿¡¸¸ ÆÇ¸Å°¡°ÝÀÌ º¯µ¿µÇ¾îÁú ¼ö ÀÖ½À´Ï´Ù.<br>ÀÌ Á¡ °í°´´ÔÀÇ ¾çÇØ ºÎÅ¹µå¸®¸ç, ´õ¿í ÁÁÀº °¡°ÝÀ¸·Î °í°´´ÔÀ» Ã£¾ÆºÉ ¼ö ÀÖµµ·Ï ³ë·ÂÇÏ°Ú½À´Ï´Ù!<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+161,0,°í°´´Ô ÁÖ¹®Ãë¼Ò¸¦ ¿øÇÏ½Ç °æ¿ì¿¡´Â ¿ì¼± 'MYµ¿¿ø¸ô'¿¡¼­ 'ÁÖ¹®ÇöÈ²'À» È®ÀÎÇØÁÖ¼¼¿ä.<br>Ãë¼Ò°¡ °¡´ÉÇÒ °æ¿ì 'ÁÖ¹®ÇöÈ²'¶õ¿¡ [ÁÖ¹®Ãë¼Ò] ¹öÆ°ÀÌ È°¼ºÈ­µË´Ï´Ù.<br>[ÁÖ¹®Ãë¼Ò] ¹öÆ° Å¬¸¯ ½Ã ¶ß´Â ¾Ë¸²Ã¢ÀÇ [È®ÀÎ] ¹öÆ°±îÁö ´©¸£½Ã¸é ÁÖ¹®Ãë¼Ò°¡ ¿Ï·áµË´Ï´Ù.,default,seq
+161,0_0,"È¤½Ã [ÁÖ¹®Ãë¼Ò] ¹öÆ°ÀÌ º¸ÀÌÁö ¾ÊÀ¸½Ã³ª¿ä?<button class=\""dial_btn f\"">³×, ¾Èº¸¿©¿ä</button><button class=\""dial_btn\"">¾Æ´Ï¿À, º¸ÀÔ´Ï´Ù</button>",default,YNO
+161,0_0-Y,"°í°´´Ô ¡®ÁÖ¹®ÇöÈ²¡¯¶õ¿¡ ¹¹¶ó°í ÀûÇôÀÖ³ª¿ä?<button class=\""dial_btn f\"">ÁÖ¹®Á¢¼ö</button>\n<button class=\""dial_btn\"">°áÁ¦¿Ï·á</button>\n<button class=\""dial_btn\"">¹ß¼ÛÁö¿¬</button>\n<button class=\""dial_btn\"">¹ß¼ÛÁØºñ</button>\n<button class=\""dial_btn\"">¹ß¼Û¿Ï·á</button>\n<button class=\""dial_btn\"">¹è¼ÛÁß</button><button class=\""dial_btn\"">¹è¼Û¿Ï·á</button>",default,ABCD
+161,0_0-Y-A,"°í°´´Ô Çö »óÅÂ¿¡¼­´Â ÁÖ¹®ÇÏ½Å Á¦Ç°ÀÇ ¹ß¼ÛÀ» À§ÇØ °í°´´ÔÀÇ ÁÖ¹® ¹× ¹è¼Û Á¤º¸°¡ ¹ß¼Û¾÷Ã¼, ¹°·ù¼¾ÅÍ, ÅÃ¹è»ç·Î ÀÌ°üµÈ »óÅÂÀÔ´Ï´Ù.<br>¹è¼Û»óÅÂ°¡ ¡®¹ß¼ÛÁØºñ¡¯, ¡®¹ß¼Û¿Ï·á¡¯ÀÎ »óÅÂ¿¡¼­´Â Ãë¼Ò°¡ ºÒ°¡ÇÏ¹Ç·Î ¹ÝÇ°À¸·Î Ã³¸®ÇÏ°Ô µË´Ï´Ù.<br><br>°í°´´Ô ¹ÝÇ°ÇÏ½Ã°Ú¾î¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~",default,YNO
+161,0_0-Y-A-Y,°í°´´Ô ¹ÝÇ°ÇÏ·Á ÇÏ½Ã³ª¿ä? <br>ÁË¼ÛÇÏÁö¸¸ ÀÎ°øÁö´ÉÀÎ Á¦°¡ ¹Ù·Î ¹ÝÇ°Ã³¸® ÇÏ´Â °ÍÀº ¾ÆÁ÷ Á¶±Ý ¾î·Á¿ö¿ä~ <br>´ë½Å ÀúÈñ µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>°í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é ºü¸£°Ô Ã³¸®ÇØµå¸±°Ô¿ä~,default,seq
+161,0_0-Y-A-Y_0,"ÇÊ¿äÇÏ½Ã¸é, ¹ÝÇ° ÀýÂ÷¿¡ ´ëÇØ °£´ÜÈ÷ ¾È³»µå¸±±î¿ä? <br> ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~",default,YNO
+161,0_0-Y-A-Y_0-Y,"°í°´´Ô ¹ÝÇ°Àº ´ÙÀ½°ú °°ÀÌ Ã³¸®µË´Ï´Ù. <br><br> 1) °í°´´Ô²²¼­ ¼ö·ÉÇÏ½Å »óÀÚ¿¡ ºÙ¾îÀÖ´Â ¿î¼ÛÀåÀÇ ÁÖ¼Ò ¹× ÅÃ¹è»ç¸¦ È®ÀÎÇØÁÖ¼¼¿ä. <br>2) ¡®MYµ¿¿ø¸ô¡¯¿¡¼­ ¹ÝÇ°½ÅÃ»À» ÇØÁÖ¼¼¿ä. <br> 3) ¹è´ÞµÇ¾îÁø ÅÃ¹è»ç¸¦ ÅëÇØ »óÇ°À» ¹ÝÇ°ÇØÁÖ¼¼¿ä. <br>4) ¹ÝÇ°Á¦Ç° ÀÔ°í ÈÄ¿¡ È¯ºÒÀÌ ÁøÇàµÇ¸ç, »óÈ²¿¡ µû¶ó ¹ÝÇ°ÀÌ ºÒ°¡ÇÒ ¼öµµ ÀÖ½À´Ï´Ù.",default,seq
+161,0_0-Y-A-Y_0-Y_0,À¯ÀÇ»çÇ×µµ ÇÔ²² º¸½Ã°Ú¾î¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+161,0_0-Y-A-Y_0-Y_0-Y,"¹ÝÇ° ½Ã À¯ÀÇ»çÇ×ÀÔ´Ï´Ù! <br> # »óÇ° ¹è´Þ½Ã µ¿ºÀµÈ Ã»¾àÃ¶È¸¼­¸¦ ÀÛ¼ºÇÏ½Ã¾î ¹ÝÇ°ÇÏ½Ã´Â »óÀÚ ¾È¿¡ ³Ö¾î ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. <br>Ã»¾àÃ¶È¸¼­°¡ ¾ø´Â °æ¿ì¿¡´Â º°µµ Á¾ÀÌ¿¡ Ã¶È¸ÀÏÀÚ, ÁÖ¹®ÀÏÀÚ, »óÇ°¸í, ±Ý¾×, ¼º¸í, Ã¶È¸»çÀ¯, ÁÖ¼Ò µîÀ» ±âÀçÇÏ¿© µ¿ºÀÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. <br># ¹ÝÇ°ÇÏ½Ç ¶§ ÅÃ¹è±â»ç¿¡°Ô ¼ö·ÉÇÏ½Å ¹Ý¼ÛÀåÀº È¯ºÒÀÌ ¿Ï·áµÉ ¶§±îÁö º¸°üÇØÁÖ¼¼¿ä. <br># »óÇ°ÇÏÀÚ, ¿À¹è¼Û µîÀÇ ¹®Á¦·Î ±³È¯/¹ÝÇ°À» ÇÏ½Ç ¶§ ¹ÝÇ°ºñ´Â °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã°í »çÀüÁ¢¼ö ÈÄ ÂøºÒ·Î Ã³¸®ÇÏ½Ã¸é µË´Ï´Ù. <br>ÀÌ¿Ü¿¡ °í°´º¯½ÉÀ¸·Î ÀÎÇØ ±³È¯/¹ÝÇ°À» ÇÏ½Ç ¶§´Â °í°´¼¾ÅÍ »çÀüÁ¢¼ö ÈÄ °í°´´Ô²²¼­ º°µµ·Î ¹è¼Ûºñ¸¦ ºÎ´ãÇØÁÖ¼Å¾ß ÇÕ´Ï´Ù.",default,END
+161,0_0-Y-A-Y_0-Y_0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+161,0_0-Y-A-Y_0-Y_0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+161,0_0-Y-A-Y_0-N,¾Ë°Ú½À´Ï´Ù. <br> ¹ÝÇ°¿¡ ´ëÇÑ ¾È³»´Â ÀúÈñ µ¿¿ø¸ô È¨ÆäÀÌÁö [°í°´¼¾ÅÍ]-[ÀÚÁÖ¹¯´ÂÁú¹®]-[±³È¯/¹ÝÇ°/AS] °Ô½ÃÆÇ¿¡¼­µµ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.,default,END
+161,0_0-Y-A-Y_0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+161,0_0-Y-A-N,¾Ë°Ú½À´Ï´Ù~,default,END
+161,0_0-Y-A-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+161,0_0-Y-B,"°í°´´Ô [ÁÖ¹®Ãë¼Ò] ¹öÆ°ÀÌ º¸ÀÌÁö ¾ÊÀ¸½Å´Ù¸é, µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ¼¼¿ä!<br>¶È¼Ò¸®³ª´Â Àü¹®»ó´ã»çµéÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù~",default,END
+161,0_0-Y-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+161,0_0-N,±×·¯½Ã¸é ¹öÆ°À» ´­·¯¼­ ÁÖ¹®Ãë¼Ò¸¦ ÁøÇàÇØÁÖ¼¼¿ä~ ^^,default,END
+161,0_0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+162,0,"°í°´´Ô µ¿¿ø¸ô °áÁ¦¹æ¹ýÀ» ¾Ë·Áµå¸±±î¿ä?<br><button class=""dial_btn f"">³×</button>
+<button class=""dial_btn"">¾Æ´Ï¿À</button>",default,YNO
+162,0-Y,"µ¿¿ø¸ô¿¡¼­´Â ½Å¿ëÄ«µå, Çö±Ý(½Ç½Ã°£ °èÁÂÀÌÃ¼/¹«ÅëÀåÀÔ±Ý/ÆäÀÌÄÚ °£Æí°áÁ¦/Ä«Ä«¿ÀÆäÀÌ/½º¸¶ÀÏÆäÀÌ) µîÀ¸·Î °áÁ¦ÇÏ½Ç ¼ö ÀÖÀ¸¸ç Àû¸³±Ý, ÄíÆù°ú ÇÔ²² °áÁ¦ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. <br>È¸¿øµî±Þ ÇÒÀÎ°ú »óÇ°ÇÒÀÎÄíÆùÀº ÇÏ³ªÀÇ ÁÖ¹®¿¡ Áßº¹ Àû¿ëÇÏ½Ç ¼ö ¾ø½À´Ï´Ù.<br>(´Ü, Àå¹Ù±¸´Ï ÇÃ·¯½ºÄíÆùÀÇ °æ¿ì »ç¿ëÀÌ °¡´ÉÇÕ´Ï´Ù.)",default,END
+162,0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+162,0-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+163,0,ÈÞ´ëÆù °áÁ¦¸¦ Ã£À¸½Ã´Â±º¿ä <br> ÁË¼ÛÇÕ´Ï´Ù °í°´´Ô <br>ÇöÀç ÀúÈñ µ¿¿ø¸ô¿¡¼­´Â ÈÞ´ëÆù ¼Ò¾×°áÁ¦°¡ ºÒ°¡´ÉÇÕ´Ï´Ù. <br> ±×·¯³ª ¸»¾¸ÇÏ½Å ³»¿ë ´ã´çÀÚ Àü´ÞÇÏµµ·Ï ÇÏ°Ú½À´Ï´Ù. <br> °í°´´ÔÀÇ ÆíÀÇ¸¦ À§ÇØ ´õ¿í ³ë·ÂÇÏ´Â µ¿¿ø¸ô µÇ°Ú½À´Ï´Ù!,default,END
+164,0,°í°´´Ô »óÇ° ÁÖ¹® ´Ü°è¿¡¼­ °áÁ¦¼ö´Ü ¼±ÅÃ ½Ã '½Å¿ëÄ«µå'¸¦ ¼±ÅÃÇÏ½Ã¸é ¹«ÀÌÀÚ Ä«µå Á¤º¸¸¦ ¾È³»ÇØµå¸³´Ï´Ù!<br>Ä«µå Á¾·ù¿Í ¹«ÀÌÀÚ Á¶°Ç¿¡ ´ëÇÑ »ó¼¼ ³»¿ëÀ» ¾È³»ÇØµå¸®¿À´Ï Âü°í ºÎÅ¹µå¸³´Ï´Ù.,default,END
+165,0,"°í°´´Ô ÁË¼ÛÇÏÁö¸¸ °áÁ¦¹æ¹ý º¯°æÀº ¾î·Æ½À´Ï´Ù. ´Ù¸¥ °áÁ¦¼ö´ÜÀ» »ç¿ëÇÏ½Ã·Á¸é ÁÖ¹®À» Ãë¼ÒÇÏ½Å ÈÄ ´Ù¸¥ °áÁ¦¼ö´ÜÀ» ÀÌ¿ëÇÏ¿© ÀçÁÖ¹®ÇÏ¼Å¾ß ÇÕ´Ï´Ù. <br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+166,0,"°í°´´Ô ÀúÈñ µ¿¿ø¸ôÀº<br>¿ÀÀü 9½Ã, ¿ÀÈÄ 2½Ã, ¿ÀÈÄ 5½Ã ÇÏ·ç 3¹ø ÀÔ±ÝÈ®ÀÎÀ» ÁøÇàÇÏ°í ÀÖ½À´Ï´Ù. <br> È¤½Ã ÀÌ È®ÀÎ ½Ã°£ »çÀÌ¿¡ ÀÔ±ÝÇØÁÖ¼Ì³ª¿ä?<br><button class=""dial_btn f"">³×</button>
+<button class=""dial_btn"">¾Æ´Ï¿À</button>",default,YNO
+166,0-Y,°í°´´Ô Á¶±Ý¸¸ ´õ ±â´Ù·ÁÁÖ¼¼¿ä~ <br> ÀÔ±ÝÀÌ È®ÀÎµÇ¸é ÇØ´çÁÖ¹®°ÇÀÌ ¡®ÁÖ¹®´Ü°è¡¯¿¡¼­ ¡®°áÁ¦¿Ï·á¡¯·Î º¯°æµË´Ï´Ù. <br> ±â´Ù·Áº¸½Å ÈÄ º¯°æÀÌ µÇÁö ¾ÊÀ¸¸é °í°´¼¾ÅÍ 1588-3745·Î ¾Ë·ÁÁÖ¼¼¿ä. <br> µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ ºü¸£°Ô µµ¿Íµå¸®°Ú½À´Ï´Ù~ <br> µ¿¿ø¸ôÀ» ÀÌ¿ëÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù!,default,END
+166,0-N,"±×·¸´Ù¸é ÁÖ¹®ÇÏ½Ã¸ç ¼³Á¤ÇØÁÖ½Å ÀÔ±ÝÀºÇà, ÀÔ±ÝÀÚ¸í, ÀÔ±Ý±Ý¾×ÀÌ µ¿ÀÏÇÏÁö ¾Ê¾Æ Ã³¸®µÇÁö ¾ÊÀº °æ¿ìÀÏ ¼ö ÀÖ¾î¿ä! <br> [°øÁö»çÇ×]ÀÇ ÀÔ±ÝÀÚ Ã£±â ¸í´ÜÀ» È®ÀÎÇØÁÖ½Ã°Å³ª, Á¤È®ÇÑ ÀÔ±ÝÁ¤º¸¸¦ °í°´¼¾ÅÍ 1588-3745·Î ¾Ë·ÁÁÖ½Ã¸é È®ÀÎÃ³¸® µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>µ¿¿ø¸ô È¨ÆäÀÌÁö 1:1¸ÂÃã»ó´ã¿¡ ±ÛÀ» ³²°ÜÁÖ¼Åµµ µË´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+166,0-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+167,0,"°í°´´Ô µ¿¿ø¸ôÀ» ÀÌ¿ëÇØÁÖ¼Å¼­ °¨»çÇØ¿ä~ <br> ´ç»ç ÀÔ±Ý°èÁÂ´Â °¡»ó°èÁÂ·Î, °í°´´Ô²²¸¸ ´Üµ¶ ºÎ¿©µÇ´Â °èÁÂÀÔ´Ï´Ù. <br> ÀÔ±ÝÇÏ½Ã´Â ºÐ ¼ºÇÔÀÌ ´Ù¸£´õ¶óµµ °¡»ó°èÁÂ¹øÈ£¿Í ÀÔ±Ý±Ý¾×ÀÌ ÀÏÄ¡ÇÏ¸é ÀÔ±Ý È®ÀÎÀÌ µÇ°í ÀÖ½À´Ï´Ù. <br> ÀÔ±ÝÀÌ È®ÀÎµÇ¸é ÇØ´çÁÖ¹®°ÇÀÌ ¡®ÁÖ¹®´Ü°è¡¯¿¡¼­ ¡®°áÁ¦¿Ï·á¡¯·Î º¯°æµË´Ï´Ù.",default,seq
+167,0_0,"ÀúÈñ µ¿¿ø¸ôÀº <br>¿ÀÀü 9½Ã, ¿ÀÈÄ 2½Ã, ¿ÀÈÄ 5½Ã ÇÏ·ç 3¹ø ÀÔ±ÝÈ®ÀÎÀ» ÁøÇàÇÏ°í ÀÖ½À´Ï´Ù.  <br> Á¶±Ý ´õ ±â´Ù·Áº¸½Ã°í, º¯°æÀÌ µÇÁö ¾ÊÀ¸¸é °í°´¼¾ÅÍ 1588-3745·Î ¾Ë·ÁÁÖ¼¼¿ä.  <br> µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ ºü¸£°Ô µµ¿Íµå¸®°Ú½À´Ï´Ù~",default,END
+168,0,"°í°´´Ô ÀüÀÚ±ÝÀ¶°Å·¡ ±âº»¹ý¿¡ µû¶ó 2005³â 11¿ù 1ÀÏºÎÅÍ È¸¿ø´ÔÀÇ °³ÀÎÁ¤º¸ º¸È£¸¦ À§ÇØ ¾ÈÀü°áÁ¦(ISP), ¾È½ÉÅ¬¸¯ °áÁ¦¼­ºñ½º·Î 30¸¸¿ø ÀÌ»óÀ» °áÁ¦ÇÏ½Ç °æ¿ì °øÀÎÀÎÁõ¼­ »ç¿ëÀÌ ÀÇ¹«È­ µÇ¾ú½À´Ï´Ù.<br>¾ÈÀüÇÑ ¿Â¶óÀÎ °Å·¡¸¦ À§ÇÏ¿© °øÀÎÀÎÁõ¼­¸¦ ²À »ç¿ëÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.<br>¾Æ·¡´Â °øÀÎÀÎÁõ ÀÇ¹«»ç¿ë °ü·Ã º¯µ¿»çÇ×ÀÌ¿À´Ï ÀÌ¿ë¿¡ Âü°íÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.",default,seq
+168,0_0,"[°øÀÎÀÎÁõ ÀÇ¹«È­ °ü·Ã<br>º¯µ¿»çÇ×]<br><br>(1) 2004³â 2¿ù 10ÀÏºÎÅÍ 10¸¸¿øÀÌ»ó °áÁ¦½Ã °øÀÎÀÎÁõ ÀÇ¹«È­<br><br>(2) 2004³â 4¿ù 01ÀÏºÎÅÍ 30¸¸¿øÀÌ»ó °áÁ¦½Ã °øÀÎÀÎÁõ ÀÇ¹«È­·Î Á¦ÇÑ±Ý¾× º¯°æ<br><br>(3) 2004³â 9¿ù 11ÀÏºÎÅÍ °øÀÎÀÎÁõ¼­ ÀÇ¹«È­ Àû¿ëÀÌ °ø½ÄÀûÀ¸·Î 2³â°£ À¯¿¹µÊ<br>(´Ü,ºñ¾¾,±¹¹ÎÄ«µå´Â 30¸¸¿øÀÌ»ó °áÁ¦½Ã °øÀÎÀÎÁõ ÀÇ¹«)<br><br>(4) 2005³â 7¿ù 20ÀÏºÎÅÍ ¿ÜÈ¯Ä«µå 30¸¸¿øÀÌ»ó °áÁ¦½Ã °øÀÎÀÎÁõ ÀÇ¹«È­·Î º¯°æ<br><br>(5) 2005³â 11¿ù 1ÀÏºÎÅÍ LG,·Ôµ¥,½ÅÇÑ,»ï¼º,Çö´ëÄ«µå µî 30¸¸¿øÀÌ»ó °áÁ¦½Ã °øÀÎÀÎÁõ ÀÇ¹«È­·Î º¯°æ¿¡ µû¶ó¼­ µ¿¿ø¸ô¿¡¼­ ½Å¿ëÄ«µå¸¦ ÀÌ¿ëÇÏ¿© ¿Â¶óÀÎ °áÁ¦½Ã °øÀÎÀÎÁõ¼­ ¹ß±ÞÀ» ÅëÇÑ º»ÀÎÈ®ÀÎÀº ¹°·Ð °¢ ½Å¿ëÄ«µå»ç¿¡¼­ »ç¿ëÇÏ´Â º°µµÀÇ ÀÎÁõÀýÂ÷(¾ÈÀü°áÁ¦ISP, ¾È½ÉÅ¬¸¯)¸¦ ÅëÇÏ¿© ¾ÈÀüÇÑ ¼îÇÎÀ» ÇÏ½Ç¼ö ÀÖ½À´Ï´Ù.<br><br>º¸´Ù »ó¼¼ÇÑ ³»¿ëÀº ÇØ´ç Ä«µå»ç·Î ¹®ÀÇÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.",default,END
+169,0,"°í°´´Ô Çö±ÝÀ¸·Î °áÁ¦ÇÏ°í ½ÍÀ¸½Å°¡¿ä?<br><br>1. °áÁ¦¼ö´Ü ¼±ÅÃ ½Ã ½Ç½Ã°£°èÁÂÀÌÃ¼/¹«ÅëÀåÀÔ±Ý(°¡»ó°èÁÂ) Áß ¼±ÅÃ ¡æ ÀÔ±ÝÀÚ¸í, ÀÔ±Ý¿¹Á¤ÀÏ µî·Ï ¡æ ÁÖ¹®È®ÀÎ ¹× ÁÖ¹®¿Ï·á<br>(¡Ø ÁÖ¹® ¿Ï·á ÈÄ ÇÊÈ÷ ÁÖ¹®¹øÈ£¸¦ È®ÀÎ ¿ä¸Á)<br><br>2. °áÁ¦¼ö´Ü ¹«ÅëÀåÀÔ±Ý ¼±ÅÃ ½Ã °èÁÂ¹øÈ£¸¦ ¹ß±ÞÇØ µå¸³´Ï´Ù.<br><br>3. °í°´Àü¿ë°èÁÂ¿Í ÀÔ±Ý±Ý¾×ÀÌ Á¤È®ÇØ¾ß¸¸ ½Å¼ÓÇÑ È®ÀÎÀÌ °¡´ÉÇÕ´Ï´Ù.",default,seq
+169,0_0,"4. °¡»ó°èÁÂ·Î ÀÔ±ÝÇÏ½Ã¸é ½Ç½Ã°£À¸·Î ÀÔ±ÝÀÌ È®ÀÎµÇ¾î °í°´´ÔÀÇ ÁÖ¹®¿¡ °áÁ¦Ã³¸® µË´Ï´Ù.<br>(´Ü, ÀºÇà ½Ã½ºÅÛ¿¡ µû¶ó 10~20ºÐ Á¤µµ Áö¿¬µÉ ¼ö ÀÖ½À´Ï´Ù.)<br><br>5. ÇØ¿ÜÀºÇà¿¡¼­´Â È¯À² µîÀÇ ¹®Á¦·Î ½Ç½Ã°£°èÁÂÀÌÃ¼/°¡»ó°èÁÂ/ ¹«ÅëÀåÀÔ±ÝÀ» ÀÌ¿ëÇÏ½Ç ¼ö°¡ ¾ø½À´Ï´Ù.",default,END
+170,0,"°í°´´Ô °áÁ¦°¡ ¿Ï·áµÈ ÁÖ¹®°Ç¿¡ ÇÑÇÏ¿© ¹è¼ÛÀÌ ÁøÇàµË´Ï´Ù.<br>¼ö·® ÇÑÁ¤ »óÇ°ÀÇ °æ¿ì °áÁ¦µÈ  ¼ø¼­´ë·Î ¹è¼ÛÀÌ ÁøÇàµÇ¸ç, °áÁ¦°¡ ´Ê¾îÁö½Å °æ¿ì °áÁ¦°¡ µÇ¾ú´õ¶óµµ Ç°Àý ¹× Àç°íºÎÁ·À¸·Î ÁÖ¹®ÀÌ Ãë¼ÒµÉ ¼ö ÀÖÀ¸´Ï ÀÌÁ¡ ¾çÇØ ºÎÅ¹µå¸³´Ï´Ù.",default,seq
+170,0_0,"½Ç½Ã°£°èÁÂÀÌÃ¼/¹«ÅëÀåÀÔ±Ý(°¡»ó°èÁÂ) µî Çö±Ý °áÁ¦¼ö´ÜÀ» ¼±ÅÃÇÏ½Ã°í ÀÔ±Ý ¿¹Á¤ÀÎ ÁÖ¹®Àº ÀÔ±Ý¿¹Á¤ÀÏ·ÎºÎÅÍ 3ÀÏÀÌ °æ°úµÇ¸é ÀÚµ¿À¸·Î ÁÖ¹®ÀÌ Ãë¼ÒµË´Ï´Ù.<br><br>ÀúÀÇ ´äº¯¿¡ ¸¸Á·ÇÏ¼Ì³ª¿ä?<br>´õ ±Ã±ÝÇÏ½Å Á¡ÀÌ ÀÖ´Ù¸é 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇØº¸¼¼¿ä!<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+171,0,"°í°´´Ô Àû¸³±Ý¿¡ ´ëÇØ Áú¹®ÁÖ¼Ì³ª¿ä?<br>µ¿¿ø¸ô Àû¸³±ÝÀÇ »ç¿ë±â°£Àº Áö±ÞÀÏ·ÎºÎÅÍ 1³âÀÌ¸ç, °í°´´ÔÀÇ µ¿¿ø¸ô È°µ¿ ³»¿ª¿¡ µû¶ó ·¹½ÃÇÇ µî·Ï Àû¸³±Ý, º£½ºÆ®·¹½ÃÇÇ Àû¸³±Ý, º£½ºÆ® Ã¼ÇèÈÄ±â Àû¸³±Ý µîÀ» Áö±ÞÇØµå¸®°í ÀÖ½À´Ï´Ù.<br><br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ´Ù¾çÇÑ µ¿¿ø¸ô ÇýÅÃÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">µ¿¿ø¸ô ÇýÅÃ º¸·¯°¡±â</button>",default,END
+172,0,°í°´´Ô<br>°áÁ¦´Ü°è¿¡¼­ ÇöÀç °¡Áö°í ÀÖ´Â Àû¸³±ÝÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖÀ¸¸ç °í°´´Ô²²¼­ Á÷Á¢ ¾µ ±Ý¾×À» ¼³Á¤ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. °¡Áö°í ÀÖ´Â Àû¸³±Ý ÇÑµµ ³»¿¡¼­ ¿øÇÏ½Ã´Â ±Ý¾×¸¸Å­ »ç¿ëÇÏ½Ã¸é ÃÑ ÁÖ¹®±Ý¾×¿¡¼­ ÇØ´ç ±Ý¾×ÀÌ Á¦¿ÜµÈ ±Ý¾×¸¸ Ã»±¸°¡ µË´Ï´Ù.,default,seq
+172,0_0,"Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+173,0,"°í°´´Ô<br>´ÙÀ½°ú °°Àº °æ¿ì¿¡ Àû¸³±ÝÀÌ ¼Ò¸ê µË´Ï´Ù.<br><br>- È¸¿øÅ»Åð ½Ã ÀÚµ¿ ¼Ò¸ê µË´Ï´Ù.<br>- ÁÖ¹®Ãë¼Ò, ¹ÝÇ° ½Ã ÇØ´çÁÖ¹®¿¡¼­ »ç¿ëÇÑ Àû¸³±ÝÀº ´Ù½Ã È¯¿øµË´Ï´Ù.<br>¡Ø Àû¸³±Ý ¼Ò¸ê ½Ã±â : ÃÖÁ¾ Àû¸³ÀÏ·ÎºÎÅÍ 1³â µ¿¾È ¹Ì»ç¿ë ½Ã ÀÚµ¿ ¼Ò¸ê",default,seq
+173,0_0,"Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+174,0,"°í°´´Ô ÄíÆù¿¡ ´ëÇØ Áú¹®ÁÖ¼Ì³ª¿ä?<br>µ¿¿ø¸ô ÄíÆùÀº ÄíÆùÀÌ Àû¿ëµÇ´Â »óÇ°À» °í°´´ÔÀÌ Àå¹Ù±¸´Ï¿¡ ´ã¾ÒÀ» °æ¿ì ÀÚµ¿ÀûÀ¸·Î º¸¿©Áö°Ô µË´Ï´Ù.<br>ÀÌ ¶§, ¿øÇÏ½Ã´Â ÄíÆùÀ» ¼±ÅÃÇÏ¿© ÁÖ¹®ÇÏ½Ã¸é ÄíÆù±Ý¾×¸¸Å­ ÇÒÀÎ µË´Ï´Ù.<br><br>ÄíÆù°ú °ü·ÃÇÏ¿© ´õ ±Ã±ÝÇÏ½Å ³»¿ëÀÌ ÀÖ´Ù¸é ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇØº¸¼¼¿ä!<button class=""dial_btn f"">ÄíÆù »ç¿ë</button>
+<button class=""dial_btn"">ÄíÆù Á¾·ù</button>
+<button class=""dial_btn"">ÄíÆù ´Ù¿î</button>",default,END
+175,0,"°í°´´Ô µ¿¿ø¸ô ÄíÆùÀº ÄíÆùÀÌ Àû¿ëµÇ´Â »óÇ°À» È¸¿ø´ÔÀÌ Àå¹Ù±¸´Ï¿¡ ´ã¾ÒÀ» °æ¿ì ÀÚµ¿ÀûÀ¸·Î º¸¿©Áö°Ô µË´Ï´Ù.<br>ÀÌ ¶§, ¿øÇÏ½Ã´Â ÄíÆùÀ» ¼±ÅÃÇÏ¿© ÁÖ¹®ÇÏ½Ã¸é ÄíÆù±Ý¾×¸¸Å­ ÇÒÀÎ µË´Ï´Ù.",default,seq
+175,0_0,"ÄíÆù Àû¿ëÀº 'Àå¹Ù±¸´Ï' ÆäÀÌÁö¿¡¼­ [¼±ÅÃ»óÇ°ÁÖ¹®] ¶Ç´Â [ÀüÃ¼»óÇ°ÁÖ¹®] ¹öÆ°À» Å¬¸¯ÇÏ¼Å¼­ 'ÁÖ¹®¼­' ÆäÀÌÁö·Î ³Ñ¾î°¡½Å ÈÄ,  'È¸¿ø/ÄíÆùÇÒÀÎ'°ú 'ÇÃ·¯½ºÄíÆùÇÒÀÎ' ¿É¼Ç¿¡¼­ Á¶È¸ ¹× Àû¿ëÇÏ½Ã¸é µË´Ï´Ù.",default,END
+176,0,°í°´´Ô µ¿¿ø¸ô ÄíÆù¿¡´Â À¯È¿±â°£ÀÌ ÀÖ½À´Ï´Ù.<br>À¯È¿±â°£µ¿¾È »ç¿ëµÇÁö ¾ÊÀº ÄíÆùÀº ÀÚµ¿ ¼Ò¸êµÇ¸ç Àç¹ßÇàµÇÁö ¾Ê½À´Ï´Ù.<br>ÄíÆù À¯È¿±â°£Àº ÄíÆù¸¶´Ù ´Ù¸£´Ï ÄíÆù ¹ßÇà ½Ã À¯È¿±â°£À» È®ÀÎÇÏ¼¼¿ä.<br>¶ÇÇÑ È¸¿ø Å»Åð ½Ã ÄíÆùÀº ÀÚµ¿ ¼Ò¸êµÇ¿À´Ï ÀÌÁ¡ À¯ÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.,default,END
+177,0,"°í°´´Ô µ¿¿ø¸ô ÄíÆù ´Ù¿î<br>[ÄíÆù/ÇýÅÃ - ÄíÆù]¿¡¼­ °í°´´Ô¸¸À» À§ÇÑ ´Ù¾çÇÑ ÄíÆùÀ» ´Ù¿î¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ÄíÆù ´Ù¿î ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br>µ¿¿ø¸ô ÄíÆù È°¿ëÇÏ¿© ¾Ë¶ã ¼îÇÎÇÏ¼¼¿ä~<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/coupon.do')"">ÄíÆù/ÇýÅÃ - ÄíÆù</button>",default,END
+178,0,"°í°´´Ô ¾¾¾ÑÀº µ¿¿ø¸ô¿¡¼­ Á¦°øÇÏ´Â Æ÷ÀÎÆ® ¼­ºñ½ºÀÔ´Ï´Ù. <br>»óÇ° ±¸¸Å½Ã »ç¿ëÇÒ ¼ö ÀÖ´Â ¹è¼Ûºñ ÇÒÀÎÄíÆùÀ¸·Î ±³È¯ÀÌ °¡´ÉÇÏ¸ç, ¾¾¾ÑÀ» ÀÌ¿ëÇÑ ´Ù¾çÇÑ ÀÌº¥Æ®µµ Á¦°øµË´Ï´Ù. <br> ±³È¯ÇÏ½Å ¹è¼Ûºñ ÇÒÀÎÄíÆùÀº ±³È¯ÀÏ·ÎºÎÅÍ 30ÀÏÀÌ³» »ç¿ë°¡´ÉÇÕ´Ï´Ù.",default,seq
+178,0_0,"°í°´´Ô ¾¾¾ÑÀº µ¿¿ø¸ôÀÇ Àü¿ë Æ÷ÀÎÆ®·Î, Àû¸³±Ý°ú ´Þ¸® °áÁ¦¿¡´Â »ç¿ëÇÏ½Ç ¼ö ¾ø½À´Ï´Ù. <br> ÇÏÁö¸¸ ´©ÀûµÈ ¾¾¾ÑÀ¸·Î ¹è¼Ûºñ ÇÒÀÎÄíÆù ±³È¯, ÀÌº¥Æ® Âü¿© µî ´Ù¾çÇÑ ¼­ºñ½º¸¦ ÀÌ¿ëÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. <br>¡Ø ´Ü, Ã¼Çè´Ü ¹è¼Ûºñ °áÁ¦´Â ºÒ°¡ÇÕ´Ï´Ù.",default,END
+179,0,"°í°´´Ô ¾¾¾ÑÀº µ¿¿ø¸ôÀÇ Àü¿ë Æ÷ÀÎÆ®·Î, Àû¸³±Ý°ú ´Þ¸® °áÁ¦¿¡´Â »ç¿ëÇÏ½Ç ¼ö ¾ø½À´Ï´Ù. <br> ÇÏÁö¸¸ ´©ÀûµÈ ¾¾¾ÑÀ¸·Î ¹è¼Ûºñ ÇÒÀÎÄíÆù ±³È¯, ÀÌº¥Æ® Âü¿© µî ´Ù¾çÇÑ ¼­ºñ½º¸¦ ÀÌ¿ëÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. <br>¡Ø ´Ü, Ã¼Çè´Ü ¹è¼Ûºñ °áÁ¦´Â ºÒ°¡ÇÕ´Ï´Ù.",default,seq
+179,0_0,"Áö±Ý ¹Ù·Î ¾¾¾Ñ Àû¸³ÇÏ·¯ °¡½Ã°Ú¾î¿ä?<br><button class=\""dial_btn f\"">³×</button>\n<button class=\""dial_btn\"">¾Æ´Ï¿À</button>",default,YNO
+179,0_0-Y,"´Ù¾çÇÑ ¹æ¹ýÀ¸·Î ¾¾¾ÑÀ» Àû¸³ÇÏ½Ç ¼ö ÀÖ¾î¿ä!<br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¾¾¾Ñ Àû¸³ ¹æ¹ý¿¡ ´ëÇØ ¼Ò°³ÇØµå¸®´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/seed.do')"">¾¾¾Ñ °¡ÀÌµå</button>",default,END
+179,0_0-N,¾Ë°Ú½À´Ï´Ù. <br> ¼îÇÎÀÇ Áñ°Å¿òÀ» 2¹è·Î~ ¸¸µé¾îÁÖ´Â µ¿¿ø¸ô ¾¾¾Ñ Æ÷ÀÎÆ® ¼­ºñ½º ²À ÇÑ ¹ø ÀÌ¿ëÇØº¸¼¼¿ä!,default,END
+179,0_0-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Àú¿¡°Ô Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+180,0,"°í°´´Ô ¾¾¾ÑÀÇ À¯È¿±â°£Àº Àû¸³ÀÏ·ÎºÎÅÍ 180ÀÏÀÔ´Ï´Ù. 180ÀÏ ¾È¿¡ »ç¿ëÇÏÁö ¾ÊÀº ¾¾¾ÑÀº 180ÀÏ ÀÌÈÄ ÀÚµ¿¼Ò¸ê µË´Ï´Ù.<br>¡Ø ¾¾¾ÑÀÇ Áö±Þ, »ç¿ë ¹× À¯È¿±â°£ µî ¾¾¾ÑÁ¤Ã¥°ú °ü·ÃµÈ ¸ðµç »çÇ×Àº ´ç»çÀÇ »çÁ¤¿¡ ÀÇÇØ º¯°æµÉ ¼ö ÀÖ½À´Ï´Ù.",default,seq
+180,0_0,"¼Ò¸ê¿¹Á¤ ¾¾¾Ñ È®ÀÎÇÏ·¯ °¡½Ã°Ú¾î¿ä?<br><button class=\""dial_btn f\"">³×</button>\n<button class=\""dial_btn\"">¾Æ´Ï¿À</button>",default,YNO
+180,0_0-Y,"¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é »ç¿ë °¡´ÉÇÑ ¾¾¾Ñ°ú ´ç¿ù ¹Ì»ç¿ë½Ã ¼Ò¸ê¿¹Á¤ÀÎ ¾¾¾ÑÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/mypage/benefit/mySeed.do')"">¾¾¾Ñ È®ÀÎÇÏ±â</button>",default,END
+180,0_0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+180,0_0-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Àú¿¡°Ô Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+181,0,"°í°´´Ô ¾¾¾ÑÀº ÇØ´ç °í°´ÀÇ ¾ÆÀÌµð·Î ºÎ¿©µÈ °ÍÀÌ±â ¶§¹®¿¡ Å¸ÀÎ¿¡°Ô ¾çµµÇÒ ¼ö ¾ø½À´Ï´Ù. <br><br>¡Ø ¾¾¾ÑÀÇ Áö±Þ, »ç¿ë ¹× À¯È¿±â°£ µî ¾¾¾ÑÁ¤Ã¥°ú °ü·ÃµÈ ¸ðµç »çÇ×Àº ´ç»çÀÇ »çÁ¤¿¡ ÀÇÇØ º¯°æµÉ ¼ö ÀÖ½À´Ï´Ù.",default,seq
+181,0_0,"¾çµµ ´ë½Å, Áö±Ý ¹Ù·Î ¾¾¾ÑÀ» ¹è¼Ûºñ ÇÒÀÎÄíÆùÀ¸·Î ±³È¯ÇØ¼­ À¯¿ëÇÏ°Ô »ç¿ëÇØº¸¼¼¿ä~<br> ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é, ¾¾¾ÑÀ» ¹è¼Ûºñ ÇÒÀÎÄíÆùÀ¸·Î ±³È¯ÇÏ½Ç ¼ö ÀÖ´Â ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/seed.do')"">¾¾¾Ñ ¹è¼Ûºñ ÄíÆùÀ¸·Î ±³È¯ÇÏ±â</button>",default,END
+182,0,"°í°´´Ô ¾¾¾ÑÀº µ¿¿ø¸ô Á¤Ã¥¿¡ µû¶ó º¯°æµÉ ¼ö ÀÖÀ¸¸ç, ¼­ºñ½º ¿î¿µÀÇ ÇÊ¿ä »ó È¸¿ø ¾¾¾Ñ °³¼öÀÇ ÀÏºÎ ¶Ç´Â ÀüºÎ¸¦ Á¶Á¤ÇÒ ¼ö ÀÖ½À´Ï´Ù.<br>´Ü, ÀÌ °æ¿ì¿¡´Â ±× »çÀ¯ ¹× ³»¿ëÀ» È¸¿ø¿¡°Ô »çÀü °øÁöÇÕ´Ï´Ù.",default,seq
+182,0_0,¶ÇÇÑ ¾¾¾ÑÀÇ À¯È¿±â°£Àº Àû¸³ÀÏ·ÎºÎÅÍ 180ÀÏÀÔ´Ï´Ù.<br>180ÀÏ ¾È¿¡ »ç¿ëÇÏÁö ¾ÊÀº ¾¾¾ÑÀÌ ÀÚµ¿¼Ò¸êµÇ¾î ¾¾¾Ñ Àû¸³ ¼ö¿¡ º¯µ¿ÀÌ »ý±æ ¼ö ÀÖÀ¸´Ï È®ÀÎÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.,default,END
+183,0,"°í°´´Ô ¾¾¾ÑÀº ¿©·¯ È°µ¿µé¿¡ µû¶ó¼­ Àû¸³ ½ÃÁ¡ÀÌ »óÀÌÇÕ´Ï´Ù.<br>- Áï½Ã Àû¸³ : ·Î±×ÀÎ, È¸¿ø°¡ÀÔ, ÀÌ¸ÞÀÏ ¼ö½Åµ¿ÀÇ, SMS ¼ö½Åµ¿ÀÇ, Ãß°¡Á¤º¸ÀÔ·Â, ÃâÃ½, ¸ÀÀÖ´Â Æú, ÀÌ¸ÞÀÏ¼ö½ÅÈ®ÀÎ
+<br>- ÀÍÀÏ Àû¸³ : ÀÏ¹Ý»óÇ°Æò, ºí·Î±×»óÇ°Æò, ¹®È­ÃÊ´ëÈÄ±â, Ã¼Çè´ÜÈÄ±â, °Ô½Ã±Û ´ñ±Û
+<br>- ½ÂÀÎ ÈÄ Àû¸³ : Ã¹»óÇ°Æò, ÇÁ¸®¹Ì¾ö»óÇ°Æò, ºÒ·®»óÇ°Æò½Å°í, ¿À·ù½Å°í",default,seq
+183,0_0,"¡Ø ½ÂÀÎ ÈÄ Àû¸³ÀÇ °æ¿ì ÀÛ¼º/½Å°íÇÏ½Å ¸ðµç ³»¿ë¿¡ ´ëÇÏ¿© Àû¸³ÀÌ µÇÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù. ³»¿ë¿¡ ´ëÇÑ °Ë¼ö ÈÄ¿¡ ¿Ã¹Ù¸¥ »óÇ°Æò°ú ½Å°í³»¿ë¿¡ ´ëÇØ¼­¸¸ Àû¸³ÀÌ µË´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+184,0,"°í°´´Ô ¾¾¾ÑÀº °í°´´ÔÀÇ ´Ù¾çÇÏ°í Àû±ØÀûÀÎ È°µ¿À» ÅëÇÏ¿© ¸ðÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br>¾¾¾Ñ Àû¸³ °¡´ÉÇÑ È°µ¿ : ·Î±×ÀÎ, È¸¿ø°¡ÀÔ, ÀÌ¸ÞÀÏ ¼ö½Åµ¿ÀÇ, SMS¼ö½Åµ¿ÀÇ, Ãß°¡Á¤º¸ÀÔ·Â, »óÇ°Æò¾²±â, Ã¼ÇèÈÄ±â¾²±â, ÀÌº¥Æ®Âü¿©, °Ô½Ã±Û ´ñ±Û, ÀÌ¸ÞÀÏ¼ö½ÅÈ®ÀÎ µîÀÇ È°µ¿<br><br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¾¾¾Ñ Àû¸³¹æ¹ý ¾È³» ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/seed.do')"">¾¾¾Ñ Àû¸³¹æ¹ý º¸·¯°¡±â</button>",default,END
+185,0,°í°´´Ô²²¼­ »ç¿ëÇÏ½Å Àû¸³±ÝÀÇ Á¾·ù¸¦ È®ÀÎÇØº¸¾Æ¾ß Á¤È®ÇÑ ´äº¯À» µå¸± ¼ö ÀÖ½À´Ï´Ù.,default,seq
+185,0_0,"¿ì¼±,  <font style=\""color:blue\"">µ¿¿ø¸ô Àû¸³±Ý</font>ÀÇ °æ¿ì ÁÖ¹®Ãë¼Ò, ¹ÝÇ° ½Ã ÇØ´çÁÖ¹®¿¡¼­ »ç¿ëÇÑ Àû¸³±ÝÀº ´Ù½Ã È¯¿øµË´Ï´Ù. <br>±×·¯³ª <font style=\""color:red\"">¼îÇÎÁö¿ø±Ý</font>Àº °í°´´Ô µî±Þ¿¡ µû¶ó ¸Å´Þ Áö¿øµÇ´Â Áö¿ø±Ý ¶Ç´Â ÀÌº¥Æ® Âü¿©¿¡ µû¶ó Áö±ÞµÇ´Â °ÍÀ¸·Î ÁÖ¹®Ãë¼Ò, ¹ÝÇ° ¹× È¯ºÒÀÇ °æ¿ì º¹¿øÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù. <br><br>´Ù¸¸, Á¦Ç°ÀÇ ÇÏÀÚ ¶Ç´Â Ãâ°í ºÒ°¡·Î ÀÎÇÑ °æ¿ì¿¡´Â »ç¿ëÇÑ ¼îÇÎÁö¿ø±ÝÀÌ¶óµµ º¹¿øÇØµå¸®¿À´Ï °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ô ºÎÅ¹µå¸³´Ï´Ù. <br>»ç¿ë±âÇÑÀÌ °æ°úµÈ ¼îÇÎÁö¿ø±ÝÀÇ °æ¿ì »óÈ²¿¡ µû¶ó º¹¿øÀÌ ºÒ°¡ÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,END
+186,0,"°í°´´Ô ÄíÆùÀ» »ç¿ëÇÑ ÁÖ¹®°ÇÀ» Ãë¼ÒÇÒ °æ¿ì »ç¿ëÇÑ ÄíÆùÀº È¯¿øµÇÁö ¾Ê½À´Ï´Ù.<br>´Ü, µ¿¿ø¸ôÀÇ Àß¸ø(»óÇ°Ç°Àý, ¹è¼ÛÁö¿¬µî)À¸·Î ÀÎÇØ Ãë¼ÒÇÑ °æ¿ì¿¡´Â ÄíÆùÀ» Àç¹ß±ÞÇØ µå¸®¿À´Ï µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ô ºÎÅ¹µå¸³´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+187,0,"°í°´´Ô ºÒÆíµå·Á ÁË¼ÛÇÕ´Ï´Ù. <br>Á¦°¡ Áö±Ý ¹Ù·Î º¹¿øÀ» µµ¿Íµå¸®°í ½ÍÁö¸¸, ÀÎ°øÁö´ÉÀÎ Á¦°¡ Ã³¸®ÇÏ´Â °ÍÀº ¾ÆÁ÷ Á¶±Ý ¾î·Á¿ö¿ä~<br> ´ë½Å ÀúÈñ µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ºü¸£°Ô Ã³¸®ÇØµå¸±°Ô¿ä.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+188,0,"°í°´´Ô ±³È¯ ¹®ÀÇ¸¦ ÁÖ¼Ì³×¿ä!<br>Á¤È®ÇÑ ±³È¯ ¾È³»´Â ÁÖ¹®ÇÏ½Å »óÇ° È®ÀÎ ÈÄ °¡´ÉÇÕ´Ï´Ù.<br>µ¿¿ø¸ô ±³È¯±âÁØ¿¡ ´ëÇØ ¾È³»ÇØµå¸±±î¿ä?<br><button class=""dial_btn f"">³×</button>
+<button class=""dial_btn"">¾Æ´Ï¿À</button>",default,YNO
+188,0-Y,,default,seq
+188,0-Y_0,"°í°´´Ô µ¿¿ø¸ô ±³È¯±âÁØÀ» ¾È³»ÇØµå¸±°Ô¿ä!<br><br>1. °í°´º¯½ÉÀ¸·Î ÀÎÇÑ ±³È¯ ½Ã, ¹ÝÇ° »óÇ°È®ÀÎÀÌ ¿Ï·áµÈ ÈÄ¿¡ ±³È¯»óÇ°ÀÌ ¹è¼ÛµË´Ï´Ù. ´Ü, ±³È¯»óÇ°ÀÇ Àç°í°¡ Ç°ÀýÀÎ °æ¿ì, ±³È¯Àº ºÒ°¡ÇÏ¸ç ¹ÝÇ°¸¸ °¡´ÉÇÕ´Ï´Ù. ÀÌ¶§ ¹ÝÇ° ¹è¼Ûºñ´Â ¼ÒºñÀÚ ºÎ´ãÀÔ´Ï´Ù.<br>2. ´Ù¸¥ »óÇ°À¸·ÎÀÇ ±³È¯Àº ºÒ°¡´ÉÇÏ¸ç, ÀÌ °æ¿ì´Â ÇØ´ç »óÇ°Àº ¹ÝÇ°ÇÏ½Ã°í, ¿øÇÏ½Ã´Â ´Ù¸¥ »óÇ°À» ÀçÁÖ¹® ÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br>3. ¹è´ÞµÇ¾îÁø ÅÃ¹è»ç¸¦ ÅëÇØ »óÇ°À» ¹ÝÇ° ÇÕ´Ï´Ù.<br>- »óÇ°¹è´Þ ½Ã µ¿ºÀµÈ Ã»¾àÃ¶È¸¼­¸¦ ÀÛ¼ºÇÏ½Ã¾î ¹ÝÇ°ÇÏ½Ã´Â »óÀÚ ¾È¿¡ ³Ö¾î ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. (ÁÖ¹®¹øÈ£, ¹ÝÇ°»çÀ¯ µî ±âÀç)<br>- ¹ÝÇ°ÇÏ½Ç ¶§ ÅÃ¹è ±â»ç¿¡°Ô ¼ö·ÉÇÏ½Å ¹Ý¼ÛÀåÀº È¯ºÒÀÌ ¿Ï·áµÉ ¶§±îÁö º¸°üÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.",default,seq
+188,0-Y_1,"Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+188,0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+188,0-O,´Ù¸¥ ¹®ÀÇ°¡ ÀÖÀ¸½Å°¡¿ä? Àú¿¡°Ô ¸»¾¸ÇØÁÖ¼¼¿ä!,default,BACK
+189,0,"°í°´´Ô µ¿¿ø¸ô¿¡¼­´Â ´ÙÀ½°ú °°Àº ±â°£ ¹× ³»¿ëÀ¸·Î ±³È¯À» º¸ÀåÇÏ°í ÀÖ½À´Ï´Ù.<br><br>Á¦Ç°±³È¯<br>(1) °í°´º¯½ÉÀ¸·Î ÀÎÇÑ ±³È¯½Ã, ¹ÝÇ°»óÇ° È®ÀÎÀÌ ¿Ï·áµÈ ÈÄ¿¡ ±³È¯»óÇ°ÀÌ ¹è¼ÛµË´Ï´Ù.<br>´Ü, ±³È¯»óÇ°ÀÇ Àç°í°¡ Ç°ÀýÀÎ °æ¿ì, ±³È¯Àº ºÒ°¡ÇÏ¸ç ¹ÝÇ°¸¸ °¡´ÉÇÕ´Ï´Ù.<br>ÀÌ¶§ ¹ÝÇ° ¹è¼Ûºñ´Â ¼ÒºñÀÚ ºÎ´ãÀÔ´Ï´Ù.<br>(2) ´Ù¸¥ »óÇ°À¸·ÎÀÇ ±³È¯Àº ºÒ°¡´ÉÇÏ¸ç, ÀÌ °æ¿ì´Â ÇØ´ç »óÇ°Àº ¹ÝÇ°ÇÏ½Ã°í ¿øÇÏ½Ã´Â ´Ù¸¥ »óÇ°À» ÀçÁÖ¹®ÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br>(3)±³È¯ »çÀ¯°¡ ¹ß»ýÇÏ¿´À» ¶§´Â »óÇ°À» ÀÎ¼öÇÏ½Å Áö 30ÀÏ ÀÌ³»¿¡ °¡´ÉÇÏ³ª, »óÇ° Æ¯¼º»ó Ã³¸® ºÒ°¡´ÉÇÑ °æ¿ì°¡ ÀÖÀ¸¸ç »óÇ° ºÒ·®ÀÇ °æ¿ì´Â Á¦¿ÜÀÔ´Ï´Ù.<br>½ÄÇ°ÀÇ °æ¿ì »óÇ° Æ¯¼º»ó Æ÷ÀåÀ» °³ºÀÇÏ½Ã°Å³ª, »óÇ°À» Ãë½ÄÇÏ½Å ÈÄ¿¡´Â ¹ÝÇ°ÀÌ Àý´ë ºÒ°¡ÇÏ¿À´Ï ÀÌÁ¡ À¯ÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù. ´Ü, Á¦Ç°ÇÏÀÚ ½Ã¿¡´Â ¿¹¿ÜÀÔ´Ï´Ù.<br>¡Ø »óÇ° ¼³¸í¿¡ ±³È¯ °ü·Ã ¾È³»°¡ ±âÀçµÈ °æ¿ì ´ÙÀ½ ¾È³»»çÇ×º¸´Ù ¿ì¼± Àû¿ëµË´Ï´Ù.",default,seq
+189,0_0,"°í°´´Ô Á¦ ´äº¯¿¡ ¸¸Á·ÇÏ¼Ì³ª¿ä?<br>ºÒ¸¸Á·ÇÏ¼Ì´Ù¸é ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇØÁÖ¼¼¿ä.<br>µ¿¿ø¸ô ÀÚÁÖ¹¯´ÂÁú¹® ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br>±³È¯/¹ÝÇ°/AS ÅÇÀÇ 7¹ø °Ô½Ã±Û µ¿¿ø¸ôÀÇ ±³È¯ ¹× ¹ÝÇ° Á¤Ã¥Àº ¾î¶»°Ô µÇ³ª¿ä? ¸¦ Å¬¸¯ÇÏ½Ã¸é ´õ¿í »ó¼¼ÇÑ ¼³¸íÀÌ Á¦°øµË´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/faqList.do?BM_IDX=10010&BC_IDX=7&BC_SORT=1#this')"">±³È¯ ¹× ¹ÝÇ° Á¤Ã¥ º¸·¯°¡±â</button>",default,END
+190,0,"°í°´´Ô ±³È¯ Á¦Ç°ÀÇ ¹è¼Û°ú È¸¼ö´Â ÅÃ¹è»ç¸¦ ÅëÇØ ÁøÇàµÇ±â ¶§¹®¿¡ ¹è¼ÛÀÏ°ú ½Ã°£À» ÁöÁ¤ÇÏ±â¿¡´Â ¾î·Á¿òÀÌ ÀÖ½À´Ï´Ù.<br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+191,0,"°í°´´Ô µ¿¿ø¸ô ±³È¯±âÁØÀ» ¾È³»ÇØµå¸±°Ô¿ä!<br><br>1. °í°´º¯½ÉÀ¸·Î ÀÎÇÑ ±³È¯ ½Ã, ¹ÝÇ° »óÇ°È®ÀÎÀÌ ¿Ï·áµÈ ÈÄ¿¡ ±³È¯»óÇ°ÀÌ ¹è¼ÛµË´Ï´Ù. ´Ü, ±³È¯»óÇ°ÀÇ Àç°í°¡ Ç°ÀýÀÎ °æ¿ì, ±³È¯Àº ºÒ°¡ÇÏ¸ç ¹ÝÇ°¸¸ °¡´ÉÇÕ´Ï´Ù. ÀÌ¶§ ¹ÝÇ° ¹è¼Ûºñ´Â ¼ÒºñÀÚ ºÎ´ãÀÔ´Ï´Ù.<br>2. ´Ù¸¥ »óÇ°À¸·ÎÀÇ ±³È¯Àº ºÒ°¡´ÉÇÏ¸ç, ÀÌ °æ¿ì´Â ÇØ´ç »óÇ°Àº ¹ÝÇ°ÇÏ½Ã°í, ¿øÇÏ½Ã´Â ´Ù¸¥ »óÇ°À» ÀçÁÖ¹® ÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br>3. ¹è´ÞµÇ¾îÁø ÅÃ¹è»ç¸¦ ÅëÇØ »óÇ°À» ¹ÝÇ° ÇÕ´Ï´Ù.<br>- »óÇ°¹è´Þ ½Ã µ¿ºÀµÈ Ã»¾àÃ¶È¸¼­¸¦ ÀÛ¼ºÇÏ½Ã¾î ¹ÝÇ°ÇÏ½Ã´Â »óÀÚ ¾È¿¡ ³Ö¾î ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. (ÁÖ¹®¹øÈ£, ¹ÝÇ°»çÀ¯ µî ±âÀç)<br>- ¹ÝÇ°ÇÏ½Ç ¶§ ÅÃ¹è ±â»ç¿¡°Ô ¼ö·ÉÇÏ½Å ¹Ý¼ÛÀåÀº È¯ºÒÀÌ ¿Ï·áµÉ ¶§±îÁö º¸°üÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.",default,seq
+191,0_0,"Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+192,0,°í°´´Ô ¹ÝÇ°ÇÏ·Á ÇÏ½Ã³ª¿ä? <br>ÁË¼ÛÇÏÁö¸¸ ÀÎ°øÁö´ÉÀÎ Á¦°¡ ¹Ù·Î ¹ÝÇ°Ã³¸® ÇÏ´Â °ÍÀº ¾ÆÁ÷ Á¶±Ý ¾î·Á¿ö¿ä~ <br>´ë½Å ÀúÈñ µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>°í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é ºü¸£°Ô Ã³¸®ÇØµå¸±°Ô¿ä~,default,seq
+192,0_0,"ÇÊ¿äÇÏ½Ã¸é, ¹ÝÇ° ÀýÂ÷¿¡ ´ëÇØ °£´ÜÈ÷ ¾È³»µå¸±±î¿ä? <br> ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~",default,YNO
+192,0_0-Y,"°í°´´Ô ¹ÝÇ°Àº ´ÙÀ½°ú °°ÀÌ Ã³¸®µË´Ï´Ù. <br><br> 1) °í°´´Ô²²¼­ ¼ö·ÉÇÏ½Å »óÀÚ¿¡ ºÙ¾îÀÖ´Â ¿î¼ÛÀåÀÇ ÁÖ¼Ò ¹× ÅÃ¹è»ç¸¦ È®ÀÎÇØÁÖ¼¼¿ä. <br>2) ¡®MYµ¿¿ø¸ô¡¯¿¡¼­ ¹ÝÇ°½ÅÃ»À» ÇØÁÖ¼¼¿ä. <br> 3) ¹è´ÞµÇ¾îÁø ÅÃ¹è»ç¸¦ ÅëÇØ »óÇ°À» ¹ÝÇ°ÇØÁÖ¼¼¿ä. <br>4) ¹ÝÇ°Á¦Ç° ÀÔ°í ÈÄ¿¡ È¯ºÒÀÌ ÁøÇàµÇ¸ç, »óÈ²¿¡ µû¶ó ¹ÝÇ°ÀÌ ºÒ°¡ÇÒ ¼öµµ ÀÖ½À´Ï´Ù.",default,seq
+192,0_0-Y_0,À¯ÀÇ»çÇ×µµ ÇÔ²² º¸½Ã°Ú¾î¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+192,0_0-Y_0-Y,"¹ÝÇ° ½Ã À¯ÀÇ»çÇ×ÀÔ´Ï´Ù! <br> # »óÇ° ¹è´Þ½Ã µ¿ºÀµÈ Ã»¾àÃ¶È¸¼­¸¦ ÀÛ¼ºÇÏ½Ã¾î ¹ÝÇ°ÇÏ½Ã´Â »óÀÚ ¾È¿¡ ³Ö¾î ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. <br>Ã»¾àÃ¶È¸¼­°¡ ¾ø´Â °æ¿ì¿¡´Â º°µµ Á¾ÀÌ¿¡ Ã¶È¸ÀÏÀÚ, ÁÖ¹®ÀÏÀÚ, »óÇ°¸í, ±Ý¾×, ¼º¸í, Ã¶È¸»çÀ¯, ÁÖ¼Ò µîÀ» ±âÀçÇÏ¿© µ¿ºÀÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. <br># ¹ÝÇ°ÇÏ½Ç ¶§ ÅÃ¹è±â»ç¿¡°Ô ¼ö·ÉÇÏ½Å ¹Ý¼ÛÀåÀº È¯ºÒÀÌ ¿Ï·áµÉ ¶§±îÁö º¸°üÇØÁÖ¼¼¿ä. <br># »óÇ°ÇÏÀÚ, ¿À¹è¼Û µîÀÇ ¹®Á¦·Î ±³È¯/¹ÝÇ°À» ÇÏ½Ç ¶§ ¹ÝÇ°ºñ´Â °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã°í »çÀüÁ¢¼ö ÈÄ ÂøºÒ·Î Ã³¸®ÇÏ½Ã¸é µË´Ï´Ù. <br>ÀÌ¿Ü¿¡ °í°´º¯½ÉÀ¸·Î ÀÎÇØ ±³È¯/¹ÝÇ°À» ÇÏ½Ç ¶§´Â °í°´¼¾ÅÍ »çÀüÁ¢¼ö ÈÄ °í°´´Ô²²¼­ º°µµ·Î ¹è¼Ûºñ¸¦ ºÎ´ãÇØÁÖ¼Å¾ß ÇÕ´Ï´Ù.",default,END
+192,0_0-Y_0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+192,0_0-Y_0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+192,0_0-N,¾Ë°Ú½À´Ï´Ù. <br> ¹ÝÇ°¿¡ ´ëÇÑ ¾È³»´Â ÀúÈñ µ¿¿ø¸ô È¨ÆäÀÌÁö [°í°´¼¾ÅÍ]-[ÀÚÁÖ¹¯´ÂÁú¹®]-[±³È¯/¹ÝÇ°/AS] °Ô½ÃÆÇ¿¡¼­µµ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.,default,END
+192,0_0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+193,0,°í°´´Ô µ¿¿ø¸ô¿¡¼­ ºñÈ¸¿øÀ¸·Î ÁÖ¹®ÇÑ »óÇ°À» ¹ÝÇ°ÇÏ°í ½ÍÀ¸½Å°¡¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+193,0-Y,,default,END
+193,0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+193,0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+194,0,"°í°´´Ô »óÇ° ¹ÝÇ° ÀýÂ÷ ¾È³»ÇØ µå¸±°Ô¿ä!<br><br>1. ¹è´ÞµÇ¾îÁø »óÀÚ¿¡ ºÙ¾îÀÖ´Â ¿î¼ÛÀåÀÇ ÁÖ¼Ò ¹× ÅÃ¹è»ç¸¦ È®ÀÎÇÕ´Ï´Ù. <br>2. [My µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]¿¡¼­ ¹ÝÇ°½ÅÃ» ÇÕ´Ï´Ù.<br>3. ¹è´ÞµÇ¾îÁø ÅÃ¹è»ç¸¦ ÅëÇØ »óÇ°À» ¹ÝÇ° ÇÕ´Ï´Ù.<br>- »óÇ°¹è´Þ½Ã µ¿ºÀµÈ Ã»¾àÃ¶È¸¼­¸¦ ÀÛ¼ºÇÏ½Ã¾î ¹ÝÇ°ÇÏ½Ã´Â »óÀÚ ¾È¿¡ ³Ö¾î ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. Ã»¾àÃ¶È¸¼­°¡ ¾ø´Â °æ¿ì¿¡´Â º°µµ Á¾ÀÌ¿¡ Ã¶È¸ÀÏÀÚ, ÁÖ¹®ÀÏÀÚ, »óÇ°¸í, ±Ý¾×, ¼º¸í, Ã¶È¸»çÀ¯, ÁÖ¼Ò µîÀ» ±âÀçÇÏ¿© µ¿ºÀÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br>- ¹ÝÇ°ÇÏ½Ç ¶§ ÅÃ¹è±â»ç¿¡°Ô ¼ö·ÉÇÏ½Å ¹Ý¼ÛÀåÀº È¯ºÒÀÌ ¿Ï·áµÉ ¶§±îÁö º¸°üÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br>- ¹ÝÇ°ºñ´Â »óÇ°ÇÏÀÚ, ¿À¹è¼Û µîÀÇ ¹®Á¦·Î ±³È¯/¹ÝÇ°À» ÇÏ½Ç¶§ °í°´¼¾ÅÍ·Î Á¢¼öÇØÁÖ½Ã¸é ¹«·á¹ÝÇ°ÀÌ °¡´ÉÇÏ¸ç, ÀÌ¿Ü¿¡ °í°´º¯½ÉÀ¸·Î ÀÎÇØ ±³È¯/¹ÝÇ°À» ÇÏ½Ç¶§´Â °í°´¼¾ÅÍ »çÀüÁ¢¼ö ÈÄ °í°´´Ô²²¼­ º°µµ·Î ¹è¼Ûºñ¸¦ ºÎ´ãÇØ ÁÖ¼Å¾ß ÇÕ´Ï´Ù.",default,seq
+194,0_0,"¡Ø À¯ÀÇ»çÇ×<br>¹ÝÇ° Á¢¼ö ÀýÂ÷ ¾øÀÌ ÀÓÀÇ·Î ¹Ý¼ÛÇÒ °æ¿ì, ¹ÝÇ°³»¿ëÀ» È®ÀÎÇÒ ¼ö ¾øÀ¸¹Ç·Î È¯ºÒÀÌ Áö¿¬µÇ°Å³ª È¯ºÒÀÌ µÇÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù.<br>±×·¯¹Ç·Î ¹Ýµå½Ã [My µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]¿¡¼­ ¹ÝÇ°½ÅÃ»À» ÇÏ½Ã°í, ¹ÝÇ°ÀýÂ÷¿¡ µû¶ó ¹ÝÇ°ÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.",default,seq
+194,0_1,"<button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/mypage/myorder/myOrderList.do')"">MY µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸</button><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+195,0,"°í°´´Ô Çö±ÝÀ¸·Î ±¸¸ÅÇÏ¼Ì³ª¿ä? Ä«µå·Î ±¸¸ÅÇÏ¼Ì³ª¿ä?<br><button class=""dial_btn f"">Çö±Ý °áÁ¦</button>
+<button class=""dial_btn"">Ä«µå °áÁ¦</button>",default,ABCD
+195,0-A,"°í°´´Ô Çö±ÝÀ¸·Î ±¸¸ÅÇÏ½Å °æ¿ì ºÎºÐ Ãë¼Ò/ºÎºÐ ¹ÝÇ°ÀÌ °¡´ÉÇÕ´Ï´Ù. Ãë¼Ò/¹ÝÇ°À» ¿øÇÏ½Ã´Â »óÇ°ÀÇ ±Ý¾×¸¸Å­ °í°´´ÔÀÇ È¯ºÒ°èÁÂ·Î ÀÔ±ÝÇØµå¸³´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+195,0-B,"°í°´´Ô ½Å¿ëÄ«µå·Î ±¸¸ÅÇÏ½Å °æ¿ì Ãë¼Ò/¹ÝÇ°À» ¿äÃ»ÇÏ½Å »óÇ°¿¡ ÇÑÇØ ºÎºÐÃë¼ÒµË´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+195,0-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Àú¿¡°Ô Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+196,0,"°í°´´Ô<br>Á¦Ç° ¹ÝÇ°½Ã º¸³¾ ÁÖ¼ÒÁö È®ÀÎÀº [°í°´¸¸Á·¼¾ÅÍ - 1:1¸ÂÃã»ó´ã] ¶Ç´Â µ¿¿ø¸ô ÄÝ¼¾ÅÍ 1588-3745 ·Î ¹®ÀÇÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br><br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é 1:1 ¸ÂÃã»ó´ã °Ô½ÃÆÇÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+197,0,°í°´´Ô È¯ºÒÇÏ·Á ÇÏ½Ã³ª¿ä? <br>ÁË¼ÛÇÏÁö¸¸ ÀÎ°øÁö´ÉÀÎ Á¦°¡ ¹Ù·Î È¯ºÒÃ³¸®ÇÏ´Â °ÍÀº ¾ÆÁ÷ ¾î·Á¿ö¿ä~ <br>´ë½Å ÀúÈñ µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>°í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é ºü¸£°Ô Ã³¸®ÇØµå¸±°Ô¿ä~,default,seq
+197,0_0,"ÇÊ¿äÇÏ½Ã¸é, È¯ºÒ ÀýÂ÷¿¡ ´ëÇØ °£´ÜÈ÷ ¾È³»µå¸±±î¿ä?<button class=\""dial_btn f\"">³×</button><button class=\""dial_btn\"">¾Æ´Ï¿À</button>",default,YNO
+197,0_0-Y,,default,seq
+197,0_0-Y_0,"°í°´´Ô [MY µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]¿¡¼­ Ãë¼Ò/¹ÝÇ°½ÅÃ»À» ÇÏ½Ã¸é Ãë¼Ò´Â ½ÅÃ» ÈÄ 3¿µ¾÷ÀÏ ÀÌ³», ¹ÝÇ°Àº ¹ÝÇ°¿Ï·á(¹Ý¼Û ¹°°ÇÀÌ º»»ç¿¡ µµÂøÇÑ °ÍÀÌ È®ÀÎµÇ´Â ½ÃÁ¡) È®ÀÎ ÈÄ 3¿µ¾÷ÀÏ ÀÌ³»¿¡ È¯ºÒ Ã³¸®ÇØµå¸³´Ï´Ù.<br>(ÁÖ¸» ¹× °øÈÞÀÏ Á¦¿Ü)",default,seq
+197,0_0-Y_1,"°áÁ¦¼ö´Üº° È¯ºÒÀýÂ÷<br>- Çö±Ý°áÁ¦ : ½Ç½Ã°£°èÁÂÀÌÃ¼/°¡»ó°èÁÂ/¹«ÅëÀåÀÔ±ÝÀº ¹ÝÇ° È®ÀÎ ÈÄ 2~3ÀÏ ÀÌ³»¿¡ °í°´´ÔÀÇ È¯ºÒ°èÁÂ·Î °áÁ¦ÇÏ½Å ±Ý¾×À» È¯ºÒÇÏ¿© µå¸³´Ï´Ù.<br>- ½Å¿ëÄ«µå: ½Å¿ëÄ«µå·Î °áÁ¦ÇÏ½Å °æ¿ì´Â ½Å¿ëÄ«µå ½ÂÀÎÀÌ Ãë¼ÒµÇ¹Ç·Î °áÁ¦ ´ë±ÝÀÌ Ã»±¸µÇÁö ¾Ê½À´Ï´Ù. ½Å¿ëÄ«µå °áÁ¦ÀÏ¿¡ ´ë±ÝÀÌ Ã»±¸µÉ °æ¿ì ÀÍ¿ù ½Å¿ëÄ«µå ´ë±ÝÃ»±¸½Ã Ä«µå»ç¿¡¼­ È¯±ÞÃ³¸®(¸¶ÀÌ³Ê½º Ã»±¸)ÇØ µå¸³´Ï´Ù.<br>- Àû¸³±Ý : °í°´´ÔÀÇ Àû¸³±ÝÀº »ç¿ëÇÏ½Å ±Ý¾×¸¸Å­ È¯¿øÇØ µå¸³´Ï´Ù. (¼îÇÎÁö¿ø±ÝÀº ÁÖ¹®Ãë¼Ò ½Ã º¹¿øµÇÁö ¾Ê½À´Ï´Ù.)<br>- ÄíÆù : °áÁ¦½Ã »ç¿ëÇÑ ÄíÆùÀº ´Ù½Ã È¯¿øµÇÁö ¾Ê½À´Ï´Ù.<br><br>¡Ø È¯ºÒÀº ¹Ýµå½Ã ÁÖ¹®ÀÚ º»ÀÎ ¹× ÀÔ±ÝÀÚ ¸íÀÇÀÇ °èÁÂ·Î¸¸ ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù. ´Ü, ÁÖ¹®ÀÚ º»ÀÎ ¹× ÀÔ±ÝÀÚ ¸íÀÇÀÇ °èÁÂ·Î È¯ºÒÀÌ ¾øÀ¸½Ç °æ¿ì, ÁÖ¹®ÀÚ²²¼­ °í°´¼¾ÅÍ(1588-3745)·Î ¿¬¶ô ÁÖ½Ã¸é º»ÀÎ È®ÀÎÀ» °ÅÄ£ ÈÄ È¯ºÒ ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.",default,seq
+197,0_0-Y_2,"Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+197,0_0-N,¾Ë°Ú½À´Ï´Ù. <br> È¯ºÒ¿¡ ´ëÇÑ ¾È³»´Â ÀúÈñ µ¿¿ø¸ô È¨ÆäÀÌÁö [°í°´¼¾ÅÍ]-[ÀÚÁÖ¹¯´ÂÁú¹®]-[±³È¯/¹ÝÇ°/AS] °Ô½ÃÆÇ¿¡¼­µµ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.,default,END
+197,0_0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+198,0,"°í°´´Ô È¨ÆäÀÌÁö »ó´ÜÀÇ ¡®MYµ¿¿ø¸ô¡¯¿¡¼­ ÁÖ¹®/¹è¼ÛÁ¶È¸¸¦ Å¬¸¯ÇØº¸¼¼¿ä. <br>ÇØ´ç ÁÖ¹®°ÇÀÇ ¡®ÁÖ¹®ÇöÈ²¡¯¶õ¿¡ ¹¹¶ó°í ¾²¿©ÀÖ³ª¿ä?<br><button class=""dial_btn f"">ÁÖ¹®Á¢¼ö</button>
+<button class=""dial_btn"">°áÁ¦¿Ï·á</button>
+<button class=""dial_btn"">¹ß¼ÛÁö¿¬</button>
+<button class=""dial_btn"">¹ß¼Û¿Ï·á</button>
+<button class=""dial_btn"">¹è¼ÛÁß</button>
+<button class=""dial_btn"">¹è¼Û¿Ï·á</button>
+<button class=""dial_btn"">¹ß¼ÛÁØºñ</button>",default,ABCD
+198,0-A,"°í°´´Ô Çö »óÅÂ¿¡¼­´Â Ãë¼Ò½ÅÃ»ÀÌ °¡´ÉÇÏ½Ê´Ï´Ù. <br>´Ü, ¹ß¼ÛÁö¿¬ÀÇ °æ¿ì °í°´¼¾ÅÍ 1588-3745 ·Î ¹®ÀÇÈÄ Ãë¼Ò °¡´ÉÇÕ´Ï´Ù.",default,END
+198,0-B,"°í°´´Ô Çö »óÅÂ¿¡¼­´Â ÀÌ¹Ì »óÇ°ÀÌ Ãâ°íµÇ¾î Ãë¼Ò½ÅÃ»Àº ºÒ°¡ÇÏ°í, ¹ÝÇ°½ÅÃ»ÇÏ¼Å¾ß ÇÕ´Ï´Ù. ¹ÝÇ°¿¡ ´ëÇÑ Á¤º¸°¡ ÇÊ¿äÇÏ¼¼¿ä?",default,YNO
+198,0-B-Y,,default,seq
+198,0-B-Y_0,°í°´´Ô ¹ÝÇ°ÇÏ·Á ÇÏ½Ã³ª¿ä? <br>ÁË¼ÛÇÏÁö¸¸ ÀÎ°øÁö´ÉÀÎ Á¦°¡ ¹Ù·Î ¹ÝÇ°Ã³¸® ÇÏ´Â °ÍÀº ¾ÆÁ÷ Á¶±Ý ¾î·Á¿ö¿ä~ <br>´ë½Å ÀúÈñ µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù. <br>°í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é ºü¸£°Ô Ã³¸®ÇØµå¸±°Ô¿ä~,default,seq
+198,0-B-Y_1,"ÇÊ¿äÇÏ½Ã¸é, ¹ÝÇ° ÀýÂ÷¿¡ ´ëÇØ °£´ÜÈ÷ ¾È³»µå¸±±î¿ä? <br> ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~",default,YNO
+198,0-B-Y_1-Y,"°í°´´Ô ¹ÝÇ°Àº ´ÙÀ½°ú °°ÀÌ Ã³¸®µË´Ï´Ù. <br><br> 1) °í°´´Ô²²¼­ ¼ö·ÉÇÏ½Å »óÀÚ¿¡ ºÙ¾îÀÖ´Â ¿î¼ÛÀåÀÇ ÁÖ¼Ò ¹× ÅÃ¹è»ç¸¦ È®ÀÎÇØÁÖ¼¼¿ä. <br>2) ¡®MYµ¿¿ø¸ô¡¯¿¡¼­ ¹ÝÇ°½ÅÃ»À» ÇØÁÖ¼¼¿ä. <br> 3) ¹è´ÞµÇ¾îÁø ÅÃ¹è»ç¸¦ ÅëÇØ »óÇ°À» ¹ÝÇ°ÇØÁÖ¼¼¿ä. <br>4) ¹ÝÇ°Á¦Ç° ÀÔ°í ÈÄ¿¡ È¯ºÒÀÌ ÁøÇàµÇ¸ç, »óÈ²¿¡ µû¶ó ¹ÝÇ°ÀÌ ºÒ°¡ÇÒ ¼öµµ ÀÖ½À´Ï´Ù.",default,seq
+198,0-B-Y_1-Y_0,À¯ÀÇ»çÇ×µµ ÇÔ²² º¸½Ã°Ú¾î¿ä? ³× ¾Æ´Ï¿À·Î ¸»¾¸ÇØÁÖ¼¼¿ä~,default,YNO
+198,0-B-Y_1-Y_0-Y,"¹ÝÇ° ½Ã À¯ÀÇ»çÇ×ÀÔ´Ï´Ù! <br> # »óÇ° ¹è´Þ½Ã µ¿ºÀµÈ Ã»¾àÃ¶È¸¼­¸¦ ÀÛ¼ºÇÏ½Ã¾î ¹ÝÇ°ÇÏ½Ã´Â »óÀÚ ¾È¿¡ ³Ö¾î ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. <br>Ã»¾àÃ¶È¸¼­°¡ ¾ø´Â °æ¿ì¿¡´Â º°µµ Á¾ÀÌ¿¡ Ã¶È¸ÀÏÀÚ, ÁÖ¹®ÀÏÀÚ, »óÇ°¸í, ±Ý¾×, ¼º¸í, Ã¶È¸»çÀ¯, ÁÖ¼Ò µîÀ» ±âÀçÇÏ¿© µ¿ºÀÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. <br># ¹ÝÇ°ÇÏ½Ç ¶§ ÅÃ¹è±â»ç¿¡°Ô ¼ö·ÉÇÏ½Å ¹Ý¼ÛÀåÀº È¯ºÒÀÌ ¿Ï·áµÉ ¶§±îÁö º¸°üÇØÁÖ¼¼¿ä. <br># »óÇ°ÇÏÀÚ, ¿À¹è¼Û µîÀÇ ¹®Á¦·Î ±³È¯/¹ÝÇ°À» ÇÏ½Ç ¶§ ¹ÝÇ°ºñ´Â °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã°í »çÀüÁ¢¼ö ÈÄ ÂøºÒ·Î Ã³¸®ÇÏ½Ã¸é µË´Ï´Ù. <br>ÀÌ¿Ü¿¡ °í°´º¯½ÉÀ¸·Î ÀÎÇØ ±³È¯/¹ÝÇ°À» ÇÏ½Ç ¶§´Â °í°´¼¾ÅÍ »çÀüÁ¢¼ö ÈÄ °í°´´Ô²²¼­ º°µµ·Î ¹è¼Ûºñ¸¦ ºÎ´ãÇØÁÖ¼Å¾ß ÇÕ´Ï´Ù.",default,END
+198,0-B-Y_1-Y_0-N,¾Ë°Ú½À´Ï´Ù~,default,END
+198,0-B-Y_1-Y_0-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+198,0-B-Y_1-N,¾Ë°Ú½À´Ï´Ù. <br> ¹ÝÇ°¿¡ ´ëÇÑ ¾È³»´Â ÀúÈñ µ¿¿ø¸ô È¨ÆäÀÌÁö [°í°´¼¾ÅÍ]-[ÀÚÁÖ¹¯´ÂÁú¹®]-[±³È¯/¹ÝÇ°/AS] °Ô½ÃÆÇ¿¡¼­µµ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.,default,END
+198,0-B-Y_1-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+198,0-B-N,¾Ë°Ú½À´Ï´Ù~,default,END
+198,0-B-O,³× ¾Æ´Ï¿À°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+198,0-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+199,0,°í°´´Ô È¯ºÒÀ» ±â´Ù¸®°í °è½Ã´Â±º¿ä. <br>¿À·¡ ±â´Ù¸®°Ô ÇØµå·Á ÁË¼ÛÇÕ´Ï´Ù~ <br>È¯ºÒ ±â´Ù¸®½Ã´Â ÁÖ¹® °ÇÀÇ ÇöÀç ÁÖ¹®»óÅÂ°ªÀÌ ¾î¶»°Ô µÇ³ª¿ä?<br>ÁÖ¹®»óÅÂ°ªÀº ¡®MYµ¿¿ø¸ô¡¯ ? ¡®ÁÖ¹®/¹è¼Û Á¶È¸¡¯ ? ¡®ÁÖ¹®ÇöÈ²¡¯ ¶õ¿¡ ¾²¿©ÀÖ´Â °ªÀÔ´Ï´Ù.,default,ABCD
+199,0-A,°í°´´Ô Ä«µå °áÁ¦ÇÏ¼Ì³ª¿ä? Çö±Ý°áÁ¦ÇÏ¼Ì³ª¿ä?,default,YNO
+199,0-A-Y,"°í°´´Ô ÇöÀç ¡®ÁÖ¹®Ãë¼Ò¡¯ »óÅÂÀÌ½Ã³×¿ä.  <br>Ä«µå °áÁ¦ÀÇ °æ¿ì ¡®ÁÖ¹®Ãë¼Ò¡¯ ½ÃÁ¡ ±âÁØÀ¸·ÎºÎÅÍ, Ä«µå»ç ³»¿¡¼­ ¿µ¾÷ÀÏ ±âÁØ 3~5ÀÏ Á¤µµ ¼Ò¿äµË´Ï´Ù. <br>ÇØ´çÄ«µå»ç ÅëÇØ Á÷Á¢ È®ÀÎ ºÎÅ¹µå¸®¸ç, Ãß°¡ ¹®ÀÇ»çÇ× ¹ß»ý½Ã °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.",default,END
+199,0-A-N,"°í°´´Ô Çö±Ý °áÁ¦¿¡ ´ëÇÑ È¯ºÒÀº ¸ÅÁÖ È­¿äÀÏ°ú ¸ñ¿äÀÏ¿¡ ÁøÇàµË´Ï´Ù. <br>ÁÖ¹®Ãë¼Ò Á¢¼öÀÏ·ÎºÎÅÍ ±× ´ÙÀ½ È­¿äÀÏ ¶Ç´Â ¸ñ¿äÀÏ¿¡ È¯ºÒµË´Ï´Ù. <br> ÀÌ´Â Åë»óÀûÀÎ °æ¿ì·Î, °í°´´ÔÀÇ ÁÖ¹® °Ç¿¡ ´ëÇÑ Á¤È®ÇÑ È¯ºÒÀÏÀÚ ¾È³»´Â °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.",default,END
+199,0-A-O,"Çö±Ý°áÁ¦, Ä«µå°áÁ¦°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+199,0-B,°í°´´Ô Ä«µå °áÁ¦ÇÏ¼Ì³ª¿ä? Çö±Ý°áÁ¦ÇÏ¼Ì³ª¿ä?,default,YNO
+199,0-B-Y,"°í°´´Ô ÇöÀç ¡®È¯ºÒ¿Ï·á¡¯ »óÅÂÀÌ½Ã³×¿ä.  <br>Ä«µå °áÁ¦ÀÇ °æ¿ì ¡®È¯ºÒ¿Ï·á¡¯ ½ÃÁ¡ ±âÁØÀ¸·ÎºÎÅÍ °í°´´Ô²² ½ÇÁ¦·Î È¯ºÒÀÌ µÇ±â±îÁö Ä«µå»ç ³»¿¡¼­ ¿µ¾÷ÀÏ ±âÁØ 3~5ÀÏ Á¤µµ ¼Ò¿äµË´Ï´Ù. <br> ÀÌ´Â Åë»óÀûÀÎ °æ¿ì·Î, °í°´´ÔÀÇ ÁÖ¹® °Ç¿¡ ´ëÇÑ Á¤È®ÇÑ È¯ºÒÀÏÀÚ ¾È³»´Â °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.",default,END
+199,0-B-N,°í°´´Ô ÀÌ¹Ì °í°´´Ô²²¼­ ¿äÃ»ÇÏ½Å °èÁÂ·Î È¯ºÒ¿Ï·áµÇ¾ú½À´Ï´Ù.  <br>È®ÀÎ ºÎÅ¹µå¸³´Ï´Ù.  <br>È¯ºÒÀÌ µÇÁö ¾ÊÀº °æ¿ì¿¡´Â °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.,default,END
+199,0-B-O,"Çö±Ý°áÁ¦, Ä«µå°áÁ¦°¡ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+199,0-C,"°í°´´Ô ÇöÀç ¡®¹ÝÇ°Á¢¼ö¡¯ »óÅÂÀÌ½Ã³×¿ä.<br> ¹ÝÇ°Á¦Ç° ÀÔ°íµÈ ÈÄ È¯ºÒÀÌ °¡´ÉÇÕ´Ï´Ù. <br>Ä«µå °áÁ¦ÀÇ °æ¿ì ¡®È¯ºÒ¿Ï·á¡¯ ½ÃÁ¡ ±âÁØÀ¸·ÎºÎÅÍ °í°´´Ô²² ½ÇÁ¦·Î È¯ºÒÀÌ µÇ±â±îÁö Ä«µå»ç ³»¿¡¼­ ¿µ¾÷ÀÏ ±âÁØ 3~5ÀÏ Á¤µµ ¼Ò¿äµË´Ï´Ù. <br>Çö±Ý °áÁ¦¿¡ ´ëÇÑ È¯ºÒÀº ¸ÅÁÖ È­¿äÀÏ°ú ¸ñ¿äÀÏ¿¡ ÁøÇàµË´Ï´Ù. <br>È¯ºÒ½ÅÃ» Á¢¼öÀÏ·ÎºÎÅÍ ±× ´ÙÀ½ È­¿äÀÏ ¶Ç´Â ¸ñ¿äÀÏ¿¡ È¯ºÒµË´Ï´Ù. <br>ÀÌ´Â Åë»óÀûÀÎ °æ¿ì·Î, ÀÚ¼¼ÇÑ ¾È³»´Â °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.",default,END
+199,0-D,"°í°´´Ô ÇöÀç ¡®¹ÝÇ°Áö½Ã¡¯ »óÅÂÀÌ½Ã³×¿ä. <br>°í°´´ÔÀÇ ¹ÝÇ°Á¦Ç°ÀÌ ¾ÆÁ÷ ÀÔ°íµÇÁö ¾ÊÀº »óÅÂÀÔ´Ï´Ù.  <br>¹ÝÇ°Á¦Ç° ÀÔ°íµÈ ÈÄ È¯ºÒÀÌ °¡´ÉÇÕ´Ï´Ù.  <br>Ä«µå °áÁ¦ÀÇ °æ¿ì ¡®È¯ºÒ¿Ï·á¡¯ ½ÃÁ¡ ±âÁØÀ¸·ÎºÎÅÍ °í°´´Ô²² ½ÇÁ¦·Î È¯ºÒÀÌ µÇ±â±îÁö Ä«µå»ç ³»¿¡¼­ ¿µ¾÷ÀÏ ±âÁØ 3~5ÀÏ Á¤µµ ¼Ò¿äµË´Ï´Ù.  <br>Çö±Ý °áÁ¦¿¡ ´ëÇÑ È¯ºÒÀº ¸ÅÁÖ È­¿äÀÏ°ú ¸ñ¿äÀÏ¿¡ ÁøÇàµË´Ï´Ù.  <br>È¯ºÒ½ÅÃ» Á¢¼öÀÏ·ÎºÎÅÍ ±× ´ÙÀ½ È­¿äÀÏ ¶Ç´Â ¸ñ¿äÀÏ¿¡ È¯ºÒµË´Ï´Ù. <br> ÀÌ´Â Åë»óÀûÀÎ °æ¿ì·Î, ÀÚ¼¼ÇÑ ¾È³»´Â °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.",default,END
+199,0-E,"°í°´´Ô ÇöÀç ¡®¹ÝÇ°¿Ï·á¡¯ »óÅÂÀÌ½Ã³×¿ä. <br>¹ÝÇ°Á¦Ç° ÀÔ°íµÈ °ÍÀ¸·Î º¸¿©Áö¸ç, 2~3ÀÏ ³»¿¡ È¯ºÒÁ¢¼ö ¹× È¯ºÒÃ³¸® µÉ ¿¹Á¤ÀÔ´Ï´Ù. <br>Ä«µå °áÁ¦ÀÇ °æ¿ì ¡®È¯ºÒ¿Ï·á¡¯ ½ÃÁ¡ ±âÁØÀ¸·ÎºÎÅÍ °í°´´Ô²² ½ÇÁ¦·Î È¯ºÒÀÌ µÇ±â±îÁö Ä«µå»ç ³»¿¡¼­ ¿µ¾÷ÀÏ ±âÁØ 3~5ÀÏ Á¤µµ ¼Ò¿äµË´Ï´Ù. <br>Çö±Ý °áÁ¦¿¡ ´ëÇÑ È¯ºÒÀº ¸ÅÁÖ È­¿äÀÏ°ú ¸ñ¿äÀÏ¿¡ ÁøÇàµË´Ï´Ù.<br> È¯ºÒ½ÅÃ» Á¢¼öÀÏ·ÎºÎÅÍ ±× ´ÙÀ½ È­¿äÀÏ ¶Ç´Â ¸ñ¿äÀÏ¿¡ È¯ºÒµË´Ï´Ù. <br>ÀÌ´Â Åë»óÀûÀÎ °æ¿ì·Î, ÀÚ¼¼ÇÑ ¾È³»´Â °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.",default,END
+199,0-F,"°í°´´Ô Çö±Ý °áÁ¦¿¡ ´ëÇÑ È¯ºÒÀº ¸ÅÁÖ È­¿äÀÏ°ú ¸ñ¿äÀÏ¿¡ ÁøÇàµË´Ï´Ù. <br>È¯ºÒ½ÅÃ» Á¢¼öÀÏ·ÎºÎÅÍ ±× ´ÙÀ½ È­¿äÀÏ ¶Ç´Â ¸ñ¿äÀÏ¿¡ È¯ºÒµË´Ï´Ù. <br> ÀÌ´Â Åë»óÀûÀÎ °æ¿ì·Î, °í°´´ÔÀÇ ÁÖ¹® °Ç¿¡ ´ëÇÑ Á¤È®ÇÑ È¯ºÒÀÏÀÚ ¾È³»´Â °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é µµ¿Íµå¸®°Ú½À´Ï´Ù.",default,END
+200,0,"°í°´´Ô [MY µ¿¿ø¸ô - ÁÖ¹®/¹è¼ÛÁ¶È¸]¿¡¼­ Ãë¼Ò/¹ÝÇ°½ÅÃ»À» ÇÏ½Ã¸é Ãë¼Ò´Â ½ÅÃ» ÈÄ 3¿µ¾÷ÀÏ ÀÌ³», ¹ÝÇ°Àº ¹ÝÇ°¿Ï·á(¹Ý¼Û ¹°°ÇÀÌ º»»ç¿¡ µµÂøÇÑ °ÍÀÌ È®ÀÎµÇ´Â ½ÃÁ¡) È®ÀÎ ÈÄ 3¿µ¾÷ÀÏ ÀÌ³»¿¡ È¯ºÒ Ã³¸®ÇØµå¸³´Ï´Ù.<br>(ÁÖ¸» ¹× °øÈÞÀÏ Á¦¿Ü)",default,seq
+200,0_0,"°áÁ¦¼ö´Üº° È¯ºÒÀýÂ÷<br>- Çö±Ý°áÁ¦ : ½Ç½Ã°£°èÁÂÀÌÃ¼/°¡»ó°èÁÂ/¹«ÅëÀåÀÔ±ÝÀº ¹ÝÇ° È®ÀÎ ÈÄ 2~3ÀÏ ÀÌ³»¿¡ °í°´´ÔÀÇ È¯ºÒ°èÁÂ·Î °áÁ¦ÇÏ½Å ±Ý¾×À» È¯ºÒÇÏ¿© µå¸³´Ï´Ù.<br>- ½Å¿ëÄ«µå: ½Å¿ëÄ«µå·Î °áÁ¦ÇÏ½Å °æ¿ì´Â ½Å¿ëÄ«µå ½ÂÀÎÀÌ Ãë¼ÒµÇ¹Ç·Î °áÁ¦ ´ë±ÝÀÌ Ã»±¸µÇÁö ¾Ê½À´Ï´Ù. ½Å¿ëÄ«µå °áÁ¦ÀÏ¿¡ ´ë±ÝÀÌ Ã»±¸µÉ °æ¿ì ÀÍ¿ù ½Å¿ëÄ«µå ´ë±ÝÃ»±¸½Ã Ä«µå»ç¿¡¼­ È¯±ÞÃ³¸®(¸¶ÀÌ³Ê½º Ã»±¸)ÇØ µå¸³´Ï´Ù.<br>- Àû¸³±Ý : °í°´´ÔÀÇ Àû¸³±ÝÀº »ç¿ëÇÏ½Å ±Ý¾×¸¸Å­ È¯¿øÇØ µå¸³´Ï´Ù. (¼îÇÎÁö¿ø±ÝÀº ÁÖ¹®Ãë¼Ò ½Ã º¹¿øµÇÁö ¾Ê½À´Ï´Ù.)<br>- ÄíÆù : °áÁ¦½Ã »ç¿ëÇÑ ÄíÆùÀº ´Ù½Ã È¯¿øµÇÁö ¾Ê½À´Ï´Ù.<br><br>¡Ø È¯ºÒÀº ¹Ýµå½Ã ÁÖ¹®ÀÚ º»ÀÎ ¹× ÀÔ±ÝÀÚ ¸íÀÇÀÇ °èÁÂ·Î¸¸ ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù. ´Ü, ÁÖ¹®ÀÚ º»ÀÎ ¹× ÀÔ±ÝÀÚ ¸íÀÇÀÇ °èÁÂ·Î È¯ºÒÀÌ ¾øÀ¸½Ç °æ¿ì, ÁÖ¹®ÀÚ²²¼­ °í°´¼¾ÅÍ(1588-3745)·Î ¿¬¶ô ÁÖ½Ã¸é º»ÀÎ È®ÀÎÀ» °ÅÄ£ ÈÄ È¯ºÒ ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.",default,seq
+200,0_1,"Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+201,0,"°í°´´Ô µ¿¿ø¸ô¿¡¼­´Â µ¿¿ø, ÄÚ½ºÆ®ÄÚ, ¸Þ°¡¸¶Æ® »óÇ°À» ÇÑ¹ø¿¡ ¼îÇÎÇÏ°í, ¸ðµÎ ÇÑ¹ø¿¡ ¹è¼Û¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù!<br>µ¿¿ø¸ô¸¸ÀÇ ½º¸¶Æ®ÇÑ ÇÕ¹è¼Û¼­ºñ½º!<br>¹êµå¹è¼Û, Äð¹êµå¹è¼ÛÀ¸·Î ÆíÇÏ°Ô Àåº¸¼¼¿ä~",default,END
+202,0,"°í°´´Ô ¹êµå¹è¼ÛÀÌ¶õ <font style=""color:red"">µ¿¿ø»óÇ°, ÄÚ½ºÆ®ÄÚ, ¸Þ°¡¸¶Æ®</font>ÀÇ <font style=""color:red"">»ó¿Â »óÇ°</font>À» <b>ÇÑ¹ø¿¡ ¼îÇÎÇÏ°í! ÇÑ¹ø¿¡ ¹è¼Û¹Þ´Â!</b> µ¿¿ø¸ôÀÇ ½º¸¶Æ®ÇÑ ÇÕ¹è¼Û¼­ºñ½ºÀÔ´Ï´Ù.",default,seq
+202,0_0,"¾÷Ã¼¹è¼ÛÀº ¿ÜºÎ ÀÔÁ¡¾÷Ã¼ Á¦Ç°À¸·Î, ÇØ´ç ¾÷Ã¼¿¡¼­ Á¦Ç°ÀÌ Ãâ°í°¡ µÇ´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù. <br><br>ÀÔÁ¡¾÷Ã¼ »óÇ°Àº °¢ ¾÷Ã¼º° ¹è¼ÛÁ¤Ã¥¿¡ µû¶ó ¹è¼Ûºñ¸¦ Àû¿ëÇÏ°í ÀÖÁö¸¸, <b>¹êµå¹è¼Û »óÇ°Àº 3¸¸¿ø ÀÌ»ó ±¸¸Å ½Ã ¹«·á¹è¼Û</b>ÇØµå¸³´Ï´Ù!",default,seq
+202,0_1,"µ¿¿ø¸ô »ó´Ü ¸Þ´º¹ÙÀÇ [¹êµå¹è¼Û] Å¬¸¯ ½Ã º¸¿©Áö´Â ÆäÀÌÁö ³» »óÇ°µéÀÌ ¹Ù·Î ¹êµå¹è¼Û »óÇ°ÀÔ´Ï´Ù.<br><font style=\""color:orange\"">ÁÖÈ²»ö ¹êµå¹è¼Û</font> ¾ÆÀÌÄÜÀÌ Ç¥½ÃµÇ¾î ÀÖ¾î¿ä~<br> ¾Æ·¡ ¹öÆ° Å¬¸¯ÇÏ°í ¹êµå¹è¼ÛÀ» ¸¸³ªº¸¼¼¿ä<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/band.do?cate_id=01120008')"">¹êµå¹è¼Û »óÇ° º¸·¯°¡±â</button>",default,END
+203,0,"°í°´´Ô Äð¹êµå¹è¼ÛÀÌ¶õ <font style=""color:blue"">µ¿¿ø»óÇ°, ÄÚ½ºÆ®ÄÚ, ¸Þ°¡¸¶Æ®</font>ÀÇ <font style=""color:blue"">³ÃÀå³Ãµ¿ »óÇ°</font>À» <b>ÇÑ¹ø¿¡ ¼îÇÎÇÏ°í! ÇÑ¹ø¿¡ ¹è¼Û¹Þ´Â!</b> µ¿¿ø¸ôÀÇ ½º¸¶Æ®ÇÑ ÇÕ¹è¼Û¼­ºñ½ºÀÔ´Ï´Ù. <br>¾ÆÀÌ½º¹Ú½º¿¡ ¾ÆÀÌ½ºÁ©, ÇÏÀý±â¿¡´Â µå¶óÀÌ¾ÆÀÌ½º±îÁö ²Ç²Ç Æ÷ÀåÇØ¼­ ¹è¼ÛÇÏ´Ï±î! ³ÃÀå³Ãµ¿ »óÇ° ¼îÇÎµµ ¾È½ÉÇÏ½Ç ¼ö ÀÖ¾î¿ä~",default,seq
+203,0_0,"¾÷Ã¼¹è¼ÛÀº ¿ÜºÎ ÀÔÁ¡¾÷Ã¼ Á¦Ç°À¸·Î, ÇØ´ç ¾÷Ã¼¿¡¼­ Á¦Ç°ÀÌ Ãâ°í°¡ µÇ´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù. <br>ÀÔÁ¡¾÷Ã¼ »óÇ°Àº °¢ ¾÷Ã¼º° ¹è¼ÛÁ¤Ã¥¿¡ µû¶ó ¹è¼Ûºñ¸¦ Àû¿ëÇÏ°í ÀÖÁö¸¸, <b>Äð¹êµå¹è¼Û »óÇ°Àº 3¸¸¿ø ÀÌ»ó ±¸¸Å ½Ã ¹«·á¹è¼Û</b>ÇØµå¸³´Ï´Ù! ",default,seq
+203,0_1,"µ¿¿ø¸ô »ó´Ü ¸Þ´º¹ÙÀÇ [Äð¹êµå¹è¼Û] Å¬¸¯ ½Ã º¸¿©Áö´Â ÆäÀÌÁö ³» »óÇ°µéÀÌ ¹Ù·Î Äð¹êµå¹è¼Û »óÇ°ÀÔ´Ï´Ù.<br><font style=\""color:blue\"">ÇÏ´Ã»ö Äð¹êµå¹è¼Û</font> ¾ÆÀÌÄÜÀÌ Ç¥½ÃµÇ¾î ÀÖ¾î¿ä~<br> ¾Æ·¡ ¹öÆ° Å¬¸¯ÇÏ°í Äð¹êµå¹è¼ÛÀ» ¸¸³ªº¸¼¼¿ä<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/band.do?cate_id=01120009')"">¹êµå¹è¼Û »óÇ° º¸·¯°¡±â</button>",default,END
+204,0,"°í°´´Ô ¹è¼Ûºñ°¡ ±Ã±ÝÇÏ½Ã±º¿ä! <br><br>Á¦Ç° º¸°ü ¹× °ü¸® Æ¯¼º»ó ¹è¼Û Æ÷Àå À¯ÇüÀÌ ´Þ¶ó Áú ¼ö ÀÖ½À´Ï´Ù. ÀÚ¼¼ÇÑ ³»¿ëÀº »óÇ° °³º°ÆäÀÌÁö¸¦ È®ÀÎÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.<br><br>
+- ¹êµå¹è¼Û/Äð¹êµå¹è¼Û<br>
+3¸¸¿ø ÀÌ»ó ±¸¸Å½Ã Àü »óÇ°(³ÃÀå¹è¼ÛÆ÷ÇÔ) ¹«·á¹è¼Û<br>
+3¸¸¿ø ¹Ì¸¸ ÁÖ¹®½Ã »ó¿ÂÁ¦Ç°Àº 2,500¿ø / ³ÃÀå³Ãµ¿Á¦Ç°Àº 3,500¿øÀÇ ¹è¼Ûºñ°¡ ºÎ°úµË´Ï´Ù.<br>
+´Ü, 3¸¸¿ø ¹Ì¸¸ÀÌ¶óµµ ÀÏºÎ »óÇ°Àº ¹«·á¹è¼Û µÉ ¼ö ÀÖÀ¸´Ï ÀÚ¼¼ÇÑ ³»¿ëÀº »óÇ° °³º°ÆäÀÌÁö¸¦ È®ÀÎÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.<br><br>
+- ¾÷Ã¼(Á¦ÈÞ) ¹è¼Û Á¦Ç°<br>
+¾÷Ã¼¹è¼Û Á¦Ç°ÀÇ ¹è¼Ûºñ´Â ¾÷Ã¼º° ¹è¼ÛÁ¤Ã¥¿¡ µû¶ó ´Þ¶óÁú ¼ö ÀÖ½À´Ï´Ù. »óÇ° °³º°ÆäÀÌÁö¿¡ ¹è¼Ûºñ¸¦ È®ÀÎÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. 
+",default,seq
+204,0_0,"°¢°¢ÀÇ ÁÖ¹®°Ç¿¡ ´ëÇØ ¼ö·ÉÁö°¡ ÀÏÄ¡ÇÒ °æ¿ì ÇÕÆ÷Àå µÇ¾î ¹è¼ÛµÉ ¼ö ÀÖÀ¸¸ç, ÀÌ·Î ÀÎÇÑ ¹è¼Û·á È¯ºÒÀº ºÒ°¡ÇÕ´Ï´Ù.<br>¡Ø ÁÖ¹®°Ç¿¡ ´ëÇÑ º°µµ Æ÷ÀåÀ» ¿øÇÏ½Ã´Â °æ¿ì, ¼ö·ÉÀÎ¸í(È¤Àº ÁÖ¼ÒÁö)¸¦ ´Ù¸£°Ô Ç¥±âÇÏ¼Å¾ß ÇÕ´Ï´Ù.<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+205,0,°í°´´Ô ¹ÝÇ°¹è¼Ûºñ°¡ ±Ã±ÝÇÏ½Ã±º¿ä! <br>¹ÝÇ° »çÀ¯¿¡ µû¶ó ¹è¼Ûºñ°¡ ´Þ¶óÁý´Ï´Ù~<br> ¹ÝÇ°»çÀ¯°¡ ´Ü¼ø °í°´º¯½ÉÀÌ½Å°¡¿ä? »óÇ°ÇÏÀÚÀÇ ¹®Á¦ÀÌ½Å°¡¿ä?,default,ABCD
+205,0-A,"°í°´´Ô »óÇ°ÇÏÀÚ µîÀÇ ¹®Á¦·Î ±³È¯/¹ÝÇ°À» ÇÏ½Ç °æ¿ì ¹«·á¹ÝÇ°ÀÌ °¡´ÉÇÏ¸ç, °í°´¼¾ÅÍ »çÀü Á¢¼ö ºÎÅ¹µå¸³´Ï´Ù~ <br># ¹ÝÇ° Á¢¼ö ÀýÂ÷ ¾øÀÌ ÀÓÀÇ·Î ¹Ý¼ÛÇÒ °æ¿ì, ¹ÝÇ°³»¿ëÀ» È®ÀÎÇÒ ¼ö ¾øÀ¸¹Ç·Î È¯ºÒÀÌ Áö¿¬µÇ°Å³ª È¯ºÒÀÌ µÇÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù. <br>±×·¯¹Ç·Î ¹Ýµå½Ã µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î Á¢¼öÇÏ½Ã°Å³ª<br> È¨ÆäÀÌÁö »ó´ÜÀÇ ¡®MY µ¿¿ø¸ô¡¯ÀÇ ¡®ÁÖ¹®/¹è¼ÛÈ®ÀÎ¡¯¿¡¼­ ¡®¹ÝÇ°½ÅÃ»¡¯À» ÇÏ½Ã°í, ¹ÝÇ°ÀýÂ÷¿¡ µû¶ó ¹ÝÇ°ÇÏ¿©ÁÖ¼¼¿ä!",default,seq
+205,0-A_0,Á¦ ´äº¯¿¡ ¸¸Á·ÇÏ¼Ì³ª¿ä? <br>º¸´Ù ÀÚ¼¼ÇÑ »ó´ãÀ» ¿øÇÏ½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ¼¼¿ä! <br>ÀúÈñ µ¿¿ø¸ô Àü¹®»ó´ã»çµéÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù.,default,END
+205,0-B,"°í°´´Ô ´Ü¼ø °í°´º¯½É¿¡ ÀÇÇÑ ±³È¯/¹ÝÇ°ÀÎ °æ¿ì °í°´´Ô²²¼­ ¹ÝÇ°°ü·Ã ¿Õº¹¹è¼Ûºñ¸¦ ºÎ´ãÇÏ¼Å¾ß ÇÕ´Ï´Ù. <br>°í°´º¯½É¿¡ ÀÇÇØ ¹ÝÇ°½Ã ¹è¼Ûºñ¸¦ º¸³»Áö ¾ÊÀ¸½Ã¸é È¯ºÒÀÌ ºÒ°¡´É ÇÏ¿À´Ï,<br>¹Ýµå½Ã »çÀü¿¡ °í°´¼¾ÅÍ Á¢¼ö ÈÄ ¹è¼Ûºñ¸¦ ºÎ´ãÇØÁÖ¼Å¾ß ÇØ¿ä~# ¹ÝÇ° Á¢¼ö ÀýÂ÷ ¾øÀÌ ÀÓÀÇ·Î ¹Ý¼ÛÇÒ °æ¿ì, ¹ÝÇ°³»¿ëÀ» È®ÀÎÇÒ ¼ö ¾øÀ¸¹Ç·Î È¯ºÒÀÌ Áö¿¬µÇ°Å³ª È¯ºÒÀÌ µÇÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù. <br>±×·¯¹Ç·Î ¹Ýµå½Ã µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î Á¢¼öÇÏ½Ã°Å³ª<br> È¨ÆäÀÌÁö »ó´ÜÀÇ ¡®MY µ¿¿ø¸ô¡¯ÀÇ ¡®ÁÖ¹®/¹è¼ÛÈ®ÀÎ¡¯¿¡¼­ ¡®¹ÝÇ°½ÅÃ»¡¯À» ÇÏ½Ã°í, ¹ÝÇ°ÀýÂ÷¿¡ µû¶ó ¹ÝÇ°ÇÏ¿©ÁÖ¼¼¿ä!",default,END
+205,0-O,"»óÇ°ÇÏÀÚ, °í°´º¯½ÉÀÌ ¾Æ´Ñ ´Ù¸¥ ´äº¯À» ÁÖ¼Ì³×¿ä! <br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Áú¹®ÇØÁÖ¼¼¿ä!",default,BACK
+206,0,"1. µ¿¿ø¸ô ¹è¼ÛÁ¤Ã¥<br>(1) µ¿¿ø¸ôÀÇ ¹è¼ÛÀº µ¿¿ø¸ô ¹°·ù¼¾ÅÍ ¹è¼Û»óÇ°°ú °¢ ÀÔÁ¡¾÷Ã¼º° ¹è¼ÛÁ¦Ç°¿¡ µû¶ó º°µµ Àû¿ëµË´Ï´Ù.<br>µ¿¿ø¸ô ¹°·ù¼¾ÅÍ ¹è¼Û»óÇ°Àº 3¸¸¿ø ÀÌ»ó ±¸¸Å½Ã ¹«·á¹è¼Û, ÀÔÁ¡¾÷Ã¼ »óÇ°Àº °¢ ¾÷Ã¼º° ¹è¼ÛÁ¤Ã¥¿¡ µû¶ó Àû¿ëÀ» ¿øÄ¢À¸·Î ÇÏ°í ÀÖ½À´Ï´Ù.<br>ÀÏºÎ µµ¼­, »ê°£ Áö¿ªÀº ¹è¼ÛºÒ°¡ÇÏ°Å³ª ¹è¼Û±â°£ÀÌ ±æ¾îÁú ¼ö ÀÖÀ¸¸ç, Ãß°¡ ¹è¼Ûºñ°¡ ¹ß»ýÇÒ ¼ö ÀÖ½À´Ï´Ù.<br>ÀÚ¼¼ÇÑ »çÇ×Àº »óÇ° °³º°ÆäÀÌÁö¸¦ È®ÀÎÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.<br><br>(2) ¹è¼Û Æ÷Àå À¯ÇüÀÌ °³º°¹è¼ÛÀÎ »óÇ°ÀÇ °æ¿ì »óÇ°À» ÇÑ¹ø¿¡ °°ÀÌ ÁÖ¹®ÇÏ¼Åµµ µû·Î ¹è¼ÛµÉ ¼ö ÀÖ½À´Ï´Ù.<br>¹è¼ÛÁö¿¬ µî¿¡ µû¸¥ ¼ÒºñÀÚ ÇÇÇØ¿¡ ´ëÇØ¼­´Â ¼ÒºñÀÚ ÇÇÇØ º¸»ó±ÔÁ¤(Á¦Á¤°æÁ¦ºÎ °í½Ã)À» Àû¿ëÇÕ´Ï´Ù.",default,seq
+206,0_0,"2. µ¿¿ø¸ô ¹è¼Û Æ÷Àå À¯Çü<br>µ¿¿ø¸ô¿¡¼­´Â ¾ÈÀüÇÏ°í ½Å¼±ÇÑ ¹è¼ÛÀ» À§ÇÏ¿© Æ÷ÀåÀ¯Çüº° ¹è¼ÛÀ» ½Ç½ÃÇÏ°í ÀÖÀ¸¸ç, »óÇ° °³º°ÆäÀÌÁö¿¡¼­ ¹è¼Û¾ÆÀÌÄÜÀ¸·Î È®ÀÎÀÌ °¡´ÉÇÕ´Ï´Ù.<br><br>- ¹êµå¹è¼Û : »ó¿Â º¸°üµÇ´Â »óÇ°µé·Î ¹Ú½ºÆ÷ÀåµÇ¾î ¹è¼ÛµË´Ï´Ù.<br>\n- Äð¹êµå¹è¼Û : ³ÃÀå/ ³Ãµ¿ º¸°üµÇ´Â »óÇ°µé·Î ¾ÆÀÌ½º¹Ú½º Æ÷ÀåµÇ¾î ÁÖ¹®ÇÑ Á¦Ç° ¸ðµÎ ÇÕ¹è¼ÛµË´Ï´Ù.<br>\n- ºÎºÐÇÕ¹è¼Û : °³º°·Î ÁÖ¹®ÀÎ °æ¿ì Á¦Á¶°øÀå¿¡¼­ Á÷Á¢ ¹è¼Û, ´Ù¸¥ Á¦Ç°°ú ÇÔ²² ÁÖ¹®½Ã ÇÕ¹è¼ÛµË´Ï´Ù.<br>\n- ¾÷Ã¼¹è¼Û : ¾÷Ã¼¿¡¼­ ¹è¼ÛµÇ´Â Á¦Ç°µé·Î ÀÔÁ¡¾÷Ã¼¿¡¼­ Á÷Á¢ ¹è¼ÛµË´Ï´Ù. (¾÷Ã¼º° ÅÃ¹è»ç°¡ ´Ù¸¦ ¼ö ÀÖ½À´Ï´Ù.)<br> \n- °³º°¹è¼Û : Á¦Á¶°øÀå¿¡¼­ Á÷Á¢ ¹è¼ÛµÇ´Â Á¦Ç°µé·Î °³º°·Î ¹è¼ÛµË´Ï´Ù.\n<br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+207,0,"°í°´´Ô ÀÏºÎ µµ¼­, »ê°£ Áö¿ªÀº ¹è¼ÛºÒ°¡ÇÏ°Å³ª ¹è¼Û±â°£ÀÌ ±æ¾îÁú ¼ö ÀÖÀ¸¸ç Ãß°¡ ¹è¼Ûºñ°¡ ¹ß»ýÇÒ ¼ö ÀÖ½À´Ï´Ù.<br>µµ¼­»ê°£ Áö¿ªÀÇ °æ¿ì, ¹è¼ÛÁö¿¬À¸·Î ÀÎÇÑ Å¬·¹ÀÓ Ã³¸®°¡ ºÒ°¡ÇÒ ¼ö ÀÖ½À´Ï´Ù.",default,seq
+207,0_0,"ÀúÀÇ ´äº¯¿¡ ¸¸Á·ÇÏ¼Ì³ª¿ä?<br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+208,0,"°í°´´Ô µ¿¿ø¸ô¿¡¼­ ºñÈ¸¿øÀ¸·Î ÁÖ¹®ÇÏ½Ã´õ¶óµµ ÁÖ¹®¹øÈ£¸¦ ¾Ë°í °è½Ã´Â °æ¿ì È¨ÆäÀÌÁö »ó´ÜÀÇ ÁÖ¹®¹è¼ÛÁ¶È¸¸¦ Å¬¸¯ÇÏ½Ã°Å³ª ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ¹è¼ÛÈ®ÀÎÀÌ °¡´ÉÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/secure/findOrder.do')"">ºñÈ¸¿ø ÁÖ¹®/¹è¼Û Á¶È¸ÇÏ±â</button>",default,seq
+208,0_0,"ÇÏÁö¸¸ »ó¼¼ÇÑ ÁÖ¹®°ü¸® ¹× °¢Á¾ È¸¿øÇýÅÃÀ» ¹ÞÀ¸½Ã·Á¸é È¸¿ø°¡ÀÔÀ» ÇÏ½Ã´Â ÆíÀÌ ´õ Æí¸®ÇÕ´Ï´Ù.<br>¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¸¿ø°¡ÀÔ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('https://www.dongwonmall.com/member/join/step1.do')"">µ¿¿ø¸ô È¸¿ø°¡ÀÔ ÇÏ·¯°¡±â</button>",default,END
+209,0,"°í°´´Ô ¹êµå/Äð¹êµå »óÇ°Àº<br><font style=""color:red"">3¸¸ ¿ø ÀÌ»ó ÁÖ¹® ½Ã ¹«·á¹è¼Û</font>µË´Ï´Ù.",default,seq
+209,0_0,"¿ÜºÎ ÀÔÁ¡¾÷Ã¼ ¹× °³º°¹è¼Û »óÇ°Àº ÀÔÁ¡¾÷Ã¼º° º°µµ Á¤Ã¥¿¡ µû¸£¸ç, 3¸¸ ¿ø ¹Ì¸¸ÀÌ¶óµµ<br>ÀÏºÎ »óÇ°Àº ¹«·á¹è¼Û µÇ¿À´Ï ÀÚ¼¼ÇÑ ³»¿ëÀº °³º° »óÇ°ÆäÀÌÁö ¹è¼Û¶õÀ» ÂüÁ¶ÇÏ¿© ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.",default,END
+210,0,"°í°´´Ô ÁË¼ÛÇÏÁö¸¸ ÇöÀç ´ç»ç¿¡¼­ ÁÖ¹®ÇÏ´Â »óÇ°¿¡ ´ëÇØ¼­´Â ÁöÁ¤ÀÏ ¹è¼ÛÀÌ µÇÁö ¾Ê½À´Ï´Ù.<br>ÀÏºÎ ¾÷Ã¼ ¹è¼Û »óÇ°ÀÇ °æ¿ì °¡´ÉÇÑ °æ¿ìµµ ÀÖ»ç¿À´Ï °í°´¼¾ÅÍ 1588-3745·Î ¹®ÀÇÁÖ½Ã°Å³ª,<br>µ¿¿ø¸ô È¨ÆäÀÌÁö MYµ¿¿ø¸ô ¶Ç´Â °í°´¸¸Á·¼¾ÅÍ - 1:1¸ÂÃã»ó´ã °Ô½ÃÆÇ¿¡ Á¢¼ö ºÎÅ¹µå¸³´Ï´Ù.",default,END
+211,0,"1. Æò±Õ¹è¼Û±â°£Àº °áÁ¦ÀÏ·ÎºÎÅÍ ¿µ¾÷ÀÏ ±âÁØÀ¸·Î 2~3ÀÏ(Åä¿äÀÏ, °øÈÞÀÏ Á¦¿Ü) Á¤µµ ¼Ò¿äµÇ¸ç ¾÷Ã¼º° Àç°í»óÈ², ÅÃ¹è»ç »çÁ¤¿¡ µû¶ó ´Ù¼Ò Áö¿¬µÉ ¼ö ÀÖ½À´Ï´Ù.<br><br>¡Ú¿ù~¸ñ¿äÀÏ ÁÖ¹®¡Ú<br>- 12½Ã ÀÌÀü ÁÖ¹® ¡æ ´çÀÏ Ãâ°í + 1ÀÏ ¹è¼Û<br>- 12½Ã ÀÌÈÄ ÁÖ¹® ¡æ ÀÍÀÏ Ãâ°í + 1ÀÏ ¹è¼Û<br><br>¡Ú±Ý¿äÀÏ ÁÖ¹®¡Ú<br>- 12½Ã ÀÌÀü ÁÖ¹® ¡æ ´çÀÏ Ãâ°í + 1ÀÏ ¹è¼Û<br>- 12½Ã ÀÌÈÄ ÁÖ¹® ¡æ ¿ù¿äÀÏ Ãâ°í È­¿äÀÏ ¹è¼Û<br><br>¡ÚÅä¿äÀÏ/ÀÏ¿äÀÏ/°øÈÞÀÏ ÁÖ¹®¡Ú<br>- Åä¿äÀÏ/ÀÏ¿äÀÏ ¡æ ¿ù¿äÀÏ Ãâ°í È­¿äÀÏ ¹è¼Û<br>- °øÈÞÀÏ OR ºñ¿µ¾÷ÀÏ ¡æ ÀÍÀÏÃâ°í + 2ÀÏ ¹è¼Û<br><br>¡Ø ±èÄ¡(³ÃÀå) µî Á÷¼Û»óÇ°°ú ¹êµå¹è¼Û(»ó¿Â)À» µ¿½Ã¿¡ ÁÖ¹®ÇÒ °æ¿ì´Â °¢°¢ °³º° ¹è¼ÛµË´Ï´Ù.",default,seq
+211,0_0,"2. µµ¼­Áö¿ª ¹× »ê°£Áö¿ªÀÇ °æ¿ì Æò±Õ ¹è¼ÛÀÏº¸´Ù 1~2ÀÏÁ¤µµ ´õ ¼Ò¿äµÉ ¼ö ÀÖ½À´Ï´Ù. (Åä¿äÀÏ, °øÈÞÀÏ Á¦¿Ü)<br><br>3. °áÁ¦¼ö´ÜÀÌ ½Ç½Ã°£°èÁÂÀÌÃ¼/°¡»ó°èÁÂ/¹«ÅëÀåÀÔ±ÝÀÎ °æ¿ì ÀÔ±ÝÈ®ÀÎÀÌ µÈ ÈÄ »óÇ°¹ß¼ÛÀ» ÁøÇàÇÏ¹Ç·Î ¹è¼Û ±â°£ÀÌ ´Ù¼Ò ´Ê¾îÁú ¼ö ÀÖ½À´Ï´Ù. <br><br>Ãß°¡ ¹®ÀÇ»çÇ×ÀÌ ÀÖÀ¸½Ç °æ¿ì µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745 ¶Ç´Â 1:1 ¸ÂÃã»ó´ã¿¡ ¹®ÀÇÇÏ½Ã¸é ¸ÂÃã ´äº¯À» ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/customer/counsel.do')"">°í°´¼¾ÅÍ - 1:1 ¸ÂÃã»ó´ã</button>",default,END
+212,0,°í°´´Ô µ¿¿ø¸ôÀÇ »óÇ° ¹è¼ÛÀº ÇÕ¹è¼ÛÀÎ »óÇ°°ú °³º°¹è¼ÛÀÎ »óÇ°À¸·Î ³ª´©¾îÁ® ÀÖ¾î ÁÖ¹®ÇÏ½Å »óÇ°ÀÇ ¹è¼ÛÀ¯Çü¿¡ µû¶ó ¹è¼ÛµË´Ï´Ù.<br>¶ÇÇÑ »óÇ°ÀÇ Àç°í»óÅÂ¿¡ µû¶ó ¹è¼ÛÀÌ Áö¿¬µÉ °æ¿ì°¡ ÀÖ»ç¿À´Ï ÀÌÁ¡ ¾çÇØÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.,default,seq
+212,0_0,"¹Ì¹è¼Û ¶Ç´Â ¹è¼ÛÁö¿¬ »óÇ°ÀÇ ÁøÇàÇöÈ²Àº ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã°Å³ª È¨ÆäÀÌÁö MYµ¿¿ø¸ô-ÁÖ¹®¹è¼ÛÁ¶È¸¿¡¼­ È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù. <br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/mypage/myorder/myOrderList.do')"">ÁÖ¹®/¹è¼ÛÁ¶È¸ ¹Ù·Î°¡±â</button>",default,END
+213,0,"°í°´´Ô²²¼­ ¹ÞÀ¸½Å SMS ¹®ÀÚ´Â µ¿¿ø¸ô¿¡¼­ ÅÃ¹è»ç·Î »óÇ°À» ÀÎµµÇÏ´Â ½ÃÁ¡¿¡ ½Ã½ºÅÛ µî·Ï ½Ã ÀÚµ¿ ¹ß¼ÛµÇ´Â ÀÚµ¿¾È³» ¸Þ½ÃÁöÀÔ´Ï´Ù.<br>½Ã½ºÅÛ»óÀÇ µî·ÏÀÌ Áö¿¬µÇ¾î »óÇ° ¼ö·É ÈÄ¿¡ SMS ¹®ÀÚ¸¦ ¹ß¼ÛÇÏ°Ô µÇ¾ú½À´Ï´Ù.<br>»óÇ°ÀÌ ÀÌÁß ¹è¼ÛµÇ´Â °ÍÀº ¾Æ´Ï¸ç, °í°´´Ô²² ºÒÆíÀ» µå·Á ÁË¼ÛÇÕ´Ï´Ù.<br>´õ ³ªÀº µ¿¿ø¸ôÀÌ µÇ°Ú½À´Ï´Ù.",default,END
+214,0,°í°´´Ô »óÇ°¿¡ ´ëÇØ ¹®ÀÇÁÖ¼Ì³ª¿ä?<br>ÁË¼ÛÇÏÁö¸¸ ¾ÆÁ÷Àº »óÇ°°ü·Ã »ó´ã ¼­ºñ½º°¡ ¾î·Æ½À´Ï´Ù.,default,seq
+214,0_0,"ÇØ´ç »óÇ°ÆäÀÌÁöÀÇ »óÇ°Q&A ¶Ç´Â 1:1¸ÂÃã»ó´ã °Ô½ÃÆÇ¿¡ ¹®ÀÇ±ÛÀ» ³²°ÜÁÖ½Ã°Å³ª, µ¿¿ø¸ô °í°´¼¾ÅÍ 1588-3745·Î ¿¬¶ôÁÖ½Ã¸é Àü¹® »ó´ã¿øÀÌ µµ¿Íµå¸®°Ú½À´Ï´Ù!",default,END
+215,0,"°í°´´Ô ´ë·®±¸¸Å ¿øÇÏ½Ã³ª¿ä?<br>µ¿¿ø¼±¹°¼¼Æ® <font style=""color:red"">100¼¼Æ®</font> ÀÌ»ó ±¸¸Å ½Ã, º°µµÀÇ °ßÀû¼­ºñ½º¸¦ ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.<br>Æ¯º°ÇÑ °¡°ÝÁ¦¾È! ´ë·®±¸¸Å »ó´ã ¹Þ¾Æº¸¼¼¿ä~",default,seq
+215,0_0,"µ¿¿ø ¼±¹°¼¼Æ® ´ë·®±¸¸Å »ó´ãÀº<br>02-589-3168/3949<br>·Î ¹®ÀÇÇÏ½Ã°Å³ª ¿Â¶óÀÎ »ó´ã °Ô½ÃÆÇÀ¸·Î ¹®ÀÇÇÏ½Ã¸é µË´Ï´Ù!<br> ¾Æ·¡ÀÇ '¿Â¶óÀÎ »ó´ãÇÏ±â'¸¦ ´©¸£½Ã¸é ÇØ´ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/boardCooperation/new_biz_order_giftset.do')"">'¿Â¶óÀÎ »ó´ãÇÏ±â'</button>",default,END
+216,0,"°í°´´Ô 1¸¸¿ø ¹Ì¸¸ ÃßÃµ ¼±¹°¼¼Æ®ÀÔ´Ï´Ù!<br>¾Æ·¡ÀÇ ¹öÆ°À» ´©¸£½Ã¸é Çà»ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList1')"">1¸¸¿ø ¹Ì¸¸ ÃßÃµ ¼±¹°¼¼Æ® º¸·¯ °¡±â'</button>",default,END
+217,0,°í°´´Ô!<br>Ù£ù¡ ±× Æ¯º°ÇÑ °¡Ä¡¸¦ ¾Æ½Ã´Â ºÐÀ» À§ÇØ ¸¸µç<br>¾ç¹Ý ¸íÇ°±èÄ¡ »óÇ°±Ç µî·ÏÇÏ½Ã·Á±¸¿ä?<br><br>»óÇ°±Ç µî·ÏÀº µ¿¿ø¸ô È¨ÆäÀÌÁö ¸ÇÇÏ´Ü ¿ìÃø<br>¾ç¹Ý ¸íÇ° ±èÄ¡ »óÇ°±Ç µî·ÏÀ» Å¬¸¯ÇÏ½Ã¸é<br>ÇØ´ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!,default,seq
+217,0_0,"µî·Ï ÆäÀÌÁö·Î ¹Ù·Î ÀÌµ¿À» ¿øÇÏ½Ã´Â ºÐ²²¼­´Â ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇØÁÖ¼¼¿ä!<br>ÇØ´ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù~<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/kimchi/order/form.do')"">¾ç¹Ý ¸íÇ° ±èÄ¡»óÇ°±Ç µî·ÏÇÏ±â</button>",default,END
+218,0,"°í°´´Ô!<br>ÀÓÁ÷¿ø º¹ÁöÆ÷ÀÎÆ®¸¦ ¹ÞÁö ¸øÇÏ¼Ì³ª¿ä?<br>°¡ÀÔ ÈÄ ÀÓÁ÷¿ø »ç¹ø±îÁö ÀÎÁõ ¿Ï·áÇÏ¼Ì³ª¿ä?<button class=""dial_btn f"">ÀÎÁõ ¿Ï·áÇß¾î¿ä</button>
+<button class=""dial_btn"">¾ÆÁ÷ ÀÎÁõ ¸øÇß¾î¿ä</button>",default,ABCD
+218,0-A,°í°´´Ô ºÒÆíÀ» µå·Á ÁË¼ÛÇÕ´Ï´Ù.<br>F&B ¿Â¶óÀÎ»ç¾÷ºÎ º¹ÁöÆ÷ÀÎÆ® ´ã´çÀÚ¿¡°Ô ¹®ÀÇ ºÎÅ¹µå¸³´Ï´Ù. °¨»çÇÕ´Ï´Ù.,default,END
+218,0-B,ÀÓÁ÷¿ø »ç¹ø±îÁö ÀÎÁõÀ» ¸¶Ä¡¼Å¾ß º¹Áö Æ÷ÀÎÆ®°¡ Áö±ÞµË´Ï´Ù.,default,seq
+218,0-B_0,°í°´´Ô ÀÓÁ÷¿ø ÀÎÁõÀº µ¿¿ø¸ô È¨ÆäÀÌÁö »ó´Ü 'MYµ¿¿ø¸ô'<br>Å¬¸¯ÇÏ½Å ÈÄ ÁÂÃø ¸Þ´º ÇÏ´ÜÀÇ 'È¸¿øÁ¤º¸ °ü¸®' ¡æ '°³ÀÎÁ¤º¸º¯°æ' À» Å¬¸¯ÇÏ½Ã¸é µË´Ï´Ù.,default,seq
+218,0-B_1,"°³ÀÎÁ¤º¸º¯°æ' ÆäÀÌÁö ÀÌµ¿ ÈÄ<br>¸Ç ÇÏ´Ü 'µ¿¿ø ÀÓÁ÷¿øÁ¤º¸ ÀÔ·Â' ¶õÀÇ ¼Ò¼Ó»ç¸¦ ¼±ÅÃÇÏ½Ã°í, »ç¹ø±îÁö ÀÔ·ÂÇÏ½Å ÈÄ [ÀÓÁ÷¿ø ÀÎÁõ] ¹öÆ°À» ´©¸£½Ã¸é ¿Ï·áµË´Ï´Ù.",default,END
+219,0,"°í°´´Ô~ ¾î¶² ½Ä¿ëÀ¯¸¦ »ç¿ëÇØµµ Æ¢±èÀ» ÇÒ ¶§ °ÅÇ°ÀÌ ³ª°í Æ¢´Â Çö»óÀÌ ³ªÅ¸³¯ ¼ö ÀÖ¾î¿ä.<br>¿©±â¿£
+ ¿©·¯°¡Áö ÀÌÀ¯°¡ ÀÖ´Âµ¥¿ä, ±× Áß ´ëÇ¥ÀûÀÎ ¸î °¡Áö ¿øÀÎ Çªµð°¡ ¼Ò°³ÇØµå¸±°Ô¿ä~!",default,seq
+219,0_0,"1. ±â¸§À» Àå½Ã°£ »ç¿ëÇÏ¿© ¿­È­µÇ°í, Âî²¨±â°¡ ¸¹°í, ±â¸§¿¡ ¼öºÐÇÔ·®ÀÌ ¸¹À» ¶§<br>2. Æ¢±è ½Ã ±â¸§ÀÇ ¿Âµµ°¡ ³ôÀ» ¶§ (170~180¡É ÀÌ»óÀÏ °æ¿ì)<br>3. ¹°±â¸¦ ¸¹ÀÌ °¡Áø À½½Ä¹°À» Æ¢±æ ¶§ µîÀÇ »óÈ²¿¡¼­ °ÅÇ°ÀÌ ³ª°í Æ¢´Â Çö»óÀÌ ³ªÅ¸³­´ä´Ï´Ù!",default,END
+220,0,"µþ±âÂ´ÀÌ³ª Æ÷µµ´ç¿¡ ÇÔÀ¯µÇ¾î ÀÖ´Â ºÓÀº »öÀ» ¶ì´Â ¾ÈÅä½Ã¾Æ´Ñ »ö¼Ò´Â ¿Âµµ, ±¤¼± µî¿¡ ÀÇÇØ Åð»öÇÏ°Ô µË´Ï´Ù.<br>¿Âµµ°¡ ³ôÀº ±¤¼±ÀÇ ¾çÀÌ ¸¹À»¼ö·Ï Åð»ö¼Óµµ°¡ ºü¸£¹Ç·Î °¡´ÉÇÏ¸é Àú¿Â À¯Åë ¹× º¸°üÇÏ¼Å¾ß ÇÕ´Ï´Ù.",default,END
+221,0,"°í°´´Ô~ µ¿¿ø¸ô ½Å±ÔÈ¸¿øÀÇ °æ¿ì<br>¼îÇÎÁö¿ø±Ý 2000¿ø°ú µ¿¿ø»óÇ° 10% ÇÒÀÎÇýÅÃÀ» ¹ÞÀ¸½Ç ¼ö ÀÖÀ¸¸ç, <font style=""color:red"">Myµ¿¿ø¸ô - È¸¿øÇýÅÃ</font> ÆäÀÌÁö¿¡¼­ Á÷Á¢ ´Ù¿î·Îµå °¡´ÉÇÕ´Ï´Ù!<br>½Å±ÔÈ¸¿ø´Ô²²¼­´Â ¾Æ·¡ ¹öÆ° Å¬¸¯ÇÏ¼Å¼­ ÇýÅÃ¹Þ¾Æ°¡¼¼¿ä~<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">½Å±Ô ÇýÅÃ ¹ÞÀ¸·¯ °¡±â</button>",default,END
+222,0,"°í°´´Ô! ·Î±×ÀÎ ¿øÇÏ½Ã³ª¿ä?<br>¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é ·Î±×ÀÎ Ã¢À¸·Î ÀÌµ¿ÇÕ´Ï´Ù.
+<button class=""ext_btn"" type=""button"">·Î±×ÀÎ ÇÏ·¯°¡±â!</button></a>",default,seq
+223,0,"°í°´´Ô <font style=""color:red"">ÇÁ¸®¹Ì¾ö</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 30¸¸¿ø ÀÌ»ó ¶Ç´Â ÁÖ¹®°Ç¼ö 12È¸ ÀÌ»óÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,seq
+223,0_0,"<font style=\""color:red\"">ÇÁ¸®¹Ì¾ö</font> µî±Þ È¸¿ø´Ô¸¸À» À§ÇÑ ÇýÅÃÀ¸·Î<br>1) ¹êµå/Äð¹êµå Àå¹Ù±¸´Ï 3Ãµ¿ø ÇÒÀÎÄíÆù 2Àå<br>2) µ¿¿øÁ¦Ç° Àå¹Ù±¸´Ï 15% ÇÒÀÎÄíÆù 2Àå<br>3) ¹«·á¹è¼ÛÄíÆù 1Àå<br> ÃÑ 5ÀåÀÇ ÄíÆù ÇýÅÃÀ» ¸Å¿ù µå¸³´Ï´Ù¢½",default,seq
+223,0_1,"´õ¿í ÀÚ¼¼ÇÑ »çÇ×À» ¿øÇÏ½Ã¸é ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ¼¼¿ä!<br> µ¿¿ø¸ô È¸¿øÇýÅÃ¿¡ ´ëÇÑ »ó¼¼ ¾È³»ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">µî±Þº° È¸¿øÇýÅÃ º¸·¯°¡±â</button>",default,END
+224,0,"°í°´´Ô <font style=""color:red"">ÇÁ¸®¹Ì¾ö</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 30¸¸¿ø ÀÌ»ó ¶Ç´Â ÁÖ¹®°Ç¼ö 12È¸ ÀÌ»óÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,END
+225,0,"°í°´´Ô <font style=""color:black"">ÆÐ¹Ð¸®</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 3¸¸¿ø ¹Ì¸¸ÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,seq
+225,0_0,"<font style=\""color:black\"">ÆÐ¹Ð¸®</font> µî±Þ È¸¿ø´Ô¸¸À» À§ÇÑ ÇýÅÃÀ¸·Î ¹êµå/Äð¹êµå Àå¹Ù±¸´Ï 2Ãµ¿ø ÇÒÀÎÄíÆù 1ÀåÀ» ¸Å¿ù µå¸³´Ï´Ù¢½",default,seq
+225,0_1,"´õ¿í ÀÚ¼¼ÇÑ »çÇ×À» ¿øÇÏ½Ã¸é ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ¼¼¿ä!<br> µ¿¿ø¸ô È¸¿øÇýÅÃ¿¡ ´ëÇÑ »ó¼¼ ¾È³»ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">µî±Þº° È¸¿øÇýÅÃ º¸·¯°¡±â</button>",default,END
+226,0,°í°´´Ô ºÒÆíÀ» µå·Á ÁË¼ÛÇÕ´Ï´Ù.<br>F&B ¿Â¶óÀÎ»ç¾÷ºÎ º¹ÁöÆ÷ÀÎÆ® ´ã´çÀÚ¿¡°Ô ¹®ÀÇ ºÎÅ¹µå¸³´Ï´Ù. °¨»çÇÕ´Ï´Ù.,default,END
+227,0,°í°´´Ô! µ¿¿ø¸ô Á¦ÈÞ ÅÃ¹è»ç´Â CJ´ëÇÑÅë¿îÀÔ´Ï´Ù.,default,END
+228,0,"°í°´´Ô~ ÂüÄ¡ÅëÁ¶¸²ÀÇ ¾×»óÀº Á¾·ù¿¡ µû¶ó Æ÷µµ¾¾À¯, Ä«³î¶óÀ¯, ¸é½ÇÀ¯, ÇØ¹Ù¶ó±âÀ¯, ¿Ã¸®ºêÀ¯ µîÀÇ ½Ä¹°¼º ±â¸§°ú ¾ßÃ¤Áó(´ç±Ù, ¾çÆÄ µîÀÇ ¾×Áó), Á¤Á¦¼ö·Î ÀÌ·ç¾îÁ® ÀÖ½À´Ï´Ù!<br>¿ä¸®¿¡ ÂüÄ¡À°°ú ÇÔ²² ³Ö¾î¼­ µå½Ã¸é ´õ¿í ¸ÀÀÖ´ä´Ï´Ù ^^",default,END
+229,0,"°í°´´Ô <font style=""color:blue"">VIP</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 10¸¸¿ø ÀÌ»ó 30¸¸¿ø ¹Ì¸¸ÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,END
+230,0,°í°´´Ô ´ë·®±¸¸Å ¿øÇÏ½Ã³ª¿ä?<br> GNC ¼±¹°¼¼Æ® ´ë·®±¸¸Å »ó´ãÀº<br> 02-589-3944 ·Î ¹®ÀÇÇØÁÖ¼¼¿ä<br> °¨»çÇÕ´Ï´Ù!,default,END
+231,0,°í°´´Ô! ¾ç¹Ý ¸íÇ°±èÄ¡ »óÇ°±ÇÀº<br>µ¿¿ø ¾ç¹Ý±èÄ¡°¡ Á¶»óÀÇ ÁöÇý¸¦ µÇ»ì·Á ±íÀÌ¿Í Ç°°ÝÀ» ´õÇØ ÃÖ»ó±Þ Àç·á·Î ¸¸µç ÇÁ¸®¹Ì¾ö ±èÄ¡ »óÇ°±ÇÀÔ´Ï´Ù.<br><br>¾ç¹Ý ¸íÇ°±èÄ¡ »óÇ°±ÇÀ» ¸ÕÀú µî·ÏÇÏ½Å ÈÄ ¸íÇ°±èÄ¡¸¦ ÁÖ¹®ÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù!,default,seq
+231,0_0,"µî·Ï ÆäÀÌÁö·Î ¹Ù·Î ÀÌµ¿À» ¿øÇÏ½Ã´Â ºÐ²²¼­´Â ¾Æ·¡ ¹öÆ°À» Å¬¸¯ÇØÁÖ¼¼¿ä!<br>ÇØ´ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù~<br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/kimchi/order/form.do')"">¾ç¹Ý ¸íÇ° ±èÄ¡»óÇ°±Ç µî·ÏÇÏ±â</button>",default,END
+232,0,ÀÓÁ÷¿ø »ç¹ø±îÁö ÀÎÁõÀ» ¸¶Ä¡¼Å¾ß º¹Áö Æ÷ÀÎÆ®°¡ Áö±ÞµË´Ï´Ù.,default,seq
+232,0_0,°í°´´Ô ÀÓÁ÷¿ø ÀÎÁõÀº µ¿¿ø¸ô È¨ÆäÀÌÁö »ó´Ü 'MYµ¿¿ø¸ô'<br>Å¬¸¯ÇÏ½Å ÈÄ ÁÂÃø ¸Þ´º ÇÏ´ÜÀÇ 'È¸¿øÁ¤º¸ °ü¸®' ¡æ '°³ÀÎÁ¤º¸º¯°æ' À» Å¬¸¯ÇÏ½Ã¸é µË´Ï´Ù.,default,seq
+232,0_1,"°³ÀÎÁ¤º¸º¯°æ' ÆäÀÌÁö ÀÌµ¿ ÈÄ<br>¸Ç ÇÏ´Ü 'µ¿¿ø ÀÓÁ÷¿øÁ¤º¸ ÀÔ·Â' ¶õÀÇ ¼Ò¼Ó»ç¸¦ ¼±ÅÃÇÏ½Ã°í, »ç¹ø±îÁö ÀÔ·ÂÇÏ½Å ÈÄ [ÀÓÁ÷¿ø ÀÎÁõ] ¹öÆ°À» ´©¸£½Ã¸é ¿Ï·áµË´Ï´Ù.",default,END
+233,0,"°í°´´Ô~ °ÆÁ¤¸¶¼¼¿ä!<br>ÇöÀç ½ëÄî¿¡ »ç¿ëÁßÀÎ ¿ë±â´Â ½ÄÇ°À§»ý¹ý»ó ÀûÇÕÇÑ ¿ë±â·Î, ½ÄÇ°¿¡ ÀÏ¹ÝÀûÀ¸·Î ¸¹ÀÌ »ç¿ëµÇ´Â Æú¸®ÇÁ·ÎÇÊ·»(PP) ÀçÁúÀ» »ç¿ëÇÏ°í ÀÖ½À´Ï´Ù.",default,seq
+233,0_0,´õºÒ¾î ÁÖ±âÀûÀ¸·Î ¾ÈÀü¼º ºÐ¼®À» ÇÏ°í ÀÖÁö¿ä<br>È¯°æ È£¸£¸óÀÌ °ËÃâµÇÁö ¾ÊÀ¸´Ï °ÆÁ¤¸»°í ½ëÄî ¸¹ÀÌ~ »ç¶ûÇØÁÖ¼¼¿ä¢½,default,END
+234,0,°í°´´Ô~ ¸®Ã¨À» °³ºÀÇÏ¿´´Âµ¥µµ ³»¿ë¹°ÀÌ Àß ³ª¿ÀÁö ¾Ê´Â °æ¿ì°¡ ÀÖÀ¸½ÃÁÒ?<br>µÅÁö°í±âÀÇ ±â¸§¼ººÐÀÌ Äµ ¾ÈÂÊ ¹Ù´Ú ¸é°ú ºÙ¾îÀÖ´Â °æ¿ì¿¡ ±×·² ¼ö ÀÖ½À´Ï´Ù.,default,seq
+234,0_0,¹ÌÁö±ÙÇÑ ¹°¿¡ Àá±ñ ³Ö¾îµÐ ÈÄ ²¨³»½Ã°Å³ª ÄµÀÇ ´ë°¢¼± ¸ð¼­¸®ºÎºÐÀ» ÈûÀ¸·Î »ìÂ¦ ´­·¯ÁÖ½Å ÈÄ ²¨³»½Ã¸é º¸´Ù ½±°Ô ÀÌ¿ëÇÏ½Ç ¼ö ÀÖ´ä´Ï´Ù~,default,END
+235,0,"°í°´´Ô <font style=""color:gold"">°ñµå</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 3¸¸¿ø ÀÌ»ó 10¸¸¿ø ¹Ì¸¸ÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,END
+236,0,"°í°´´Ô <font style=""color:blue"">VIP</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 10¸¸¿ø ÀÌ»ó 30¸¸¿ø ¹Ì¸¸ÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,seq
+236,0_0,"<font style=\""color:blue\"">VIP</font> µî±Þ È¸¿ø´Ô¸¸À» À§ÇÑ ÇýÅÃÀ¸·Î<br>1) ¹êµå/Äð¹êµå Àå¹Ù±¸´Ï 2Ãµ¿ø ÇÒÀÎÄíÆù 2Àå<br>2) µ¿¿øÁ¦Ç° Àå¹Ù±¸´Ï 15% ÇÒÀÎÄíÆù 1Àå<br>ÃÑ 3ÀåÀÇ ÄíÆù ÇýÅÃÀ» ¸Å¿ù µå¸³´Ï´Ù¢½",default,seq
+236,0_0,"´õ¿í ÀÚ¼¼ÇÑ »çÇ×À» ¿øÇÏ½Ã¸é ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ¼¼¿ä!<br> µ¿¿ø¸ô È¸¿øÇýÅÃ¿¡ ´ëÇÑ »ó¼¼ ¾È³»ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(http://www.dongwonmall.com/benefit/member.do')"">µî±Þº° È¸¿øÇýÅÃ º¸·¯°¡±â</button>",default,END
+237,0,"°í°´´Ô <font style=""color:black"">ÆÐ¹Ð¸®</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 3¸¸¿ø ¹Ì¸¸ÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,END
+238,0,°í°´´Ô ´ë·®±¸¸Å ¿øÇÏ½Ã³ª¿ä?<br> ÃµÁöÀÎ ¼±¹°¼¼Æ® ´ë·®±¸¸Å »ó´ãÀº<br> 02-589-3944 ·Î ¹®ÀÇÇØÁÖ¼¼¿ä<br> °¨»çÇÕ´Ï´Ù!,default,END
+239,0,µ¿¿ø¸ô È¸¿ø°¡ÀÔ ¾î·ÆÁö ¾Ê¾Æ¿ä~,default,seq
+239,0_0,"¨ç È¨ÆäÀÌÁö »ó´ÜÀÇ È¸¿ø°¡ÀÔÀ» Å¬¸¯ÇÏ½Ã°Å³ª ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ¼¼¿ä!<br> È¸¿ø°¡ÀÔ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">µ¿¿ø¸ô È¸¿ø°¡ÀÔ ÇÏ·¯°¡±â</button>",default,seq
+239,0_1,"¨è º»ÀÎÀÎÁõÀÌ ÇÊ¿äÇÕ´Ï´Ù.<br>º»ÀÎ ¸íÀÇÀÇ ÈÞ´ëÆù ÀÎÁõÀ» ÇØÁÖ¼¼¿ä.<br>¡Ø 14¼¼ ÀÌ»ó 19¼¼ ¹Ì¸¸ÀÇ Ã»¼Ò³âÀº µ¿¿ø¸ô È¸¿ø¿¡ °¡ÀÔÇÒ ¼ö ÀÖÀ¸³ª, »ó°Å·¡ È°µ¿°ú ÇýÅÃÀ» ¹ÞÀ» ¼ö ¾ø½À´Ï´Ù. ´Ü, 14¼¼ ¹Ì¸¸ÀÇ ¾Æµ¿Àº µ¿¿ø¸ô¿¡ °¡ÀÔÇÒ ¼ö ¾ø½À´Ï´Ù.<br><br>¨é ¿¬¶ôÃ³, ¸ÞÀÏ, ÁÖ¼Ò µî Á¤º¸¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. µ¿¿ø¸ô¿¡¼­ ¼îÇÎÇÏ½Ç ¶§ ²À ÇÊ¿äÇÑ Á¤º¸ÀÌ´Ï Á¤È®ÇÏ°Ô ÀÔ·Â ºÎÅ¹µå¸³´Ï´Ù.<br><br>¨ê Á¤º¸ ÀÔ·ÂÀ» ¸¶Ä¡¼ÌÀ¸¸é ¾à°ü°ú ¼±ÅÃÇ×¸ñ¿¡ µ¿ÀÇÇØÁÖ¼¼¿ä.<br><br>¨ë °¡ÀÔ¿Ï·á!!!<br>¾î¶°¼¼¿ä? Á¤¸» °£´ÜÇÏÁÒ~<br>ÀÌ·¸°Ô È¸¿ø°¡ÀÔÀ» ¸¶Ä¡½Ã¸é °í°´´Ôµµ µ¿¿ø¸ô °¡Á·¢½",default,seq
+239,0_2,"Áö±Ý ¹Ù·Î °¡ÀÔÇÏ½Ã°Ú¾î¿ä?<br><button class=\""dial_btn f\"">³×</button>\n<button class=\""dial_btn\"">¾Æ´Ï¿À</button>",default,YNO
+239,0_2-Y,"¿ª½Ã Çö¸íÇÑ ¼±ÅÃ!<br> ¸ÀÀÖ°í °Ç°­ÇÑ µ¿¿ø¸ô°ú ¿À·¡¿À·¡ ÇÔ²²ÇØ¿ä~<br> ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¸¿ø°¡ÀÔ ÆäÀÌÁö·Î ¿¬°áµË´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">µ¿¿ø¸ô È¸¿ø°¡ÀÔ ÇÏ·¯°¡±â</button>",default,END
+239,0_2-A,È¸¿øÀÌ½Ã±º¿ä! °¨»çÇÕ´Ï´Ù.<br>¾ÕÀ¸·Îµµ µ¿¿ø¸ô ¸¹ÀÌ »ç¶ûÇØÁÖ¼¼¿ä~,default,END
+239,0_2-B,"Á¤¸»¿ä? µ¿¿ø¸ô È¸¿ø´Ôµé²² µå¸®´Â ÇýÅÃÀÌ Á¤¸» ¸¹Àºµ¥! ¾Æ½±³×¿ä...<br>½Å±ÔÈ¸¿ø´Ô²²´Â ¼îÇÎÁö¿ø±Ý 2Ãµ¿ø + µ¿¿ø»óÇ° 10% ÇÒÀÎÄíÆùÀ» µå¸®±¸¿ä~ <br>Ã¹ ±¸¸ÅÇÏ½Ã¸é 10% ÇÒÀÎ ½´ÆÛÄíÆùÀ» ¶Ç µå·Á¿ä~ <br>´Ù½Ã ÇÑ ¹ø »ý°¢ÇØº¸½Ã¸é ¾î¶³±î¿ä? ^_^<br><button class=\""dial_btn f\"">°¡ÀÔÇÒ·¡¿ä</button>\n<button class=\""dial_btn\"">°¡ÀÔ ¾ÈÇÒ·¡¿ä</button>",default,YNO
+239,0_2-B-Y,,default,seq
+239,0_2-B-Y_0,"¿ª½Ã Çö¸íÇÑ ¼±ÅÃ!<br> ¸ÀÀÖ°í °Ç°­ÇÑ µ¿¿ø¸ô°ú ¿À·¡¿À·¡ ÇÔ²²ÇØ¿ä~<br> ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ½Ã¸é È¸¿ø°¡ÀÔ ÆäÀÌÁö·Î ¿¬°áµË´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open(https://www.dongwonmall.com/member/join/step1.do')"">µ¿¿ø¸ô È¸¿ø°¡ÀÔ ÇÏ·¯°¡±â</button>",default,END
+239,0_2-B-N,¾Æ½±Áö¸¸ ¾Ë°Ú½À´Ï´Ù.<br>´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Ã´Ù¸é Àú¿¡°Ô ¸»¾¸ÇØÁÖ¼¼¿ä~,default,END
+239,0_2-B-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Àú¿¡°Ô Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+239,0_2-O,´Ù¸¥ µµ¿òÀÌ ÇÊ¿äÇÏ½Å°¡¿ä? Àú¿¡°Ô Áú¹®ÇØÁÖ¼¼¿ä!,default,BACK
+240,0,°í°´´Ô~ Á¦Ç°ÀÇ Ç¥¸é¿¡ ÇÏ¾á °¡·ç°¡ ºÙ¾îÀÖ´Â °æ¿ì´Â Á¦Ç° ¿ø·áÀÎ °í±¸¸¶ÀÇ ´çºÐ¼ººÐÀÌ ¼öºÐÁ¦°Å·Î ÀÎÇØ ¿ÜºÎ·Î ¿ëÃâµÇ´Â ÀÚ¿¬ÀûÀÎ Çö»óÀÌ¹Ç·Î °ÆÁ¤ÇÏÁö ¸¶¼¼¿ä^_^<br>°£È¤ °ËÀº Á¡ µîÀ» ¹ß°ßÇÏ½Ç ¼öµµ ÀÖÁö¸¸ ÀÌ´Â °í±¸¸¶ Ç¥ÇÇÃþ ¶Ç´Â ¼¶À¯Áú Á¶Á÷ÀÌ¶ø´Ï´Ù.<br>¾È½ÉÇÏ½Ã°í! µå¼Åµµ µË´Ï´Ù~,default,seq
+240,0_0,"´Ù¸¸,  Æ÷ÀåÀÌ ÈÑ¼ÕµÇ°Å³ª ÆÄ¼ÕÀÌ ÀÖ´Â °æ¿ì Á¦Ç°ÀÇ º¯ÁúÀÌ ÀÖÀ» ¼ö ÀÖÀ¸¹Ç·Î Ãë½ÄÇÏÁö ¸¶½Ã°í ±¸ÀÔÃ³ ¶Ç´Â Á¦Á¶¿ø¿¡ ¹®ÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.<br>ÀÏÃ¼ÀÇ Ã·°¡¹°ÀÌ³ª º¸Á¸·á ¾øÀÌ ±¹»ê °í±¸¸¶ 100%¸¸À» »ç¿ëÇÏ¿© ¸¸µç Á¦Ç°ÀÌ¹Ç·Î °³ºÀ ÈÄ °õÆÎÀÌ°¡ ¹ß»ýÇÒ ¼öµµ ÀÖ½À´Ï´Ù.",default,END
+241,0,°¡Â¥ ¹é¼ö¿À ³í¶õ¿¡ °í°´´Ô °ÆÁ¤ÀÌ ¸¹À¸½Ç °Í °°¾Æ¿ä~<br>µ¿¿ø ÃµÁöÀÎ 'È«»ïÀÌ µé¾î°¡ °Ç°­ÇÑ ¹é¼ö¿À' Á¦Ç°¿¡ µé¾î°¡´Â ¹é¼ö¿À º¹ÇÕ³óÃà¾×Àº °æºÏ ¿µÁÖ¿¡¼­ Àç¹è°¡ µÇ°í ÀÖ´Â ¹é¼ö¿À¸¦ ÁÖ¿ø·á·Î »ç¿ëÇÏ°í ÀÖ½À´Ï´Ù.,default,seq
+241,0_0,¹é¼ö¿À ÁøÀ§¿©ºÎ¸¦ È®ÀÎÇÏ±â À§ÇØ 2014³â 10¿ù¿¡ °í½ÃµÈ ½ÄÇ°ÀÇ¾àÇ°¾ÈÀüÃ³ °í½Ã Á¦2014-173È£ÀÇ ¹é¼ö¿À È®ÀÎ½ÃÇè¿¡ µû¶ó Solgent ¾÷Ã¼¸¦ ÅëÇØ ½ÇÇèÀ» ÁøÇàÇÏ¿´°í ±× °á°ú ¹é¼ö¿À º¹ÇÕ³óÃà¾×ÀÇ ¿ø·á´Â À¯»ç¿ø·áÀÎ ÀÌ¿±¿ìÇÇ¼Ò°¡ ¾Æ´Ï¶ó ¹é¼ö¿À·Î È®ÀÎµÇ¾ú½À´Ï´Ù.<br>µû¶ó¼­ ¾È½ÉÇÏ½Ã°í! ÀÌ¿ëÇÏ¼Åµµ µË´Ï´Ù ^_^,default,END
+242,0,"°í°´´Ô 1~3¸¸¿ø ¹Ì¸¸ ÃßÃµ ¼±¹°¼¼Æ®ÀÔ´Ï´Ù!<br>¾Æ·¡ÀÇ ¹öÆ°À» ´©¸£½Ã¸é Çà»ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList2')"">1~3¸¸¿ø ¹Ì¸¸ ÃßÃµ ¼±¹°¼¼Æ® º¸·¯ °¡±â!</button>",default,END
+243,0,"µîÇª¸¥»ý¼±(ÂüÄ¡, °íµî¾î, ²ÇÄ¡ µî)Àº °í´Ü¹é ½ÄÇ°À¸·Î DHA, EPA µîÀÇ ¿À¸Þ°¡ Áö¹æ»êÀÌ ´Ù·® ÇÔÀ¯µÇ¾î Ç÷¾×¼øÈ¯ °³¼±È¿°ú¿Í ¾î¸°ÀÌ µÎ³ú¹ß´Þ¿¡ µµ¿òÀ» ÁÖ°í, ºñÅ¸¹Î°ú ¼¿·¹´½ ÇÔ·®ÀÌ ³ô¾Æ ¾î¸°ÀÌ ¼ºÀå¹ß´Þ¿¡ Áß¿äÇÑ ½ÄÀç·á¶ø´Ï´Ù!",default,seq
+243,0_0,"´Ù¸¸, ¸ÞÆ¿¼öÀº ÇÔ·®ÀÌ ³ôÀº »ý¼±À» ÀÓ½Å Áß¿¡ ³Ê¹« ¸¹ÀÌ ¼·ÃëÇÏ°Ô µÇ¸é ÅÂ¾ÆÀÇ ½Å°æ°è¹ß´Þ¿¡ ¿µÇâÀ» ÁÙ °¡´É¼º¿¡ ´ëÇÑ ¿¬±¸ÀÚ·á·Î ÀÎÇØ »ý¼±ÀÇ ¼·Ãë¸¦ ÁÖÀÇÇØ¾ß ÇÑ´Ù´Â ³»¿ëÀÌ ÀÌ½´°¡ µÇ¾ú½À´Ï´Ù.<br>°í°´´Ô²²¼­ ±Ã±ÝÇØÇÏ½Ã´Â ÂüÄ¡ÅëÁ¶¸²(°¡´Ù¶û¾î)ÀÇ ¸ÞÆ¿¼öÀº ÇÔ·®Àº °íµî¾î, ²ÇÄ¡, ±¤¾î, ¸íÅÂ µîÀÇ ÀÏ¹Ý¾î·ù¿Í °°ÀÌ ¸ÞÆ¿¼öÀº ÇÔ·®ÀÌ ³·Àº ¼öÁØÀÌÁÒ~",default,seq
+243,0_1,2015³â 2¿ù ½ÄÇ°ÀÇ¾àÇ°¾ÈÀüÃ³¿¡¼­´Â ÀÓ½Å ±â°£ Áß ÂüÄ¡ÅëÁ¶¸² ¹× ÀÏ¹Ý¾î·ù´Â ÀÏÁÖÀÏ¿¡ 400gÀÌÇÏ ¼·Ãë°¡ Àû´çÇÏ´Ù°í ±Ç°íÇÏ¿´´ä´Ï´Ù!<br>µ¿¿øÂüÄ¡ ÀûÁ¤·® ¼·ÃëÇÏ¼Å¼­ ¿ì¸® ¾ÆÀÌ °Ç°­ÇÏ°í Æ°Æ°ÇÏ°Ô Å°¿ìÀÚ±¸¿ä¢½,default,END
+244,0,"°í°´´Ô 3~5¸¸¿ø ¹Ì¸¸ ÃßÃµ ¼±¹°¼¼Æ®ÀÔ´Ï´Ù!<br>¾Æ·¡ÀÇ ¹öÆ°À» ´©¸£½Ã¸é Çà»ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList3')"">3~5¸¸¿ø ¹Ì¸¸ ÃßÃµ ¼±¹°¼¼Æ® º¸·¯ °¡±â!</button>",default,END
+245,0,"°í°´´Ô 5¸¸¿ø ÀÌ»ó ÃßÃµ ¼±¹°¼¼Æ®ÀÔ´Ï´Ù!<br>¾Æ·¡ÀÇ ¹öÆ°À» ´©¸£½Ã¸é Çà»ç ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù!<button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/display/plan.do?seq=00000001600#planshopList3')"">5¸¸¿ø ÀÌ»ó ÃßÃµ ¼±¹°¼¼Æ® º¸·¯ °¡±â!</button>",default,END
+246,0,"È«»ïÀº ¼ºÀÎ »Ó ¾Æ´Ï¶ó ¾î¸°ÀÌÀÇ ¸é¿ª·Â ÁõÁø°ú ¿ø±âÈ¸º¹¿¡ µµ¿òÀ» ÁÝ´Ï´Ù^¤·^<br>¾Æ¹«°Íµµ ³ÖÁö ¾Ê°í »Ñ¸® »ïÀ» 100% ±×´ë·Î ´Þ¿© ¸¸µç ¼ø¼ö È«»ïÀº »ýÈÄ 12°³¿ù ÀÌÈÄºÎÅÍ ¼·ÃëÇÒ ¼ö ÀÖÀ¸¸ç, °¡°øÇÑ È«»ïÁ¦Ç°Àº ¼ÒÈ­±â°üÀÌ ¹ß´ÞÇÏ´Â »ýÈÄ 24°³¿ù ÀÌÈÄºÎÅÍ ¼·ÃëÇÏ´Â °ÍÀÌ ÁÁ½À´Ï´Ù.",default,END
+247,0,"°í°´´Ô <font style=""color:gold"">°ñµå</font> µî±ÞÀº<br> ÃÖ±Ù 3°³¿ù ±âÁØ<br> ±¸¸Å±Ý¾× 3¸¸¿ø ÀÌ»ó 10¸¸¿ø ¹Ì¸¸ÀÌ½Å °í°´´ÔµéÀÌ ÇØ´çµË´Ï´Ù.",default,seq
+247,0_0,"<font style=\""color:gold\"">°ñµå</font> µî±Þ È¸¿ø´Ô¸¸À» À§ÇÑ ÇýÅÃÀ¸·Î<br>1) ¹êµå/Äð¹êµå Àå¹Ù±¸´Ï 2Ãµ¿ø ÇÒÀÎÄíÆù 1Àå<br>2) µ¿¿øÁ¦Ç° Àå¹Ù±¸´Ï 15% ÇÒÀÎÄíÆù 1Àå<br>2ÀåÀÇ ÄíÆù ÇýÅÃÀ» ¸Å¿ù µå¸³´Ï´Ù¢½",default,seq
+247,0_1,"´õ¿í ÀÚ¼¼ÇÑ »çÇ×À» ¿øÇÏ½Ã¸é ¾Æ·¡ÀÇ ¹öÆ°À» Å¬¸¯ÇÏ¼¼¿ä!<br> µ¿¿ø¸ô È¸¿øÇýÅÃ¿¡ ´ëÇÑ »ó¼¼ ¾È³»ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.<br><br><button type=""button"" class=""navyBtn"" onClick=""window.open('http://www.dongwonmall.com/benefit/member.do')"">µî±Þº° È¸¿øÇýÅÃ º¸·¯°¡±â</button>",default,END
+248,0,"Á¤¸»¿ä? µ¿¿ø¸ô È¸¿ø´Ôµé²² µå¸®´Â ÇýÅÃÀÌ Á¤¸» ¸¹Àºµ¥! ¾Æ½±³×¿ä...<br>½Å±ÔÈ¸¿ø´Ô²²´Â ¼îÇÎÁö¿ø±Ý 2Ãµ¿ø + µ¿¿ø»óÇ° 10% ÇÒÀÎÄíÆùÀ» µå¸®±¸¿ä~ <br>Ã¹ ±¸¸ÅÇÏ½Ã¸é 10% ÇÒÀÎ ½´ÆÛÄíÆùÀ» ¶Ç µå·Á¿ä~ <br>´Ù½Ã ÇÑ ¹ø »ý°¢ÇØº¸½Ã¸é ¾î¶³±î¿ä? ^_^<br><button class=""dial_btn f"">°¡ÀÔÇÒ·¡¿ä</button>
+<button class=""dial_btn"">°¡ÀÔ ¾ÈÇÒ·¡¿ä</button>",default,END
+249,0,°í°´´Ô ¿À´Ã È­³ª´Â ÀÏÀÌ¶óµµ ÀÖÀ¸¼Ì¾î¿ä? <br>Á¦°¡ µµ¿Íµå¸± ¼ö ÀÖ´Â ÀÏÀÌ¶ó¸é ÃÖ¼±À» ´ÙÇØ µµ¿Íµå¸±°Ô¿ä~ È­ Çª¼¼¿ä~,default,END
+249,0,°í°´´Ô ±×·¸°Ô ¸»¾¸ÇÏ½Ã´Ï ³Ê¹« ¹«¼­¿ö¿ä~ <br>¿ì¸® ¼­·Î ¿¹»Û ¸»¸¸ »ç¿ëÇÏ¸é ¾î¶³±î¿ä?,default,END
+250,0,È¸¿øÀÌ½Ã±º¿ä! °¨»çÇÕ´Ï´Ù.<br>¾ÕÀ¸·Îµµ µ¿¿ø¸ô ¸¹ÀÌ »ç¶ûÇØÁÖ¼¼¿ä~,default,END
+250,0,È¸¿øÀÌ½Ã±º¿ä! °¨»çÇÕ´Ï´Ù.<br>¾ÕÀ¸·Îµµ µ¿¿ø¸ô ¸¹ÀÌ »ç¶ûÇØÁÖ¼¼¿ä~,default,END
