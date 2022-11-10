@@ -4,6 +4,7 @@ from werkzeug.exceptions import HTTPException, default_exceptions, _aborter
 import numpy as np
 import pandas as pd
 import random 
+import time
 
 import torch
 from tokenization_kobert import KoBertTokenizer
@@ -38,7 +39,6 @@ else:
 dialog_df = pd.read_csv("data/dialog2.csv", encoding='cp949')
 
 B = pd.read_csv("data/title_node.csv")
-intent_list = list(B["title"])
 
 
 # 모든 에러에 대해서 JSON 응답을 보낼 수 있게 등록
@@ -234,7 +234,18 @@ def request_chat(): # enter치면
             predictions.append(logits)
 
         probs = predictions[0][0]
-        pred_idx = np.argmax(probs)
+        pred_idx = -1
+
+        for x in probs:
+            if x >= 0.5:
+                print("이해O",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
+                pred_idx = np.argmax(probs)
+                break
+        
+        if pred_idx == -1:
+            print("이해X",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
+            return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
+
         start = pred_idx
 
         okay = 1
