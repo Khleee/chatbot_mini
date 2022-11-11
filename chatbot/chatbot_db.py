@@ -36,7 +36,7 @@ else:
     device = torch.device("cpu")
 
 ## db 불러오기
-def connect_db(host='127.30.1.204', user='nlp', pwd='dongwon', db_name='chatbot_db'):
+def connect_db(host='172.30.1.204', user='nlp', pwd='dongwon', db_name='chatbot_db'):
     conn = pymysql.connect(
         host=host,
         user=user,
