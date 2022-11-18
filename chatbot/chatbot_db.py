@@ -74,19 +74,19 @@ for code in default_exceptions.keys():
 # 맨 처음
 def DIA(start):
     conn, cur = connect_db()
-    cur.execute("SELECT * FROM new_dialog")
+    cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
     conn.close()
-    dialog_df = pd.DataFrame(dialog, columns=['id', 'dialog_node', 'node_detail', 'text', 'parent', 'condition'])
+    dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
     dialog_df.drop(['id'], axis=1, inplace=True)
     # 첫번째 응답 메세지
-    first_msg_df = dialog_df.loc[(dialog_df['dialog_node']==start) & (dialog_df['node_detail']=='0')]
+    first_msg_df = dialog_df.loc[(dialog_df['intent_no']==start) & (dialog_df['node_detail']=='0')]
     random_number = random.randrange(0, len(first_msg_df))
     selected_first_msg = first_msg_df.iloc[random_number]
     
     response_list = []
 
-    response_list.append({'dialog_node':int(selected_first_msg['dialog_node']), 
+    response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
@@ -94,7 +94,7 @@ def DIA(start):
     seq_filter = r'^(0)_+[0-9]{1,}$'
     print('selected_first_msg', selected_first_msg)
     if selected_first_msg['condition']=='seq':
-        filter_df = dialog_df.loc[(dialog_df['dialog_node']==start) & dialog_df['node_detail'].str.match(seq_filter)==True]
+        filter_df = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True]
         response_list = response_list + filter_df.to_dict('records')
         return response_list
     elif selected_first_msg['condition']=='END':
@@ -107,19 +107,19 @@ def DIA(start):
 # 2번째부터
 def DIA2(messageText, dialog_node, node_detail, parent, condition):
     conn, cur = connect_db()
-    cur.execute("SELECT * FROM new_dialog")
+    cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
     conn.close()
-    dialog_df = pd.DataFrame(dialog, columns=['id', 'dialog_node', 'node_detail', 'text', 'parent', 'condition'])
+    dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
     dialog_df.drop(['id'], axis=1, inplace=True)
     response_list = [] 
     if condition=='YNO':
         if messageText=='네':
             print('네')   
             node_detail = node_detail+'-Y'
-            first_msg_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
             selected_first_msg = first_msg_df.iloc[0]
-            response_list.append({'dialog_node':int(selected_first_msg['dialog_node']), 
+            response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
@@ -127,54 +127,54 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             if selected_first_msg.loc['condition']=='seq':
                 seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
                 print('seq_filter', seq_filter)
-                filter_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                 response_list = response_list + filter_df.to_dict('records')
         elif messageText=='아니오':
             print('아니오')
             node_detail = node_detail+'-N'            
-            first_msg_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
             selected_first_msg = first_msg_df.iloc[0]
-            response_list.append({'dialog_node':int(selected_first_msg['dialog_node']), 
+            response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
                           'condition':selected_first_msg['condition']})
             if selected_first_msg.loc['condition']=='seq':
                 seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                filter_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                 response_list = response_list + filter_df.to_dict('records')
         else:
             print('몰라')
             node_detail = node_detail+'-O'            
-            first_msg_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
             # print(type(first_msg_df))
             # response_list = response_list + [{'dialog_node':dialog_node, 'node_detail':node_detail[:-2], 'text':first_msg_df.iloc[0]['text'], 'parent':first_msg_df.iloc[0]['parent'], 'condition':first_msg_df.iloc[0]['condition']}]
             # print('after response_list', response_list)
             response_list = response_list + first_msg_df.to_dict('records')
     elif condition=='ABCD':
         abcd_filter = r'^' + node_detail+'-[A-Z]{1}$'
-        abcd_filter_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
+        abcd_filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
         print('abcd_filter_df', abcd_filter_df)
         abcd_list = abcd_filter_df['node_detail'].map(lambda x: x.split('-')[-1]).tolist()
         
         for abcd in abcd_list:
             if messageText == abcd:
                 node_detail = node_detail + '-' + messageText
-                first_msg_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+                first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
                 selected_first_msg = first_msg_df.iloc[0]
-                response_list.append({'dialog_node':int(selected_first_msg['dialog_node']), 
+                response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                                 'node_detail':selected_first_msg['node_detail'], 
                                 'text':selected_first_msg['text'], 
                                 'parent':selected_first_msg['parent'], 
                                 'condition':selected_first_msg['condition']})
                 if selected_first_msg.loc['condition']=='seq':
                     seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                    filter_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                    filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                     response_list = response_list + filter_df.to_dict('records')
     elif condition=='BACK':
-        first_msg_df = dialog_df.loc[(dialog_df['dialog_node']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+        first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
         selected_first_msg = first_msg_df.iloc[0]
-        response_list.append({'dialog_node':int(selected_first_msg['dialog_node']), 
+        response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                         'node_detail':selected_first_msg['node_detail'], 
                         'text':selected_first_msg['text'], 
                         'parent':selected_first_msg['parent'], 
