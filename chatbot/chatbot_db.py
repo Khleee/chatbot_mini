@@ -298,7 +298,7 @@ def request_chat(): # enter치면
 
         i_list = []
         for x,y in zip(dialog_df2["symbol_id"],dialog_df2["similar_name"]):
-            if y in messageText:
+            if y in messageText: # 만약 전혀 연관없는 다른 엔티티에 각각 "어제는", "어제" 가 들어있다면, 걸러주지 못하고 그대로 i_list로 추가됨 그러므로, entity_similar에 다른 엔티티인데 비슷한 단어들이 들어있으면 안됨
                 i_list.append(x) # 만약 속해있다면, i_list에 심볼id가 들어감
 
         ## 여기까지 입력문장에 해당 symbol_id가 뭐가 있는지 리스트화함
@@ -395,6 +395,7 @@ def request_chat(): # enter치면
     
     elif okay==1:
         if condition == "intent":
+            print('의도번호', messageText)
             ending = DIA(messageText)
             if ending == None:
                 return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
