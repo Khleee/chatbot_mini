@@ -1,0 +1,211 @@
+import re
+import pymysql
+import pandas as pd
+from flask import Flask, redirect, render_template, request, url_for
+from flask_paginate import Pagination, get_page_args
+
+## db 불러오기
+def connect_db(host='127.30.1.204', port=3306, user='nlp', pwd='dongwon', db_name='chatbot_db'):
+    conn = pymysql.connect(
+        host=host,
+        port=port,
+        user=user,
+        passwd=pwd,
+        db=db_name,
+        charset='utf8'
+        )
+    cur = conn.cursor() # 커서생성
+
+    return conn, cur
+
+
+app = Flask(__name__)
+
+@app.route("/", methods=("GET",))  # index 페이지를 호출하면
+def index():
+    per_page = 10
+    page, _, offset = get_page_args(per_page=per_page)  # 포스트 10개씩 페이지네이션을 하겠다.
+    # 이 때 두 번째 return값은 per_page입니다.
+    # 저는 per_page를 따로 get_page_args에 넣어줘서, per_page를 받아서 사용하지는 않았습니다.
+    # page는 현재 위치한 page입니다. 기본적으로 1이고, 페이지 링크를 누르면 2, 3, ...입니다.
+    # offset은 page에 따라 몇 번째 post부터 보여줄지입니다.
+    # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
+
+    # DB 연결
+    conn = pymysql.connect(
+        host='127.0.0.1',
+        user='root',
+        password='7557',
+        db='chatbot_db',
+        charset='utf8'
+        )
+    cur = conn.cursor() # 커서생성
+
+    cur.execute("SELECT COUNT(*) FROM dialog;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
+    total = cur.fetchone()[0]
+    cur.execute(
+        "SELECT * FROM dialog ORDER BY intent_no ASC LIMIT %d OFFSET %d;" %(per_page, offset))  # SQL SELECT로 포스트를 가져오되,
+        # "DESC LIMIT %s OFFSET %s;".format(per_page, offset)  # offset부터 per_page만큼의 포스트를 가져옵니다.
+
+    dialogs = cur.fetchall()
+    print(request.url)
+
+    # print(dialogs)
+
+    return render_template(
+        "index.html",
+        dialogs=dialogs,
+        pagination=Pagination(
+            page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
+            total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
+            per_page=per_page,  # 한 페이지당 몇 개의 포스트를 보여줄지 알려주고,
+            prev_label="<<",  # 전 페이지와,
+            next_label=">>",  # 후 페이지로 가는 링크의 버튼 모양을 알려주고,
+            format_total=True,  # 총 몇 개의 포스트 중 몇 개의 포스트를 보여주고있는지 시각화,
+        ),
+        search=True,  # 페이지 검색 기능을 주고,
+        bs_version=5,  # Bootstrap 사용시 이를 활용할 수 있게 버전을 알려줍니다.
+    )
+
+#################################### 추가 ####################################
+@app.route("/write")  # index 페이지를 호출하면
+def write():
+    return render_template("write_page.html")
+
+@app.route('/write_action', methods=['POST'])
+def write_action():
+
+    dialog = request.form.get('dialog')
+    detail = request.form.get('detail')
+    text = request.form.get('text')
+    parent = request.form.get('parent')
+    condition = request.form.get('condition')
+
+    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
+    cur = conn.cursor()
+
+    SQL = "INSERT INTO dialog VALUES (NULL, %s, %s, %s, %s, %s);"
+    values = (dialog, detail, text, parent, condition)
+    cur.execute(SQL, values)
+    conn.commit()
+    conn.close()
+
+    return redirect(url_for('index'))
+
+#################################### 수정 ####################################
+@app.route("/update/<did>")  # index 페이지를 호출하면
+def update(did):
+    conn = pymysql.connect(
+        host='127.0.0.1',
+        user='root',
+        password='7557',
+        db='chatbot_db',
+        charset='utf8'
+        )
+    cur = conn.cursor() # 커서생성
+
+    print(did)
+    SQL = 'SELECT * FROM dialog WHERE id=%s'
+    values = (did)
+    cur.execute(SQL, values)
+    # cur.execute('SELECT * FROM dialog WHERE id=%s' %did)
+    dialog = cur.fetchone()
+    conn.close()
+
+    return render_template("update_page.html", dialog=dialog)
+
+@app.route('/update_action', methods=['POST'])
+def update_action():
+
+    id = request.form.get('id')
+    dialog = request.form.get('dialog')
+    detail = request.form.get('detail')
+    text = request.form.get('text')
+    parent = request.form.get('parent')
+    condition = request.form.get('condition')
+
+    # print(type(id))
+    # print(type(dialog))
+    # print(type(detail))
+    # print(type(text))
+    # print(type(parent))
+    # print(type(condition))
+
+    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
+    cur = conn.cursor()
+
+    SQL = "UPDATE dialog SET intent_no=%s, node_detail=%s, text=%s, parent=%s, cdt=%s WHERE id=%s"
+    values = (dialog, detail, text, parent, condition, int(id))
+    cur.execute(SQL, values)
+    # cur.execute("UPDATE dialog SET dialog_node = %s, node_detail = %s, text = %s, parent = %s, condition = %s, intent = %s WHERE id = %s" %(dialog, detail, text, parent, condition, intent, id))
+    conn.commit()
+    conn.close()
+
+    return redirect(url_for('index'))
+
+#################################### 삭제 ####################################
+@app.route("/delete/<did>")  # index 페이지를 호출하면
+def delete(did):
+    conn = pymysql.connect(
+        host='127.0.0.1',
+        user='root',
+        password='7557',
+        db='chatbot_db',
+        charset='utf8'
+        )
+    cur = conn.cursor() # 커서생성
+    cur.execute('DELETE FROM dialog WHERE id=%s' %did)
+    conn.commit()
+    conn.close()
+
+    return redirect(url_for('index'))
+
+#################################### ,Entity 조회 ####################################
+@app.route("/entity", methods=("GET",))  # index 페이지를 호출하면
+def entity():
+    per_page = 20
+    page, _, offset = get_page_args(per_page=per_page)  # 포스트 20개씩 페이지네이션을 하겠다.
+    # 이 때 두 번째 return값은 per_page입니다.
+    # 저는 per_page를 따로 get_page_args에 넣어줘서, per_page를 받아서 사용하지는 않았습니다.
+    # page는 현재 위치한 page입니다. 기본적으로 1이고, 페이지 링크를 누르면 2, 3, ...입니다.
+    # offset은 page에 따라 몇 번째 post부터 보여줄지입니다.
+    # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
+
+    # DB 연결
+    conn = pymysql.connect(
+        host='127.0.0.1',
+        user='root',
+        password='7557',
+        db='chatbot_db',
+        charset='utf8'
+        )
+    cur = conn.cursor() # 커서생성
+
+    cur.execute("SELECT COUNT(*) FROM entity;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
+    total = cur.fetchone()[0]
+    cur.execute(
+        "SELECT * FROM entity ORDER BY entity_id ASC LIMIT %d OFFSET %d;" %(per_page, offset))  # SQL SELECT로 포스트를 가져오되,
+        # "DESC LIMIT %s OFFSET %s;".format(per_page, offset)  # offset부터 per_page만큼의 포스트를 가져옵니다.
+
+    entitys = cur.fetchall()
+    print(request.url)
+
+    # print(dialogs)
+
+    return render_template(
+        "entity.html",
+        entitys=entitys,
+        pagination=Pagination(
+            page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
+            total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
+            per_page=per_page,  # 한 페이지당 몇 개의 포스트를 보여줄지 알려주고,
+            prev_label="<<",  # 전 페이지와,
+            next_label=">>",  # 후 페이지로 가는 링크의 버튼 모양을 알려주고,
+            format_total=True,  # 총 몇 개의 포스트 중 몇 개의 포스트를 보여주고있는지 시각화,
+        ),
+        search=True,  # 페이지 검색 기능을 주고,
+        bs_version=5,  # Bootstrap 사용시 이를 활용할 수 있게 버전을 알려줍니다.
+    )
+
+if __name__ == "__main__":
+    app.run(debug=True)
