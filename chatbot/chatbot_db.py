@@ -171,6 +171,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
                     seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
                     filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                     response_list = response_list + filter_df.to_dict('records')
+
     elif condition=='BACK':
         first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
         selected_first_msg = first_msg_df.iloc[0]
@@ -183,8 +184,117 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
         pass
     else:
         pass    
-    return response_list           
-                
+    return response_list
+
+def DIA3(start,i_list): #! 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
+    conn, cur = connect_db()
+    cur.execute("SELECT * FROM dialog")
+    dialog = cur.fetchall()
+    conn.close()
+    dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
+    dialog_df.drop(['id'], axis=1, inplace=True)
+    # 첫번째 응답 메세지
+    first_msg_df = dialog_df.loc[(dialog_df['intent_no']==start) & (dialog_df['node_detail']=='0')]
+    random_number = random.randrange(0, len(first_msg_df))
+    selected_first_msg = first_msg_df.iloc[random_number]
+    
+    response_list = []
+
+    select_list = ""
+
+    for x in i_list:
+        select_list += '<button class="dial_btn">'+x+'</button>'
+
+    # 현재 노드 상황
+    response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
+                          'node_detail':selected_first_msg['node_detail'], 
+                          'text':selected_first_msg['text']+select_list, 
+                          'parent':selected_first_msg['parent'], 
+                          'condition':selected_first_msg['condition']})
+
+    print('selected_first_msg', selected_first_msg)
+
+def DIA4(messageText, dialog_node, node_detail, parent, condition,i_list): #! 아직 작업중
+    conn, cur = connect_db()
+    cur.execute("SELECT * FROM dialog")
+    dialog = cur.fetchall()
+    conn.close()
+    dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
+    dialog_df.drop(['id'], axis=1, inplace=True)
+    response_list = [] 
+    if condition=='YNO':
+        if messageText=='네':
+            print('네')   
+            node_detail = node_detail+'-Y'
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            selected_first_msg = first_msg_df.iloc[0]
+            response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
+                          'node_detail':selected_first_msg['node_detail'], 
+                          'text':selected_first_msg['text'], 
+                          'parent':selected_first_msg['parent'], 
+                          'condition':selected_first_msg['condition']})
+            if selected_first_msg.loc['condition']=='seq':
+                seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
+                print('seq_filter', seq_filter)
+                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                response_list = response_list + filter_df.to_dict('records')
+        elif messageText=='아니오':
+            print('아니오')
+            node_detail = node_detail+'-N'            
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            selected_first_msg = first_msg_df.iloc[0]
+            response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
+                          'node_detail':selected_first_msg['node_detail'], 
+                          'text':selected_first_msg['text'], 
+                          'parent':selected_first_msg['parent'], 
+                          'condition':selected_first_msg['condition']})
+            if selected_first_msg.loc['condition']=='seq':
+                seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
+                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                response_list = response_list + filter_df.to_dict('records')
+        else:
+            print('몰라')
+            node_detail = node_detail+'-O'            
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            # print(type(first_msg_df))
+            # response_list = response_list + [{'dialog_node':dialog_node, 'node_detail':node_detail[:-2], 'text':first_msg_df.iloc[0]['text'], 'parent':first_msg_df.iloc[0]['parent'], 'condition':first_msg_df.iloc[0]['condition']}]
+            # print('after response_list', response_list)
+            response_list = response_list + first_msg_df.to_dict('records')
+    elif condition=='ABCD':
+        abcd_filter = r'^' + node_detail+'-[A-Z]{1}$'
+        abcd_filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
+        print('abcd_filter_df', abcd_filter_df)
+        abcd_list = abcd_filter_df['node_detail'].map(lambda x: x.split('-')[-1]).tolist()
+        
+        for abcd in abcd_list:
+            if messageText == abcd:
+                node_detail = node_detail + '-' + messageText
+                first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+                selected_first_msg = first_msg_df.iloc[0]
+                response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
+                                'node_detail':selected_first_msg['node_detail'], 
+                                'text':selected_first_msg['text'], 
+                                'parent':selected_first_msg['parent'], 
+                                'condition':selected_first_msg['condition']})
+                if selected_first_msg.loc['condition']=='seq':
+                    seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
+                    filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                    response_list = response_list + filter_df.to_dict('records')
+
+    elif condition=='BACK':
+        first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+        selected_first_msg = first_msg_df.iloc[0]
+        response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
+                        'node_detail':selected_first_msg['node_detail'], 
+                        'text':selected_first_msg['text'], 
+                        'parent':selected_first_msg['parent'], 
+                        'condition':selected_first_msg['condition']})
+    elif condition=='seq':
+        pass
+    else:
+        pass    
+    return response_list
+         
 @app.route('/', methods=['GET'])
 def main():
     return render_template('index.html')
@@ -254,6 +364,57 @@ def request_chat(): # enter치면
             predictions.append(logits)
 
         probs = predictions[0][0]
+
+        ## 여기까지 intents 모델 끝
+
+        # entity similar들어가서 messageText안에 존재하는지 확인
+        # entity similar db 불러오기
+        conn, cur = connect_db()
+
+        cur.execute("SELECT * FROM entity_similar")
+        dialog = cur.fetchall()
+        conn.close()
+        dialog_df2 = pd.DataFrame(dialog, columns=['similar_id','symbol_id', 'similar_name'])
+        dialog_df2.drop(['similar_id'], axis=1, inplace=True)
+
+        i_list = []
+        for x,y in zip(dialog_df2["symbol_id"],dialog_df2["similar_name"]):
+            if y in messageText:
+                i_list.append(x) # 만약 속해있다면, i_list에 심볼id가 들어감
+
+        ## 여기까지 입력문장에 해당 symbol_id가 뭐가 있는지 리스트화함
+
+        # entity_symbol들어가서 symbol_id에 해당하는 entity_id가 뭔지 확인
+        cur.execute("SELECT * FROM entity_symbol")
+        dialog = cur.fetchall()
+        conn.close()
+        dialog_df2 = pd.DataFrame(dialog, columns=['symbol_id','entity_id', 'symbol_name'])
+        
+        i_list2 = []
+        for x in i_list:
+            i_list2 += list(dialog_df2[dialog_df2["symbol_id"]==x]["entity_id"].values)
+
+        ## 여기까지 입력 문장안에 entity_id가 뭐가 들어있는지 확인함
+
+        # i_list2랑 인텐츠 안에 들어있는 엔티티 종류랑 비교할거임
+        # intent_entity 들어가서 intent_no에 해당하는 entity_id 종류들을 꺼내기
+        cur.execute("SELECT * FROM intent_entity")
+        dialog = cur.fetchall()
+        conn.close()
+        dialog_df2 = pd.DataFrame(dialog, columns=['id','entity_id', 'intent_no'])
+        dialog_df2.drop(['id'], axis=1, inplace=True)
+
+        i_list3 = []
+        for x in list(dialog_df2["intent_no"]):
+            if i_list2 == list(dialog_df2[dialog_df2["intent_no"]==x]["entity_id"]):
+                i_list3.append(x)
+
+        ## 여기까지 intents에 있는 entity_id와 입력 문장에 있는 entity_id들이 같을때의 intent_no을 저장함         
+
+        # 만약 일치하는 경우가 없으면, 그런 정보가 없다는 뜻이므로, 그대로 놔두면 됨
+        # 만약 일치하는 경우가 하나 이상이면, 동작하자
+
+        # intents 모델에서 나온 값을 이용하여 pred_idx -> 해당인덱스 -> start
         pred_idx = -1
 
         for x in probs:
@@ -262,16 +423,51 @@ def request_chat(): # enter치면
                 pred_idx = np.argmax(probs)
                 break
         
-        if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 처음으로 복귀
-            print("이해X",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
-            return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
+        # if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 처음으로 복귀
+        #     print("이해X",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
+        #     return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
 
-        start = pred_idx # 50% 이상인 경우, start = pred_idx
+        i_list4 = []
+        intent_count = 1
+        if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 일단 20%~50% 사이의 인텐츠들을 뽑아보자
+            for x in probs:
+                if x > 0.2 and x < 0.5:
+                    i_list4.append(x)
 
-        okay = 1
-        print('의도번호', start)
+            real = [i for i in i_list4 if i in i_list3] # 모두 성립하는 인텐트 목록
 
-        ending = DIA(start)
+            if len(real) > 1:
+                # 여러개 있으므로, new다이얼로그로 진입시켜서 인텐츠 선택하게 하자
+                okay = 1
+                print('의도번호', start)
+                ending = DIA3(251,real) ## 여기다 real 여러개도 들어가게 해야함
+                intent_count = 0
+
+            elif len(real) == 1:
+                # 사실상 하나만 있으므로, 바로 연결시켜주자
+                okay = 1
+                start = real[0]
+
+                print('의도번호', start)
+                ending = DIA(start)
+                intent_count = 0
+
+            elif len(real) == 0:
+                # 겹치는게 없으므로, 인텐츠 동의어를 가진 intent 목록만 출력
+                okay = 1
+                print('의도번호', start)
+                ending = DIA(251,i_list3) ## 여기다 i_list3 여러개도 들어가게 해야함
+                # 아니면 그냥 20% 50% 사이에 있는 intents을 넣어도 될듯?(i_list4)
+                intent_count = 0
+                
+        if intent_count == 1: # dia() 함수를 한번도 안거쳤으면 동작하게
+            start = pred_idx # 50% 이상인 경우, start = pred_idx
+
+            okay = 1
+            print('의도번호', start)
+
+            ending = DIA(start)
+
         print('okay 0 response', ending)
         if ending == None:
             return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
