@@ -196,7 +196,7 @@ def request_chat(): # enter치면
     okay = int(okay)
     dialog_node = request.form['dialog_node'] 
     node_detail = request.form['node_detail'] 
-    parent = request.form['parent'] 
+    parent = request.form['parent']
     condition = request.form['condition'] 
     
     # print("ending :",ending)
@@ -254,8 +254,19 @@ def request_chat(): # enter치면
             predictions.append(logits)
 
         probs = predictions[0][0]
-        pred_idx = np.argmax(probs)
-        start = pred_idx
+        pred_idx = -1
+
+        for x in probs:
+            if x >= 0.5: # 50% 이상인 경우, argmax -> pred_idx
+                print("이해O",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
+                pred_idx = np.argmax(probs)
+                break
+        
+        if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 처음으로 복귀
+            print("이해X",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
+            return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
+
+        start = pred_idx # 50% 이상인 경우, start = pred_idx
 
         okay = 1
         print('의도번호', start)
