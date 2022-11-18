@@ -203,7 +203,7 @@ def DIA3(start,i_list): #! 만약 i_list가 너무 많으면 선택지가 너무
     select_list = ""
 
     for x in i_list:
-        select_list += '<button class="dial_btn">'+x+'</button>'
+        select_list += '<button class="dial_btn">'+x+'</button>' #!
 
     # 현재 노드 상황
     response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
@@ -213,87 +213,6 @@ def DIA3(start,i_list): #! 만약 i_list가 너무 많으면 선택지가 너무
                           'condition':selected_first_msg['condition']})
 
     print('selected_first_msg', selected_first_msg)
-
-def DIA4(messageText, dialog_node, node_detail, parent, condition,i_list): #! 아직 작업중
-    conn, cur = connect_db()
-    cur.execute("SELECT * FROM dialog")
-    dialog = cur.fetchall()
-    conn.close()
-    dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
-    dialog_df.drop(['id'], axis=1, inplace=True)
-    response_list = [] 
-    if condition=='YNO':
-        if messageText=='네':
-            print('네')   
-            node_detail = node_detail+'-Y'
-            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            selected_first_msg = first_msg_df.iloc[0]
-            response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
-                          'node_detail':selected_first_msg['node_detail'], 
-                          'text':selected_first_msg['text'], 
-                          'parent':selected_first_msg['parent'], 
-                          'condition':selected_first_msg['condition']})
-            if selected_first_msg.loc['condition']=='seq':
-                seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                print('seq_filter', seq_filter)
-                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
-                response_list = response_list + filter_df.to_dict('records')
-        elif messageText=='아니오':
-            print('아니오')
-            node_detail = node_detail+'-N'            
-            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            selected_first_msg = first_msg_df.iloc[0]
-            response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
-                          'node_detail':selected_first_msg['node_detail'], 
-                          'text':selected_first_msg['text'], 
-                          'parent':selected_first_msg['parent'], 
-                          'condition':selected_first_msg['condition']})
-            if selected_first_msg.loc['condition']=='seq':
-                seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
-                response_list = response_list + filter_df.to_dict('records')
-        else:
-            print('몰라')
-            node_detail = node_detail+'-O'            
-            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            # print(type(first_msg_df))
-            # response_list = response_list + [{'dialog_node':dialog_node, 'node_detail':node_detail[:-2], 'text':first_msg_df.iloc[0]['text'], 'parent':first_msg_df.iloc[0]['parent'], 'condition':first_msg_df.iloc[0]['condition']}]
-            # print('after response_list', response_list)
-            response_list = response_list + first_msg_df.to_dict('records')
-    elif condition=='ABCD':
-        abcd_filter = r'^' + node_detail+'-[A-Z]{1}$'
-        abcd_filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
-        print('abcd_filter_df', abcd_filter_df)
-        abcd_list = abcd_filter_df['node_detail'].map(lambda x: x.split('-')[-1]).tolist()
-        
-        for abcd in abcd_list:
-            if messageText == abcd:
-                node_detail = node_detail + '-' + messageText
-                first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-                selected_first_msg = first_msg_df.iloc[0]
-                response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
-                                'node_detail':selected_first_msg['node_detail'], 
-                                'text':selected_first_msg['text'], 
-                                'parent':selected_first_msg['parent'], 
-                                'condition':selected_first_msg['condition']})
-                if selected_first_msg.loc['condition']=='seq':
-                    seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                    filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
-                    response_list = response_list + filter_df.to_dict('records')
-
-    elif condition=='BACK':
-        first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-        selected_first_msg = first_msg_df.iloc[0]
-        response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
-                        'node_detail':selected_first_msg['node_detail'], 
-                        'text':selected_first_msg['text'], 
-                        'parent':selected_first_msg['parent'], 
-                        'condition':selected_first_msg['condition']})
-    elif condition=='seq':
-        pass
-    else:
-        pass    
-    return response_list
          
 @app.route('/', methods=['GET'])
 def main():
@@ -475,6 +394,13 @@ def request_chat(): # enter치면
             return jsonify({'ending':ending, 'start':messageText, 'type':'bot'})
     
     elif okay==1:
+        if condition == "intent":
+            ending = DIA(messageText)
+            if ending == None:
+                return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
+            else:
+                return jsonify({'ending':ending, 'start':messageText, 'type':'bot'})
+
         ending = DIA2(messageText, dialog_node, node_detail, parent, condition)
         print('okay 1 response', ending)
         if ending == None:
