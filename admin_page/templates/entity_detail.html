@@ -11,7 +11,7 @@
 <body>
     <!-- <input type="button" id="hw" value="Hello world" /> -->
     <div class="container">
-        <h1 class="text-center"><b>Entity</b></h1>
+        <h1 class="text-center"><b>Entity Detail</b></h1>
         <br>
 
         <div class="container">
@@ -19,36 +19,29 @@
             <!-- 오른쪽 정렬이 안돼... -->
             <div class="form-row">
                 <form action="/">
-                    <button type="submit" class="btn btn-primary"><b>Dialog node</b> 생성</button>
+                    <button type="submit" class="btn btn-primary"><b></b> 생성</button>
                 </form>
             </div>
-            <table class="table table-hover table-striped table-bordered align-middle" id="dialog_list">
+            <table class="table table-hover table-striped table-bordered align-middle">
                 <thead>
                     <tr class="text-center">
                         <th>No.</th>
-                        <th>엔티티 이름</th>
-                        <th>기능</th>
+                        <th>대표어</th>
+                        <th>유사어</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {% for entity in entitys %}
+                    {% for i, e in enumerate(entity) %}
+                    {% for j, sim in enumerate(sim_list) %}
                     <tr>
+                        {% if i == j %}
                         <td class="text-center">{{ loop.index + pagination.skip }}</td>
                         <!-- loop.index가 1,2,3...이고 pagination.skip은 (페이지번호-1)*10 → 2페이지라면 10 -->
-                        <td class="text-center">{{ entity[1] }}</td>
-                        <td class="text-center">
-                            <!-- <div class="btn-group align-middle">
-                                <button type="button" class="btn btn-outline-primary btn-sm"><a
-                                        href="{{ url_for('entity_detail', eid=entity[0], ename=entity[1]) }}">상세보기</a></button>
-                            </div> -->
-                            <form action="/entity_detail" method="post">
-                                <input type="hidden" value="{{ entity[0] }}" name="eid">
-                                <input type="hidden" value="{{ entity[1] }}" name="ename">
-                                <button type="submit" class="btn btn-outline-primary btn-sm">상세보기</button>
-                            </form>
-                        </td>
-
+                        <td class="text-center">{{ e[2] }}</td>
+                        <td class="text-center">{{ sim }}</td>
+                        {% endif %}
                     </tr>
+                    {% endfor %}
                     {% endfor %}
                 </tbody>
             </table>

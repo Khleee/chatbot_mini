@@ -11,14 +11,14 @@
 <body>
     <!-- <input type="button" id="hw" value="Hello world" /> -->
     <div class="container">
-        <h1 class="text-center">Dialog node</a></h1>
+        <h1 class="text-center"><b>Dialog node</b></h1>
         <br>
 
         <div class="container">
             {{ pagination.links }}
             <div class="form-row">
                 <form action="/entity">
-                    <button type="submit" class="btn btn-success"><b>Entity</b> 확인</button>
+                    <button type="submit" class="btn btn-success"><b>Entity</b> Page</button>
                 </form>
             </div>
             <!-- 오른쪽 정렬이 안돼... -->
@@ -49,17 +49,24 @@
                         <td>{{ dialog[3] }}</td>
                         <td class="text-center">{{ dialog[4] }}</td>
                         <td class="text-center">{{ dialog[5] }}</td>
-                        <td>
+                        <td class="text-center">
                             <!-- <button type="button" class="btn btn-outline-info" onclick="getDialogId()">클릭</button> -->
-                            <!-- <form action="/wrtie"> -->
                             <div class="btn-group align-middle">
                                 <button type='button' class="btn btn-outline-secondary btn-sm" id="addrow">추가</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm"><a
-                                        href="{{ url_for('update', did=dialog[0]) }}">수정</a></button>
+                                <!-- <button type="button" class="btn btn-outline-primary btn-sm"><a
+                                            href="{{ url_for('update', did=dialog[0]) }}">수정</a></button>
                                 <button type="button" class="btn btn-outline-danger btn-sm"><a
-                                        href="{{ url_for('delete', did=dialog[0]) }}">삭제</a></button>
+                                        href="{{ url_for('delete', did=dialog[0]) }}">삭제</a></button> -->
+                                <form action="/update" method="post">
+                                    <input type="hidden" value="{{ dialog[0] }}" name="did">
+                                    <button type="submit" class="btn btn-outline-primary btn-sm">수정</button>
+                                </form>
+                                <form action="/delete" method="post">
+                                    <input type="hidden" value="{{ dialog[0] }}" name="did">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm">삭제</button>
+                                </form>
                             </div>
-                            <!-- </form> -->
+                            </form>
                         </td>
 
                     </tr>
