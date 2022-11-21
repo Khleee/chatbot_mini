@@ -6,7 +6,7 @@ from werkzeug.exceptions import HTTPException, default_exceptions, _aborter
 import numpy as np
 import pandas as pd
 import random 
-
+from datetime import datetime
 import torch
 from tokenization_kobert import KoBertTokenizer
 from transformers import AutoModelForSequenceClassification
@@ -360,6 +360,16 @@ def request_chat(): # enter치면
         i_list4 = []
         intent_count = 1
         if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 일단 20%~50% 사이의 인텐츠들을 뽑아보자
+            """
+            폴백 메시지에 대해서 데이터베이스에 고객이 발화한 대화와 발화한 날짜를 저장
+            """
+            conn, cur = connect_db()
+            now = datetime.now()
+            formatted_date = now.strftime('%Y-%m-%d')
+            cur.execute("INSERT INTO fallback_message(message, fallback_date) values(%s, %s)", (messageText, formatted_date))
+            conn.commit()
+            conn.close()
+            
             for x in probs:
                 if x > 0.2 and x < 0.5:
                     i_list4.append(x)
