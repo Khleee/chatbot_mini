@@ -1,3 +1,4 @@
+import time
 import re
 import pymysql
 import pandas as pd
@@ -244,6 +245,53 @@ def entity_detail():
         entity = entity, 
         sim_list = sim_list,
         enumerate=enumerate,
+        pagination=Pagination(
+            page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
+            total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
+            per_page=per_page,  # 한 페이지당 몇 개의 포스트를 보여줄지 알려주고,
+            prev_label="<<",  # 전 페이지와,
+            next_label=">>",  # 후 페이지로 가는 링크의 버튼 모양을 알려주고,
+            format_total=True,  # 총 몇 개의 포스트 중 몇 개의 포스트를 보여주고있는지 시각화,
+        ),
+        search=True,  # 페이지 검색 기능을 주고,
+        bs_version=5,  # Bootstrap 사용시 이를 활용할 수 있게 버전을 알려줍니다.
+    )
+
+#################################### Entity 상세 조회 ####################################
+@app.route("/log")  # index 페이지를 호출하면
+def log():
+    today = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+    per_page = 10
+    page, _, offset = get_page_args(per_page=per_page)  # 포스트 20개씩 페이지네이션을 하겠다.
+    # 이 때 두 번째 return값은 per_page입니다.
+    # 저는 per_page를 따로 get_page_args에 넣어줘서, per_page를 받아서 사용하지는 않았습니다.
+    # page는 현재 위치한 page입니다. 기본적으로 1이고, 페이지 링크를 누르면 2, 3, ...입니다.
+    # offset은 page에 따라 몇 번째 post부터 보여줄지입니다.
+    # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
+
+    # DB 연결
+    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
+    cur = conn.cursor() # 커서생성
+
+    # cur.execute("SELECT * FROM fallback_message WHERE fallback_date = %s;" %(today))
+    cur.execute("SELECT * FROM fallback_message WHERE DATE(NOW())")
+    logs = cur.fetchall()
+    conn.close()
+
+    logs = pd.DataFrame((logs))
+
+    text_count = []
+    for k,v in logs[1].value_counts().items():
+        text_count.append([k, v])
+
+    total = len(text_count)
+
+    print(request.url)
+
+    return render_template(
+        "log.html",
+        text_count = text_count,
+        time = time,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
             total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
