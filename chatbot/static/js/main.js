@@ -11,7 +11,7 @@ function sendMessage(text, type) {
 
 function requestChat(messageText, okay, dialog_node, node_detail, parent, condition, url_pattern) {
     $.ajax({
-        url: "http://172.30.1.218:8080/" + url_pattern,
+        url: "http://172.30.1.228:8080/" + url_pattern,
         type: "POST",
         dataType: "json",
         data: {
@@ -96,9 +96,11 @@ function onSendButtonClicked() {
                     let ABCD = String.fromCharCode(alphabet)
                     requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
                 } else if (condition=="intent"){
-                    let alphabet = find_idx + 65
-                    let ABCD = String.fromCharCode(alphabet)
-                    requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+                    const INTENT = btn_list[find_idx]["value"].toString()
+                    console.log(INTENT)
+                    messageText = e.target.textContent
+                    sendMessage(messageText, 'user');
+                    requestChat(INTENT, okay, dialog_node, node_detail, parent, condition, 'request_chat');
                 } // test
                 
             }
@@ -164,7 +166,6 @@ $(document).on('click', 'button', function(e){
         } else if (condition=='intent'){
             const INTENT = btn_list[index]["value"].toString()
             console.log(INTENT)
-            // console.log(index,alphabet,ABCD) // 0 65 A
             messageText = e.target.textContent
             sendMessage(messageText, 'user');
             requestChat(INTENT, okay, dialog_node, node_detail, parent, condition, 'request_chat');
