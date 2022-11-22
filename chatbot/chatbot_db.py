@@ -75,6 +75,13 @@ for code in default_exceptions.keys():
 ## 함수 선언
 # 맨 처음
 def DIA(start):
+    """
+    다이얼로그를 처음부터 시작하는경우만 동작하는 함수    
+    response_list에 다양한 인자들을 채워 넣어 return 해준다
+
+    start : intent에 해당하는 숫자(인덱스)
+     
+    """
     conn, cur = connect_db()
     cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
@@ -109,6 +116,16 @@ def DIA(start):
         
 # 2번째부터
 def DIA2(messageText, dialog_node, node_detail, parent, condition):
+    """
+    다이얼로그 처음 동작 이후에 계속 동작하는 함수    
+    response_list에 다양한 인자들을 채워 넣어 return 해준다
+
+    messageText : 사용자 응답 텍스트
+    dialog_node : 다이얼로그 숫자(인덱스)
+    node_detail : 다이얼로그 세부 노드(ex) 0_5, 0-Y-N)
+    parent : default가 기본값, 뒤로 돌아갈때, 단순히 이전 다이얼로그가 아닌 다른 다이얼로그로 연결 가능케함
+    condition : 현재 노드의 종류 (YNO, ABCD, intent, ...)     
+    """
     conn, cur = connect_db()
     cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
@@ -190,6 +207,12 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
     return response_list
 
 def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
+    """
+    딥러닝 모델에서 인텐트를 파악하지 못하는 경우 동작함.
+    이전 DIA 함수들과 달리, 유사 인텐트들을 출력해주는 역할
+
+    구체적으로는 response_list에 임의로 text를 유사 인텐트들을 버튼식으로 출력되게 수정하고 있다.
+    """
     conn, cur = connect_db()
     cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
@@ -307,9 +330,6 @@ def request_chat(): # enter치면
             if y in messageText: # 만약 전혀 연관없는 다른 엔티티에 각각 "어제는", "어제" 가 들어있다면, 걸러주지 못하고 그대로 i_list로 추가됨 그러므로, entity_similar에 다른 엔티티인데 비슷한 단어들이 들어있으면 안됨
                 i_list.append(x) # 만약 속해있다면, i_list에 심볼id가 들어감
 
-        if not i_list:
-            return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
-
         ## 여기까지 입력문장에 해당 symbol_id가 뭐가 있는지 리스트화함
         print("i_list:",i_list)
         # entity_symbol들어가서 symbol_id에 해당하는 entity_id가 뭔지 확인
@@ -377,7 +397,11 @@ def request_chat(): # enter치면
             conn.commit()
             conn.close()
             
-            # 20% ~ 50% 인 intent_넘버 뽑기
+            # 만약 i_list가 empty면 아예, 엔티티 정보가 없음-> 비슷한 인텐트를 출력해줄 수 없음
+            if not i_list:
+                return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
+
+            # 20% ~ 50% 인 intent(인덱스,확률값) 뽑기
             for i,x in enumerate(probs):
                 if x > 0.2 and x < 0.5:
                     i_list4.append([i,x])
@@ -385,11 +409,12 @@ def request_chat(): # enter치면
 
             print("i_list4:",i_list4)
 
+            # i_list3, i_list4(인텐트넘버) 간의 교집합 구하기
             real = list(set(i_list3) & set([x[0] for x in i_list4])) #! set(i_list4) -> set([x[0] for x in i_list4])
             print("real:",real)
 
             # real이 비워져있는일이 없는한 i_list4는 항상 존재
-            # 확률이 높은 순으로 보여주면서 동시에 최대 4개만 보여주기
+            # real2에 확률이 높은 순으로 채워놓음
             i_list4.sort(key=lambda x:-x[1])
             real2 = []
             for x in i_list4:
