@@ -57,6 +57,7 @@ def index():
     return render_template(
         "index.html",
         dialogs=dialogs,
+        time = time,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
             total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
@@ -258,9 +259,16 @@ def entity_detail():
     )
 
 #################################### Entity 상세 조회 ####################################
-@app.route("/log")  # index 페이지를 호출하면
-def log():
-    today = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+@app.route("/fallback", methods=['GET'])  # index 페이지를 호출하면
+def fallback():
+    ### POST 방식
+    # ymd = request.form.get('ymd')
+    # print(ymd)
+
+    ### GET 방식
+    ymd = request.args.to_dict()['ymd']
+    print(ymd)
+
     per_page = 10
     page, _, offset = get_page_args(per_page=per_page)  # 포스트 20개씩 페이지네이션을 하겠다.
     # 이 때 두 번째 return값은 per_page입니다.
@@ -273,25 +281,28 @@ def log():
     conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
     cur = conn.cursor() # 커서생성
 
-    # cur.execute("SELECT * FROM fallback_message WHERE fallback_date = %s;" %(today))
-    cur.execute("SELECT * FROM fallback_message WHERE DATE(NOW())")
+    cur.execute("SELECT * FROM fallback_message WHERE fallback_date = '%s';" %(ymd))
+    #  "SELECT * FROM dialog ORDER BY intent_no ASC LIMIT %d OFFSET %d;" %(per_page, offset))  # SQL SELECT로 포스트를 가져오되,
     logs = cur.fetchall()
     conn.close()
 
     logs = pd.DataFrame((logs))
+    print(len(logs))
+    print(logs)
 
     text_count = []
-    for k,v in logs[1].value_counts().items():
-        text_count.append([k, v])
+    if len(logs) > 0:    
+        for k,v in logs[1].value_counts().items():
+            text_count.append([k, v])
 
     total = len(text_count)
 
     print(request.url)
 
     return render_template(
-        "log.html",
+        "fallback.html",
         text_count = text_count,
-        time = time,
+        ymd = ymd,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
             total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
