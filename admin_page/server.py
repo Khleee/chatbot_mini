@@ -1,10 +1,11 @@
-import time
 import re
 import pymysql
 import pandas as pd
+from datetime import datetime
+
 from flask import Flask, redirect, render_template, request, url_for
 from flask_paginate import Pagination, get_page_args
-from sassutils.wsgi import SassMiddleware
+
 
 ## db 불러오기
 def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_name='chatbot_db'):
@@ -21,15 +22,12 @@ def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_nam
     return conn, cur
 
 app = Flask(__name__)
-app.wsgi_app = SassMiddleware(app.wsgi_app, {
-    'server' : ('/static/assets/scss', '/static/css')
-})
 
 @app.route("/main", methods=['GET'])
 def main():
     return render_template('main.html')
 
-@app.route("/", methods=("GET",))  # index 페이지를 호출하면
+@app.route("/intent", methods=("GET",))  # index 페이지를 호출하면
 def index():
     per_page = 10
     page, _, offset = get_page_args(per_page=per_page)  # 포스트 10개씩 페이지네이션을 하겠다.
@@ -62,9 +60,8 @@ def index():
     # print(dialogs)
 
     return render_template(
-        "index.html",
+        "intent_temp.html",
         dialogs=dialogs,
-        time = time,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
             total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
@@ -174,7 +171,7 @@ def entity():
     # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
 
     # DB 연결
-    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
+    conn = pymysql.connect(host='172.30.1.204', user='nlp', password='dongwon', db='chatbot_db', charset='utf8')
     cur = conn.cursor() # 커서생성
 
     cur.execute("SELECT COUNT(*) FROM entity;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
@@ -189,7 +186,7 @@ def entity():
     # print(dialogs)
 
     return render_template(
-        "entity.html",
+        "entity_temp.html",
         entitys=entitys,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
@@ -273,9 +270,13 @@ def fallback():
     # print(ymd)
 
     ### GET 방식
-    ymd = request.args.to_dict()['ymd']
-    print(ymd)
+    # ymd = request.args.to_dict()['ymd']
+    # print(ymd)
 
+    ### GET 방식
+    ymd = request.args.get('ymd', datetime.now().strftime('%Y-%m-%d'))
+    print(ymd)
+    
     per_page = 10
     page, _, offset = get_page_args(per_page=per_page)  # 포스트 20개씩 페이지네이션을 하겠다.
     # 이 때 두 번째 return값은 per_page입니다.
@@ -329,7 +330,7 @@ def fallback():
     #     for k,v in logs[1].value_counts().items():
     #         text_count.append([k, v])
     return render_template(
-        "fallback.html",
+        "fallback_temp.html",
         logs = logs,
         ymd = ymd,
         pagination=Pagination(

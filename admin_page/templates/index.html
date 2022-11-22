@@ -14,15 +14,12 @@
     <div class="container">
         <h1 class="text-center"><b>Dialog node</b></h1>
         <br>
-
         <div class="container">
-            {{ pagination.links }}
             <div class="form-row">
                 <form action="/entity">
                     <button type="submit" class="btn btn-success"><b>Entity</b> Page</button>
                 </form>
                 <form action="/fallback" method="get">
-                    <input type="hidden" value="{{ time.strftime('%Y-%m-%d', time.localtime(time.time())) }}" name="ymd">
                     <button type="submit" class="btn btn-warning"><b>Fallback message</b> Page</button>
                 </form>
             </div>
