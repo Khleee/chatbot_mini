@@ -82,7 +82,8 @@ def DIA(start):
     dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
     dialog_df.drop(['id'], axis=1, inplace=True)
     # 첫번째 응답 메세지
-    first_msg_df = dialog_df.loc[(dialog_df['intent_no']==start) & (dialog_df['node_detail']=='0')]
+    first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(start)) & (dialog_df['node_detail']=='0')]
+    print(first_msg_df)
     random_number = random.randrange(0, len(first_msg_df))
     selected_first_msg = first_msg_df.iloc[random_number]
     
@@ -121,7 +122,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             node_detail = node_detail+'-Y'
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
             selected_first_msg = first_msg_df.iloc[0]
-            response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
+            response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
@@ -188,7 +189,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
         pass    
     return response_list
 
-def DIA3(start, i_list): #! 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
+def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
     conn, cur = connect_db()
     cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
@@ -207,7 +208,7 @@ def DIA3(start, i_list): #! 만약 i_list가 너무 많으면 선택지가 너�
 
     for x in i_list:
         print('x', x)
-        select_list += '<button class="dial_btn" value="' + str(x[0]) + '">'+str(x[1])+'</button>' #!
+        select_list += '<button class="dial_btn" value="' + str(x[0]) + '">'+str(x[1])+'</button>'
 
     # 현재 노드 상황
     response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
@@ -230,7 +231,8 @@ def request_chat(): # enter치면
     dialog_node = request.form['dialog_node'] 
     node_detail = request.form['node_detail'] 
     parent = request.form['parent']
-    condition = request.form['condition'] 
+    condition = request.form['condition']
+    print("okay",okay)
     
     # print("ending :",ending)
     # ending = ending.split(',')
@@ -305,6 +307,9 @@ def request_chat(): # enter치면
             if y in messageText: # 만약 전혀 연관없는 다른 엔티티에 각각 "어제는", "어제" 가 들어있다면, 걸러주지 못하고 그대로 i_list로 추가됨 그러므로, entity_similar에 다른 엔티티인데 비슷한 단어들이 들어있으면 안됨
                 i_list.append(x) # 만약 속해있다면, i_list에 심볼id가 들어감
 
+        if not i_list:
+            return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
+
         ## 여기까지 입력문장에 해당 symbol_id가 뭐가 있는지 리스트화함
         print("i_list:",i_list)
         # entity_symbol들어가서 symbol_id에 해당하는 entity_id가 뭔지 확인
@@ -372,19 +377,31 @@ def request_chat(): # enter치면
             conn.commit()
             conn.close()
             
-            for x in probs:
+            # 20% ~ 50% 인 intent_넘버 뽑기
+            for i,x in enumerate(probs):
                 if x > 0.2 and x < 0.5:
-                    i_list4.append(x)
+                    i_list4.append([i,x])
+                    
 
-            print("i_list4:",i_list)
+            print("i_list4:",i_list4)
 
-            real = [i for i in i_list4 if i in i_list3] # 모두 성립하는 인텐트 목록
+            real = list(set(i_list3) & set([x[0] for x in i_list4])) #! set(i_list4) -> set([x[0] for x in i_list4])
+            print("real:",real)
 
+            # real이 비워져있는일이 없는한 i_list4는 항상 존재
+            # 확률이 높은 순으로 보여주면서 동시에 최대 4개만 보여주기
+            i_list4.sort(key=lambda x:-x[1])
+            real2 = []
+            for x in i_list4:
+                if x[0] in real:
+                    real2.append(x[0])
+
+            
             if len(real) > 1:
                 # 여러개 있으므로, new다이얼로그로 진입시켜서 인텐츠 선택하게 하자
                 okay = 1
                 # print('의도번호', start)
-                ending = DIA3(251, real) ## 여기다 real 여러개도 들어가게 해야함
+                ending = DIA3(251, real2[:4]) ## 여기다 real2 4개만 출력되게
                 intent_count = 0
 
             elif len(real) == 1:
@@ -400,7 +417,7 @@ def request_chat(): # enter치면
                 # 겹치는게 없으므로, 인텐츠 동의어를 가진 intent 목록만 출력
                 okay = 1
                 # print('의도번호', start)
-                ending = DIA3(251, i_list3) ## 여기다 i_list3 여러개도 들어가게 해야함
+                ending = DIA3(251, i_list3[:4]) ## 여기다 i_list3 4개만 나오게
                 # 아니면 그냥 20% 50% 사이에 있는 intents을 넣어도 될듯?(i_list4)
                 intent_count = 0
                 
