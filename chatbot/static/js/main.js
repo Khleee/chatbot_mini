@@ -40,7 +40,7 @@ function requestChat(messageText, okay, dialog_node, node_detail, parent, condit
                     $('.condition').attr('value', data['condition'])
                 }
 
-                if ($('.condition').val()=='YNO' || $('.condition').val()=='ABCD'){
+                if (($('.condition').val()=='YNO') || ($('.condition').val()=='ABCD') || ($('.condition').val()=='intent')){
                     $('.okay').attr('value', 1)
                 } else if ($('.condition').val()=='END' || $('.condition').val()=='BACK'){
                     $('.okay').attr('value', 0)
@@ -95,7 +95,11 @@ function onSendButtonClicked() {
                     let alphabet = find_idx + 65
                     let ABCD = String.fromCharCode(alphabet)
                     requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
-                }
+                } else if (condition=="intent"){
+                    let alphabet = find_idx + 65
+                    let ABCD = String.fromCharCode(alphabet)
+                    requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+                } // test
                 
             }
         } else{
@@ -135,7 +139,9 @@ $(document).on('click', 'button', function(e){
             btn_list.push(item)
         }
     })
+    console.log(btn_list)
     const index = btn_list.indexOf(e.target);
+    console.log(btn_list[index]["value"])
     if (e.target.onclick){
         // 웹페이지 이동
     } else {
@@ -155,6 +161,13 @@ $(document).on('click', 'button', function(e){
             messageText = e.target.textContent
             sendMessage(messageText, 'user');
             requestChat(ABCD, okay, dialog_node, node_detail, parent, condition, 'request_chat');
-        }  
+        } else if (condition=='intent'){
+            const INTENT = btn_list[index]["value"].toString()
+            console.log(INTENT)
+            // console.log(index,alphabet,ABCD) // 0 65 A
+            messageText = e.target.textContent
+            sendMessage(messageText, 'user');
+            requestChat(INTENT, okay, dialog_node, node_detail, parent, condition, 'request_chat');
+        } // test
     }   
 })
