@@ -3,9 +3,10 @@ import pymysql
 import pandas as pd
 from flask import Flask, redirect, render_template, request, url_for
 from flask_paginate import Pagination, get_page_args
+from sassutils.wsgi import SassMiddleware
 
 ## db 불러오기
-def connect_db(host='127.30.1.204', port=3306, user='nlp', pwd='dongwon', db_name='chatbot_db'):
+def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_name='chatbot_db'):
     conn = pymysql.connect(
         host=host,
         port=port,
@@ -18,8 +19,14 @@ def connect_db(host='127.30.1.204', port=3306, user='nlp', pwd='dongwon', db_nam
 
     return conn, cur
 
-
 app = Flask(__name__)
+app.wsgi_app = SassMiddleware(app.wsgi_app, {
+    'server' : ('/static/assets/scss', '/static/css')
+})
+
+@app.route("/main", methods=['GET'])
+def main():
+    return render_template('main2.html')
 
 @app.route("/", methods=("GET",))  # index 페이지를 호출하면
 def index():
@@ -32,15 +39,15 @@ def index():
     # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
 
     # DB 연결
-    conn = pymysql.connect(
-        host='127.0.0.1',
-        user='root',
-        password='7557',
-        db='chatbot_db',
-        charset='utf8'
-        )
-    cur = conn.cursor() # 커서생성
-
+    # conn = pymysql.connect(
+    #     host='127.30.1.204',
+    #     user='root',
+    #     password='7557',
+    #     db='chatbot_db',
+    #     charset='utf8'
+    #     )
+    # cur = conn.cursor() # 커서생성
+    conn, cur = connect_db()
     cur.execute("SELECT COUNT(*) FROM dialog;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
     total = cur.fetchone()[0]
     cur.execute(
@@ -81,9 +88,9 @@ def write_action():
     parent = request.form.get('parent')
     condition = request.form.get('condition')
 
-    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
-    cur = conn.cursor()
-
+    # conn = pymysql.connect(host='127.30.1.204', user='root', password='7557', db='chatbot_db', charset='utf8')
+    # cur = conn.cursor()
+    conn, cur = connect_db()
     SQL = "INSERT INTO dialog VALUES (NULL, %s, %s, %s, %s, %s);"
     values = (dialog, detail, text, parent, condition)
     cur.execute(SQL, values)
@@ -95,15 +102,15 @@ def write_action():
 #################################### 수정 ####################################
 @app.route("/update/<did>")  # index 페이지를 호출하면
 def update(did):
-    conn = pymysql.connect(
-        host='127.0.0.1',
-        user='root',
-        password='7557',
-        db='chatbot_db',
-        charset='utf8'
-        )
-    cur = conn.cursor() # 커서생성
-
+    # conn = pymysql.connect(
+    #     host='127.30.1.204',
+    #     user='root',
+    #     password='7557',
+    #     db='chatbot_db',
+    #     charset='utf8'
+    #     )
+    # cur = conn.cursor() # 커서생성
+    conn, cur = connect_db()
     print(did)
     SQL = 'SELECT * FROM dialog WHERE id=%s'
     values = (did)
@@ -131,9 +138,9 @@ def update_action():
     # print(type(parent))
     # print(type(condition))
 
-    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
-    cur = conn.cursor()
-
+    # conn = pymysql.connect(host='127.30.1.204', user='root', password='7557', db='chatbot_db', charset='utf8')
+    # cur = conn.cursor()
+    conn, cur = connect_db()
     SQL = "UPDATE dialog SET intent_no=%s, node_detail=%s, text=%s, parent=%s, cdt=%s WHERE id=%s"
     values = (dialog, detail, text, parent, condition, int(id))
     cur.execute(SQL, values)
@@ -146,14 +153,15 @@ def update_action():
 #################################### 삭제 ####################################
 @app.route("/delete/<did>")  # index 페이지를 호출하면
 def delete(did):
-    conn = pymysql.connect(
-        host='127.0.0.1',
-        user='root',
-        password='7557',
-        db='chatbot_db',
-        charset='utf8'
-        )
-    cur = conn.cursor() # 커서생성
+    # conn = pymysql.connect(
+    #     host='127.30.1.204',
+    #     user='root',
+    #     password='7557',
+    #     db='chatbot_db',
+    #     charset='utf8'
+    #     )
+    # cur = conn.cursor() # 커서생성
+    conn, cur = connect_db()
     cur.execute('DELETE FROM dialog WHERE id=%s' %did)
     conn.commit()
     conn.close()
@@ -172,15 +180,15 @@ def entity():
     # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
 
     # DB 연결
-    conn = pymysql.connect(
-        host='127.0.0.1',
-        user='root',
-        password='7557',
-        db='chatbot_db',
-        charset='utf8'
-        )
-    cur = conn.cursor() # 커서생성
-
+    # conn = pymysql.connect(
+    #     host='127.30.1.204',
+    #     user='root',
+    #     password='7557',
+    #     db='chatbot_db',
+    #     charset='utf8'
+    #     )
+    # cur = conn.cursor() # 커서생성
+    __, cur = connect_db()
     cur.execute("SELECT COUNT(*) FROM entity;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
     total = cur.fetchone()[0]
     cur.execute(
