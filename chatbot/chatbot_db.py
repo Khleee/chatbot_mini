@@ -48,12 +48,14 @@ def connect_db(host='172.30.1.204', user='nlp', pwd='dongwon', db_name='chatbot_
 
     return conn, cur
 
-## 파일 불러오기
-# dialog_df = pd.read_csv("data/dialog2.csv")
-# del dialog_df["intent"]
+# intent 리스트 뽑기
+conn, cur = connect_db()
+cur.execute("SELECT * FROM chatbot_db.intent")
+dialog = cur.fetchall()
+conn.close()
+dialog_df = pd.DataFrame(dialog, columns=['intent_no','intent_name'])
 
-B = pd.read_csv("data/title_node.csv")
-intent_list = list(B["title"])
+intent_list = list(dialog_df["intent_name"].values)
 
 # 모든 에러에 대해서 JSON 응답을 보낼 수 있게 등록
 def error_handling(error):
@@ -349,12 +351,12 @@ def request_chat(): # enter치면
 
         for x in probs:
             if x >= 0.5: # 50% 이상인 경우, argmax -> pred_idx
-                print("이해O",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
+                print("이해O",intent_list[np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)]) #! B["title"] -> intent_list
                 pred_idx = np.argmax(probs)
                 break
         
         # if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 처음으로 복귀
-        #     print("이해X",B["title"][np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
+        #     print("이해X",intent_list[np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
         #     return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
 
         i_list4 = []
