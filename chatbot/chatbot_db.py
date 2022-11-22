@@ -86,7 +86,7 @@ def DIA(start):
     
     response_list = []
 
-    response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
+    response_list.append({'dialog_node':int(selected_first_msg['intent_no']),#! intent_no -> dialog_node
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
@@ -198,7 +198,7 @@ def DIA3(start, i_list): #! 만약 i_list가 너무 많으면 선택지가 너�
     random_number = random.randrange(0, len(first_msg_df))
     selected_first_msg = first_msg_df.iloc[random_number]
     print('selected_first_msg', selected_first_msg)
-    print('i_list', i_list)
+    print('dia3에서 나온 최종 i_list:', i_list)
     response_list = []
 
     select_list = ""
@@ -304,7 +304,7 @@ def request_chat(): # enter치면
                 i_list.append(x) # 만약 속해있다면, i_list에 심볼id가 들어감
 
         ## 여기까지 입력문장에 해당 symbol_id가 뭐가 있는지 리스트화함
-
+        print("i_list:",i_list)
         # entity_symbol들어가서 symbol_id에 해당하는 entity_id가 뭔지 확인
         conn, cur = connect_db()
         cur.execute("SELECT * FROM entity_symbol")
@@ -317,7 +317,7 @@ def request_chat(): # enter치면
             i_list2 += list(dialog_df2[dialog_df2["symbol_id"]==x]["entity_id"].values)
 
         ## 여기까지 입력 문장안에 entity_id가 뭐가 들어있는지 확인함
-
+        print("i_list2:",i_list2)
         # i_list2랑 인텐츠 안에 들어있는 엔티티 종류랑 비교할거임
         # intent_entity 들어가서 intent_no에 해당하는 entity_id 종류들을 꺼내기
         conn, cur = connect_db()
@@ -340,7 +340,7 @@ def request_chat(): # enter치면
                 i_list3.append(dialog[0])
 
         ## 여기까지 intents에 있는 entity_id와 입력 문장에 있는 entity_id들이 같을때의 intent_no을 저장함         
-
+        print("i_list3:",i_list3)
         # 만약 일치하는 경우가 없으면, 그런 정보가 없다는 뜻이므로, 그대로 놔두면 됨
         # 만약 일치하는 경우가 하나 이상이면, 동작하자
 
@@ -374,6 +374,8 @@ def request_chat(): # enter치면
                 if x > 0.2 and x < 0.5:
                     i_list4.append(x)
 
+            print("i_list4:",i_list)
+
             real = [i for i in i_list4 if i in i_list3] # 모두 성립하는 인텐트 목록
 
             if len(real) > 1:
@@ -405,10 +407,10 @@ def request_chat(): # enter치면
 
             okay = 1
             print('의도번호', start)
-
             ending = DIA(start)
 
         print('okay 0 response', ending)
+        print("messageText",messageText)
         if ending == None:
             return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
         else:
