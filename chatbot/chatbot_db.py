@@ -6,7 +6,7 @@ from werkzeug.exceptions import HTTPException, default_exceptions, _aborter
 import numpy as np
 import pandas as pd
 import random 
-
+from datetime import datetime
 import torch
 from tokenization_kobert import KoBertTokenizer
 from transformers import AutoModelForSequenceClassification
@@ -186,7 +186,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
         pass    
     return response_list
 
-def DIA3(start,i_list): #! 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
+def DIA3(start, i_list): #! 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
     conn, cur = connect_db()
     cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
@@ -197,13 +197,15 @@ def DIA3(start,i_list): #! 만약 i_list가 너무 많으면 선택지가 너무
     first_msg_df = dialog_df.loc[(dialog_df['intent_no']==start) & (dialog_df['node_detail']=='0')]
     random_number = random.randrange(0, len(first_msg_df))
     selected_first_msg = first_msg_df.iloc[random_number]
-    
+    print('selected_first_msg', selected_first_msg)
+    print('i_list', i_list)
     response_list = []
 
     select_list = ""
 
     for x in i_list:
-        select_list += '<button class="dial_btn">'+x+'</button>' #!
+        print('x', x)
+        select_list += '<button class="dial_btn" value="' + str(x[0]) + '">'+str(x[1])+'</button>' #!
 
     # 현재 노드 상황
     response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
@@ -211,8 +213,8 @@ def DIA3(start,i_list): #! 만약 i_list가 너무 많으면 선택지가 너무
                           'text':selected_first_msg['text']+select_list, 
                           'parent':selected_first_msg['parent'], 
                           'condition':selected_first_msg['condition']})
-
-    print('selected_first_msg', selected_first_msg)
+    return response_list
+    
          
 @app.route('/', methods=['GET'])
 def main():
@@ -304,6 +306,7 @@ def request_chat(): # enter치면
         ## 여기까지 입력문장에 해당 symbol_id가 뭐가 있는지 리스트화함
 
         # entity_symbol들어가서 symbol_id에 해당하는 entity_id가 뭔지 확인
+        conn, cur = connect_db()
         cur.execute("SELECT * FROM entity_symbol")
         dialog = cur.fetchall()
         conn.close()
@@ -317,6 +320,7 @@ def request_chat(): # enter치면
 
         # i_list2랑 인텐츠 안에 들어있는 엔티티 종류랑 비교할거임
         # intent_entity 들어가서 intent_no에 해당하는 entity_id 종류들을 꺼내기
+        conn, cur = connect_db()
         cur.execute("SELECT * FROM intent_entity")
         dialog = cur.fetchall()
         conn.close()
@@ -326,7 +330,14 @@ def request_chat(): # enter치면
         i_list3 = []
         for x in list(dialog_df2["intent_no"]):
             if i_list2 == list(dialog_df2[dialog_df2["intent_no"]==x]["entity_id"]):
-                i_list3.append(x)
+                conn, cur = connect_db()
+                cur.execute("SELECT * FROM intent WHERE intent_no = %s", int(x))
+                dialog = cur.fetchall()
+                conn.close()
+                # print('dialog', dialog[0][1])
+                # dialog 형태
+                # ((121, '참치상품안내'),)
+                i_list3.append(dialog[0])
 
         ## 여기까지 intents에 있는 entity_id와 입력 문장에 있는 entity_id들이 같을때의 intent_no을 저장함         
 
@@ -349,6 +360,16 @@ def request_chat(): # enter치면
         i_list4 = []
         intent_count = 1
         if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 일단 20%~50% 사이의 인텐츠들을 뽑아보자
+            """
+            폴백 메시지에 대해서 데이터베이스에 고객이 발화한 대화와 발화한 날짜를 저장
+            """
+            conn, cur = connect_db()
+            now = datetime.now()
+            formatted_date = now.strftime('%Y-%m-%d')
+            cur.execute("INSERT INTO fallback_message(message, fallback_date) values(%s, %s)", (messageText, formatted_date))
+            conn.commit()
+            conn.close()
+            
             for x in probs:
                 if x > 0.2 and x < 0.5:
                     i_list4.append(x)
@@ -358,8 +379,8 @@ def request_chat(): # enter치면
             if len(real) > 1:
                 # 여러개 있으므로, new다이얼로그로 진입시켜서 인텐츠 선택하게 하자
                 okay = 1
-                print('의도번호', start)
-                ending = DIA3(251,real) ## 여기다 real 여러개도 들어가게 해야함
+                # print('의도번호', start)
+                ending = DIA3(251, real) ## 여기다 real 여러개도 들어가게 해야함
                 intent_count = 0
 
             elif len(real) == 1:
@@ -374,8 +395,8 @@ def request_chat(): # enter치면
             elif len(real) == 0:
                 # 겹치는게 없으므로, 인텐츠 동의어를 가진 intent 목록만 출력
                 okay = 1
-                print('의도번호', start)
-                ending = DIA(251,i_list3) ## 여기다 i_list3 여러개도 들어가게 해야함
+                # print('의도번호', start)
+                ending = DIA3(251, i_list3) ## 여기다 i_list3 여러개도 들어가게 해야함
                 # 아니면 그냥 20% 50% 사이에 있는 intents을 넣어도 될듯?(i_list4)
                 intent_count = 0
                 
