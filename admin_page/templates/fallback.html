@@ -41,12 +41,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for t_c in text_count %}
+                    {% for log in logs %}
                     <tr>
                         <td class="text-center">{{ loop.index + pagination.skip }}</td>
                         <!-- loop.index가 1,2,3...이고 pagination.skip은 (페이지번호-1)*10 → 2페이지라면 10 -->
-                        <td class="text-center">{{ t_c[0] }}</td>
-                        <td class="text-center">{{ t_c[1] }}
+                        <td class="text-center">{{ log[0] }}</td>
+                        <td class="text-center">{{ log[1] }}
                         </td>
 
                     </tr>

@@ -281,27 +281,50 @@ def fallback():
     conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
     cur = conn.cursor() # 커서생성
 
-    cur.execute("SELECT * FROM fallback_message WHERE fallback_date = '%s';" %(ymd))
+    cur.execute("""
+                SELECT COUNT(*)
+                FROM (
+                    SELECT a.message, count(a.message) 
+                    FROM (
+                        SELECT message
+                        FROM fallback_message
+                        WHERE fallback_message.fallback_date ='%s'
+                    ) AS a
+                    GROUP BY a.message
+                ) AS b;
+                """ %(ymd))
+    total = cur.fetchone()[0]
+
+    cur.execute("""
+                SELECT a.message, count(a.message) FROM
+                (
+                    SELECT message
+                    FROM fallback_message
+                    WHERE fallback_message.fallback_date ='%s'
+                ) AS a
+                GROUP BY a.message ORDER BY count(a.message) DESC
+                LIMIT %s OFFSET %s;
+                """ %(ymd, per_page, offset))
     #  "SELECT * FROM dialog ORDER BY intent_no ASC LIMIT %d OFFSET %d;" %(per_page, offset))  # SQL SELECT로 포스트를 가져오되,
     logs = cur.fetchall()
     conn.close()
 
-    logs = pd.DataFrame((logs))
-    print(len(logs))
-    print(logs)
+    # logs = pd.DataFrame((logs))
+    # print(len(logs))
+    # print(logs)
 
-    text_count = []
-    if len(logs) > 0:    
-        for k,v in logs[1].value_counts().items():
-            text_count.append([k, v])
+    # text_count = []
+    # if len(logs) > 0:    
+    #     for k,v in logs[1].value_counts().items():
+    #         text_count.append([k, v])
 
-    total = len(text_count)
+    # total = len(text_count)
 
-    print(request.url)
+    # print(request.url)
 
     return render_template(
         "fallback.html",
-        text_count = text_count,
+        logs = logs,
         ymd = ymd,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
