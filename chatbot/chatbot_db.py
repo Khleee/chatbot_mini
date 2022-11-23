@@ -1,5 +1,3 @@
-import pymysql
-
 from flask import Flask, jsonify, render_template, request
 from werkzeug.exceptions import HTTPException, default_exceptions, _aborter
 
@@ -10,6 +8,7 @@ from datetime import datetime
 import torch
 from tokenization_kobert import KoBertTokenizer
 from transformers import AutoModelForSequenceClassification
+from common.config import connect_db
 
 app = Flask(__name__)
 
@@ -35,27 +34,16 @@ else:
     print('GPU 없어서 CPU로 설정')
     device = torch.device("cpu")
 
-## db 불러오기
-def connect_db(host='172.30.1.204', user='nlp', pwd='dongwon', db_name='chatbot_db'):
-    conn = pymysql.connect(
-        host=host,
-        user=user,
-        password=pwd,
-        db=db_name,
-        charset='utf8'
-        )
-    cur = conn.cursor() # 커서생성
-
-    return conn, cur
-
 # intent 리스트 뽑기
-conn, cur = connect_db()
-cur.execute("SELECT * FROM chatbot_db.intent")
-dialog = cur.fetchall()
-conn.close()
-dialog_df = pd.DataFrame(dialog, columns=['intent_no','intent_name'])
+def get_intent_list():
+    conn, cur = connect_db()
+    cur.execute("SELECT * FROM chatbot_db.intent")
+    dialog = cur.fetchall()
+    conn.close()
+    dialog_df = pd.DataFrame(dialog, columns=['intent_no','intent_name', 'description'])
 
-intent_list = list(dialog_df["intent_name"].values)
+    intent_list = list(dialog_df["intent_name"].values)
+    return intent_list
 
 # 모든 에러에 대해서 JSON 응답을 보낼 수 있게 등록
 def error_handling(error):
@@ -248,6 +236,7 @@ def main():
 
 @app.route('/request_chat', methods=['POST'])
 def request_chat(): # enter치면
+    intent_list = get_intent_list()
     messageText = request.form['messageText'] # 방금 메시지 입력한거 들어감
     okay = request.form['okay'] # 기존에 들어간 okay
     okay = int(okay)
