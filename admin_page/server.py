@@ -1,11 +1,12 @@
 import re
 import pymysql
 import pandas as pd
+import os
 from datetime import datetime
-
+from common.model_user import User
 from flask import Flask, redirect, render_template, request, url_for
 from flask_paginate import Pagination, get_page_args
-
+from flask_login import LoginManager, login_required, login_user, logout_user
 
 ## db 불러오기
 def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_name='chatbot_db'):
@@ -22,10 +23,55 @@ def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_nam
     return conn, cur
 
 app = Flask(__name__)
+# 사용자 세션 관리 할 때 필요한 정보
+app.secret_key = os.urandom(24)
+# LoginManager object 생성
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+@app.route("/", methods=['GET'])
+def root():
+    return redirect('/login')
 
 @app.route("/main", methods=['GET'])
+@login_required
 def main():
     return render_template('main.html')
+
+@app.route("/login", methods=['GET'])
+def login_page():
+    return render_template('login.html')
+
+@app.route("/login/get_info", methods=['GET', 'POST'])
+def login_get_info():
+    user_id = request.form.get('userID')
+    user_password = request.form.get('userPassword')
+    
+    user_info = User.get_user_info(user_id, user_password)
+    if user_info['result'] != 'fail':
+        login_info = User(user_info['data'][0], user_info['data'][2], user_info['data'][5])
+        login_user(login_info)
+        print('login_info', login_info.get_id())
+        return redirect('/main')
+    else:
+        login_result_text = '로그인 실패 메세지'
+        return render_template('/login', login_result_text=login_result_text)
+
+@login_manager.user_loader
+def user_loader(user_id):
+    user_info = User.get_user_info(user_id)
+    login_info = User(user_info['data'][0], user_info['data'][2], user_info['data'][5])
+    return login_info
+
+@login_manager.unauthorized_handler
+def unauthorized():
+    # 로그인되어 있지 않은 사용자일 경우 첫화면으로 이동
+    return redirect("/")
+
+@app.route("/logout", methods=("GET",))
+def logout():
+    logout_user()
+    return redirect('/')
 
 @app.route("/intent", methods=("GET",))  # index 페이지를 호출하면
 def index():
