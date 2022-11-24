@@ -61,32 +61,34 @@ def error_handling(error):
 for code in default_exceptions.keys():
     app.register_error_handler(code, error_handling)
 
-# def dup_check(response_list):
-#     ## 중복아니면 그대로, node_detail이 중복인 경우만 random.choice()
-#     response_list2 = []
-#     temp = []
-#     if len(response_list) > 1: # 아래도 똑같이 붙여넣으려고 >1 로 적용함
-#         for i, x in enumerate(response_list):
-#             if i == 0:
-#                 dup = x["node_detail"]
-#                 temp.append(x)
-#             else:
-#                 if dup == x["node_detail"]:
-#                     temp.append(x)
-#                 else:
-#                     response_list2.append(random.choice(temp))
-#                     temp = []
-#                     temp.append(x)
-#                     dup = x["node_detail"]
-#         if len(temp) > 1:
-#             temp = random.choice(temp)
+def dup_check(response_list):
+    ## 중복아니면 그대로, node_detail이 중복인 경우만 random.choice()
+    response_list2 = []
+    temp = []
+    if len(response_list) > 1: # 아래도 똑같이 붙여넣으려고 >1 로 적용함
+        for i, x in enumerate(response_list):
+            if i == 0:
+                dup = x["node_detail"]
+                temp.append(x)
+            else:
+                if dup == x["node_detail"]:
+                    temp.append(x)
+                else:
+                    response_list2.append(random.choice(temp))
+                    temp = []
+                    temp.append(x)
+                    dup = x["node_detail"]
+        if len(temp) > 1:
+            temp = random.choice(temp)
+            response_list2.append(temp)
+            return response_list2
 
-#         response_list2.append(temp)
-#         print(response_list2)
+        response_list2 += temp
+        # print(response_list2)
 
-#         return response_list2
-#     else:
-#         return response_list
+        return response_list2
+    else:
+        return response_list
 
 ## 함수 선언
 # 맨 처음
@@ -124,39 +126,10 @@ def DIA(start):
         filter_df.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
         response_list = response_list + filter_df.to_dict('records')
         
-        ## 중복아니면 그대로, node_detail이 중복인 경우만 random.choice()
-        response_list2 = []
-        temp = []
-        if len(response_list) > 1: # 아래도 똑같이 붙여넣으려고 >1 로 적용함
-            for i, x in enumerate(response_list):
-                if i == 0:
-                    dup = x["node_detail"]
-                    temp.append(x)
-                else:
-                    if dup == x["node_detail"]:
-                        temp.append(x)
-                    else:
-                        response_list2.append(random.choice(temp))
-                        temp = []
-                        temp.append(x)
-                        dup = x["node_detail"]
-            if len(temp) > 1:
-                temp = random.choice(temp)
+        return dup_check(response_list)
 
-            response_list2.append(temp)
-            print(response_list2)
+    return dup_check(response_list)
 
-            return response_list2
-        else:
-            return response_list
-
-    elif selected_first_msg['condition']=='END':
-        return response_list
-    elif selected_first_msg['condition']=='ABCD':
-        return response_list
-    elif selected_first_msg['condition']=='YNO':
-        return response_list
-        
 # 2번째부터
 def DIA2(messageText, dialog_node, node_detail, parent, condition):
     """
@@ -182,7 +155,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             print('네')
             node_detail = node_detail+'-Y'
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            random_number = random.randrange(0, len(first_msg_df)) #!!
+            random_number = random.randrange(0, len(first_msg_df))
             selected_first_msg = first_msg_df.iloc[random_number]
             response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
@@ -198,7 +171,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             print('아니오')
             node_detail = node_detail+'-N'            
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            random_number = random.randrange(0, len(first_msg_df)) #!!
+            random_number = random.randrange(0, len(first_msg_df))
             selected_first_msg = first_msg_df.iloc[random_number]
             response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
@@ -224,7 +197,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             if messageText == abcd:
                 node_detail = node_detail + '-' + messageText
                 first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-                random_number = random.randrange(0, len(first_msg_df)) #!!
+                random_number = random.randrange(0, len(first_msg_df))
                 selected_first_msg = first_msg_df.iloc[random_number]
                 response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                                 'node_detail':selected_first_msg['node_detail'], 
@@ -238,7 +211,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
 
     elif condition=='BACK':
         first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-        random_number = random.randrange(0, len(first_msg_df)) #!!
+        random_number = random.randrange(0, len(first_msg_df))
         selected_first_msg = first_msg_df.iloc[random_number]
         response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                         'node_detail':selected_first_msg['node_detail'], 
