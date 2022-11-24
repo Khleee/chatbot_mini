@@ -61,6 +61,33 @@ def error_handling(error):
 for code in default_exceptions.keys():
     app.register_error_handler(code, error_handling)
 
+# def dup_check(response_list):
+#     ## 중복아니면 그대로, node_detail이 중복인 경우만 random.choice()
+#     response_list2 = []
+#     temp = []
+#     if len(response_list) > 1: # 아래도 똑같이 붙여넣으려고 >1 로 적용함
+#         for i, x in enumerate(response_list):
+#             if i == 0:
+#                 dup = x["node_detail"]
+#                 temp.append(x)
+#             else:
+#                 if dup == x["node_detail"]:
+#                     temp.append(x)
+#                 else:
+#                     response_list2.append(random.choice(temp))
+#                     temp = []
+#                     temp.append(x)
+#                     dup = x["node_detail"]
+#         if len(temp) > 1:
+#             temp = random.choice(temp)
+
+#         response_list2.append(temp)
+#         print(response_list2)
+
+#         return response_list2
+#     else:
+#         return response_list
+
 ## 함수 선언
 # 맨 처음
 def DIA(start):
@@ -96,7 +123,33 @@ def DIA(start):
         filter_df = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True]
         filter_df.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
         response_list = response_list + filter_df.to_dict('records')
-        return response_list
+        
+        ## 중복아니면 그대로, node_detail이 중복인 경우만 random.choice()
+        response_list2 = []
+        temp = []
+        if len(response_list) > 1: # 아래도 똑같이 붙여넣으려고 >1 로 적용함
+            for i, x in enumerate(response_list):
+                if i == 0:
+                    dup = x["node_detail"]
+                    temp.append(x)
+                else:
+                    if dup == x["node_detail"]:
+                        temp.append(x)
+                    else:
+                        response_list2.append(random.choice(temp))
+                        temp = []
+                        temp.append(x)
+                        dup = x["node_detail"]
+            if len(temp) > 1:
+                temp = random.choice(temp)
+
+            response_list2.append(temp)
+            print(response_list2)
+
+            return response_list2
+        else:
+            return response_list
+
     elif selected_first_msg['condition']=='END':
         return response_list
     elif selected_first_msg['condition']=='ABCD':
