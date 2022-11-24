@@ -1,12 +1,11 @@
 import re
 import pymysql
 import pandas as pd
-import os
 from datetime import datetime
-from common.model_user import User
+
 from flask import Flask, redirect, render_template, request, url_for
 from flask_paginate import Pagination, get_page_args
-from flask_login import LoginManager, login_required, login_user, logout_user
+
 
 ## db 불러오기
 def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_name='chatbot_db'):
@@ -23,55 +22,11 @@ def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_nam
     return conn, cur
 
 app = Flask(__name__)
-# 사용자 세션 관리 할 때 필요한 정보
-app.secret_key = os.urandom(24)
-# LoginManager object 생성
-login_manager = LoginManager()
-login_manager.init_app(app)
 
 @app.route("/", methods=['GET'])
-def root():
-    return redirect('/login')
-
 @app.route("/main", methods=['GET'])
-@login_required
 def main():
     return render_template('main.html')
-
-@app.route("/login", methods=['GET'])
-def login_page():
-    return render_template('login.html')
-
-@app.route("/login/get_info", methods=['GET', 'POST'])
-def login_get_info():
-    user_id = request.form.get('userID')
-    user_password = request.form.get('userPassword')
-    
-    user_info = User.get_user_info(user_id, user_password)
-    if user_info['result'] != 'fail':
-        login_info = User(user_info['data'][0], user_info['data'][2], user_info['data'][5])
-        login_user(login_info)
-        print('login_info', login_info.get_id())
-        return redirect('/main')
-    else:
-        login_result_text = '로그인 실패 메세지'
-        return render_template('/login', login_result_text=login_result_text)
-
-@login_manager.user_loader
-def user_loader(user_id):
-    user_info = User.get_user_info(user_id)
-    login_info = User(user_info['data'][0], user_info['data'][2], user_info['data'][5])
-    return login_info
-
-@login_manager.unauthorized_handler
-def unauthorized():
-    # 로그인되어 있지 않은 사용자일 경우 첫화면으로 이동
-    return redirect("/")
-
-@app.route("/logout", methods=("GET",))
-def logout():
-    logout_user()
-    return redirect('/')
 
 @app.route("/intent", methods=("GET",))  # index 페이지를 호출하면
 def index():
@@ -93,13 +48,27 @@ def index():
     #     )
     # cur = conn.cursor() # 커서생성
     conn, cur = connect_db()
-    cur.execute("SELECT COUNT(*) FROM dialog;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
+    cur.execute("""
+    SELECT COUNT(*)
+    FROM (
+    SELECT a.intent_no, a.intent_name, a.description, 
+    (SELECT COUNT(intent_no) FROM intent_example b WHERE a.intent_no = b.intent_no) AS aa,
+    (SELECT COUNT(intent_no) FROM dialog c WHERE a.intent_no = c.intent_no) AS bb
+    FROM intent a
+    GROUP BY a.intent_no
+    ) AS cc
+    """)  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
     total = cur.fetchone()[0]
-    cur.execute(
-        "SELECT * FROM dialog ORDER BY intent_no ASC LIMIT %d OFFSET %d;" %(per_page, offset))  # SQL SELECT로 포스트를 가져오되,
-        # "DESC LIMIT %s OFFSET %s;".format(per_page, offset)  # offset부터 per_page만큼의 포스트를 가져옵니다.
+    cur.execute("""
+    SELECT a.intent_no, a.intent_name, a.description, 
+    (SELECT COUNT(intent_no) FROM intent_example b WHERE a.intent_no = b.intent_no) AS aa,
+    (SELECT COUNT(intent_no) FROM dialog c WHERE a.intent_no = c.intent_no) AS bb
+    FROM intent a
+    GROUP BY a.intent_no ORDER BY a.intent_no ASC
+                LIMIT %s OFFSET %s;
+                """ %(per_page, offset))
 
-    dialogs = cur.fetchall()
+    intents = cur.fetchall()
     conn.close()
     print(request.url)
 
@@ -107,7 +76,7 @@ def index():
 
     return render_template(
         "intent_temp.html",
-        dialogs=dialogs,
+        intents=intents,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
             total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
@@ -354,7 +323,8 @@ def fallback():
     total = cur.fetchone()[0]
 
     cur.execute("""
-                SELECT a.message, count(a.message) FROM
+                SELECT a.message, count(a.message) 
+                FROM
                 (
                     SELECT message
                     FROM fallback_message

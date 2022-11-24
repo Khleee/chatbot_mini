@@ -42,7 +42,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/" class="nav-link">Home</a>
+        <a href="index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -153,7 +153,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/" class="brand-link">
+    <a href="/main" class="brand-link">
       <img src="{{url_for('static', filename='dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
@@ -339,37 +339,59 @@
     <!-- Main content -->
     <div class="container">
       <!-- 오른쪽 정렬이 안돼... -->
-      <table class="table table-hover table-striped table-bordered align-middle" id="dialog_list">
-          <thead>
-              <tr class="text-center">
-                  <th>No.</th>
-                  <th>엔티티 이름</th>
-                  <th>기능</th>
-              </tr>
-          </thead>
-          <tbody>
-              {% for entity in entitys %}
-              <tr>
-                  <td class="text-center">{{ loop.index + pagination.skip }}</td>
-                  <!-- loop.index가 1,2,3...이고 pagination.skip은 (페이지번호-1)*10 → 2페이지라면 10 -->
-                  <td class="text-center">{{ entity[1] }}</td>
-                  <td class="text-center">
-                      <!-- <div class="btn-group align-middle">
-                          <button type="button" class="btn btn-outline-primary btn-sm"><a
-                                  href="{{ url_for('entity_detail', eid=entity[0], ename=entity[1]) }}">상세보기</a></button>
-                      </div> -->
-                      <form action="/entity_detail" method="post">
-                          <input type="hidden" value="{{ entity[0] }}" name="eid">
-                          <input type="hidden" value="{{ entity[1] }}" name="ename">
-                          <button type="submit" class="btn btn-outline-primary btn-sm">상세보기</button>
-                      </form>
-                  </td>
+      <div class="form-row">
+        <form action="/write">
+            <button type="submit" class="btn btn-primary"><b>Dialog node</b> 생성</button>
+        </form>
+    </div>
+    <table class="table table-hover table-striped table-bordered align-middle" id="dialog_list">
+        <thead>
+            <tr class="text-center">
+                <th>No.</th>
+                <th>인텐트 번호</th>
+                <th>노드</th>
+                <th>답변</th>
+                <th>상위 노드(parent)</th>
+                <th>조건</th>
+                <th>기능</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dialog in dialogs %}
+            <tr>
+                <td class="text-center">{{ loop.index + pagination.skip }}</td>
+                <!-- loop.index가 1,2,3...이고 pagination.skip은 (페이지번호-1)*10 → 2페이지라면 10 -->
+                <td class="text-center">{{ dialog[1] }}</td>
+                <td class="text-center">{{ dialog[2] }}</td>
+                <td>{{ dialog[3] }}</td>
+                <td class="text-center">{{ dialog[4] }}</td>
+                <td class="text-center">{{ dialog[5] }}</td>
+                <td class="text-center">
+                    <!-- <button type="button" class="btn btn-outline-info" onclick="getDialogId()">클릭</button> -->
+                    <div class="btn-group align-middle">
+                        <button type='button' class="btn btn-outline-secondary btn-sm" id="addrow">추가</button>
+                        <!-- <button type="button" class="btn btn-outline-primary btn-sm"><a
+                                    href="{{ url_for('update', did=dialog[0]) }}">수정</a></button>
+                        <button type="button" class="btn btn-outline-danger btn-sm"><a
+                                href="{{ url_for('delete', did=dialog[0]) }}">삭제</a></button> -->
+                        <form action="/update" method="post">
+                            <input type="hidden" value="{{ dialog[0] }}" name="did">
+                            <button type="submit" class="btn btn-outline-primary btn-sm">수정</button>
+                        </form>
+                        <form action="/delete" method="post">
+                            <input type="hidden" value="{{ dialog[0] }}" name="did">
+                            <button type="submit" class="btn btn-outline-danger btn-sm">삭제</button>
+                        </form>
+                    </div>
+                    </form>
+                </td>
 
-              </tr>
-              {% endfor %}
-          </tbody>
-      </table>
-      {{ pagination.links }}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {{ pagination.links }}
+  </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
