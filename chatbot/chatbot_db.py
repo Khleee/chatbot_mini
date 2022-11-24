@@ -78,8 +78,7 @@ def DIA(start):
     dialog_df.drop(['id'], axis=1, inplace=True)
     # 첫번째 응답 메세지
     first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(start)) & (dialog_df['node_detail']=='0')]
-    print("대조 이후")
-    print(first_msg_df)
+
     # random_number = random.randrange(0, len(first_msg_df)) #!!
     # selected_first_msg = first_msg_df.iloc[random_number]
     selected_first_msg = first_msg_df.iloc[-1]
@@ -98,8 +97,6 @@ def DIA(start):
         filter_df = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True]
         filter_df.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
         response_list = response_list + filter_df.to_dict('records')
-        print("response_list")
-        print(response_list)
         return response_list
     elif selected_first_msg['condition']=='END':
         return response_list
@@ -131,12 +128,6 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
     if condition=='YNO':
         if messageText=='네':
             print('네')
-
-            print("a",messageText)
-            print("b",dialog_node)
-            print("c",node_detail)
-            print("d",condition)
-
             node_detail = node_detail+'-Y'
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
             selected_first_msg = first_msg_df.iloc[0]
@@ -168,9 +159,6 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             print('몰라')
             node_detail = node_detail+'-O'            
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            # print(type(first_msg_df))
-            # response_list = response_list + [{'dialog_node':dialog_node, 'node_detail':node_detail[:-2], 'text':first_msg_df.iloc[0]['text'], 'parent':first_msg_df.iloc[0]['parent'], 'condition':first_msg_df.iloc[0]['condition']}]
-            # print('after response_list', response_list)
             response_list = response_list + first_msg_df.to_dict('records')
     elif condition=='ABCD':
         abcd_filter = r'^' + node_detail+'-[A-Z]{1}$'
@@ -231,7 +219,6 @@ def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무
     select_list = ""
 
     for x in i_list:
-        print('x', x)
         select_list += '<button class="dial_btn" value="' + str(x[0]) + '">'+str(x[1])+'</button>'
 
     # 현재 노드 상황
@@ -258,10 +245,6 @@ def request_chat(): # enter치면
     parent = request.form['parent']
     condition = request.form['condition']
     print("dialog_node",dialog_node)
-    
-    # print("ending :",ending)
-    # ending = ending.split(',')
-    #print("ending :",ending)
 
     if messageText=='처음으로':
         return jsonify({'text':"다시 돌아가겠습니다. 문의사항이 있으시면 언제든 말씀해주세요", 'type':'bot', 'okay':0})
@@ -363,9 +346,6 @@ def request_chat(): # enter치면
                 cur.execute("SELECT * FROM intent WHERE intent_no = %s", int(x))
                 dialog = cur.fetchall()
                 conn.close()
-                # print('dialog', dialog[0][1])
-                # dialog 형태
-                # ((121, '참치상품안내'),)
                 i_list3.append(dialog[0])
 
         ## 여기까지 intents에 있는 entity_id와 입력 문장에 있는 entity_id들이 같을때의 intent_no을 저장함         
@@ -382,10 +362,6 @@ def request_chat(): # enter치면
                 pred_idx = np.argmax(probs)
                 break
         
-        # if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 처음으로 복귀
-        #     print("이해X",intent_list[np.argmax(probs)],np.argmax(probs), probs[np.argmax(probs)])
-        #     return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
-
         i_list4 = []
         intent_count = 1
         if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 일단 20%~50% 사이의 인텐츠들을 뽑아보자
@@ -418,6 +394,7 @@ def request_chat(): # enter치면
             # real이 비워져있는일이 없는한 i_list4는 항상 존재
             # real2에 확률이 높은 순으로 채워놓음
             i_list4.sort(key=lambda x:-x[1])
+
             real2 = []
             for x in i_list4:
                 if x[0] in real:
@@ -427,7 +404,6 @@ def request_chat(): # enter치면
             if len(real) > 1:
                 # 여러개 있으므로, new다이얼로그로 진입시켜서 인텐츠 선택하게 하자
                 okay = 1
-                # print('의도번호', start)
                 ending = DIA3(251, real2[:4]) ## 여기다 real2 4개만 출력되게
                 intent_count = 0
 
@@ -456,7 +432,7 @@ def request_chat(): # enter치면
             ending = DIA(start)
 
         print('okay 0 response', ending)
-        print("messageText",messageText) #!! 주문 취소
+        print("messageText",messageText)
         if ending == None:
             return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
         else:
