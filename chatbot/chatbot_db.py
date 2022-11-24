@@ -222,7 +222,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
         pass
     else:
         pass    
-    return response_list
+    return dup_check(response_list)
 
 def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
     """
