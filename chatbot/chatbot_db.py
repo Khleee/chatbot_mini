@@ -78,13 +78,15 @@ def DIA(start):
     dialog_df.drop(['id'], axis=1, inplace=True)
     # 첫번째 응답 메세지
     first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(start)) & (dialog_df['node_detail']=='0')]
+    print("대조 이후")
     print(first_msg_df)
-    random_number = random.randrange(0, len(first_msg_df))
-    selected_first_msg = first_msg_df.iloc[random_number]
+    # random_number = random.randrange(0, len(first_msg_df)) #!!
+    # selected_first_msg = first_msg_df.iloc[random_number]
+    selected_first_msg = first_msg_df.iloc[-1]
     
     response_list = []
 
-    response_list.append({'dialog_node':int(selected_first_msg['intent_no']),#! intent_no -> dialog_node
+    response_list.append({'dialog_node':int(selected_first_msg['intent_no']),#! dialog_node -> intent_no 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
@@ -92,8 +94,12 @@ def DIA(start):
     seq_filter = r'^(0)_+[0-9]{1,}$'
     print('selected_first_msg', selected_first_msg)
     if selected_first_msg['condition']=='seq':
+        # 아래 문장에서 오류 발생
         filter_df = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True]
+        filter_df.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
         response_list = response_list + filter_df.to_dict('records')
+        print("response_list")
+        print(response_list)
         return response_list
     elif selected_first_msg['condition']=='END':
         return response_list
@@ -120,10 +126,17 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
     conn.close()
     dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
     dialog_df.drop(['id'], axis=1, inplace=True)
-    response_list = [] 
+    response_list = []
+
     if condition=='YNO':
         if messageText=='네':
-            print('네')   
+            print('네')
+
+            print("a",messageText)
+            print("b",dialog_node)
+            print("c",node_detail)
+            print("d",condition)
+
             node_detail = node_detail+'-Y'
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
             selected_first_msg = first_msg_df.iloc[0]
@@ -244,7 +257,7 @@ def request_chat(): # enter치면
     node_detail = request.form['node_detail'] 
     parent = request.form['parent']
     condition = request.form['condition']
-    print("okay",okay)
+    print("dialog_node",dialog_node)
     
     # print("ending :",ending)
     # ending = ending.split(',')
@@ -443,7 +456,7 @@ def request_chat(): # enter치면
             ending = DIA(start)
 
         print('okay 0 response', ending)
-        print("messageText",messageText)
+        print("messageText",messageText) #!! 주문 취소
         if ending == None:
             return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
         else:
