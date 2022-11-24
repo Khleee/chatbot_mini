@@ -3,7 +3,8 @@ from werkzeug.exceptions import HTTPException, default_exceptions, _aborter
 
 import numpy as np
 import pandas as pd
-import random 
+# import random
+
 from datetime import datetime
 import torch
 from tokenization_kobert import KoBertTokenizer
@@ -210,8 +211,11 @@ def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무
     dialog_df.drop(['id'], axis=1, inplace=True)
     # 첫번째 응답 메세지
     first_msg_df = dialog_df.loc[(dialog_df['intent_no']==start) & (dialog_df['node_detail']=='0')]
-    random_number = random.randrange(0, len(first_msg_df))
-    selected_first_msg = first_msg_df.iloc[random_number]
+    # random_number = random.randrange(0, len(first_msg_df))
+    # selected_first_msg = first_msg_df.iloc[random_number]
+
+    selected_first_msg = first_msg_df.iloc[-1]
+
     print('selected_first_msg', selected_first_msg)
     print('dia3에서 나온 최종 i_list:', i_list)
     response_list = []
