@@ -129,7 +129,8 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             print('네')
             node_detail = node_detail+'-Y'
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            selected_first_msg = first_msg_df.iloc[0]
+            random_number = random.randrange(0, len(first_msg_df)) #!!
+            selected_first_msg = first_msg_df.iloc[random_number]
             response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
@@ -144,7 +145,8 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             print('아니오')
             node_detail = node_detail+'-N'            
             first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            selected_first_msg = first_msg_df.iloc[0]
+            random_number = random.randrange(0, len(first_msg_df)) #!!
+            selected_first_msg = first_msg_df.iloc[random_number]
             response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
@@ -169,7 +171,8 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             if messageText == abcd:
                 node_detail = node_detail + '-' + messageText
                 first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-                selected_first_msg = first_msg_df.iloc[0]
+                random_number = random.randrange(0, len(first_msg_df)) #!!
+                selected_first_msg = first_msg_df.iloc[random_number]
                 response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                                 'node_detail':selected_first_msg['node_detail'], 
                                 'text':selected_first_msg['text'], 
@@ -182,7 +185,8 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
 
     elif condition=='BACK':
         first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-        selected_first_msg = first_msg_df.iloc[0]
+        random_number = random.randrange(0, len(first_msg_df)) #!!
+        selected_first_msg = first_msg_df.iloc[random_number]
         response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
                         'node_detail':selected_first_msg['node_detail'], 
                         'text':selected_first_msg['text'], 
