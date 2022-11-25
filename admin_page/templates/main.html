@@ -109,12 +109,12 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none d-sm-inline-block">
         {% if current_user.is_authenticated %}
           <p class="nav-link">{{ current_user.get_name() }}</p>
         {% endif %}
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none d-sm-inline-block">
         <a class="nav-link" href="/logout" role="button">
           로그아웃
         </a>
@@ -138,6 +138,14 @@
         <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                관리자 계정관리
+              </p>
+            </a>
+          </li>
           <li class="nav-item menu-is-opening menu-open">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-gear"></i>
@@ -148,7 +156,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="/defaultValue" class="nav-link">
                   <p>기본값설정</p>
                 </a>
               </li>

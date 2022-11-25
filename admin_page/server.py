@@ -4,23 +4,10 @@ import pandas as pd
 import os
 from datetime import datetime
 from common.model_user import User
+from common.config import connect_db
 from flask import Flask, redirect, render_template, request, url_for
 from flask_paginate import Pagination, get_page_args
 from flask_login import LoginManager, login_required, login_user, logout_user
-
-## db 불러오기
-def connect_db(host='172.30.1.204', port=3306, user='nlp', pwd='dongwon', db_name='chatbot_db'):
-    conn = pymysql.connect(
-        host=host,
-        port=port,
-        user=user,
-        passwd=pwd,
-        db=db_name,
-        charset='utf8'
-        )
-    cur = conn.cursor() # 커서생성
-
-    return conn, cur
 
 app = Flask(__name__)
 # 사용자 세션 관리 할 때 필요한 정보
@@ -73,6 +60,44 @@ def logout():
     logout_user()
     return redirect('/')
 
+@app.route("/defaultValue", methods=("GET",))
+def default_value():
+    conn, cur = connect_db()
+    sql = ""
+    sql += "SELECT intent_cut_off, similar_intent_score, intent_result_num, intent_try_num, b.user_id, b.user_name , info_date "
+    sql += "FROM bot_info a, admin b "
+    sql += "WHERE a.user_id = b.user_id"
+    cur.execute(sql)
+    result = cur.fetchone()
+    conn.close()
+    
+    bot_info = {}
+    bot_info['intent_cut_off'] = result[0]
+    bot_info['similar_intent_score'] = result[1]
+    bot_info['intent_result_num'] = result[2]
+    bot_info['intent_try_num'] = result[3]
+    bot_info['user_id'] = result[4]
+    bot_info['user_name'] = result[5]
+    bot_info['info_date'] = result[6].strftime('%Y-%m-%d %H:%M:%S')
+    return render_template('default_value.html', bot_info=bot_info)
+
+@app.route("/bot_info_update", methods=["POST"])
+def bot_info_update():
+    intent_cut_off = request.form.get('intent_cut_off')
+    similar_intent_score = request.form.get('similar_intent_score')
+    intent_result_num = request.form.get('intent_result_num')
+    intent_try_num = request.form.get('intent_try_num')
+    userID = request.form.get('userID')
+    info_date = request.form.get('info_date')
+    conn, cur = connect_db()
+    sql = ""
+    sql += "UPDATE bot_info "
+    sql += "SET intent_cut_off=%s, similar_intent_score=%s, intent_result_num=%s, intent_try_num=%s, user_id=%s, info_date=%s;"
+    cur.execute(sql, (intent_cut_off, similar_intent_score, intent_result_num, intent_try_num, userID, info_date))
+    conn.commit()
+    conn.close()
+    return redirect('/defaultValue')
+    
 @app.route("/intent", methods=("GET",))  # index 페이지를 호출하면
 def index():
     per_page = 10
@@ -127,7 +152,6 @@ def write():
 
 @app.route('/write_action', methods=['POST'])
 def write_action():
-
     dialog = request.form.get('dialog')
     detail = request.form.get('detail')
     text = request.form.get('text')
@@ -150,8 +174,7 @@ def write_action():
 def update():
     did = request.form.get('did')
 
-    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
-    cur = conn.cursor() # 커서생성
+    conn, cur = connect_db()
     
     print(did)
     # SQL = 'SELECT * FROM dialog WHERE id=%d'
@@ -196,8 +219,7 @@ def update_action():
 def delete():
     did = request.form.get('did')
 
-    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
-    cur = conn.cursor() # 커서생성
+    conn, cur = connect_db()
 
     cur.execute('DELETE FROM dialog WHERE id=%s' %did)
     conn.commit()
@@ -217,8 +239,7 @@ def entity():
     # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
 
     # DB 연결
-    conn = pymysql.connect(host='172.30.1.204', user='nlp', password='dongwon', db='chatbot_db', charset='utf8')
-    cur = conn.cursor() # 커서생성
+    conn, cur = connect_db()
 
     cur.execute("SELECT COUNT(*) FROM entity;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
     total = cur.fetchone()[0]
@@ -227,6 +248,7 @@ def entity():
         # "DESC LIMIT %s OFFSET %s;".format(per_page, offset)  # offset부터 per_page만큼의 포스트를 가져옵니다.
 
     entitys = cur.fetchall()
+    conn.close()
     print(request.url)
 
     # print(dialogs)
@@ -260,8 +282,7 @@ def entity_detail():
     # 기본적으로 0이고, 2페이지라면 10, 3페이지라면 20이겠죠.
 
     # DB 연결
-    conn = pymysql.connect(host='127.0.0.1', user='root', password='7557', db='chatbot_db', charset='utf8')
-    cur = conn.cursor() # 커서생성
+    conn, cur = connect_db()
 
     cur.execute("SELECT COUNT(*) FROM entity_symbol WHERE entity_id = %s;" %(eid))  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
     total = cur.fetchone()[0]
@@ -392,4 +413,4 @@ def fallback():
     )
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
