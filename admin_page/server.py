@@ -77,6 +77,7 @@ def index():
     return render_template(
         "intent_temp.html",
         intents=intents,
+        list=list,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
             total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
