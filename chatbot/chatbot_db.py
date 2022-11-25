@@ -121,10 +121,10 @@ def DIA(start):
     seq_filter = r'^(0)_+[0-9]{1,}$'
     print('selected_first_msg', selected_first_msg)
     if selected_first_msg['condition']=='seq':
-        # 아래 문장에서 오류 발생
-        filter_df = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True]
-        filter_df.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
-        response_list = response_list + filter_df.to_dict('records')
+        filter_df2 = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True].copy()
+        # fileter_df2 요소들의 키 통일 (dialog_node)
+        filter_df2.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
+        response_list = response_list + filter_df2.to_dict('records')
         
         return dup_check(response_list)
 
@@ -289,7 +289,8 @@ def request_chat(): # enter치면
                                 messageText,            
                                 add_special_tokens = True,
                                 max_length = max_len,
-                                pad_to_max_length = True, # padding =True 나 padding="longest" 같은걸로 대체하세요
+                                truncation = True, 
+                                padding = "max_length",
                                 return_attention_mask = True,
                                 return_tensors = 'pt')
         
