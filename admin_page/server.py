@@ -1,6 +1,5 @@
 import re
 import pymysql
-import pandas as pd
 import os
 from datetime import datetime
 from common.model_user import User
@@ -21,7 +20,6 @@ def root():
     return redirect('/login')
 
 @app.route("/main", methods=['GET'])
-@login_required
 def main():
     return render_template('main.html')
 
@@ -118,13 +116,27 @@ def index():
     #     )
     # cur = conn.cursor() # 커서생성
     conn, cur = connect_db()
-    cur.execute("SELECT COUNT(*) FROM dialog;")  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
+    cur.execute("""
+    SELECT COUNT(*)
+    FROM (
+    SELECT a.intent_no, a.intent_name, a.description, 
+    (SELECT COUNT(intent_no) FROM intent_example b WHERE a.intent_no = b.intent_no) AS aa,
+    (SELECT COUNT(intent_no) FROM dialog c WHERE a.intent_no = c.intent_no) AS bb
+    FROM intent a
+    GROUP BY a.intent_no
+    ) AS cc
+    """)  # 일단 총 몇 개의 포스트가 있는지를 알아야합니다.
     total = cur.fetchone()[0]
-    cur.execute(
-        "SELECT * FROM dialog ORDER BY intent_no ASC LIMIT %d OFFSET %d;" %(per_page, offset))  # SQL SELECT로 포스트를 가져오되,
-        # "DESC LIMIT %s OFFSET %s;".format(per_page, offset)  # offset부터 per_page만큼의 포스트를 가져옵니다.
+    cur.execute("""
+    SELECT a.intent_no, a.intent_name, a.description, 
+    (SELECT COUNT(intent_no) FROM intent_example b WHERE a.intent_no = b.intent_no) AS aa,
+    (SELECT COUNT(intent_no) FROM dialog c WHERE a.intent_no = c.intent_no) AS bb
+    FROM intent a
+    GROUP BY a.intent_no ORDER BY a.intent_no ASC
+                LIMIT %s OFFSET %s;
+                """ %(per_page, offset))
 
-    dialogs = cur.fetchall()
+    intents = cur.fetchall()
     conn.close()
     print(request.url)
 
@@ -132,7 +144,8 @@ def index():
 
     return render_template(
         "intent_temp.html",
-        dialogs=dialogs,
+        intents=intents,
+        list=list,
         pagination=Pagination(
             page=page,  # 지금 우리가 보여줄 페이지는 1 또는 2, 3, 4, ... 페이지인데,
             total=total,  # 총 몇 개의 포스트인지를 미리 알려주고,
@@ -375,7 +388,8 @@ def fallback():
     total = cur.fetchone()[0]
 
     cur.execute("""
-                SELECT a.message, count(a.message) FROM
+                SELECT a.message, count(a.message) 
+                FROM
                 (
                     SELECT message
                     FROM fallback_message
