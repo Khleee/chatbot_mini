@@ -183,11 +183,6 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
                 seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
                 filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                 response_list = response_list + filter_df.to_dict('records')
-        else:
-            print('몰라')
-            node_detail = node_detail+'-O'            
-            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-            response_list = response_list + first_msg_df.to_dict('records')
     elif condition=='ABCD':
         abcd_filter = r'^' + node_detail+'-[A-Z]{1}$'
         abcd_filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
