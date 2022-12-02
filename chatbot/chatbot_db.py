@@ -15,10 +15,10 @@ app = Flask(__name__)
 
 ## 모델 불러오기
 # 모델 load // model/kobert2 // kobertLM_new_3_epoch23
-model = AutoModelForSequenceClassification.from_pretrained("model/kobertLM_new_3_epoch23").cuda()
+model = AutoModelForSequenceClassification.from_pretrained("model/kobertLM_new_5").cuda()
 
 # 토크나이저 선언
-tokenizer = KoBertTokenizer.from_pretrained("monologg/kobert")
+tokenizer = KoBertTokenizer.from_pretrained("monologg/kobert-lm")
 
 # load 파라미터(변경시 꼭 수정해야해!)
 max_len = 124
