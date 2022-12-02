@@ -10,8 +10,9 @@ function sendMessage(text, type) {
 }
 
 function requestChat(messageText, okay, dialog_node, node_detail, parent, condition, url_pattern) {
+    // http://172.30.1.228:8080/
     $.ajax({
-        url: "http://172.30.1.228:8080/" + url_pattern,
+        url: "http://192.168.3.38:8080/" + url_pattern,
         type: "POST",
         dataType: "json",
         data: {

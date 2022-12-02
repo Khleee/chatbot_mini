@@ -14,8 +14,8 @@ from common.config import connect_db
 app = Flask(__name__)
 
 ## 모델 불러오기
-# 모델 load
-model = AutoModelForSequenceClassification.from_pretrained("model/kobert2").cuda()
+# 모델 load // model/kobert2 // kobertLM_new_3_epoch23
+model = AutoModelForSequenceClassification.from_pretrained("model/kobertLM_new_3_epoch23").cuda()
 
 # 토크나이저 선언
 tokenizer = KoBertTokenizer.from_pretrained("monologg/kobert")
@@ -105,6 +105,7 @@ def DIA(start):
     dialog = cur.fetchall()
     conn.close()
     dialog_df = pd.DataFrame(dialog, columns=['id', 'intent_no', 'node_detail', 'text', 'parent', 'condition'])
+    
     dialog_df.drop(['id'], axis=1, inplace=True)
     # 첫번째 응답 메세지
     first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(start)) & (dialog_df['node_detail']=='0')]
@@ -329,6 +330,15 @@ def request_chat(): # enter치면
 
         probs = predictions[0][0]
 
+        # # probs 높은순 확인용 코드
+        # II = []
+        # for i,x in enumerate(probs):
+        #     II.append([i,x])
+
+        # II.sort(key=lambda x: (-x[1], x[0]))
+        # print("<높은순>")
+        # print(II)
+
         ## 여기까지 intents 모델 끝
 
         # entity similar들어가서 messageText안에 존재하는지 확인
@@ -395,6 +405,8 @@ def request_chat(): # enter치면
         
         i_list4 = []
         intent_count = 1
+
+
         if pred_idx == -1: # 50% 이상인 경우가 아예 없었을 경우, 일단 20%~50% 사이의 인텐츠들을 뽑아보자
             """
             폴백 메시지에 대해서 데이터베이스에 고객이 발화한 대화와 발화한 날짜를 저장
@@ -409,6 +421,7 @@ def request_chat(): # enter치면
             # 만약 i_list가 empty면 아예, 엔티티 정보가 없음-> 비슷한 인텐트를 출력해줄 수 없음
             if not i_list:
                 return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
+
 
             # 20% ~ 50% 인 intent(인덱스,확률값) 뽑기
             for i,x in enumerate(probs):
