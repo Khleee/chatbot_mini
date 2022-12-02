@@ -121,7 +121,7 @@ def DIA(start):
                           'condition':selected_first_msg['condition']})
     seq_filter = r'^(0)_+[0-9]{1,}$'
     print('selected_first_msg', selected_first_msg)
-    if selected_first_msg['condition']=='seq':
+    if selected_first_msg['condition']=='SEQ':
         filter_df2 = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True].copy()
         # fileter_df2 요소들의 키 통일 (dialog_node)
         filter_df2.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
@@ -141,7 +141,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
     dialog_node : 다이얼로그 숫자(인덱스)
     node_detail : 다이얼로그 세부 노드(ex) 0_5, 0-Y-N)
     parent : default가 기본값, 뒤로 돌아갈때, 단순히 이전 다이얼로그가 아닌 다른 다이얼로그로 연결 가능케함
-    condition : 현재 노드의 종류 (YNO, ABCD, intent, ...)     
+    condition : 현재 노드의 종류 (YN, ABCD, intent, ...)     
     """
     conn, cur = connect_db()
     cur.execute("SELECT * FROM dialog")
@@ -151,7 +151,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
     dialog_df.drop(['id'], axis=1, inplace=True)
     response_list = []
 
-    if condition=='YNO':
+    if condition=='YN':
         if messageText=='네':
             print('네')
             node_detail = node_detail+'-Y'
@@ -163,7 +163,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
                           'condition':selected_first_msg['condition']})
-            if selected_first_msg.loc['condition']=='seq':
+            if selected_first_msg.loc['condition']=='SEQ':
                 seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
                 print('seq_filter', seq_filter)
                 filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
@@ -179,7 +179,7 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
                           'condition':selected_first_msg['condition']})
-            if selected_first_msg.loc['condition']=='seq':
+            if selected_first_msg.loc['condition']=='SEQ':
                 seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
                 filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                 response_list = response_list + filter_df.to_dict('records')
@@ -205,21 +205,12 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
                                 'text':selected_first_msg['text'], 
                                 'parent':selected_first_msg['parent'], 
                                 'condition':selected_first_msg['condition']})
-                if selected_first_msg.loc['condition']=='seq':
+                if selected_first_msg.loc['condition']=='SEQ':
                     seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
                     filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                     response_list = response_list + filter_df.to_dict('records')
 
-    elif condition=='BACK':
-        first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
-        random_number = random.randrange(0, len(first_msg_df))
-        selected_first_msg = first_msg_df.iloc[random_number]
-        response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
-                        'node_detail':selected_first_msg['node_detail'], 
-                        'text':selected_first_msg['text'], 
-                        'parent':selected_first_msg['parent'], 
-                        'condition':selected_first_msg['condition']})
-    elif condition=='seq':
+    elif condition=='SEQ':
         pass
     else:
         pass    
