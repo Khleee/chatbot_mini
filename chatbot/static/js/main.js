@@ -9,7 +9,7 @@ function sendMessage(text, type) {
     $('.msg_history').scrollTop(9999);
 }
 
-function requestChat(messageText, okay, dialog_node, node_detail, parent, condition, url_pattern) {
+function requestChat(messageText, okay, intent_no, node_detail, parent, condition, url_pattern) {
     // http://172.30.1.228:8080/
     $.ajax({
         url: "http://192.168.3.38:8080/" + url_pattern,
