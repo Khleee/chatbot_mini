@@ -124,7 +124,10 @@ def DIA(start):
     if selected_first_msg['condition']=='SEQ':
         filter_df2 = dialog_df.loc[(dialog_df['intent_no']==start) & dialog_df['node_detail'].str.match(seq_filter)==True].copy()
         # fileter_df2 요소들의 키 통일 (dialog_node)
-        filter_df2.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) #!! intent_no -> dialog_node로 키 이름 수정
+
+        #!! intent_no -> dialog_node로 키 이름 수정
+        # filter_df2.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) 
+        
         response_list = response_list + filter_df2.to_dict('records')
         
         return dup_check(response_list)
