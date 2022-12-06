@@ -127,7 +127,7 @@ def DIA(start):
 
         #!! intent_no -> dialog_node로 키 이름 수정
         # filter_df2.rename(columns = {'intent_no' : 'dialog_node'}, inplace = True) 
-        
+
         response_list = response_list + filter_df2.to_dict('records')
         
         return dup_check(response_list)
@@ -214,7 +214,7 @@ def DIA2(messageText, intent_no, node_detail, parent, condition):
         pass    
     return dup_check(response_list)
 
-def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
+def DIA3(i_list): # 만약 i_list가 너무 많으면 선택지가 너무 많으므로, 개수 제한 걸어야됨
     """
     딥러닝 모델에서 인텐트를 파악하지 못하는 경우 동작함.
     이전 DIA 함수들과 달리, 유사 인텐트들을 출력해주는 역할
@@ -450,7 +450,7 @@ def request_chat(): # enter치면
                 elif len(real2) >= 4:
                     i_list_num = 4
 
-                ending = DIA3(251, real2[:i_list_num]) ## 여기다 real2 4개만 출력되게
+                ending = DIA3(real2[:i_list_num]) ## 여기다 real2 4개만 출력되게
                 intent_count = 0
 
             elif len(real) == 1:
@@ -473,7 +473,7 @@ def request_chat(): # enter치면
                 elif len(i_list3) >= 4:
                     i_list_num = 4
 
-                ending = DIA3(251, i_list3[:i_list_num]) ## 여기다 i_list3 4개만 나오게
+                ending = DIA3(i_list3[:i_list_num]) ## 여기다 i_list3 4개만 나오게
                 # 아니면 그냥 20% 50% 사이에 있는 intents을 넣어도 될듯?(i_list4)
                 intent_count = 0
                 
