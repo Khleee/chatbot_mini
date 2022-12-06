@@ -434,7 +434,14 @@ def request_chat(): # enter치면
             if len(real) > 1:
                 # 여러개 있으므로, new다이얼로그로 진입시켜서 인텐츠 선택하게 하자
                 okay = 1
-                ending = DIA3(251, real2[:4]) ## 여기다 real2 4개만 출력되게
+                ##!
+                # real2 개수가 적으면
+                if len(real2) < 4:
+                    i_list_num = len(real2)
+                elif len(real2) >= 4:
+                    i_list_num = 4
+
+                ending = DIA3(251, real2[:i_list_num]) ## 여기다 real2 4개만 출력되게
                 intent_count = 0
 
             elif len(real) == 1:
@@ -450,7 +457,14 @@ def request_chat(): # enter치면
                 # 겹치는게 없으므로, 인텐츠 동의어를 가진 intent 목록만 출력
                 okay = 1
                 # print('의도번호', start)
-                ending = DIA3(251, i_list3[:4]) ## 여기다 i_list3 4개만 나오게
+
+                # i_list3 개수가 적으면
+                if len(i_list3) < 4:
+                    i_list_num = len(i_list3)
+                elif len(i_list3) >= 4:
+                    i_list_num = 4
+
+                ending = DIA3(251, i_list3[:i_list_num]) ## 여기다 i_list3 4개만 나오게
                 # 아니면 그냥 20% 50% 사이에 있는 intents을 넣어도 될듯?(i_list4)
                 intent_count = 0
                 
