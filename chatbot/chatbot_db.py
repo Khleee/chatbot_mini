@@ -114,7 +114,7 @@ def DIA(start):
     
     response_list = []
 
-    response_list.append({'dialog_node':int(selected_first_msg['intent_no']),#! dialog_node -> intent_no 
+    response_list.append({'intent_no':int(selected_first_msg['intent_no']),#! dialog_node -> intent_no 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
@@ -132,13 +132,13 @@ def DIA(start):
     return dup_check(response_list)
 
 # 2번째부터
-def DIA2(messageText, dialog_node, node_detail, parent, condition):
+def DIA2(messageText, intent_no, node_detail, parent, condition):
     """
     다이얼로그 처음 동작 이후에 계속 동작하는 함수    
     response_list에 다양한 인자들을 채워 넣어 return 해준다
 
     messageText : 사용자 응답 텍스트
-    dialog_node : 다이얼로그 숫자(인덱스)
+    intent_no : 다이얼로그 숫자(인덱스)
     node_detail : 다이얼로그 세부 노드(ex) 0_5, 0-Y-N)
     parent : default가 기본값, 뒤로 돌아갈때, 단순히 이전 다이얼로그가 아닌 다른 다이얼로그로 연결 가능케함
     condition : 현재 노드의 종류 (YN, ABCD, intent, ...)     
@@ -155,10 +155,10 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
         if messageText=='네':
             print('네')
             node_detail = node_detail+'-Y'
-            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(intent_no)) & (dialog_df['node_detail']==node_detail)]
             random_number = random.randrange(0, len(first_msg_df))
             selected_first_msg = first_msg_df.iloc[random_number]
-            response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
+            response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
@@ -166,43 +166,43 @@ def DIA2(messageText, dialog_node, node_detail, parent, condition):
             if selected_first_msg.loc['condition']=='SEQ':
                 seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
                 print('seq_filter', seq_filter)
-                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(intent_no)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                 response_list = response_list + filter_df.to_dict('records')
         elif messageText=='아니오':
             print('아니오')
             node_detail = node_detail+'-N'            
-            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+            first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(intent_no)) & (dialog_df['node_detail']==node_detail)]
             random_number = random.randrange(0, len(first_msg_df))
             selected_first_msg = first_msg_df.iloc[random_number]
-            response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
+            response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
                           'node_detail':selected_first_msg['node_detail'], 
                           'text':selected_first_msg['text'], 
                           'parent':selected_first_msg['parent'], 
                           'condition':selected_first_msg['condition']})
             if selected_first_msg.loc['condition']=='SEQ':
                 seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                filter_df = dialog_df.loc[(dialog_df['intent_no']==int(intent_no)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                 response_list = response_list + filter_df.to_dict('records')
     elif condition=='ABCD':
         abcd_filter = r'^' + node_detail+'-[A-Z]{1}$'
-        abcd_filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
+        abcd_filter_df = dialog_df.loc[(dialog_df['intent_no']==int(intent_no)) & dialog_df['node_detail'].str.match(abcd_filter)==True]
         print('abcd_filter_df', abcd_filter_df)
         abcd_list = abcd_filter_df['node_detail'].map(lambda x: x.split('-')[-1]).tolist()
         
         for abcd in abcd_list:
             if messageText == abcd:
                 node_detail = node_detail + '-' + messageText
-                first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & (dialog_df['node_detail']==node_detail)]
+                first_msg_df = dialog_df.loc[(dialog_df['intent_no']==int(intent_no)) & (dialog_df['node_detail']==node_detail)]
                 random_number = random.randrange(0, len(first_msg_df))
                 selected_first_msg = first_msg_df.iloc[random_number]
-                response_list.append({'dialog_node':int(selected_first_msg['intent_no']), 
+                response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
                                 'node_detail':selected_first_msg['node_detail'], 
                                 'text':selected_first_msg['text'], 
                                 'parent':selected_first_msg['parent'], 
                                 'condition':selected_first_msg['condition']})
                 if selected_first_msg.loc['condition']=='SEQ':
                     seq_filter = r'^' + node_detail+'_[0-9]{1,}$'
-                    filter_df = dialog_df.loc[(dialog_df['intent_no']==int(dialog_node)) & dialog_df['node_detail'].str.match(seq_filter)==True]
+                    filter_df = dialog_df.loc[(dialog_df['intent_no']==int(intent_no)) & dialog_df['node_detail'].str.match(seq_filter)==True]
                     response_list = response_list + filter_df.to_dict('records')
 
     elif condition=='SEQ':
@@ -218,6 +218,8 @@ def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무
 
     구체적으로는 response_list에 임의로 text를 유사 인텐트들을 버튼식으로 출력되게 수정하고 있다.
     """
+    
+    """
     conn, cur = connect_db()
     cur.execute("SELECT * FROM dialog")
     dialog = cur.fetchall()
@@ -231,6 +233,9 @@ def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무
 
     print('selected_first_msg', selected_first_msg)
     print('dia3에서 나온 최종 i_list:', i_list)
+    
+    """
+    
     response_list = []
 
     select_list = ""
@@ -239,11 +244,12 @@ def DIA3(start, i_list): # 만약 i_list가 너무 많으면 선택지가 너무
         select_list += '<button class="dial_btn" value="' + str(x[0]) + '">'+str(x[1])+'</button>'
 
     # 현재 노드 상황
-    response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
-                          'node_detail':selected_first_msg['node_detail'], 
-                          'text':selected_first_msg['text']+select_list, 
-                          'parent':selected_first_msg['parent'], 
-                          'condition':selected_first_msg['condition']})
+    # response_list.append({'intent_no':int(selected_first_msg['intent_no']), 
+    #                       'node_detail':selected_first_msg['node_detail'], 
+    #                       'text':selected_first_msg['text']+select_list, 
+    #                       'parent':selected_first_msg['parent'], 
+    #                       'condition':selected_first_msg['condition']})
+    response_list.append({'text':"제대로 이해하지 못했어요. 이 중에서 하나 골라주세요.<br>"+select_list})
     return response_list
     
          
@@ -257,11 +263,11 @@ def request_chat(): # enter치면
     messageText = request.form['messageText'] # 방금 메시지 입력한거 들어감
     okay = request.form['okay'] # 기존에 들어간 okay
     okay = int(okay)
-    dialog_node = request.form['dialog_node'] 
+    intent_no = request.form['intent_no'] 
     node_detail = request.form['node_detail'] 
     parent = request.form['parent']
     condition = request.form['condition']
-    print("dialog_node",dialog_node)
+    print("intent_no",intent_no)
 
     if messageText=='처음으로':
         return jsonify({'text':"다시 돌아가겠습니다. 문의사항이 있으시면 언제든 말씀해주세요", 'type':'bot', 'okay':0})
@@ -491,7 +497,7 @@ def request_chat(): # enter치면
             else:
                 return jsonify({'ending':ending, 'start':messageText, 'type':'bot'})
 
-        ending = DIA2(messageText, dialog_node, node_detail, parent, condition)
+        ending = DIA2(messageText, intent_no, node_detail, parent, condition)
         print('okay 1 response', ending)
         if ending == None:
             return jsonify({'text':"이해하기 어려워요. 쉽게 얘기해주세요", 'type':'bot', 'okay':0})
