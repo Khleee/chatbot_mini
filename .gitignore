@@ -125,7 +125,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-chatbot/model/kobert2/config.json
-chatbot/model/kobert2/pytorch_model.bin
-chatbot/model/kobertLM_new_5/config.json
-chatbot/model/kobertLM_new_5/pytorch_model.bin
+
+model
+
