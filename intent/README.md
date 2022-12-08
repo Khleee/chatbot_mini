@@ -2,7 +2,7 @@
 
 1. intent classification-LSTM.ipynb : LSTM 기반
 2. bert2.ipynb : KoBert 기반
-3. CNN_intent_colab : CNN 기반
+3. intent_cls_CNN : CNN 기반
 
 ## 그외
 
