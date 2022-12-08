@@ -1,8 +1,10 @@
 ## 인텐트 예측 모델 목록
 1. intent classification-LSTM.ipynb : LSTM 기반
 2. bert2.ipynb : KoBert 기반
+3. intent_cls_CNN : CNN 기반
 3. CNN_intent_colab : CNN 기반
 4. bert4LM_2차개선_newdata_미리분리_git.ipynb : KoBert-lm 기반
+
 
 
 ## 그외
