@@ -10,9 +10,10 @@ function sendMessage(text, type) {
 }
 
 function requestChat(messageText, okay, intent_no, node_detail, parent, condition, url_pattern) {
-    // http://172.30.1.228:8080/
+    $('#loading').show();  // 로딩 애니메이션 보이기
+
     $.ajax({
-        url: "http://192.168.3.38:8080/" + url_pattern,
+        url: "/" + url_pattern,
         type: "POST",
         dataType: "json",
         data: {
@@ -24,6 +25,7 @@ function requestChat(messageText, okay, intent_no, node_detail, parent, conditio
             'condition': condition,
         },
         success: function (data) {
+            $('#loading').hide();  // 로딩 애니메이션 숨기기
             if (data['type']=='bot'){
                 if (Object.keys(data).includes('ending')){
                     ending_len = data['ending'].length
@@ -49,6 +51,7 @@ function requestChat(messageText, okay, intent_no, node_detail, parent, conditio
             }
         },
         error: function (request, status, error) {
+            $('#loading').hide();  // 로딩 애니메이션 숨기기
             console.log(error);
             return sendMessage('죄송합니다. 서버 연결에 실패했습니다.', 'bot');
         }

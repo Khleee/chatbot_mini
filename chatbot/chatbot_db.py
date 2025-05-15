@@ -37,7 +37,7 @@ else:
 
 # intent 리스트 뽑기
 def get_intent_list():
-    conn, cur = connect_db()
+    conn, cur = connect_db() # common/config.py
     cur.execute("SELECT * FROM chatbot_db.intent")
     dialog = cur.fetchall()
     conn.close()
@@ -255,10 +255,10 @@ def DIA3(i_list): # 만약 i_list가 너무 많으면 선택지가 너무 많으
     response_list.append({'text':"제대로 이해하지 못했어요. 이 중에서 하나 골라주세요.<br>"+select_list})
     return response_list
     
-         
+# index.html 렌더링
 @app.route('/', methods=['GET'])
 def main():
-    return render_template('index.html')
+    return render_template('index_ver2.html')
 
 @app.route('/request_chat', methods=['POST'])
 def request_chat(): # enter치면
@@ -507,5 +507,13 @@ def request_chat(): # enter치면
         else:
             return jsonify({'ending':ending, 'start':messageText, 'type':'bot'})
     
-if __name__=='__main__':
+if __name__ == '__main__':
+    try:
+        conn, cur = connect_db()
+        cur.execute("SELECT 1")
+        print("✅ DB 연결 성공")
+        conn.close()
+    except Exception as e:
+        print("❌ DB 연결 실패:", e)
+        
     app.run(host='0.0.0.0', debug=True, port=8080)
